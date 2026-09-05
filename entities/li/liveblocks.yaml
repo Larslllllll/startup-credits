@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sr2yyher57xqdkkx5z2h87
+  slug: liveblocks
+  slug_aliases: []
+  name: Liveblocks
+  domains:
+    - value: liveblocks.io
+      role: primary
+      valid_from: 2026-09-05T21:38:57.000Z
+  category: apis-integration
+profile:
+  description: Liveblocks provides real-time collaboration infrastructure for building multiplayer applications.
+  links:
+    site: https://liveblocks.io
+sources:
+  - source_id: src_561b22a4168e0c5a0ca429dc4be27dd08d722eb56bea49d7e36bec95543927e3
+    url: https://liveblocks.io/startups
+programs:
+  - program_id: prg_01m1sr2yys7qgw1k5mh7e37skm
+    program_slug: liveblocks-startup-program
+    program_slug_aliases: []
+    title: Liveblocks Startup Program
+    summary: Liveblocks offers qualifying startups a discount on their real-time collaboration infrastructure, with an application form available on their startup page.
+    source_ids:
+      - src_561b22a4168e0c5a0ca429dc4be27dd08d722eb56bea49d7e36bec95543927e3
+offers:
+  - offer_id: off_01m1sr2yys6smpe45j1t9kany9
+    program_id: prg_01m1sr2yys7qgw1k5mh7e37skm
+    offer_slug: liveblocks-startup-program
+    offer_slug_aliases: []
+    title: Liveblocks Startup Program
+    summary: Eligible startups receive a discount on Liveblocks plans through the startup program, applied upon vendor approval.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:38:57.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Discount on Liveblocks plans for qualifying startups; exact percentage and duration not publicly published.
+          kind: discount
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply through the vendor's startup program page and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sr2yyher57xqdkkx5z2h87
+      access_operator_entity_id: ent_01m1sr2yyher57xqdkkx5z2h87
+    access:
+      availability: public
+      method: form
+      url: https://liveblocks.io/startups
+    source_ids:
+      - src_561b22a4168e0c5a0ca429dc4be27dd08d722eb56bea49d7e36bec95543927e3
