@@ -1,0 +1,78 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6m3x8e2yp1hcd17dy1z3e0ymb
+  slug: unkey
+  slug_aliases: []
+  name: Unkey
+  domains:
+    - value: unkey.com
+      role: primary
+      valid_from: 2024-01-01T00:00:00.000Z
+  category: api-key-authentication
+profile:
+  description: API key management for developers. Create, manage, and audit API keys with per-key rate limiting, per-key permissions, and real-time analytics.
+  links:
+    site: https://unkey.com
+    docs: https://unkey.com/docs
+sources:
+  - source_id: src_gnhjdnh3g9wr8feq2td0eq2qrw1x0wq8cn9027smergwrgsvh65dq
+    url: https://unkey.com/startups
+programs:
+  - program_id: prg_vjwwvfymwjx35vmmrp4n8f20b
+    slug: startups-program
+    title: Unkey Startups Program
+    summary: $1,000 in monthly credits, priority support, and hands-on migration help for early-stage startups.
+    lifecycle:
+      status: active
+      effective_from: 2024-01-01T00:00:00.000Z
+offers:
+  - offer_id: off_4hvadcjbg0jbgtcmwc9pkh20q
+    offer_slug: 1000-usd-monthly-startup-credits
+    title: $1,000 monthly credits for startups
+    summary: Get $1,000 in API credits every month while you build and ship, priority support with dedicated Slack channel, and hands-on migration help.
+    description: >
+      Unkey's Startups Program provides $1,000 in credits every month, priority
+      support with a dedicated Slack channel, and hands-on migration assistance.
+      Eligibility expires after raising $5 million. Non-eligible startups receive
+      50% off their bill. No catch.
+    lifecycle:
+      status: active
+      effective_from: 2024-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_8vgmethkbehyzg0fyjk263
+          description: $1,000 in monthly API credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+        - benefit_id: ben_cq6bjmzhcpg03xbypfdqq2
+          description: Priority support with dedicated Slack channel
+          kind: support
+          value:
+            kind: included
+        - benefit_id: ben_jnq498d58sv0h6x83pgsyw
+          description: 50% discount after $5M funding threshold
+          kind: discount
+          value:
+            kind: percent
+            percent: 50
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_j2g9ebb36t3pmpxfe7vzm1
+        kind: startup_funding_threshold
+        statement: Available to startups that have not raised more than $5 million in total funding. Eligibility expires after raising $5 million.
+        maximum_funding_usd: 5000000
+    roles:
+      terms_authority_entity_id: ent_6m3x8e2yp1hcd17dy1z3e0ymb
+      access_operator_entity_id: ent_6m3x8e2yp1hcd17dy1z3e0ymb
+    access:
+      availability: open
+      method: signup
+      url: https://unkey.com/startups
+    source_ids:
+      - src_gnhjdnh3g9wr8feq2td0eq2qrw1x0wq8cn9027smergwrgsvh65dq
