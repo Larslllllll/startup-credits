@@ -45,10 +45,11 @@ offers:
               minor_units: 600000
             kind: up-to
         - benefit_id: ben_02
-          description: 50% discount on computing usage with pay-as-you-go billing after free credits are used
+          description: 50 percent discount on computing usage with pay-as-you-go billing after free credits are used
           kind: discount
-          value:
-            percent: 50
+          percentage:
+            kind: exact
+            basis_points: 5000
         - benefit_id: ben_03
           description: Research Tax Credit (CIR) eligibility for French companies using Qarnot's HPC solution for R&D projects
           kind: other
@@ -58,6 +59,7 @@ offers:
       rule:
         kind: manual
         reason: vendor-discretion
+        criterion_id: cri_01
         statement: Startups must apply through the Qarnot start-up program page and be approved by Qarnot; terms eligibility and start-up qualification are at the vendor's discretion.
     roles:
       terms_authority_entity_id: ent_01m1hppx9gmpt0a397prcktycp
