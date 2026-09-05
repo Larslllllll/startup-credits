@@ -27,23 +27,24 @@ offers:
       status: active
       effective_from: 2021-01-01T00:00:00.000Z
     economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
       benefits:
-        - benefit_id: ben_01m1san10y68ad43jqcj5nbrps
-          description: $5 one-time credit to try Railway
+        - benefit_id: ben_primary
+          description: $5 one-time credit
           kind: credit
           value:
+            kind: exact
             amount:
               currency: USD
               minor_units: 500
-            kind: exact
-      consideration:
-        kind: none
     eligibility:
       rule:
         kind: manual
-        reason: vendor-discretion
-        criterion_id: cri_01
-        statement: New Railway users may receive a $5 credit at Railway's discretion; see the pricing page.
+        criterion_id: cri_requirement_01
+        statement: New Railway users may receive credits at Railway's discretion.
+        reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01m1san0vb7v3xg7ejq91bxtfd
       access_operator_entity_id: ent_01m1san0vb7v3xg7ejq91bxtfd
