@@ -35,9 +35,6 @@ offers:
       status: active
       effective_from: 2026-09-02T00:00:00.000Z
     economics:
-      consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
       benefits:
         - benefit_id: ben_01
           description: EUR 6,000 in free Qarnot cloud HPC credits for the first six months
@@ -49,7 +46,6 @@ offers:
             kind: up-to
         - benefit_id: ben_02
           description: 50 percent discount on computing usage after free credits are used
-          applies_to: Qarnot computing usage after free credits
           kind: discount
           percentage:
             basis_points: 5000
@@ -57,6 +53,9 @@ offers:
         - benefit_id: ben_03
           description: Research Tax Credit (CIR) eligibility for French companies using Qarnot's HPC solution for R&D projects
           kind: other
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
     eligibility:
       rule:
         criterion_id: cri_01
