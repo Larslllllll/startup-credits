@@ -8,7 +8,7 @@ entity:
     - value: unkey.com
       role: primary
       valid_from: 2024-01-01T00:00:00.000Z
-  category: api-key-management
+  category: auth-security
 profile:
   description: API key management for developers. Create, manage, and audit API keys with per-key rate limiting and real-time analytics.
   links:

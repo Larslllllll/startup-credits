@@ -8,7 +8,7 @@ entity:
     - value: railway.com
       role: primary
       valid_from: 2021-01-01T00:00:00.000Z
-  category: cloud-hosting
+  category: hosting-infra
 profile:
   description: Cloud hosting platform for full-stack applications. Deploy in seconds with usage-based pricing and zero configuration.
   links:
