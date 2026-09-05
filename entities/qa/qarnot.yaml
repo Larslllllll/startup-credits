@@ -49,7 +49,11 @@ offers:
             kind: up-to
         - benefit_id: ben_02
           description: 50 percent discount on computing usage after free credits are used
+          applies_to: Qarnot computing usage after free credits
           kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
         - benefit_id: ben_03
           description: Research Tax Credit (CIR) eligibility for French companies using Qarnot's HPC solution for R&D projects
           kind: other
