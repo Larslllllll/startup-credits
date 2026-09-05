@@ -10,7 +10,7 @@ entity:
       valid_from: 2021-01-01T00:00:00.000Z
   category: hosting-infra
 profile:
-  description: Cloud hosting platform for full-stack applications. Deploy in seconds with usage-based pricing and zero configuration.
+  description: Railway is a cloud hosting platform where you can deploy full-stack applications in seconds with usage-based pricing and zero configuration.
   links:
     site: https://railway.com
 sources:
