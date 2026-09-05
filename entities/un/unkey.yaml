@@ -58,7 +58,7 @@ offers:
     eligibility:
       rule:
         kind: manual
-        reason: vendor-discretion
+        reason: not-machine-evaluable
         criterion_id: cri_01m1san16x1kzhfvhzv6t16s0t
         statement: Available to startups that have not raised more than $5 million in total funding. Approval and grant are at Unkey's discretion.
     roles:
