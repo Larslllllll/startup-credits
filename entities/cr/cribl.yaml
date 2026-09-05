@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sw5qd2gw8n3mjx7d8fqdsm
+  slug: cribl
+  slug_aliases: []
+  name: Cribl
+  domains:
+    - value: cribl.io
+      role: primary
+      valid_from: 2026-09-05T22:49:03.000Z
+  category: data-analytics
+profile:
+  description: Cribl provides log analytics and observability tools.
+  links:
+    site: https://cribl.io
+sources:
+  - source_id: src_7f2c004dd3d84ca3bdf32676e4ff6813fe3979d71b028f774eb4f6c8273bbae2
+    url: https://cribl.io/startup/
+programs:
+  - program_id: prg_01m1sw5qdd3q3vwdghwcaq8yda
+    program_slug: cribl-startup-program
+    program_slug_aliases: []
+    title: Cribl for Startups
+    summary: Cribl offers free access to Cribl.Cloud products including Cribl Stream and other observability tools for qualifying startups.
+    source_ids:
+      - src_7f2c004dd3d84ca3bdf32676e4ff6813fe3979d71b028f774eb4f6c8273bbae2
+offers:
+  - offer_id: off_01m1sw5qdeez3m3jh9h8w6mwv1
+    program_id: prg_01m1sw5qdd3q3vwdghwcaq8yda
+    offer_slug: cribl-startup-program
+    offer_slug_aliases: []
+    title: Cribl for Startups
+    summary: Qualifying startups receive free access to Cribl.Cloud products including Cribl Stream through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:49:03.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free access to Cribl.Cloud products including Cribl Stream for qualifying startups through the startup program
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sw5qd2gw8n3mjx7d8fqdsm
+      access_operator_entity_id: ent_01m1sw5qd2gw8n3mjx7d8fqdsm
+    access:
+      availability: public
+      method: form
+      url: https://cribl.io/startup/
+    source_ids:
+      - src_7f2c004dd3d84ca3bdf32676e4ff6813fe3979d71b028f774eb4f6c8273bbae2
