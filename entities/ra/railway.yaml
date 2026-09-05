@@ -16,6 +16,7 @@ profile:
 sources:
   - source_id: cd014b583f963f188f340a05dbf0d7fca8be8d3168293a54caaec85edfe5d441
     url: https://railway.com/pricing
+programs: []
 offers:
   - offer_id: off_01m1san0y3ctnzrk5821zkxdje
     offer_slug: 5-usd-credit-trial
