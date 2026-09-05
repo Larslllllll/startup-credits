@@ -35,6 +35,9 @@ offers:
       status: active
       effective_from: 2026-09-02T00:00:00.000Z
     economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
       benefits:
         - benefit_id: ben_01
           description: EUR 6,000 in free Qarnot cloud HPC credits for the first six months
@@ -48,26 +51,25 @@ offers:
           description: 50 percent discount on computing usage after free credits are used
           kind: discount
           percentage:
-            basis_points: 5000
             kind: exact
+            basis_points: 5000
         - benefit_id: ben_03
           description: Research Tax Credit (CIR) eligibility for French companies using Qarnot's HPC solution for R&D projects
           kind: other
-      consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
     eligibility:
       rule:
         criterion_id: cri_01
         kind: manual
-        reason: not-machine-evaluable
-        statement: Startups must apply through the Qarnot start-up program page and be approved by Qarnot; terms eligibility and start-up qualification are at the vendor's discretion.
+        reason: vendor-discretion
+        statement: Early-stage startups building AI agents or LLMs, typically pre-seed through Series A, apply through the startup form and Qarnot selects accepted teams.
     roles:
       terms_authority_entity_id: ent_01m1hppx9gmpt0a397prcktycp
       access_operator_entity_id: ent_01m1hppx9gmpt0a397prcktycp
     access:
       availability: public
+      instructions: Complete the startup application form on Qarnot's start-up program page; Qarnot reviews the submission and follows up on acceptance.
       method: form
       url: https://qarnot.com/en/start-up
+    terms_url: https://qarnot.com/en/start-up
     source_ids:
       - src_a8c368caec29037df355f80e2c48a7e4e49f82a60ef45aa005cae8b46d22b285

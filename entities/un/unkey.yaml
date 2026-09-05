@@ -35,6 +35,8 @@ offers:
       status: active
       effective_from: 2024-01-01T00:00:00.000Z
     economics:
+      consideration:
+        kind: none
       benefits:
         - benefit_id: ben_01m1san12kca1dg6gr8djtrz33
           description: $1,000 in monthly API credits
@@ -53,20 +55,20 @@ offers:
           percentage:
             kind: exact
             basis_points: 5000
-      consideration:
-        kind: none
     eligibility:
       rule:
-        kind: manual
-        reason: not-machine-evaluable
         criterion_id: cri_01m1san16x1kzhfvhzv6t16s0t
+        kind: manual
+        reason: vendor-discretion
         statement: Available to startups that have not raised more than $5 million in total funding. Approval and grant are at Unkey's discretion.
     roles:
       terms_authority_entity_id: ent_01m1san0wqqdw55wbca23q9je1
       access_operator_entity_id: ent_01m1san0wqqdw55wbca23q9je1
     access:
       availability: public
+      instructions: Complete the startup form on Unkey's startups page; Unkey reviews the submission and follows up on acceptance.
       method: form
       url: https://unkey.com/startups
+    terms_url: https://unkey.com/startups
     source_ids:
       - 8fbf37e3cf7097595545ad4b88d26b42327cd5da3dc01267ed79cdb6cb7e6036
