@@ -47,8 +47,9 @@ offers:
         - benefit_id: ben_02
           description: 50% discount on computing usage with pay-as-you-go billing after free credits are used
           kind: discount
-          value:
-            percent: 50
+          percentage:
+            basis_points: 5000
+            kind: exact
         - benefit_id: ben_03
           description: Research Tax Credit (CIR) eligibility for French companies using Qarnot's HPC solution for R&D projects
           kind: other
