@@ -1,6 +1,6 @@
 schema_version: sourcey.entity-authoring/v1alpha3
 entity:
-  entity_id: ent_01m1sr2yyher57xqdkkx5z2h87
+  entity_id: ent_01m1srfftfbwreqkxez741thsm
   slug: liveblocks
   slug_aliases: []
   name: Liveblocks
@@ -8,25 +8,25 @@ entity:
     - value: liveblocks.io
       role: primary
       valid_from: 2026-09-05T21:38:57.000Z
-  category: apis-integration
+  category: devtools-other
 profile:
   description: Liveblocks provides real-time collaboration infrastructure for building multiplayer applications.
   links:
     site: https://liveblocks.io
 sources:
-  - source_id: src_561b22a4168e0c5a0ca429dc4be27dd08d722eb56bea49d7e36bec95543927e3
+  - source_id: src_2ab860c2e7704417173a2f649c77e3e80240c2c1b5ae94adbc42ac6ab77443f4
     url: https://liveblocks.io/startups
 programs:
-  - program_id: prg_01m1sr2yys7qgw1k5mh7e37skm
+  - program_id: prg_01m1srfftp89g8pvpa8p7bqs7q
     program_slug: liveblocks-startup-program
     program_slug_aliases: []
     title: Liveblocks Startup Program
     summary: Liveblocks offers qualifying startups a discount on their real-time collaboration infrastructure, with an application form available on their startup page.
     source_ids:
-      - src_561b22a4168e0c5a0ca429dc4be27dd08d722eb56bea49d7e36bec95543927e3
+      - src_2ab860c2e7704417173a2f649c77e3e80240c2c1b5ae94adbc42ac6ab77443f4
 offers:
-  - offer_id: off_01m1sr2yys6smpe45j1t9kany9
-    program_id: prg_01m1sr2yys7qgw1k5mh7e37skm
+  - offer_id: off_01m1srfftpayfayxepnmx5ebyf
+    program_id: prg_01m1srfftp89g8pvpa8p7bqs7q
     offer_slug: liveblocks-startup-program
     offer_slug_aliases: []
     title: Liveblocks Startup Program
@@ -48,11 +48,11 @@ offers:
         reason: vendor-discretion
         statement: Startups must apply through the vendor's startup program page and be approved; eligibility is at the vendor's discretion.
     roles:
-      terms_authority_entity_id: ent_01m1sr2yyher57xqdkkx5z2h87
-      access_operator_entity_id: ent_01m1sr2yyher57xqdkkx5z2h87
+      terms_authority_entity_id: ent_01m1srfftfbwreqkxez741thsm
+      access_operator_entity_id: ent_01m1srfftfbwreqkxez741thsm
     access:
       availability: public
       method: form
       url: https://liveblocks.io/startups
     source_ids:
-      - src_561b22a4168e0c5a0ca429dc4be27dd08d722eb56bea49d7e36bec95543927e3
+      - src_2ab860c2e7704417173a2f649c77e3e80240c2c1b5ae94adbc42ac6ab77443f4
