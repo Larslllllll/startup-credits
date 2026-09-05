@@ -16,13 +16,12 @@ profile:
 sources:
   - source_id: cd014b583f963f188f340a05dbf0d7fca8be8d3168293a54caaec85edfe5d441
     url: https://railway.com/pricing
-programs: []
 offers:
   - offer_id: off_01m1san0y3ctnzrk5821zkxdje
     offer_slug: 5-usd-credit-trial
     offer_slug_aliases: []
     title: $5 one-time credit grant
-    summary: New Railway users receive a $5 one-time credit to try the platform before committing to paid usage.
+    summary: New Railway users receive a $5 one-time credit to try the platform.
     lifecycle:
       status: active
       effective_from: 2021-01-01T00:00:00.000Z
