@@ -24,8 +24,7 @@ programs:
   title: Nvoip for Startups
   summary: Nvoip's English-language startup program page offers discounts on its communication
     plans for startups connected with Nvoip partner hubs. The current page advertises
-    up to 90% off, with the benefit dependent on startup maturity and lasting up to
-    two years.
+    up to 90% off, with the benefit dependent on startup maturity and lasti...
   source_ids:
   - src_c770b4d01831f74317f071e33871ce355bd6cb89d619f2175f83e1aa544e973b
 offers:
@@ -35,8 +34,7 @@ offers:
   title: Nvoip for Startups
   summary: Nvoip's English-language startup program page offers discounts on its communication
     plans for startups connected with Nvoip partner hubs. The current page advertises
-    up to 90% off, with the benefit dependent on startup maturity and lasting up to
-    two years.
+    up to 90% off, with the benefit dependent on startup maturity and lasti...
   lifecycle:
     status: active
     effective_from: '2026-09-06T19:49:38Z'

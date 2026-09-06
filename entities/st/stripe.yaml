@@ -124,6 +124,7 @@ offers:
       kind: constant
       statement: Open to any entrepreneur worldwide.
       value: true
+      criterion_id: cri_stripe_constant_2
   roles:
     terms_authority_entity_id: ent_01kyygma830fqh16kvj744sk1c
     access_operator_entity_id: ent_01kyygma830fqh16kvj744sk1c

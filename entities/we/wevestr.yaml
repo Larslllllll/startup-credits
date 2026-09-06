@@ -24,8 +24,7 @@ programs:
   title: WE.VESTR Microsoft for Startups Discount
   summary: Microsoft for Startups members can receive a first-year discount on WE.VESTR
     equity-management plans. Microsoft's benefit documentation specifies 70% off for
-    eligible new customers with 30 or more stakeholders, valid for 12 months, with
-    access gated through the Microsoft for Startups Benefits page.
+    eligible new customers with 30 or more stakeholders, valid for 12 months, with...
   source_ids:
   - src_01704c2d908c655015a9c7a11c5041cda459057d0a8246f0afaf64196e840b50
 offers:
@@ -35,8 +34,7 @@ offers:
   title: WE.VESTR Microsoft for Startups Discount
   summary: Microsoft for Startups members can receive a first-year discount on WE.VESTR
     equity-management plans. Microsoft's benefit documentation specifies 70% off for
-    eligible new customers with 30 or more stakeholders, valid for 12 months, with
-    access gated through the Microsoft for Startups Benefits page.
+    eligible new customers with 30 or more stakeholders, valid for 12 months, with...
   lifecycle:
     status: active
     effective_from: '2026-09-06T19:49:38Z'
@@ -60,7 +58,7 @@ offers:
     terms_authority_entity_id: ent_01m1w3rwj6fyv2hea10ha1wsv4
     access_operator_entity_id: ent_01kyh8fpe3n3yye39kmzvy410z
   access:
-    availability: restricted
+    availability: other
     method: form
     url: https://learn.microsoft.com/en-us/startups/benefits/technical-benefits/third-party-benefits/we-vestr
   source_ids:

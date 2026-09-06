@@ -59,7 +59,7 @@ offers:
   access:
     availability: public
     method: form
-    url: https://startups.aws.com/offers?lang=en-US
+    url: https://startups.aws.com/offers
   source_ids:
   - src_47ff47a24afdb6034cfe4872e73005f97b877c964dfa9338f709c702f19a0bd4
   program_id: prg_pr8c9gzg21fnmnszkvpfvm331r

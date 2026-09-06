@@ -24,8 +24,7 @@ programs:
   title: Tally for Startups
   summary: Tally publishes a startup-specific offer of 50% off Tally Pro for one year
     through its Partner Program. Eligibility requires a partner membership, partner
-    code, free Tally account, no previous paid customer, and compliance with cancellation
-    restrictions.
+    code, free Tally account, no previous paid customer, and compliance with cancellat...
   source_ids:
   - src_06a4089b0738754063e6f5d1d6958762c3dd0e3f0d876a5f1686a0fa710aab13
 offers:
@@ -35,8 +34,7 @@ offers:
   title: Tally for Startups
   summary: Tally publishes a startup-specific offer of 50% off Tally Pro for one year
     through its Partner Program. Eligibility requires a partner membership, partner
-    code, free Tally account, no previous paid customer, and compliance with cancellation
-    restrictions.
+    code, free Tally account, no previous paid customer, and compliance with cancellat...
   lifecycle:
     status: active
     effective_from: '2026-09-06T19:46:00Z'
