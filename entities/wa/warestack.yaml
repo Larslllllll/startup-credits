@@ -10,42 +10,40 @@ entity:
     valid_from: '2026-09-06T19:46:41.281Z'
   category: hosting-infra
 profile:
-  description: Warestack provides managed cloud platform services for deploying applications, databases, and caches with built-in scaling and monitoring.
+  description: Warestack provides managed cloud platform services for deploying applications,
+    databases, and caches with built-in scaling and monitoring.
   links:
     site: https://www.warestack.com
 sources:
 - source_id: src_1727fb8fc538afda407014b419930c493060d4ef71670d27090610f2f7293ef8
   url: https://www.warestack.com/startup-program
 programs:
-- program_id: prg_01m1w4358e1bd4eacrg4x48g0x
+- program_id: prg_59jkpx5nvcm2zmszm70av9qw57
   program_slug: warestack-startup-program
   program_slug_aliases: []
-  title: Warestack Startup Program
-  summary: Warestack gives qualifying early-stage companies the Starter plan free for six months, with published usage limits and up to $2,000 in savings.
+  title: Starter Plan Free for Six Months
+  summary: Qualifying startups receive the Warestack Starter plan free for six months,
+    with published usage limits and up to $2,000 in savings versus standard rates.
   source_ids:
   - src_1727fb8fc538afda407014b419930c493060d4ef71670d27090610f2f7293ef8
 offers:
 - offer_id: off_01m1w4358ex3fr76dqzrbzk9fc
-  program_id: prg_01m1w4358e1bd4eacrg4x48g0x
+  program_id: prg_59jkpx5nvcm2zmszm70av9qw57
   offer_slug: starter-plan-free-for-six-months
   offer_slug_aliases: []
   title: Starter Plan Free for Six Months
-  summary: Qualifying startups receive the Warestack Starter plan free for six months, with published usage limits and up to $2,000 in savings versus standard rates.
+  summary: Qualifying startups receive the Warestack Starter plan free for six months,
+    with published usage limits and up to $2,000 in savings versus standard rates.
   lifecycle:
     status: active
     effective_from: '2026-09-06T19:46:41.281Z'
   economics:
-    benefits:
-    - benefit_id: ben_starter_six_months
-      description: Starter plan free for six months, with published usage limits and up to $2,000 in savings versus standard rates.
-      kind: credit
-      value:
-        amount:
-          currency: USD
-          minor_units: 200000
-        kind: up-to
     consideration:
       kind: none
+    benefits:
+    - benefit_id: ben_044
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
   eligibility:
     rule:
       kind: all

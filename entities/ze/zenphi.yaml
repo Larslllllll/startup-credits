@@ -5,49 +5,59 @@ entity:
   slug_aliases: []
   name: Zenphi
   domains:
-    - value: zenphi.com
-      role: primary
-      valid_from: 2026-09-06T19:48:40Z
+  - value: zenphi.com
+    role: primary
+    valid_from: '2026-09-06T19:48:40Z'
   category: productivity
 profile:
-  description: Zenphi provides robotic process automation and workflow automation tools for businesses on Google Workspace.
+  description: Zenphi provides robotic process automation and workflow automation
+    tools for businesses on Google Workspace.
   links:
     site: https://zenphi.com
 sources:
-  - source_id: src_507dd7fabec36c8843715355ef09c651ac9986d7a011070ac96f1b5f738de1ca
-    url: https://zenphi.com/zenphi-for-startups/
+- source_id: src_507dd7fabec36c8843715355ef09c651ac9986d7a011070ac96f1b5f738de1ca
+  url: https://zenphi.com/zenphi-for-startups/
+programs:
+- program_id: prg_k5gwxgt55h7sf5gccs1512yjar
+  program_slug: zenphi-startup-program
+  program_slug_aliases: []
+  title: Zenphi for Startups
+  summary: Eligible startups receive six months free on the Zenphi Pro plan, followed
+    by six months at 50% off.
+  source_ids:
+  - src_507dd7fabec36c8843715355ef09c651ac9986d7a011070ac96f1b5f738de1ca
 offers:
-  - offer_id: off_01m1w3rvnyqq1dqe6bm7ncks13
-    offer_slug: zenphi-startup-program
-    offer_slug_aliases: []
-    title: Zenphi for Startups
-    summary: Eligible startups receive six months free on the Zenphi Pro plan, followed by six months at 50% off.
-    lifecycle:
-      status: active
-      effective_from: 2026-09-06T19:48:40Z
-    economics:
-      consideration:
-        kind: discount
-        description: Six months free on Pro plan, followed by six months at 50% off.
+- offer_id: off_01m1w3rvnyqq1dqe6bm7ncks13
+  offer_slug: zenphi-startup-program
+  offer_slug_aliases: []
+  title: Zenphi for Startups
+  summary: Eligible startups receive six months free on the Zenphi Pro plan, followed
+    by six months at 50% off.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:48:40Z'
+  economics:
+    consideration:
+      kind: variable
+      description: Six months free on Pro plan, followed by six months at 50% off.
     benefits:
-      - benefit_id: ben_primary
-        description: Six months free on Zenphi Pro plan
-        kind: free-period
-      - benefit_id: ben_02
-        description: Six months at 50% off
-        kind: discount
-    eligibility:
-      rule:
-        kind: manual
-        criterion_id: cri_requirement_01
-        statement: Must be an eligible startup; specific criteria are published on the vendor startup page.
-        reason: not-machine-evaluable
-    roles:
-      terms_authority_entity_id: ent_01m1w3rvnemsxp8qhhn0mszxyz
-      access_operator_entity_id: ent_01m1w3rvnemsxp8qhhn0mszxyz
-    access:
-      availability: public
-      method: form
-      url: https://zenphi.com/zenphi-for-startups/
-    source_ids:
-      - src_507dd7fabec36c8843715355ef09c651ac9986d7a011070ac96f1b5f738de1ca
+    - benefit_id: ben_046
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Must be an eligible startup; specific criteria are published on the
+        vendor startup page.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1w3rvnemsxp8qhhn0mszxyz
+    access_operator_entity_id: ent_01m1w3rvnemsxp8qhhn0mszxyz
+  access:
+    availability: public
+    method: form
+    url: https://zenphi.com/zenphi-for-startups/
+  source_ids:
+  - src_507dd7fabec36c8843715355ef09c651ac9986d7a011070ac96f1b5f738de1ca
+  program_id: prg_k5gwxgt55h7sf5gccs1512yjar

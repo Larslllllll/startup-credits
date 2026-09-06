@@ -5,46 +5,59 @@ entity:
   slug_aliases: []
   name: ELIA Asistent
   domains:
-    - value: elia-asistent.com
-      role: primary
-      valid_from: 2026-09-06T19:48:40Z
+  - value: elia-asistent.com
+    role: primary
+    valid_from: '2026-09-06T19:48:40Z'
   category: other
 profile:
-  description: ELIA Asistent provides AI-powered assistant and productivity tools for teams and businesses.
+  description: ELIA Asistent provides AI-powered assistant and productivity tools
+    for teams and businesses.
   links:
     site: https://elia-asistent.com
 sources:
-  - source_id: src_990ed196edfd7fcff2972ebcb151e04830e35628f260f5befa2323a56f6dd83d
-    url: https://elia-asistent.com/startups
+- source_id: src_990ed196edfd7fcff2972ebcb151e04830e35628f260f5befa2323a56f6dd83d
+  url: https://elia-asistent.com/startups
+programs:
+- program_id: prg_q9z4d6xaeegnfgcc7we2656s8s
+  program_slug: elia-asistent-startup-program
+  program_slug_aliases: []
+  title: ELIA Asistent Startup Discount
+  summary: Eligible early-stage teams receive 50% off standard ELIA Asistent plans
+    for their first six months after approval.
+  source_ids:
+  - src_990ed196edfd7fcff2972ebcb151e04830e35628f260f5befa2323a56f6dd83d
 offers:
-  - offer_id: off_01m1w3rvz6xrcxjb4rheajrw93
-    offer_slug: elia-asistent-startup-discount
-    offer_slug_aliases: []
-    title: ELIA Asistent Startup Discount
-    summary: Eligible early-stage teams receive 50% off standard ELIA Asistent plans for their first six months after approval.
-    lifecycle:
-      status: active
-      effective_from: 2026-09-06T19:48:40Z
-    economics:
-      consideration:
-        kind: discount
-        description: 50% off standard plans for first six months after approval.
+- offer_id: off_01m1w3rvz6xrcxjb4rheajrw93
+  offer_slug: elia-asistent-startup-discount
+  offer_slug_aliases: []
+  title: ELIA Asistent Startup Discount
+  summary: Eligible early-stage teams receive 50% off standard ELIA Asistent plans
+    for their first six months after approval.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:48:40Z'
+  economics:
+    consideration:
+      kind: variable
+      description: 50% off standard plans for first six months after approval.
     benefits:
-      - benefit_id: ben_primary
-        description: 50% off standard plans for first six months
-        kind: discount
-    eligibility:
-      rule:
-        kind: manual
-        criterion_id: cri_requirement_01
-        statement: Must be an eligible early-stage team; specific criteria are published on the vendor startup page.
-        reason: not-machine-evaluable
-    roles:
-      terms_authority_entity_id: ent_01m1w3rvyf9fv8ppmesgmmzn7j
-      access_operator_entity_id: ent_01m1w3rvyf9fv8ppmesgmmzn7j
-    access:
-      availability: public
-      method: form
-      url: https://elia-asistent.com/startups
-    source_ids:
-      - src_990ed196edfd7fcff2972ebcb151e04830e35628f260f5befa2323a56f6dd83d
+    - benefit_id: ben_013
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Must be an eligible early-stage team; specific criteria are published
+        on the vendor startup page.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1w3rvyf9fv8ppmesgmmzn7j
+    access_operator_entity_id: ent_01m1w3rvyf9fv8ppmesgmmzn7j
+  access:
+    availability: public
+    method: form
+    url: https://elia-asistent.com/startups
+  source_ids:
+  - src_990ed196edfd7fcff2972ebcb151e04830e35628f260f5befa2323a56f6dd83d
+  program_id: prg_q9z4d6xaeegnfgcc7we2656s8s

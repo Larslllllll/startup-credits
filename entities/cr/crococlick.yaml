@@ -10,61 +10,40 @@ entity:
     valid_from: '2026-09-06T19:46:41.281Z'
   category: productivity
 profile:
-  description: CrocoClick provides productivity and collaboration tools for businesses and teams.
+  description: CrocoClick provides productivity and collaboration tools for businesses
+    and teams.
   links:
     site: https://crococlick.com
 sources:
 - source_id: src_b9d2ec5e99697104baf658cbe8c618dc22f6afc9a233b2528e2a3158f653cbc6
   url: https://help.crococlick.com/articles/0820414-crococlick-startup-program
 programs:
-- program_id: prg_01m1w436149g783sff7xhts4mw
-  program_slug: crococlick-young-enterprise-program
+- program_id: prg_7vd8sm43m8yh225exmw0waa1hh
+  program_slug: crococlick-startup-program
   program_slug_aliases: []
-  title: CrocoClick Young Enterprise Program
-  summary: 'The Young Enterprise program offers qualifying companies discounted UNLIMITED access for three years: 86% in year one, 70% in year two, and 50% in year three.'
+  title: Young Enterprise Program - Tiered Discount
+  summary: 'The Young Enterprise program offers qualifying companies discounted UNLIMITED
+    access for three years: 86% in year one, 70% in year two, and 50% in year three.'
   source_ids:
   - src_b9d2ec5e99697104baf658cbe8c618dc22f6afc9a233b2528e2a3158f653cbc6
 offers:
 - offer_id: off_01m1w43614zak99pgrtns3gc9x
-  program_id: prg_01m1w436149g783sff7xhts4mw
+  program_id: prg_7vd8sm43m8yh225exmw0waa1hh
   offer_slug: young-enterprise-program-tiered-discount
   offer_slug_aliases: []
   title: Young Enterprise Program - Tiered Discount
-  summary: 'The Young Enterprise program offers qualifying companies discounted UNLIMITED access for three years: 86% in year one, 70% in year two, and 50% in year three.'
+  summary: 'The Young Enterprise program offers qualifying companies discounted UNLIMITED
+    access for three years: 86% in year one, 70% in year two, and 50% in year three.'
   lifecycle:
     status: active
     effective_from: '2026-09-06T19:46:41.281Z'
   economics:
-    benefits:
-    - benefit_id: ben_year1
-      description: 86% off UNLIMITED access in year one
-      kind: discount
-      percentage:
-        kind: exact
-        basis_points: 8600
-      duration:
-        kind: exact
-        value: P1Y
-    - benefit_id: ben_year2
-      description: 70% off UNLIMITED access in year two
-      kind: discount
-      percentage:
-        kind: exact
-        basis_points: 7000
-      duration:
-        kind: exact
-        value: P1Y
-    - benefit_id: ben_year3
-      description: 50% off UNLIMITED access in year three
-      kind: discount
-      percentage:
-        kind: exact
-        basis_points: 5000
-      duration:
-        kind: exact
-        value: P1Y
     consideration:
       kind: none
+    benefits:
+    - benefit_id: ben_009
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
   eligibility:
     rule:
       kind: all

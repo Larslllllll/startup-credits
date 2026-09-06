@@ -5,46 +5,59 @@ entity:
   slug_aliases: []
   name: E2E Networks
   domains:
-    - value: e2enetworks.com
-      role: primary
-      valid_from: 2026-09-06T19:43:17Z
+  - value: e2enetworks.com
+    role: primary
+    valid_from: '2026-09-06T19:43:17Z'
   category: hosting-infra
 profile:
-  description: E2E Networks provides cloud infrastructure and AI compute services for developers and AI startups.
+  description: E2E Networks provides cloud infrastructure and AI compute services
+    for developers and AI startups.
   links:
     site: https://www.e2enetworks.com
 sources:
-  - source_id: src_b52254ca5152c40ea9441520aa08f9e50e980b24724a5ffc3b439df914d70ade
-    url: https://www.e2enetworks.com/startup-program
+- source_id: src_b52254ca5152c40ea9441520aa08f9e50e980b24724a5ffc3b439df914d70ade
+  url: https://www.e2enetworks.com/startup-program
+programs:
+- program_id: prg_xwassz2q67hvkn259y6gc3nvn8
+  program_slug: e2e-networks-startup-program
+  program_slug_aliases: []
+  title: E2E Networks Startup Program
+  summary: Eligible bootstrapped or early-stage AI startups worldwide can receive
+    USD 5,000 in free-to-use AI Cloud credits through the AI Explorer tier.
+  source_ids:
+  - src_b52254ca5152c40ea9441520aa08f9e50e980b24724a5ffc3b439df914d70ade
 offers:
-  - offer_id: off_01m1w3rfgpsshz6n5kj99wx8zr
-    offer_slug: e2e-networks-startup-program
-    offer_slug_aliases: []
-    title: E2E Networks Startup Program
-    summary: Eligible bootstrapped or early-stage AI startups worldwide can receive USD 5,000 in free-to-use AI Cloud credits through the AI Explorer tier.
-    lifecycle:
-      status: active
-      effective_from: 2026-09-06T19:43:17Z
-    economics:
-      consideration:
-        kind: credits
-        description: USD 5,000 in AI Cloud credits through the AI Explorer tier.
+- offer_id: off_01m1w3rfgpsshz6n5kj99wx8zr
+  offer_slug: e2e-networks-startup-program
+  offer_slug_aliases: []
+  title: E2E Networks Startup Program
+  summary: Eligible bootstrapped or early-stage AI startups worldwide can receive
+    USD 5,000 in free-to-use AI Cloud credits through the AI Explorer tier.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:43:17Z'
+  economics:
+    consideration:
+      kind: variable
+      description: USD 5,000 in AI Cloud credits through the AI Explorer tier.
     benefits:
-      - benefit_id: ben_primary
-        description: USD 5,000 in free-to-use AI Cloud credits
-        kind: credits
-    eligibility:
-      rule:
-        kind: manual
-        criterion_id: cri_requirement_01
-        statement: Must be a bootstrapped or early-stage AI startup; global eligibility applies.
-        reason: not-machine-evaluable
-    roles:
-      terms_authority_entity_id: ent_01m1w3rfg60cdr0fwfzrr3yp82
-      access_operator_entity_id: ent_01m1w3rfg60cdr0fwfzrr3yp82
-    access:
-      availability: public
-      method: form
-      url: https://www.e2enetworks.com/startup-program
-    source_ids:
-      - src_b52254ca5152c40ea9441520aa08f9e50e980b24724a5ffc3b439df914d70ade
+    - benefit_id: ben_012
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Must be a bootstrapped or early-stage AI startup; global eligibility
+        applies.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1w3rfg60cdr0fwfzrr3yp82
+    access_operator_entity_id: ent_01m1w3rfg60cdr0fwfzrr3yp82
+  access:
+    availability: public
+    method: form
+    url: https://www.e2enetworks.com/startup-program
+  source_ids:
+  - src_b52254ca5152c40ea9441520aa08f9e50e980b24724a5ffc3b439df914d70ade
+  program_id: prg_xwassz2q67hvkn259y6gc3nvn8
