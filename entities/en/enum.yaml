@@ -1,0 +1,89 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1t2qhbte1px18w3a4a71spy
+  slug: enum
+  slug_aliases: []
+  name: enum
+  domains:
+  - value: enum.co
+    role: primary
+    valid_from: '2026-08-24T00:00:00.000Z'
+  category: hosting-infra
+profile:
+  description: enum provides European cloud infrastructure with production-ready Kubernetes,
+    object storage, and networking services built on own hardware in Frankfurt.
+  links:
+    site: https://enum.co
+sources:
+- source_id: src_dc446813108488eefefc93e9f7eab197a5e0a966cd0b09bb8d1c9c195cf340d8
+  url: https://enum.co/startups
+programs:
+- program_id: prg_01m1t2qhc3d8ynzzcjhwx1bgb5
+  program_slug: enum-for-startups
+  program_slug_aliases: []
+  title: enum for Startups
+  summary: enum's startup program offers European startups and scaleups up to €100,000
+    in cloud credits over 12 months on their sovereign Kubernetes platform.
+  source_ids:
+  - src_dc446813108488eefefc93e9f7eab197a5e0a966cd0b09bb8d1c9c195cf340d8
+offers:
+- offer_id: off_01m1t2qhc366amq4tehy6p56wa
+  program_id: prg_01m1t2qhc3d8ynzzcjhwx1bgb5
+  offer_slug: enum-for-startups
+  offer_slug_aliases: []
+  title: enum for Startups
+  summary: Accepted European startups and scaleups can receive up to €100,000 in cloud
+    credits over 12 months, with extension possible, plus production-ready Kubernetes
+    cluster and full platform access.
+  lifecycle:
+    status: active
+    effective_from: '2026-08-24T00:00:00.000Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Up to €100,000 in cloud credits over 12 months on enum's platform
+      kind: credit
+      value:
+        amount:
+          currency: EUR
+          minor_units: 10000000
+        kind: up-to
+    - benefit_id: ben_02
+      description: Production-ready Kubernetes cluster, highly available from day
+        one
+      kind: other
+    - benefit_id: ben_03
+      description: Full platform access including Kubernetes Engine, object storage,
+        and networking
+      kind: other
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: all
+      rules:
+      - criterion_id: cri_01
+        fact: company.headquarters
+        kind: predicate
+        operator: eq
+        statement: The startup is headquartered in the EU.
+        value:
+          type: string
+          value: EU
+      - criterion_id: cri_02
+        kind: manual
+        reason: vendor-discretion
+        statement: The startup builds a product that belongs on European cloud infrastructure.
+      - criterion_id: cri_03
+        kind: manual
+        reason: vendor-discretion
+        statement: The startup is ready to deploy production workloads, not just testing.
+  roles:
+    terms_authority_entity_id: ent_01m1t2qhbte1px18w3a4a71spy
+    access_operator_entity_id: ent_01m1t2qhbte1px18w3a4a71spy
+  access:
+    availability: public
+    method: form
+    url: https://enum.co/startups
+  source_ids:
+  - src_dc446813108488eefefc93e9f7eab197a5e0a966cd0b09bb8d1c9c195cf340d8
