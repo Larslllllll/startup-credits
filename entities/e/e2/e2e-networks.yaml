@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_99-49wqI6Wl0pDSRlGKeF
+  slug: e2e-networks
+  slug_aliases: []
+  name: E2E Networks
+  domains:
+  - value: e2enetworks.com
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: cloud
+profile:
+  description: E2E Networks provides cloud infrastructure and GPU services for Indian
+    startups.
+  links:
+    site: https://www.e2enetworks.com
+sources:
+- source_id: src_483dffaa7a1a46c99f804cfc2e281e8fef8f4a00
+  url: https://www.e2enetworks.com/meity-startup
+programs: []
+offers:
+- offer_id: off_-1fgG35xdDkc3MRYMrEen
+  offer_slug: e2e-cloud-for-meity-startups
+  offer_slug_aliases: []
+  title: E2E Cloud for MeitY Startups
+  summary: Portfolio startups in the E2E Cloud for MeitY Startups program receive
+    an initial INR 20,000 in free cloud credits, with technical support, training,
+    and other program benefits.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: INR 20,000 in free cloud credits, technical support, and training
+      kind: credit
+      value:
+        amount:
+          currency: INR
+          minor_units: 2000000
+        kind: at-least
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Startups must be MeitY-recognized portfolio companies.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_99-49wqI6Wl0pDSRlGKeF
+    access_operator_entity_id: ent_99-49wqI6Wl0pDSRlGKeF
+  access:
+    availability: public
+    method: form
+    url: https://www.e2enetworks.com/meity-startup
+  source_ids:
+  - src_483dffaa7a1a46c99f804cfc2e281e8fef8f4a00
