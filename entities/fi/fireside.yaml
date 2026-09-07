@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ks4m0fv350v5sdvh5p34w5vp7n
+  slug: fireside
+  name: Fireside
+  domains:
+    - value: fireside.fm
+      role: primary
+      valid_from: 2026-09-07T15:44:49.290872Z
+  category: communication
+profile:
+  summary: Fireside offers qualifying startups free or discounted access to their podcast hosting and creator platform.
+  links:
+    site: https://fireside.fm
+  description: Fireside offers qualifying startups free or discounted access to their podcast hosting and creator platform.
+sources:
+  - source_id: src_zwehhs9p0fha6gexskwjf7vaa2
+    url: https://fireside.fm/startup
+programs: []
+offers:
+  - offer_id: off_32vcfstn90sh88fj8ff1jwwz4v
+    offer_slug: fireside-startup-program
+    title: Fireside startup program
+    summary: Fireside offers qualifying startups free or discounted access to their podcast hosting and creator platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:44:49.290872Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their podcast hosting and creator platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ks4m0fv350v5sdvh5p34w5vp7n
+      access_operator_entity_id: ent_ks4m0fv350v5sdvh5p34w5vp7n
+    access:
+      availability: public
+      method: form
+      url: https://fireside.fm/startup
+    source_ids:
+      - src_zwehhs9p0fha6gexskwjf7vaa2
