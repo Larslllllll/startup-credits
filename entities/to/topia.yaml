@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3byzbsx3kw0e86cgsp6zm8tnq9
+  slug: topia
+  name: Topia
+  domains:
+    - value: topia.io
+      role: primary
+      valid_from: 2026-09-07T15:42:47.475325Z
+  category: communication
+profile:
+  summary: Topia offers qualifying startups free or discounted access to their virtual events and spatial platform.
+  links:
+    site: https://topia.io
+  description: Topia offers qualifying startups free or discounted access to their virtual events and spatial platform.
+sources:
+  - source_id: src_b7jjvr9z6aay7x4y6br90ezmbq
+    url: https://topia.io/startup
+programs: []
+offers:
+  - offer_id: off_hk18tzsnxmm21y07emrg3vejxh
+    offer_slug: topia-startup-program
+    title: Topia startup program
+    summary: Topia offers qualifying startups free or discounted access to their virtual events and spatial platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:42:47.475325Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their virtual events and spatial platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3byzbsx3kw0e86cgsp6zm8tnq9
+      access_operator_entity_id: ent_3byzbsx3kw0e86cgsp6zm8tnq9
+    access:
+      availability: public
+      method: form
+      url: https://topia.io/startup
+    source_ids:
+      - src_b7jjvr9z6aay7x4y6br90ezmbq
