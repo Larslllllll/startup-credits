@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_dm1en6dbhv6pyj7zcd53r56wnc
+  slug: airship
+  name: Airship
+  domains:
+    - value: airship.com
+      role: primary
+      valid_from: 2026-09-07T15:15:45.627419Z
+  category: marketing
+profile:
+  summary: Airship offers qualifying startups free or discounted access to their mobile customer engagement platform.
+  links:
+    site: https://airship.com
+  description: Airship offers qualifying startups free or discounted access to their mobile customer engagement platform.
+sources:
+  - source_id: src_d0rqjw42kzdvk1t0m660e963ds
+    url: https://airship.com/startup
+programs: []
+offers:
+  - offer_id: off_3kzsgy4n3mp6tgc0pn4wfm61km
+    offer_slug: airship-startup-program
+    title: Airship startup program
+    summary: Airship offers qualifying startups free or discounted access to their mobile customer engagement platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:15:45.627419Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to mobile customer engagement platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_dm1en6dbhv6pyj7zcd53r56wnc
+      access_operator_entity_id: ent_dm1en6dbhv6pyj7zcd53r56wnc
+    access:
+      availability: public
+      method: form
+      url: https://airship.com/startup
+    source_ids:
+      - src_d0rqjw42kzdvk1t0m660e963ds
