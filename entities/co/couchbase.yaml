@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9qva7tpjb5r5pkzfwkrb516vth
+  slug: couchbase
+  name: Couchbase
+  domains:
+    - value: couchbase.com
+      role: primary
+      valid_from: 2026-09-07T15:28:20.533200Z
+  category: databases
+profile:
+  summary: Couchbase offers qualifying startups free or discounted access to their distributed NoSQL cloud database platform.
+  links:
+    site: https://couchbase.com
+  description: Couchbase offers qualifying startups free or discounted access to their distributed NoSQL cloud database platform.
+sources:
+  - source_id: src_9qexankzckrm5yty2tg84cs39y
+    url: https://couchbase.com/startup
+programs: []
+offers:
+  - offer_id: off_21be5ve0q702gvydwjxxrgfnnk
+    offer_slug: couchbase-startup-program
+    title: Couchbase startup program
+    summary: Couchbase offers qualifying startups free or discounted access to their distributed NoSQL cloud database platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:28:20.533200Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their distributed NoSQL cloud database platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_9qva7tpjb5r5pkzfwkrb516vth
+      access_operator_entity_id: ent_9qva7tpjb5r5pkzfwkrb516vth
+    access:
+      availability: public
+      method: form
+      url: https://couchbase.com/startup
+    source_ids:
+      - src_9qexankzckrm5yty2tg84cs39y
