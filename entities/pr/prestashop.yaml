@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5d4jf6sf3vcx8vs91qbmranagb
+  slug: prestashop
+  name: PrestaShop
+  domains:
+    - value: prestashop.com
+      role: primary
+      valid_from: 2026-09-07T15:55:04.948272Z
+  category: commerce
+profile:
+  summary: PrestaShop offers qualifying startups free or discounted access to their open-source e-commerce platform.
+  links:
+    site: https://prestashop.com
+  description: PrestaShop offers qualifying startups free or discounted access to their open-source e-commerce platform.
+sources:
+  - source_id: src_c0xx9nbwfrr9xngc535kwkbqwf
+    url: https://prestashop.com/startup
+programs: []
+offers:
+  - offer_id: off_b1vmdznnvzhqm9k8nvv503fqph
+    offer_slug: prestashop-startup-program
+    title: PrestaShop startup program
+    summary: PrestaShop offers qualifying startups free or discounted access to their open-source e-commerce platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:55:04.948272Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source e-commerce platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_5d4jf6sf3vcx8vs91qbmranagb
+      access_operator_entity_id: ent_5d4jf6sf3vcx8vs91qbmranagb
+    access:
+      availability: public
+      method: form
+      url: https://prestashop.com/startup
+    source_ids:
+      - src_c0xx9nbwfrr9xngc535kwkbqwf
