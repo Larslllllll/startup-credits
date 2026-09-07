@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_n06t4cxdqe6ma3yf2094rf3f0w
+  slug: bear
+  name: Bear
+  domains:
+    - value: bear.app
+      role: primary
+      valid_from: 2026-09-07T15:39:27.340745Z
+  category: productivity
+profile:
+  summary: Bear offers qualifying startups free or discounted access to their markdown notes and writing platform.
+  links:
+    site: https://bear.app
+  description: Bear offers qualifying startups free or discounted access to their markdown notes and writing platform.
+sources:
+  - source_id: src_95sj976b4zdb65p7a7ak9dkbdv
+    url: https://bear.app/startup
+programs: []
+offers:
+  - offer_id: off_98tzf36g3d6tg8txs6bx7fw2n3
+    offer_slug: bear-startup-program
+    title: Bear startup program
+    summary: Bear offers qualifying startups free or discounted access to their markdown notes and writing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:39:27.340745Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their markdown notes and writing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_n06t4cxdqe6ma3yf2094rf3f0w
+      access_operator_entity_id: ent_n06t4cxdqe6ma3yf2094rf3f0w
+    access:
+      availability: public
+      method: form
+      url: https://bear.app/startup
+    source_ids:
+      - src_95sj976b4zdb65p7a7ak9dkbdv
