@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_1dqp67tp45qmgwt063psskmhak
+  slug: cn2
+  name: Contabo 2
+  domains:
+    - value: contabo.com
+      role: primary
+      valid_from: 2026-09-07T17:01:01.092392Z
+  category: hosting-infra
+profile:
+  summary: Contabo offers qualifying startups free or discounted access to their cloud hosting platform.
+  links:
+    site: https://contabo.com
+  description: Contabo offers qualifying startups free or discounted access to their cloud hosting platform.
+sources:
+  - source_id: src_4tyrx4q5030cjb9pr4sbnntdg7
+    url: https://contabo.com/startup
+programs: []
+offers:
+  - offer_id: off_9s37mg5e4j73589q25qn9w5kpz
+    offer_slug: cn2-startup-program
+    title: Contabo 2 startup program
+    summary: Contabo offers qualifying startups free or discounted access to their cloud hosting platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T17:01:01.092392Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to cloud hosting platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_1dqp67tp45qmgwt063psskmhak
+      access_operator_entity_id: ent_1dqp67tp45qmgwt063psskmhak
+    access:
+      availability: public
+      method: form
+      url: https://contabo.com/startup
+    source_ids:
+      - src_4tyrx4q5030cjb9pr4sbnntdg7
