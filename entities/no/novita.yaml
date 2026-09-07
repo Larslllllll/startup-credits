@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_k74yn1fcq3j649pas8199wqg1s
+  slug: novita
+  name: Novita AI
+  domains:
+    - value: novita.ai
+      role: primary
+      valid_from: 2026-09-07T13:21:33.216835Z
+  category: ai-ml
+profile:
+  summary: Novita AI offers venture-backed AI-native companies at Series B or earlier up to $10,000 in usage credits across Model APIs and Agent Sandbox.
+  links:
+    site: https://novita.ai
+  description: Novita AI is an AI inference platform providing Model APIs and Agent Sandbox. Their startup program offers venture-backed, AI-native companies at Series B or earlier up to $10,000 in usage credits redeemable for one year.
+sources:
+  - source_id: src_n5w4g10mgnds7w9nx7x5q44tvh
+    url: https://startups.novita.ai/
+programs: []
+offers:
+  - offer_id: off_k70fre38safq9ttq87ac9cmnwc
+    offer_slug: novita-ai-for-startups
+    title: Novita AI for Startups
+    summary: Venture-backed, AI-native companies at Series B or earlier receive up to $10,000 in Novita AI usage credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:21:33.216835Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $10,000 in Novita AI usage credits across Model APIs and Agent Sandbox
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a venture-backed, AI-native company at Series B or earlier. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_k74yn1fcq3j649pas8199wqg1s
+      access_operator_entity_id: ent_k74yn1fcq3j649pas8199wqg1s
+    access:
+      availability: public
+      method: form
+      url: https://startups.novita.ai/
+    source_ids:
+      - src_n5w4g10mgnds7w9nx7x5q44tvh
