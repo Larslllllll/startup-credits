@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0chwpqe2kpr4rskvjwmtf2y5s9
+  slug: oracle-startup
+  name: Oracle for Startups
+  domains:
+    - value: oracle.com
+      role: primary
+      valid_from: 2026-09-07T16:11:08.768716Z
+  category: hosting-infra
+profile:
+  summary: Oracle offers qualifying startups free credits toward their cloud infrastructure and database platform.
+  links:
+    site: https://oracle.com
+  description: Oracle offers qualifying startups free credits toward their cloud infrastructure and database platform.
+sources:
+  - source_id: src_j8z996x81zwqp2mav18yyxfd3c
+    url: https://oracle.com/startup
+programs: []
+offers:
+  - offer_id: off_a697hhxsrrx7atdskwy35228sw
+    offer_slug: oracle-startup-startup-program
+    title: Oracle for Startups startup program
+    summary: Oracle offers qualifying startups free credits toward their cloud infrastructure and database platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:11:08.768716Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free credits toward cloud infrastructure and database platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_0chwpqe2kpr4rskvjwmtf2y5s9
+      access_operator_entity_id: ent_0chwpqe2kpr4rskvjwmtf2y5s9
+    access:
+      availability: public
+      method: form
+      url: https://oracle.com/startup
+    source_ids:
+      - src_j8z996x81zwqp2mav18yyxfd3c
