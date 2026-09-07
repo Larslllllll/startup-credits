@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_04ydmz5nsfvhkhcr5wj6fjxxp5
+  slug: behance
+  name: Behance
+  domains:
+    - value: behance.net
+      role: primary
+      valid_from: 2026-09-07T15:47:18.568351Z
+  category: design
+profile:
+  summary: Behance offers qualifying startups free or discounted access to their creative portfolio and job platform.
+  links:
+    site: https://behance.net
+  description: Behance offers qualifying startups free or discounted access to their creative portfolio and job platform.
+sources:
+  - source_id: src_10ncyby1jwtvwce92gh4emee4a
+    url: https://behance.net/startup
+programs: []
+offers:
+  - offer_id: off_9kf126jhhsf7ybp4jhkexznyf2
+    offer_slug: behance-startup-program
+    title: Behance startup program
+    summary: Behance offers qualifying startups free or discounted access to their creative portfolio and job platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:47:18.568351Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their creative portfolio and job platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_04ydmz5nsfvhkhcr5wj6fjxxp5
+      access_operator_entity_id: ent_04ydmz5nsfvhkhcr5wj6fjxxp5
+    access:
+      availability: public
+      method: form
+      url: https://behance.net/startup
+    source_ids:
+      - src_10ncyby1jwtvwce92gh4emee4a
