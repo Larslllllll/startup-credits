@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_nsfveyt104rrv1k35wb0g84pdf
+  slug: twelvedata-pro
+  name: Twelve Data Pro
+  domains:
+    - value: twelvedata.com
+      role: primary
+      valid_from: 2026-09-07T16:38:33.703742Z
+  category: data-analytics
+profile:
+  summary: Twelve Data Pro offers qualifying startups free or discounted access to their financial market data and API platform.
+  links:
+    site: https://twelvedata.com
+  description: Twelve Data Pro offers qualifying startups free or discounted access to their financial market data and API platform.
+sources:
+  - source_id: src_jy37w5a4xqfhy2mv368d9aa6fa
+    url: https://twelvedata.com/startup
+programs: []
+offers:
+  - offer_id: off_201pa962ceqtvjj7bc0n8t0557
+    offer_slug: twelvedata-pro-startup-program
+    title: Twelve Data Pro startup program
+    summary: Twelve Data Pro offers qualifying startups free or discounted access to their financial market data and API platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:38:33.703742Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to financial market data and API platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_nsfveyt104rrv1k35wb0g84pdf
+      access_operator_entity_id: ent_nsfveyt104rrv1k35wb0g84pdf
+    access:
+      availability: public
+      method: form
+      url: https://twelvedata.com/startup
+    source_ids:
+      - src_jy37w5a4xqfhy2mv368d9aa6fa
