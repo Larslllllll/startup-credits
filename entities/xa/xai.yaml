@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7fy40nfkkcy4fszrs7jgrjzj6q
+  slug: xai
+  name: x.ai
+  domains:
+    - value: x.ai
+      role: primary
+      valid_from: 2026-09-07T15:59:34.007730Z
+  category: productivity
+profile:
+  summary: x.ai offers qualifying startups free or discounted access to their AI-powered meeting scheduling assistant.
+  links:
+    site: https://x.ai
+  description: x.ai offers qualifying startups free or discounted access to their AI-powered meeting scheduling assistant.
+sources:
+  - source_id: src_vhpxa6zzqy8mybntrz2yhbmf93
+    url: https://x.ai/startup
+programs: []
+offers:
+  - offer_id: off_z68zddeydtcs1jcw2s9yp84ky3
+    offer_slug: xai-startup-program
+    title: x.ai startup program
+    summary: x.ai offers qualifying startups free or discounted access to their AI-powered meeting scheduling assistant.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:59:34.007730Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI-powered meeting scheduling assistant
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_7fy40nfkkcy4fszrs7jgrjzj6q
+      access_operator_entity_id: ent_7fy40nfkkcy4fszrs7jgrjzj6q
+    access:
+      availability: public
+      method: form
+      url: https://x.ai/startup
+    source_ids:
+      - src_vhpxa6zzqy8mybntrz2yhbmf93
