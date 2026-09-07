@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_d64q8qyc6fw1w7nrxn0pjq9bhd
+  slug: crowdin
+  name: Crowdin
+  domains:
+    - value: crowdin.com
+      role: primary
+      valid_from: 2026-09-07T15:10:01.481439Z
+  category: marketing
+profile:
+  summary: Crowdin offers qualifying startups free or discounted access to their cloud-based localization and translation platform.
+  links:
+    site: https://crowdin.com
+  description: Crowdin offers qualifying startups free or discounted access to their cloud-based localization and translation platform.
+sources:
+  - source_id: src_gsmfdd240fe4cek39ggsa35sdh
+    url: https://crowdin.com/startup
+programs: []
+offers:
+  - offer_id: off_ymv3fwggg128774teyzp0sgdhe
+    offer_slug: crowdin-startup-program
+    title: Crowdin startup program
+    summary: Crowdin offers qualifying startups free or discounted access to their cloud-based localization and translation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:10:01.481439Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to cloud-based localization and translation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_d64q8qyc6fw1w7nrxn0pjq9bhd
+      access_operator_entity_id: ent_d64q8qyc6fw1w7nrxn0pjq9bhd
+    access:
+      availability: public
+      method: form
+      url: https://crowdin.com/startup
+    source_ids:
+      - src_gsmfdd240fe4cek39ggsa35sdh
