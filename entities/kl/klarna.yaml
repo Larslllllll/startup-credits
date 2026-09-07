@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0vnsgk5d4xbqwdaxepvfy2q5w1
+  slug: klarna
+  name: Klarna
+  domains:
+    - value: klarna.com
+      role: primary
+      valid_from: 2026-09-07T15:18:07.796422Z
+  category: payments-fintech
+profile:
+  summary: Klarna offers qualifying startups free or discounted access to their buy now pay later and payment platform.
+  links:
+    site: https://klarna.com
+  description: Klarna offers qualifying startups free or discounted access to their buy now pay later and payment platform.
+sources:
+  - source_id: src_sqg7vdmh6svf3jp7skts2nr25w
+    url: https://klarna.com/startup
+programs: []
+offers:
+  - offer_id: off_2rm1xc5qxf7xqb7sdyktdffxq4
+    offer_slug: klarna-startup-program
+    title: Klarna startup program
+    summary: Klarna offers qualifying startups free or discounted access to their buy now pay later and payment platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:18:07.796422Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their buy now pay later and payment platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_0vnsgk5d4xbqwdaxepvfy2q5w1
+      access_operator_entity_id: ent_0vnsgk5d4xbqwdaxepvfy2q5w1
+    access:
+      availability: public
+      method: form
+      url: https://klarna.com/startup
+    source_ids:
+      - src_sqg7vdmh6svf3jp7skts2nr25w
