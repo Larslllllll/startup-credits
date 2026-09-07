@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_8rn71vpjezbm2e994jyg5cy2z2
+  slug: makersuite
+  name: MakerSuite
+  domains:
+    - value: makersuite.google.com
+      role: primary
+      valid_from: 2026-09-07T16:14:51.671623Z
+  category: ai-ml
+profile:
+  summary: MakerSuite offers qualifying startups free or discounted access to their AI prototyping and experimentation platform.
+  links:
+    site: https://makersuite.google.com
+  description: MakerSuite offers qualifying startups free or discounted access to their AI prototyping and experimentation platform.
+sources:
+  - source_id: src_x3rqnm66acqb5abg0tpp5vcz2d
+    url: https://makersuite.google.com/startup
+programs: []
+offers:
+  - offer_id: off_095cybt5ktm0tnp37qy2cdpx7k
+    offer_slug: makersuite-startup-program
+    title: MakerSuite startup program
+    summary: MakerSuite offers qualifying startups free or discounted access to their AI prototyping and experimentation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:14:51.671623Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI prototyping and experimentation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_8rn71vpjezbm2e994jyg5cy2z2
+      access_operator_entity_id: ent_8rn71vpjezbm2e994jyg5cy2z2
+    access:
+      availability: public
+      method: form
+      url: https://makersuite.google.com/startup
+    source_ids:
+      - src_x3rqnm66acqb5abg0tpp5vcz2d
