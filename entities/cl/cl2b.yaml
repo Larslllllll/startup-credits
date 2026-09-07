@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_w1naae0jr0btyxm8qjhkpbnzp9
+  slug: cl2b
+  name: Claude 3.5
+  domains:
+    - value: anthropic.com
+      role: primary
+      valid_from: 2026-09-07T16:48:58.242283Z
+  category: ai-ml
+profile:
+  summary: Claude 3.5 offers qualifying startups free or discounted access to their enhanced AI model platform.
+  links:
+    site: https://anthropic.com
+  description: Claude 3.5 offers qualifying startups free or discounted access to their enhanced AI model platform.
+sources:
+  - source_id: src_v4ahr7ws5jqe0ve108wfvy5wn4
+    url: https://anthropic.com/startup
+programs: []
+offers:
+  - offer_id: off_m9sdte5vra7cqg6e41ccz2bqt3
+    offer_slug: cl2b-startup-program
+    title: Claude 3.5 startup program
+    summary: Claude 3.5 offers qualifying startups free or discounted access to their enhanced AI model platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:48:58.242283Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to enhanced AI model platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_w1naae0jr0btyxm8qjhkpbnzp9
+      access_operator_entity_id: ent_w1naae0jr0btyxm8qjhkpbnzp9
+    access:
+      availability: public
+      method: form
+      url: https://anthropic.com/startup
+    source_ids:
+      - src_v4ahr7ws5jqe0ve108wfvy5wn4
