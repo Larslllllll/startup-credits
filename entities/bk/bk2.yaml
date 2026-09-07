@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3r0qrcp89mmydf0xzw2zqzx11g
+  slug: bk2
+  name: Buildkite 2
+  domains:
+    - value: buildkite.com
+      role: primary
+      valid_from: 2026-09-07T17:00:02.933388Z
+  category: ci-cd
+profile:
+  summary: Buildkite offers qualifying startups free or discounted access to their CI/CD and testing platform.
+  links:
+    site: https://buildkite.com
+  description: Buildkite offers qualifying startups free or discounted access to their CI/CD and testing platform.
+sources:
+  - source_id: src_85cwj2yqfxr34drprk86ac5dxp
+    url: https://buildkite.com/startup
+programs: []
+offers:
+  - offer_id: off_xr0xq09k41yhcb85hzy6kyd4x4
+    offer_slug: bk2-startup-program
+    title: Buildkite 2 startup program
+    summary: Buildkite offers qualifying startups free or discounted access to their CI/CD and testing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T17:00:02.933388Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to CI/CD and testing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3r0qrcp89mmydf0xzw2zqzx11g
+      access_operator_entity_id: ent_3r0qrcp89mmydf0xzw2zqzx11g
+    access:
+      availability: public
+      method: form
+      url: https://buildkite.com/startup
+    source_ids:
+      - src_85cwj2yqfxr34drprk86ac5dxp
