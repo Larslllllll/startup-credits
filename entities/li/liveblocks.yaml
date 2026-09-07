@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_2bwzt1d9cb5ehpr38gtzj4yztb
+  slug: liveblocks
+  name: Liveblocks
+  domains:
+    - value: liveblocks.io
+      role: primary
+      valid_from: 2026-09-07T12:39:14.514642Z
+  category: devtools-other
+profile:
+  summary: Liveblocks is a real-time collaboration infrastructure offering a startup program discount with an application form. Discount percentage and duration are not publicly published.
+  links:
+    site: https://liveblocks.io
+  description: Liveblocks is a real-time collaboration infrastructure API for building multiplayer applications. Their startup program offers a discount for qualifying startups; specific percentage and duration are not publicly published and require application.
+sources:
+  - source_id: src_5t50g6jy1136vt8vj0dxae07y7
+    url: https://liveblocks.io/startups
+programs: []
+offers:
+  - offer_id: off_pq3bv4mge7vx4q76kj698f6m04
+    offer_slug: liveblocks-startup-program
+    title: Liveblocks startup program
+    summary: Liveblocks offers a startup program discount for qualifying startups. Specific percentage and duration are published upon application.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T12:39:14.514642Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Startup program discount for qualifying startups
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required to receive specific terms.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_2bwzt1d9cb5ehpr38gtzj4yztb
+      access_operator_entity_id: ent_2bwzt1d9cb5ehpr38gtzj4yztb
+    access:
+      availability: public
+      method: form
+      url: https://liveblocks.io/startups
+    source_ids:
+      - src_5t50g6jy1136vt8vj0dxae07y7
