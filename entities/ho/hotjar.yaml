@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gv652apygt9s1bdtrdhs7c3w5h
+  slug: hotjar
+  name: Hotjar
+  domains:
+    - value: hotjar.com
+      role: primary
+      valid_from: 2026-09-07T15:34:44.966158Z
+  category: data-analytics
+profile:
+  summary: Hotjar offers qualifying startups free or discounted access to their product insights and behavior analytics platform.
+  links:
+    site: https://hotjar.com
+  description: Hotjar offers qualifying startups free or discounted access to their product insights and behavior analytics platform.
+sources:
+  - source_id: src_mvcj7ctwxwxdrpzympqndsq7y5
+    url: https://hotjar.com/startup
+programs: []
+offers:
+  - offer_id: off_q4prdsg7hnh25pts0kjetbqsg0
+    offer_slug: hotjar-startup-program
+    title: Hotjar startup program
+    summary: Hotjar offers qualifying startups free or discounted access to their product insights and behavior analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:34:44.966158Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their product insights and behavior analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_gv652apygt9s1bdtrdhs7c3w5h
+      access_operator_entity_id: ent_gv652apygt9s1bdtrdhs7c3w5h
+    access:
+      availability: public
+      method: form
+      url: https://hotjar.com/startup
+    source_ids:
+      - src_mvcj7ctwxwxdrpzympqndsq7y5
