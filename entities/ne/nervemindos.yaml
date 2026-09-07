@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3m13qga3smdjnbppdvq24pg1a2
+  slug: nervemindos
+  name: NerveMindOS
+  domains:
+    - value: nervemindos.com
+      role: primary
+      valid_from: 2026-09-07T13:34:58.216166Z
+  category: ai-ml
+profile:
+  summary: NerveMindOS offers early-stage AI startups 50% off one eligible self-serve CGOS plan and billing interval for 12 months.
+  links:
+    site: https://nervemindos.com
+  description: NerveMindOS provides AI-enabled platform tools. Their startup program offers qualifying early-stage AI startups and small businesses 50% off one eligible self-serve CGOS plan and billing interval for 12 months.
+sources:
+  - source_id: src_w3hvfgftnbm7dwygx9gfp7j18v
+    url: https://nervemindos.com
+programs: []
+offers:
+  - offer_id: off_5m3yw5yq3s0dj13ffbneyg46e1
+    offer_slug: nervemindos-startup-program
+    title: NerveMindOS startup program
+    summary: Early-stage AI startups receive 50% off one eligible self-serve CGOS plan and billing interval for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:34:58.216166Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 50% off one eligible self-serve CGOS plan and billing interval for 12 months
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage AI startup or small business. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3m13qga3smdjnbppdvq24pg1a2
+      access_operator_entity_id: ent_3m13qga3smdjnbppdvq24pg1a2
+    access:
+      availability: public
+      method: form
+      url: https://nervemindos.com
+    source_ids:
+      - src_w3hvfgftnbm7dwygx9gfp7j18v
