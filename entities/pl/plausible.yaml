@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_2yvx3fm6zx2tf44x029b149pg0
+  slug: plausible
+  name: Plausible
+  domains:
+    - value: plausible.io
+      role: primary
+      valid_from: 2026-09-07T15:16:39.848985Z
+  category: data-analytics
+profile:
+  summary: Plausible offers qualifying startups free or discounted access to their privacy-friendly web analytics platform.
+  links:
+    site: https://plausible.io
+  description: Plausible offers qualifying startups free or discounted access to their privacy-friendly web analytics platform.
+sources:
+  - source_id: src_1ybc76mfd791xg6eqzp25d7d8x
+    url: https://plausible.io/startup
+programs: []
+offers:
+  - offer_id: off_vdhc1hf52v69qz10116qv53pjs
+    offer_slug: plausible-startup-program
+    title: Plausible startup program
+    summary: Plausible offers qualifying startups free or discounted access to their privacy-friendly web analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:16:39.848985Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their privacy-friendly web analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_2yvx3fm6zx2tf44x029b149pg0
+      access_operator_entity_id: ent_2yvx3fm6zx2tf44x029b149pg0
+    access:
+      availability: public
+      method: form
+      url: https://plausible.io/startup
+    source_ids:
+      - src_1ybc76mfd791xg6eqzp25d7d8x
