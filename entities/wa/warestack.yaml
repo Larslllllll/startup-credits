@@ -1,0 +1,54 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9mz7ry8268rzjev7qn6x3f5het
+  slug: warestack
+  slug_aliases:
+    - ware-stack
+  name: Warestack
+  domains:
+    - value: warestack.com
+      role: primary
+      valid_from: 2026-09-07T11:39:13.135155Z
+  category: devtools-other
+profile:
+  summary: Warestack is a delivery intelligence and governance layer for GitHub organizations that offers a free 6-month Starter plan to qualifying startups, saving up to $2,000.
+  description: Warestack is a delivery intelligence and governance layer for GitHub organizations, providing deterministic rule-based change routing and risk flagging scoped to teams, repositories, or subpaths. Their public startup program grants qualifying companies a 6-month free Starter plan, with stated savings of up to $2,000.
+  links:
+    site: https://www.warestack.com
+sources:
+  - source_id: src_f91ejhdwmpteryg3hhdsycgwf2
+    url: https://www.warestack.com/startup-program
+programs: []
+offers:
+  - offer_id: off_9nfhjw2wnqynmnvg11ahq5h96g
+    offer_slug: warestack-startup-program
+    offer_slug_aliases:
+      - warestack-starter-free-6-months
+    title: Warestack Startup Program
+    summary: Qualifying companies receive a 6-month free Starter plan on Warestack's delivery intelligence and governance layer, with stated savings of up to $2,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T11:39:13.135155Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 6 months of the Starter plan free, with up to $2,000 in stated savings
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Company under 5 years old, under $2 million in funding or revenue, fewer than 50 employees, not a current paying customer, and a work email is required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_9mz7ry8268rzjev7qn6x3f5het
+      access_operator_entity_id: ent_9mz7ry8268rzjev7qn6x3f5het
+    access:
+      availability: public
+      method: form
+      url: https://www.warestack.com/startup-program
+    source_ids:
+      - src_f91ejhdwmpteryg3hhdsycgwf2
