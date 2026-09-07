@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_frr33r2gsrffchxntr8qxyrqra
+  slug: jina
+  name: Jina AI
+  domains:
+    - value: jina.ai
+      role: primary
+      valid_from: 2026-09-07T15:04:03.278984Z
+  category: ai-ml
+profile:
+  summary: Jina AI offers qualifying startups free or discounted access to their open-source neural search and embedding platform.
+  links:
+    site: https://jina.ai
+  description: Jina AI offers qualifying startups free or discounted access to their open-source neural search and embedding platform.
+sources:
+  - source_id: src_73sd0gk231s0pdrr07a306rq01
+    url: https://jina.ai/startup
+programs: []
+offers:
+  - offer_id: off_z6cw8taq48375815tfzj8ffx7t
+    offer_slug: jina-startup-program
+    title: Jina AI startup program
+    summary: Jina AI offers qualifying startups free or discounted access to their open-source neural search and embedding platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:04:03.278984Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source neural search and embedding platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_frr33r2gsrffchxntr8qxyrqra
+      access_operator_entity_id: ent_frr33r2gsrffchxntr8qxyrqra
+    access:
+      availability: public
+      method: form
+      url: https://jina.ai/startup
+    source_ids:
+      - src_73sd0gk231s0pdrr07a306rq01
