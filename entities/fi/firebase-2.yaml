@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7yc0v62vbw1s85c7p7vk9w4dcr
+  slug: firebase-2
+  name: Firebase Pro
+  domains:
+    - value: firebase.google.com
+      role: primary
+      valid_from: 2026-09-07T15:27:00.332935Z
+  category: devtools-other
+profile:
+  summary: Firebase Pro offers qualifying startups free or discounted access to their mobile and web application development platform.
+  links:
+    site: https://firebase.google.com
+  description: Firebase Pro offers qualifying startups free or discounted access to their mobile and web application development platform.
+sources:
+  - source_id: src_tfepq03sg6dpj11w5h05zqk4g6
+    url: https://firebase.google.com/startup
+programs: []
+offers:
+  - offer_id: off_fqqnqzmzcyfxmb72v4tjfce0bh
+    offer_slug: firebase-2-startup-program
+    title: Firebase Pro startup program
+    summary: Firebase Pro offers qualifying startups free or discounted access to their mobile and web application development platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:27:00.332935Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their mobile and web application development platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_7yc0v62vbw1s85c7p7vk9w4dcr
+      access_operator_entity_id: ent_7yc0v62vbw1s85c7p7vk9w4dcr
+    access:
+      availability: public
+      method: form
+      url: https://firebase.google.com/startup
+    source_ids:
+      - src_tfepq03sg6dpj11w5h05zqk4g6
