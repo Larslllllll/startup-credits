@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ctk2c3ws8zxc3mffbbzc5en9vj
+  slug: mt2
+  name: Matomo 2
+  domains:
+    - value: matomo.org
+      role: primary
+      valid_from: 2026-09-07T16:57:02.040306Z
+  category: data-analytics
+profile:
+  summary: Matomo offers qualifying startups free or discounted access to their open-source web analytics platform.
+  links:
+    site: https://matomo.org
+  description: Matomo offers qualifying startups free or discounted access to their open-source web analytics platform.
+sources:
+  - source_id: src_gjcfa868t47je2eq07h19hv4ej
+    url: https://matomo.org/startup
+programs: []
+offers:
+  - offer_id: off_q6k1am34rnjcw8dcmfv2ypc5r7
+    offer_slug: mt2-startup-program
+    title: Matomo 2 startup program
+    summary: Matomo offers qualifying startups free or discounted access to their open-source web analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:57:02.040306Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source web analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ctk2c3ws8zxc3mffbbzc5en9vj
+      access_operator_entity_id: ent_ctk2c3ws8zxc3mffbbzc5en9vj
+    access:
+      availability: public
+      method: form
+      url: https://matomo.org/startup
+    source_ids:
+      - src_gjcfa868t47je2eq07h19hv4ej
