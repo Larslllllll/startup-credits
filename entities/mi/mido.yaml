@@ -1,0 +1,55 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5kgvj2cvcfsjerhdq2t2se35z6
+  slug: mido
+  slug_aliases:
+    - heymido
+    - mido-startup
+  name: Mido
+  domains:
+    - value: heymido.com
+      role: primary
+      valid_from: 2026-09-07T11:54:43.150155Z
+  category: other
+profile:
+  summary: Mido is an AI platform offering selected venture-backed teams $5,000–$25,000 in platform credits, priority support, and strategy guidance through their startup program.
+  description: Mido is an AI platform providing tools and infrastructure for development teams. Their startup program grants qualifying venture-backed teams between $5,000 and $25,000 in platform credits, along with priority support and strategy guidance. Applications are reviewed individually.
+  links:
+    site: https://heymido.com
+sources:
+  - source_id: src_zej8025378n89fchhv738af29x
+    url: https://heymido.com/startups
+programs: []
+offers:
+  - offer_id: off_v5nky2kajg24swkjfjypg7mxn4
+    offer_slug: mido-startup-program
+    offer_slug_aliases:
+      - mido-platform-credits
+    title: Mido Startup Program
+    summary: Selected venture-backed teams receive $5,000–$25,000 in Mido platform credits, priority support, and strategy guidance.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T11:54:43.150155Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $5,000–$25,000 in platform credits, priority support, and strategy guidance
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a selected venture-backed team. Application is reviewed individually.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_5kgvj2cvcfsjerhdq2t2se35z6
+      access_operator_entity_id: ent_5kgvj2cvcfsjerhdq2t2se35z6
+    access:
+      availability: public
+      method: form
+      url: https://heymido.com/startups
+    source_ids:
+      - src_zej8025378n89fchhv738af29x
