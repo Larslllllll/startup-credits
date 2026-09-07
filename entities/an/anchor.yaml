@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_58xjtj5d11v6heba7k09a004mb
+  slug: anchor
+  name: Anchor
+  domains:
+    - value: anchor.fm
+      role: primary
+      valid_from: 2026-09-07T15:43:34.674044Z
+  category: communication
+profile:
+  summary: Anchor offers qualifying startups free or discounted access to their podcast creation and distribution platform.
+  links:
+    site: https://anchor.fm
+  description: Anchor offers qualifying startups free or discounted access to their podcast creation and distribution platform.
+sources:
+  - source_id: src_m0ws8evgmm2jsn0g43xbn17j5k
+    url: https://anchor.fm/startup
+programs: []
+offers:
+  - offer_id: off_25t2ds5awx75ncwfxtjgx93s84
+    offer_slug: anchor-startup-program
+    title: Anchor startup program
+    summary: Anchor offers qualifying startups free or discounted access to their podcast creation and distribution platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:43:34.674044Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their podcast creation and distribution platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_58xjtj5d11v6heba7k09a004mb
+      access_operator_entity_id: ent_58xjtj5d11v6heba7k09a004mb
+    access:
+      availability: public
+      method: form
+      url: https://anchor.fm/startup
+    source_ids:
+      - src_m0ws8evgmm2jsn0g43xbn17j5k
