@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_27vcd78vanwdb3137p8wwnh3fg
+  slug: erly-workr-hr
+  name: erly WORKR
+  domains:
+    - value: erly.app
+      role: primary
+      valid_from: 2026-09-07T16:41:02.034405Z
+  category: hr-people
+profile:
+  summary: erly WORKR offers qualifying startups free or discounted access to their workforce management and scheduling platform.
+  links:
+    site: https://erly.app
+  description: erly WORKR offers qualifying startups free or discounted access to their workforce management and scheduling platform.
+sources:
+  - source_id: src_3zyptskvb06czv25matfsg9k9k
+    url: https://erly.app/startup
+programs: []
+offers:
+  - offer_id: off_zy1k6n472dcgk80qpbygcefm1h
+    offer_slug: erly-workr-hr-startup-program
+    title: erly WORKR startup program
+    summary: erly WORKR offers qualifying startups free or discounted access to their workforce management and scheduling platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:41:02.034405Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to workforce management and scheduling platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_27vcd78vanwdb3137p8wwnh3fg
+      access_operator_entity_id: ent_27vcd78vanwdb3137p8wwnh3fg
+    access:
+      availability: public
+      method: form
+      url: https://erly.app/startup
+    source_ids:
+      - src_3zyptskvb06czv25matfsg9k9k
