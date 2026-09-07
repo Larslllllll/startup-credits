@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7y7x82hskthcktv8wyk50gs9t0
+  slug: futureproof-legal
+  name: Futureproof
+  domains:
+    - value: futureproof.com
+      role: primary
+      valid_from: 2026-09-07T16:30:52.738600Z
+  category: legal-compliance
+profile:
+  summary: Futureproof offers qualifying startups free or discounted access to their insurance technology platform.
+  links:
+    site: https://futureproof.com
+  description: Futureproof offers qualifying startups free or discounted access to their insurance technology platform.
+sources:
+  - source_id: src_x6mmf0qywqngfnctvbvj7371er
+    url: https://futureproof.com/startup
+programs: []
+offers:
+  - offer_id: off_m6sxj7b3jtxf2hethwh3xbc9t2
+    offer_slug: futureproof-legal-startup-program
+    title: Futureproof startup program
+    summary: Futureproof offers qualifying startups free or discounted access to their insurance technology platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:30:52.738600Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to insurance technology platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_7y7x82hskthcktv8wyk50gs9t0
+      access_operator_entity_id: ent_7y7x82hskthcktv8wyk50gs9t0
+    access:
+      availability: public
+      method: form
+      url: https://futureproof.com/startup
+    source_ids:
+      - src_x6mmf0qywqngfnctvbvj7371er
