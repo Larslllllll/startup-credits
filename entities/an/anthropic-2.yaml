@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ffy0w7qw7zw6740p7bryn7svcb
+  slug: anthropic-2
+  name: Anthropic Pro
+  domains:
+    - value: anthropic.com
+      role: primary
+      valid_from: 2026-09-07T15:22:59.725743Z
+  category: ai-ml
+profile:
+  summary: Anthropic Pro offers qualifying startups free or discounted access to their AI model API and safety platform.
+  links:
+    site: https://anthropic.com
+  description: Anthropic Pro offers qualifying startups free or discounted access to their AI model API and safety platform.
+sources:
+  - source_id: src_faysv7g0tjevhgnm710xmkgqyh
+    url: https://anthropic.com/startup
+programs: []
+offers:
+  - offer_id: off_0qf7j7wvd6kg7mrrdtqw0rby8z
+    offer_slug: anthropic-2-startup-program
+    title: Anthropic Pro startup program
+    summary: Anthropic Pro offers qualifying startups free or discounted access to their AI model API and safety platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:22:59.725743Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI model API and safety platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ffy0w7qw7zw6740p7bryn7svcb
+      access_operator_entity_id: ent_ffy0w7qw7zw6740p7bryn7svcb
+    access:
+      availability: public
+      method: form
+      url: https://anthropic.com/startup
+    source_ids:
+      - src_faysv7g0tjevhgnm710xmkgqyh
