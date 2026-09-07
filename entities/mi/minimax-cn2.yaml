@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_mpq53y9tdfwvnb7xy8r1kh87yt
+  slug: minimax-cn2
+  name: MiniMax Chinese
+  domains:
+    - value: minimax.chat
+      role: primary
+      valid_from: 2026-09-07T16:15:47.069057Z
+  category: ai-ml
+profile:
+  summary: MiniMax Chinese offers qualifying startups free or discounted access to their Chinese AI API platform.
+  links:
+    site: https://minimax.chat
+  description: MiniMax Chinese offers qualifying startups free or discounted access to their Chinese AI API platform.
+sources:
+  - source_id: src_h8d4vsynthkgq335tktxfym4x7
+    url: https://minimax.chat/startup
+programs: []
+offers:
+  - offer_id: off_4c47ezbtaet33hd3z3g96z2qn0
+    offer_slug: minimax-cn2-startup-program
+    title: MiniMax Chinese startup program
+    summary: MiniMax Chinese offers qualifying startups free or discounted access to their Chinese AI API platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:15:47.069057Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to Chinese AI API platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_mpq53y9tdfwvnb7xy8r1kh87yt
+      access_operator_entity_id: ent_mpq53y9tdfwvnb7xy8r1kh87yt
+    access:
+      availability: public
+      method: form
+      url: https://minimax.chat/startup
+    source_ids:
+      - src_h8d4vsynthkgq335tktxfym4x7
