@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_qspt5brr0km0b51e3j8x0jj6k7
+  slug: 123formbuilder
+  name: 123 Form Builder
+  domains:
+    - value: 123formbuilder.com
+      role: primary
+      valid_from: 2026-09-07T15:58:11.899616Z
+  category: no-code
+profile:
+  summary: 123 Form Builder offers qualifying startups free or discounted access to their online form creation platform.
+  links:
+    site: https://123formbuilder.com
+  description: 123 Form Builder offers qualifying startups free or discounted access to their online form creation platform.
+sources:
+  - source_id: src_zbzwygxqjrjfpxty0wt3fvqkyt
+    url: https://123formbuilder.com/startup
+programs: []
+offers:
+  - offer_id: off_t4mtx7cm480783nq9se8pqypjv
+    offer_slug: 123formbuilder-startup-program
+    title: 123 Form Builder startup program
+    summary: 123 Form Builder offers qualifying startups free or discounted access to their online form creation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:58:11.899616Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their online form creation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_qspt5brr0km0b51e3j8x0jj6k7
+      access_operator_entity_id: ent_qspt5brr0km0b51e3j8x0jj6k7
+    access:
+      availability: public
+      method: form
+      url: https://123formbuilder.com/startup
+    source_ids:
+      - src_zbzwygxqjrjfpxty0wt3fvqkyt
