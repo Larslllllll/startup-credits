@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7y49ydp64je0jcrqr88bzabh3s
+  slug: cockroachdb
+  name: CockroachDB
+  domains:
+    - value: cockroachlabs.com
+      role: primary
+      valid_from: 2026-09-07T15:02:49.423578Z
+  category: databases
+profile:
+  summary: CockroachDB offers qualifying startups free credits toward their distributed SQL database cloud platform.
+  links:
+    site: https://cockroachlabs.com
+  description: CockroachDB offers qualifying startups free credits toward their distributed SQL database cloud platform.
+sources:
+  - source_id: src_kct8m7nv5dp139dxrbwkf7a3g6
+    url: https://cockroachlabs.com/startup
+programs: []
+offers:
+  - offer_id: off_hyrrx36yfnd27z4zjrthjgj2fc
+    offer_slug: cockroachdb-startup-program
+    title: CockroachDB startup program
+    summary: CockroachDB offers qualifying startups free credits toward their distributed SQL database cloud platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:02:49.423578Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free credits for distributed SQL database cloud platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_7y49ydp64je0jcrqr88bzabh3s
+      access_operator_entity_id: ent_7y49ydp64je0jcrqr88bzabh3s
+    access:
+      availability: public
+      method: form
+      url: https://cockroachlabs.com/startup
+    source_ids:
+      - src_kct8m7nv5dp139dxrbwkf7a3g6
