@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_kk4sfqqy0b1e6rnfwe027r40fb
+  slug: builder-io
+  name: Builder.io
+  domains:
+    - value: builder.io
+      role: primary
+      valid_from: 2026-09-07T15:10:20.996042Z
+  category: no-code
+profile:
+  summary: Builder.io offers qualifying startups free or discounted access to their headless CMS and visual page builder platform.
+  links:
+    site: https://builder.io
+  description: Builder.io offers qualifying startups free or discounted access to their headless CMS and visual page builder platform.
+sources:
+  - source_id: src_zpy41hvc890w4ytmrzda0gqqjz
+    url: https://builder.io/startup
+programs: []
+offers:
+  - offer_id: off_nq4wvm2a5mx60283dnbs2ed4n7
+    offer_slug: builder-io-startup-program
+    title: Builder.io startup program
+    summary: Builder.io offers qualifying startups free or discounted access to their headless CMS and visual page builder platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:10:20.996042Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to headless CMS and visual page builder platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_kk4sfqqy0b1e6rnfwe027r40fb
+      access_operator_entity_id: ent_kk4sfqqy0b1e6rnfwe027r40fb
+    access:
+      availability: public
+      method: form
+      url: https://builder.io/startup
+    source_ids:
+      - src_zpy41hvc890w4ytmrzda0gqqjz
