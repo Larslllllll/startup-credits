@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_36415z1tka8emcyzmyzf066t29
+  slug: cleanup
+  name: Cleanup.pictures
+  domains:
+    - value: cleanup.pictures
+      role: primary
+      valid_from: 2026-09-07T15:22:42.342582Z
+  category: ai-ml
+profile:
+  summary: Cleanup.pictures offers qualifying startups free or discounted access to their AI-powered image retouching and object removal platform.
+  links:
+    site: https://cleanup.pictures
+  description: Cleanup.pictures offers qualifying startups free or discounted access to their AI-powered image retouching and object removal platform.
+sources:
+  - source_id: src_kekfr48gnk42vryejew18c85vt
+    url: https://cleanup.pictures/startup
+programs: []
+offers:
+  - offer_id: off_aem5wmds0vf1w1a1bb10k46ryk
+    offer_slug: cleanup-startup-program
+    title: Cleanup.pictures startup program
+    summary: Cleanup.pictures offers qualifying startups free or discounted access to their AI-powered image retouching and object removal platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:22:42.342582Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI-powered image retouching and object removal platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_36415z1tka8emcyzmyzf066t29
+      access_operator_entity_id: ent_36415z1tka8emcyzmyzf066t29
+    access:
+      availability: public
+      method: form
+      url: https://cleanup.pictures/startup
+    source_ids:
+      - src_kekfr48gnk42vryejew18c85vt
