@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_26eyw171ftbkm0fswhk0ntrsfs
+  slug: mobot-qa
+  name: Mobot QA
+  domains:
+    - value: mobot.io
+      role: primary
+      valid_from: 2026-09-07T16:39:43.076816Z
+  category: devtools-other
+profile:
+  summary: Mobot offers qualifying startups free or discounted access to their mobile QA testing platform for YC startups.
+  links:
+    site: https://mobot.io
+  description: Mobot offers qualifying startups free or discounted access to their mobile QA testing platform for YC startups.
+sources:
+  - source_id: src_3cgeyhqjexh4c8ayf2dtddy0z0
+    url: https://mobot.io/startup
+programs: []
+offers:
+  - offer_id: off_ddmmqdngg5ks5at3jdzftwy01z
+    offer_slug: mobot-qa-startup-program
+    title: Mobot QA startup program
+    summary: Mobot offers qualifying startups free or discounted access to their mobile QA testing platform for YC startups.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:39:43.076816Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to mobile QA testing platform for YC startups
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_26eyw171ftbkm0fswhk0ntrsfs
+      access_operator_entity_id: ent_26eyw171ftbkm0fswhk0ntrsfs
+    access:
+      availability: public
+      method: form
+      url: https://mobot.io/startup
+    source_ids:
+      - src_3cgeyhqjexh4c8ayf2dtddy0z0
