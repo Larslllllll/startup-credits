@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_58gqnfkwxba2nsxm4dn1wbdbjd
+  slug: keygraph-dev
+  name: Keygraph
+  domains:
+    - value: keygraph.com
+      role: primary
+      valid_from: 2026-09-07T16:30:47.301601Z
+  category: devtools-other
+profile:
+  summary: Keygraph offers qualifying startups free or discounted access to their community program and code review platform.
+  links:
+    site: https://keygraph.com
+  description: Keygraph offers qualifying startups free or discounted access to their community program and code review platform.
+sources:
+  - source_id: src_mbapwhayawp1gr70jqpe7kb6gw
+    url: https://keygraph.com/startup
+programs: []
+offers:
+  - offer_id: off_nemxhbx64fendf2r0x34n0ax2c
+    offer_slug: keygraph-dev-startup-program
+    title: Keygraph startup program
+    summary: Keygraph offers qualifying startups free or discounted access to their community program and code review platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:30:47.301601Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to community program and code review platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_58gqnfkwxba2nsxm4dn1wbdbjd
+      access_operator_entity_id: ent_58gqnfkwxba2nsxm4dn1wbdbjd
+    access:
+      availability: public
+      method: form
+      url: https://keygraph.com/startup
+    source_ids:
+      - src_mbapwhayawp1gr70jqpe7kb6gw
