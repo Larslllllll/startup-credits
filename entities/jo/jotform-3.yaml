@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_kqaddnkega9zgc8ntjd66gxen1
+  slug: jotform-3
+  name: JotForm Plus
+  domains:
+    - value: jotform.com
+      role: primary
+      valid_from: 2026-09-07T15:59:04.983890Z
+  category: no-code
+profile:
+  summary: JotForm Plus offers qualifying startups free or discounted access to their online form builder and data collection platform.
+  links:
+    site: https://jotform.com
+  description: JotForm Plus offers qualifying startups free or discounted access to their online form builder and data collection platform.
+sources:
+  - source_id: src_36ptkb4je8gap8ae1e08w6wrk1
+    url: https://jotform.com/startup
+programs: []
+offers:
+  - offer_id: off_sr84x4fk3pjz6r139qk2n0ddmp
+    offer_slug: jotform-3-startup-program
+    title: JotForm Plus startup program
+    summary: JotForm Plus offers qualifying startups free or discounted access to their online form builder and data collection platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:59:04.983890Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their online form builder and data collection platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_kqaddnkega9zgc8ntjd66gxen1
+      access_operator_entity_id: ent_kqaddnkega9zgc8ntjd66gxen1
+    access:
+      availability: public
+      method: form
+      url: https://jotform.com/startup
+    source_ids:
+      - src_36ptkb4je8gap8ae1e08w6wrk1
