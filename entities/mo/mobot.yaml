@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ab70574fbw625fk79jb98zg1vq
+  slug: mobot
+  name: Mobot
+  domains:
+    - value: mobot.io
+      role: primary
+      valid_from: 2026-09-07T12:35:54.412432Z
+  category: devtools-other
+profile:
+  summary: Mobot is a mobile QA platform offering YC startups 50% off the base tier for a one-month pilot plus 2,500 Mobot Credits.
+  links:
+    site: https://www.mobot.io
+  description: Mobot is a mobile QA testing platform. Their YC Startup Support program grants new YC startups 50% off the base tier for a one-month pilot, including 2,500 Mobot Credits, for native or mobile web app testing.
+sources:
+  - source_id: src_321bz98frdhkhq43p504svtge2
+    url: https://www.mobot.io/yc-startup-support
+programs: []
+offers:
+  - offer_id: off_012d013t7pr0s7arz7kgq76yzj
+    offer_slug: mobot-yc-startup-support
+    title: Mobot YC Startup Support
+    summary: New YC startups receive 50% off the Mobot base tier for a one-month pilot, including 2,500 Mobot Credits, for native or mobile web app QA testing.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T12:35:54.412432Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 50% off base tier for one-month pilot plus 2,500 Mobot Credits
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a new YC startup. The pilot covers native or mobile web app QA testing.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ab70574fbw625fk79jb98zg1vq
+      access_operator_entity_id: ent_ab70574fbw625fk79jb98zg1vq
+    access:
+      availability: other
+      method: form
+      url: https://www.mobot.io/yc-startup-support
+    source_ids:
+      - src_321bz98frdhkhq43p504svtge2
