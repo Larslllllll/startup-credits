@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6r0bwqnqghp7jt8ycsa1yrgks5
+  slug: tactiq
+  name: Tactiq
+  domains:
+    - value: tactiq.io
+      role: primary
+      valid_from: 2026-09-07T16:00:00.035235Z
+  category: ai-ml
+profile:
+  summary: Tactiq offers qualifying startups free or discounted access to their AI meeting transcription and notes platform.
+  links:
+    site: https://tactiq.io
+  description: Tactiq offers qualifying startups free or discounted access to their AI meeting transcription and notes platform.
+sources:
+  - source_id: src_35qwgv3y0g69e54t6xy7r50x3q
+    url: https://tactiq.io/startup
+programs: []
+offers:
+  - offer_id: off_pz47cmpndem64ezzsznag935g8
+    offer_slug: tactiq-startup-program
+    title: Tactiq startup program
+    summary: Tactiq offers qualifying startups free or discounted access to their AI meeting transcription and notes platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:00:00.035235Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI meeting transcription and notes platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_6r0bwqnqghp7jt8ycsa1yrgks5
+      access_operator_entity_id: ent_6r0bwqnqghp7jt8ycsa1yrgks5
+    access:
+      availability: public
+      method: form
+      url: https://tactiq.io/startup
+    source_ids:
+      - src_35qwgv3y0g69e54t6xy7r50x3q
