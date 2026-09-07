@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_4gjh223dcwg1w22xhcvb8chs3z
+  slug: heap-free
+  name: Heap Free
+  domains:
+    - value: heap.io
+      role: primary
+      valid_from: 2026-09-07T15:17:03.020060Z
+  category: data-analytics
+profile:
+  summary: Heap Free offers qualifying startups free or discounted access to their digital analytics and user behavior platform.
+  links:
+    site: https://heap.io
+  description: Heap Free offers qualifying startups free or discounted access to their digital analytics and user behavior platform.
+sources:
+  - source_id: src_de4h6kkww5yvtqzzxpnkfndzeg
+    url: https://heap.io/startup
+programs: []
+offers:
+  - offer_id: off_yj92td1ctwktef55d1t0cj251y
+    offer_slug: heap-free-startup-program
+    title: Heap Free startup program
+    summary: Heap Free offers qualifying startups free or discounted access to their digital analytics and user behavior platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:17:03.020060Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their digital analytics and user behavior platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_4gjh223dcwg1w22xhcvb8chs3z
+      access_operator_entity_id: ent_4gjh223dcwg1w22xhcvb8chs3z
+    access:
+      availability: public
+      method: form
+      url: https://heap.io/startup
+    source_ids:
+      - src_de4h6kkww5yvtqzzxpnkfndzeg
