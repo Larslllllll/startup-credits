@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3yar3476jvgr90dfmvw149557v
+  slug: minimax-vision
+  name: MiniMax Vision
+  domains:
+    - value: minimax.chat
+      role: primary
+      valid_from: 2026-09-07T16:15:43.527892Z
+  category: ai-ml
+profile:
+  summary: MiniMax Vision offers qualifying startups free or discounted access to their AI vision platform.
+  links:
+    site: https://minimax.chat
+  description: MiniMax Vision offers qualifying startups free or discounted access to their AI vision platform.
+sources:
+  - source_id: src_dp739apv9te84v9cr7440ajat0
+    url: https://minimax.chat/startup
+programs: []
+offers:
+  - offer_id: off_hwb8g6gc9fxc886eq96pe38b5f
+    offer_slug: minimax-vision-startup-program
+    title: MiniMax Vision startup program
+    summary: MiniMax Vision offers qualifying startups free or discounted access to their AI vision platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:15:43.527892Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI vision platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3yar3476jvgr90dfmvw149557v
+      access_operator_entity_id: ent_3yar3476jvgr90dfmvw149557v
+    access:
+      availability: public
+      method: form
+      url: https://minimax.chat/startup
+    source_ids:
+      - src_dp739apv9te84v9cr7440ajat0
