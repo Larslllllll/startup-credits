@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rf5rc54ex19azm265cj5nmnww3
+  slug: ego-ist
+  name: Egoist AI
+  domains:
+    - value: ego.ist
+      role: primary
+      valid_from: 2026-09-07T14:49:46.825550Z
+  category: ai-ml
+profile:
+  summary: Egoist AI offers qualifying startups free access to their AI-powered passport and identity verification platform.
+  links:
+    site: https://ego.ist
+  description: Egoist AI offers qualifying startups free access to their AI-powered passport and identity verification platform.
+sources:
+  - source_id: src_5s5qzdz77pqnke48csvs16mssb
+    url: https://ego.ist/startup
+programs: []
+offers:
+  - offer_id: off_snd78mc33r6beaqr5hvh46rccs
+    offer_slug: ego-ist-startup-program
+    title: Egoist AI startup program
+    summary: Egoist AI offers qualifying startups free access to their AI-powered passport and identity verification platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:49:46.825550Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to AI-powered passport and identity verification platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_rf5rc54ex19azm265cj5nmnww3
+      access_operator_entity_id: ent_rf5rc54ex19azm265cj5nmnww3
+    access:
+      availability: public
+      method: form
+      url: https://ego.ist/startup
+    source_ids:
+      - src_5s5qzdz77pqnke48csvs16mssb
