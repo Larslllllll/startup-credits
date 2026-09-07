@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_bb1zep6k7d60r7rksan83wmdbj
+  slug: lambda-labs
+  name: Lambda Labs
+  domains:
+    - value: lambdalabs.com
+      role: primary
+      valid_from: 2026-09-07T15:05:02.403575Z
+  category: ai-ml
+profile:
+  summary: Lambda Labs offers qualifying startups free or discounted access to their GPU cloud and deep learning workstation platform.
+  links:
+    site: https://lambdalabs.com
+  description: Lambda Labs offers qualifying startups free or discounted access to their GPU cloud and deep learning workstation platform.
+sources:
+  - source_id: src_pdjzxgd5xkfs1swqqb2vb7da7n
+    url: https://lambdalabs.com/startup
+programs: []
+offers:
+  - offer_id: off_95d82t9g1mxwqpvm44y8sdk74r
+    offer_slug: lambda-labs-startup-program
+    title: Lambda Labs startup program
+    summary: Lambda Labs offers qualifying startups free or discounted access to their GPU cloud and deep learning workstation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:05:02.403575Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to GPU cloud and deep learning workstation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_bb1zep6k7d60r7rksan83wmdbj
+      access_operator_entity_id: ent_bb1zep6k7d60r7rksan83wmdbj
+    access:
+      availability: public
+      method: form
+      url: https://lambdalabs.com/startup
+    source_ids:
+      - src_pdjzxgd5xkfs1swqqb2vb7da7n
