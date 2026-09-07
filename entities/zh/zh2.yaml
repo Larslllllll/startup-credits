@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_t6j3mgevhaqwgzqcrvgk0dtv6q
+  slug: zh2
+  name: Zhipu 2
+  domains:
+    - value: zhipuai.cn
+      role: primary
+      valid_from: 2026-09-07T16:45:00.222050Z
+  category: ai-ml
+profile:
+  summary: Zhipu AI offers qualifying startups free or discounted access to their Chinese AI language model platform.
+  links:
+    site: https://zhipuai.cn
+  description: Zhipu AI offers qualifying startups free or discounted access to their Chinese AI language model platform.
+sources:
+  - source_id: src_709qcwp4h52n50stphpeb52mpx
+    url: https://zhipuai.cn/startup
+programs: []
+offers:
+  - offer_id: off_c9m9bks42w2s4gd4vdbrjgscp7
+    offer_slug: zh2-startup-program
+    title: Zhipu 2 startup program
+    summary: Zhipu AI offers qualifying startups free or discounted access to their Chinese AI language model platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:45:00.222050Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to Chinese AI language model platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_t6j3mgevhaqwgzqcrvgk0dtv6q
+      access_operator_entity_id: ent_t6j3mgevhaqwgzqcrvgk0dtv6q
+    access:
+      availability: public
+      method: form
+      url: https://zhipuai.cn/startup
+    source_ids:
+      - src_709qcwp4h52n50stphpeb52mpx
