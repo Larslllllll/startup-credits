@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xqyy5xfsd0pk4ef9shenq6hddt
+  slug: universell
+  name: Universell
+  domains:
+    - value: universell.us
+      role: primary
+      valid_from: 2026-09-07T13:57:05.883196Z
+  category: productivity
+profile:
+  summary: Universell offers qualified startups 12 months of free access to its $99 subscription tier for up to 10 employees with 100+ integrated business tools.
+  links:
+    site: https://universell.us
+  description: Universell is a business operations platform. Their startup program offers qualified startups 12 months of free access to the $99 subscription tier for up to 10 employees, with access to more than 100 integrated business tools and no obligation to continue.
+sources:
+  - source_id: src_x54mqq6s08myshwx8ax170x8ye
+    url: https://universell.us/startup
+programs: []
+offers:
+  - offer_id: off_qnc0f0w7sxtw0c127045ny60fm
+    offer_slug: universell-startup-program
+    title: Universell startup program
+    summary: Qualified startups receive 12 months of free access to the $99 tier for up to 10 employees with 100+ integrated tools.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:57:05.883196Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 12 months of free $99 subscription tier for up to 10 employees with 100+ integrated tools
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualified startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xqyy5xfsd0pk4ef9shenq6hddt
+      access_operator_entity_id: ent_xqyy5xfsd0pk4ef9shenq6hddt
+    access:
+      availability: public
+      method: form
+      url: https://universell.us/startup
+    source_ids:
+      - src_x54mqq6s08myshwx8ax170x8ye
