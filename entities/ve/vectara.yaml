@@ -35,8 +35,9 @@ offers:
           kind: credit
           value:
             kind: exact
-            amount: 1000
-            currency: USD
+            amount:
+              minor_units: 100000
+              currency: USD
     eligibility:
       rule:
         kind: manual
