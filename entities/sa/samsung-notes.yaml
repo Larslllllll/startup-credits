@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_bheg6mbv8rj0bdsnw71fhn27jv
+  slug: samsung-notes
+  name: Samsung Notes
+  domains:
+    - value: samsung.com
+      role: primary
+      valid_from: 2026-09-07T15:40:22.524512Z
+  category: productivity
+profile:
+  summary: Samsung Notes offers qualifying startups free or discounted access to their note-taking and organization platform.
+  links:
+    site: https://samsung.com
+  description: Samsung Notes offers qualifying startups free or discounted access to their note-taking and organization platform.
+sources:
+  - source_id: src_16ezxqskntyqa7cvyqbet5fjad
+    url: https://samsung.com/startup
+programs: []
+offers:
+  - offer_id: off_kzjyazb3pa5a7xca2afdwpqkmn
+    offer_slug: samsung-notes-startup-program
+    title: Samsung Notes startup program
+    summary: Samsung Notes offers qualifying startups free or discounted access to their note-taking and organization platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:40:22.524512Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their note-taking and organization platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_bheg6mbv8rj0bdsnw71fhn27jv
+      access_operator_entity_id: ent_bheg6mbv8rj0bdsnw71fhn27jv
+    access:
+      availability: public
+      method: form
+      url: https://samsung.com/startup
+    source_ids:
+      - src_16ezxqskntyqa7cvyqbet5fjad
