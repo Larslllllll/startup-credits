@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_1eszfsmq383nt7xywj6tdk9wse
+  slug: freshbooks
+  name: FreshBooks
+  domains:
+    - value: freshbooks.com
+      role: primary
+      valid_from: 2026-09-07T15:52:43.037818Z
+  category: finance-accounting
+profile:
+  summary: FreshBooks offers qualifying startups free or discounted access to their cloud accounting and invoicing platform.
+  links:
+    site: https://freshbooks.com
+  description: FreshBooks offers qualifying startups free or discounted access to their cloud accounting and invoicing platform.
+sources:
+  - source_id: src_tnbn404vbfqehraj1pms7eks39
+    url: https://freshbooks.com/startup
+programs: []
+offers:
+  - offer_id: off_51dvcrb71sdj3mde64wtqrtzjg
+    offer_slug: freshbooks-startup-program
+    title: FreshBooks startup program
+    summary: FreshBooks offers qualifying startups free or discounted access to their cloud accounting and invoicing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:52:43.037818Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their cloud accounting and invoicing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_1eszfsmq383nt7xywj6tdk9wse
+      access_operator_entity_id: ent_1eszfsmq383nt7xywj6tdk9wse
+    access:
+      availability: public
+      method: form
+      url: https://freshbooks.com/startup
+    source_ids:
+      - src_tnbn404vbfqehraj1pms7eks39
