@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9sr5vhke5accmqbympw35gwgnc
+  slug: xtrace-obs
+  name: XTrace
+  domains:
+    - value: xtrace.ai
+      role: primary
+      valid_from: 2026-09-07T16:41:48.780063Z
+  category: observability
+profile:
+  summary: XTrace offers qualifying startups free or discounted access to their distributed tracing and observability platform.
+  links:
+    site: https://xtrace.ai
+  description: XTrace offers qualifying startups free or discounted access to their distributed tracing and observability platform.
+sources:
+  - source_id: src_afsj80kdebk81zy13ntn67k2qa
+    url: https://xtrace.ai/startup
+programs: []
+offers:
+  - offer_id: off_xvpcgqwbtzyyr78sfq1g5d6x6d
+    offer_slug: xtrace-obs-startup-program
+    title: XTrace startup program
+    summary: XTrace offers qualifying startups free or discounted access to their distributed tracing and observability platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:41:48.780063Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to distributed tracing and observability platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_9sr5vhke5accmqbympw35gwgnc
+      access_operator_entity_id: ent_9sr5vhke5accmqbympw35gwgnc
+    access:
+      availability: public
+      method: form
+      url: https://xtrace.ai/startup
+    source_ids:
+      - src_afsj80kdebk81zy13ntn67k2qa
