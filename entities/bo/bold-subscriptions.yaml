@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_sp4frfjjj8d4nwfrvxx3m1mpg0
+  slug: bold-subscriptions
+  name: Bold Subscriptions
+  domains:
+    - value: boldcommerce.com
+      role: primary
+      valid_from: 2026-09-07T16:01:41.765407Z
+  category: payments-fintech
+profile:
+  summary: Bold Subscriptions offers qualifying startups free or discounted access to their subscription management platform.
+  links:
+    site: https://boldcommerce.com
+  description: Bold Subscriptions offers qualifying startups free or discounted access to their subscription management platform.
+sources:
+  - source_id: src_9x2xegn7m3sqcffekthrze6q4n
+    url: https://boldcommerce.com/startup
+programs: []
+offers:
+  - offer_id: off_xqp3dvj81gja3vphm2b028zyat
+    offer_slug: bold-subscriptions-startup-program
+    title: Bold Subscriptions startup program
+    summary: Bold Subscriptions offers qualifying startups free or discounted access to their subscription management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:01:41.765407Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their subscription management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_sp4frfjjj8d4nwfrvxx3m1mpg0
+      access_operator_entity_id: ent_sp4frfjjj8d4nwfrvxx3m1mpg0
+    access:
+      availability: public
+      method: form
+      url: https://boldcommerce.com/startup
+    source_ids:
+      - src_9x2xegn7m3sqcffekthrze6q4n
