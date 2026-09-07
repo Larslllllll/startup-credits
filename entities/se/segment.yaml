@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_b3ppam7b249mn9nfq2sfmwy0yb
+  slug: segment
+  name: Segment
+  domains:
+    - value: segment.com
+      role: primary
+      valid_from: 2026-09-07T15:16:07.518738Z
+  category: data-analytics
+profile:
+  summary: Segment offers qualifying startups free or discounted access to their customer data platform and analytics.
+  links:
+    site: https://segment.com
+  description: Segment offers qualifying startups free or discounted access to their customer data platform and analytics.
+sources:
+  - source_id: src_e5w0xb9qner1vwxt9q2yk91afv
+    url: https://segment.com/startup
+programs: []
+offers:
+  - offer_id: off_kn21r6npmn2whwjg5tk98kxgz0
+    offer_slug: segment-startup-program
+    title: Segment startup program
+    summary: Segment offers qualifying startups free or discounted access to their customer data platform and analytics.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:16:07.518738Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their customer data platform and analytics
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_b3ppam7b249mn9nfq2sfmwy0yb
+      access_operator_entity_id: ent_b3ppam7b249mn9nfq2sfmwy0yb
+    access:
+      availability: public
+      method: form
+      url: https://segment.com/startup
+    source_ids:
+      - src_e5w0xb9qner1vwxt9q2yk91afv
