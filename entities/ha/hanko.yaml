@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_tzk33rkkm3kdfagrw3s2b0r3p0
+  slug: hanko
+  name: Hanko
+  domains:
+    - value: hanko.io
+      role: primary
+      valid_from: 2026-09-07T14:52:35.690118Z
+  category: auth-security
+profile:
+  summary: Hanko offers qualifying startups free or discounted access to their passwordless authentication and identity platform.
+  links:
+    site: https://hanko.io
+  description: Hanko offers qualifying startups free or discounted access to their passwordless authentication and identity platform.
+sources:
+  - source_id: src_hjcb93q2afcbw9web9rz44jg3t
+    url: https://hanko.io/startup
+programs: []
+offers:
+  - offer_id: off_ew1f9d34s58q5mke9n51wsj3ej
+    offer_slug: hanko-startup-program
+    title: Hanko startup program
+    summary: Hanko offers qualifying startups free or discounted access to their passwordless authentication and identity platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:52:35.690118Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to passwordless authentication and identity platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_tzk33rkkm3kdfagrw3s2b0r3p0
+      access_operator_entity_id: ent_tzk33rkkm3kdfagrw3s2b0r3p0
+    access:
+      availability: public
+      method: form
+      url: https://hanko.io/startup
+    source_ids:
+      - src_hjcb93q2afcbw9web9rz44jg3t
