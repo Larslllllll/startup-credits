@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_561qvy8gbrz81qpaxcxspq8xqp
+  slug: paligemma
+  name: PaliGemma
+  domains:
+    - value: ai.google.dev
+      role: primary
+      valid_from: 2026-09-07T16:15:36.335742Z
+  category: ai-ml
+profile:
+  summary: PaliGemma offers qualifying startups free or discounted access to their open-source multi-modal vision LLM platform.
+  links:
+    site: https://ai.google.dev
+  description: PaliGemma offers qualifying startups free or discounted access to their open-source multi-modal vision LLM platform.
+sources:
+  - source_id: src_srmb3dx4gp82ern41ke1cvkwh2
+    url: https://ai.google.dev/startup
+programs: []
+offers:
+  - offer_id: off_8y5nxr0rq0hq91zz6y6ck0rjtg
+    offer_slug: paligemma-startup-program
+    title: PaliGemma startup program
+    summary: PaliGemma offers qualifying startups free or discounted access to their open-source multi-modal vision LLM platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:15:36.335742Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source multi-modal vision LLM platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_561qvy8gbrz81qpaxcxspq8xqp
+      access_operator_entity_id: ent_561qvy8gbrz81qpaxcxspq8xqp
+    access:
+      availability: public
+      method: form
+      url: https://ai.google.dev/startup
+    source_ids:
+      - src_srmb3dx4gp82ern41ke1cvkwh2
