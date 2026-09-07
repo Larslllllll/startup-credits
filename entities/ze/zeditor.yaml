@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_t0y5rtk5ed6srtva4mwqtazm1e
+  slug: zeditor
+  name: Zed Editor
+  domains:
+    - value: zed.dev
+      role: primary
+      valid_from: 2026-09-07T15:02:08.498550Z
+  category: devtools-other
+profile:
+  summary: Zed Editor offers qualifying startups free or discounted access to their GPU-accelerated code editor platform.
+  links:
+    site: https://zed.dev
+  description: Zed Editor offers qualifying startups free or discounted access to their GPU-accelerated code editor platform.
+sources:
+  - source_id: src_apadbezz0scj9ydb935y0fatdn
+    url: https://zed.dev/startup
+programs: []
+offers:
+  - offer_id: off_wp4rx9q0w9rjym48z8ckw38f81
+    offer_slug: zeditor-startup-program
+    title: Zed Editor startup program
+    summary: Zed Editor offers qualifying startups free or discounted access to their GPU-accelerated code editor platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:02:08.498550Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to GPU-accelerated code editor platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_t0y5rtk5ed6srtva4mwqtazm1e
+      access_operator_entity_id: ent_t0y5rtk5ed6srtva4mwqtazm1e
+    access:
+      availability: public
+      method: form
+      url: https://zed.dev/startup
+    source_ids:
+      - src_apadbezz0scj9ydb935y0fatdn
