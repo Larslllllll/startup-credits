@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_69b3b2q0x98yb8vgneg7s8drwy
+  slug: taiko
+  name: Taiko
+  domains:
+    - value: taiko.xyz
+      role: primary
+      valid_from: 2026-09-07T15:54:33.200744Z
+  category: devtools-other
+profile:
+  summary: Taiko offers qualifying startups free or discounted access to their Ethereum-equivalent zkEVM Layer 2 platform.
+  links:
+    site: https://taiko.xyz
+  description: Taiko offers qualifying startups free or discounted access to their Ethereum-equivalent zkEVM Layer 2 platform.
+sources:
+  - source_id: src_g09ameavcz5r4n9av01x9npf3n
+    url: https://taiko.xyz/startup
+programs: []
+offers:
+  - offer_id: off_a9ggkw6yfrbw64bxyye2gj0by3
+    offer_slug: taiko-startup-program
+    title: Taiko startup program
+    summary: Taiko offers qualifying startups free or discounted access to their Ethereum-equivalent zkEVM Layer 2 platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:54:33.200744Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their Ethereum-equivalent zkEVM Layer 2 platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_69b3b2q0x98yb8vgneg7s8drwy
+      access_operator_entity_id: ent_69b3b2q0x98yb8vgneg7s8drwy
+    access:
+      availability: public
+      method: form
+      url: https://taiko.xyz/startup
+    source_ids:
+      - src_g09ameavcz5r4n9av01x9npf3n
