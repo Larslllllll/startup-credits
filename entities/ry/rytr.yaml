@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xrk3jesdrv5ep79140sa438x32
+  slug: rytr
+  name: Rytr
+  domains:
+    - value: rytr.me
+      role: primary
+      valid_from: 2026-09-07T15:23:36.792826Z
+  category: ai-ml
+profile:
+  summary: Rytr offers qualifying startups free or discounted access to their AI writing assistant and content generation platform.
+  links:
+    site: https://rytr.me
+  description: Rytr offers qualifying startups free or discounted access to their AI writing assistant and content generation platform.
+sources:
+  - source_id: src_79d4andbnc49jfhxwra3766c6p
+    url: https://rytr.me/startup
+programs: []
+offers:
+  - offer_id: off_5xvd2n39a7tfn1zdv4tcgj4byn
+    offer_slug: rytr-startup-program
+    title: Rytr startup program
+    summary: Rytr offers qualifying startups free or discounted access to their AI writing assistant and content generation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:23:36.792826Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI writing assistant and content generation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xrk3jesdrv5ep79140sa438x32
+      access_operator_entity_id: ent_xrk3jesdrv5ep79140sa438x32
+    access:
+      availability: public
+      method: form
+      url: https://rytr.me/startup
+    source_ids:
+      - src_79d4andbnc49jfhxwra3766c6p
