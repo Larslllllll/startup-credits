@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rxt406v1qzmvj3mamwfjheg02w
+  slug: onpage
+  name: OnPage
+  domains:
+    - value: onpage.org
+      role: primary
+      valid_from: 2026-09-07T15:36:38.326212Z
+  category: marketing
+profile:
+  summary: OnPage offers qualifying startups free or discounted access to their technical SEO auditing and rank tracking platform.
+  links:
+    site: https://onpage.org
+  description: OnPage offers qualifying startups free or discounted access to their technical SEO auditing and rank tracking platform.
+sources:
+  - source_id: src_84wayrn0rj3p96zfk8xfckqbjd
+    url: https://onpage.org/startup
+programs: []
+offers:
+  - offer_id: off_8ga4742t9gkgrc75pd943dkj3c
+    offer_slug: onpage-startup-program
+    title: OnPage startup program
+    summary: OnPage offers qualifying startups free or discounted access to their technical SEO auditing and rank tracking platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:36:38.326212Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their technical SEO auditing and rank tracking platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_rxt406v1qzmvj3mamwfjheg02w
+      access_operator_entity_id: ent_rxt406v1qzmvj3mamwfjheg02w
+    access:
+      availability: public
+      method: form
+      url: https://onpage.org/startup
+    source_ids:
+      - src_84wayrn0rj3p96zfk8xfckqbjd
