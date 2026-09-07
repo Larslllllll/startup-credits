@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0zw427wg1cdxr4wgha6tz94v00
+  slug: suprsend
+  name: SuprSend
+  domains:
+    - value: suprsend.com
+      role: primary
+      valid_from: 2026-09-07T14:55:48.356484Z
+  category: communication
+profile:
+  summary: SuprSend offers qualifying startups free or discounted access to their notification infrastructure and cross-channel messaging platform.
+  links:
+    site: https://suprsend.com
+  description: SuprSend offers qualifying startups free or discounted access to their notification infrastructure and cross-channel messaging platform.
+sources:
+  - source_id: src_37c564kc5y4cg5hmmdme7e0yrg
+    url: https://suprsend.com/startup
+programs: []
+offers:
+  - offer_id: off_ybz16fyx1393e9gbx7xw0dert6
+    offer_slug: suprsend-startup-program
+    title: SuprSend startup program
+    summary: SuprSend offers qualifying startups free or discounted access to their notification infrastructure and cross-channel messaging platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:55:48.356484Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to notification infrastructure and cross-channel messaging platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_0zw427wg1cdxr4wgha6tz94v00
+      access_operator_entity_id: ent_0zw427wg1cdxr4wgha6tz94v00
+    access:
+      availability: public
+      method: form
+      url: https://suprsend.com/startup
+    source_ids:
+      - src_37c564kc5y4cg5hmmdme7e0yrg
