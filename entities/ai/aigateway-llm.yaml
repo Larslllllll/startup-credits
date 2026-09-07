@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ka87mjcyjtn9zcxsvx98aj4dv3
+  slug: aigateway-llm
+  name: AI Gateway LLM
+  domains:
+    - value: aigateway.ai
+      role: primary
+      valid_from: 2026-09-07T16:31:39.708154Z
+  category: ai-ml
+profile:
+  summary: AI Gateway LLM offers qualifying startups free or discounted access to their unified AI API gateway and management platform.
+  links:
+    site: https://aigateway.ai
+  description: AI Gateway LLM offers qualifying startups free or discounted access to their unified AI API gateway and management platform.
+sources:
+  - source_id: src_rmrhrdedgacemf080s73y39jma
+    url: https://aigateway.ai/startup
+programs: []
+offers:
+  - offer_id: off_302d0c007ctqzd3hj8x2rmw732
+    offer_slug: aigateway-llm-startup-program
+    title: AI Gateway LLM startup program
+    summary: AI Gateway LLM offers qualifying startups free or discounted access to their unified AI API gateway and management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:31:39.708154Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to unified AI API gateway and management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ka87mjcyjtn9zcxsvx98aj4dv3
+      access_operator_entity_id: ent_ka87mjcyjtn9zcxsvx98aj4dv3
+    access:
+      availability: public
+      method: form
+      url: https://aigateway.ai/startup
+    source_ids:
+      - src_rmrhrdedgacemf080s73y39jma
