@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_vdsaqsmzq1n8tq2p518n81mzs4
+  slug: forest
+  name: Forest
+  domains:
+    - value: forestapp.cc
+      role: primary
+      valid_from: 2026-09-07T15:51:44.605251Z
+  category: productivity
+profile:
+  summary: Forest offers qualifying startups free or discounted access to their focus and time management platform.
+  links:
+    site: https://forestapp.cc
+  description: Forest offers qualifying startups free or discounted access to their focus and time management platform.
+sources:
+  - source_id: src_2vxd9hh9v1y6kg2abf31g6g5zn
+    url: https://forestapp.cc/startup
+programs: []
+offers:
+  - offer_id: off_w81fz9dqf6fhxtcd4b468rnj2n
+    offer_slug: forest-startup-program
+    title: Forest startup program
+    summary: Forest offers qualifying startups free or discounted access to their focus and time management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:51:44.605251Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their focus and time management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_vdsaqsmzq1n8tq2p518n81mzs4
+      access_operator_entity_id: ent_vdsaqsmzq1n8tq2p518n81mzs4
+    access:
+      availability: public
+      method: form
+      url: https://forestapp.cc/startup
+    source_ids:
+      - src_2vxd9hh9v1y6kg2abf31g6g5zn
