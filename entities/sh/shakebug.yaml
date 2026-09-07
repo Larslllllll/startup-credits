@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_x46nfg5y0z1zbjv6jryfm5h4tv
+  slug: shakebug
+  name: Shakebug
+  domains:
+    - value: shakebug.com
+      role: primary
+      valid_from: 2026-09-07T14:03:17.311156Z
+  category: devtools-other
+profile:
+  summary: Shakebug offers eligible independent startups founded within five years Premium access for USD 20 per month for 12 months instead of USD 125.
+  links:
+    site: https://shakebug.com
+  description: Shakebug is a mobile app stability platform. Their startup program offers eligible independent startups founded within five years Shakebug Premium for USD 20 per month for 12 months instead of the standard USD 125 monthly price.
+sources:
+  - source_id: src_yma47tg483vxbefcvkj7ej4ebs
+    url: https://shakebug.com/startup
+programs: []
+offers:
+  - offer_id: off_j05jpdb7kan5960q2bb7ddtq1p
+    offer_slug: shakebug-startup-program
+    title: Shakebug startup program
+    summary: Independent startups founded within five years receive Shakebug Premium for USD 20/month for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:03:17.311156Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Shakebug Premium for USD 20/month for 12 months (vs USD 125 standard)
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an independent startup founded within five years. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_x46nfg5y0z1zbjv6jryfm5h4tv
+      access_operator_entity_id: ent_x46nfg5y0z1zbjv6jryfm5h4tv
+    access:
+      availability: public
+      method: form
+      url: https://shakebug.com/startup
+    source_ids:
+      - src_yma47tg483vxbefcvkj7ej4ebs
