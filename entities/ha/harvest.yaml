@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9qdnkve1mymssctm2pgxxa9cm0
+  slug: harvest
+  name: Harvest
+  domains:
+    - value: getharvest.com
+      role: primary
+      valid_from: 2026-09-07T15:51:52.555023Z
+  category: finance-accounting
+profile:
+  summary: Harvest offers qualifying startups free or discounted access to their time tracking and invoicing platform.
+  links:
+    site: https://getharvest.com
+  description: Harvest offers qualifying startups free or discounted access to their time tracking and invoicing platform.
+sources:
+  - source_id: src_pavgmsx1gepv35x3ed9nvgmsh1
+    url: https://getharvest.com/startup
+programs: []
+offers:
+  - offer_id: off_n1xc16nsnj9kvj26yd4xddk1hk
+    offer_slug: harvest-startup-program
+    title: Harvest startup program
+    summary: Harvest offers qualifying startups free or discounted access to their time tracking and invoicing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:51:52.555023Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their time tracking and invoicing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_9qdnkve1mymssctm2pgxxa9cm0
+      access_operator_entity_id: ent_9qdnkve1mymssctm2pgxxa9cm0
+    access:
+      availability: public
+      method: form
+      url: https://getharvest.com/startup
+    source_ids:
+      - src_pavgmsx1gepv35x3ed9nvgmsh1
