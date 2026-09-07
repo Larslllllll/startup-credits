@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_qk076nn7v7jktx7hkypd2s9r4t
+  slug: blubrry
+  name: Blubrry
+  domains:
+    - value: blubrry.com
+      role: primary
+      valid_from: 2026-09-07T15:44:37.561639Z
+  category: communication
+profile:
+  summary: Blubrry offers qualifying startups free or discounted access to their podcast hosting and statistics platform.
+  links:
+    site: https://blubrry.com
+  description: Blubrry offers qualifying startups free or discounted access to their podcast hosting and statistics platform.
+sources:
+  - source_id: src_8k60v8nx8wg15584xgbsqvbw0a
+    url: https://blubrry.com/startup
+programs: []
+offers:
+  - offer_id: off_ewp4bk7cbwwbya50t2maqgm5cy
+    offer_slug: blubrry-startup-program
+    title: Blubrry startup program
+    summary: Blubrry offers qualifying startups free or discounted access to their podcast hosting and statistics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:44:37.561639Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their podcast hosting and statistics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_qk076nn7v7jktx7hkypd2s9r4t
+      access_operator_entity_id: ent_qk076nn7v7jktx7hkypd2s9r4t
+    access:
+      availability: public
+      method: form
+      url: https://blubrry.com/startup
+    source_ids:
+      - src_8k60v8nx8wg15584xgbsqvbw0a
