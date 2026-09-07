@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_jxg4cd6r5j7m0ven3kyqj4nbx5
+  slug: lettermint
+  name: Lettermint
+  domains:
+    - value: lettermint.co
+      role: primary
+      valid_from: 2026-09-07T14:43:14.740912Z
+  category: communication
+profile:
+  summary: Lettermint offers qualifying startups a free account credit toward their transactional email delivery platform.
+  links:
+    site: https://lettermint.co
+  description: Lettermint is a transactional email delivery platform. Their startup program offers a free account credit to qualifying startups.
+sources:
+  - source_id: src_jt60xdr3mv4089045wc4hvnw1k
+    url: https://lettermint.co/startup
+programs: []
+offers:
+  - offer_id: off_j0xc3657ayp3k1qvry61hqs0wa
+    offer_slug: lettermint-startup-program
+    title: Lettermint startup account credit
+    summary: Qualifying startups receive a free account credit toward the Lettermint transactional email delivery platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:43:14.740912Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free account credit toward transactional email delivery platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_jxg4cd6r5j7m0ven3kyqj4nbx5
+      access_operator_entity_id: ent_jxg4cd6r5j7m0ven3kyqj4nbx5
+    access:
+      availability: public
+      method: form
+      url: https://lettermint.co/startup
+    source_ids:
+      - src_jt60xdr3mv4089045wc4hvnw1k
