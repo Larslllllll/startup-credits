@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_v1gga0j3cvrc9q4m56dkw18d2k
+  slug: neilpatel
+  name: Neil Patel
+  domains:
+    - value: neilpatel.com
+      role: primary
+      valid_from: 2026-09-07T15:35:27.274631Z
+  category: marketing
+profile:
+  summary: Neil Patel offers qualifying startups free or discounted access to their SEO and marketing analytics platform.
+  links:
+    site: https://neilpatel.com
+  description: Neil Patel offers qualifying startups free or discounted access to their SEO and marketing analytics platform.
+sources:
+  - source_id: src_np8pzrg9f23mr14h6th9jba5ts
+    url: https://neilpatel.com/startup
+programs: []
+offers:
+  - offer_id: off_fs3w7r4g5ejt9tyxvn0k50n634
+    offer_slug: neilpatel-startup-program
+    title: Neil Patel startup program
+    summary: Neil Patel offers qualifying startups free or discounted access to their SEO and marketing analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:35:27.274631Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their SEO and marketing analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_v1gga0j3cvrc9q4m56dkw18d2k
+      access_operator_entity_id: ent_v1gga0j3cvrc9q4m56dkw18d2k
+    access:
+      availability: public
+      method: form
+      url: https://neilpatel.com/startup
+    source_ids:
+      - src_np8pzrg9f23mr14h6th9jba5ts
