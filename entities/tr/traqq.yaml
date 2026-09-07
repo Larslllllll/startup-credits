@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_dat2cp7x6qz9mt3ww8rnk17hes
+  slug: traqq
+  name: Traqq
+  domains:
+    - value: traqq.com
+      role: primary
+      valid_from: 2026-09-07T15:34:24.648905Z
+  category: data-analytics
+profile:
+  summary: Traqq offers qualifying startups free or discounted access to their user behavior analytics platform.
+  links:
+    site: https://traqq.com
+  description: Traqq offers qualifying startups free or discounted access to their user behavior analytics platform.
+sources:
+  - source_id: src_kv23n970cb2c2c1me8bbm1xypr
+    url: https://traqq.com/startup
+programs: []
+offers:
+  - offer_id: off_bes5mp8e9vc3de0n9nttn6931m
+    offer_slug: traqq-startup-program
+    title: Traqq startup program
+    summary: Traqq offers qualifying startups free or discounted access to their user behavior analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:34:24.648905Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their user behavior analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_dat2cp7x6qz9mt3ww8rnk17hes
+      access_operator_entity_id: ent_dat2cp7x6qz9mt3ww8rnk17hes
+    access:
+      availability: public
+      method: form
+      url: https://traqq.com/startup
+    source_ids:
+      - src_kv23n970cb2c2c1me8bbm1xypr
