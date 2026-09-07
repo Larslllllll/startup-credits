@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_j2qj0wz7cxtfkmejfvf6tngkqd
+  slug: phind
+  name: Phind
+  domains:
+    - value: phind.com
+      role: primary
+      valid_from: 2026-09-07T16:18:03.306890Z
+  category: ai-ml
+profile:
+  summary: Phind offers qualifying startups free or discounted access to their AI-powered developer search platform.
+  links:
+    site: https://phind.com
+  description: Phind offers qualifying startups free or discounted access to their AI-powered developer search platform.
+sources:
+  - source_id: src_7raf5tkk6gfwfyh1abfx6zkjrz
+    url: https://phind.com/startup
+programs: []
+offers:
+  - offer_id: off_pwy17x8hvwchvagt4mz3hat3gg
+    offer_slug: phind-startup-program
+    title: Phind startup program
+    summary: Phind offers qualifying startups free or discounted access to their AI-powered developer search platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:18:03.306890Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI-powered developer search platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_j2qj0wz7cxtfkmejfvf6tngkqd
+      access_operator_entity_id: ent_j2qj0wz7cxtfkmejfvf6tngkqd
+    access:
+      availability: public
+      method: form
+      url: https://phind.com/startup
+    source_ids:
+      - src_7raf5tkk6gfwfyh1abfx6zkjrz
