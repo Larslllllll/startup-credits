@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x4vf2ya42wwydye6s5czx7
+  slug: cms
+  slug_aliases: []
+  name: CMS
+  domains:
+    - value: cms.law
+      role: primary
+      valid_from: 2026-09-07T05:18:30.000Z
+  category: other
+profile:
+  description: CMS startup program offering credits and benefits for qualifying early-stage companies.
+  links:
+    site: https://cms.law
+sources:
+  - source_id: src_3790d569b807f2634990accd74586403f05892eb97a5c8bfe8fdf422213e7940
+    url: https://cms.law/en/aut/insight/start-ups/cms-equip-membership
+programs: []
+offers:
+  - offer_id: off_01m1x4vf3286pbdt291m213nha
+    offer_slug: startup-program
+    offer_slug_aliases: []
+    title: CMS Startup Program
+    summary: 'CMS equIP Austria: accepted startup members receive 50% off standard hourly legal rates for three years, up to EUR25,000 discount per year. Application and acceptance are required; no automatic global entitlement or cash credit is claimed.'
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:18:30.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startup program benefits as published by CMS
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Contact CMS for eligibility requirements as published on the vendor's startup page.
+    roles:
+      terms_authority_entity_id: ent_01m1x4vf2ya42wwydye6s5czx7
+      access_operator_entity_id: ent_01m1x4vf2ya42wwydye6s5czx7
+    access:
+      availability: public
+      method: form
+      url: https://cms.law/en/aut/insight/start-ups/cms-equip-membership
+    source_ids:
+      - src_3790d569b807f2634990accd74586403f05892eb97a5c8bfe8fdf422213e7940

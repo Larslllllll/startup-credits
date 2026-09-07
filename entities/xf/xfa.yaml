@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x4vfmrtq109kg1q0tc8yyp
+  slug: xfa
+  slug_aliases: []
+  name: XFA
+  domains:
+    - value: xfa.tech
+      role: primary
+      valid_from: 2026-09-07T05:18:30.000Z
+  category: other
+profile:
+  description: XFA startup program offering credits and benefits for qualifying early-stage companies.
+  links:
+    site: https://xfa.tech
+sources:
+  - source_id: src_dee96954b73ac50b0828fde4af3bbd9423cb4c81a1187c2816f1670129db8bc9
+    url: https://xfa.tech/usecases/startups
+programs: []
+offers:
+  - offer_id: off_01m1x4vfmw30xkkmechdmd45ry
+    offer_slug: startup-program
+    offer_slug_aliases: []
+    title: XFA Startup Program
+    summary: 'XFA offers startups its solution free for two years for up to five users.  First-party source: https://xfa.tech/usecases/startups'
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:18:30.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startup program benefits as published by XFA
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Contact XFA for eligibility requirements as published on the vendor's startup page.
+    roles:
+      terms_authority_entity_id: ent_01m1x4vfmrtq109kg1q0tc8yyp
+      access_operator_entity_id: ent_01m1x4vfmrtq109kg1q0tc8yyp
+    access:
+      availability: public
+      method: form
+      url: https://xfa.tech/usecases/startups
+    source_ids:
+      - src_dee96954b73ac50b0828fde4af3bbd9423cb4c81a1187c2816f1670129db8bc9

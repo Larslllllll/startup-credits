@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x4vg3kqyvthtdxe4fgfqzk
+  slug: zenphi
+  slug_aliases: []
+  name: Zenphi
+  domains:
+    - value: zenphi.com
+      role: primary
+      valid_from: 2026-09-07T05:18:31.000Z
+  category: other
+profile:
+  description: Zenphi startup program offering credits and benefits for qualifying early-stage companies.
+  links:
+    site: https://zenphi.com
+sources:
+  - source_id: src_3ba034e9b1ce10ada9f32ef870058431e8437c4661387ffb903a0ea45fc0431a
+    url: https://zenphi.com/zenphi-for-startups/
+programs: []
+offers:
+  - offer_id: off_01m1x4vg3rfvtzj1cebgh4p4ja
+    offer_slug: startup-program
+    offer_slug_aliases: []
+    title: Zenphi Startup Program
+    summary: 'Eligible startups receive six months free on the Zenphi Pro plan, followed by six months at 50% off.'
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:18:31.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startup program benefits as published by Zenphi
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Contact Zenphi for eligibility requirements as published on the vendor's startup page.
+    roles:
+      terms_authority_entity_id: ent_01m1x4vg3kqyvthtdxe4fgfqzk
+      access_operator_entity_id: ent_01m1x4vg3kqyvthtdxe4fgfqzk
+    access:
+      availability: public
+      method: form
+      url: https://zenphi.com/zenphi-for-startups/
+    source_ids:
+      - src_3ba034e9b1ce10ada9f32ef870058431e8437c4661387ffb903a0ea45fc0431a

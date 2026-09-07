@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x4vf5s9rfq5mta7g3r3pyt
+  slug: morrisjamesllp
+  slug_aliases: []
+  name: Morris James LLP
+  domains:
+    - value: morrisjames.com
+      role: primary
+      valid_from: 2026-09-07T05:18:30.000Z
+  category: other
+profile:
+  description: Morris James LLP startup program offering credits and benefits for qualifying early-stage companies.
+  links:
+    site: https://morrisjames.com
+sources:
+  - source_id: src_ca7b48f84acb8854fcb469e9403dd6c26a1f2c1803dff66779e8ff02a0a0e664
+    url: https://www.morrisjames.com/service/corporate-ma/start-up-program/
+programs: []
+offers:
+  - offer_id: off_01m1x4vf5xk69exn90mw0txpaf
+    offer_slug: startup-program
+    offer_slug_aliases: []
+    title: Morris James LLP Startup Program
+    summary: 'The Morris James Start-Up Program offers qualifying companies 30% off standard corporate legal rates for the first year of engagement. Qualification is case-by-case; the source describes typical early-stage, pre-revenue/low-revenue companie'
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:18:30.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startup program benefits as published by Morris James LLP
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Contact Morris James LLP for eligibility requirements as published on the vendor's startup page.
+    roles:
+      terms_authority_entity_id: ent_01m1x4vf5s9rfq5mta7g3r3pyt
+      access_operator_entity_id: ent_01m1x4vf5s9rfq5mta7g3r3pyt
+    access:
+      availability: public
+      method: form
+      url: https://www.morrisjames.com/service/corporate-ma/start-up-program/
+    source_ids:
+      - src_ca7b48f84acb8854fcb469e9403dd6c26a1f2c1803dff66779e8ff02a0a0e664

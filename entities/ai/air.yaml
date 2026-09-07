@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x4vfths7w0thnv1ez4daxz
+  slug: air
+  slug_aliases: []
+  name: Air
+  domains:
+    - value: air.inc
+      role: primary
+      valid_from: 2026-09-07T05:18:30.000Z
+  category: ai-ml
+profile:
+  description: Air startup program offering credits and benefits for qualifying early-stage companies.
+  links:
+    site: https://air.inc
+sources:
+  - source_id: src_50a926026cd5a70b990ce854b32026d1a100f28fbb048801db824c451f53d35e
+    url: https://air.inc/startups
+programs: []
+offers:
+  - offer_id: off_01m1x4vftp3kkc54my59ae1cf1
+    offer_slug: startup-program
+    offer_slug_aliases: []
+    title: Air Startup Program
+    summary: 'Eligible partner-network startups receive up to six months free on Air''s Business plan, worth up to USD 5,800.'
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:18:30.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startup program benefits as published by Air
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Contact Air for eligibility requirements as published on the vendor's startup page.
+    roles:
+      terms_authority_entity_id: ent_01m1x4vfths7w0thnv1ez4daxz
+      access_operator_entity_id: ent_01m1x4vfths7w0thnv1ez4daxz
+    access:
+      availability: public
+      method: form
+      url: https://air.inc/startups
+    source_ids:
+      - src_50a926026cd5a70b990ce854b32026d1a100f28fbb048801db824c451f53d35e
