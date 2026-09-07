@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5rdms2tx1pgv0jzhqnaxq1nagn
+  slug: mc2
+  name: Mailchimp 2
+  domains:
+    - value: mailchimp.com
+      role: primary
+      valid_from: 2026-09-07T16:55:56.041423Z
+  category: marketing
+profile:
+  summary: Mailchimp offers qualifying startups free or discounted access to their email marketing and automation platform.
+  links:
+    site: https://mailchimp.com
+  description: Mailchimp offers qualifying startups free or discounted access to their email marketing and automation platform.
+sources:
+  - source_id: src_y4q2a202r877cr29g1f3wvh2gp
+    url: https://mailchimp.com/startup
+programs: []
+offers:
+  - offer_id: off_6sz5xvmmx801bv328687kgr5js
+    offer_slug: mc2-startup-program
+    title: Mailchimp 2 startup program
+    summary: Mailchimp offers qualifying startups free or discounted access to their email marketing and automation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:55:56.041423Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to email marketing and automation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_5rdms2tx1pgv0jzhqnaxq1nagn
+      access_operator_entity_id: ent_5rdms2tx1pgv0jzhqnaxq1nagn
+    access:
+      availability: public
+      method: form
+      url: https://mailchimp.com/startup
+    source_ids:
+      - src_y4q2a202r877cr29g1f3wvh2gp
