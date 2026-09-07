@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_hhkn85d5yqmy8vn1bqtvtax2dk
+  slug: calendly
+  name: Calendly
+  domains:
+    - value: calendly.com
+      role: primary
+      valid_from: 2026-09-07T15:13:13.916362Z
+  category: productivity
+profile:
+  summary: Calendly offers qualifying startups free or discounted access to their automated scheduling and meeting booking platform.
+  links:
+    site: https://calendly.com
+  description: Calendly offers qualifying startups free or discounted access to their automated scheduling and meeting booking platform.
+sources:
+  - source_id: src_1t3pr3np4rsqxnv3a3n10kv659
+    url: https://calendly.com/startup
+programs: []
+offers:
+  - offer_id: off_saztb7pn5s44kn0wtk9fwn9da7
+    offer_slug: calendly-startup-program
+    title: Calendly startup program
+    summary: Calendly offers qualifying startups free or discounted access to their automated scheduling and meeting booking platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:13:13.916362Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to automated scheduling and meeting booking platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_hhkn85d5yqmy8vn1bqtvtax2dk
+      access_operator_entity_id: ent_hhkn85d5yqmy8vn1bqtvtax2dk
+    access:
+      availability: public
+      method: form
+      url: https://calendly.com/startup
+    source_ids:
+      - src_1t3pr3np4rsqxnv3a3n10kv659
