@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_q7f82s9b5ev1nd777tfgn39vk5
+  slug: transistor
+  name: Transistor
+  domains:
+    - value: transistor.fm
+      role: primary
+      valid_from: 2026-09-07T15:43:59.647434Z
+  category: communication
+profile:
+  summary: Transistor offers qualifying startups free or discounted access to their podcast hosting and analytics platform.
+  links:
+    site: https://transistor.fm
+  description: Transistor offers qualifying startups free or discounted access to their podcast hosting and analytics platform.
+sources:
+  - source_id: src_jvfw4s5t13xcrhs55qe1j72j1r
+    url: https://transistor.fm/startup
+programs: []
+offers:
+  - offer_id: off_21tqs11zzyd6ktfpzcrzak6f91
+    offer_slug: transistor-startup-program
+    title: Transistor startup program
+    summary: Transistor offers qualifying startups free or discounted access to their podcast hosting and analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:43:59.647434Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their podcast hosting and analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_q7f82s9b5ev1nd777tfgn39vk5
+      access_operator_entity_id: ent_q7f82s9b5ev1nd777tfgn39vk5
+    access:
+      availability: public
+      method: form
+      url: https://transistor.fm/startup
+    source_ids:
+      - src_jvfw4s5t13xcrhs55qe1j72j1r
