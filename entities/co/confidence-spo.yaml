@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_vtwxar6c00kyayf2nsn4c6cy82
+  slug: confidence-spo
+  name: Confidence Spotify
+  domains:
+    - value: confidence.spotify.com
+      role: primary
+      valid_from: 2026-09-07T16:38:38.048777Z
+  category: data-analytics
+profile:
+  summary: Confidence by Spotify offers qualifying startups free or discounted access to their streaming analytics and growth platform.
+  links:
+    site: https://confidence.spotify.com
+  description: Confidence by Spotify offers qualifying startups free or discounted access to their streaming analytics and growth platform.
+sources:
+  - source_id: src_q6bxvyjt1zwj44g7g61qtrfxkj
+    url: https://confidence.spotify.com/startup
+programs: []
+offers:
+  - offer_id: off_qr1fdezwnkx83gj262wkm54sy5
+    offer_slug: confidence-spo-startup-program
+    title: Confidence Spotify startup program
+    summary: Confidence by Spotify offers qualifying startups free or discounted access to their streaming analytics and growth platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:38:38.048777Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to streaming analytics and growth platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_vtwxar6c00kyayf2nsn4c6cy82
+      access_operator_entity_id: ent_vtwxar6c00kyayf2nsn4c6cy82
+    access:
+      availability: public
+      method: form
+      url: https://confidence.spotify.com/startup
+    source_ids:
+      - src_q6bxvyjt1zwj44g7g61qtrfxkj
