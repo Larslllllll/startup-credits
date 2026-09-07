@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_vw2rsv0zz04xxtqsxnvpy660hm
+  slug: yotta
+  name: Yotta
+  domains:
+    - value: yotta.com
+      role: primary
+      valid_from: 2026-09-07T14:32:37.141427Z
+  category: hosting-infra
+profile:
+  summary: Yotta offers qualifying startups free access to their GPU cloud compute platform for AI training and inference workloads.
+  links:
+    site: https://yotta.com
+  description: Yotta is a GPU cloud compute platform for AI workloads. Their startup program offers free access to qualifying startups for AI training and inference.
+sources:
+  - source_id: src_dv3wsp11s2jh6fvhf9sdxs60tw
+    url: https://yotta.com/startup
+programs: []
+offers:
+  - offer_id: off_9547pvqxq10f9fz0n979h9p4a5
+    offer_slug: yotta-startup-program
+    title: Yotta startup program
+    summary: Qualifying startups receive free access to the Yotta GPU cloud compute platform for AI training and inference workloads.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:32:37.141427Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to GPU cloud compute platform for AI training and inference
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_vw2rsv0zz04xxtqsxnvpy660hm
+      access_operator_entity_id: ent_vw2rsv0zz04xxtqsxnvpy660hm
+    access:
+      availability: public
+      method: form
+      url: https://yotta.com/startup
+    source_ids:
+      - src_dv3wsp11s2jh6fvhf9sdxs60tw
