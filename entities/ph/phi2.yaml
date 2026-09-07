@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_8jwhssg42hx3y8swd4a3v7e0jd
+  slug: phi2
+  name: Phi-2
+  domains:
+    - value: huggingface.co
+      role: primary
+      valid_from: 2026-09-07T16:13:46.303350Z
+  category: ai-ml
+profile:
+  summary: Phi-2 offers qualifying startups free or discounted access to their open-source small language model.
+  links:
+    site: https://huggingface.co
+  description: Phi-2 offers qualifying startups free or discounted access to their open-source small language model.
+sources:
+  - source_id: src_hhek21a27bwqsvqss1pf996x20
+    url: https://huggingface.co/startup
+programs: []
+offers:
+  - offer_id: off_47hwzdxkrsm84m5xs4z4z0b3n4
+    offer_slug: phi2-startup-program
+    title: Phi-2 startup program
+    summary: Phi-2 offers qualifying startups free or discounted access to their open-source small language model.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:13:46.303350Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source small language model
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_8jwhssg42hx3y8swd4a3v7e0jd
+      access_operator_entity_id: ent_8jwhssg42hx3y8swd4a3v7e0jd
+    access:
+      availability: public
+      method: form
+      url: https://huggingface.co/startup
+    source_ids:
+      - src_hhek21a27bwqsvqss1pf996x20
