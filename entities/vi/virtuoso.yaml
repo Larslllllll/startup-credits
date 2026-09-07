@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_32df29engg4erj15e6nysk0n4k
+  slug: virtuoso
+  name: Virtuoso
+  domains:
+    - value: virtuoso.openlinksw.com
+      role: primary
+      valid_from: 2026-09-07T15:27:58.754521Z
+  category: databases
+profile:
+  summary: Virtuoso offers qualifying startups free or discounted access to their universal data platform for graphs and relational.
+  links:
+    site: https://virtuoso.openlinksw.com
+  description: Virtuoso offers qualifying startups free or discounted access to their universal data platform for graphs and relational.
+sources:
+  - source_id: src_t6barcncvk1zn43cx4j0kw709v
+    url: https://virtuoso.openlinksw.com/startup
+programs: []
+offers:
+  - offer_id: off_f0gbzhaza8v52pcxj3q292a53j
+    offer_slug: virtuoso-startup-program
+    title: Virtuoso startup program
+    summary: Virtuoso offers qualifying startups free or discounted access to their universal data platform for graphs and relational.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:27:58.754521Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their universal data platform for graphs and relational
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_32df29engg4erj15e6nysk0n4k
+      access_operator_entity_id: ent_32df29engg4erj15e6nysk0n4k
+    access:
+      availability: public
+      method: form
+      url: https://virtuoso.openlinksw.com/startup
+    source_ids:
+      - src_t6barcncvk1zn43cx4j0kw709v
