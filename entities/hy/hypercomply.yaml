@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_sfdg8b4whh3jdppfsnzht2q9ed
+  slug: hypercomply
+  name: HyperComply
+  domains:
+    - value: hypercomply.com
+      role: primary
+      valid_from: 2026-09-07T13:52:11.415719Z
+  category: auth-security
+profile:
+  summary: HyperComply Startup Package gives eligible startups 60% off with unlimited security questionnaire responses and a three-day response SLA.
+  links:
+    site: https://hypercomply.com
+  description: HyperComply is a security compliance platform. Their Startup Package offers eligible startups 60% off with unlimited security questionnaire responses and a three-day response SLA.
+sources:
+  - source_id: src_kh4vbn524epam8zvazsyggx0gq
+    url: https://hypercomply.com/startup
+programs: []
+offers:
+  - offer_id: off_1x8hyhc93hragfzja04g3xc1w8
+    offer_slug: hypercomply-startup-package
+    title: HyperComply Startup Package
+    summary: Startups receive 60% off with unlimited security questionnaire responses and a three-day response SLA.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:52:11.415719Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 60% off with unlimited security questionnaire responses and three-day response SLA
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 6000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an eligible startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_sfdg8b4whh3jdppfsnzht2q9ed
+      access_operator_entity_id: ent_sfdg8b4whh3jdppfsnzht2q9ed
+    access:
+      availability: public
+      method: form
+      url: https://hypercomply.com/startup
+    source_ids:
+      - src_kh4vbn524epam8zvazsyggx0gq
