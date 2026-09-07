@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_bjanvq6607e06r40evv01wv0qz
+  slug: copymatic
+  name: Copymatic
+  domains:
+    - value: copymatic.ai
+      role: primary
+      valid_from: 2026-09-07T15:24:03.464855Z
+  category: ai-ml
+profile:
+  summary: Copymatic offers qualifying startups free or discounted access to their AI copywriting and content generation platform.
+  links:
+    site: https://copymatic.ai
+  description: Copymatic offers qualifying startups free or discounted access to their AI copywriting and content generation platform.
+sources:
+  - source_id: src_nke213a0xvzfdxz7afd8vhq7ra
+    url: https://copymatic.ai/startup
+programs: []
+offers:
+  - offer_id: off_6qdcb5m2ps5shwhnjbfng7hge4
+    offer_slug: copymatic-startup-program
+    title: Copymatic startup program
+    summary: Copymatic offers qualifying startups free or discounted access to their AI copywriting and content generation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:24:03.464855Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI copywriting and content generation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_bjanvq6607e06r40evv01wv0qz
+      access_operator_entity_id: ent_bjanvq6607e06r40evv01wv0qz
+    access:
+      availability: public
+      method: form
+      url: https://copymatic.ai/startup
+    source_ids:
+      - src_nke213a0xvzfdxz7afd8vhq7ra
