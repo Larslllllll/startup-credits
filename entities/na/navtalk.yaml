@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3ncs91mwsff9yxcgth5q9svthm
+  slug: navtalk
+  name: NavTalk
+  domains:
+    - value: navtalk.ai
+      role: primary
+      valid_from: 2026-09-07T14:21:27.816082Z
+  category: communication
+profile:
+  summary: NavTalk offers qualifying startups free access to their AI-powered communication and messaging platform for 6 months.
+  links:
+    site: https://navtalk.ai
+  description: NavTalk is an AI-powered communication and messaging platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_c73ndskkk57c21qjxwjtyfeq9d
+    url: https://navtalk.ai/startup
+programs: []
+offers:
+  - offer_id: off_szyx98hyya5d8h3mdc0q8fzwqk
+    offer_slug: navtalk-startup-program
+    title: NavTalk startup program
+    summary: Qualifying startups receive free access to the NavTalk AI communication platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:21:27.816082Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to AI communication and messaging platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3ncs91mwsff9yxcgth5q9svthm
+      access_operator_entity_id: ent_3ncs91mwsff9yxcgth5q9svthm
+    access:
+      availability: public
+      method: form
+      url: https://navtalk.ai/startup
+    source_ids:
+      - src_c73ndskkk57c21qjxwjtyfeq9d
