@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_81968h60t2qy7qp9bhzn7ahdrs
+  slug: foxit
+  name: Foxit
+  domains:
+    - value: foxit.com
+      role: primary
+      valid_from: 2026-09-07T15:31:33.220216Z
+  category: productivity
+profile:
+  summary: Foxit offers qualifying startups free or discounted access to their PDF and document management platform.
+  links:
+    site: https://foxit.com
+  description: Foxit offers qualifying startups free or discounted access to their PDF and document management platform.
+sources:
+  - source_id: src_d4wh577tapxr8qv1396vhkrj41
+    url: https://foxit.com/startup
+programs: []
+offers:
+  - offer_id: off_s9xmng1zrc7wvg50vqz0n7jsfx
+    offer_slug: foxit-startup-program
+    title: Foxit startup program
+    summary: Foxit offers qualifying startups free or discounted access to their PDF and document management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:31:33.220216Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their PDF and document management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_81968h60t2qy7qp9bhzn7ahdrs
+      access_operator_entity_id: ent_81968h60t2qy7qp9bhzn7ahdrs
+    access:
+      availability: public
+      method: form
+      url: https://foxit.com/startup
+    source_ids:
+      - src_d4wh577tapxr8qv1396vhkrj41
