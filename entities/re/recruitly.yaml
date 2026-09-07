@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ycmpfschz2rg51qg65r1ddmdkt
+  slug: recruitly
+  name: Recruitly
+  domains:
+    - value: recruitly.io
+      role: primary
+      valid_from: 2026-09-07T13:56:27.894615Z
+  category: hr-people
+profile:
+  summary: Recruitly offers qualifying early-stage recruiting agencies 75% off its plans for their first three years.
+  links:
+    site: https://recruitly.io
+  description: Recruitly is a recruiting platform. Their startup program offers qualifying early-stage recruiting agencies founded within the last three years 75% off Recruitly plans for their first three years.
+sources:
+  - source_id: src_k9fxh4np8azf85mddbf8pwhs36
+    url: https://recruitly.io/startup
+programs: []
+offers:
+  - offer_id: off_kd4g4nqgnmp371sdfvhstsej2c
+    offer_slug: recruitly-startup-program
+    title: Recruitly startup program
+    summary: Recruiting agencies founded within three years receive 75% off Recruitly plans for their first three years.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:56:27.894615Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 75% off Recruitly plans for first three years
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 7500
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage recruiting agency founded within the last three years. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ycmpfschz2rg51qg65r1ddmdkt
+      access_operator_entity_id: ent_ycmpfschz2rg51qg65r1ddmdkt
+    access:
+      availability: public
+      method: form
+      url: https://recruitly.io/startup
+    source_ids:
+      - src_k9fxh4np8azf85mddbf8pwhs36
