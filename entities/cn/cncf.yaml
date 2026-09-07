@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_eamx7xhhrkv1j5tf2p5v8k1tg0
+  slug: cncf
+  name: CNCF
+  domains:
+    - value: cncf.io
+      role: primary
+      valid_from: 2026-09-07T14:13:04.127088Z
+  category: devtools-other
+profile:
+  summary: The CNCF offers free Kubernetes training programs, certifications at reduced cost, and access to the cloud native community for qualifying startups.
+  links:
+    site: https://cncf.io
+  description: The Cloud Native Computing Foundation (CNCF) hosts Kubernetes and other open source cloud native projects. Their startup program offers free training, reduced-cost certifications, and community access.
+sources:
+  - source_id: src_zy3gs1mcx41a0t5znsjrms49nj
+    url: https://cncf.io/startup
+programs: []
+offers:
+  - offer_id: off_z852jhm3k5rj6c5awpmcmxcxh2
+    offer_slug: cncf-startup-program
+    title: CNCF startup program
+    summary: Qualifying startups receive free Kubernetes training, reduced-cost certifications, and community access.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:13:04.127088Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free Kubernetes training and reduced-cost certifications plus community access
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_eamx7xhhrkv1j5tf2p5v8k1tg0
+      access_operator_entity_id: ent_eamx7xhhrkv1j5tf2p5v8k1tg0
+    access:
+      availability: public
+      method: form
+      url: https://cncf.io/startup
+    source_ids:
+      - src_zy3gs1mcx41a0t5znsjrms49nj
