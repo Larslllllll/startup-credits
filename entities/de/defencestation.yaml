@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_dnzmxmxvf5008gpn86g835q61v
+  slug: defencestation
+  name: DefenceStation
+  domains:
+    - value: defencestation.com
+      role: primary
+      valid_from: 2026-09-07T13:57:29.301704Z
+  category: auth-security
+profile:
+  summary: DefenceStation offers early-stage companies 90% off in year one, 50% off in year two, and 25% off in year three.
+  links:
+    site: https://defencestation.com
+  description: DefenceStation is a cybersecurity platform. Their startup program offers early-stage companies 90% off in year one, 50% off in year two, and 25% off in year three.
+sources:
+  - source_id: src_55gdrz2v4c9bscg09n7ck0vjyd
+    url: https://defencestation.com/startup
+programs: []
+offers:
+  - offer_id: off_1h77q5991wzzxjxq10rry5f2qd
+    offer_slug: defencestation-startup-program
+    title: DefenceStation startup program
+    summary: Early-stage companies receive 90% off year one, 50% off year two, 25% off year three.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:57:29.301704Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 90% off year one, 50% off year two, 25% off year three
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage company. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_dnzmxmxvf5008gpn86g835q61v
+      access_operator_entity_id: ent_dnzmxmxvf5008gpn86g835q61v
+    access:
+      availability: public
+      method: form
+      url: https://defencestation.com/startup
+    source_ids:
+      - src_55gdrz2v4c9bscg09n7ck0vjyd
