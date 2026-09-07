@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_g55sf84xfdm7bdncghq1zg0r3s
+  slug: combinex
+  name: Combinex
+  domains:
+    - value: combinex.io
+      role: primary
+      valid_from: 2026-09-07T14:56:45.334916Z
+  category: data-analytics
+profile:
+  summary: Combinex offers qualifying startups free or discounted access to their data aggregation and reporting platform.
+  links:
+    site: https://combinex.io
+  description: Combinex offers qualifying startups free or discounted access to their data aggregation and reporting platform.
+sources:
+  - source_id: src_49qe0yesgkb7t68h4ge6sb2j8f
+    url: https://combinex.io/startup
+programs: []
+offers:
+  - offer_id: off_b3djpm60mehy216xg957sbpdr7
+    offer_slug: combinex-startup-program
+    title: Combinex startup program
+    summary: Combinex offers qualifying startups free or discounted access to their data aggregation and reporting platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:56:45.334916Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to data aggregation and reporting platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_g55sf84xfdm7bdncghq1zg0r3s
+      access_operator_entity_id: ent_g55sf84xfdm7bdncghq1zg0r3s
+    access:
+      availability: public
+      method: form
+      url: https://combinex.io/startup
+    source_ids:
+      - src_49qe0yesgkb7t68h4ge6sb2j8f
