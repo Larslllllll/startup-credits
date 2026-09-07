@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_fff2sb1z7bw2axzsxvd8m8y5em
+  slug: autogen
+  name: AutoGen
+  domains:
+    - value: microsoft.github.io
+      role: primary
+      valid_from: 2026-09-07T16:17:11.316052Z
+  category: ai-ml
+profile:
+  summary: AutoGen offers qualifying startups free or discounted access to their open-source multi-agent LLM framework.
+  links:
+    site: https://microsoft.github.io
+  description: AutoGen offers qualifying startups free or discounted access to their open-source multi-agent LLM framework.
+sources:
+  - source_id: src_76jyt744c46sws78nc9ffhvve4
+    url: https://microsoft.github.io/startup
+programs: []
+offers:
+  - offer_id: off_3v3qexm44scry750akgepnpr6k
+    offer_slug: autogen-startup-program
+    title: AutoGen startup program
+    summary: AutoGen offers qualifying startups free or discounted access to their open-source multi-agent LLM framework.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:17:11.316052Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source multi-agent LLM framework
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_fff2sb1z7bw2axzsxvd8m8y5em
+      access_operator_entity_id: ent_fff2sb1z7bw2axzsxvd8m8y5em
+    access:
+      availability: public
+      method: form
+      url: https://microsoft.github.io/startup
+    source_ids:
+      - src_76jyt744c46sws78nc9ffhvve4
