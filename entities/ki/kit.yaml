@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_s6cf0ynp3ymxsj4rbf98wtsav4
+  slug: kit
+  name: Kit
+  domains:
+    - value: kit.com
+      role: primary
+      valid_from: 2026-09-07T15:11:56.012057Z
+  category: marketing
+profile:
+  summary: Kit offers qualifying startups free or discounted access to their email marketing and creator economy platform.
+  links:
+    site: https://kit.com
+  description: Kit offers qualifying startups free or discounted access to their email marketing and creator economy platform.
+sources:
+  - source_id: src_g18e394yew30evqnq2bw373tx2
+    url: https://kit.com/startup
+programs: []
+offers:
+  - offer_id: off_1z6cjnetwybswc0pwswqhcthtv
+    offer_slug: kit-startup-program
+    title: Kit startup program
+    summary: Kit offers qualifying startups free or discounted access to their email marketing and creator economy platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:11:56.012057Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to email marketing and creator economy platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_s6cf0ynp3ymxsj4rbf98wtsav4
+      access_operator_entity_id: ent_s6cf0ynp3ymxsj4rbf98wtsav4
+    access:
+      availability: public
+      method: form
+      url: https://kit.com/startup
+    source_ids:
+      - src_g18e394yew30evqnq2bw373tx2
