@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_cfyps1x334fe52xwx94rwxmyn4
+  slug: roam
+  name: Roam Research
+  domains:
+    - value: roamresearch.com
+      role: primary
+      valid_from: 2026-09-07T15:39:34.864232Z
+  category: productivity
+profile:
+  summary: Roam Research offers qualifying startups free or discounted access to their networked note-taking and knowledge platform.
+  links:
+    site: https://roamresearch.com
+  description: Roam Research offers qualifying startups free or discounted access to their networked note-taking and knowledge platform.
+sources:
+  - source_id: src_pp02gg5x6gfptgfe9s0dtqr8s6
+    url: https://roamresearch.com/startup
+programs: []
+offers:
+  - offer_id: off_a2t8y3e200nw9cedsmgs2jxx30
+    offer_slug: roam-startup-program
+    title: Roam Research startup program
+    summary: Roam Research offers qualifying startups free or discounted access to their networked note-taking and knowledge platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:39:34.864232Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their networked note-taking and knowledge platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_cfyps1x334fe52xwx94rwxmyn4
+      access_operator_entity_id: ent_cfyps1x334fe52xwx94rwxmyn4
+    access:
+      availability: public
+      method: form
+      url: https://roamresearch.com/startup
+    source_ids:
+      - src_pp02gg5x6gfptgfe9s0dtqr8s6
