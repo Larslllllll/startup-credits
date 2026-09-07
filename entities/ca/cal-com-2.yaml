@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_pd85y1c61adbx2gwx0zsmejzda
+  slug: cal-com-2
+  name: Cal.com
+  domains:
+    - value: cal.com
+      role: primary
+      valid_from: 2026-09-07T15:12:58.317414Z
+  category: productivity
+profile:
+  summary: Cal.com offers qualifying startups free or discounted access to their open-source scheduling and booking infrastructure.
+  links:
+    site: https://cal.com
+  description: Cal.com offers qualifying startups free or discounted access to their open-source scheduling and booking infrastructure.
+sources:
+  - source_id: src_kdssk31fqpf63f2msn055m88m5
+    url: https://cal.com/startup
+programs: []
+offers:
+  - offer_id: off_sc5pdk9nwd6g225ygfgk5kefs6
+    offer_slug: cal-com-2-startup-program
+    title: Cal.com startup program
+    summary: Cal.com offers qualifying startups free or discounted access to their open-source scheduling and booking infrastructure.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:12:58.317414Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source scheduling and booking infrastructure
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_pd85y1c61adbx2gwx0zsmejzda
+      access_operator_entity_id: ent_pd85y1c61adbx2gwx0zsmejzda
+    access:
+      availability: public
+      method: form
+      url: https://cal.com/startup
+    source_ids:
+      - src_kdssk31fqpf63f2msn055m88m5
