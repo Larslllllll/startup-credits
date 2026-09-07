@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gqbac87dr9nrz17bj2yr9c0518
+  slug: bill
+  name: Bill
+  domains:
+    - value: bill.com
+      role: primary
+      valid_from: 2026-09-07T16:02:51.219051Z
+  category: finance-accounting
+profile:
+  summary: Bill offers qualifying startups free or discounted access to their accounts payable automation platform.
+  links:
+    site: https://bill.com
+  description: Bill offers qualifying startups free or discounted access to their accounts payable automation platform.
+sources:
+  - source_id: src_yg153v90meyjgk8vnqy2s1wyeh
+    url: https://bill.com/startup
+programs: []
+offers:
+  - offer_id: off_2pw8gygzs3zch7114pc9fk3b03
+    offer_slug: bill-startup-program
+    title: Bill startup program
+    summary: Bill offers qualifying startups free or discounted access to their accounts payable automation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:02:51.219051Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their accounts payable automation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_gqbac87dr9nrz17bj2yr9c0518
+      access_operator_entity_id: ent_gqbac87dr9nrz17bj2yr9c0518
+    access:
+      availability: public
+      method: form
+      url: https://bill.com/startup
+    source_ids:
+      - src_yg153v90meyjgk8vnqy2s1wyeh
