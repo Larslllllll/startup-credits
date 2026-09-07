@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_20np88sf3a491qksj8j5ebrykd
+  slug: vectara-search
+  name: Vectara Search
+  domains:
+    - value: vectara.com
+      role: primary
+      valid_from: 2026-09-07T16:39:35.403586Z
+  category: ai-ml
+profile:
+  summary: Vectara offers qualifying startups free or discounted access to their AI-powered search and retrieval platform.
+  links:
+    site: https://vectara.com
+  description: Vectara offers qualifying startups free or discounted access to their AI-powered search and retrieval platform.
+sources:
+  - source_id: src_8cc57zcgkmjdkwn0rnvy84kk2t
+    url: https://vectara.com/startup
+programs: []
+offers:
+  - offer_id: off_gd8r1wxp8pefze9w1j62m3a78h
+    offer_slug: vectara-search-startup-program
+    title: Vectara Search startup program
+    summary: Vectara offers qualifying startups free or discounted access to their AI-powered search and retrieval platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:39:35.403586Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI-powered search and retrieval platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_20np88sf3a491qksj8j5ebrykd
+      access_operator_entity_id: ent_20np88sf3a491qksj8j5ebrykd
+    access:
+      availability: public
+      method: form
+      url: https://vectara.com/startup
+    source_ids:
+      - src_8cc57zcgkmjdkwn0rnvy84kk2t
