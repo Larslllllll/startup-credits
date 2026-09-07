@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9a3bacqasa8stgwg4ka53w3y4s
+  slug: dapplooker
+  name: DappLooker
+  domains:
+    - value: dapplooker.com
+      role: primary
+      valid_from: 2026-09-07T13:31:59.702309Z
+  category: data-analytics
+profile:
+  summary: DappLooker's Startup Program offers qualifying Web3 startups up to six months of free platform subscriptions plus access to startup grants worth up to $50,000.
+  links:
+    site: https://dapplooker.com
+  description: DappLooker is a Web3 analytics and business intelligence platform. Their Startup Program offers qualifying Web3 startups up to six months of free platform subscriptions plus access to startup grants worth up to $50,000 and partner resources.
+sources:
+  - source_id: src_9z3mja15r280v1dyafc39qvw4g
+    url: https://dapplooker.com/startup-program
+programs: []
+offers:
+  - offer_id: off_neyj9ax6kpyg7nzy9n215q9s75
+    offer_slug: dapplooker-startup-program
+    title: DappLooker Startup Program
+    summary: Qualifying Web3 startups receive up to 6 months of free DappLooker platform subscriptions plus access to startup grants up to $50,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:31:59.702309Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to 6 months of free DappLooker platform subscriptions plus access to startup grants up to $50,000
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying Web3 startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_9a3bacqasa8stgwg4ka53w3y4s
+      access_operator_entity_id: ent_9a3bacqasa8stgwg4ka53w3y4s
+    access:
+      availability: public
+      method: form
+      url: https://dapplooker.com/startup-program
+    source_ids:
+      - src_9z3mja15r280v1dyafc39qvw4g
