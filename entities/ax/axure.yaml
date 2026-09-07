@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3506mfzm7v5621c6q4f4egc0dc
+  slug: axure
+  name: Axure
+  domains:
+    - value: axure.com
+      role: primary
+      valid_from: 2026-09-07T15:47:57.302737Z
+  category: design
+profile:
+  summary: Axure offers qualifying startups free or discounted access to their interactive prototyping platform.
+  links:
+    site: https://axure.com
+  description: Axure offers qualifying startups free or discounted access to their interactive prototyping platform.
+sources:
+  - source_id: src_sff83ydk4hzfwb0zvq1taqx71a
+    url: https://axure.com/startup
+programs: []
+offers:
+  - offer_id: off_ykrqhspcxhs8ezmff5jht8nhfa
+    offer_slug: axure-startup-program
+    title: Axure startup program
+    summary: Axure offers qualifying startups free or discounted access to their interactive prototyping platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:47:57.302737Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their interactive prototyping platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3506mfzm7v5621c6q4f4egc0dc
+      access_operator_entity_id: ent_3506mfzm7v5621c6q4f4egc0dc
+    access:
+      availability: public
+      method: form
+      url: https://axure.com/startup
+    source_ids:
+      - src_sff83ydk4hzfwb0zvq1taqx71a
