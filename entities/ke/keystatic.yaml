@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_d71e57qttc8w20mn53fjftgbam
+  slug: keystatic
+  name: Keystatic
+  domains:
+    - value: keystatic.dev
+      role: primary
+      valid_from: 2026-09-07T15:11:26.900141Z
+  category: devtools-other
+profile:
+  summary: Keystatic offers qualifying startups free or discounted access to their open-source headless CMS for Git-based workflows.
+  links:
+    site: https://keystatic.dev
+  description: Keystatic offers qualifying startups free or discounted access to their open-source headless CMS for Git-based workflows.
+sources:
+  - source_id: src_z9mcj3ehkpfpkxfezh4pwcbzsd
+    url: https://keystatic.dev/startup
+programs: []
+offers:
+  - offer_id: off_2vy55pqsn9spk8wan6vzayf5a6
+    offer_slug: keystatic-startup-program
+    title: Keystatic startup program
+    summary: Keystatic offers qualifying startups free or discounted access to their open-source headless CMS for Git-based workflows.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:11:26.900141Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source headless CMS for Git-based workflows
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_d71e57qttc8w20mn53fjftgbam
+      access_operator_entity_id: ent_d71e57qttc8w20mn53fjftgbam
+    access:
+      availability: public
+      method: form
+      url: https://keystatic.dev/startup
+    source_ids:
+      - src_z9mcj3ehkpfpkxfezh4pwcbzsd
