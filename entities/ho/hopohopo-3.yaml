@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_tc37pkkxms74qdnq01p5fpnfsq
+  slug: hopohopo-3
+  name: Hopohopo Pro
+  domains:
+    - value: hopohopo.io
+      role: primary
+      valid_from: 2026-09-07T15:08:04.680270Z
+  category: finance-accounting
+profile:
+  summary: Hopohopo Pro offers qualifying startups an investment portfolio and asset management premium program.
+  links:
+    site: https://hopohopo.io
+  description: Hopohopo Pro offers qualifying startups an investment portfolio and asset management premium program.
+sources:
+  - source_id: src_bdeyfz90n5b323s6t98b5znw5b
+    url: https://hopohopo.io/startup
+programs: []
+offers:
+  - offer_id: off_8rt7b8e9jpxf3m31jdexr9tqt8
+    offer_slug: hopohopo-3-startup-program
+    title: Hopohopo Pro startup program
+    summary: Hopohopo Pro offers qualifying startups an investment portfolio and asset management premium program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:08:04.680270Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Premium investment portfolio and asset management program
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_tc37pkkxms74qdnq01p5fpnfsq
+      access_operator_entity_id: ent_tc37pkkxms74qdnq01p5fpnfsq
+    access:
+      availability: public
+      method: form
+      url: https://hopohopo.io/startup
+    source_ids:
+      - src_bdeyfz90n5b323s6t98b5znw5b
