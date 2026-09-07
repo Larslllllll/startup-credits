@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_x3f0mm3ajz9e8t0y9mk0v8wk09
+  slug: at2
+  name: Attentive 2
+  domains:
+    - value: attentive.com
+      role: primary
+      valid_from: 2026-09-07T16:55:25.324289Z
+  category: marketing
+profile:
+  summary: Attentive offers qualifying startups free or discounted access to their SMS marketing and customer engagement platform.
+  links:
+    site: https://attentive.com
+  description: Attentive offers qualifying startups free or discounted access to their SMS marketing and customer engagement platform.
+sources:
+  - source_id: src_t1c90mx7jndndb4t76mr2jcz89
+    url: https://attentive.com/startup
+programs: []
+offers:
+  - offer_id: off_8kfpdb3vwpxe67nq50h517fj3h
+    offer_slug: at2-startup-program
+    title: Attentive 2 startup program
+    summary: Attentive offers qualifying startups free or discounted access to their SMS marketing and customer engagement platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:55:25.324289Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to SMS marketing and customer engagement platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_x3f0mm3ajz9e8t0y9mk0v8wk09
+      access_operator_entity_id: ent_x3f0mm3ajz9e8t0y9mk0v8wk09
+    access:
+      availability: public
+      method: form
+      url: https://attentive.com/startup
+    source_ids:
+      - src_t1c90mx7jndndb4t76mr2jcz89
