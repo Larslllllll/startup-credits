@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6ec3s1hfxkfht1t0mbvrfysrtf
+  slug: zitadel-2
+  name: ZITADEL Pro
+  domains:
+    - value: zitadel.com
+      role: primary
+      valid_from: 2026-09-07T15:34:04.679458Z
+  category: auth-security
+profile:
+  summary: ZITADEL Pro offers qualifying startups free or discounted access to their identity and access management platform.
+  links:
+    site: https://zitadel.com
+  description: ZITADEL Pro offers qualifying startups free or discounted access to their identity and access management platform.
+sources:
+  - source_id: src_0kc7xqy8yp7ms1t969pkvcjmhe
+    url: https://zitadel.com/startup
+programs: []
+offers:
+  - offer_id: off_3wc83wg597fjwz5fh7a4nbdynj
+    offer_slug: zitadel-2-startup-program
+    title: ZITADEL Pro startup program
+    summary: ZITADEL Pro offers qualifying startups free or discounted access to their identity and access management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:34:04.679458Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their identity and access management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_6ec3s1hfxkfht1t0mbvrfysrtf
+      access_operator_entity_id: ent_6ec3s1hfxkfht1t0mbvrfysrtf
+    access:
+      availability: public
+      method: form
+      url: https://zitadel.com/startup
+    source_ids:
+      - src_0kc7xqy8yp7ms1t969pkvcjmhe
