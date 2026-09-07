@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_njzwqhr2691we6wrkgeax7m372
+  slug: kickbox
+  name: Kickbox
+  domains:
+    - value: kickbox.com
+      role: primary
+      valid_from: 2026-09-07T15:29:25.068601Z
+  category: communication
+profile:
+  summary: Kickbox offers qualifying startups free or discounted access to their email verification and deliverability platform.
+  links:
+    site: https://kickbox.com
+  description: Kickbox offers qualifying startups free or discounted access to their email verification and deliverability platform.
+sources:
+  - source_id: src_3cy38b9k13mpbhd9zg4epk9zh2
+    url: https://kickbox.com/startup
+programs: []
+offers:
+  - offer_id: off_y48w7sy9wpte11cr3ztecgcmrk
+    offer_slug: kickbox-startup-program
+    title: Kickbox startup program
+    summary: Kickbox offers qualifying startups free or discounted access to their email verification and deliverability platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:29:25.068601Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their email verification and deliverability platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_njzwqhr2691we6wrkgeax7m372
+      access_operator_entity_id: ent_njzwqhr2691we6wrkgeax7m372
+    access:
+      availability: public
+      method: form
+      url: https://kickbox.com/startup
+    source_ids:
+      - src_3cy38b9k13mpbhd9zg4epk9zh2
