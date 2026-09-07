@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_nx10zzqgxj5f213gn5snkxstmt
+  slug: cloud4y
+  name: Cloud4Y
+  domains:
+    - value: cloud4y.ru
+      role: primary
+      valid_from: 2026-09-07T14:54:43.964142Z
+  category: hosting-infra
+profile:
+  summary: Cloud4Y offers qualifying startups free or discounted access to their cloud infrastructure and IaaS platform.
+  links:
+    site: https://cloud4y.ru
+  description: Cloud4Y offers qualifying startups free or discounted access to their cloud infrastructure and IaaS platform.
+sources:
+  - source_id: src_et9wce0d48q8v701z76vfzh5md
+    url: https://cloud4y.ru/startup
+programs: []
+offers:
+  - offer_id: off_9b93x5hestw9q2s486xyppyssq
+    offer_slug: cloud4y-startup-program
+    title: Cloud4Y startup program
+    summary: Cloud4Y offers qualifying startups free or discounted access to their cloud infrastructure and IaaS platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:54:43.964142Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to cloud infrastructure and IaaS platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_nx10zzqgxj5f213gn5snkxstmt
+      access_operator_entity_id: ent_nx10zzqgxj5f213gn5snkxstmt
+    access:
+      availability: public
+      method: form
+      url: https://cloud4y.ru/startup
+    source_ids:
+      - src_et9wce0d48q8v701z76vfzh5md
