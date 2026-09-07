@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_zk75vqwtp0hq919p5bn49tzw2v
+  slug: deezer
+  name: Deezer
+  domains:
+    - value: deezer.com
+      role: primary
+      valid_from: 2026-09-07T15:45:30.103553Z
+  category: communication
+profile:
+  summary: Deezer offers qualifying startups free or discounted access to their music streaming and audio platform.
+  links:
+    site: https://deezer.com
+  description: Deezer offers qualifying startups free or discounted access to their music streaming and audio platform.
+sources:
+  - source_id: src_paqb058e5xkaxdndk8fykt7w5h
+    url: https://deezer.com/startup
+programs: []
+offers:
+  - offer_id: off_kf231cb0vbsv4ff36ypkg31syt
+    offer_slug: deezer-startup-program
+    title: Deezer startup program
+    summary: Deezer offers qualifying startups free or discounted access to their music streaming and audio platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:45:30.103553Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their music streaming and audio platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_zk75vqwtp0hq919p5bn49tzw2v
+      access_operator_entity_id: ent_zk75vqwtp0hq919p5bn49tzw2v
+    access:
+      availability: public
+      method: form
+      url: https://deezer.com/startup
+    source_ids:
+      - src_paqb058e5xkaxdndk8fykt7w5h
