@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_z5j15ejkhc119bdfwqj49xsdb7
+  slug: oscommerce
+  name: osCommerce
+  domains:
+    - value: oscommerce.com
+      role: primary
+      valid_from: 2026-09-07T15:55:09.416082Z
+  category: commerce
+profile:
+  summary: osCommerce offers qualifying startups free or discounted access to their open-source e-commerce platform.
+  links:
+    site: https://oscommerce.com
+  description: osCommerce offers qualifying startups free or discounted access to their open-source e-commerce platform.
+sources:
+  - source_id: src_7zdrhx2q9dtzw6z6vs9v200078
+    url: https://oscommerce.com/startup
+programs: []
+offers:
+  - offer_id: off_fcv9b3jkqqq2c7rvjf276688aj
+    offer_slug: oscommerce-startup-program
+    title: osCommerce startup program
+    summary: osCommerce offers qualifying startups free or discounted access to their open-source e-commerce platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:55:09.416082Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source e-commerce platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_z5j15ejkhc119bdfwqj49xsdb7
+      access_operator_entity_id: ent_z5j15ejkhc119bdfwqj49xsdb7
+    access:
+      availability: public
+      method: form
+      url: https://oscommerce.com/startup
+    source_ids:
+      - src_7zdrhx2q9dtzw6z6vs9v200078
