@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5my1czcxg1kt78q9zxye6f5fgt
+  slug: holded
+  name: Holded
+  domains:
+    - value: holded.com
+      role: primary
+      valid_from: 2026-09-07T14:18:21.481566Z
+  category: finance-accounting
+profile:
+  summary: Holded offers qualifying startups free access to their Business Management ERP platform for 6 months with CRM, invoicing, and accounting.
+  links:
+    site: https://holded.com
+  description: Holded is a business management ERP platform. Their startup program offers free access to qualifying startups for 6 months with CRM, invoicing, and accounting features.
+sources:
+  - source_id: src_mx3pcmmnqxzh6gvb1jy31c2r06
+    url: https://holded.com/startup
+programs: []
+offers:
+  - offer_id: off_ep4peqtx720p5z8rfvt6tnvrwx
+    offer_slug: holded-startup-program
+    title: Holded startup program
+    summary: Qualifying startups receive free access to the Holded business management ERP for 6 months with CRM, invoicing, and accounting.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:18:21.481566Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to business management ERP for 6 months with CRM, invoicing, and accounting
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_5my1czcxg1kt78q9zxye6f5fgt
+      access_operator_entity_id: ent_5my1czcxg1kt78q9zxye6f5fgt
+    access:
+      availability: public
+      method: form
+      url: https://holded.com/startup
+    source_ids:
+      - src_mx3pcmmnqxzh6gvb1jy31c2r06
