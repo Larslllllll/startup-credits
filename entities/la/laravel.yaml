@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_yf9bvcq78cgkdwkaw9c25wzvpg
+  slug: laravel
+  name: Laravel
+  domains:
+    - value: laravel.com
+      role: primary
+      valid_from: 2026-09-07T14:11:56.143916Z
+  category: devtools-other
+profile:
+  summary: Laravel Partners offers qualifying startups discounted access to Laravel Forge, Vapor, and other products plus expert consulting.
+  links:
+    site: https://laravel.com
+  description: Laravel is a PHP web application framework. Their Partners program offers qualifying startups discounted access to Laravel Forge, Vapor, and other products.
+sources:
+  - source_id: src_a0nkvza47s38fpz8vfwzp9a75c
+    url: https://laravel.com/partners
+programs: []
+offers:
+  - offer_id: off_xcwj88tgm7efy8sd9byjrp340a
+    offer_slug: laravel-partners-startup
+    title: Laravel Partners startup program
+    summary: Qualifying startups receive discounted access to Laravel Forge, Vapor, and other Laravel products plus expert consulting.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:11:56.143916Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Discounted access to Laravel products plus expert consulting
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_yf9bvcq78cgkdwkaw9c25wzvpg
+      access_operator_entity_id: ent_yf9bvcq78cgkdwkaw9c25wzvpg
+    access:
+      availability: public
+      method: form
+      url: https://laravel.com/partners
+    source_ids:
+      - src_a0nkvza47s38fpz8vfwzp9a75c
