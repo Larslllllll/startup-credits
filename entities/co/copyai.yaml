@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_egm8k39c6n1rbeftb73wnn24zt
+  slug: copyai
+  name: Copy.ai
+  domains:
+    - value: copy.ai
+      role: primary
+      valid_from: 2026-09-07T15:23:29.145427Z
+  category: ai-ml
+profile:
+  summary: Copy.ai offers qualifying startups free or discounted access to their AI-powered marketing copywriting platform.
+  links:
+    site: https://copy.ai
+  description: Copy.ai offers qualifying startups free or discounted access to their AI-powered marketing copywriting platform.
+sources:
+  - source_id: src_hrc8bjeezagzcb83gkf5h0wv24
+    url: https://copy.ai/startup
+programs: []
+offers:
+  - offer_id: off_2vs6pgvqq56rpa0q603hbz6sx5
+    offer_slug: copyai-startup-program
+    title: Copy.ai startup program
+    summary: Copy.ai offers qualifying startups free or discounted access to their AI-powered marketing copywriting platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:23:29.145427Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI-powered marketing copywriting platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_egm8k39c6n1rbeftb73wnn24zt
+      access_operator_entity_id: ent_egm8k39c6n1rbeftb73wnn24zt
+    access:
+      availability: public
+      method: form
+      url: https://copy.ai/startup
+    source_ids:
+      - src_hrc8bjeezagzcb83gkf5h0wv24
