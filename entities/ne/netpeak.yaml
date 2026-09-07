@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ez2hrx55b8nd9t925fetsgfrdk
+  slug: netpeak
+  name: Netpeak
+  domains:
+    - value: netpeak.com
+      role: primary
+      valid_from: 2026-09-07T15:36:42.290421Z
+  category: marketing
+profile:
+  summary: Netpeak offers qualifying startups free or discounted access to their SEO and digital marketing platform.
+  links:
+    site: https://netpeak.com
+  description: Netpeak offers qualifying startups free or discounted access to their SEO and digital marketing platform.
+sources:
+  - source_id: src_47gx1763851k8frmxy951rqaq0
+    url: https://netpeak.com/startup
+programs: []
+offers:
+  - offer_id: off_cztmewks7y7s1fb7cg3t18e1dk
+    offer_slug: netpeak-startup-program
+    title: Netpeak startup program
+    summary: Netpeak offers qualifying startups free or discounted access to their SEO and digital marketing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:36:42.290421Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their SEO and digital marketing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ez2hrx55b8nd9t925fetsgfrdk
+      access_operator_entity_id: ent_ez2hrx55b8nd9t925fetsgfrdk
+    access:
+      availability: public
+      method: form
+      url: https://netpeak.com/startup
+    source_ids:
+      - src_47gx1763851k8frmxy951rqaq0
