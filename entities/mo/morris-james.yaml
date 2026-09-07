@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_yp4dkr024b3r9n911d0sn2v307
+  slug: morris-james
+  name: Morris James LLP
+  domains:
+    - value: morrisjames.com
+      role: primary
+      valid_from: 2026-09-07T14:51:48.086851Z
+  category: legal-compliance
+profile:
+  summary: Morris James LLP offers qualifying startups free legal consultation through their Start-Up Program.
+  links:
+    site: https://morrisjames.com
+  description: Morris James LLP offers qualifying startups free legal consultation through their Start-Up Program.
+sources:
+  - source_id: src_0zh8k46bzhk9m96kq07hmvh89z
+    url: https://morrisjames.com/startup
+programs: []
+offers:
+  - offer_id: off_kd8x69x3pc3g3qvze14py8547p
+    offer_slug: morris-james-startup-program
+    title: Morris James LLP startup program
+    summary: Morris James LLP offers qualifying startups free legal consultation through their Start-Up Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:51:48.086851Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free legal consultation for qualifying startups
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_yp4dkr024b3r9n911d0sn2v307
+      access_operator_entity_id: ent_yp4dkr024b3r9n911d0sn2v307
+    access:
+      availability: public
+      method: form
+      url: https://morrisjames.com/startup
+    source_ids:
+      - src_0zh8k46bzhk9m96kq07hmvh89z
