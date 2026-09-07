@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_h6gxpy71th028cqbz5cwtcq1qv
+  slug: gforms
+  name: Google Forms Pro
+  domains:
+    - value: forms.google.com
+      role: primary
+      valid_from: 2026-09-07T15:59:01.290455Z
+  category: no-code
+profile:
+  summary: Google Forms Pro offers qualifying startups free or discounted access to their free form and survey platform.
+  links:
+    site: https://forms.google.com
+  description: Google Forms Pro offers qualifying startups free or discounted access to their free form and survey platform.
+sources:
+  - source_id: src_rjbvddm0zc7pc2a130212dw3jd
+    url: https://forms.google.com/startup
+programs: []
+offers:
+  - offer_id: off_wh8pkwg2kazy40j35tztr1q2jg
+    offer_slug: gforms-startup-program
+    title: Google Forms Pro startup program
+    summary: Google Forms Pro offers qualifying startups free or discounted access to their free form and survey platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:59:01.290455Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to their free form and survey platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_h6gxpy71th028cqbz5cwtcq1qv
+      access_operator_entity_id: ent_h6gxpy71th028cqbz5cwtcq1qv
+    access:
+      availability: public
+      method: form
+      url: https://forms.google.com/startup
+    source_ids:
+      - src_rjbvddm0zc7pc2a130212dw3jd
