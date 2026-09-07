@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_yn6h6kyxndktnyzhsdqecbgzag
+  slug: azion
+  name: Azion
+  domains:
+    - value: azion.com
+      role: primary
+      valid_from: 2026-09-07T14:27:02.133249Z
+  category: hosting-infra
+profile:
+  summary: Azion offers qualifying startups free access to their edge computing and CDN platform for 6 months.
+  links:
+    site: https://azion.com
+  description: Azion is an edge computing and CDN platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_gp07y15x22tmjyb08nxgh5waq0
+    url: https://azion.com/startup
+programs: []
+offers:
+  - offer_id: off_wgtb5h4wh158k9446arzresnsy
+    offer_slug: azion-startup-program
+    title: Azion startup program
+    summary: Qualifying startups receive free access to the Azion edge computing and CDN platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:27:02.133249Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to edge computing and CDN platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_yn6h6kyxndktnyzhsdqecbgzag
+      access_operator_entity_id: ent_yn6h6kyxndktnyzhsdqecbgzag
+    access:
+      availability: public
+      method: form
+      url: https://azion.com/startup
+    source_ids:
+      - src_gp07y15x22tmjyb08nxgh5waq0
