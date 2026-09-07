@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xa6h9g48j8gt3e550xtb5ty9w0
+  slug: swingvy
+  name: Swingvy
+  domains:
+    - value: swingvy.com
+      role: primary
+      valid_from: 2026-09-07T14:13:26.929117Z
+  category: hr-people
+profile:
+  summary: Swingvy offers qualifying startups free access to their all-in-one HR platform for managing employees, payroll, and benefits.
+  links:
+    site: https://swingvy.com
+  description: Swingvy is an all-in-one HR, payroll, and benefits platform. Their startup program offers free access to qualifying startups.
+sources:
+  - source_id: src_vtxxr51jkhmv3eb2mjd9717ynw
+    url: https://swingvy.com/startup
+programs: []
+offers:
+  - offer_id: off_tyhybe0g6hkq4kxqrq2yc5p3wr
+    offer_slug: swingvy-startup-program
+    title: Swingvy startup program
+    summary: Qualifying startups receive free access to the Swingvy HR platform for managing employees, payroll, and benefits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:13:26.929117Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to all-in-one HR platform for employees, payroll, and benefits
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xa6h9g48j8gt3e550xtb5ty9w0
+      access_operator_entity_id: ent_xa6h9g48j8gt3e550xtb5ty9w0
+    access:
+      availability: public
+      method: form
+      url: https://swingvy.com/startup
+    source_ids:
+      - src_vtxxr51jkhmv3eb2mjd9717ynw
