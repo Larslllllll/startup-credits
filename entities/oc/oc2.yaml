@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ggxecw9bfeccmtvbje9bcshaa7
+  slug: oc2
+  name: Oracle Cloud 2
+  domains:
+    - value: oracle.com
+      role: primary
+      valid_from: 2026-09-07T17:01:05.798939Z
+  category: hosting-infra
+profile:
+  summary: Oracle Cloud offers qualifying startups free or discounted access to their cloud infrastructure platform.
+  links:
+    site: https://oracle.com
+  description: Oracle Cloud offers qualifying startups free or discounted access to their cloud infrastructure platform.
+sources:
+  - source_id: src_qzx02fcb66zdrx7jwhkptd5hcx
+    url: https://oracle.com/startup
+programs: []
+offers:
+  - offer_id: off_1twnzmbh9mfxzj9671c3np71kr
+    offer_slug: oc2-startup-program
+    title: Oracle Cloud 2 startup program
+    summary: Oracle Cloud offers qualifying startups free or discounted access to their cloud infrastructure platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T17:01:05.798939Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to cloud infrastructure platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ggxecw9bfeccmtvbje9bcshaa7
+      access_operator_entity_id: ent_ggxecw9bfeccmtvbje9bcshaa7
+    access:
+      availability: public
+      method: form
+      url: https://oracle.com/startup
+    source_ids:
+      - src_qzx02fcb66zdrx7jwhkptd5hcx
