@@ -33,6 +33,9 @@ offers:
         - benefit_id: ben_primary
           description: $1,000 in monthly credits for 6 months (up to $6,000 total)
           kind: credit
+          value:
+            amount: 1000
+            currency: USD
     eligibility:
       rule:
         kind: manual
