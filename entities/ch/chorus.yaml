@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_acj55geb5mb5qer28131swmf8x
+  slug: chorus
+  name: Chorus
+  domains:
+    - value: chorus.ai
+      role: primary
+      valid_from: 2026-09-07T15:30:33.221536Z
+  category: crm-sales
+profile:
+  summary: Chorus offers qualifying startups free or discounted access to their conversation intelligence and sales analytics platform.
+  links:
+    site: https://chorus.ai
+  description: Chorus offers qualifying startups free or discounted access to their conversation intelligence and sales analytics platform.
+sources:
+  - source_id: src_99t8hgwyms8syp1nygv6szw6hd
+    url: https://chorus.ai/startup
+programs: []
+offers:
+  - offer_id: off_sgp6a8qsmh4z09n56jth3peqyx
+    offer_slug: chorus-startup-program
+    title: Chorus startup program
+    summary: Chorus offers qualifying startups free or discounted access to their conversation intelligence and sales analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:30:33.221536Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their conversation intelligence and sales analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_acj55geb5mb5qer28131swmf8x
+      access_operator_entity_id: ent_acj55geb5mb5qer28131swmf8x
+    access:
+      availability: public
+      method: form
+      url: https://chorus.ai/startup
+    source_ids:
+      - src_99t8hgwyms8syp1nygv6szw6hd
