@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xy8axa94kccm84nnxknf6qb5hs
+  slug: qarnot
+  name: Qarnot
+  domains:
+    - value: qarnot.com
+      role: primary
+      valid_from: 2026-09-07T14:54:51.378059Z
+  category: ai-ml
+profile:
+  summary: Qarnot offers qualifying startups free or discounted access to their green computing and distributed computing platform.
+  links:
+    site: https://qarnot.com
+  description: Qarnot offers qualifying startups free or discounted access to their green computing and distributed computing platform.
+sources:
+  - source_id: src_2szrfkc7w6x6mmjscn6q2vs03d
+    url: https://qarnot.com/startup
+programs: []
+offers:
+  - offer_id: off_em745p3rm2vecht9g5hhzh2z0d
+    offer_slug: qarnot-startup-program
+    title: Qarnot startup program
+    summary: Qarnot offers qualifying startups free or discounted access to their green computing and distributed computing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:54:51.378059Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to green computing and distributed computing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xy8axa94kccm84nnxknf6qb5hs
+      access_operator_entity_id: ent_xy8axa94kccm84nnxknf6qb5hs
+    access:
+      availability: public
+      method: form
+      url: https://qarnot.com/startup
+    source_ids:
+      - src_2szrfkc7w6x6mmjscn6q2vs03d
