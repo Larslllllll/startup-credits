@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ydbbs20zcbz7dd3z5mw7k7g5g6
+  slug: jobo
+  name: Jobo
+  domains:
+    - value: jobo.world
+      role: primary
+      valid_from: 2026-09-07T14:58:14.159981Z
+  category: hr-people
+profile:
+  summary: Jobo offers qualifying startups free or discounted access to their AI-powered job search and career platform.
+  links:
+    site: https://jobo.world
+  description: Jobo offers qualifying startups free or discounted access to their AI-powered job search and career platform.
+sources:
+  - source_id: src_50mj7r71bnae3pn77a3twhrb4r
+    url: https://jobo.world/startup
+programs: []
+offers:
+  - offer_id: off_tr8n58rp05hkpeszf9z0926082
+    offer_slug: jobo-startup-program
+    title: Jobo startup program
+    summary: Jobo offers qualifying startups free or discounted access to their AI-powered job search and career platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:58:14.159981Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI-powered job search and career platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ydbbs20zcbz7dd3z5mw7k7g5g6
+      access_operator_entity_id: ent_ydbbs20zcbz7dd3z5mw7k7g5g6
+    access:
+      availability: public
+      method: form
+      url: https://jobo.world/startup
+    source_ids:
+      - src_50mj7r71bnae3pn77a3twhrb4r
