@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rpnkwmnp89fzg1vzswzz8r03m3
+  slug: google-forms
+  name: Google Forms
+  domains:
+    - value: forms.google.com
+      role: primary
+      valid_from: 2026-09-07T15:58:20.273236Z
+  category: no-code
+profile:
+  summary: Google Forms offers qualifying startups free or discounted access to their free form and survey platform.
+  links:
+    site: https://forms.google.com
+  description: Google Forms offers qualifying startups free or discounted access to their free form and survey platform.
+sources:
+  - source_id: src_dtp53angcv6e0913jrsgrcj5wm
+    url: https://forms.google.com/startup
+programs: []
+offers:
+  - offer_id: off_0crhc2mjsp7zvf4x0c3thk9cnk
+    offer_slug: google-forms-startup-program
+    title: Google Forms startup program
+    summary: Google Forms offers qualifying startups free or discounted access to their free form and survey platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:58:20.273236Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to their free form and survey platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_rpnkwmnp89fzg1vzswzz8r03m3
+      access_operator_entity_id: ent_rpnkwmnp89fzg1vzswzz8r03m3
+    access:
+      availability: public
+      method: form
+      url: https://forms.google.com/startup
+    source_ids:
+      - src_dtp53angcv6e0913jrsgrcj5wm
