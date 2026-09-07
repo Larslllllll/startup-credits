@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7zkprg26bckznpzexmce3001rw
+  slug: gemini
+  name: Gemini
+  domains:
+    - value: ai.google
+      role: primary
+      valid_from: 2026-09-07T15:13:29.019942Z
+  category: ai-ml
+profile:
+  summary: Gemini offers qualifying startups free or discounted access to their multi-modal AI model and API platform.
+  links:
+    site: https://ai.google
+  description: Gemini offers qualifying startups free or discounted access to their multi-modal AI model and API platform.
+sources:
+  - source_id: src_bppwm84f0h3w4bzaw1fb4mng1r
+    url: https://ai.google/startup
+programs: []
+offers:
+  - offer_id: off_gvh5dv6kq8y7s0h0vxmj8pzbyv
+    offer_slug: gemini-startup-program
+    title: Gemini startup program
+    summary: Gemini offers qualifying startups free or discounted access to their multi-modal AI model and API platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:13:29.019942Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to multi-modal AI model and API platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_7zkprg26bckznpzexmce3001rw
+      access_operator_entity_id: ent_7zkprg26bckznpzexmce3001rw
+    access:
+      availability: public
+      method: form
+      url: https://ai.google/startup
+    source_ids:
+      - src_bppwm84f0h3w4bzaw1fb4mng1r
