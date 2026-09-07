@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_4y9tepqnkp4qffzk4sv4z0pess
+  slug: insightly
+  name: Insightly
+  domains:
+    - value: insightly.com
+      role: primary
+      valid_from: 2026-09-07T15:30:01.085720Z
+  category: crm-sales
+profile:
+  summary: Insightly offers qualifying startups free or discounted access to their CRM and project management platform.
+  links:
+    site: https://insightly.com
+  description: Insightly offers qualifying startups free or discounted access to their CRM and project management platform.
+sources:
+  - source_id: src_n3pbd1xczr2rpyrc7a9z19re2y
+    url: https://insightly.com/startup
+programs: []
+offers:
+  - offer_id: off_ma5nj2yvx40qntfbtjvyxnn31t
+    offer_slug: insightly-startup-program
+    title: Insightly startup program
+    summary: Insightly offers qualifying startups free or discounted access to their CRM and project management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:30:01.085720Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their CRM and project management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_4y9tepqnkp4qffzk4sv4z0pess
+      access_operator_entity_id: ent_4y9tepqnkp4qffzk4sv4z0pess
+    access:
+      availability: public
+      method: form
+      url: https://insightly.com/startup
+    source_ids:
+      - src_n3pbd1xczr2rpyrc7a9z19re2y
