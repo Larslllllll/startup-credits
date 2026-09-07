@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_28rszx3sqap0wsqdky0fe9bn2k
+  slug: 01ai
+  name: 01.AI
+  domains:
+    - value: 01.ai
+      role: primary
+      valid_from: 2026-09-07T16:11:46.094821Z
+  category: ai-ml
+profile:
+  summary: 01.AI offers qualifying startups free or discounted access to their AI model API and Yi platform.
+  links:
+    site: https://01.ai
+  description: 01.AI offers qualifying startups free or discounted access to their AI model API and Yi platform.
+sources:
+  - source_id: src_73gj635c6x3jk3mvestdwrxadq
+    url: https://01.ai/startup
+programs: []
+offers:
+  - offer_id: off_3g5xwtwnm9eewyaytk1cpz9mw4
+    offer_slug: 01ai-startup-program
+    title: 01.AI startup program
+    summary: 01.AI offers qualifying startups free or discounted access to their AI model API and Yi platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:11:46.094821Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI model API and Yi platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_28rszx3sqap0wsqdky0fe9bn2k
+      access_operator_entity_id: ent_28rszx3sqap0wsqdky0fe9bn2k
+    access:
+      availability: public
+      method: form
+      url: https://01.ai/startup
+    source_ids:
+      - src_73gj635c6x3jk3mvestdwrxadq
