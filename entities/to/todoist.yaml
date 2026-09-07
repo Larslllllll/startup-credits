@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gbg3t2s2za6vd364tjca00hrrp
+  slug: todoist
+  name: Todoist
+  domains:
+    - value: todoist.com
+      role: primary
+      valid_from: 2026-09-07T15:40:52.799076Z
+  category: productivity
+profile:
+  summary: Todoist offers qualifying startups free or discounted access to their task management and productivity platform.
+  links:
+    site: https://todoist.com
+  description: Todoist offers qualifying startups free or discounted access to their task management and productivity platform.
+sources:
+  - source_id: src_z57fz5e8b5vab7tk9phaff2z0f
+    url: https://todoist.com/startup
+programs: []
+offers:
+  - offer_id: off_cxjpse8my9vdjn2tng62vwrkpv
+    offer_slug: todoist-startup-program
+    title: Todoist startup program
+    summary: Todoist offers qualifying startups free or discounted access to their task management and productivity platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:40:52.799076Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their task management and productivity platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_gbg3t2s2za6vd364tjca00hrrp
+      access_operator_entity_id: ent_gbg3t2s2za6vd364tjca00hrrp
+    access:
+      availability: public
+      method: form
+      url: https://todoist.com/startup
+    source_ids:
+      - src_z57fz5e8b5vab7tk9phaff2z0f
