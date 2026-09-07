@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_dyt7nj7zzyg718wjw11hwy6zsc
+  slug: definite
+  name: Definite
+  domains:
+    - value: definite.app
+      role: primary
+      valid_from: 2026-09-07T14:16:03.178990Z
+  category: data-analytics
+profile:
+  summary: Definite offers qualifying startups free access to their AI-native business intelligence platform for 6 months.
+  links:
+    site: https://definite.app
+  description: Definite is an AI-native business intelligence platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_wm1whx5qxqmdz024ce0gv74tem
+    url: https://definite.app/startup
+programs: []
+offers:
+  - offer_id: off_q9pt061wfcny5ca5dnqjjm7rer
+    offer_slug: definite-startup-program
+    title: Definite startup program
+    summary: Qualifying startups receive free access to the Definite AI-native BI platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:16:03.178990Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to the AI-native BI platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_dyt7nj7zzyg718wjw11hwy6zsc
+      access_operator_entity_id: ent_dyt7nj7zzyg718wjw11hwy6zsc
+    access:
+      availability: public
+      method: form
+      url: https://definite.app/startup
+    source_ids:
+      - src_wm1whx5qxqmdz024ce0gv74tem
