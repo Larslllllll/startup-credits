@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_d2cdd6aanxt6sx6330q5w8v74r
+  slug: readme
+  name: ReadMe
+  domains:
+    - value: readme.io
+      role: primary
+      valid_from: 2026-09-07T15:26:10.765531Z
+  category: devtools-other
+profile:
+  summary: ReadMe offers qualifying startups free or discounted access to their API documentation and developer portal platform.
+  links:
+    site: https://readme.io
+  description: ReadMe offers qualifying startups free or discounted access to their API documentation and developer portal platform.
+sources:
+  - source_id: src_6p5r2ecswbtnh7806sh7etckfn
+    url: https://readme.io/startup
+programs: []
+offers:
+  - offer_id: off_42r318qz0qb8mx8t8t8gf1vgwp
+    offer_slug: readme-startup-program
+    title: ReadMe startup program
+    summary: ReadMe offers qualifying startups free or discounted access to their API documentation and developer portal platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:26:10.765531Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their API documentation and developer portal platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_d2cdd6aanxt6sx6330q5w8v74r
+      access_operator_entity_id: ent_d2cdd6aanxt6sx6330q5w8v74r
+    access:
+      availability: public
+      method: form
+      url: https://readme.io/startup
+    source_ids:
+      - src_6p5r2ecswbtnh7806sh7etckfn
