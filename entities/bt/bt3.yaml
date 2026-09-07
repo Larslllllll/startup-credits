@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_b110js5tdvasdhk9arm5k2ncs1
+  slug: bt3
+  name: Bitbucket 3
+  domains:
+    - value: bitbucket.org
+      role: primary
+      valid_from: 2026-09-07T17:00:46.774682Z
+  category: devtools-other
+profile:
+  summary: Bitbucket offers qualifying startups free or discounted access to their code hosting and collaboration platform.
+  links:
+    site: https://bitbucket.org
+  description: Bitbucket offers qualifying startups free or discounted access to their code hosting and collaboration platform.
+sources:
+  - source_id: src_q5bj4r3mb49rrawx4bbrtyh0dm
+    url: https://bitbucket.org/startup
+programs: []
+offers:
+  - offer_id: off_nf4ny9wwahv2y1kzewr4b2f7qe
+    offer_slug: bt3-startup-program
+    title: Bitbucket 3 startup program
+    summary: Bitbucket offers qualifying startups free or discounted access to their code hosting and collaboration platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T17:00:46.774682Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to code hosting and collaboration platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_b110js5tdvasdhk9arm5k2ncs1
+      access_operator_entity_id: ent_b110js5tdvasdhk9arm5k2ncs1
+    access:
+      availability: public
+      method: form
+      url: https://bitbucket.org/startup
+    source_ids:
+      - src_q5bj4r3mb49rrawx4bbrtyh0dm
