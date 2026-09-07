@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_r4nc7f4gmm1xf56fzms2y16ax5
+  slug: anchor-browser
+  name: AnchorBrowser
+  domains:
+    - value: anchorbrowser.io
+      role: primary
+      valid_from: 2026-09-07T14:35:06.356843Z
+  category: communication
+profile:
+  summary: AnchorBrowser offers qualifying startups free access to their web browsing automation and data extraction platform for 6 months.
+  links:
+    site: https://anchorbrowser.io
+  description: AnchorBrowser is a web browsing automation and data extraction platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_s5nnnt1sqz4zhyzth32nkkda6x
+    url: https://anchorbrowser.io/startup
+programs: []
+offers:
+  - offer_id: off_0jpfs0h5bab7vkx1x0j76m6dgb
+    offer_slug: anchor-browser-startup-program
+    title: AnchorBrowser startup program
+    summary: Qualifying startups receive free access to the AnchorBrowser web browsing automation and data extraction platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:35:06.356843Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to web browsing automation and data extraction platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_r4nc7f4gmm1xf56fzms2y16ax5
+      access_operator_entity_id: ent_r4nc7f4gmm1xf56fzms2y16ax5
+    access:
+      availability: public
+      method: form
+      url: https://anchorbrowser.io/startup
+    source_ids:
+      - src_s5nnnt1sqz4zhyzth32nkkda6x
