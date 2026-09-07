@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_jvf1fy2npgezwk530sqppbqtkv
+  slug: bomgar
+  name: BeyondTrust
+  domains:
+    - value: beyondtrust.com
+      role: primary
+      valid_from: 2026-09-07T15:41:40.775841Z
+  category: communication
+profile:
+  summary: BeyondTrust offers qualifying startups free or discounted access to their remote support and access management platform.
+  links:
+    site: https://beyondtrust.com
+  description: BeyondTrust offers qualifying startups free or discounted access to their remote support and access management platform.
+sources:
+  - source_id: src_3ja4cect4m4g3aqass305q6tvc
+    url: https://beyondtrust.com/startup
+programs: []
+offers:
+  - offer_id: off_zt4hwbrrwzxfsqrtjyvt6ej0gh
+    offer_slug: bomgar-startup-program
+    title: BeyondTrust startup program
+    summary: BeyondTrust offers qualifying startups free or discounted access to their remote support and access management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:41:40.775841Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their remote support and access management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_jvf1fy2npgezwk530sqppbqtkv
+      access_operator_entity_id: ent_jvf1fy2npgezwk530sqppbqtkv
+    access:
+      availability: public
+      method: form
+      url: https://beyondtrust.com/startup
+    source_ids:
+      - src_3ja4cect4m4g3aqass305q6tvc
