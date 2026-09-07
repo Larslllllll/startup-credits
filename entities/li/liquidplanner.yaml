@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_d6agvbwkwpwp8h6y1dr2skm9bv
+  slug: liquidplanner
+  name: LiquidPlanner
+  domains:
+    - value: liquidplanner.com
+      role: primary
+      valid_from: 2026-09-07T15:39:02.563331Z
+  category: productivity
+profile:
+  summary: LiquidPlanner offers qualifying startups free or discounted access to their intelligent project management platform.
+  links:
+    site: https://liquidplanner.com
+  description: LiquidPlanner offers qualifying startups free or discounted access to their intelligent project management platform.
+sources:
+  - source_id: src_dd6kqpg4ws5f8bm7ezq8hq83ev
+    url: https://liquidplanner.com/startup
+programs: []
+offers:
+  - offer_id: off_avfxn8eemy0qstzngq106wrgth
+    offer_slug: liquidplanner-startup-program
+    title: LiquidPlanner startup program
+    summary: LiquidPlanner offers qualifying startups free or discounted access to their intelligent project management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:39:02.563331Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their intelligent project management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_d6agvbwkwpwp8h6y1dr2skm9bv
+      access_operator_entity_id: ent_d6agvbwkwpwp8h6y1dr2skm9bv
+    access:
+      availability: public
+      method: form
+      url: https://liquidplanner.com/startup
+    source_ids:
+      - src_dd6kqpg4ws5f8bm7ezq8hq83ev
