@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_yj6w6cpzhpkk1h9ywmpb2nhhtm
+  slug: lancedb
+  name: LanceDB
+  domains:
+    - value: lancedb.com
+      role: primary
+      valid_from: 2026-09-07T15:03:52.148233Z
+  category: ai-ml
+profile:
+  summary: LanceDB offers qualifying startups free or discounted access to their open-source serverless vector database for AI applications.
+  links:
+    site: https://lancedb.com
+  description: LanceDB offers qualifying startups free or discounted access to their open-source serverless vector database for AI applications.
+sources:
+  - source_id: src_66v7m7n5r7y70c3pss6dnt0g19
+    url: https://lancedb.com/startup
+programs: []
+offers:
+  - offer_id: off_tx86jzzdrtc6rm487v3cw19jv5
+    offer_slug: lancedb-startup-program
+    title: LanceDB startup program
+    summary: LanceDB offers qualifying startups free or discounted access to their open-source serverless vector database for AI applications.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:03:52.148233Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source serverless vector database for AI applications
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_yj6w6cpzhpkk1h9ywmpb2nhhtm
+      access_operator_entity_id: ent_yj6w6cpzhpkk1h9ywmpb2nhhtm
+    access:
+      availability: public
+      method: form
+      url: https://lancedb.com/startup
+    source_ids:
+      - src_66v7m7n5r7y70c3pss6dnt0g19
