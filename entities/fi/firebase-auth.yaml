@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_y26b78y0dejn0knykwvbv8xj4a
+  slug: firebase-auth
+  name: Firebase Auth
+  domains:
+    - value: firebase.google.com
+      role: primary
+      valid_from: 2026-09-07T15:33:42.075538Z
+  category: auth-security
+profile:
+  summary: Firebase Auth offers qualifying startups free or discounted access to their authentication and identity service.
+  links:
+    site: https://firebase.google.com
+  description: Firebase Auth offers qualifying startups free or discounted access to their authentication and identity service.
+sources:
+  - source_id: src_037rhxv4vfjmzqrfzedwyrfjke
+    url: https://firebase.google.com/startup
+programs: []
+offers:
+  - offer_id: off_8hgea6x94y5rmqq7dh90zpp689
+    offer_slug: firebase-auth-startup-program
+    title: Firebase Auth startup program
+    summary: Firebase Auth offers qualifying startups free or discounted access to their authentication and identity service.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:33:42.075538Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their authentication and identity service
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_y26b78y0dejn0knykwvbv8xj4a
+      access_operator_entity_id: ent_y26b78y0dejn0knykwvbv8xj4a
+    access:
+      availability: public
+      method: form
+      url: https://firebase.google.com/startup
+    source_ids:
+      - src_037rhxv4vfjmzqrfzedwyrfjke
