@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xr4cd7rdrjr6t1c26vpsy5q5wk
+  slug: raycast
+  name: Raycast
+  domains:
+    - value: raycast.com
+      role: primary
+      valid_from: 2026-09-07T13:20:50.508910Z
+  category: productivity
+profile:
+  summary: Raycast is a productivity platform for developers offering an affiliate program where approved affiliates earn 30% commission on Raycast Pro referrals.
+  links:
+    site: https://raycast.com
+  description: Raycast is a productivity launcher and developer tool platform. Their affiliate program allows approved affiliates to earn a 30% commission on payments from referred Raycast Pro users, with commissions payable after a 30-day pending period once the balance exceeds £50.
+sources:
+  - source_id: src_jnahx4w4799wanap6h6nwa9916
+    url: https://www.raycast.com/blog/affiliate-program
+programs: []
+offers:
+  - offer_id: off_02xxqhjr60jzzwcnb255qrx1d3
+    offer_slug: raycast-affiliate-program
+    title: Raycast Affiliate Program
+    summary: Approved affiliates earn 30% commission on Raycast Pro referrals; referred users receive 10% discount.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:20:50.508910Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 30% commission on Raycast Pro referrals; referred users get 10% discount
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must have a Raycast account and apply for the affiliate program.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xr4cd7rdrjr6t1c26vpsy5q5wk
+      access_operator_entity_id: ent_xr4cd7rdrjr6t1c26vpsy5q5wk
+    access:
+      availability: public
+      method: form
+      url: https://affiliates.raycast
+    source_ids:
+      - src_jnahx4w4799wanap6h6nwa9916
