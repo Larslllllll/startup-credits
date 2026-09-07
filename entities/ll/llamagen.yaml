@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6y47fwjykgmr2ey7zb549b242q
+  slug: llamagen
+  name: Llamagen
+  domains:
+    - value: llamagen.ai
+      role: primary
+      valid_from: 2026-09-07T14:31:19.672227Z
+  category: ai-ml
+profile:
+  summary: Llamagen offers qualifying startups free access to their AI model hosting and fine-tuning platform for 6 months.
+  links:
+    site: https://llamagen.ai
+  description: Llamagen is an AI model hosting and fine-tuning platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_2mvgf6h6vf3wvd9nqvksq9sccv
+    url: https://llamagen.ai/startup
+programs: []
+offers:
+  - offer_id: off_wfj0r2qcxfanb4smtvm9arp6zj
+    offer_slug: llamagen-startup-program
+    title: Llamagen startup program
+    summary: Qualifying startups receive free access to the Llamagen AI model hosting and fine-tuning platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:31:19.672227Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to AI model hosting and fine-tuning platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_6y47fwjykgmr2ey7zb549b242q
+      access_operator_entity_id: ent_6y47fwjykgmr2ey7zb549b242q
+    access:
+      availability: public
+      method: form
+      url: https://llamagen.ai/startup
+    source_ids:
+      - src_2mvgf6h6vf3wvd9nqvksq9sccv
