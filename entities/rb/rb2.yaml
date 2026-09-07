@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_g44wx400rw42k30bn1pe7r0nn9
+  slug: rb2
+  name: Rollbar 2
+  domains:
+    - value: rollbar.com
+      role: primary
+      valid_from: 2026-09-07T16:58:40.910493Z
+  category: observability
+profile:
+  summary: Rollbar offers qualifying startups free or discounted access to their error tracking and monitoring platform.
+  links:
+    site: https://rollbar.com
+  description: Rollbar offers qualifying startups free or discounted access to their error tracking and monitoring platform.
+sources:
+  - source_id: src_kvymm92z2n62zcb1b24pv2rjv0
+    url: https://rollbar.com/startup
+programs: []
+offers:
+  - offer_id: off_395kvcmgzgm0cmznvtwtxzts2d
+    offer_slug: rb2-startup-program
+    title: Rollbar 2 startup program
+    summary: Rollbar offers qualifying startups free or discounted access to their error tracking and monitoring platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:58:40.910493Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to error tracking and monitoring platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_g44wx400rw42k30bn1pe7r0nn9
+      access_operator_entity_id: ent_g44wx400rw42k30bn1pe7r0nn9
+    access:
+      availability: public
+      method: form
+      url: https://rollbar.com/startup
+    source_ids:
+      - src_kvymm92z2n62zcb1b24pv2rjv0
