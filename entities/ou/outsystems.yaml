@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_1zn41rgbxnfmfywzc5br32gywd
+  slug: outsystems
+  name: OutSystems
+  domains:
+    - value: outsystems.com
+      role: primary
+      valid_from: 2026-09-07T15:57:14.420030Z
+  category: no-code
+profile:
+  summary: OutSystems offers qualifying startups free or discounted access to their low-code application development platform.
+  links:
+    site: https://outsystems.com
+  description: OutSystems offers qualifying startups free or discounted access to their low-code application development platform.
+sources:
+  - source_id: src_282my2dz6k1vqr5p9azkd0q2tt
+    url: https://outsystems.com/startup
+programs: []
+offers:
+  - offer_id: off_ts7h202rg5xkm4ahxp2d9kt9jt
+    offer_slug: outsystems-startup-program
+    title: OutSystems startup program
+    summary: OutSystems offers qualifying startups free or discounted access to their low-code application development platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:57:14.420030Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their low-code application development platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_1zn41rgbxnfmfywzc5br32gywd
+      access_operator_entity_id: ent_1zn41rgbxnfmfywzc5br32gywd
+    access:
+      availability: public
+      method: form
+      url: https://outsystems.com/startup
+    source_ids:
+      - src_282my2dz6k1vqr5p9azkd0q2tt
