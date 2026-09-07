@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6aa04zh9fng0ypr4apacj7bczj
+  slug: evernote
+  name: Evernote
+  domains:
+    - value: evernote.com
+      role: primary
+      valid_from: 2026-09-07T15:40:02.173752Z
+  category: productivity
+profile:
+  summary: Evernote offers qualifying startups free or discounted access to their note-taking and productivity platform.
+  links:
+    site: https://evernote.com
+  description: Evernote offers qualifying startups free or discounted access to their note-taking and productivity platform.
+sources:
+  - source_id: src_np5ea7gjf703tvd83h1d3s9jwj
+    url: https://evernote.com/startup
+programs: []
+offers:
+  - offer_id: off_cacsbh8ktts8m76vqvx1ydpt7x
+    offer_slug: evernote-startup-program
+    title: Evernote startup program
+    summary: Evernote offers qualifying startups free or discounted access to their note-taking and productivity platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:40:02.173752Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their note-taking and productivity platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_6aa04zh9fng0ypr4apacj7bczj
+      access_operator_entity_id: ent_6aa04zh9fng0ypr4apacj7bczj
+    access:
+      availability: public
+      method: form
+      url: https://evernote.com/startup
+    source_ids:
+      - src_np5ea7gjf703tvd83h1d3s9jwj
