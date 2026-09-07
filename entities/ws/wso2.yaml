@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_hc4pw796pzpas2kw4pnmnkmfks
+  slug: wso2
+  name: WSO2
+  domains:
+    - value: wso2.com
+      role: primary
+      valid_from: 2026-09-07T13:25:18.980471Z
+  category: devtools-other
+profile:
+  summary: WSO2 offers eligible startups up to $10,000 in Developer Platform and Asgardeo credits for 12 months plus $2,100 in WSO2 Support credits for 3 months.
+  links:
+    site: https://wso2.com
+  description: WSO2 provides an open-source API management and identity platform. Their WSO2 for Startups program offers eligible startups up to $10,000 in Developer Platform and Asgardeo credits for 12 months, plus $2,100 in WSO2 Support credits for 3 months.
+sources:
+  - source_id: src_w8jm5maz890pmfzrayp45f3va2
+    url: https://wso2.com/landing/startups/
+programs: []
+offers:
+  - offer_id: off_8twa1yek8ey93dzt8kh7nqcqbg
+    offer_slug: wso2-for-startups
+    title: WSO2 for Startups
+    summary: Up to $10,000 in Developer Platform and Asgardeo credits for 12 months plus $2,100 in WSO2 Support credits for 3 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:25:18.980471Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $10,000 in Developer Platform and Asgardeo credits for 12 months, plus $2,100 in WSO2 Support credits for 3 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an eligible startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_hc4pw796pzpas2kw4pnmnkmfks
+      access_operator_entity_id: ent_hc4pw796pzpas2kw4pnmnkmfks
+    access:
+      availability: public
+      method: form
+      url: https://wso2.com/landing/startups/
+    source_ids:
+      - src_w8jm5maz890pmfzrayp45f3va2
