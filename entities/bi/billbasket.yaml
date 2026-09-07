@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_jz8bcpk03w75jd2c3b29z415w3
+  slug: billbasket
+  name: BillBasket
+  domains:
+    - value: billbasket.app
+      role: primary
+      valid_from: 2026-09-07T14:53:01.419976Z
+  category: finance-accounting
+profile:
+  summary: BillBasket offers qualifying startups free or discounted access to their invoice management and accounts payable platform.
+  links:
+    site: https://billbasket.app
+  description: BillBasket offers qualifying startups free or discounted access to their invoice management and accounts payable platform.
+sources:
+  - source_id: src_bp9efy22vw931s5g3kqj63yz8s
+    url: https://billbasket.app/startup
+programs: []
+offers:
+  - offer_id: off_6jg3p3j2fqmv79dytcgcynyh3v
+    offer_slug: billbasket-startup-program
+    title: BillBasket startup program
+    summary: BillBasket offers qualifying startups free or discounted access to their invoice management and accounts payable platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:53:01.419976Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to invoice management and accounts payable platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_jz8bcpk03w75jd2c3b29z415w3
+      access_operator_entity_id: ent_jz8bcpk03w75jd2c3b29z415w3
+    access:
+      availability: public
+      method: form
+      url: https://billbasket.app/startup
+    source_ids:
+      - src_bp9efy22vw931s5g3kqj63yz8s
