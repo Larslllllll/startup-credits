@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_063yd42qbmymz2n8fyjg2tym1w
+  slug: sinch
+  name: Sinch
+  domains:
+    - value: sinch.com
+      role: primary
+      valid_from: 2026-09-07T15:14:38.649732Z
+  category: communication
+profile:
+  summary: Sinch offers qualifying startups free or discounted access to their cloud communications and customer engagement platform.
+  links:
+    site: https://sinch.com
+  description: Sinch offers qualifying startups free or discounted access to their cloud communications and customer engagement platform.
+sources:
+  - source_id: src_d5er0fr7pmkt0wcsdqw44fps7h
+    url: https://sinch.com/startup
+programs: []
+offers:
+  - offer_id: off_4ngz3y7p6p84cfzx13a4wznc38
+    offer_slug: sinch-startup-program
+    title: Sinch startup program
+    summary: Sinch offers qualifying startups free or discounted access to their cloud communications and customer engagement platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:14:38.649732Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to cloud communications and customer engagement platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_063yd42qbmymz2n8fyjg2tym1w
+      access_operator_entity_id: ent_063yd42qbmymz2n8fyjg2tym1w
+    access:
+      availability: public
+      method: form
+      url: https://sinch.com/startup
+    source_ids:
+      - src_d5er0fr7pmkt0wcsdqw44fps7h
