@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_2das8medwhyx1ss9a1fg601vj1
+  slug: jobo
+  name: Jobo
+  domains:
+    - value: jobo.world
+      role: primary
+      valid_from: 2026-09-07T12:18:10.824141Z
+  category: productivity
+profile:
+  summary: Jobo is a job search platform offering approved early-stage teams 50% off every Job Search subscription plan and its Unlimited plan for 12 months.
+  links:
+    site: https://jobo.world
+  description: Jobo is a job search and career platform. Their startup program grants approved early-stage teams 50% off every Job Search subscription plan and its Unlimited plan for 12 months.
+sources:
+  - source_id: src_6t4p4c79kzzkn5pcb0wvxt5603
+    url: https://jobo.world/startups
+programs: []
+offers:
+  - offer_id: off_7efdyvnzkh0qhbj1h937z6refw
+    offer_slug: jobo-startup-program
+    title: Jobo startup program
+    summary: Approved early-stage teams receive 50% off every Job Search subscription plan and the Unlimited plan for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T12:18:10.824141Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 50% off every Job Search subscription plan and the Unlimited plan for 12 months
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an approved early-stage team. Application and approval required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_2das8medwhyx1ss9a1fg601vj1
+      access_operator_entity_id: ent_2das8medwhyx1ss9a1fg601vj1
+    access:
+      availability: public
+      method: form
+      url: https://jobo.world/startups
+    source_ids:
+      - src_6t4p4c79kzzkn5pcb0wvxt5603
