@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_v7ckycfjwd1j9am1fjknjn3vzm
+  slug: mural
+  name: Mural
+  domains:
+    - value: mural.co
+      role: primary
+      valid_from: 2026-09-07T15:48:39.284241Z
+  category: productivity
+profile:
+  summary: Mural offers qualifying startups free or discounted access to their collaborative visual workspace platform.
+  links:
+    site: https://mural.co
+  description: Mural offers qualifying startups free or discounted access to their collaborative visual workspace platform.
+sources:
+  - source_id: src_6g44x8jxjjrek6z3ga6xrbz57j
+    url: https://mural.co/startup
+programs: []
+offers:
+  - offer_id: off_7yn8p50wsmbhryt633nrbpj0gb
+    offer_slug: mural-startup-program
+    title: Mural startup program
+    summary: Mural offers qualifying startups free or discounted access to their collaborative visual workspace platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:48:39.284241Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their collaborative visual workspace platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_v7ckycfjwd1j9am1fjknjn3vzm
+      access_operator_entity_id: ent_v7ckycfjwd1j9am1fjknjn3vzm
+    access:
+      availability: public
+      method: form
+      url: https://mural.co/startup
+    source_ids:
+      - src_6g44x8jxjjrek6z3ga6xrbz57j
