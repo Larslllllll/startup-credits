@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5wq7q1w4tjrjnygf3x856p1zbb
+  slug: sourcetree-3
+  name: Sourcetree Plus
+  domains:
+    - value: sourcetreeapp.com
+      role: primary
+      valid_from: 2026-09-07T15:49:17.943377Z
+  category: devtools-other
+profile:
+  summary: Sourcetree Plus offers qualifying startups free or discounted access to their Git desktop client.
+  links:
+    site: https://sourcetreeapp.com
+  description: Sourcetree Plus offers qualifying startups free or discounted access to their Git desktop client.
+sources:
+  - source_id: src_y85wm6t0pwfkwnr70ytp9w10zd
+    url: https://sourcetreeapp.com/startup
+programs: []
+offers:
+  - offer_id: off_h46x6eaaq0v89kwwxzm2f3prk3
+    offer_slug: sourcetree-3-startup-program
+    title: Sourcetree Plus startup program
+    summary: Sourcetree Plus offers qualifying startups free or discounted access to their Git desktop client.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:49:17.943377Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their Git desktop client
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_5wq7q1w4tjrjnygf3x856p1zbb
+      access_operator_entity_id: ent_5wq7q1w4tjrjnygf3x856p1zbb
+    access:
+      availability: public
+      method: form
+      url: https://sourcetreeapp.com/startup
+    source_ids:
+      - src_y85wm6t0pwfkwnr70ytp9w10zd
