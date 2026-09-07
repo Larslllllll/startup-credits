@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_95peqfj8gzex1svwgqex7y366e
+  slug: tinybase
+  name: TinyBase
+  domains:
+    - value: tinybase.org
+      role: primary
+      valid_from: 2026-09-07T15:06:39.061591Z
+  category: databases
+profile:
+  summary: TinyBase offers qualifying startups free or discounted access to their open-source reactive data store for JavaScript.
+  links:
+    site: https://tinybase.org
+  description: TinyBase offers qualifying startups free or discounted access to their open-source reactive data store for JavaScript.
+sources:
+  - source_id: src_6pd449k017q3zbp5f4yya5tcf3
+    url: https://tinybase.org/startup
+programs: []
+offers:
+  - offer_id: off_gc054em8dbfyydfnj5bmnt351s
+    offer_slug: tinybase-startup-program
+    title: TinyBase startup program
+    summary: TinyBase offers qualifying startups free or discounted access to their open-source reactive data store for JavaScript.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:06:39.061591Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source reactive data store for JavaScript
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_95peqfj8gzex1svwgqex7y366e
+      access_operator_entity_id: ent_95peqfj8gzex1svwgqex7y366e
+    access:
+      availability: public
+      method: form
+      url: https://tinybase.org/startup
+    source_ids:
+      - src_6pd449k017q3zbp5f4yya5tcf3
