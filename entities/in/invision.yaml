@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_g2g5dr0h6yzm6kq56snrfjb79v
+  slug: invision
+  name: InVision
+  domains:
+    - value: invisionapp.com
+      role: primary
+      valid_from: 2026-09-07T15:47:45.913173Z
+  category: design
+profile:
+  summary: InVision offers qualifying startups free or discounted access to their design collaboration and prototyping platform.
+  links:
+    site: https://invisionapp.com
+  description: InVision offers qualifying startups free or discounted access to their design collaboration and prototyping platform.
+sources:
+  - source_id: src_xrfza60npvwmhysb5pp7k6vy9j
+    url: https://invisionapp.com/startup
+programs: []
+offers:
+  - offer_id: off_etnw8t36551j6ar0tfmhjfp26z
+    offer_slug: invision-startup-program
+    title: InVision startup program
+    summary: InVision offers qualifying startups free or discounted access to their design collaboration and prototyping platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:47:45.913173Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their design collaboration and prototyping platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_g2g5dr0h6yzm6kq56snrfjb79v
+      access_operator_entity_id: ent_g2g5dr0h6yzm6kq56snrfjb79v
+    access:
+      availability: public
+      method: form
+      url: https://invisionapp.com/startup
+    source_ids:
+      - src_xrfza60npvwmhysb5pp7k6vy9j
