@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_13470q5k9kadpbw1bk0mrkk30q
+  slug: vectara
+  name: Vectara
+  domains:
+    - value: vectara.com
+      role: primary
+      valid_from: 2026-09-07T14:07:56.353851Z
+  category: ai-ml
+profile:
+  summary: Vectara for Startups gives qualifying pre-seed through Series B startups $1,000 in monthly credits for 6 months toward Vectara's GenAI platform.
+  links:
+    site: https://vectara.com
+  description: Vectara is a GenAI platform. Their startup program gives qualifying pre-seed through Series B startups $1,000 in monthly credits for 6 months.
+sources:
+  - source_id: src_dj3711z96myehv0w3sewxxassd
+    url: https://vectara.com/startup
+programs: []
+offers:
+  - offer_id: off_kjdvan5v8zp15d3vywmspvze35
+    offer_slug: vectara-startup-program
+    title: Vectara for Startups
+    summary: Pre-seed through Series B startups receive $1,000 in monthly credits for 6 months toward the Vectara GenAI platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:07:56.353851Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $1,000 in monthly credits for 6 months (up to $6,000 total)
+          kind: credits
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying pre-seed through Series B startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_13470q5k9kadpbw1bk0mrkk30q
+      access_operator_entity_id: ent_13470q5k9kadpbw1bk0mrkk30q
+    access:
+      availability: public
+      method: form
+      url: https://vectara.com/startup
+    source_ids:
+      - src_dj3711z96myehv0w3sewxxassd
