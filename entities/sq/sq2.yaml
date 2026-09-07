@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_8nkq3c5x7d8sbstfrd5rm1q68h
+  slug: sq2
+  name: Sequel Ace 2
+  domains:
+    - value: sequel-ace.com
+      role: primary
+      valid_from: 2026-09-07T16:58:32.047707Z
+  category: databases
+profile:
+  summary: Sequel Ace offers qualifying startups free or discounted access to their MySQL client for Mac.
+  links:
+    site: https://sequel-ace.com
+  description: Sequel Ace offers qualifying startups free or discounted access to their MySQL client for Mac.
+sources:
+  - source_id: src_fvf8prxg1gaxz0wx18qkc84pc9
+    url: https://sequel-ace.com/startup
+programs: []
+offers:
+  - offer_id: off_cdn0q5cpk8q3absk7z15af1fw7
+    offer_slug: sq2-startup-program
+    title: Sequel Ace 2 startup program
+    summary: Sequel Ace offers qualifying startups free or discounted access to their MySQL client for Mac.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:58:32.047707Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to MySQL client for Mac
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_8nkq3c5x7d8sbstfrd5rm1q68h
+      access_operator_entity_id: ent_8nkq3c5x7d8sbstfrd5rm1q68h
+    access:
+      availability: public
+      method: form
+      url: https://sequel-ace.com/startup
+    source_ids:
+      - src_fvf8prxg1gaxz0wx18qkc84pc9
