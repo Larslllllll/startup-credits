@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_hazwdt3b0fmyxsccz11em7x9p1
+  slug: caldotcom
+  name: Cal.com
+  domains:
+    - value: cal.com
+      role: primary
+      valid_from: 2026-09-07T15:13:02.370964Z
+  category: productivity
+profile:
+  summary: Cal.com offers qualifying startups free or discounted access to their open-source calendar scheduling and appointment booking platform.
+  links:
+    site: https://cal.com
+  description: Cal.com offers qualifying startups free or discounted access to their open-source calendar scheduling and appointment booking platform.
+sources:
+  - source_id: src_4d644z3d194d12n9dj4pxa4qja
+    url: https://cal.com/startup
+programs: []
+offers:
+  - offer_id: off_qangedpgqpfq4cbx84mx2fyfxn
+    offer_slug: caldotcom-startup-program
+    title: Cal.com startup program
+    summary: Cal.com offers qualifying startups free or discounted access to their open-source calendar scheduling and appointment booking platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:13:02.370964Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source calendar scheduling and appointment booking platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_hazwdt3b0fmyxsccz11em7x9p1
+      access_operator_entity_id: ent_hazwdt3b0fmyxsccz11em7x9p1
+    access:
+      availability: public
+      method: form
+      url: https://cal.com/startup
+    source_ids:
+      - src_4d644z3d194d12n9dj4pxa4qja
