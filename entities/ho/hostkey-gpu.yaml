@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_nvnpnaxa5c7m83rx8s5m1mp89p
+  slug: hostkey-gpu
+  name: Hostkey GPU
+  domains:
+    - value: hostkey.com
+      role: primary
+      valid_from: 2026-09-07T16:43:17.577426Z
+  category: hosting-infra
+profile:
+  summary: Hostkey offers qualifying startups free or discounted access to their GPU cloud and hosting infrastructure platform.
+  links:
+    site: https://hostkey.com
+  description: Hostkey offers qualifying startups free or discounted access to their GPU cloud and hosting infrastructure platform.
+sources:
+  - source_id: src_fm1747cd3n2bhv1mc40rqzn4sv
+    url: https://hostkey.com/startup
+programs: []
+offers:
+  - offer_id: off_cjb6qe31s2871xjxkw0gts0467
+    offer_slug: hostkey-gpu-startup-program
+    title: Hostkey GPU startup program
+    summary: Hostkey offers qualifying startups free or discounted access to their GPU cloud and hosting infrastructure platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:43:17.577426Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to GPU cloud and hosting infrastructure platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_nvnpnaxa5c7m83rx8s5m1mp89p
+      access_operator_entity_id: ent_nvnpnaxa5c7m83rx8s5m1mp89p
+    access:
+      availability: public
+      method: form
+      url: https://hostkey.com/startup
+    source_ids:
+      - src_fm1747cd3n2bhv1mc40rqzn4sv
