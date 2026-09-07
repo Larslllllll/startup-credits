@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_149xfb5nh48x6p1jp7aa97k55v
+  slug: fellow-app
+  name: Fellow
+  domains:
+    - value: fellow.app
+      role: primary
+      valid_from: 2026-09-07T16:28:39.596392Z
+  category: productivity
+profile:
+  summary: Fellow offers qualifying startups free or discounted access to their AI meeting assistant and collaborative meeting-workflow platform.
+  links:
+    site: https://fellow.app
+  description: Fellow offers qualifying startups free or discounted access to their AI meeting assistant and collaborative meeting-workflow platform.
+sources:
+  - source_id: src_xk16k51gb46t5nrbxcna0jmjmn
+    url: https://fellow.app/startup
+programs: []
+offers:
+  - offer_id: off_xw8ywhgx64ny40cfcrxh5gsw6f
+    offer_slug: fellow-app-startup-program
+    title: Fellow startup program
+    summary: Fellow offers qualifying startups free or discounted access to their AI meeting assistant and collaborative meeting-workflow platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:28:39.596392Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI meeting assistant and collaborative meeting-workflow platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_149xfb5nh48x6p1jp7aa97k55v
+      access_operator_entity_id: ent_149xfb5nh48x6p1jp7aa97k55v
+    access:
+      availability: public
+      method: form
+      url: https://fellow.app/startup
+    source_ids:
+      - src_xk16k51gb46t5nrbxcna0jmjmn
