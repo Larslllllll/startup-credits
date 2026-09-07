@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_j80yt0rbs363qa7ef8tpzkc06k
+  slug: stackit
+  name: StackIT
+  domains:
+    - value: stackit.com
+      role: primary
+      valid_from: 2026-09-07T14:26:08.084984Z
+  category: devtools-other
+profile:
+  summary: StackIT offers qualifying startups free access to their internal developer portal and platform engineering tools for 6 months.
+  links:
+    site: https://stackit.com
+  description: StackIT is an internal developer portal and platform engineering tools provider. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_qr99pmm8hjj3g1mckws8hgtkec
+    url: https://stackit.com/startup
+programs: []
+offers:
+  - offer_id: off_32jftqct54q1gvdfbwc8grt733
+    offer_slug: stackit-startup-program
+    title: StackIT startup program
+    summary: Qualifying startups receive free access to the StackIT internal developer portal and platform engineering tools for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:26:08.084984Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to internal developer portal and platform engineering tools for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_j80yt0rbs363qa7ef8tpzkc06k
+      access_operator_entity_id: ent_j80yt0rbs363qa7ef8tpzkc06k
+    access:
+      availability: public
+      method: form
+      url: https://stackit.com/startup
+    source_ids:
+      - src_qr99pmm8hjj3g1mckws8hgtkec
