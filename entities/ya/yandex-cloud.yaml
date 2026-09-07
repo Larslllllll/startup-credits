@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3q2rns2q79mpr3mnb1w0a81pvx
+  slug: yandex-cloud
+  name: Yandex Cloud
+  domains:
+    - value: yandex.cloud
+      role: primary
+      valid_from: 2026-09-07T13:27:49.378014Z
+  category: hosting-infra
+profile:
+  summary: Yandex Cloud offers small teams and early-stage products up to $5,000 in credits for six months, or up to $20,000 for 12 months through their startup cloud program.
+  links:
+    site: https://cloud.yandex.com
+  description: Yandex Cloud is a cloud infrastructure platform. Their startup program offers qualifying small teams and early-stage products up to $5,000 in Yandex Cloud credits for six months, or up to $20,000 in credits for 12 months for eligible startups.
+sources:
+  - source_id: src_6v6m19dytvhjtywfk2gbs13900
+    url: https://cloud.yandex.com/en/docs/tutorials/rnd/startup
+programs: []
+offers:
+  - offer_id: off_zhjz7p3q9g81pp7axf4wzj7pnn
+    offer_slug: yandex-cloud-startup-program
+    title: Yandex Cloud startup program
+    summary: Small teams and early-stage products receive up to $5,000 in Yandex Cloud credits for 6 months, or up to $20,000 for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:27:49.378014Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $20,000 in Yandex Cloud credits for 12 months (tiered based on startup stage)
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a small team or early-stage product. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3q2rns2q79mpr3mnb1w0a81pvx
+      access_operator_entity_id: ent_3q2rns2q79mpr3mnb1w0a81pvx
+    access:
+      availability: public
+      method: form
+      url: https://cloud.yandex.com/en/docs/tutorials/rnd/startup
+    source_ids:
+      - src_6v6m19dytvhjtywfk2gbs13900
