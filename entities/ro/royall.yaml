@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x6517rpqz7vw6m9495jcde
+  slug: royall
+  slug_aliases: []
+  name: Royall
+  domains:
+    - value: royall.ai
+      role: primary
+      valid_from: 2026-09-07T05:46:58.000Z
+  category: ai-ml
+profile:
+  summary: AI API platform providing consent checks, identity resolution, licensing, and webhook management for AI applications.
+  description: Royall is an AI API platform offering consent checks, identity resolution, licensing, webhooks, and onboarding support for AI applications.
+  links:
+    site: https://royall.ai
+sources:
+  - source_id: src_b751864ea9c50a6932799338894e046250bbba3eca35b5fc547670f36c617e5c
+    url: https://royall.ai/startups
+programs:
+  - program_id: prg_01m1x6517x1pj82qbqys8w5nnn
+    program_slug: royall-startup-program
+    program_slug_aliases: []
+    title: Royall for Startups
+    summary: Eligible early-stage AI startups receive full production Royall API access free for 12 months, including consent checks, identity resolution, licensing, webhooks, and onboarding support.
+    source_ids:
+      - src_b751864ea9c50a6932799338894e046250bbba3eca35b5fc547670f36c617e5c
+offers:
+  - offer_id: off_01m1x6517xy5t6p0g5b0yeawrj
+    program_id: prg_01m1x6517x1pj82qbqys8w5nnn
+    offer_slug: free-api-access-12-months
+    offer_slug_aliases: []
+    title: Full Royall API Access Free for 12 Months
+    summary: Eligible early-stage AI startups receive full production Royall API access free for 12 months, including consent checks, identity resolution, licensing, webhooks, and onboarding support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:46:58.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Full Royall API production access free for 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: "Full Royall API production access free for 12 months"
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: "Early-stage AI startups"
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1x6517rpqz7vw6m9495jcde
+      access_operator_entity_id: ent_01m1x6517rpqz7vw6m9495jcde
+    access:
+      availability: public
+      method: form
+      url: https://royall.ai/startups
+    source_ids:
+      - src_b751864ea9c50a6932799338894e046250bbba3eca35b5fc547670f36c617e5c

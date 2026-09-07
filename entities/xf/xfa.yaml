@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x65198vtyqw90xzt1rh4g6
+  slug: xfa
+  slug_aliases: []
+  name: XFA
+  domains:
+    - value: xfa.tech
+      role: primary
+      valid_from: 2026-09-07T05:46:58.000Z
+  category: ai-ml
+profile:
+  summary: AI developer platform providing tools and infrastructure for building, deploying, and scaling AI applications.
+  description: XFA is an AI developer platform offering tools and infrastructure for building, deploying, and scaling AI applications.
+  links:
+    site: https://xfa.tech
+sources:
+  - source_id: src_57b2adb6a16d36b26c035b417d771620b700a46ae150a14f75244b21b1961264
+    url: https://xfa.tech/usecases/startups
+programs:
+  - program_id: prg_01m1x6519da8tmjtw7fagqj8dc
+    program_slug: xfa-startup-program
+    program_slug_aliases: []
+    title: XFA for Startups
+    summary: XFA offers startups its AI developer platform solution free for two years for up to five users.
+    source_ids:
+      - src_57b2adb6a16d36b26c035b417d771620b700a46ae150a14f75244b21b1961264
+offers:
+  - offer_id: off_01m1x6519dtwxc27pyb0ke54w3
+    program_id: prg_01m1x6519da8tmjtw7fagqj8dc
+    offer_slug: free-xfa-platform-two-years
+    offer_slug_aliases: []
+    title: Free XFA Platform for Two Years (Up to 5 Users)
+    summary: Approved startups receive XFA platform access free for two years with support for up to five users.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:46:58.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: XFA AI developer platform free for two years, up to 5 users
+          duration:
+            kind: exact
+            value: P2Y
+          kind: free-service
+          service: "XFA AI developer platform free for two years, up to 5 users"
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: "Startups (up to 5 users)"
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1x65198vtyqw90xzt1rh4g6
+      access_operator_entity_id: ent_01m1x65198vtyqw90xzt1rh4g6
+    access:
+      availability: public
+      method: form
+      url: https://xfa.tech/usecases/startups
+    source_ids:
+      - src_57b2adb6a16d36b26c035b417d771620b700a46ae150a14f75244b21b1961264

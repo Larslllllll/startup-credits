@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x6512rwx8bt6mqbx0614vt
+  slug: enum
+  slug_aliases: []
+  name: enum
+  domains:
+    - value: enum.co
+      role: primary
+      valid_from: 2026-09-07T05:46:58.000Z
+  category: ai-ml
+profile:
+  summary: Domain naming platform enabling the .enum DNS extension for phone numbers, streamlining voice and messaging infrastructure.
+  description: enum provides a domain naming platform for the .enum DNS extension, enabling phone number-as-domain resolution for voice and messaging infrastructure.
+  links:
+    site: https://enum.co
+sources:
+  - source_id: src_c1885a2afa55bdbb955c5641dd12ac9431372378e0dfbcc53e02a9f309036298
+    url: https://enum.co/startups
+programs:
+  - program_id: prg_01m1x6512yg1076ya6x0erek6a
+    program_slug: enum-startup-program
+    program_slug_aliases: []
+    title: enum for Startups
+    summary: enum for Startups gives eligible EU-headquartered startups and scaleups up to EUR100,000 in cloud credits over 12 months, with extension possible.
+    source_ids:
+      - src_c1885a2afa55bdbb955c5641dd12ac9431372378e0dfbcc53e02a9f309036298
+offers:
+  - offer_id: off_01m1x6512y2y8m4bcw20exp9e7
+    program_id: prg_01m1x6512yg1076ya6x0erek6a
+    offer_slug: up-to-100000-eu-cloud-credits
+    offer_slug_aliases: []
+    title: Up to EUR100,000 in Cloud Credits for 12 Months
+    summary: Eligible EU-headquartered startups and scaleups receive up to EUR100,000 in enum cloud credits over 12 months, with access to Kubernetes, storage, and networking platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:46:58.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to EUR100,000 in enum cloud infrastructure credits over 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: "Up to EUR100,000 in enum cloud infrastructure credits over 12 months"
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: "EU-headquartered startups and scaleups"
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1x6512rwx8bt6mqbx0614vt
+      access_operator_entity_id: ent_01m1x6512rwx8bt6mqbx0614vt
+    access:
+      availability: public
+      method: form
+      url: https://enum.co/startups
+    source_ids:
+      - src_c1885a2afa55bdbb955c5641dd12ac9431372378e0dfbcc53e02a9f309036298

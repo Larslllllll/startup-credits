@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x651ax6tva4txbfedkag11
+  slug: tapflare
+  slug_aliases: []
+  name: Tapflare
+  domains:
+    - value: tapflare.com
+      role: primary
+      valid_from: 2026-09-07T05:46:58.000Z
+  category: design
+profile:
+  summary: Design and creative services platform offering graphic design, website development, and brand marketing support.
+  description: Tapflare is a creative platform providing graphic design, website development, and brand marketing services to businesses.
+  links:
+    site: https://tapflare.com
+sources:
+  - source_id: src_3341a19e170fa42adc0ec7a26325bec99dea0c1b2e774c4a9842085cfd976e93
+    url: https://tapflare.com/startups
+programs:
+  - program_id: prg_01m1x651b10r1rmej3qnwyvj7m
+    program_slug: tapflare-startup-program
+    program_slug_aliases: []
+    title: Tapflare Startup Program
+    summary: The Tapflare Startup Program gives qualified startups up to $1,500 in Tapflare credits applicable to any Tapflare plan.
+    source_ids:
+      - src_3341a19e170fa42adc0ec7a26325bec99dea0c1b2e774c4a9842085cfd976e93
+offers:
+  - offer_id: off_01m1x651b1t4a8tbrrpjdpqte1
+    program_id: prg_01m1x651b10r1rmej3qnwyvj7m
+    offer_slug: up-to-1500-tapflare-credits
+    offer_slug_aliases: []
+    title: Up to $1,500 in Tapflare Credits
+    summary: Qualified startups can receive up to $1,500 in Tapflare credit applicable to any Tapflare plan, providing approximately 1 to 3 months of graphic design and website development services.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:46:58.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $1,500 in Tapflare credits applicable to any Tapflare plan
+          kind: free-service
+          service: "Up to $1,500 in Tapflare credits applicable to any Tapflare plan"
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: "Qualified startups"
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1x651ax6tva4txbfedkag11
+      access_operator_entity_id: ent_01m1x651ax6tva4txbfedkag11
+    access:
+      availability: public
+      method: form
+      url: https://tapflare.com/startups
+    source_ids:
+      - src_3341a19e170fa42adc0ec7a26325bec99dea0c1b2e774c4a9842085cfd976e93

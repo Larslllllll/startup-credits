@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x6514gw1jtcw21m88rjhx3
+  slug: evallo
+  slug_aliases: []
+  name: Evallo
+  domains:
+    - value: evallo.ai
+      role: primary
+      valid_from: 2026-09-07T05:46:58.000Z
+  category: productivity
+profile:
+  summary: Live tutoring platform connecting students with vetted tutors for interactive sessions, resources, and scheduling.
+  description: Evallo is a live tutoring platform offering vetted tutors, interactive sessions, shared resources, and smart scheduling for students and tutoring businesses.
+  links:
+    site: https://evallo.ai
+sources:
+  - source_id: src_f3da35164493e2dd7e38099e4d14c2cd54a5ccc8ab79d88de7e9ae380c179d4b
+    url: https://evallo.ai/evallo-for-startups
+programs:
+  - program_id: prg_01m1x6514pdfxnvhbkv489vksd
+    program_slug: evallo-startup-program
+    program_slug_aliases: []
+    title: Evallo for Startups
+    summary: Evallo offers eligible tutors and tutoring businesses full platform access at no cost for 12 months.
+    source_ids:
+      - src_f3da35164493e2dd7e38099e4d14c2cd54a5ccc8ab79d88de7e9ae380c179d4b
+offers:
+  - offer_id: off_01m1x6514p30kyq30bgkgwzc8v
+    program_id: prg_01m1x6514pdfxnvhbkv489vksd
+    offer_slug: free-platform-for-12-months
+    offer_slug_aliases: []
+    title: Full Platform Access Free for 12 Months
+    summary: Eligible tutors and tutoring businesses receive full Evallo platform access free for 12 months, including sessions, resources, and scheduling tools.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:46:58.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Full Evallo platform access free for 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: "Full Evallo platform access free for 12 months"
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: "Eligible tutors and tutoring businesses"
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1x6514gw1jtcw21m88rjhx3
+      access_operator_entity_id: ent_01m1x6514gw1jtcw21m88rjhx3
+    access:
+      availability: public
+      method: form
+      url: https://evallo.ai/evallo-for-startups
+    source_ids:
+      - src_f3da35164493e2dd7e38099e4d14c2cd54a5ccc8ab79d88de7e9ae380c179d4b

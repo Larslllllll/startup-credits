@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x651et33bqraezhx2vrbkq
+  slug: aerospike
+  slug_aliases: []
+  name: Aerospike
+  domains:
+    - value: aerospike.com
+      role: primary
+      valid_from: 2026-09-07T05:46:58.000Z
+  category: databases
+profile:
+  summary: Real-time NoSQL database platform built for high-throughput, low-latency applications at massive scale.
+  description: Aerospike is a real-time NoSQL database platform engineered for high-throughput, low-latency applications at petabyte scale.
+  links:
+    site: https://www.aerospike.com
+sources:
+  - source_id: src_93084484c35d6102ce4283c2feb3a7a010954acc35fa680e990d7a4558fccada
+    url: https://aerospike.com/get/cloud-for-startups/
+programs:
+  - program_id: prg_01m1x651ezhz3atkb75pkz7mxr
+    program_slug: aerospike-startup-program
+    program_slug_aliases: []
+    title: Aerospike Cloud for Startups
+    summary: Aerospike Cloud for Startups gives early-stage companies $300 in credits, 10% off public pricing, one day of Solution Architect support, and zero commitment.
+    source_ids:
+      - src_93084484c35d6102ce4283c2feb3a7a010954acc35fa680e990d7a4558fccada
+offers:
+  - offer_id: off_01m1x651eza8qyww8xapp1e1jz
+    program_id: prg_01m1x651ezhz3atkb75pkz7mxr
+    offer_slug: 300-credits-10-percent-off
+    offer_slug_aliases: []
+    title: $300 Credits, 10% Off, and One Day of Solution Architect Support
+    summary: Early-stage companies receive $300 in Aerospike cloud credits, 10% off public pricing, one day of Solution Architect support, and zero commitment to start.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:46:58.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $300 in Aerospike cloud credits plus 10% off public pricing
+          kind: free-service
+          service: "$300 in Aerospike cloud credits plus 10% off public pricing"
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: "Early-stage companies"
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1x651et33bqraezhx2vrbkq
+      access_operator_entity_id: ent_01m1x651et33bqraezhx2vrbkq
+    access:
+      availability: public
+      method: form
+      url: https://aerospike.com/get/cloud-for-startups/
+    source_ids:
+      - src_93084484c35d6102ce4283c2feb3a7a010954acc35fa680e990d7a4558fccada
