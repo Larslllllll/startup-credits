@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_a0eanxr58n2f93gz3z7cm58tkz
+  slug: sigmacloud
+  name: Sigma Computing
+  domains:
+    - value: sigmacloud.io
+      role: primary
+      valid_from: 2026-09-07T14:59:12.667897Z
+  category: data-analytics
+profile:
+  summary: Sigma Computing offers qualifying startups free or discounted access to their cloud analytics and business intelligence platform.
+  links:
+    site: https://sigmacloud.io
+  description: Sigma Computing offers qualifying startups free or discounted access to their cloud analytics and business intelligence platform.
+sources:
+  - source_id: src_7nayj974qqj6dzvyakb0qhy96n
+    url: https://sigmacloud.io/startup
+programs: []
+offers:
+  - offer_id: off_ymbsz8n018m876k1fn064qh8jj
+    offer_slug: sigmacloud-startup-program
+    title: Sigma Computing startup program
+    summary: Sigma Computing offers qualifying startups free or discounted access to their cloud analytics and business intelligence platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:59:12.667897Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to cloud analytics and business intelligence platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_a0eanxr58n2f93gz3z7cm58tkz
+      access_operator_entity_id: ent_a0eanxr58n2f93gz3z7cm58tkz
+    access:
+      availability: public
+      method: form
+      url: https://sigmacloud.io/startup
+    source_ids:
+      - src_7nayj974qqj6dzvyakb0qhy96n
