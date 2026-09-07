@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_qn47ax9q2wfv2z8c1a029ds451
+  slug: langchainjs
+  name: LangChain.js
+  domains:
+    - value: js.langchain.com
+      role: primary
+      valid_from: 2026-09-07T16:17:06.671460Z
+  category: ai-ml
+profile:
+  summary: LangChain.js offers qualifying startups free or discounted access to their open-source JavaScript LLM development framework.
+  links:
+    site: https://js.langchain.com
+  description: LangChain.js offers qualifying startups free or discounted access to their open-source JavaScript LLM development framework.
+sources:
+  - source_id: src_hf2mveh9jqcr3d7m6kr4aa2d4q
+    url: https://js.langchain.com/startup
+programs: []
+offers:
+  - offer_id: off_j28q3wntmawrwd7p5bp6dx26eg
+    offer_slug: langchainjs-startup-program
+    title: LangChain.js startup program
+    summary: LangChain.js offers qualifying startups free or discounted access to their open-source JavaScript LLM development framework.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:17:06.671460Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source JavaScript LLM development framework
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_qn47ax9q2wfv2z8c1a029ds451
+      access_operator_entity_id: ent_qn47ax9q2wfv2z8c1a029ds451
+    access:
+      availability: public
+      method: form
+      url: https://js.langchain.com/startup
+    source_ids:
+      - src_hf2mveh9jqcr3d7m6kr4aa2d4q
