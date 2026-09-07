@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_8g6dtbq4p6gzwzwyv66neryaab
+  slug: productlane
+  name: Productlane
+  domains:
+    - value: productlane.io
+      role: primary
+      valid_from: 2026-09-07T13:48:42.346124Z
+  category: productivity
+profile:
+  summary: Productlane Early Stage gives qualifying startups the Scale plan for 6 full seats at $65/month in year 1 (89% off $594 list price), plus 20 viewer seats and priority onboarding.
+  links:
+    site: https://productlane.io
+  description: Productlane is a product management platform. Their Early Stage program gives qualifying startups the Scale plan for 6 full seats at $65/month in year 1 (89% off the $594 list price), plus 20 viewer seats and priority onboarding.
+sources:
+  - source_id: src_deqae0ny0qfvr9ggjs49rtxcxz
+    url: https://productlane.io/early-stage
+programs: []
+offers:
+  - offer_id: off_wkw33y5cd3bqzhdyxj8jq95bxm
+    offer_slug: productlane-early-stage
+    title: Productlane Early Stage
+    summary: Scale plan for 6 full seats at $65/month in year 1 (89% off $594 list price), plus 20 viewer seats.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:48:42.346124Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Scale plan for 6 full seats at $65/month in year 1, 20 viewer seats, priority onboarding
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying early-stage startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_8g6dtbq4p6gzwzwyv66neryaab
+      access_operator_entity_id: ent_8g6dtbq4p6gzwzwyv66neryaab
+    access:
+      availability: public
+      method: form
+      url: https://productlane.io/early-stage
+    source_ids:
+      - src_deqae0ny0qfvr9ggjs49rtxcxz
