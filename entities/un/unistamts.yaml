@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_q4a47gk1a6md3gkc27frtpfwtz
+  slug: unistamts
+  name: Unistamts
+  domains:
+    - value: unistamts.com
+      role: primary
+      valid_from: 2026-09-07T13:49:15.804525Z
+  category: hosting-infra
+profile:
+  summary: Unistamts Startup Program offers eligible early-stage technology startups up to $50,000 in Simba Space cloud infrastructure credits.
+  links:
+    site: https://unistamts.com
+  description: Unistamts provides Simba Space cloud infrastructure. Their Startup Program offers qualifying early-stage technology startups up to $50,000 in Simba Space cloud infrastructure credits along with infrastructure support.
+sources:
+  - source_id: src_pb1eztg034fqa3tx8zx2n8ga0z
+    url: https://unistamts.com/startup
+programs: []
+offers:
+  - offer_id: off_1s3hkdcf74yh35hve0h952skty
+    offer_slug: unistamts-startup-program
+    title: Unistamts Startup Program
+    summary: Early-stage tech startups receive up to $50,000 in Simba Space cloud infrastructure credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:49:15.804525Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $50,000 in Simba Space cloud infrastructure credits
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage technology startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_q4a47gk1a6md3gkc27frtpfwtz
+      access_operator_entity_id: ent_q4a47gk1a6md3gkc27frtpfwtz
+    access:
+      availability: public
+      method: form
+      url: https://unistamts.com/startup
+    source_ids:
+      - src_pb1eztg034fqa3tx8zx2n8ga0z
