@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_71a7m2g9bccw3r97aa3hz5gsb0
+  slug: threesdk
+  name: 3 SDK
+  domains:
+    - value: threesdk.com
+      role: primary
+      valid_from: 2026-09-07T15:14:56.655594Z
+  category: communication
+profile:
+  summary: 3 SDK offers qualifying startups free or discounted access to their mobile communication and SMS API platform.
+  links:
+    site: https://threesdk.com
+  description: 3 SDK offers qualifying startups free or discounted access to their mobile communication and SMS API platform.
+sources:
+  - source_id: src_1bj4ab1zavsvprcdqppvxrcvk9
+    url: https://threesdk.com/startup
+programs: []
+offers:
+  - offer_id: off_3saq2w5bj6hhaps010ax5vb1zx
+    offer_slug: threesdk-startup-program
+    title: 3 SDK startup program
+    summary: 3 SDK offers qualifying startups free or discounted access to their mobile communication and SMS API platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:14:56.655594Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to mobile communication and SMS API platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_71a7m2g9bccw3r97aa3hz5gsb0
+      access_operator_entity_id: ent_71a7m2g9bccw3r97aa3hz5gsb0
+    access:
+      availability: public
+      method: form
+      url: https://threesdk.com/startup
+    source_ids:
+      - src_1bj4ab1zavsvprcdqppvxrcvk9
