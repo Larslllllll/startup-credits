@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_wxgrr4d117h23033h9v5mb60vt
+  slug: primer-2
+  name: Primer Enterprise
+  domains:
+    - value: primer.io
+      role: primary
+      valid_from: 2026-09-07T16:02:33.034413Z
+  category: payments-fintech
+profile:
+  summary: Primer Enterprise offers qualifying startups free or discounted access to their unified payment platform.
+  links:
+    site: https://primer.io
+  description: Primer Enterprise offers qualifying startups free or discounted access to their unified payment platform.
+sources:
+  - source_id: src_3ags81c03ss5rbaxeyvdm2b40x
+    url: https://primer.io/startup
+programs: []
+offers:
+  - offer_id: off_6jea4xdhdf6h7cvy39q7qep17p
+    offer_slug: primer-2-startup-program
+    title: Primer Enterprise startup program
+    summary: Primer Enterprise offers qualifying startups free or discounted access to their unified payment platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:02:33.034413Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their unified payment platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_wxgrr4d117h23033h9v5mb60vt
+      access_operator_entity_id: ent_wxgrr4d117h23033h9v5mb60vt
+    access:
+      availability: public
+      method: form
+      url: https://primer.io/startup
+    source_ids:
+      - src_3ags81c03ss5rbaxeyvdm2b40x
