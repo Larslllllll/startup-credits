@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_130qjcmzcrs44mvst0qmpgwg42
+  slug: gracenote
+  name: Gracenote
+  domains:
+    - value: gracenote.com
+      role: primary
+      valid_from: 2026-09-07T15:46:51.759972Z
+  category: ai-ml
+profile:
+  summary: Gracenote offers qualifying startups free or discounted access to their music metadata and recognition platform.
+  links:
+    site: https://gracenote.com
+  description: Gracenote offers qualifying startups free or discounted access to their music metadata and recognition platform.
+sources:
+  - source_id: src_g7sam4kxvykjv70geb1b5mnj4w
+    url: https://gracenote.com/startup
+programs: []
+offers:
+  - offer_id: off_gmzrd9bc3zfg0zzqv9fb7af94e
+    offer_slug: gracenote-startup-program
+    title: Gracenote startup program
+    summary: Gracenote offers qualifying startups free or discounted access to their music metadata and recognition platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:46:51.759972Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their music metadata and recognition platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_130qjcmzcrs44mvst0qmpgwg42
+      access_operator_entity_id: ent_130qjcmzcrs44mvst0qmpgwg42
+    access:
+      availability: public
+      method: form
+      url: https://gracenote.com/startup
+    source_ids:
+      - src_g7sam4kxvykjv70geb1b5mnj4w
