@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_nvcdh5qqqp2nbekxszwdp7mnvk
+  slug: alitu
+  name: Alitu
+  domains:
+    - value: alitu.com
+      role: primary
+      valid_from: 2026-09-07T15:43:47.702694Z
+  category: communication
+profile:
+  summary: Alitu offers qualifying startups free or discounted access to their podcast production and editing platform.
+  links:
+    site: https://alitu.com
+  description: Alitu offers qualifying startups free or discounted access to their podcast production and editing platform.
+sources:
+  - source_id: src_t1ea19dxfz2zaygcc13zz16e09
+    url: https://alitu.com/startup
+programs: []
+offers:
+  - offer_id: off_sdm7rmzh2gmk216a2p9yese3rc
+    offer_slug: alitu-startup-program
+    title: Alitu startup program
+    summary: Alitu offers qualifying startups free or discounted access to their podcast production and editing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:43:47.702694Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their podcast production and editing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_nvcdh5qqqp2nbekxszwdp7mnvk
+      access_operator_entity_id: ent_nvcdh5qqqp2nbekxszwdp7mnvk
+    access:
+      availability: public
+      method: form
+      url: https://alitu.com/startup
+    source_ids:
+      - src_t1ea19dxfz2zaygcc13zz16e09
