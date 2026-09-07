@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_49bx68faktw0zmayqnksna362e
+  slug: yi2b
+  name: Yi 2
+  domains:
+    - value: yi.ai
+      role: primary
+      valid_from: 2026-09-07T16:45:14.186394Z
+  category: ai-ml
+profile:
+  summary: Yi offers qualifying startups free or discounted access to their AI language model API platform.
+  links:
+    site: https://yi.ai
+  description: Yi offers qualifying startups free or discounted access to their AI language model API platform.
+sources:
+  - source_id: src_txhy3nfaks14mj31v381yap58c
+    url: https://yi.ai/startup
+programs: []
+offers:
+  - offer_id: off_09g6b0bfnkxrhs94hfa5tzznsg
+    offer_slug: yi2b-startup-program
+    title: Yi 2 startup program
+    summary: Yi offers qualifying startups free or discounted access to their AI language model API platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:45:14.186394Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI language model API platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_49bx68faktw0zmayqnksna362e
+      access_operator_entity_id: ent_49bx68faktw0zmayqnksna362e
+    access:
+      availability: public
+      method: form
+      url: https://yi.ai/startup
+    source_ids:
+      - src_txhy3nfaks14mj31v381yap58c
