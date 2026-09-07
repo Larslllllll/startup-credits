@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9c4r7dhhn27211sfe2009egh25
+  slug: servebolt
+  name: Servebolt
+  domains:
+    - value: servebolt.com
+      role: primary
+      valid_from: 2026-09-07T14:54:40.097604Z
+  category: hosting-infra
+profile:
+  summary: Servebolt offers qualifying startups free or discounted access to their managed web hosting and performance optimization platform.
+  links:
+    site: https://servebolt.com
+  description: Servebolt offers qualifying startups free or discounted access to their managed web hosting and performance optimization platform.
+sources:
+  - source_id: src_h9fwym9yad1rewc4g9wtagpwrf
+    url: https://servebolt.com/startup
+programs: []
+offers:
+  - offer_id: off_fjtjwzpthz7qxmjkp69n8c07y3
+    offer_slug: servebolt-startup-program
+    title: Servebolt startup program
+    summary: Servebolt offers qualifying startups free or discounted access to their managed web hosting and performance optimization platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:54:40.097604Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to managed web hosting and performance optimization platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_9c4r7dhhn27211sfe2009egh25
+      access_operator_entity_id: ent_9c4r7dhhn27211sfe2009egh25
+    access:
+      availability: public
+      method: form
+      url: https://servebolt.com/startup
+    source_ids:
+      - src_h9fwym9yad1rewc4g9wtagpwrf
