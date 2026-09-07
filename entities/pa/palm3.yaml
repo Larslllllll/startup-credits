@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_26psn88zeeaxja6mcf2h3d7kcs
+  slug: palm3
+  name: PaLM 3
+  domains:
+    - value: ai.google.dev
+      role: primary
+      valid_from: 2026-09-07T16:12:53.607252Z
+  category: ai-ml
+profile:
+  summary: PaLM 3 offers qualifying startups free or discounted access to their latest AI language model API.
+  links:
+    site: https://ai.google.dev
+  description: PaLM 3 offers qualifying startups free or discounted access to their latest AI language model API.
+sources:
+  - source_id: src_4ykpa9p71w668qes9mp1jgqea5
+    url: https://ai.google.dev/startup
+programs: []
+offers:
+  - offer_id: off_3egpwh0xmkh2n7f2jt902zy07g
+    offer_slug: palm3-startup-program
+    title: PaLM 3 startup program
+    summary: PaLM 3 offers qualifying startups free or discounted access to their latest AI language model API.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:12:53.607252Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to latest AI language model API
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_26psn88zeeaxja6mcf2h3d7kcs
+      access_operator_entity_id: ent_26psn88zeeaxja6mcf2h3d7kcs
+    access:
+      availability: public
+      method: form
+      url: https://ai.google.dev/startup
+    source_ids:
+      - src_4ykpa9p71w668qes9mp1jgqea5
