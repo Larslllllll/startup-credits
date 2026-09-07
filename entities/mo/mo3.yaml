@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0e406e14t5vtx5qftsg65t05x3
+  slug: mo3
+  name: Moonshot 3
+  domains:
+    - value: moonshot.cn
+      role: primary
+      valid_from: 2026-09-07T16:44:56.392760Z
+  category: ai-ml
+profile:
+  summary: Moonshot AI offers qualifying startups free or discounted access to their AI language model API platform.
+  links:
+    site: https://moonshot.cn
+  description: Moonshot AI offers qualifying startups free or discounted access to their AI language model API platform.
+sources:
+  - source_id: src_r7hzfkgbx5nkarapwbpbq19fwh
+    url: https://moonshot.cn/startup
+programs: []
+offers:
+  - offer_id: off_bw2rmz6mxfmsrz35f85syatjts
+    offer_slug: mo3-startup-program
+    title: Moonshot 3 startup program
+    summary: Moonshot AI offers qualifying startups free or discounted access to their AI language model API platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:44:56.392760Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI language model API platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_0e406e14t5vtx5qftsg65t05x3
+      access_operator_entity_id: ent_0e406e14t5vtx5qftsg65t05x3
+    access:
+      availability: public
+      method: form
+      url: https://moonshot.cn/startup
+    source_ids:
+      - src_r7hzfkgbx5nkarapwbpbq19fwh
