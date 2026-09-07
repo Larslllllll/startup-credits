@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_g7t9z7wxeqe0ne6p01h6zm5sdh
+  slug: wise-2
+  name: Wise Pro
+  domains:
+    - value: wise.com
+      role: primary
+      valid_from: 2026-09-07T16:00:55.054181Z
+  category: payments-fintech
+profile:
+  summary: Wise Pro offers qualifying startups free or discounted access to their international money transfer platform.
+  links:
+    site: https://wise.com
+  description: Wise Pro offers qualifying startups free or discounted access to their international money transfer platform.
+sources:
+  - source_id: src_e1kweyxv9jsyc4v406b95vhx2w
+    url: https://wise.com/startup
+programs: []
+offers:
+  - offer_id: off_8y0qm77ch3h855y7zj2drwqj50
+    offer_slug: wise-2-startup-program
+    title: Wise Pro startup program
+    summary: Wise Pro offers qualifying startups free or discounted access to their international money transfer platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:00:55.054181Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their international money transfer platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_g7t9z7wxeqe0ne6p01h6zm5sdh
+      access_operator_entity_id: ent_g7t9z7wxeqe0ne6p01h6zm5sdh
+    access:
+      availability: public
+      method: form
+      url: https://wise.com/startup
+    source_ids:
+      - src_e1kweyxv9jsyc4v406b95vhx2w
