@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_kv8b9yfyh40z87zfyq1kxgj68m
+  slug: paytm-business
+  name: Paytm Business
+  domains:
+    - value: paytm.com
+      role: primary
+      valid_from: 2026-09-07T16:08:47.890689Z
+  category: payments-fintech
+profile:
+  summary: Paytm Business offers qualifying startups free or discounted access to their business payments and merchant services platform.
+  links:
+    site: https://paytm.com
+  description: Paytm Business offers qualifying startups free or discounted access to their business payments and merchant services platform.
+sources:
+  - source_id: src_ky514ggpm193wh9sqs0hwzd1sf
+    url: https://paytm.com/startup
+programs: []
+offers:
+  - offer_id: off_qeywvet94hnmpxjw8hg3p5y4v9
+    offer_slug: paytm-business-startup-program
+    title: Paytm Business startup program
+    summary: Paytm Business offers qualifying startups free or discounted access to their business payments and merchant services platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:08:47.890689Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to business payments and merchant services platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_kv8b9yfyh40z87zfyq1kxgj68m
+      access_operator_entity_id: ent_kv8b9yfyh40z87zfyq1kxgj68m
+    access:
+      availability: public
+      method: form
+      url: https://paytm.com/startup
+    source_ids:
+      - src_ky514ggpm193wh9sqs0hwzd1sf
