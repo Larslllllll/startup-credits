@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3xc5m0n47dqm608675cv9qxepn
+  slug: sendspark
+  name: Sendspark
+  domains:
+    - value: sendspark.com
+      role: primary
+      valid_from: 2026-09-07T14:49:30.931595Z
+  category: communication
+profile:
+  summary: Sendspark offers qualifying startups free or discounted access to their video messaging platform for business communication.
+  links:
+    site: https://sendspark.com
+  description: Sendspark offers qualifying startups free or discounted access to their video messaging platform for business communication.
+sources:
+  - source_id: src_vr6ytnhsckkstasn6n1055d3wc
+    url: https://sendspark.com/startup
+programs: []
+offers:
+  - offer_id: off_dapere1gdbkef96mksza17w2hb
+    offer_slug: sendspark-startup-program
+    title: Sendspark startup program
+    summary: Sendspark offers qualifying startups free or discounted access to their video messaging platform for business communication.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:49:30.931595Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted video messaging platform access for business communication
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3xc5m0n47dqm608675cv9qxepn
+      access_operator_entity_id: ent_3xc5m0n47dqm608675cv9qxepn
+    access:
+      availability: public
+      method: form
+      url: https://sendspark.com/startup
+    source_ids:
+      - src_vr6ytnhsckkstasn6n1055d3wc
