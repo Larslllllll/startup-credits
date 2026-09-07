@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6vpb6agmrxegwtxh1cwtfhycb9
+  slug: solarlayout
+  name: SolarLayout
+  domains:
+    - value: solarlayout.app
+      role: primary
+      valid_from: 2026-09-07T13:34:26.218391Z
+  category: design
+profile:
+  summary: SolarLayout offers qualifying early-stage solar companies up to $5,000 in credits usable across SolarLayout and BESS Desktop.
+  links:
+    site: https://solarlayout.app
+  description: SolarLayout is a solar design and BESS Desktop platform. Their startup program offers qualifying early-stage solar companies up to $5,000 in credits usable across SolarLayout and BESS Desktop products.
+sources:
+  - source_id: src_gpz2xaatm87tk1wnmcwx69y81n
+    url: https://solarlayout.app/startups
+programs: []
+offers:
+  - offer_id: off_sy864c736dmd93abwhjkxg9er1
+    offer_slug: solarlayout-startup-program
+    title: SolarLayout startup program
+    summary: Qualifying early-stage solar companies receive up to $5,000 in SolarLayout credits usable across SolarLayout and BESS Desktop.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:34:26.218391Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $5,000 in SolarLayout credits usable across SolarLayout and BESS Desktop
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying early-stage solar company. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_6vpb6agmrxegwtxh1cwtfhycb9
+      access_operator_entity_id: ent_6vpb6agmrxegwtxh1cwtfhycb9
+    access:
+      availability: public
+      method: form
+      url: https://solarlayout.app/startups
+    source_ids:
+      - src_gpz2xaatm87tk1wnmcwx69y81n
