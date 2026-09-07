@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_szhzb7qrv8ktr9hvjd0cmz04p2
+  slug: squadcast
+  name: SquadCast
+  domains:
+    - value: squadcast.fm
+      role: primary
+      valid_from: 2026-09-07T15:43:27.408808Z
+  category: communication
+profile:
+  summary: SquadCast offers qualifying startups free or discounted access to their remote podcast recording platform.
+  links:
+    site: https://squadcast.fm
+  description: SquadCast offers qualifying startups free or discounted access to their remote podcast recording platform.
+sources:
+  - source_id: src_xvmhhq86w7vc0ptzvv7rmht96j
+    url: https://squadcast.fm/startup
+programs: []
+offers:
+  - offer_id: off_n0cg3tvj1qrrnxwfpzpwbab6k7
+    offer_slug: squadcast-startup-program
+    title: SquadCast startup program
+    summary: SquadCast offers qualifying startups free or discounted access to their remote podcast recording platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:43:27.408808Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their remote podcast recording platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_szhzb7qrv8ktr9hvjd0cmz04p2
+      access_operator_entity_id: ent_szhzb7qrv8ktr9hvjd0cmz04p2
+    access:
+      availability: public
+      method: form
+      url: https://squadcast.fm/startup
+    source_ids:
+      - src_xvmhhq86w7vc0ptzvv7rmht96j
