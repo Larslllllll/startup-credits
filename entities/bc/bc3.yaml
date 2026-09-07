@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_dmaq4p7k9z9nj93a9ryecrnj1h
+  slug: bc3
+  name: BigCommerce 3
+  domains:
+    - value: bigcommerce.com
+      role: primary
+      valid_from: 2026-09-07T17:02:50.908275Z
+  category: commerce
+profile:
+  summary: BigCommerce offers qualifying startups free or discounted access to their e-commerce platform.
+  links:
+    site: https://bigcommerce.com
+  description: BigCommerce offers qualifying startups free or discounted access to their e-commerce platform.
+sources:
+  - source_id: src_r87nbgb1ra43b48e4754av56q4
+    url: https://bigcommerce.com/startup
+programs: []
+offers:
+  - offer_id: off_0dn6xz0vzcrhx5yxz2zmwcy72q
+    offer_slug: bc3-startup-program
+    title: BigCommerce 3 startup program
+    summary: BigCommerce offers qualifying startups free or discounted access to their e-commerce platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T17:02:50.908275Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to e-commerce platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_dmaq4p7k9z9nj93a9ryecrnj1h
+      access_operator_entity_id: ent_dmaq4p7k9z9nj93a9ryecrnj1h
+    access:
+      availability: public
+      method: form
+      url: https://bigcommerce.com/startup
+    source_ids:
+      - src_r87nbgb1ra43b48e4754av56q4
