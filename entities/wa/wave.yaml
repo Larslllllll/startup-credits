@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gqgsq015d0a79sm0f58fz5cck7
+  slug: wave
+  name: Wave
+  domains:
+    - value: waveapps.com
+      role: primary
+      valid_from: 2026-09-07T15:52:47.107525Z
+  category: finance-accounting
+profile:
+  summary: Wave offers qualifying startups free or discounted access to their free accounting and invoicing platform.
+  links:
+    site: https://waveapps.com
+  description: Wave offers qualifying startups free or discounted access to their free accounting and invoicing platform.
+sources:
+  - source_id: src_pmyt1gbtkkkrvsahrfg4xepe97
+    url: https://waveapps.com/startup
+programs: []
+offers:
+  - offer_id: off_6cv3rpva9samwxvv1v4gfz13gk
+    offer_slug: wave-startup-program
+    title: Wave startup program
+    summary: Wave offers qualifying startups free or discounted access to their free accounting and invoicing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:52:47.107525Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to their free accounting and invoicing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_gqgsq015d0a79sm0f58fz5cck7
+      access_operator_entity_id: ent_gqgsq015d0a79sm0f58fz5cck7
+    access:
+      availability: public
+      method: form
+      url: https://waveapps.com/startup
+    source_ids:
+      - src_pmyt1gbtkkkrvsahrfg4xepe97
