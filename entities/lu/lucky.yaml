@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5699n42whwfna9pfe22hscbqx2
+  slug: lucky
+  name: Lucky
+  domains:
+    - value: lucky.horse
+      role: primary
+      valid_from: 2026-09-07T14:51:13.254705Z
+  category: marketing
+profile:
+  summary: Lucky offers qualifying startups a discount on their loyalty and customer engagement platform.
+  links:
+    site: https://lucky.horse
+  description: Lucky offers qualifying startups a discount on their loyalty and customer engagement platform.
+sources:
+  - source_id: src_jx4xhcskew7vcnmcrvpere7xch
+    url: https://lucky.horse/startup
+programs: []
+offers:
+  - offer_id: off_234n1xrw9667c6x1a11gt3arpf
+    offer_slug: lucky-startup-program
+    title: Lucky startup program
+    summary: Lucky offers qualifying startups a discount on their loyalty and customer engagement platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:51:13.254705Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Discount on loyalty and customer engagement platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_5699n42whwfna9pfe22hscbqx2
+      access_operator_entity_id: ent_5699n42whwfna9pfe22hscbqx2
+    access:
+      availability: public
+      method: form
+      url: https://lucky.horse/startup
+    source_ids:
+      - src_jx4xhcskew7vcnmcrvpere7xch
