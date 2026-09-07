@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_2906qrynehc3dxd8z35sesspgp
+  slug: redash
+  name: Redash
+  domains:
+    - value: redash.io
+      role: primary
+      valid_from: 2026-09-07T15:38:01.614980Z
+  category: data-analytics
+profile:
+  summary: Redash offers qualifying startups free or discounted access to their open-source data visualization and BI platform.
+  links:
+    site: https://redash.io
+  description: Redash offers qualifying startups free or discounted access to their open-source data visualization and BI platform.
+sources:
+  - source_id: src_21c8p2k6m5m1vfdjpd3hasbhz0
+    url: https://redash.io/startup
+programs: []
+offers:
+  - offer_id: off_9s0c5nb5j6z0xgtmf82sqwk38c
+    offer_slug: redash-startup-program
+    title: Redash startup program
+    summary: Redash offers qualifying startups free or discounted access to their open-source data visualization and BI platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:38:01.614980Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source data visualization and BI platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_2906qrynehc3dxd8z35sesspgp
+      access_operator_entity_id: ent_2906qrynehc3dxd8z35sesspgp
+    access:
+      availability: public
+      method: form
+      url: https://redash.io/startup
+    source_ids:
+      - src_21c8p2k6m5m1vfdjpd3hasbhz0
