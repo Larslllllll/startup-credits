@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_fp7vkmsmag0r9g04zxt1fvprwh
+  slug: celestia
+  name: Celestia
+  domains:
+    - value: celestia.org
+      role: primary
+      valid_from: 2026-09-07T15:54:06.386853Z
+  category: devtools-other
+profile:
+  summary: Celestia offers qualifying startups free or discounted access to their modular blockchain and data availability platform.
+  links:
+    site: https://celestia.org
+  description: Celestia offers qualifying startups free or discounted access to their modular blockchain and data availability platform.
+sources:
+  - source_id: src_j0tgkex5bmvnznwfh6x89hatyt
+    url: https://celestia.org/startup
+programs: []
+offers:
+  - offer_id: off_k2cpy9f6qq04kfbm215yf9hd8p
+    offer_slug: celestia-startup-program
+    title: Celestia startup program
+    summary: Celestia offers qualifying startups free or discounted access to their modular blockchain and data availability platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:54:06.386853Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their modular blockchain and data availability platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_fp7vkmsmag0r9g04zxt1fvprwh
+      access_operator_entity_id: ent_fp7vkmsmag0r9g04zxt1fvprwh
+    access:
+      availability: public
+      method: form
+      url: https://celestia.org/startup
+    source_ids:
+      - src_j0tgkex5bmvnznwfh6x89hatyt
