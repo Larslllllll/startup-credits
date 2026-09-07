@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_sxav08d458kz86r3br29r3s9xr
+  slug: bun
+  name: Bun
+  domains:
+    - value: bun.sh
+      role: primary
+      valid_from: 2026-09-07T15:01:23.245474Z
+  category: devtools-other
+profile:
+  summary: Bun offers qualifying startups free or discounted access to their all-in-one JavaScript runtime and toolkit platform.
+  links:
+    site: https://bun.sh
+  description: Bun offers qualifying startups free or discounted access to their all-in-one JavaScript runtime and toolkit platform.
+sources:
+  - source_id: src_zy3vt7j0c3f7pbanb4ramhx7zg
+    url: https://bun.sh/startup
+programs: []
+offers:
+  - offer_id: off_ye5fek5ynfkkbyjw1m4vsebjxy
+    offer_slug: bun-startup-program
+    title: Bun startup program
+    summary: Bun offers qualifying startups free or discounted access to their all-in-one JavaScript runtime and toolkit platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:01:23.245474Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to all-in-one JavaScript runtime and toolkit platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_sxav08d458kz86r3br29r3s9xr
+      access_operator_entity_id: ent_sxav08d458kz86r3br29r3s9xr
+    access:
+      availability: public
+      method: form
+      url: https://bun.sh/startup
+    source_ids:
+      - src_zy3vt7j0c3f7pbanb4ramhx7zg
