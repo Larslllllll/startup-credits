@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_f4p3w473d51jcyh33nwbv71b2d
+  slug: anthropic-claude
+  name: Claude via Anthropic
+  domains:
+    - value: anthropic.com
+      role: primary
+      valid_from: 2026-09-07T16:11:34.444949Z
+  category: ai-ml
+profile:
+  summary: Claude offers qualifying startups free or discounted access to their AI language model API through Anthropic.
+  links:
+    site: https://anthropic.com
+  description: Claude offers qualifying startups free or discounted access to their AI language model API through Anthropic.
+sources:
+  - source_id: src_c9pyj8a6rp5xvbpevhgtpftqw1
+    url: https://anthropic.com/startup
+programs: []
+offers:
+  - offer_id: off_3ntdtn2mwwknfgkwgnpzaszcgz
+    offer_slug: anthropic-claude-startup-program
+    title: Claude via Anthropic startup program
+    summary: Claude offers qualifying startups free or discounted access to their AI language model API through Anthropic.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:11:34.444949Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI language model API through Anthropic
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_f4p3w473d51jcyh33nwbv71b2d
+      access_operator_entity_id: ent_f4p3w473d51jcyh33nwbv71b2d
+    access:
+      availability: public
+      method: form
+      url: https://anthropic.com/startup
+    source_ids:
+      - src_c9pyj8a6rp5xvbpevhgtpftqw1
