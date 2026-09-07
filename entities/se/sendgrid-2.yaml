@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_te2xxdcah2yv1q07ycr54a6gxy
+  slug: sendgrid-2
+  name: SendGrid Pro
+  domains:
+    - value: sendgrid.com
+      role: primary
+      valid_from: 2026-09-07T15:29:11.860778Z
+  category: communication
+profile:
+  summary: SendGrid Pro offers qualifying startups free or discounted access to their transactional and marketing email platform.
+  links:
+    site: https://sendgrid.com
+  description: SendGrid Pro offers qualifying startups free or discounted access to their transactional and marketing email platform.
+sources:
+  - source_id: src_rr24zwa1tv665av0m93jwbyxrc
+    url: https://sendgrid.com/startup
+programs: []
+offers:
+  - offer_id: off_sr905dy3s8kezmh23qy93krrgk
+    offer_slug: sendgrid-2-startup-program
+    title: SendGrid Pro startup program
+    summary: SendGrid Pro offers qualifying startups free or discounted access to their transactional and marketing email platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:29:11.860778Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their transactional and marketing email platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_te2xxdcah2yv1q07ycr54a6gxy
+      access_operator_entity_id: ent_te2xxdcah2yv1q07ycr54a6gxy
+    access:
+      availability: public
+      method: form
+      url: https://sendgrid.com/startup
+    source_ids:
+      - src_rr24zwa1tv665av0m93jwbyxrc
