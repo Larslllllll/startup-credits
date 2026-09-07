@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_4am7e6z8wz23x4mdz834n8c5w3
+  slug: db2
+  name: DBeaver 2
+  domains:
+    - value: dbeaver.io
+      role: primary
+      valid_from: 2026-09-07T16:58:20.090603Z
+  category: databases
+profile:
+  summary: DBeaver offers qualifying startups free or discounted access to their open-source database management platform.
+  links:
+    site: https://dbeaver.io
+  description: DBeaver offers qualifying startups free or discounted access to their open-source database management platform.
+sources:
+  - source_id: src_69gn4e9w62q9rv31149s05mnr4
+    url: https://dbeaver.io/startup
+programs: []
+offers:
+  - offer_id: off_7w83ykp47kz4g8z51jk4aaqk8t
+    offer_slug: db2-startup-program
+    title: DBeaver 2 startup program
+    summary: DBeaver offers qualifying startups free or discounted access to their open-source database management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:58:20.090603Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source database management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_4am7e6z8wz23x4mdz834n8c5w3
+      access_operator_entity_id: ent_4am7e6z8wz23x4mdz834n8c5w3
+    access:
+      availability: public
+      method: form
+      url: https://dbeaver.io/startup
+    source_ids:
+      - src_69gn4e9w62q9rv31149s05mnr4
