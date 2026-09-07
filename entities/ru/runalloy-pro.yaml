@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_mnf5rd03kfrgnagpzxe7vbwvcb
+  slug: runalloy-pro
+  name: RunAlloy Pro
+  domains:
+    - value: runalloy.com
+      role: primary
+      valid_from: 2026-09-07T16:09:20.071846Z
+  category: ai-ml
+profile:
+  summary: RunAlloy Pro offers qualifying startups free or discounted access to their AI model serving and scaling platform.
+  links:
+    site: https://runalloy.com
+  description: RunAlloy Pro offers qualifying startups free or discounted access to their AI model serving and scaling platform.
+sources:
+  - source_id: src_vr4s7r5pxjv2tghwhkhtgmxv20
+    url: https://runalloy.com/startup
+programs: []
+offers:
+  - offer_id: off_rj54h3tc60jzqp5w0ged3ehrnv
+    offer_slug: runalloy-pro-startup-program
+    title: RunAlloy Pro startup program
+    summary: RunAlloy Pro offers qualifying startups free or discounted access to their AI model serving and scaling platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:09:20.071846Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI model serving and scaling platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_mnf5rd03kfrgnagpzxe7vbwvcb
+      access_operator_entity_id: ent_mnf5rd03kfrgnagpzxe7vbwvcb
+    access:
+      availability: public
+      method: form
+      url: https://runalloy.com/startup
+    source_ids:
+      - src_vr4s7r5pxjv2tghwhkhtgmxv20
