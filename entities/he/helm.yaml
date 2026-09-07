@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_hwwk7qt2gk4h4v9x857beqswvg
+  slug: helm
+  name: Helm
+  domains:
+    - value: helm.sh
+      role: primary
+      valid_from: 2026-09-07T15:20:17.264846Z
+  category: devtools-other
+profile:
+  summary: Helm offers qualifying startups free or discounted access to their package manager for Kubernetes.
+  links:
+    site: https://helm.sh
+  description: Helm offers qualifying startups free or discounted access to their package manager for Kubernetes.
+sources:
+  - source_id: src_xmmcff6bbbsx9781frdav4j2p5
+    url: https://helm.sh/startup
+programs: []
+offers:
+  - offer_id: off_b4bxbzmbb3fsa7av3bpyg3ck5y
+    offer_slug: helm-startup-program
+    title: Helm startup program
+    summary: Helm offers qualifying startups free or discounted access to their package manager for Kubernetes.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:20:17.264846Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their package manager for Kubernetes
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_hwwk7qt2gk4h4v9x857beqswvg
+      access_operator_entity_id: ent_hwwk7qt2gk4h4v9x857beqswvg
+    access:
+      availability: public
+      method: form
+      url: https://helm.sh/startup
+    source_ids:
+      - src_xmmcff6bbbsx9781frdav4j2p5
