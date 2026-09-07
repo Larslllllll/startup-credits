@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_j8fmd96p7ershfjh621skfm22e
+  slug: datalyse
+  name: Datalyse
+  domains:
+    - value: datalyse.io
+      role: primary
+      valid_from: 2026-09-07T14:16:23.590995Z
+  category: data-analytics
+profile:
+  summary: Datalyse offers qualifying startups free access to their data extraction and web scraping platform for 6 months.
+  links:
+    site: https://datalyse.io
+  description: Datalyse is a data extraction and web scraping platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_4xxqc659skrbjw109661hsqp7r
+    url: https://datalyse.io/startup
+programs: []
+offers:
+  - offer_id: off_s73n34rv8prrdnvdrwj1jhcy1m
+    offer_slug: datalyse-startup-program
+    title: Datalyse startup program
+    summary: Qualifying startups receive free access to the Datalyse data extraction and web scraping platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:16:23.590995Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to data extraction and web scraping platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_j8fmd96p7ershfjh621skfm22e
+      access_operator_entity_id: ent_j8fmd96p7ershfjh621skfm22e
+    access:
+      availability: public
+      method: form
+      url: https://datalyse.io/startup
+    source_ids:
+      - src_4xxqc659skrbjw109661hsqp7r
