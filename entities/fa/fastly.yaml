@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_arpy13rht79ej4nt5x3nkwz32q
+  slug: fastly
+  name: Fastly
+  domains:
+    - value: fastly.com
+      role: primary
+      valid_from: 2026-09-07T15:01:06.963268Z
+  category: hosting-infra
+profile:
+  summary: Fastly offers qualifying startups free or discounted access to their edge cloud platform and CDN.
+  links:
+    site: https://fastly.com
+  description: Fastly offers qualifying startups free or discounted access to their edge cloud platform and CDN.
+sources:
+  - source_id: src_vhh4sfe7ywxajn00afjr8vqdha
+    url: https://fastly.com/startup
+programs: []
+offers:
+  - offer_id: off_ymzg8xth32pwqgk373papzt9yq
+    offer_slug: fastly-startup-program
+    title: Fastly startup program
+    summary: Fastly offers qualifying startups free or discounted access to their edge cloud platform and CDN.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:01:06.963268Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to edge cloud platform and CDN
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_arpy13rht79ej4nt5x3nkwz32q
+      access_operator_entity_id: ent_arpy13rht79ej4nt5x3nkwz32q
+    access:
+      availability: public
+      method: form
+      url: https://fastly.com/startup
+    source_ids:
+      - src_vhh4sfe7ywxajn00afjr8vqdha
