@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_tcbyy8s5bn9arspc9ehvwa73d1
+  slug: taiga
+  name: Taiga
+  domains:
+    - value: taiga.io
+      role: primary
+      valid_from: 2026-09-07T15:50:53.018665Z
+  category: productivity
+profile:
+  summary: Taiga offers qualifying startups free or discounted access to their open-source project management platform.
+  links:
+    site: https://taiga.io
+  description: Taiga offers qualifying startups free or discounted access to their open-source project management platform.
+sources:
+  - source_id: src_6g6nr4tffnx6b38fsfhvadccyb
+    url: https://taiga.io/startup
+programs: []
+offers:
+  - offer_id: off_stax4b9hyqp7v7fwz0fergw1fm
+    offer_slug: taiga-startup-program
+    title: Taiga startup program
+    summary: Taiga offers qualifying startups free or discounted access to their open-source project management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:50:53.018665Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source project management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_tcbyy8s5bn9arspc9ehvwa73d1
+      access_operator_entity_id: ent_tcbyy8s5bn9arspc9ehvwa73d1
+    access:
+      availability: public
+      method: form
+      url: https://taiga.io/startup
+    source_ids:
+      - src_6g6nr4tffnx6b38fsfhvadccyb
