@@ -1,0 +1,57 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_w4p5thsjxq474wdrgcz5hdefch
+  slug: levelui
+  slug_aliases:
+    - level-ui
+  name: Level UI
+  domains:
+    - value: levelui.com
+      role: primary
+      valid_from: 2026-09-07T11:34:30.005783Z
+  category: design
+profile:
+  summary: Level UI is a design and development agency offering 30% off the first project to startups under two years old.
+  description: Level UI is a design and development agency offering web design, app development, branding, UI/UX, and AI automation services. They publish a startup-specific discount on their English promotional page that grants 30% off the first project to companies registered less than two years old.
+  links:
+    site: https://levelui.com
+sources:
+  - source_id: src_gskh6yz3q4r74wkhnnrqvrtngn
+    url: https://levelui.com/promotions/startup-partner-discount
+programs: []
+offers:
+  - offer_id: off_bv3hbnyweqj65xb4errf4jpyws
+    offer_slug: levelui-startup-first-project-discount
+    offer_slug_aliases:
+      - levelui-startup-partner-discount
+    title: Level UI startup first-project discount
+    summary: Companies registered less than two years old receive 30% off any Level UI service or package on their first project, after providing a registration certificate or equivalent incorporation proof.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T11:34:30.005783Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 30% off the first project with Level UI
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 3000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a company legally registered less than two years ago and provide a registration certificate or equivalent proof of incorporation date.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_w4p5thsjxq474wdrgcz5hdefch
+      access_operator_entity_id: ent_w4p5thsjxq474wdrgcz5hdefch
+    access:
+      availability: public
+      method: form
+      url: https://levelui.com/promotions/startup-partner-discount
+    source_ids:
+      - src_gskh6yz3q4r74wkhnnrqvrtngn
