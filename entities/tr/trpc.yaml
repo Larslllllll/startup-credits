@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_4vq60fdeafyn5ad87m9pwtpcvx
+  slug: trpc
+  name: tRPC
+  domains:
+    - value: trpc.io
+      role: primary
+      valid_from: 2026-09-07T15:09:03.121298Z
+  category: devtools-other
+profile:
+  summary: tRPC offers qualifying startups free or discounted access to their open-source TypeScript framework for building APIs.
+  links:
+    site: https://trpc.io
+  description: tRPC offers qualifying startups free or discounted access to their open-source TypeScript framework for building APIs.
+sources:
+  - source_id: src_ebfn1jrngets1k6c2j75rpnsbv
+    url: https://trpc.io/startup
+programs: []
+offers:
+  - offer_id: off_sj0ct0jev913n6bg55xdqmkgen
+    offer_slug: trpc-startup-program
+    title: tRPC startup program
+    summary: tRPC offers qualifying startups free or discounted access to their open-source TypeScript framework for building APIs.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:09:03.121298Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source TypeScript framework for building APIs
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_4vq60fdeafyn5ad87m9pwtpcvx
+      access_operator_entity_id: ent_4vq60fdeafyn5ad87m9pwtpcvx
+    access:
+      availability: public
+      method: form
+      url: https://trpc.io/startup
+    source_ids:
+      - src_ebfn1jrngets1k6c2j75rpnsbv
