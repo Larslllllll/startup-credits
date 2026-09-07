@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_c46rtfvvggf9pras94bkc5r3gw
+  slug: quickestimate
+  name: QuickEstimate
+  domains:
+    - value: quickestimate.io
+      role: primary
+      valid_from: 2026-09-07T14:16:42.503993Z
+  category: finance-accounting
+profile:
+  summary: QuickEstimate offers qualifying startups free access to their construction cost estimation platform for 12 months.
+  links:
+    site: https://quickestimate.io
+  description: QuickEstimate is a construction cost estimation platform. Their startup program offers free access to qualifying startups for 12 months.
+sources:
+  - source_id: src_4f9bv8gjy86e82m5z1xw71b0n5
+    url: https://quickestimate.io/startup
+programs: []
+offers:
+  - offer_id: off_acwwve37bky8kaxhkjre2h6jnn
+    offer_slug: quickestimate-startup-program
+    title: QuickEstimate startup program
+    summary: Qualifying startups receive free access to the QuickEstimate construction cost estimation platform for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:16:42.503993Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to construction cost estimation platform for 12 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_c46rtfvvggf9pras94bkc5r3gw
+      access_operator_entity_id: ent_c46rtfvvggf9pras94bkc5r3gw
+    access:
+      availability: public
+      method: form
+      url: https://quickestimate.io/startup
+    source_ids:
+      - src_4f9bv8gjy86e82m5z1xw71b0n5
