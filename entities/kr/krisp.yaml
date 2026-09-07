@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gv2580a3gkcyz3bybzkef06py3
+  slug: krisp
+  name: Krisp
+  domains:
+    - value: krisp.ai
+      role: primary
+      valid_from: 2026-09-07T15:59:37.809377Z
+  category: communication
+profile:
+  summary: Krisp offers qualifying startups free or discounted access to their AI-powered noise cancellation platform.
+  links:
+    site: https://krisp.ai
+  description: Krisp offers qualifying startups free or discounted access to their AI-powered noise cancellation platform.
+sources:
+  - source_id: src_hetnwc3j5w4t2g3a98d69b36mj
+    url: https://krisp.ai/startup
+programs: []
+offers:
+  - offer_id: off_8ffd2y1rrm72rrmamp73kzth6s
+    offer_slug: krisp-startup-program
+    title: Krisp startup program
+    summary: Krisp offers qualifying startups free or discounted access to their AI-powered noise cancellation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:59:37.809377Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI-powered noise cancellation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_gv2580a3gkcyz3bybzkef06py3
+      access_operator_entity_id: ent_gv2580a3gkcyz3bybzkef06py3
+    access:
+      availability: public
+      method: form
+      url: https://krisp.ai/startup
+    source_ids:
+      - src_hetnwc3j5w4t2g3a98d69b36mj
