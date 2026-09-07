@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0whxpm0741m0wsast84va2wnb9
+  slug: llama-3
+  name: Llama 3
+  domains:
+    - value: llama.meta.com
+      role: primary
+      valid_from: 2026-09-07T16:13:22.990984Z
+  category: ai-ml
+profile:
+  summary: Llama 3 offers qualifying startups free or discounted access to their latest open-source LLM platform.
+  links:
+    site: https://llama.meta.com
+  description: Llama 3 offers qualifying startups free or discounted access to their latest open-source LLM platform.
+sources:
+  - source_id: src_sdbtry86pn6wwvg14qksgyn8q1
+    url: https://llama.meta.com/startup
+programs: []
+offers:
+  - offer_id: off_bdfg4a0mp6b2hdvrq6vvqr1vah
+    offer_slug: llama-3-startup-program
+    title: Llama 3 startup program
+    summary: Llama 3 offers qualifying startups free or discounted access to their latest open-source LLM platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:13:22.990984Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to latest open-source LLM platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_0whxpm0741m0wsast84va2wnb9
+      access_operator_entity_id: ent_0whxpm0741m0wsast84va2wnb9
+    access:
+      availability: public
+      method: form
+      url: https://llama.meta.com/startup
+    source_ids:
+      - src_sdbtry86pn6wwvg14qksgyn8q1
