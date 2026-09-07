@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7sbdw5y5gpy4ng4d332z8qe7f4
+  slug: redocly
+  name: Redocly
+  domains:
+    - value: redocly.com
+      role: primary
+      valid_from: 2026-09-07T15:26:15.072342Z
+  category: devtools-other
+profile:
+  summary: Redocly offers qualifying startups free or discounted access to their open-source API documentation platform.
+  links:
+    site: https://redocly.com
+  description: Redocly offers qualifying startups free or discounted access to their open-source API documentation platform.
+sources:
+  - source_id: src_0spp4qrk4rw9fanwfjvzjnjrvb
+    url: https://redocly.com/startup
+programs: []
+offers:
+  - offer_id: off_cppkwjp1r7h1sg2ex2r9v0vkqn
+    offer_slug: redocly-startup-program
+    title: Redocly startup program
+    summary: Redocly offers qualifying startups free or discounted access to their open-source API documentation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:26:15.072342Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source API documentation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_7sbdw5y5gpy4ng4d332z8qe7f4
+      access_operator_entity_id: ent_7sbdw5y5gpy4ng4d332z8qe7f4
+    access:
+      availability: public
+      method: form
+      url: https://redocly.com/startup
+    source_ids:
+      - src_0spp4qrk4rw9fanwfjvzjnjrvb
