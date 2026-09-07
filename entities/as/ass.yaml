@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_81g9stgpbtz986wny7g0d094wa
+  slug: ass
+  name: Adobe Sign 2
+  domains:
+    - value: acrobat.adobe.com
+      role: primary
+      valid_from: 2026-09-07T16:54:20.399585Z
+  category: legal-compliance
+profile:
+  summary: Adobe Sign offers qualifying startups free or discounted access to their electronic signature platform through Adobe.
+  links:
+    site: https://acrobat.adobe.com
+  description: Adobe Sign offers qualifying startups free or discounted access to their electronic signature platform through Adobe.
+sources:
+  - source_id: src_4bbqtgyc4p70pm6301fxy6t3b9
+    url: https://acrobat.adobe.com/startup
+programs: []
+offers:
+  - offer_id: off_zpbdtct4w4ga18pp6gbzct0rh8
+    offer_slug: ass-startup-program
+    title: Adobe Sign 2 startup program
+    summary: Adobe Sign offers qualifying startups free or discounted access to their electronic signature platform through Adobe.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:54:20.399585Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to electronic signature platform through Adobe
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_81g9stgpbtz986wny7g0d094wa
+      access_operator_entity_id: ent_81g9stgpbtz986wny7g0d094wa
+    access:
+      availability: public
+      method: form
+      url: https://acrobat.adobe.com/startup
+    source_ids:
+      - src_4bbqtgyc4p70pm6301fxy6t3b9
