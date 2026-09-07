@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_d9txf0rthdxbaje7e36rzwyp8t
+  slug: flystack
+  name: FlyStack
+  domains:
+    - value: flystack.dev
+      role: primary
+      valid_from: 2026-09-07T14:02:44.327829Z
+  category: hosting-infra
+profile:
+  summary: FlyStack offers early-stage startups discounted Premium or Startup plan pricing for 12 months including all features, API access, and priority support.
+  links:
+    site: https://flystack.dev
+  description: FlyStack is a cloud platform. Their startup program offers qualifying early-stage startups discounted Premium or Startup plan pricing for 12 months with all features, API access, and priority support.
+sources:
+  - source_id: src_py8rqkx4zz2n1ftw0dd8xd6cbm
+    url: https://flystack.dev/startup
+programs: []
+offers:
+  - offer_id: off_nm9z180s2raqhtynned2gcfq0m
+    offer_slug: flystack-startup-program
+    title: FlyStack startup program
+    summary: Early-stage startups receive discounted plan pricing for 12 months with all features, API access, and priority support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:02:44.327829Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Discounted Premium or Startup plan for 12 months with all features, API access, and priority support
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_d9txf0rthdxbaje7e36rzwyp8t
+      access_operator_entity_id: ent_d9txf0rthdxbaje7e36rzwyp8t
+    access:
+      availability: public
+      method: form
+      url: https://flystack.dev/startup
+    source_ids:
+      - src_py8rqkx4zz2n1ftw0dd8xd6cbm
