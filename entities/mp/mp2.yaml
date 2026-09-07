@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_r4bcveda3q9cb8qpjqdpkk57cm
+  slug: mp2
+  name: mParticle 2
+  domains:
+    - value: mparticle.com
+      role: primary
+      valid_from: 2026-09-07T16:56:27.351444Z
+  category: data-analytics
+profile:
+  summary: mParticle offers qualifying startups free or discounted access to their customer data platform and analytics.
+  links:
+    site: https://mparticle.com
+  description: mParticle offers qualifying startups free or discounted access to their customer data platform and analytics.
+sources:
+  - source_id: src_kdxeds7b1mtt3psh320v6sjvt8
+    url: https://mparticle.com/startup
+programs: []
+offers:
+  - offer_id: off_yxgmwj85a9kgs91vdkh8b4jr8z
+    offer_slug: mp2-startup-program
+    title: mParticle 2 startup program
+    summary: mParticle offers qualifying startups free or discounted access to their customer data platform and analytics.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:56:27.351444Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to customer data platform and analytics
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_r4bcveda3q9cb8qpjqdpkk57cm
+      access_operator_entity_id: ent_r4bcveda3q9cb8qpjqdpkk57cm
+    access:
+      availability: public
+      method: form
+      url: https://mparticle.com/startup
+    source_ids:
+      - src_kdxeds7b1mtt3psh320v6sjvt8
