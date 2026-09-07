@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_4wyxbq197pwxd4pfbbpdkggh5j
+  slug: plasmic
+  name: Plasmic
+  domains:
+    - value: plasmic.app
+      role: primary
+      valid_from: 2026-09-07T15:10:17.259664Z
+  category: no-code
+profile:
+  summary: Plasmic offers qualifying startups free or discounted access to their visual headless CMS and design platform.
+  links:
+    site: https://plasmic.app
+  description: Plasmic offers qualifying startups free or discounted access to their visual headless CMS and design platform.
+sources:
+  - source_id: src_9zz2bmptm1ax12r725ax5n3khz
+    url: https://plasmic.app/startup
+programs: []
+offers:
+  - offer_id: off_gcnsbwza3xpqwn8tfq4b6h5rgw
+    offer_slug: plasmic-startup-program
+    title: Plasmic startup program
+    summary: Plasmic offers qualifying startups free or discounted access to their visual headless CMS and design platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:10:17.259664Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to visual headless CMS and design platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_4wyxbq197pwxd4pfbbpdkggh5j
+      access_operator_entity_id: ent_4wyxbq197pwxd4pfbbpdkggh5j
+    access:
+      availability: public
+      method: form
+      url: https://plasmic.app/startup
+    source_ids:
+      - src_9zz2bmptm1ax12r725ax5n3khz
