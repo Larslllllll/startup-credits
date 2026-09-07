@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_h17rfrf6gwsgw0ngy5bm77sq5t
+  slug: zo3
+  name: Zoom 2
+  domains:
+    - value: zoom.us
+      role: primary
+      valid_from: 2026-09-07T16:53:46.815340Z
+  category: communication
+profile:
+  summary: Zoom offers qualifying startups free or discounted access to their video conferencing and meeting platform.
+  links:
+    site: https://zoom.us
+  description: Zoom offers qualifying startups free or discounted access to their video conferencing and meeting platform.
+sources:
+  - source_id: src_prymtsx1ddsb5m22pb7527schm
+    url: https://zoom.us/startup
+programs: []
+offers:
+  - offer_id: off_1dgzqz2zhk99mjd1mgbr10p3dx
+    offer_slug: zo3-startup-program
+    title: Zoom 2 startup program
+    summary: Zoom offers qualifying startups free or discounted access to their video conferencing and meeting platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:53:46.815340Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to video conferencing and meeting platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_h17rfrf6gwsgw0ngy5bm77sq5t
+      access_operator_entity_id: ent_h17rfrf6gwsgw0ngy5bm77sq5t
+    access:
+      availability: public
+      method: form
+      url: https://zoom.us/startup
+    source_ids:
+      - src_prymtsx1ddsb5m22pb7527schm
