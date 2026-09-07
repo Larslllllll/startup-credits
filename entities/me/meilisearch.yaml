@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ammrw8kfe3hcjcw807qn17p04h
+  slug: meilisearch
+  name: Meilisearch
+  domains:
+    - value: meilisearch.com
+      role: primary
+      valid_from: 2026-09-07T14:59:50.914023Z
+  category: data-analytics
+profile:
+  summary: Meilisearch offers qualifying startups free or discounted access to their open-source search engine platform.
+  links:
+    site: https://meilisearch.com
+  description: Meilisearch offers qualifying startups free or discounted access to their open-source search engine platform.
+sources:
+  - source_id: src_akgmnv5xjq2wh39ep64j4ymd86
+    url: https://meilisearch.com/startup
+programs: []
+offers:
+  - offer_id: off_myzc5q0x30f7ge2a0012ehhkd1
+    offer_slug: meilisearch-startup-program
+    title: Meilisearch startup program
+    summary: Meilisearch offers qualifying startups free or discounted access to their open-source search engine platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:59:50.914023Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source search engine platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ammrw8kfe3hcjcw807qn17p04h
+      access_operator_entity_id: ent_ammrw8kfe3hcjcw807qn17p04h
+    access:
+      availability: public
+      method: form
+      url: https://meilisearch.com/startup
+    source_ids:
+      - src_akgmnv5xjq2wh39ep64j4ymd86
