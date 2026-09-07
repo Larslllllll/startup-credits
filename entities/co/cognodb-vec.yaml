@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_f3t8v86atdza7499y0wtz6eccj
+  slug: cognodb-vec
+  name: CognoDB
+  domains:
+    - value: cognodb.com
+      role: primary
+      valid_from: 2026-09-07T16:41:53.029858Z
+  category: databases
+profile:
+  summary: CognoDB offers qualifying startups free or discounted access to their AI-powered vector database platform.
+  links:
+    site: https://cognodb.com
+  description: CognoDB offers qualifying startups free or discounted access to their AI-powered vector database platform.
+sources:
+  - source_id: src_mtvq44y3g7grx5699k4rcjsjx3
+    url: https://cognodb.com/startup
+programs: []
+offers:
+  - offer_id: off_bpbf13vjd0pzz4h17dmgy2a9fg
+    offer_slug: cognodb-vec-startup-program
+    title: CognoDB startup program
+    summary: CognoDB offers qualifying startups free or discounted access to their AI-powered vector database platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:41:53.029858Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI-powered vector database platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_f3t8v86atdza7499y0wtz6eccj
+      access_operator_entity_id: ent_f3t8v86atdza7499y0wtz6eccj
+    access:
+      availability: public
+      method: form
+      url: https://cognodb.com/startup
+    source_ids:
+      - src_mtvq44y3g7grx5699k4rcjsjx3
