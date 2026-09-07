@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_12qpbdcw7q16tm6re5z565je4r
+  slug: beehiiv
+  name: Beehiiv
+  domains:
+    - value: beehiiv.com
+      role: primary
+      valid_from: 2026-09-07T15:11:52.163769Z
+  category: communication
+profile:
+  summary: Beehiiv offers qualifying startups free or discounted access to their newsletter and email publishing platform.
+  links:
+    site: https://beehiiv.com
+  description: Beehiiv offers qualifying startups free or discounted access to their newsletter and email publishing platform.
+sources:
+  - source_id: src_f29xaq95qkwydada1dw8hg4xz5
+    url: https://beehiiv.com/startup
+programs: []
+offers:
+  - offer_id: off_bdpch3vvb0sv6w1g6a1b5zg74h
+    offer_slug: beehiiv-startup-program
+    title: Beehiiv startup program
+    summary: Beehiiv offers qualifying startups free or discounted access to their newsletter and email publishing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:11:52.163769Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to newsletter and email publishing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_12qpbdcw7q16tm6re5z565je4r
+      access_operator_entity_id: ent_12qpbdcw7q16tm6re5z565je4r
+    access:
+      availability: public
+      method: form
+      url: https://beehiiv.com/startup
+    source_ids:
+      - src_f29xaq95qkwydada1dw8hg4xz5
