@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0ce55rfsvnwdbn07dyf0n77g81
+  slug: ironclad
+  name: Ironclad
+  domains:
+    - value: ironcladapp.com
+      role: primary
+      valid_from: 2026-09-07T15:31:21.876746Z
+  category: legal-compliance
+profile:
+  summary: Ironclad offers qualifying startups free or discounted access to their contract lifecycle management platform.
+  links:
+    site: https://ironcladapp.com
+  description: Ironclad offers qualifying startups free or discounted access to their contract lifecycle management platform.
+sources:
+  - source_id: src_kkj1z8cg7rhyn1pff0bwmgh285
+    url: https://ironcladapp.com/startup
+programs: []
+offers:
+  - offer_id: off_mbp16aky5ttkafb8b64tfnrbm8
+    offer_slug: ironclad-startup-program
+    title: Ironclad startup program
+    summary: Ironclad offers qualifying startups free or discounted access to their contract lifecycle management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:31:21.876746Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their contract lifecycle management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_0ce55rfsvnwdbn07dyf0n77g81
+      access_operator_entity_id: ent_0ce55rfsvnwdbn07dyf0n77g81
+    access:
+      availability: public
+      method: form
+      url: https://ironcladapp.com/startup
+    source_ids:
+      - src_kkj1z8cg7rhyn1pff0bwmgh285
