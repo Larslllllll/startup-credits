@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_np2zmzq96k1meby9d0165xs0ke
+  slug: zed
+  name: Zed
+  domains:
+    - value: zed.dev
+      role: primary
+      valid_from: 2026-09-07T15:01:59.827817Z
+  category: devtools-other
+profile:
+  summary: Zed offers qualifying startups free or discounted access to their high-performance collaborative code editor platform.
+  links:
+    site: https://zed.dev
+  description: Zed offers qualifying startups free or discounted access to their high-performance collaborative code editor platform.
+sources:
+  - source_id: src_w40nmwm14vjmmegcvxrs46xsjp
+    url: https://zed.dev/startup
+programs: []
+offers:
+  - offer_id: off_2dfq68545s2azt884c5n2mta3g
+    offer_slug: zed-startup-program
+    title: Zed startup program
+    summary: Zed offers qualifying startups free or discounted access to their high-performance collaborative code editor platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:01:59.827817Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to high-performance collaborative code editor platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_np2zmzq96k1meby9d0165xs0ke
+      access_operator_entity_id: ent_np2zmzq96k1meby9d0165xs0ke
+    access:
+      availability: public
+      method: form
+      url: https://zed.dev/startup
+    source_ids:
+      - src_w40nmwm14vjmmegcvxrs46xsjp
