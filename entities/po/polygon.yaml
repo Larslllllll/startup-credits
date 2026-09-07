@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_mcx4v2v33vrjys52fgvrx37873
+  slug: polygon
+  name: Polygon
+  domains:
+    - value: polygon.technology
+      role: primary
+      valid_from: 2026-09-07T15:53:34.843302Z
+  category: devtools-other
+profile:
+  summary: Polygon offers qualifying startups free or discounted access to their Ethereum scaling and blockchain platform.
+  links:
+    site: https://polygon.technology
+  description: Polygon offers qualifying startups free or discounted access to their Ethereum scaling and blockchain platform.
+sources:
+  - source_id: src_x4bdybhc3fjajhn8ys37zn5591
+    url: https://polygon.technology/startup
+programs: []
+offers:
+  - offer_id: off_68s0mc1p3nf3gj57dgtp5epxsg
+    offer_slug: polygon-startup-program
+    title: Polygon startup program
+    summary: Polygon offers qualifying startups free or discounted access to their Ethereum scaling and blockchain platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:53:34.843302Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their Ethereum scaling and blockchain platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_mcx4v2v33vrjys52fgvrx37873
+      access_operator_entity_id: ent_mcx4v2v33vrjys52fgvrx37873
+    access:
+      availability: public
+      method: form
+      url: https://polygon.technology/startup
+    source_ids:
+      - src_x4bdybhc3fjajhn8ys37zn5591
