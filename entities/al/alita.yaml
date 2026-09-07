@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_d89zrtr03tdcyh8ygdrjtkjgvt
+  slug: alita
+  name: theAlita
+  domains:
+    - value: thealita.com
+      role: primary
+      valid_from: 2026-09-07T14:58:47.662890Z
+  category: ai-ml
+profile:
+  summary: theAlita offers qualifying startups free or discounted access to their AI-powered document processing and automation platform.
+  links:
+    site: https://thealita.com
+  description: theAlita offers qualifying startups free or discounted access to their AI-powered document processing and automation platform.
+sources:
+  - source_id: src_77yckqcq1j941c1mnpvp2tzx1y
+    url: https://thealita.com/startup
+programs: []
+offers:
+  - offer_id: off_e2fjeqgh9x5qqprard2d26r0bs
+    offer_slug: alita-startup-program
+    title: theAlita startup program
+    summary: theAlita offers qualifying startups free or discounted access to their AI-powered document processing and automation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:58:47.662890Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI-powered document processing and automation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_d89zrtr03tdcyh8ygdrjtkjgvt
+      access_operator_entity_id: ent_d89zrtr03tdcyh8ygdrjtkjgvt
+    access:
+      availability: public
+      method: form
+      url: https://thealita.com/startup
+    source_ids:
+      - src_77yckqcq1j941c1mnpvp2tzx1y
