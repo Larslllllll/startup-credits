@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gaeg1z1ffz6bxgaq61vqma3vr9
+  slug: timescaledb
+  name: Timescale
+  domains:
+    - value: timescale.com
+      role: primary
+      valid_from: 2026-09-07T15:00:18.755849Z
+  category: databases
+profile:
+  summary: Timescale offers qualifying startups free or discounted access to their time-series SQL database platform.
+  links:
+    site: https://timescale.com
+  description: Timescale offers qualifying startups free or discounted access to their time-series SQL database platform.
+sources:
+  - source_id: src_2y72jqcrwzxe8tpr69j0rz9xh6
+    url: https://timescale.com/startup
+programs: []
+offers:
+  - offer_id: off_0tcwmtkd8ftcxqcjsw9y41pwm3
+    offer_slug: timescaledb-startup-program
+    title: Timescale startup program
+    summary: Timescale offers qualifying startups free or discounted access to their time-series SQL database platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:00:18.755849Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to time-series SQL database platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_gaeg1z1ffz6bxgaq61vqma3vr9
+      access_operator_entity_id: ent_gaeg1z1ffz6bxgaq61vqma3vr9
+    access:
+      availability: public
+      method: form
+      url: https://timescale.com/startup
+    source_ids:
+      - src_2y72jqcrwzxe8tpr69j0rz9xh6
