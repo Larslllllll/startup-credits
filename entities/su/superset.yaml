@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ynbqxc9q898bqe9w2v6n9enccq
+  slug: superset
+  name: Superset
+  domains:
+    - value: superset.apache.org
+      role: primary
+      valid_from: 2026-09-07T15:37:57.461000Z
+  category: data-analytics
+profile:
+  summary: Superset offers qualifying startups free or discounted access to their open-source data exploration and visualization platform.
+  links:
+    site: https://superset.apache.org
+  description: Superset offers qualifying startups free or discounted access to their open-source data exploration and visualization platform.
+sources:
+  - source_id: src_m5k737y2twrd6tfecby9b8vc7z
+    url: https://superset.apache.org/startup
+programs: []
+offers:
+  - offer_id: off_6t6rz9yh6k88hsvvrj70k2mtt3
+    offer_slug: superset-startup-program
+    title: Superset startup program
+    summary: Superset offers qualifying startups free or discounted access to their open-source data exploration and visualization platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:37:57.461000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source data exploration and visualization platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ynbqxc9q898bqe9w2v6n9enccq
+      access_operator_entity_id: ent_ynbqxc9q898bqe9w2v6n9enccq
+    access:
+      availability: public
+      method: form
+      url: https://superset.apache.org/startup
+    source_ids:
+      - src_m5k737y2twrd6tfecby9b8vc7z
