@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rv73jz08rqn58ye0styb1whpnm
+  slug: homeflow
+  name: Homeflow
+  domains:
+    - value: homeflow.co.uk
+      role: primary
+      valid_from: 2026-09-07T14:35:38.835172Z
+  category: crm-sales
+profile:
+  summary: Homeflow offers qualifying startups free access to their property management and customer relationship platform for 6 months.
+  links:
+    site: https://homeflow.co.uk
+  description: Homeflow is a property management and customer relationship platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_79j1206n8xptcngerryrqtbtjm
+    url: https://homeflow.co.uk/startup
+programs: []
+offers:
+  - offer_id: off_yr63gzb7pjdppfc7yrd5dp36w9
+    offer_slug: homeflow-startup-program
+    title: Homeflow startup program
+    summary: Qualifying startups receive free access to the Homeflow property management and customer relationship platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:35:38.835172Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to property management and customer relationship platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_rv73jz08rqn58ye0styb1whpnm
+      access_operator_entity_id: ent_rv73jz08rqn58ye0styb1whpnm
+    access:
+      availability: public
+      method: form
+      url: https://homeflow.co.uk/startup
+    source_ids:
+      - src_79j1206n8xptcngerryrqtbtjm
