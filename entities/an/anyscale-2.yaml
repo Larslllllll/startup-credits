@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5e70qjyx73m3gz96rsafdf3c85
+  slug: anyscale-2
+  name: Anyscale Pro
+  domains:
+    - value: anyscale.com
+      role: primary
+      valid_from: 2026-09-07T15:08:26.212148Z
+  category: ai-ml
+profile:
+  summary: Anyscale Pro offers qualifying startups free or discounted access to their Ray-based distributed AI compute platform.
+  links:
+    site: https://anyscale.com
+  description: Anyscale Pro offers qualifying startups free or discounted access to their Ray-based distributed AI compute platform.
+sources:
+  - source_id: src_8gfjfwkd1qvc34tfd2hynvf8dp
+    url: https://anyscale.com/startup
+programs: []
+offers:
+  - offer_id: off_pd9mr6w7d8pzznv8z394vaccyt
+    offer_slug: anyscale-2-startup-program
+    title: Anyscale Pro startup program
+    summary: Anyscale Pro offers qualifying startups free or discounted access to their Ray-based distributed AI compute platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:08:26.212148Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to Ray-based distributed AI compute platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_5e70qjyx73m3gz96rsafdf3c85
+      access_operator_entity_id: ent_5e70qjyx73m3gz96rsafdf3c85
+    access:
+      availability: public
+      method: form
+      url: https://anyscale.com/startup
+    source_ids:
+      - src_8gfjfwkd1qvc34tfd2hynvf8dp
