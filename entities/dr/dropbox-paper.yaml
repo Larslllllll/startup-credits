@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_j5gkd2kdpg65kt2qphe5k1p52r
+  slug: dropbox-paper
+  name: Dropbox Paper
+  domains:
+    - value: paper.dropbox.com
+      role: primary
+      valid_from: 2026-09-07T15:39:57.874595Z
+  category: productivity
+profile:
+  summary: Dropbox Paper offers qualifying startups free or discounted access to their collaborative document and notes platform.
+  links:
+    site: https://paper.dropbox.com
+  description: Dropbox Paper offers qualifying startups free or discounted access to their collaborative document and notes platform.
+sources:
+  - source_id: src_zbg0dgse7kbqxt2aj39bysxb8v
+    url: https://paper.dropbox.com/startup
+programs: []
+offers:
+  - offer_id: off_jzvdrs5sd72kkrx564sbs5hp1p
+    offer_slug: dropbox-paper-startup-program
+    title: Dropbox Paper startup program
+    summary: Dropbox Paper offers qualifying startups free or discounted access to their collaborative document and notes platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:39:57.874595Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their collaborative document and notes platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_j5gkd2kdpg65kt2qphe5k1p52r
+      access_operator_entity_id: ent_j5gkd2kdpg65kt2qphe5k1p52r
+    access:
+      availability: public
+      method: form
+      url: https://paper.dropbox.com/startup
+    source_ids:
+      - src_zbg0dgse7kbqxt2aj39bysxb8v
