@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_p7yway46b1w0skneb5mx05s764
+  slug: simpleanalytics
+  name: Simple Analytics
+  domains:
+    - value: simpleanalytics.com
+      role: primary
+      valid_from: 2026-09-07T15:16:54.486040Z
+  category: data-analytics
+profile:
+  summary: Simple Analytics offers qualifying startups free or discounted access to their privacy-friendly analytics platform.
+  links:
+    site: https://simpleanalytics.com
+  description: Simple Analytics offers qualifying startups free or discounted access to their privacy-friendly analytics platform.
+sources:
+  - source_id: src_vn0xexwfqf1eg5cjwb8z7nm646
+    url: https://simpleanalytics.com/startup
+programs: []
+offers:
+  - offer_id: off_9tgswd57kgs0vx5ax6pregtc37
+    offer_slug: simpleanalytics-startup-program
+    title: Simple Analytics startup program
+    summary: Simple Analytics offers qualifying startups free or discounted access to their privacy-friendly analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:16:54.486040Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their privacy-friendly analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_p7yway46b1w0skneb5mx05s764
+      access_operator_entity_id: ent_p7yway46b1w0skneb5mx05s764
+    access:
+      availability: public
+      method: form
+      url: https://simpleanalytics.com/startup
+    source_ids:
+      - src_vn0xexwfqf1eg5cjwb8z7nm646
