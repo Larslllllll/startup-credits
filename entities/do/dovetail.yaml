@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_t3k1tz6a6wp9v7x59b8kb88he7
+  slug: dovetail
+  name: Dovetail
+  domains:
+    - value: withdovetail.com
+      role: primary
+      valid_from: 2026-09-07T14:39:15.248262Z
+  category: productivity
+profile:
+  summary: Dovetail offers qualifying startups free access to their customer research and insights platform for 6 months including FDA pathway support.
+  links:
+    site: https://withdovetail.com
+  description: Dovetail is a customer research and insights platform. Their startup program offers free access to qualifying startups for 6 months including FDA pathway support.
+sources:
+  - source_id: src_9ggpk58bqy590cwfv53zzxrx88
+    url: https://withdovetail.com/startup
+programs: []
+offers:
+  - offer_id: off_s1rs8gg90z9wqfd906maj83v9k
+    offer_slug: dovetail-startup-program
+    title: Dovetail startup program
+    summary: Qualifying startups receive free access to the Dovetail customer research and insights platform for 6 months including FDA pathway support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:39:15.248262Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to customer research and insights platform for 6 months including FDA pathway support
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_t3k1tz6a6wp9v7x59b8kb88he7
+      access_operator_entity_id: ent_t3k1tz6a6wp9v7x59b8kb88he7
+    access:
+      availability: public
+      method: form
+      url: https://withdovetail.com/startup
+    source_ids:
+      - src_9ggpk58bqy590cwfv53zzxrx88
