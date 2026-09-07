@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xypnpq49f1cvpv6g5nvtbrkvpr
+  slug: haraka
+  name: Haraka
+  domains:
+    - value: haraka.io
+      role: primary
+      valid_from: 2026-09-07T15:28:56.351313Z
+  category: communication
+profile:
+  summary: Haraka offers qualifying startups free or discounted access to their open-source SMTP mail server platform.
+  links:
+    site: https://haraka.io
+  description: Haraka offers qualifying startups free or discounted access to their open-source SMTP mail server platform.
+sources:
+  - source_id: src_hztrp19zhrr0j3qc7cs3dvxj04
+    url: https://haraka.io/startup
+programs: []
+offers:
+  - offer_id: off_h9185e3znj221h5gqv96nsa7r1
+    offer_slug: haraka-startup-program
+    title: Haraka startup program
+    summary: Haraka offers qualifying startups free or discounted access to their open-source SMTP mail server platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:28:56.351313Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source SMTP mail server platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xypnpq49f1cvpv6g5nvtbrkvpr
+      access_operator_entity_id: ent_xypnpq49f1cvpv6g5nvtbrkvpr
+    access:
+      availability: public
+      method: form
+      url: https://haraka.io/startup
+    source_ids:
+      - src_hztrp19zhrr0j3qc7cs3dvxj04
