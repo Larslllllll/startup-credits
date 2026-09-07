@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_qk00g8hns863xj84p1xzkq0n9r
+  slug: logseq
+  name: Logseq
+  domains:
+    - value: logseq.com
+      role: primary
+      valid_from: 2026-09-07T15:39:38.511044Z
+  category: productivity
+profile:
+  summary: Logseq offers qualifying startups free or discounted access to their open-source knowledge graph and note platform.
+  links:
+    site: https://logseq.com
+  description: Logseq offers qualifying startups free or discounted access to their open-source knowledge graph and note platform.
+sources:
+  - source_id: src_xfk83bxzh6n7szrer0rqtw0tqt
+    url: https://logseq.com/startup
+programs: []
+offers:
+  - offer_id: off_g0r20fs084dknef5r1rnjs5b09
+    offer_slug: logseq-startup-program
+    title: Logseq startup program
+    summary: Logseq offers qualifying startups free or discounted access to their open-source knowledge graph and note platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:39:38.511044Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source knowledge graph and note platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_qk00g8hns863xj84p1xzkq0n9r
+      access_operator_entity_id: ent_qk00g8hns863xj84p1xzkq0n9r
+    access:
+      availability: public
+      method: form
+      url: https://logseq.com/startup
+    source_ids:
+      - src_xfk83bxzh6n7szrer0rqtw0tqt
