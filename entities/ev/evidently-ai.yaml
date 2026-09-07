@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_zr4c8ftjv82k91pzpgqveqqs43
+  slug: evidently-ai
+  name: Evidently AI
+  domains:
+    - value: evidentlyai.com
+      role: primary
+      valid_from: 2026-09-07T16:32:48.064499Z
+  category: ai-ml
+profile:
+  summary: Evidently AI offers qualifying startups free or discounted access to their AI model monitoring and evaluation platform.
+  links:
+    site: https://evidentlyai.com
+  description: Evidently AI offers qualifying startups free or discounted access to their AI model monitoring and evaluation platform.
+sources:
+  - source_id: src_6neh4ycd51v0hrvxyrebwewp5r
+    url: https://evidentlyai.com/startup
+programs: []
+offers:
+  - offer_id: off_75yefc91dq76qdehjm4k57t9gy
+    offer_slug: evidently-ai-startup-program
+    title: Evidently AI startup program
+    summary: Evidently AI offers qualifying startups free or discounted access to their AI model monitoring and evaluation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:32:48.064499Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI model monitoring and evaluation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_zr4c8ftjv82k91pzpgqveqqs43
+      access_operator_entity_id: ent_zr4c8ftjv82k91pzpgqveqqs43
+    access:
+      availability: public
+      method: form
+      url: https://evidentlyai.com/startup
+    source_ids:
+      - src_6neh4ycd51v0hrvxyrebwewp5r
