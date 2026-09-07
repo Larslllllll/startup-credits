@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7t81ftefe2tyvzw6gcjn0hr6yv
+  slug: pocketbase
+  name: PocketBase
+  domains:
+    - value: pocketbase.io
+      role: primary
+      valid_from: 2026-09-07T15:27:04.250074Z
+  category: databases
+profile:
+  summary: PocketBase offers qualifying startups free or discounted access to their open-source backend in a single file platform.
+  links:
+    site: https://pocketbase.io
+  description: PocketBase offers qualifying startups free or discounted access to their open-source backend in a single file platform.
+sources:
+  - source_id: src_2ey1k07wj8rx1pb2dxw6as2bvz
+    url: https://pocketbase.io/startup
+programs: []
+offers:
+  - offer_id: off_30w2cv8g3pqxgf7c77e4ss3pjy
+    offer_slug: pocketbase-startup-program
+    title: PocketBase startup program
+    summary: PocketBase offers qualifying startups free or discounted access to their open-source backend in a single file platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:27:04.250074Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source backend in a single file platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_7t81ftefe2tyvzw6gcjn0hr6yv
+      access_operator_entity_id: ent_7t81ftefe2tyvzw6gcjn0hr6yv
+    access:
+      availability: public
+      method: form
+      url: https://pocketbase.io/startup
+    source_ids:
+      - src_2ey1k07wj8rx1pb2dxw6as2bvz
