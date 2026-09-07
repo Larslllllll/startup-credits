@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rksjytq828k4cwbs21fdt18377
+  slug: levelui-startup-2
+  name: Level UI Startup
+  domains:
+    - value: levelui.com
+      role: primary
+      valid_from: 2026-09-07T16:41:25.531146Z
+  category: productivity
+profile:
+  summary: Level UI Startup offers qualifying startups free or discounted access to their first-project management platform.
+  links:
+    site: https://levelui.com
+  description: Level UI Startup offers qualifying startups free or discounted access to their first-project management platform.
+sources:
+  - source_id: src_gy5tw5tgq2wy793286x3r1cgkg
+    url: https://levelui.com/startup
+programs: []
+offers:
+  - offer_id: off_wqrtcpzb4xyr7grdhg4fdzkv5y
+    offer_slug: levelui-startup-2-startup-program
+    title: Level UI Startup startup program
+    summary: Level UI Startup offers qualifying startups free or discounted access to their first-project management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:41:25.531146Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to first-project management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_rksjytq828k4cwbs21fdt18377
+      access_operator_entity_id: ent_rksjytq828k4cwbs21fdt18377
+    access:
+      availability: public
+      method: form
+      url: https://levelui.com/startup
+    source_ids:
+      - src_gy5tw5tgq2wy793286x3r1cgkg
