@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_fbtghxpvm8sshrr95v8kx9p3z6
+  slug: evallo
+  name: Evallo
+  domains:
+    - value: evallo.ai
+      role: primary
+      valid_from: 2026-09-07T14:18:09.289247Z
+  category: devtools-other
+profile:
+  summary: Evallo offers qualifying startups free access to their code review and analysis platform for 6 months.
+  links:
+    site: https://evallo.ai
+  description: Evallo is a code review and analysis platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_6vqcs6qhx7zzz8zac2hqf8z7ht
+    url: https://evallo.ai/startup
+programs: []
+offers:
+  - offer_id: off_pnxva5n93wjdyghc6hsmj9e53q
+    offer_slug: evallo-startup-program
+    title: Evallo startup program
+    summary: Qualifying startups receive free access to the Evallo code review and analysis platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:18:09.289247Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to code review and analysis platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_fbtghxpvm8sshrr95v8kx9p3z6
+      access_operator_entity_id: ent_fbtghxpvm8sshrr95v8kx9p3z6
+    access:
+      availability: public
+      method: form
+      url: https://evallo.ai/startup
+    source_ids:
+      - src_6vqcs6qhx7zzz8zac2hqf8z7ht
