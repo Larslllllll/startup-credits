@@ -1,0 +1,44 @@
+entity:
+  name: Warestack Startup Program
+  slug: warestack
+  slug_aliases: []
+  entity_id: ent_fe4781e16b7ffffaa557b89613
+  category: ai-ml
+  domains:
+  - role: primary
+    value: warestack.com
+    valid_from: '2026-01-01T00:00:00Z'
+offers:
+- offer_id: off_0b897b7b9dfbd32fd2974c8c49
+  offer_slug: warestack-startup-program
+  offer_slug_aliases: []
+  program_id: prg_f835360500be9b7f203a894875
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  roles:
+    terms_authority_entity_id: ent_fe4781e16b7ffffaa557b89613
+    access_operator_entity_id: ent_fe4781e16b7ffffaa557b89613
+  economics:
+    benefits:
+    - benefit_id: ben_fe4781e16b7ffffaa557b89613
+      description: qualifying companies the Starter plan free for six months
+      kind: free-service
+      service: Warestack Startup Program
+      duration:
+        kind: exact
+        value: P1Y
+    consideration:
+      kind: none
+  access:
+    availability: public
+    method: form
+    url: https://warestack.com/startup
+  eligibility:
+    rule:
+      criterion_id: cri_requirement_01
+      kind: manual
+      reason: not-machine-evaluable
+      statement: Startup must meet vendor eligibility criteria
+source_ids:
+- src_1436

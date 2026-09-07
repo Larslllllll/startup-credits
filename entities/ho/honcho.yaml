@@ -1,0 +1,44 @@
+entity:
+  name: Honcho startup offer
+  slug: honcho
+  slug_aliases: []
+  entity_id: ent_b0432fd986e72c796d7199723c
+  category: communication
+  domains:
+  - role: primary
+    value: honcho.dev
+    valid_from: '2026-01-01T00:00:00Z'
+offers:
+- offer_id: off_a7d96c463aa5efcd7005a22a08
+  offer_slug: honcho-startup-program
+  offer_slug_aliases: []
+  program_id: prg_613549c18526e7bf20f35e269d
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  roles:
+    terms_authority_entity_id: ent_b0432fd986e72c796d7199723c
+    access_operator_entity_id: ent_b0432fd986e72c796d7199723c
+  economics:
+    benefits:
+    - benefit_id: ben_b0432fd986e72c796d7199723c
+      description: Honcho startup offer startup program for qualifying companies
+      kind: other
+      service: Honcho startup offer
+      duration:
+        kind: exact
+        value: P1Y
+    consideration:
+      kind: none
+  access:
+    availability: public
+    method: form
+    url: https://honcho.dev/startup
+  eligibility:
+    rule:
+      criterion_id: cri_requirement_01
+      kind: manual
+      reason: not-machine-evaluable
+      statement: Startup must meet vendor eligibility criteria
+source_ids:
+- src_1427

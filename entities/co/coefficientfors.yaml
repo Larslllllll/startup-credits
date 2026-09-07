@@ -1,0 +1,48 @@
+entity:
+  name: Coefficient for Startups
+  slug: coefficientfors
+  slug_aliases: []
+  entity_id: ent_7c83de1e9f78fa0313faa4c2bb
+  category: productivity
+  domains:
+  - role: primary
+    value: coefficient.io
+    valid_from: '2026-01-01T00:00:00Z'
+offers:
+- offer_id: off_a41d2313829b505e5e22f8d436
+  offer_slug: coefficientfors-startup-program
+  offer_slug_aliases: []
+  program_id: prg_a1a65faa961a2d895ddd5b2f26
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  roles:
+    terms_authority_entity_id: ent_7c83de1e9f78fa0313faa4c2bb
+    access_operator_entity_id: ent_7c83de1e9f78fa0313faa4c2bb
+  economics:
+    benefits:
+    - benefit_id: ben_7c83de1e9f78fa0313faa4c2bb
+      description: 'Coefficient for Startups: up to 50% off for the first year. Published
+        eligibility requires $20 million or less raised, bootstrapped/angel-funded/debt-funded/pre-seed/seed/Series
+        A status, and 25 or fewer full-time employees. The vendor''s startup page
+        provides the application route. I am preparing one new entity and one offer,
+        without inferring a guaranteed discount, qualifying plan, or renewal price.'
+      kind: other
+      service: Coefficient for Startups
+      duration:
+        kind: exact
+        value: P1Y
+    consideration:
+      kind: none
+  access:
+    availability: public
+    method: form
+    url: https://coefficient.io/startup
+  eligibility:
+    rule:
+      criterion_id: cri_requirement_01
+      kind: manual
+      reason: not-machine-evaluable
+      statement: Startup must meet vendor eligibility criteria
+source_ids:
+- src_1425

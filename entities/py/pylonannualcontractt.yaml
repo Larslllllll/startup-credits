@@ -1,0 +1,45 @@
+entity:
+  name: Pylon annual-contract discount through Brex Day Zero Stack
+  slug: pylonannualcontractt
+  slug_aliases: []
+  entity_id: ent_e51ddfb68a282197ad23bac4ce
+  category: ai-ml
+  domains:
+  - role: primary
+    value: usepylon.com
+    valid_from: '2026-01-01T00:00:00Z'
+offers:
+- offer_id: off_75697509119de3d7abc194ec68
+  offer_slug: pylonannualcontractt-startup-program
+  offer_slug_aliases: []
+  program_id: prg_d0cc43ef49f12e11464bada67b
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  roles:
+    terms_authority_entity_id: ent_e51ddfb68a282197ad23bac4ce
+    access_operator_entity_id: ent_e51ddfb68a282197ad23bac4ce
+  economics:
+    benefits:
+    - benefit_id: ben_e51ddfb68a282197ad23bac4ce
+      description: Pylon annual-contract discount through Brex Day Zero Stack startup
+        program for qualifying companies
+      kind: other
+      service: Pylon annual-contract discount through Brex Day Zero Stack
+      duration:
+        kind: exact
+        value: P1Y
+    consideration:
+      kind: none
+  access:
+    availability: public
+    method: form
+    url: https://usepylon.com/startup
+  eligibility:
+    rule:
+      criterion_id: cri_requirement_01
+      kind: manual
+      reason: not-machine-evaluable
+      statement: Startup must meet vendor eligibility criteria
+source_ids:
+- src_1421

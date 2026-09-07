@@ -1,0 +1,44 @@
+entity:
+  name: erly WORKR startup discount
+  slug: erlyworkr
+  slug_aliases: []
+  entity_id: ent_d35fc2d14cb955eb19455b2c31
+  category: ai-ml
+  domains:
+  - role: primary
+    value: erly.app
+    valid_from: '2026-01-01T00:00:00Z'
+offers:
+- offer_id: off_43ab28c8f0932ad79a3d955c69
+  offer_slug: erlyworkr-startup-program
+  offer_slug_aliases: []
+  program_id: prg_76ccac2e91104075681b454068
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  roles:
+    terms_authority_entity_id: ent_d35fc2d14cb955eb19455b2c31
+    access_operator_entity_id: ent_d35fc2d14cb955eb19455b2c31
+  economics:
+    benefits:
+    - benefit_id: ben_d35fc2d14cb955eb19455b2c31
+      description: erly WORKR startup discount startup program for qualifying companies
+      kind: other
+      service: erly WORKR startup discount
+      duration:
+        kind: exact
+        value: P1Y
+    consideration:
+      kind: none
+  access:
+    availability: public
+    method: form
+    url: https://erly.app/startup
+  eligibility:
+    rule:
+      criterion_id: cri_requirement_01
+      kind: manual
+      reason: not-machine-evaluable
+      statement: Startup must meet vendor eligibility criteria
+source_ids:
+- src_1429

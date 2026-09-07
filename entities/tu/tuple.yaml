@@ -1,0 +1,44 @@
+entity:
+  name: Tuple Startup Plan
+  slug: tuple
+  slug_aliases: []
+  entity_id: ent_e97c28db8a7506cee873cc9482
+  category: devtools-other
+  domains:
+  - role: primary
+    value: tuple.app
+    valid_from: '2026-01-01T00:00:00Z'
+offers:
+- offer_id: off_f2730c381fde11c8587c098d11
+  offer_slug: tuple-startup-program
+  offer_slug_aliases: []
+  program_id: prg_787c4f899668908517515ae818
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  roles:
+    terms_authority_entity_id: ent_e97c28db8a7506cee873cc9482
+    access_operator_entity_id: ent_e97c28db8a7506cee873cc9482
+  economics:
+    benefits:
+    - benefit_id: ben_e97c28db8a7506cee873cc9482
+      description: Tuple Startup Plan startup program for qualifying companies
+      kind: other
+      service: Tuple Startup Plan
+      duration:
+        kind: exact
+        value: P1Y
+    consideration:
+      kind: none
+  access:
+    availability: public
+    method: form
+    url: https://tuple.app/startup
+  eligibility:
+    rule:
+      criterion_id: cri_requirement_01
+      kind: manual
+      reason: not-machine-evaluable
+      statement: Startup must meet vendor eligibility criteria
+source_ids:
+- src_1434

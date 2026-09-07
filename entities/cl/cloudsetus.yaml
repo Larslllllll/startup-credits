@@ -1,0 +1,46 @@
+entity:
+  name: CloudSetu startup credits
+  slug: cloudsetus
+  slug_aliases: []
+  entity_id: ent_61d099f1e7e7ce306ba30e7913
+  category: other
+  domains:
+  - role: primary
+    value: cloudsetu.com
+    valid_from: '2026-01-01T00:00:00Z'
+offers:
+- offer_id: off_adf76d78b32af7e48d1423643f
+  offer_slug: cloudsetus-startup-program
+  offer_slug_aliases: []
+  program_id: prg_3aee1e061b8780e660e5966bfd
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  roles:
+    terms_authority_entity_id: ent_61d099f1e7e7ce306ba30e7913
+    access_operator_entity_id: ent_61d099f1e7e7ce306ba30e7913
+  economics:
+    benefits:
+    - benefit_id: ben_61d099f1e7e7ce306ba30e7913
+      description: CloudSetu advertises INR 21,000 in cloud credits for qualifying
+        Indian startups. I am preparing one data-only record that preserves the published
+        recognition requirements, credit validity and application route.
+      kind: other
+      service: CloudSetu startup credits
+      duration:
+        kind: exact
+        value: P1Y
+    consideration:
+      kind: none
+  access:
+    availability: public
+    method: form
+    url: https://cloudsetu.com/startup
+  eligibility:
+    rule:
+      criterion_id: cri_requirement_01
+      kind: manual
+      reason: not-machine-evaluable
+      statement: Startup must meet vendor eligibility criteria
+source_ids:
+- src_1422

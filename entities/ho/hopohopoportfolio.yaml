@@ -1,0 +1,52 @@
+entity:
+  name: Hopohopo portfolio startup discount
+  slug: hopohopoportfolio
+  slug_aliases: []
+  entity_id: ent_7c6301042887540cd0f6df613f
+  category: crm-sales
+  domains:
+  - role: primary
+    value: hopohopo.io
+    valid_from: '2026-01-01T00:00:00Z'
+offers:
+- offer_id: off_0b4262717a0a28df34015c2a6c
+  offer_slug: hopohopoportfolio-startup-program
+  offer_slug_aliases: []
+  program_id: prg_b9710f25bdf6f5490a5e68b0ca
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  roles:
+    terms_authority_entity_id: ent_7c6301042887540cd0f6df613f
+    access_operator_entity_id: ent_7c6301042887540cd0f6df613f
+  economics:
+    benefits:
+    - benefit_id: ben_7c6301042887540cd0f6df613f
+      description: 'The Hopohopo Partner Program gives startups in participating investor
+        or accelerator portfolios 50% off the Hopohopo CRM Pro Plan for one year.
+        Eligibility is checked against the participating portfolio; the vendor describes
+        redemption through its portfolio invitation and partner code.
+
+
+        I am reserving one data-only Entity record with one offer. This contribution
+        is being researched and prepared using Codex, with first-party facts checked
+        against the vendor pages.'
+      kind: other
+      service: Hopohopo portfolio startup discount
+      duration:
+        kind: exact
+        value: P1Y
+    consideration:
+      kind: none
+  access:
+    availability: public
+    method: form
+    url: https://hopohopo.io/startup
+  eligibility:
+    rule:
+      criterion_id: cri_requirement_01
+      kind: manual
+      reason: not-machine-evaluable
+      statement: Startup must meet vendor eligibility criteria
+source_ids:
+- src_1432
