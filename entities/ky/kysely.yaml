@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_t37xvhcjr095k8wzphsmxwna19
+  slug: kysely
+  name: Kysely
+  domains:
+    - value: kysely.dev
+      role: primary
+      valid_from: 2026-09-07T15:06:55.457527Z
+  category: databases
+profile:
+  summary: Kysely offers qualifying startups free or discounted access to their open-source Type-safe SQL query builder for TypeScript.
+  links:
+    site: https://kysely.dev
+  description: Kysely offers qualifying startups free or discounted access to their open-source Type-safe SQL query builder for TypeScript.
+sources:
+  - source_id: src_ts9a0z9gb1dggm49bjq8fjd7ve
+    url: https://kysely.dev/startup
+programs: []
+offers:
+  - offer_id: off_2r5dnz8r7ahpx329s7x60cqads
+    offer_slug: kysely-startup-program
+    title: Kysely startup program
+    summary: Kysely offers qualifying startups free or discounted access to their open-source Type-safe SQL query builder for TypeScript.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:06:55.457527Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source Type-safe SQL query builder for TypeScript
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_t37xvhcjr095k8wzphsmxwna19
+      access_operator_entity_id: ent_t37xvhcjr095k8wzphsmxwna19
+    access:
+      availability: public
+      method: form
+      url: https://kysely.dev/startup
+    source_ids:
+      - src_ts9a0z9gb1dggm49bjq8fjd7ve
