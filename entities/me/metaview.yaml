@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_b8zgacyed7yjsfaj3skq0j741e
+  slug: metaview
+  name: Metaview
+  domains:
+    - value: metaview.ai
+      role: primary
+      valid_from: 2026-09-07T16:00:11.298953Z
+  category: ai-ml
+profile:
+  summary: Metaview offers qualifying startups free or discounted access to their AI-powered interview and hiring platform.
+  links:
+    site: https://metaview.ai
+  description: Metaview offers qualifying startups free or discounted access to their AI-powered interview and hiring platform.
+sources:
+  - source_id: src_ayh629psnpyxfq31wvygk3g1hy
+    url: https://metaview.ai/startup
+programs: []
+offers:
+  - offer_id: off_wke8g3sbfwtdma9pfkmnqejprx
+    offer_slug: metaview-startup-program
+    title: Metaview startup program
+    summary: Metaview offers qualifying startups free or discounted access to their AI-powered interview and hiring platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:00:11.298953Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI-powered interview and hiring platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_b8zgacyed7yjsfaj3skq0j741e
+      access_operator_entity_id: ent_b8zgacyed7yjsfaj3skq0j741e
+    access:
+      availability: public
+      method: form
+      url: https://metaview.ai/startup
+    source_ids:
+      - src_ayh629psnpyxfq31wvygk3g1hy
