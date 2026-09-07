@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_c9m3a3b52axcz0vzx9tm9j6e15
+  slug: sinatra-dev
+  name: Sinatra Dev
+  domains:
+    - value: sinatra.dev
+      role: primary
+      valid_from: 2026-09-07T14:51:29.297449Z
+  category: devtools-other
+profile:
+  summary: Sinatra offers qualifying startups free credits toward their Ruby framework cloud hosting platform.
+  links:
+    site: https://sinatra.dev
+  description: Sinatra is a Ruby framework cloud hosting platform. Their startup program offers free credits to qualifying startups.
+sources:
+  - source_id: src_mz16kxfwhaqew1w9j5fw1c094t
+    url: https://sinatra.dev/startup
+programs: []
+offers:
+  - offer_id: off_h053q1569nkayt2k00ybws6mxg
+    offer_slug: sinatra-dev-startup-program
+    title: Sinatra Dev startup program
+    summary: Qualifying startups receive free credits toward the Sinatra Ruby framework cloud hosting platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:51:29.297449Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free credits for Ruby framework cloud hosting platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_c9m3a3b52axcz0vzx9tm9j6e15
+      access_operator_entity_id: ent_c9m3a3b52axcz0vzx9tm9j6e15
+    access:
+      availability: public
+      method: form
+      url: https://sinatra.dev/startup
+    source_ids:
+      - src_mz16kxfwhaqew1w9j5fw1c094t
