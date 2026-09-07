@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3rqxevj59bfrdbyrt5q1pjt638
+  slug: simplecast
+  name: Simplecast
+  domains:
+    - value: simplecast.com
+      role: primary
+      valid_from: 2026-09-07T15:44:27.294905Z
+  category: communication
+profile:
+  summary: Simplecast offers qualifying startups free or discounted access to their podcast hosting and analytics platform.
+  links:
+    site: https://simplecast.com
+  description: Simplecast offers qualifying startups free or discounted access to their podcast hosting and analytics platform.
+sources:
+  - source_id: src_m980mjcgbp5dpj9g06y7xc32ef
+    url: https://simplecast.com/startup
+programs: []
+offers:
+  - offer_id: off_8myrr4hsjdgkjfp4zk4d39ab69
+    offer_slug: simplecast-startup-program
+    title: Simplecast startup program
+    summary: Simplecast offers qualifying startups free or discounted access to their podcast hosting and analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:44:27.294905Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their podcast hosting and analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3rqxevj59bfrdbyrt5q1pjt638
+      access_operator_entity_id: ent_3rqxevj59bfrdbyrt5q1pjt638
+    access:
+      availability: public
+      method: form
+      url: https://simplecast.com/startup
+    source_ids:
+      - src_m980mjcgbp5dpj9g06y7xc32ef
