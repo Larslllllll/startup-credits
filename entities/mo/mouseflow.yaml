@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xqzk6qvsbne488rx52psvk6rd6
+  slug: mouseflow
+  name: Mouseflow
+  domains:
+    - value: mouseflow.com
+      role: primary
+      valid_from: 2026-09-07T15:34:53.025333Z
+  category: data-analytics
+profile:
+  summary: Mouseflow offers qualifying startups free or discounted access to their session recording and heatmap platform.
+  links:
+    site: https://mouseflow.com
+  description: Mouseflow offers qualifying startups free or discounted access to their session recording and heatmap platform.
+sources:
+  - source_id: src_1g9hz8fphteztfmxsprvn4tejn
+    url: https://mouseflow.com/startup
+programs: []
+offers:
+  - offer_id: off_cztvhswh9ba2twb3m5twmagjws
+    offer_slug: mouseflow-startup-program
+    title: Mouseflow startup program
+    summary: Mouseflow offers qualifying startups free or discounted access to their session recording and heatmap platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:34:53.025333Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their session recording and heatmap platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xqzk6qvsbne488rx52psvk6rd6
+      access_operator_entity_id: ent_xqzk6qvsbne488rx52psvk6rd6
+    access:
+      availability: public
+      method: form
+      url: https://mouseflow.com/startup
+    source_ids:
+      - src_1g9hz8fphteztfmxsprvn4tejn
