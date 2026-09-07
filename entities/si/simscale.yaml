@@ -1,0 +1,54 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_cmd94p39sneh4neefagqtc1qca
+  slug: simscale
+  slug_aliases:
+    - sim-scale
+  name: SimScale
+  domains:
+    - value: simscale.com
+      role: primary
+      valid_from: 2026-09-07T11:43:33.572645Z
+  category: ai-ml
+profile:
+  summary: SimScale is a cloud-based engineering simulation platform that partners with Onshape to offer startups three months of free cloud simulation, up to 20,000 core hours, and live in-product support.
+  description: SimScale is a browser-based computational fluid dynamics and thermal simulation platform enabling engineers to run cloud-native simulations without local software installation. Through their Onshape startup program, qualifying hardware startups and entrepreneurs receive three months of free cloud simulation, up to 20,000 core hours, and live in-product support.
+  links:
+    site: https://www.simscale.com
+sources:
+  - source_id: src_kf358jwxpya2yraat4h69e8deg
+    url: https://www.simscale.com/technology/integrations-partners/onshape/
+programs: []
+offers:
+  - offer_id: off_0rtzr3em4f7eg3de6wk312k0vf
+    offer_slug: simscale-onshape-startup-program
+    offer_slug_aliases:
+      - simscale-onshape-free-simulation
+    title: SimScale Onshape Startup Program
+    summary: Hardware startups and entrepreneurs in the Onshape startup program receive three months of free cloud simulation with up to 20,000 core hours and live in-product support through SimScale.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T11:43:33.572645Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Three months of free cloud simulation with up to 20,000 core hours and live in-product support
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a hardware startup or entrepreneur participating in the Onshape startup program. Must have an active Onshape startup program enrollment.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_cmd94p39sneh4neefagqtc1qca
+      access_operator_entity_id: ent_cmd94p39sneh4neefagqtc1qca
+    access:
+      availability: public
+      method: form
+      url: https://www.simscale.com/technology/integrations-partners/onshape/
+    source_ids:
+      - src_kf358jwxpya2yraat4h69e8deg

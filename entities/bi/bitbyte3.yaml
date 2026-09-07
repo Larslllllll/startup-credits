@@ -1,0 +1,57 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_mt8efzycamvrcv7s7qdq0rw7q6
+  slug: bitbyte3
+  slug_aliases:
+    - bit-byte-3
+  name: BitByte3
+  domains:
+    - value: bitbyte3.com
+      role: primary
+      valid_from: 2026-09-07T11:54:54.445018Z
+  category: productivity
+profile:
+  summary: BitByte3 is a web-first platform offering 25% off any plan for the first year to qualifying early-stage teams, plus customization help during onboarding.
+  description: BitByte3 is a web-first development and deployment platform. Their startup program grants qualifying early-stage teams 25% off any plan for the first year, along with customization help during onboarding.
+  links:
+    site: https://bitbyte3.com
+sources:
+  - source_id: src_8tb532fnt329vj516xtcbv70m9
+    url: https://bitbyte3.com/solutions/startups
+programs: []
+offers:
+  - offer_id: off_ybkvxcd06xcranjzeq6jt4p4wt
+    offer_slug: bitbyte3-startup-program
+    offer_slug_aliases:
+      - bitbyte3-first-year-25-percent
+    title: BitByte3 Startup Program
+    summary: Qualifying early-stage teams receive 25% off any BitByte3 plan for the first year, plus customization help during onboarding.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T11:54:54.445018Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 25% off any plan for the first year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2500
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying early-stage team. Application is reviewed individually.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_mt8efzycamvrcv7s7qdq0rw7q6
+      access_operator_entity_id: ent_mt8efzycamvrcv7s7qdq0rw7q6
+    access:
+      availability: public
+      method: form
+      url: https://bitbyte3.com/solutions/startups
+    source_ids:
+      - src_8tb532fnt329vj516xtcbv70m9
