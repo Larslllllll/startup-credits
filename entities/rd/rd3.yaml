@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_m75252z2y1xsev50tq80t0ncgz
+  slug: rd3
+  name: Redash 3
+  domains:
+    - value: getredash.com
+      role: primary
+      valid_from: 2026-09-07T16:58:03.474225Z
+  category: data-analytics
+profile:
+  summary: Redash offers qualifying startups free or discounted access to their SQL-based data visualization platform.
+  links:
+    site: https://getredash.com
+  description: Redash offers qualifying startups free or discounted access to their SQL-based data visualization platform.
+sources:
+  - source_id: src_40hffrtdpspmjxbkk00ht0de2w
+    url: https://getredash.com/startup
+programs: []
+offers:
+  - offer_id: off_wbdgr23nv25xer7gaqmmkb66rt
+    offer_slug: rd3-startup-program
+    title: Redash 3 startup program
+    summary: Redash offers qualifying startups free or discounted access to their SQL-based data visualization platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:58:03.474225Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to SQL-based data visualization platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_m75252z2y1xsev50tq80t0ncgz
+      access_operator_entity_id: ent_m75252z2y1xsev50tq80t0ncgz
+    access:
+      availability: public
+      method: form
+      url: https://getredash.com/startup
+    source_ids:
+      - src_40hffrtdpspmjxbkk00ht0de2w
