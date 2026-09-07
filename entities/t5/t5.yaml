@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_msx1e4bej88rh6vgqw28rzavbf
+  slug: t5
+  name: Google T5
+  domains:
+    - value: huggingface.co
+      role: primary
+      valid_from: 2026-09-07T16:13:11.148730Z
+  category: ai-ml
+profile:
+  summary: Google T5 offers qualifying startups free or discounted access to their open-source text-to-text transformer model.
+  links:
+    site: https://huggingface.co
+  description: Google T5 offers qualifying startups free or discounted access to their open-source text-to-text transformer model.
+sources:
+  - source_id: src_s47dhpd8tfmndkm4186k8d2891
+    url: https://huggingface.co/startup
+programs: []
+offers:
+  - offer_id: off_vgwfy5ejzsxeawbpztkjbqpkch
+    offer_slug: t5-startup-program
+    title: Google T5 startup program
+    summary: Google T5 offers qualifying startups free or discounted access to their open-source text-to-text transformer model.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:13:11.148730Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source text-to-text transformer model
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_msx1e4bej88rh6vgqw28rzavbf
+      access_operator_entity_id: ent_msx1e4bej88rh6vgqw28rzavbf
+    access:
+      availability: public
+      method: form
+      url: https://huggingface.co/startup
+    source_ids:
+      - src_s47dhpd8tfmndkm4186k8d2891
