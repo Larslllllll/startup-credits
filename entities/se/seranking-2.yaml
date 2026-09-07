@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_k4kmm8zvv535reh70wmjfc40xg
+  slug: seranking-2
+  name: SE Ranking Pro
+  domains:
+    - value: seranking.com
+      role: primary
+      valid_from: 2026-09-07T15:36:26.653101Z
+  category: marketing
+profile:
+  summary: SE Ranking Pro offers qualifying startups free or discounted access to their all-in-one SEO platform.
+  links:
+    site: https://seranking.com
+  description: SE Ranking Pro offers qualifying startups free or discounted access to their all-in-one SEO platform.
+sources:
+  - source_id: src_e36w7242hvrg5hcmf8my4p31em
+    url: https://seranking.com/startup
+programs: []
+offers:
+  - offer_id: off_kz7e12bw893q041byaaymw184y
+    offer_slug: seranking-2-startup-program
+    title: SE Ranking Pro startup program
+    summary: SE Ranking Pro offers qualifying startups free or discounted access to their all-in-one SEO platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:36:26.653101Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their all-in-one SEO platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_k4kmm8zvv535reh70wmjfc40xg
+      access_operator_entity_id: ent_k4kmm8zvv535reh70wmjfc40xg
+    access:
+      availability: public
+      method: form
+      url: https://seranking.com/startup
+    source_ids:
+      - src_e36w7242hvrg5hcmf8my4p31em
