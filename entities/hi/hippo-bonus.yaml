@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3tzbp2axrrdpsx98kg5dm3d809
+  slug: hippo-bonus
+  name: Hippo Video Bonus
+  domains:
+    - value: hippovideo.io
+      role: primary
+      valid_from: 2026-09-07T14:57:41.357773Z
+  category: communication
+profile:
+  summary: Hippo Video offers qualifying startups bonus credits toward their video messaging and engagement platform.
+  links:
+    site: https://hippovideo.io
+  description: Hippo Video offers qualifying startups bonus credits toward their video messaging and engagement platform.
+sources:
+  - source_id: src_ztq3bejhm6q6xnxqbwfapf3fx0
+    url: https://hippovideo.io/startup
+programs: []
+offers:
+  - offer_id: off_5kaz2cvgynky7988bjc3r3c9fp
+    offer_slug: hippo-bonus-startup-program
+    title: Hippo Video Bonus startup program
+    summary: Hippo Video offers qualifying startups bonus credits toward their video messaging and engagement platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:57:41.357773Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Bonus credits for video messaging and engagement platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3tzbp2axrrdpsx98kg5dm3d809
+      access_operator_entity_id: ent_3tzbp2axrrdpsx98kg5dm3d809
+    access:
+      availability: public
+      method: form
+      url: https://hippovideo.io/startup
+    source_ids:
+      - src_ztq3bejhm6q6xnxqbwfapf3fx0
