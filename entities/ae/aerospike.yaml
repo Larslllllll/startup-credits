@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_394q4dye4976xyx0d166708bqf
+  slug: aerospike
+  name: Aerospike
+  domains:
+    - value: aerospike.com
+      role: primary
+      valid_from: 2026-09-07T13:26:38.608285Z
+  category: databases
+profile:
+  summary: Aerospike offers early-stage companies $300 in Aerospike Cloud credits, 10% off public pricing, and one day of Solution Architect support through their Cloud for Startups program.
+  links:
+    site: https://aerospike.com
+  description: Aerospike is a real-time NoSQL database and cloud platform. Their Cloud for Startups program offers qualifying early-stage companies $300 in Aerospike Cloud credits, 10% off public pricing, one day of Solution Architect support, and zero commitment to start.
+sources:
+  - source_id: src_wbb3vwsnbcw4v8rypbhgsb3psd
+    url: https://aerospike.com/get/cloud-for-startups/
+programs: []
+offers:
+  - offer_id: off_6jt71tc2xyggq4f78nvq8j2emk
+    offer_slug: aerospike-cloud-for-startups
+    title: Aerospike Cloud for Startups
+    summary: $300 in Aerospike Cloud credits, 10% off public pricing, one day of Solution Architect support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:26:38.608285Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $300 in Aerospike Cloud credits, 10% off public pricing, one day of Solution Architect support
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage company. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_394q4dye4976xyx0d166708bqf
+      access_operator_entity_id: ent_394q4dye4976xyx0d166708bqf
+    access:
+      availability: public
+      method: form
+      url: https://aerospike.com/get/cloud-for-startups/
+    source_ids:
+      - src_wbb3vwsnbcw4v8rypbhgsb3psd
