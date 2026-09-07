@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_v6qgffbbnvtrfnknszxef7shaf
+  slug: dragonfly
+  name: Dragonfly
+  domains:
+    - value: dragonflydb.io
+      role: primary
+      valid_from: 2026-09-07T15:02:29.810524Z
+  category: databases
+profile:
+  summary: Dragonfly offers qualifying startups free or discounted access to their in-memory database platform for modern applications.
+  links:
+    site: https://dragonflydb.io
+  description: Dragonfly offers qualifying startups free or discounted access to their in-memory database platform for modern applications.
+sources:
+  - source_id: src_bxtbnzg79v7vzbw7es24rbzv68
+    url: https://dragonflydb.io/startup
+programs: []
+offers:
+  - offer_id: off_d9p1x1daw1xz78fp8zm76xzfr8
+    offer_slug: dragonfly-startup-program
+    title: Dragonfly startup program
+    summary: Dragonfly offers qualifying startups free or discounted access to their in-memory database platform for modern applications.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:02:29.810524Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to in-memory database platform for modern applications
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_v6qgffbbnvtrfnknszxef7shaf
+      access_operator_entity_id: ent_v6qgffbbnvtrfnknszxef7shaf
+    access:
+      availability: public
+      method: form
+      url: https://dragonflydb.io/startup
+    source_ids:
+      - src_bxtbnzg79v7vzbw7es24rbzv68
