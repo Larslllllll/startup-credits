@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_63n7xmxb10wcfck4qqcnfmqxeg
+  slug: hopohopo-2
+  name: Hopohopo Partners
+  domains:
+    - value: hopohopo.io
+      role: primary
+      valid_from: 2026-09-07T14:56:41.739931Z
+  category: finance-accounting
+profile:
+  summary: Hopohopo offers qualifying startups an investment portfolio and asset management partner program.
+  links:
+    site: https://hopohopo.io
+  description: Hopohopo offers qualifying startups an investment portfolio and asset management partner program.
+sources:
+  - source_id: src_zzz4vx7abg9nf5zatmywhy2att
+    url: https://hopohopo.io/startup
+programs: []
+offers:
+  - offer_id: off_9tv5jwg0dndfx4y2vrdfzfhc1d
+    offer_slug: hopohopo-2-startup-program
+    title: Hopohopo Partners startup program
+    summary: Hopohopo offers qualifying startups an investment portfolio and asset management partner program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:56:41.739931Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Investment portfolio and asset management partner program
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_63n7xmxb10wcfck4qqcnfmqxeg
+      access_operator_entity_id: ent_63n7xmxb10wcfck4qqcnfmqxeg
+    access:
+      availability: public
+      method: form
+      url: https://hopohopo.io/startup
+    source_ids:
+      - src_zzz4vx7abg9nf5zatmywhy2att
