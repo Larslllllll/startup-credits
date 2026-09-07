@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_8pxanp97tg3xfma36qt28n7vyj
+  slug: gemini-flash
+  name: Google Gemini Flash
+  domains:
+    - value: ai.google.dev
+      role: primary
+      valid_from: 2026-09-07T16:14:41.257048Z
+  category: ai-ml
+profile:
+  summary: Google Gemini Flash offers qualifying startups free or discounted access to their fast and affordable AI model.
+  links:
+    site: https://ai.google.dev
+  description: Google Gemini Flash offers qualifying startups free or discounted access to their fast and affordable AI model.
+sources:
+  - source_id: src_a9806f505vk80wykhzse8t8wdz
+    url: https://ai.google.dev/startup
+programs: []
+offers:
+  - offer_id: off_dsj42djq48m21bav32gw8q575b
+    offer_slug: gemini-flash-startup-program
+    title: Google Gemini Flash startup program
+    summary: Google Gemini Flash offers qualifying startups free or discounted access to their fast and affordable AI model.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:14:41.257048Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to fast and affordable AI model
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_8pxanp97tg3xfma36qt28n7vyj
+      access_operator_entity_id: ent_8pxanp97tg3xfma36qt28n7vyj
+    access:
+      availability: public
+      method: form
+      url: https://ai.google.dev/startup
+    source_ids:
+      - src_a9806f505vk80wykhzse8t8wdz
