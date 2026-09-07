@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_v2q7dg3t5hc5cqjby3tb05r0w4
+  slug: kompyte
+  name: Kompyte
+  domains:
+    - value: kompyte.com
+      role: primary
+      valid_from: 2026-09-07T15:30:44.782543Z
+  category: crm-sales
+profile:
+  summary: Kompyte offers qualifying startups free or discounted access to their competitive intelligence and tracking platform.
+  links:
+    site: https://kompyte.com
+  description: Kompyte offers qualifying startups free or discounted access to their competitive intelligence and tracking platform.
+sources:
+  - source_id: src_0j7s16xak2ycqp4j5z8k7nrnj5
+    url: https://kompyte.com/startup
+programs: []
+offers:
+  - offer_id: off_88n3pdwvcxrme97s8w4e14j0k6
+    offer_slug: kompyte-startup-program
+    title: Kompyte startup program
+    summary: Kompyte offers qualifying startups free or discounted access to their competitive intelligence and tracking platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:30:44.782543Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their competitive intelligence and tracking platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_v2q7dg3t5hc5cqjby3tb05r0w4
+      access_operator_entity_id: ent_v2q7dg3t5hc5cqjby3tb05r0w4
+    access:
+      availability: public
+      method: form
+      url: https://kompyte.com/startup
+    source_ids:
+      - src_0j7s16xak2ycqp4j5z8k7nrnj5
