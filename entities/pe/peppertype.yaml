@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_eeeqka92jpzb2r2qb2v5xy41vy
+  slug: peppertype
+  name: Peppertype
+  domains:
+    - value: peppertype.ai
+      role: primary
+      valid_from: 2026-09-07T15:23:59.089885Z
+  category: ai-ml
+profile:
+  summary: Peppertype offers qualifying startups free or discounted access to their AI-powered content ideation and writing platform.
+  links:
+    site: https://peppertype.ai
+  description: Peppertype offers qualifying startups free or discounted access to their AI-powered content ideation and writing platform.
+sources:
+  - source_id: src_np1fydsf7teyv3earhxjr1s9dx
+    url: https://peppertype.ai/startup
+programs: []
+offers:
+  - offer_id: off_sr8v26dep03srdd0gvndfk0fe7
+    offer_slug: peppertype-startup-program
+    title: Peppertype startup program
+    summary: Peppertype offers qualifying startups free or discounted access to their AI-powered content ideation and writing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:23:59.089885Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI-powered content ideation and writing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_eeeqka92jpzb2r2qb2v5xy41vy
+      access_operator_entity_id: ent_eeeqka92jpzb2r2qb2v5xy41vy
+    access:
+      availability: public
+      method: form
+      url: https://peppertype.ai/startup
+    source_ids:
+      - src_np1fydsf7teyv3earhxjr1s9dx
