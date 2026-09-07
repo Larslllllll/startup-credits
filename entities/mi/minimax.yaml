@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_p3xc1rrshjf3dfj938nm3v5dkz
+  slug: minimax
+  name: MiniMax
+  domains:
+    - value: minimax.chat
+      role: primary
+      valid_from: 2026-09-07T16:11:54.126365Z
+  category: ai-ml
+profile:
+  summary: MiniMax offers qualifying startups free or discounted access to their AI content generation platform.
+  links:
+    site: https://minimax.chat
+  description: MiniMax offers qualifying startups free or discounted access to their AI content generation platform.
+sources:
+  - source_id: src_m1t3y17vwh7r10bfrwwsekadqz
+    url: https://minimax.chat/startup
+programs: []
+offers:
+  - offer_id: off_cxa404ptj8qe1ywvcm069tm1ck
+    offer_slug: minimax-startup-program
+    title: MiniMax startup program
+    summary: MiniMax offers qualifying startups free or discounted access to their AI content generation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:11:54.126365Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI content generation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_p3xc1rrshjf3dfj938nm3v5dkz
+      access_operator_entity_id: ent_p3xc1rrshjf3dfj938nm3v5dkz
+    access:
+      availability: public
+      method: form
+      url: https://minimax.chat/startup
+    source_ids:
+      - src_m1t3y17vwh7r10bfrwwsekadqz
