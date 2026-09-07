@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_4cdwxjvx1236xmjbkp70ax4jye
+  slug: mailgun
+  name: Mailgun
+  domains:
+    - value: mailgun.com
+      role: primary
+      valid_from: 2026-09-07T15:12:22.527868Z
+  category: communication
+profile:
+  summary: Mailgun offers qualifying startups free or discounted access to their email API and sending platform.
+  links:
+    site: https://mailgun.com
+  description: Mailgun offers qualifying startups free or discounted access to their email API and sending platform.
+sources:
+  - source_id: src_ag6b3zkb7ke427ev749ndgzhfw
+    url: https://mailgun.com/startup
+programs: []
+offers:
+  - offer_id: off_xgvxcwq4fb11thmqpd4sexg1wt
+    offer_slug: mailgun-startup-program
+    title: Mailgun startup program
+    summary: Mailgun offers qualifying startups free or discounted access to their email API and sending platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:12:22.527868Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to email API and sending platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_4cdwxjvx1236xmjbkp70ax4jye
+      access_operator_entity_id: ent_4cdwxjvx1236xmjbkp70ax4jye
+    access:
+      availability: public
+      method: form
+      url: https://mailgun.com/startup
+    source_ids:
+      - src_ag6b3zkb7ke427ev749ndgzhfw
