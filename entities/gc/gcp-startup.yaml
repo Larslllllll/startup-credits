@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_8v964nj33jq6sqd140bafvr4jv
+  slug: gcp-startup
+  name: GCP for Startups
+  domains:
+    - value: gcp.google.com
+      role: primary
+      valid_from: 2026-09-07T16:11:04.423393Z
+  category: hosting-infra
+profile:
+  summary: GCP offers qualifying startups free credits toward their public cloud platform and services.
+  links:
+    site: https://gcp.google.com
+  description: GCP offers qualifying startups free credits toward their public cloud platform and services.
+sources:
+  - source_id: src_ssx4s6zy48hy2jhzhbfwrsaqh4
+    url: https://gcp.google.com/startup
+programs: []
+offers:
+  - offer_id: off_r3vt9wbq5kvq1cdmztp5hkxwbb
+    offer_slug: gcp-startup-startup-program
+    title: GCP for Startups startup program
+    summary: GCP offers qualifying startups free credits toward their public cloud platform and services.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:11:04.423393Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free credits toward public cloud platform and services
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_8v964nj33jq6sqd140bafvr4jv
+      access_operator_entity_id: ent_8v964nj33jq6sqd140bafvr4jv
+    access:
+      availability: public
+      method: form
+      url: https://gcp.google.com/startup
+    source_ids:
+      - src_ssx4s6zy48hy2jhzhbfwrsaqh4
