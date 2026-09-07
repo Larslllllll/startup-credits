@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_p4rfcvsvst1s7y7drhs2jh5496
+  slug: wysera-hr
+  name: Wysera
+  domains:
+    - value: wysera.com
+      role: primary
+      valid_from: 2026-09-07T16:30:56.596253Z
+  category: hr-people
+profile:
+  summary: Wysera offers qualifying startups free or discounted access to their employee development and growth platform.
+  links:
+    site: https://wysera.com
+  description: Wysera offers qualifying startups free or discounted access to their employee development and growth platform.
+sources:
+  - source_id: src_shq511sdbqqy83nj0mtaem4xj0
+    url: https://wysera.com/startup
+programs: []
+offers:
+  - offer_id: off_bxppj9vaemf5jxv4j0aqnz0tdf
+    offer_slug: wysera-hr-startup-program
+    title: Wysera startup program
+    summary: Wysera offers qualifying startups free or discounted access to their employee development and growth platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:30:56.596253Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to employee development and growth platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_p4rfcvsvst1s7y7drhs2jh5496
+      access_operator_entity_id: ent_p4rfcvsvst1s7y7drhs2jh5496
+    access:
+      availability: public
+      method: form
+      url: https://wysera.com/startup
+    source_ids:
+      - src_shq511sdbqqy83nj0mtaem4xj0
