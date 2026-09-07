@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_x6qvy3a778351a9fq7zpc9d53h
+  slug: copper
+  name: Copper
+  domains:
+    - value: copper.com
+      role: primary
+      valid_from: 2026-09-07T15:30:06.019255Z
+  category: crm-sales
+profile:
+  summary: Copper offers qualifying startups free or discounted access to their relationship-focused CRM platform.
+  links:
+    site: https://copper.com
+  description: Copper offers qualifying startups free or discounted access to their relationship-focused CRM platform.
+sources:
+  - source_id: src_ncs2sdw3z6qkcyedngwf7shhx0
+    url: https://copper.com/startup
+programs: []
+offers:
+  - offer_id: off_hy2h81je5bvnmx5542fjrtjt4c
+    offer_slug: copper-startup-program
+    title: Copper startup program
+    summary: Copper offers qualifying startups free or discounted access to their relationship-focused CRM platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:30:06.019255Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their relationship-focused CRM platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_x6qvy3a778351a9fq7zpc9d53h
+      access_operator_entity_id: ent_x6qvy3a778351a9fq7zpc9d53h
+    access:
+      availability: public
+      method: form
+      url: https://copper.com/startup
+    source_ids:
+      - src_ncs2sdw3z6qkcyedngwf7shhx0
