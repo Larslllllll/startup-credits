@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rcbzza939gtk1x5r15yfh03e56
+  slug: jsdoc
+  name: JSDoc
+  domains:
+    - value: jsdoc.app
+      role: primary
+      valid_from: 2026-09-07T15:25:25.779801Z
+  category: devtools-other
+profile:
+  summary: JSDoc offers qualifying startups free or discounted access to their open-source JavaScript API documentation platform.
+  links:
+    site: https://jsdoc.app
+  description: JSDoc offers qualifying startups free or discounted access to their open-source JavaScript API documentation platform.
+sources:
+  - source_id: src_d6d3r0s74n0be7g3qnbyr80w17
+    url: https://jsdoc.app/startup
+programs: []
+offers:
+  - offer_id: off_ym3f3djbjqkzydyav1d29bh93j
+    offer_slug: jsdoc-startup-program
+    title: JSDoc startup program
+    summary: JSDoc offers qualifying startups free or discounted access to their open-source JavaScript API documentation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:25:25.779801Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source JavaScript API documentation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_rcbzza939gtk1x5r15yfh03e56
+      access_operator_entity_id: ent_rcbzza939gtk1x5r15yfh03e56
+    access:
+      availability: public
+      method: form
+      url: https://jsdoc.app/startup
+    source_ids:
+      - src_d6d3r0s74n0be7g3qnbyr80w17
