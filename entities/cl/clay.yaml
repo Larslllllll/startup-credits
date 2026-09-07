@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rq94y0r8bhzqjgpjwnhrv1z3m7
+  slug: clay
+  name: Clay
+  domains:
+    - value: clay.com
+      role: primary
+      valid_from: 2026-09-07T13:15:19.428929Z
+  category: marketing
+profile:
+  summary: Clay's Wedge is a two-week asynchronous GTM accelerator for startups offering thousands of Clay credits and hands-on support from GTM experts.
+  links:
+    site: https://www.clay.com
+  description: Clay is a data enrichment and go-to-market intelligence platform. Their Wedge program is a two-week asynchronous GTM accelerator for startups where participants can earn thousands of Clay credits and receive hands-on support from Clay GTM Engineering experts.
+sources:
+  - source_id: src_g3f1q2px7we277304jkhqwx0ej
+    url: https://www.clay.com/clay-for-startups
+programs: []
+offers:
+  - offer_id: off_j4d4tgr2mrekb66060k436xvfm
+    offer_slug: wedge-gtm-accelerator
+    title: Wedge GTM Accelerator
+    summary: Startups participating in Wedge earn thousands of Clay credits and receive hands-on support from Clay GTM Engineering experts.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:15:19.428929Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Thousands of Clay credits plus hands-on support from Clay GTM Engineering experts
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an eligible startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_rq94y0r8bhzqjgpjwnhrv1z3m7
+      access_operator_entity_id: ent_rq94y0r8bhzqjgpjwnhrv1z3m7
+    access:
+      availability: public
+      method: form
+      url: https://www.clay.com/clay-for-startups
+    source_ids:
+      - src_g3f1q2px7we277304jkhqwx0ej
