@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_m93yrt07f18twbjbp8tvs7q213
+  slug: ngrok
+  name: ngrok
+  domains:
+    - value: ngrok.com
+      role: primary
+      valid_from: 2026-09-07T15:26:18.875312Z
+  category: devtools-other
+profile:
+  summary: ngrok offers qualifying startups free or discounted access to their secure tunnel and developer platform.
+  links:
+    site: https://ngrok.com
+  description: ngrok offers qualifying startups free or discounted access to their secure tunnel and developer platform.
+sources:
+  - source_id: src_t3xaz40es1w3f4ty019hvnangq
+    url: https://ngrok.com/startup
+programs: []
+offers:
+  - offer_id: off_0w52xetbsb9f2sxw4xeq0fvwbq
+    offer_slug: ngrok-startup-program
+    title: ngrok startup program
+    summary: ngrok offers qualifying startups free or discounted access to their secure tunnel and developer platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:26:18.875312Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their secure tunnel and developer platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_m93yrt07f18twbjbp8tvs7q213
+      access_operator_entity_id: ent_m93yrt07f18twbjbp8tvs7q213
+    access:
+      availability: public
+      method: form
+      url: https://ngrok.com/startup
+    source_ids:
+      - src_t3xaz40es1w3f4ty019hvnangq
