@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_vx9zkm9r1g66n891ry2vtevfaa
+  slug: dbt
+  name: dbt
+  domains:
+    - value: getdbt.com
+      role: primary
+      valid_from: 2026-09-07T15:32:10.948187Z
+  category: data-analytics
+profile:
+  summary: dbt offers qualifying startups free or discounted access to their data transformation and analytics engineering platform.
+  links:
+    site: https://getdbt.com
+  description: dbt offers qualifying startups free or discounted access to their data transformation and analytics engineering platform.
+sources:
+  - source_id: src_cj3hhgzjs8b1ggkc58w6z8fx2y
+    url: https://getdbt.com/startup
+programs: []
+offers:
+  - offer_id: off_yhs9pzmyjyfgpq7jd7pzp2p5rn
+    offer_slug: dbt-startup-program
+    title: dbt startup program
+    summary: dbt offers qualifying startups free or discounted access to their data transformation and analytics engineering platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:32:10.948187Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their data transformation and analytics engineering platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_vx9zkm9r1g66n891ry2vtevfaa
+      access_operator_entity_id: ent_vx9zkm9r1g66n891ry2vtevfaa
+    access:
+      availability: public
+      method: form
+      url: https://getdbt.com/startup
+    source_ids:
+      - src_cj3hhgzjs8b1ggkc58w6z8fx2y
