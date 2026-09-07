@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ngdkgct0mcwpfbjcj3mwm4zs77
+  slug: puppet
+  name: Puppet
+  domains:
+    - value: puppet.com
+      role: primary
+      valid_from: 2026-09-07T15:20:29.634789Z
+  category: devtools-other
+profile:
+  summary: Puppet offers qualifying startups free or discounted access to their infrastructure automation and configuration management platform.
+  links:
+    site: https://puppet.com
+  description: Puppet offers qualifying startups free or discounted access to their infrastructure automation and configuration management platform.
+sources:
+  - source_id: src_7f1fqg287m2safwz6j8hqwjw42
+    url: https://puppet.com/startup
+programs: []
+offers:
+  - offer_id: off_1mjm17ytbvt3903dxky3tv8tpb
+    offer_slug: puppet-startup-program
+    title: Puppet startup program
+    summary: Puppet offers qualifying startups free or discounted access to their infrastructure automation and configuration management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:20:29.634789Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their infrastructure automation and configuration management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ngdkgct0mcwpfbjcj3mwm4zs77
+      access_operator_entity_id: ent_ngdkgct0mcwpfbjcj3mwm4zs77
+    access:
+      availability: public
+      method: form
+      url: https://puppet.com/startup
+    source_ids:
+      - src_7f1fqg287m2safwz6j8hqwjw42
