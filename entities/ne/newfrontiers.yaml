@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5dnqzmx5eafzy600qs05k7jkv6
+  slug: newfrontiers
+  name: Enterprise Ireland New Frontiers
+  domains:
+    - value: newfrontiers.ie
+      role: primary
+      valid_from: 2026-09-07T14:51:04.740375Z
+  category: finance-accounting
+profile:
+  summary: Enterprise Ireland New Frontiers Phase 2 programme offers qualifying startups support, mentorship, and workspace.
+  links:
+    site: https://newfrontiers.ie
+  description: Enterprise Ireland New Frontiers Phase 2 programme offers qualifying startups support, mentorship, and workspace.
+sources:
+  - source_id: src_1dt6jnndpz66h0ykb3p4a4wrcm
+    url: https://newfrontiers.ie/startup
+programs: []
+offers:
+  - offer_id: off_ecw0jpy6xk2qan6mk6enrc20ds
+    offer_slug: newfrontiers-startup-program
+    title: Enterprise Ireland New Frontiers startup program
+    summary: Enterprise Ireland New Frontiers Phase 2 programme offers qualifying startups support, mentorship, and workspace.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:51:04.740375Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Support, mentorship, and workspace access for Phase 2 startups
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_5dnqzmx5eafzy600qs05k7jkv6
+      access_operator_entity_id: ent_5dnqzmx5eafzy600qs05k7jkv6
+    access:
+      availability: public
+      method: form
+      url: https://newfrontiers.ie/startup
+    source_ids:
+      - src_1dt6jnndpz66h0ykb3p4a4wrcm
