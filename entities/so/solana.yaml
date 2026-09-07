@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ycj6ajek1gk6dxxgck50ks0hjz
+  slug: solana
+  name: Solana
+  domains:
+    - value: solana.com
+      role: primary
+      valid_from: 2026-09-07T15:53:16.198820Z
+  category: devtools-other
+profile:
+  summary: Solana offers qualifying startups free or discounted access to their fast, low-cost blockchain platform.
+  links:
+    site: https://solana.com
+  description: Solana offers qualifying startups free or discounted access to their fast, low-cost blockchain platform.
+sources:
+  - source_id: src_sms6q20jf746tn7phrxfp0bxj5
+    url: https://solana.com/startup
+programs: []
+offers:
+  - offer_id: off_hn1wmtp4tqw0753fjj3qrw2e5s
+    offer_slug: solana-startup-program
+    title: Solana startup program
+    summary: Solana offers qualifying startups free or discounted access to their fast, low-cost blockchain platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:53:16.198820Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their fast, low-cost blockchain platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ycj6ajek1gk6dxxgck50ks0hjz
+      access_operator_entity_id: ent_ycj6ajek1gk6dxxgck50ks0hjz
+    access:
+      availability: public
+      method: form
+      url: https://solana.com/startup
+    source_ids:
+      - src_sms6q20jf746tn7phrxfp0bxj5
