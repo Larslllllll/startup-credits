@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_p4qqh6v6cnfsrk25431qcw02vf
+  slug: articleforge
+  name: Article Forge
+  domains:
+    - value: articleforge.com
+      role: primary
+      valid_from: 2026-09-07T15:24:07.299589Z
+  category: ai-ml
+profile:
+  summary: Article Forge offers qualifying startups free or discounted access to their AI article writing and content generation platform.
+  links:
+    site: https://articleforge.com
+  description: Article Forge offers qualifying startups free or discounted access to their AI article writing and content generation platform.
+sources:
+  - source_id: src_m72danyn01b7qcew17c7523zvk
+    url: https://articleforge.com/startup
+programs: []
+offers:
+  - offer_id: off_zmgba8zzc63p2s8rhyq2egbvhc
+    offer_slug: articleforge-startup-program
+    title: Article Forge startup program
+    summary: Article Forge offers qualifying startups free or discounted access to their AI article writing and content generation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:24:07.299589Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI article writing and content generation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_p4qqh6v6cnfsrk25431qcw02vf
+      access_operator_entity_id: ent_p4qqh6v6cnfsrk25431qcw02vf
+    access:
+      availability: public
+      method: form
+      url: https://articleforge.com/startup
+    source_ids:
+      - src_m72danyn01b7qcew17c7523zvk
