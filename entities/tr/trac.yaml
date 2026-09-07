@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_cw82s04x00dh7gyxw4rf4yd43m
+  slug: trac
+  name: Trac
+  domains:
+    - value: trac.edgewall.org
+      role: primary
+      valid_from: 2026-09-07T15:50:31.751042Z
+  category: productivity
+profile:
+  summary: Trac offers qualifying startups free or discounted access to their open-source project management and wiki platform.
+  links:
+    site: https://trac.edgewall.org
+  description: Trac offers qualifying startups free or discounted access to their open-source project management and wiki platform.
+sources:
+  - source_id: src_9nk5z0a4fykx8t8181kjpq6atq
+    url: https://trac.edgewall.org/startup
+programs: []
+offers:
+  - offer_id: off_tcfk54x1cn5p1d8sg20dx84zkp
+    offer_slug: trac-startup-program
+    title: Trac startup program
+    summary: Trac offers qualifying startups free or discounted access to their open-source project management and wiki platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:50:31.751042Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source project management and wiki platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_cw82s04x00dh7gyxw4rf4yd43m
+      access_operator_entity_id: ent_cw82s04x00dh7gyxw4rf4yd43m
+    access:
+      availability: public
+      method: form
+      url: https://trac.edgewall.org/startup
+    source_ids:
+      - src_9nk5z0a4fykx8t8181kjpq6atq
