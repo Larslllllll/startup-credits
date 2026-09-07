@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_8frmsecs868nds10s1cdag60je
+  slug: writer
+  name: Writer
+  domains:
+    - value: writer.com
+      role: primary
+      valid_from: 2026-09-07T15:23:21.464290Z
+  category: ai-ml
+profile:
+  summary: Writer offers qualifying startups free or discounted access to their enterprise generative AI platform.
+  links:
+    site: https://writer.com
+  description: Writer offers qualifying startups free or discounted access to their enterprise generative AI platform.
+sources:
+  - source_id: src_vn4apm8fdmq6g42k9amjd068bf
+    url: https://writer.com/startup
+programs: []
+offers:
+  - offer_id: off_0c71gkc65kj95wksjpjrmkbpzz
+    offer_slug: writer-startup-program
+    title: Writer startup program
+    summary: Writer offers qualifying startups free or discounted access to their enterprise generative AI platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:23:21.464290Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their enterprise generative AI platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_8frmsecs868nds10s1cdag60je
+      access_operator_entity_id: ent_8frmsecs868nds10s1cdag60je
+    access:
+      availability: public
+      method: form
+      url: https://writer.com/startup
+    source_ids:
+      - src_vn4apm8fdmq6g42k9amjd068bf
