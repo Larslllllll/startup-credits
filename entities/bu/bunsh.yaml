@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ns3d5pzjp0tfy283b2qergvf8a
+  slug: bunsh
+  name: Bun.sh
+  domains:
+    - value: bun.sh
+      role: primary
+      valid_from: 2026-09-07T15:01:31.618326Z
+  category: devtools-other
+profile:
+  summary: Bun.sh offers qualifying startups free credits toward their fast JavaScript runtime and development toolkit.
+  links:
+    site: https://bun.sh
+  description: Bun.sh offers qualifying startups free credits toward their fast JavaScript runtime and development toolkit.
+sources:
+  - source_id: src_6y6q1h6ees9zz55dw43bqx2dye
+    url: https://bun.sh/startup
+programs: []
+offers:
+  - offer_id: off_5fd1k703j672mhstk395m80ahm
+    offer_slug: bunsh-startup-program
+    title: Bun.sh startup program
+    summary: Bun.sh offers qualifying startups free credits toward their fast JavaScript runtime and development toolkit.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:01:31.618326Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free credits for fast JavaScript runtime and development toolkit
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ns3d5pzjp0tfy283b2qergvf8a
+      access_operator_entity_id: ent_ns3d5pzjp0tfy283b2qergvf8a
+    access:
+      availability: public
+      method: form
+      url: https://bun.sh/startup
+    source_ids:
+      - src_6y6q1h6ees9zz55dw43bqx2dye
