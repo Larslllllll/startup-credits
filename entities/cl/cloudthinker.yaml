@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5dppe4mpmh52k6cma0jw5rkf8r
+  slug: cloudthinker
+  name: CloudThinker
+  domains:
+    - value: cloudthinker.io
+      role: primary
+      valid_from: 2026-09-07T13:51:50.608029Z
+  category: hosting-infra
+profile:
+  summary: CloudThinker Startup Program offers qualifying early-stage startups thousands of dollars in CloudThinker credits, priority onboarding, and expert support.
+  links:
+    site: https://cloudthinker.io
+  description: CloudThinker is a cloud compute platform. Their Startup Program offers qualifying early-stage startups thousands of dollars in CloudThinker credits, priority onboarding, and expert support.
+sources:
+  - source_id: src_cjsnesvg1khwtwhnbfewxp5ffn
+    url: https://cloudthinker.io/startup
+programs: []
+offers:
+  - offer_id: off_491ts88vp6496935scex570g7g
+    offer_slug: cloudthinker-startup-program
+    title: CloudThinker Startup Program
+    summary: Early-stage startups receive thousands of dollars in CloudThinker credits with priority onboarding and expert support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:51:50.608029Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Thousands of dollars in CloudThinker credits with priority onboarding and expert support
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_5dppe4mpmh52k6cma0jw5rkf8r
+      access_operator_entity_id: ent_5dppe4mpmh52k6cma0jw5rkf8r
+    access:
+      availability: public
+      method: form
+      url: https://cloudthinker.io/startup
+    source_ids:
+      - src_cjsnesvg1khwtwhnbfewxp5ffn
