@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6y156dk90qq36nwsc6jd4e3b2v
+  slug: semaphore
+  name: Semaphore
+  domains:
+    - value: semaphore.ci
+      role: primary
+      valid_from: 2026-09-07T15:19:13.373954Z
+  category: ci-cd
+profile:
+  summary: Semaphore offers qualifying startups free or discounted access to their continuous delivery and deployment platform.
+  links:
+    site: https://semaphore.ci
+  description: Semaphore offers qualifying startups free or discounted access to their continuous delivery and deployment platform.
+sources:
+  - source_id: src_w51xnrw2r31yqtsv25trz6rgfv
+    url: https://semaphore.ci/startup
+programs: []
+offers:
+  - offer_id: off_395n0sfkkxvxt7qe056kj2yerm
+    offer_slug: semaphore-startup-program
+    title: Semaphore startup program
+    summary: Semaphore offers qualifying startups free or discounted access to their continuous delivery and deployment platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:19:13.373954Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their continuous delivery and deployment platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_6y156dk90qq36nwsc6jd4e3b2v
+      access_operator_entity_id: ent_6y156dk90qq36nwsc6jd4e3b2v
+    access:
+      availability: public
+      method: form
+      url: https://semaphore.ci/startup
+    source_ids:
+      - src_w51xnrw2r31yqtsv25trz6rgfv
