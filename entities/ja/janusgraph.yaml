@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_53hvn8eczshxprh879d1czxsr7
+  slug: janusgraph
+  name: JanusGraph
+  domains:
+    - value: janusgraph.org
+      role: primary
+      valid_from: 2026-09-07T15:27:51.145558Z
+  category: databases
+profile:
+  summary: JanusGraph offers qualifying startups free or discounted access to their open-source distributed graph database platform.
+  links:
+    site: https://janusgraph.org
+  description: JanusGraph offers qualifying startups free or discounted access to their open-source distributed graph database platform.
+sources:
+  - source_id: src_w9kqbkmjeyacyaqnc9zt4a524a
+    url: https://janusgraph.org/startup
+programs: []
+offers:
+  - offer_id: off_ntfbxhmvhqa01btazxscjd3y9h
+    offer_slug: janusgraph-startup-program
+    title: JanusGraph startup program
+    summary: JanusGraph offers qualifying startups free or discounted access to their open-source distributed graph database platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:27:51.145558Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source distributed graph database platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_53hvn8eczshxprh879d1czxsr7
+      access_operator_entity_id: ent_53hvn8eczshxprh879d1czxsr7
+    access:
+      availability: public
+      method: form
+      url: https://janusgraph.org/startup
+    source_ids:
+      - src_w9kqbkmjeyacyaqnc9zt4a524a
