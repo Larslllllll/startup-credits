@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_tqzcw1cz9zm4xj3vt58y9fd2e2
+  slug: grammarly
+  name: Grammarly
+  domains:
+    - value: grammarly.com
+      role: primary
+      valid_from: 2026-09-07T15:24:23.926067Z
+  category: ai-ml
+profile:
+  summary: Grammarly offers qualifying startups free or discounted access to their AI-powered writing assistant platform.
+  links:
+    site: https://grammarly.com
+  description: Grammarly offers qualifying startups free or discounted access to their AI-powered writing assistant platform.
+sources:
+  - source_id: src_5es0ag7444cf6mfrtsrwa5bt7k
+    url: https://grammarly.com/startup
+programs: []
+offers:
+  - offer_id: off_drq5d1tw0aj5t1ewxs18a5qyg8
+    offer_slug: grammarly-startup-program
+    title: Grammarly startup program
+    summary: Grammarly offers qualifying startups free or discounted access to their AI-powered writing assistant platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:24:23.926067Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI-powered writing assistant platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_tqzcw1cz9zm4xj3vt58y9fd2e2
+      access_operator_entity_id: ent_tqzcw1cz9zm4xj3vt58y9fd2e2
+    access:
+      availability: public
+      method: form
+      url: https://grammarly.com/startup
+    source_ids:
+      - src_5es0ag7444cf6mfrtsrwa5bt7k
