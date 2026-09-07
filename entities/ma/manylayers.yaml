@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_zwpwkpf5ar28pr312x1srtxy0z
+  slug: manylayers
+  name: ManyLayers
+  domains:
+    - value: manylayers.io
+      role: primary
+      valid_from: 2026-09-07T13:27:08.688616Z
+  category: devtools-other
+profile:
+  summary: ManyLayers offers eligible AI-first startups the Team tier free for 12 months with platform access and dedicated support.
+  links:
+    site: https://manylayers.io
+  description: ManyLayers is a development platform for AI-first startups. Their startup program offers qualifying AI-first startups the Team tier free for 12 months with platform access and dedicated support.
+sources:
+  - source_id: src_wxmgfc8fc5ctwwz9n6neqg955z
+    url: https://manylayers.io
+programs: []
+offers:
+  - offer_id: off_3hwygbbg8jah9jch7x05bnae8j
+    offer_slug: manylayers-startup-program
+    title: ManyLayers startup program
+    summary: AI-first startups receive the ManyLayers Team tier free for 12 months with platform access and dedicated support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:27:08.688616Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Team tier free for 12 months with platform access and dedicated support
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an AI-first startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_zwpwkpf5ar28pr312x1srtxy0z
+      access_operator_entity_id: ent_zwpwkpf5ar28pr312x1srtxy0z
+    access:
+      availability: public
+      method: form
+      url: https://manylayers.io
+    source_ids:
+      - src_wxmgfc8fc5ctwwz9n6neqg955z
