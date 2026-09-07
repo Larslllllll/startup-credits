@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x4vfbwgnyk94126yj26jgf
+  slug: pulseadt
+  slug_aliases: []
+  name: PulseADT
+  domains:
+    - value: getpulseadt.com
+      role: primary
+      valid_from: 2026-09-07T05:18:30.000Z
+  category: other
+profile:
+  description: PulseADT startup program offering credits and benefits for qualifying early-stage companies.
+  links:
+    site: https://getpulseadt.com
+sources:
+  - source_id: src_628406401d71d39ed314b635012e6d28a9f6c4db727db308a01711ef94a282cf
+    url: https://getpulseadt.com/for-startups
+programs: []
+offers:
+  - offer_id: off_01m1x4vfc1mfyc96h61y9006ga
+    offer_slug: startup-program
+    offer_slug_aliases: []
+    title: PulseADT Startup Program
+    summary: 'The API Builder track grants eligible early-stage technology startups a $250 platform credit valid for 12 months after spending at least $100 on API credits within 90 days, followed by an ongoing 30% discount after the credit is exhausted.'
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:18:30.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startup program benefits as published by PulseADT
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Contact PulseADT for eligibility requirements as published on the vendor's startup page.
+    roles:
+      terms_authority_entity_id: ent_01m1x4vfbwgnyk94126yj26jgf
+      access_operator_entity_id: ent_01m1x4vfbwgnyk94126yj26jgf
+    access:
+      availability: public
+      method: form
+      url: https://getpulseadt.com/for-startups
+    source_ids:
+      - src_628406401d71d39ed314b635012e6d28a9f6c4db727db308a01711ef94a282cf

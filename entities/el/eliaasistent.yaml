@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x4vg6hwn7p8d1w6v7wjb9q
+  slug: eliaasistent
+  slug_aliases: []
+  name: ELIA Asistent
+  domains:
+    - value: elia-asistent.com
+      role: primary
+      valid_from: 2026-09-07T05:18:31.000Z
+  category: other
+profile:
+  description: ELIA Asistent startup program offering credits and benefits for qualifying early-stage companies.
+  links:
+    site: https://elia-asistent.com
+sources:
+  - source_id: src_e08572bfd8d248c0804cab6221b37830c79a5bcfb0ae731bce4635e00f0490d9
+    url: https://elia-asistent.com/startups
+programs: []
+offers:
+  - offer_id: off_01m1x4vg6qqe5actbp8y3fhqgy
+    offer_slug: startup-program
+    offer_slug_aliases: []
+    title: ELIA Asistent Startup Program
+    summary: 'Eligible early-stage teams receive 50% off standard ELIA Asistent plans for their first six months after approval.'
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:18:31.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startup program benefits as published by ELIA Asistent
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Contact ELIA Asistent for eligibility requirements as published on the vendor's startup page.
+    roles:
+      terms_authority_entity_id: ent_01m1x4vg6hwn7p8d1w6v7wjb9q
+      access_operator_entity_id: ent_01m1x4vg6hwn7p8d1w6v7wjb9q
+    access:
+      availability: public
+      method: form
+      url: https://elia-asistent.com/startups
+    source_ids:
+      - src_e08572bfd8d248c0804cab6221b37830c79a5bcfb0ae731bce4635e00f0490d9
