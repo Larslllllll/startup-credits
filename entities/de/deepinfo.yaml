@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3ems82jwpt769jgaaeb92mj2b6
+  slug: deepinfo
+  name: DeepInfo
+  domains:
+    - value: deepinfo.com
+      role: primary
+      valid_from: 2026-09-07T14:09:21.855308Z
+  category: data-analytics
+profile:
+  summary: DeepInfo offers qualifying startups $1,000 in free API credits and a 90% discount on all plans for the first 12 months.
+  links:
+    site: https://deepinfo.com
+  description: DeepInfo is a data intelligence platform. Their startup program offers $1,000 in free API credits and 90% off all plans for the first 12 months.
+sources:
+  - source_id: src_pt0fcwj6sd2fwfn2jkn1h8x3aa
+    url: https://deepinfo.com/startup
+programs: []
+offers:
+  - offer_id: off_a347sx85qsnhjnvzee05xyx7v7
+    offer_slug: deepinfo-startup-program
+    title: DeepInfo startup program
+    summary: Qualifying startups receive $1,000 in free API credits plus 90% off all plans for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:09:21.855308Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $1,000 free API credits and 90% off all plans for 12 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3ems82jwpt769jgaaeb92mj2b6
+      access_operator_entity_id: ent_3ems82jwpt769jgaaeb92mj2b6
+    access:
+      availability: public
+      method: form
+      url: https://deepinfo.com/startup
+    source_ids:
+      - src_pt0fcwj6sd2fwfn2jkn1h8x3aa
