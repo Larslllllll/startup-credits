@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_fjhe42b4qq57rhh135brn9sdrm
+  slug: near
+  name: NEAR
+  domains:
+    - value: near.org
+      role: primary
+      valid_from: 2026-09-07T15:53:20.036370Z
+  category: devtools-other
+profile:
+  summary: NEAR offers qualifying startups free or discounted access to their developer-friendly blockchain platform.
+  links:
+    site: https://near.org
+  description: NEAR offers qualifying startups free or discounted access to their developer-friendly blockchain platform.
+sources:
+  - source_id: src_drkgrqgsq5ywzm8ef6hxdebcf2
+    url: https://near.org/startup
+programs: []
+offers:
+  - offer_id: off_5agdm9v8t2vr0zwzrqwcsg9ajw
+    offer_slug: near-startup-program
+    title: NEAR startup program
+    summary: NEAR offers qualifying startups free or discounted access to their developer-friendly blockchain platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:53:20.036370Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their developer-friendly blockchain platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_fjhe42b4qq57rhh135brn9sdrm
+      access_operator_entity_id: ent_fjhe42b4qq57rhh135brn9sdrm
+    access:
+      availability: public
+      method: form
+      url: https://near.org/startup
+    source_ids:
+      - src_drkgrqgsq5ywzm8ef6hxdebcf2
