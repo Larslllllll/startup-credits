@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_crhy9mfkw863hm5r4tc4gpvzfe
+  slug: redmine
+  name: Redmine
+  domains:
+    - value: redmine.org
+      role: primary
+      valid_from: 2026-09-07T15:50:27.478870Z
+  category: productivity
+profile:
+  summary: Redmine offers qualifying startups free or discounted access to their open-source project management platform.
+  links:
+    site: https://redmine.org
+  description: Redmine offers qualifying startups free or discounted access to their open-source project management platform.
+sources:
+  - source_id: src_5jv8kzb1ssjgthpwvfx714n4nh
+    url: https://redmine.org/startup
+programs: []
+offers:
+  - offer_id: off_35jt92bxjn9zfsk8vgxwt470zh
+    offer_slug: redmine-startup-program
+    title: Redmine startup program
+    summary: Redmine offers qualifying startups free or discounted access to their open-source project management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:50:27.478870Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source project management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_crhy9mfkw863hm5r4tc4gpvzfe
+      access_operator_entity_id: ent_crhy9mfkw863hm5r4tc4gpvzfe
+    access:
+      availability: public
+      method: form
+      url: https://redmine.org/startup
+    source_ids:
+      - src_5jv8kzb1ssjgthpwvfx714n4nh
