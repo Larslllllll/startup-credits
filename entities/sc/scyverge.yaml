@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_hhkh7pnghy43g9vbgvfpntcdg4
+  slug: scyverge
+  name: Scyverge
+  domains:
+    - value: scyverge.com
+      role: primary
+      valid_from: 2026-09-07T13:13:36.728476Z
+  category: auth-security
+profile:
+  summary: Scyverge is a cybersecurity services firm offering approved registered startups $1,000 in service credits valid for 12 months, plus a free security roadmap and security awareness training.
+  links:
+    site: https://scyverge.com
+  description: Scyverge is a cybersecurity services firm providing application security, penetration testing, and security awareness training. Their startup program offers approved registered startups $1,000 in service credits valid for 12 months, plus a free security roadmap and security awareness training.
+sources:
+  - source_id: src_pdz1rzxp2g4zxe235fp94emyed
+    url: https://scyverge.com/startup
+programs: []
+offers:
+  - offer_id: off_zvhtvx7h8j3d2p37e5wensf6ge
+    offer_slug: scyverge-startup-program
+    title: Scyverge startup program
+    summary: Approved registered startups receive $1,000 in Scyverge service credits valid for 12 months, plus a free security roadmap and security awareness training.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:13:36.728476Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $1,000 in service credits valid for 12 months, free security roadmap, security awareness training
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an approved registered startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_hhkh7pnghy43g9vbgvfpntcdg4
+      access_operator_entity_id: ent_hhkh7pnghy43g9vbgvfpntcdg4
+    access:
+      availability: public
+      method: form
+      url: https://scyverge.com/startup
+    source_ids:
+      - src_pdz1rzxp2g4zxe235fp94emyed
