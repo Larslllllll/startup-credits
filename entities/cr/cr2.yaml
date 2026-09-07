@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ja7vmycbx3sb2adpndkr2wej5v
+  slug: cr2
+  name: CrewAI 2
+  domains:
+    - value: crewai.com
+      role: primary
+      valid_from: 2026-09-07T16:45:58.108880Z
+  category: ai-ml
+profile:
+  summary: CrewAI offers qualifying startups free or discounted access to their multi-agent LLM collaboration framework.
+  links:
+    site: https://crewai.com
+  description: CrewAI offers qualifying startups free or discounted access to their multi-agent LLM collaboration framework.
+sources:
+  - source_id: src_mjpwy6p8mcrgvm5xjv9my4d6vj
+    url: https://crewai.com/startup
+programs: []
+offers:
+  - offer_id: off_x30rfh86j1pfqzrevksapvfff1
+    offer_slug: cr2-startup-program
+    title: CrewAI 2 startup program
+    summary: CrewAI offers qualifying startups free or discounted access to their multi-agent LLM collaboration framework.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:45:58.108880Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to multi-agent LLM collaboration framework
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ja7vmycbx3sb2adpndkr2wej5v
+      access_operator_entity_id: ent_ja7vmycbx3sb2adpndkr2wej5v
+    access:
+      availability: public
+      method: form
+      url: https://crewai.com/startup
+    source_ids:
+      - src_mjpwy6p8mcrgvm5xjv9my4d6vj
