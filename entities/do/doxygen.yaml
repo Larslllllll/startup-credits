@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_yy1w329566e7kwhjgw5a6rd3t4
+  slug: doxygen
+  name: Doxygen
+  domains:
+    - value: doxygen.org
+      role: primary
+      valid_from: 2026-09-07T15:25:18.609125Z
+  category: devtools-other
+profile:
+  summary: Doxygen offers qualifying startups free or discounted access to their open-source documentation generation platform.
+  links:
+    site: https://doxygen.org
+  description: Doxygen offers qualifying startups free or discounted access to their open-source documentation generation platform.
+sources:
+  - source_id: src_h4gns3zcddev0tkkcafgc4wkdg
+    url: https://doxygen.org/startup
+programs: []
+offers:
+  - offer_id: off_pr0h532xg7pvkgs0a47rqdv0e7
+    offer_slug: doxygen-startup-program
+    title: Doxygen startup program
+    summary: Doxygen offers qualifying startups free or discounted access to their open-source documentation generation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:25:18.609125Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source documentation generation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_yy1w329566e7kwhjgw5a6rd3t4
+      access_operator_entity_id: ent_yy1w329566e7kwhjgw5a6rd3t4
+    access:
+      availability: public
+      method: form
+      url: https://doxygen.org/startup
+    source_ids:
+      - src_h4gns3zcddev0tkkcafgc4wkdg
