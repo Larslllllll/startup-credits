@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9drtqf2wp75p2jbnqfy6g43waz
+  slug: appian
+  name: Appian
+  domains:
+    - value: appian.com
+      role: primary
+      valid_from: 2026-09-07T15:57:26.256299Z
+  category: no-code
+profile:
+  summary: Appian offers qualifying startups free or discounted access to their low-code automation and application platform.
+  links:
+    site: https://appian.com
+  description: Appian offers qualifying startups free or discounted access to their low-code automation and application platform.
+sources:
+  - source_id: src_gq3kk1kex7envy6c0a4h6e0s4d
+    url: https://appian.com/startup
+programs: []
+offers:
+  - offer_id: off_zptnmzsx8qw7wzv0dv1nqax7z7
+    offer_slug: appian-startup-program
+    title: Appian startup program
+    summary: Appian offers qualifying startups free or discounted access to their low-code automation and application platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:57:26.256299Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their low-code automation and application platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_9drtqf2wp75p2jbnqfy6g43waz
+      access_operator_entity_id: ent_9drtqf2wp75p2jbnqfy6g43waz
+    access:
+      availability: public
+      method: form
+      url: https://appian.com/startup
+    source_ids:
+      - src_gq3kk1kex7envy6c0a4h6e0s4d
