@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_705kkk7kgrfzp1tde4qtzrx9pw
+  slug: haystack
+  name: Haystack
+  domains:
+    - value: haystack.deepset.ai
+      role: primary
+      valid_from: 2026-09-07T15:03:23.862956Z
+  category: ai-ml
+profile:
+  summary: Haystack offers qualifying startups free or discounted access to their open-source NLP framework for building search systems.
+  links:
+    site: https://haystack.deepset.ai
+  description: Haystack offers qualifying startups free or discounted access to their open-source NLP framework for building search systems.
+sources:
+  - source_id: src_wqsfcqjxjdh14n60kgz3x67sb4
+    url: https://haystack.deepset.ai/startup
+programs: []
+offers:
+  - offer_id: off_vkyg8qz0da96247mt9bybd50x3
+    offer_slug: haystack-startup-program
+    title: Haystack startup program
+    summary: Haystack offers qualifying startups free or discounted access to their open-source NLP framework for building search systems.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:03:23.862956Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source NLP framework for building search systems
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_705kkk7kgrfzp1tde4qtzrx9pw
+      access_operator_entity_id: ent_705kkk7kgrfzp1tde4qtzrx9pw
+    access:
+      availability: public
+      method: form
+      url: https://haystack.deepset.ai/startup
+    source_ids:
+      - src_wqsfcqjxjdh14n60kgz3x67sb4
