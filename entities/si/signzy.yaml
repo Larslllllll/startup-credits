@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_pgvb70ev69ceycec5x0chcs4b6
+  slug: signzy
+  name: Signzy
+  domains:
+    - value: signzy.com
+      role: primary
+      valid_from: 2026-09-07T13:52:47.101707Z
+  category: auth-security
+profile:
+  summary: Signzy startup initiative offers INR 5,000 in API sandbox credits, startup-friendly rates, mentoring from industry experts, and access to financial institution partnerships.
+  links:
+    site: https://signzy.com
+  description: Signzy is a digital onboarding and compliance platform. Their startup initiative offers INR 5,000 in API sandbox credits, startup-friendly rates, mentoring from industry experts, and access to financial institution partnerships.
+sources:
+  - source_id: src_gx8r2c2ms32ydenrhrwqa8mzkj
+    url: https://signzy.com/startup
+programs: []
+offers:
+  - offer_id: off_4a4v75vrafzsmqqtp18d73zh7k
+    offer_slug: signzy-startup-initiative
+    title: Signzy startup initiative
+    summary: INR 5,000 in API sandbox credits, startup-friendly rates, mentoring, and access to financial institution partnerships.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:52:47.101707Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: INR 5,000 in API sandbox credits, startup-friendly rates, mentoring, financial institution partnerships
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_pgvb70ev69ceycec5x0chcs4b6
+      access_operator_entity_id: ent_pgvb70ev69ceycec5x0chcs4b6
+    access:
+      availability: public
+      method: form
+      url: https://signzy.com/startup
+    source_ids:
+      - src_gx8r2c2ms32ydenrhrwqa8mzkj
