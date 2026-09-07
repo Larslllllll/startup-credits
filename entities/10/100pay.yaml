@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_794f7x1m100000000000
+  slug: 100pay
+  slug_aliases: []
+  name: 100Pay
+  domains:
+  - value: 100pay.co
+    role: primary
+    valid_from: '2026-09-07T00:00:00.000Z'
+  category: payments-fintech
+profile:
+  summary: Payment infrastructure platform offering APIs for online and offline payment collection across African markets.
+  description: 100Pay provides payment infrastructure APIs enabling businesses to accept and process online and offline payments across African markets.
+  links:
+    site: https://100pay.co
+sources:
+- source_id: src_375b9b941ed3bd90d9adb25818f273685b65c461e56d3728fc029b06ee77b512
+  url: https://100pay.co/startups
+programs:
+- program_id: prg_894f7x1m100000000000
+  program_slug: 100pay-startup-program
+  program_slug_aliases: []
+  title: 100Pay Startup Program
+  summary: The 100Pay Startup Program gives eligible startups up to $100,000 in cloud infrastructure credits, startup perks, and mentorship on a rolling basis.
+  source_ids:
+  - src_375b9b941ed3bd90d9adb25818f273685b65c461e56d3728fc029b06ee77b512
+offers:
+- offer_id: off_01m1x6516bdbvc6n6k29gm1w2t
+  program_id: prg_01m1x6516afgp4rmbjyhk2750h
+  offer_slug: up-to-100k-credits-perks-mentorship
+  offer_slug_aliases: []
+  title: Up to $100,000 in Credits, Perks, and Mentorship
+  summary: Eligible startups receive up to $100,000 in 100Pay cloud infrastructure credits, startup perks, and mentorship; applications accepted on a rolling basis.
+  lifecycle:
+    status: active
+    effective_from: 2026-09-07 05:46:58+00:00
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Up to $100,000 in 100Pay cloud infrastructure credits, plus startup perks and mentorship
+      kind: free-service
+      service: Up to $100,000 in 100Pay cloud infrastructure credits, plus startup perks and mentorship
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Eligible startups (rolling applications)
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1x65166vjn8nb434pwh8t6p
+    access_operator_entity_id: ent_01m1x65166vjn8nb434pwh8t6p
+  access:
+    availability: public
+    method: form
+    url: https://100pay.co/startups
+  source_ids:
+  - src_375b9b941ed3bd90d9adb25818f273685b65c461e56d3728fc029b06ee77b512
