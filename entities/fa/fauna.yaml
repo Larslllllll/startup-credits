@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_jxrdtd4pz6zs8x5hvasj3mjkh5
+  slug: fauna
+  name: Fauna
+  domains:
+    - value: fauna.com
+      role: primary
+      valid_from: 2026-09-07T15:02:53.447906Z
+  category: databases
+profile:
+  summary: Fauna offers qualifying startups free or discounted access to their serverless document-relational database platform.
+  links:
+    site: https://fauna.com
+  description: Fauna offers qualifying startups free or discounted access to their serverless document-relational database platform.
+sources:
+  - source_id: src_30re1ex5kem6vdr7tgdyyxetvb
+    url: https://fauna.com/startup
+programs: []
+offers:
+  - offer_id: off_njn14jh9ppthm0jmbg2kt0dj05
+    offer_slug: fauna-startup-program
+    title: Fauna startup program
+    summary: Fauna offers qualifying startups free or discounted access to their serverless document-relational database platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:02:53.447906Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to serverless document-relational database platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_jxrdtd4pz6zs8x5hvasj3mjkh5
+      access_operator_entity_id: ent_jxrdtd4pz6zs8x5hvasj3mjkh5
+    access:
+      availability: public
+      method: form
+      url: https://fauna.com/startup
+    source_ids:
+      - src_30re1ex5kem6vdr7tgdyyxetvb
