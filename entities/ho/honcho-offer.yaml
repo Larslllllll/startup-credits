@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_tdghr8qd97f3dsyf0b5x8bcdv9
+  slug: honcho-offer
+  name: Honcho Offer
+  domains:
+    - value: honcho.dev
+      role: primary
+      valid_from: 2026-09-07T16:40:58.144546Z
+  category: productivity
+profile:
+  summary: Honcho offers qualifying startups free or discounted access to their developer productivity and collaboration platform.
+  links:
+    site: https://honcho.dev
+  description: Honcho offers qualifying startups free or discounted access to their developer productivity and collaboration platform.
+sources:
+  - source_id: src_5m8ceaqtzwp0xzp6p51tvgffep
+    url: https://honcho.dev/startup
+programs: []
+offers:
+  - offer_id: off_2xwmkztpj9cq8wzjdmw8vmdmws
+    offer_slug: honcho-offer-startup-program
+    title: Honcho Offer startup program
+    summary: Honcho offers qualifying startups free or discounted access to their developer productivity and collaboration platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:40:58.144546Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to developer productivity and collaboration platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_tdghr8qd97f3dsyf0b5x8bcdv9
+      access_operator_entity_id: ent_tdghr8qd97f3dsyf0b5x8bcdv9
+    access:
+      availability: public
+      method: form
+      url: https://honcho.dev/startup
+    source_ids:
+      - src_5m8ceaqtzwp0xzp6p51tvgffep
