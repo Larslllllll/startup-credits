@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_jd2xqb03c0b6tb0x6ce1pn4m6h
+  slug: alloy-auto
+  name: Alloy Automation
+  domains:
+    - value: alloyautomation.com
+      role: primary
+      valid_from: 2026-09-07T16:38:29.846612Z
+  category: apis-integration
+profile:
+  summary: Alloy Automation offers qualifying startups free or discounted access to their no-code integration and workflow automation platform.
+  links:
+    site: https://alloyautomation.com
+  description: Alloy Automation offers qualifying startups free or discounted access to their no-code integration and workflow automation platform.
+sources:
+  - source_id: src_fzxh1p3s7g28mskr5m8k0nry2a
+    url: https://alloyautomation.com/startup
+programs: []
+offers:
+  - offer_id: off_v5enteycxtm0pn290zqac2kjs5
+    offer_slug: alloy-auto-startup-program
+    title: Alloy Automation startup program
+    summary: Alloy Automation offers qualifying startups free or discounted access to their no-code integration and workflow automation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:38:29.846612Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to no-code integration and workflow automation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_jd2xqb03c0b6tb0x6ce1pn4m6h
+      access_operator_entity_id: ent_jd2xqb03c0b6tb0x6ce1pn4m6h
+    access:
+      availability: public
+      method: form
+      url: https://alloyautomation.com/startup
+    source_ids:
+      - src_fzxh1p3s7g28mskr5m8k0nry2a
