@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xye2ss7nmpfg29s1gqwerdeppx
+  slug: omniconvert
+  name: Omniconvert
+  domains:
+    - value: omniconvert.com
+      role: primary
+      valid_from: 2026-09-07T15:35:23.431371Z
+  category: marketing
+profile:
+  summary: Omniconvert offers qualifying startups free or discounted access to their conversion rate optimization platform.
+  links:
+    site: https://omniconvert.com
+  description: Omniconvert offers qualifying startups free or discounted access to their conversion rate optimization platform.
+sources:
+  - source_id: src_5nc14tvpak921s3pbaxprakr41
+    url: https://omniconvert.com/startup
+programs: []
+offers:
+  - offer_id: off_hrw3dxd00k7q4d4b7ffg5xg7ce
+    offer_slug: omniconvert-startup-program
+    title: Omniconvert startup program
+    summary: Omniconvert offers qualifying startups free or discounted access to their conversion rate optimization platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:35:23.431371Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their conversion rate optimization platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xye2ss7nmpfg29s1gqwerdeppx
+      access_operator_entity_id: ent_xye2ss7nmpfg29s1gqwerdeppx
+    access:
+      availability: public
+      method: form
+      url: https://omniconvert.com/startup
+    source_ids:
+      - src_5nc14tvpak921s3pbaxprakr41
