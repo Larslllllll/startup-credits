@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_4smphs4gqhnevebhy9bb69v7kg
+  slug: polkadot
+  name: Polkadot
+  domains:
+    - value: polkadot.network
+      role: primary
+      valid_from: 2026-09-07T15:53:12.303047Z
+  category: devtools-other
+profile:
+  summary: Polkadot offers qualifying startups free or discounted access to their interoperable multi-chain blockchain platform.
+  links:
+    site: https://polkadot.network
+  description: Polkadot offers qualifying startups free or discounted access to their interoperable multi-chain blockchain platform.
+sources:
+  - source_id: src_9h7ahn65rnfd6zmmpevj6kr7bf
+    url: https://polkadot.network/startup
+programs: []
+offers:
+  - offer_id: off_rvz6gkrkww9jk8cqb2e2e8b29x
+    offer_slug: polkadot-startup-program
+    title: Polkadot startup program
+    summary: Polkadot offers qualifying startups free or discounted access to their interoperable multi-chain blockchain platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:53:12.303047Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their interoperable multi-chain blockchain platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_4smphs4gqhnevebhy9bb69v7kg
+      access_operator_entity_id: ent_4smphs4gqhnevebhy9bb69v7kg
+    access:
+      availability: public
+      method: form
+      url: https://polkadot.network/startup
+    source_ids:
+      - src_9h7ahn65rnfd6zmmpevj6kr7bf
