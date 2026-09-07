@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_wfmy1e3m23vw2mpe5jyhp1janj
+  slug: ar2
+  name: Argo CD 2
+  domains:
+    - value: argoproj.io
+      role: primary
+      valid_from: 2026-09-07T17:00:08.307440Z
+  category: ci-cd
+profile:
+  summary: Argo CD offers qualifying startups free or discounted access to their GitOps continuous delivery platform.
+  links:
+    site: https://argoproj.io
+  description: Argo CD offers qualifying startups free or discounted access to their GitOps continuous delivery platform.
+sources:
+  - source_id: src_j07c0dn4k269tpkp57ncedch3g
+    url: https://argoproj.io/startup
+programs: []
+offers:
+  - offer_id: off_8k69b7jdcngcsc83b11st0rfva
+    offer_slug: ar2-startup-program
+    title: Argo CD 2 startup program
+    summary: Argo CD offers qualifying startups free or discounted access to their GitOps continuous delivery platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T17:00:08.307440Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to GitOps continuous delivery platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_wfmy1e3m23vw2mpe5jyhp1janj
+      access_operator_entity_id: ent_wfmy1e3m23vw2mpe5jyhp1janj
+    access:
+      availability: public
+      method: form
+      url: https://argoproj.io/startup
+    source_ids:
+      - src_j07c0dn4k269tpkp57ncedch3g
