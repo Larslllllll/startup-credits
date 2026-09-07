@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_1smyw53kke7cq7pdexvcdaa9s9
+  slug: parse
+  name: Parse
+  domains:
+    - value: parseplatform.org
+      role: primary
+      valid_from: 2026-09-07T15:27:08.172589Z
+  category: devtools-other
+profile:
+  summary: Parse offers qualifying startups free or discounted access to their open-source backend and application platform.
+  links:
+    site: https://parseplatform.org
+  description: Parse offers qualifying startups free or discounted access to their open-source backend and application platform.
+sources:
+  - source_id: src_h6dxesfdh16camn4dhsapa6tj2
+    url: https://parseplatform.org/startup
+programs: []
+offers:
+  - offer_id: off_rq93v49kqc1f41c1bakkrr4kkx
+    offer_slug: parse-startup-program
+    title: Parse startup program
+    summary: Parse offers qualifying startups free or discounted access to their open-source backend and application platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:27:08.172589Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source backend and application platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_1smyw53kke7cq7pdexvcdaa9s9
+      access_operator_entity_id: ent_1smyw53kke7cq7pdexvcdaa9s9
+    access:
+      availability: public
+      method: form
+      url: https://parseplatform.org/startup
+    source_ids:
+      - src_h6dxesfdh16camn4dhsapa6tj2
