@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_qn1af126ev8gawsd3k2cr34wbs
+  slug: authkey
+  name: AuthKey
+  domains:
+    - value: authkey.io
+      role: primary
+      valid_from: 2026-09-07T14:24:41.288938Z
+  category: auth-security
+profile:
+  summary: AuthKey offers qualifying startups free access to their passwordless authentication and identity platform for 6 months.
+  links:
+    site: https://authkey.io
+  description: AuthKey is a passwordless authentication and identity platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_n9j5j78xbg47gdxr038fcmfv3a
+    url: https://authkey.io/startup
+programs: []
+offers:
+  - offer_id: off_bx1w295j82gzb5eg9nm8qa2w4j
+    offer_slug: authkey-startup-program
+    title: AuthKey startup program
+    summary: Qualifying startups receive free access to the AuthKey passwordless authentication and identity platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:24:41.288938Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to passwordless authentication and identity platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_qn1af126ev8gawsd3k2cr34wbs
+      access_operator_entity_id: ent_qn1af126ev8gawsd3k2cr34wbs
+    access:
+      availability: public
+      method: form
+      url: https://authkey.io/startup
+    source_ids:
+      - src_n9j5j78xbg47gdxr038fcmfv3a
