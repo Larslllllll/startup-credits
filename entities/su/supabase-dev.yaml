@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_17ssq49chdht5whsqf4r6wrwev
+  slug: supabase-dev
+  name: Supabase Dev
+  domains:
+    - value: supabase.com
+      role: primary
+      valid_from: 2026-09-07T15:02:24.449134Z
+  category: databases
+profile:
+  summary: Supabase offers qualifying startups free credits toward their open-source Firebase alternative backend-as-a-service.
+  links:
+    site: https://supabase.com
+  description: Supabase offers qualifying startups free credits toward their open-source Firebase alternative backend-as-a-service.
+sources:
+  - source_id: src_8tj46hy3hpz740ambb4cktm8fd
+    url: https://supabase.com/startup
+programs: []
+offers:
+  - offer_id: off_nkn22ehb1jr4kxjt1pwf7zag4w
+    offer_slug: supabase-dev-startup-program
+    title: Supabase Dev startup program
+    summary: Supabase offers qualifying startups free credits toward their open-source Firebase alternative backend-as-a-service.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:02:24.449134Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free credits for open-source Firebase alternative backend-as-a-service
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_17ssq49chdht5whsqf4r6wrwev
+      access_operator_entity_id: ent_17ssq49chdht5whsqf4r6wrwev
+    access:
+      availability: public
+      method: form
+      url: https://supabase.com/startup
+    source_ids:
+      - src_8tj46hy3hpz740ambb4cktm8fd
