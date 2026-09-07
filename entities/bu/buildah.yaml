@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_wzn870m4j4m12dz5c1b3737e5y
+  slug: buildah
+  name: Buildah
+  domains:
+    - value: buildah.io
+      role: primary
+      valid_from: 2026-09-07T15:20:05.474023Z
+  category: devtools-other
+profile:
+  summary: Buildah offers qualifying startups free or discounted access to their open-source container image building tool.
+  links:
+    site: https://buildah.io
+  description: Buildah offers qualifying startups free or discounted access to their open-source container image building tool.
+sources:
+  - source_id: src_c22n2f0d9k9k9046cy599xfzeq
+    url: https://buildah.io/startup
+programs: []
+offers:
+  - offer_id: off_3dawakpc39ezj4gpzcadk51d8t
+    offer_slug: buildah-startup-program
+    title: Buildah startup program
+    summary: Buildah offers qualifying startups free or discounted access to their open-source container image building tool.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:20:05.474023Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source container image building tool
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_wzn870m4j4m12dz5c1b3737e5y
+      access_operator_entity_id: ent_wzn870m4j4m12dz5c1b3737e5y
+    access:
+      availability: public
+      method: form
+      url: https://buildah.io/startup
+    source_ids:
+      - src_c22n2f0d9k9k9046cy599xfzeq
