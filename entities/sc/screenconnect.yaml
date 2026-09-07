@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rvwja6nqyvevyg3wbwanyy4rpr
+  slug: screenconnect
+  name: ScreenConnect
+  domains:
+    - value: screenconnect.com
+      role: primary
+      valid_from: 2026-09-07T15:41:36.970750Z
+  category: communication
+profile:
+  summary: ScreenConnect offers qualifying startups free or discounted access to their remote support and meeting platform.
+  links:
+    site: https://screenconnect.com
+  description: ScreenConnect offers qualifying startups free or discounted access to their remote support and meeting platform.
+sources:
+  - source_id: src_yjzj6pyet3z4b0dc7fpspqyhvw
+    url: https://screenconnect.com/startup
+programs: []
+offers:
+  - offer_id: off_dq3z9ffcv61kf0s1n2eymwam3v
+    offer_slug: screenconnect-startup-program
+    title: ScreenConnect startup program
+    summary: ScreenConnect offers qualifying startups free or discounted access to their remote support and meeting platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:41:36.970750Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their remote support and meeting platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_rvwja6nqyvevyg3wbwanyy4rpr
+      access_operator_entity_id: ent_rvwja6nqyvevyg3wbwanyy4rpr
+    access:
+      availability: public
+      method: form
+      url: https://screenconnect.com/startup
+    source_ids:
+      - src_yjzj6pyet3z4b0dc7fpspqyhvw
