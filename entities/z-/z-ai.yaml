@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_837rrfndx4xapagacaqxs6s3sz
+  slug: z-ai
+  name: Z.ai
+  domains:
+    - value: z.ai
+      role: primary
+      valid_from: 2026-09-07T16:08:28.238865Z
+  category: productivity
+profile:
+  summary: Z.ai offers qualifying startups free or discounted access to their AI-powered productivity and workflow platform.
+  links:
+    site: https://z.ai
+  description: Z.ai offers qualifying startups free or discounted access to their AI-powered productivity and workflow platform.
+sources:
+  - source_id: src_6m42c19vcs8fmnmp4jm869txgs
+    url: https://z.ai/startup
+programs: []
+offers:
+  - offer_id: off_97vbn1xwhpz6dws3kqapccezeh
+    offer_slug: z-ai-startup-program
+    title: Z.ai startup program
+    summary: Z.ai offers qualifying startups free or discounted access to their AI-powered productivity and workflow platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:08:28.238865Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI-powered productivity and workflow platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_837rrfndx4xapagacaqxs6s3sz
+      access_operator_entity_id: ent_837rrfndx4xapagacaqxs6s3sz
+    access:
+      availability: public
+      method: form
+      url: https://z.ai/startup
+    source_ids:
+      - src_6m42c19vcs8fmnmp4jm869txgs
