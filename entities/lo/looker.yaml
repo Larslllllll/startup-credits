@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_p11bnjsr9ngdmsxxbp2b84g3nc
+  slug: looker
+  name: Looker
+  domains:
+    - value: looker.com
+      role: primary
+      valid_from: 2026-09-07T15:37:49.621303Z
+  category: data-analytics
+profile:
+  summary: Looker offers qualifying startups free or discounted access to their business intelligence and data analytics platform.
+  links:
+    site: https://looker.com
+  description: Looker offers qualifying startups free or discounted access to their business intelligence and data analytics platform.
+sources:
+  - source_id: src_e8jnasnqfdekmr023pq5vwy52r
+    url: https://looker.com/startup
+programs: []
+offers:
+  - offer_id: off_3bz5wfz4dnsan884ssqg0kfegz
+    offer_slug: looker-startup-program
+    title: Looker startup program
+    summary: Looker offers qualifying startups free or discounted access to their business intelligence and data analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:37:49.621303Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their business intelligence and data analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_p11bnjsr9ngdmsxxbp2b84g3nc
+      access_operator_entity_id: ent_p11bnjsr9ngdmsxxbp2b84g3nc
+    access:
+      availability: public
+      method: form
+      url: https://looker.com/startup
+    source_ids:
+      - src_e8jnasnqfdekmr023pq5vwy52r
