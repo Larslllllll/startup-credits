@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_v4g1ytm74mnb1j3g121b5p3vhd
+  slug: convertkit
+  name: ConvertKit
+  domains:
+    - value: convertkit.com
+      role: primary
+      valid_from: 2026-09-07T15:12:04.419633Z
+  category: marketing
+profile:
+  summary: ConvertKit offers qualifying startups free or discounted access to their email marketing and creator platform.
+  links:
+    site: https://convertkit.com
+  description: ConvertKit offers qualifying startups free or discounted access to their email marketing and creator platform.
+sources:
+  - source_id: src_rshntpk7cyv2hz0g2mbsxesa52
+    url: https://convertkit.com/startup
+programs: []
+offers:
+  - offer_id: off_w7j18rsc7ahdms4rdrv8k4t503
+    offer_slug: convertkit-startup-program
+    title: ConvertKit startup program
+    summary: ConvertKit offers qualifying startups free or discounted access to their email marketing and creator platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:12:04.419633Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to email marketing and creator platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_v4g1ytm74mnb1j3g121b5p3vhd
+      access_operator_entity_id: ent_v4g1ytm74mnb1j3g121b5p3vhd
+    access:
+      availability: public
+      method: form
+      url: https://convertkit.com/startup
+    source_ids:
+      - src_rshntpk7cyv2hz0g2mbsxesa52
