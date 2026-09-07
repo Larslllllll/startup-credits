@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9vjdtc3ketk1w2dyacf2cnkdg1
+  slug: supabase
+  name: Supabase
+  domains:
+    - value: supabase.com
+      role: primary
+      valid_from: 2026-09-07T14:54:07.727787Z
+  category: databases
+profile:
+  summary: Supabase offers qualifying startups free or discounted access to their open-source Firebase alternative platform.
+  links:
+    site: https://supabase.com
+  description: Supabase offers qualifying startups free or discounted access to their open-source Firebase alternative platform.
+sources:
+  - source_id: src_7rw6w531h3zqg6pza6gsrz77mx
+    url: https://supabase.com/startup
+programs: []
+offers:
+  - offer_id: off_fcshqkednv5w61rwgws8d2y3dt
+    offer_slug: supabase-startup-program
+    title: Supabase startup program
+    summary: Supabase offers qualifying startups free or discounted access to their open-source Firebase alternative platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:54:07.727787Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source Firebase alternative platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_9vjdtc3ketk1w2dyacf2cnkdg1
+      access_operator_entity_id: ent_9vjdtc3ketk1w2dyacf2cnkdg1
+    access:
+      availability: public
+      method: form
+      url: https://supabase.com/startup
+    source_ids:
+      - src_7rw6w531h3zqg6pza6gsrz77mx
