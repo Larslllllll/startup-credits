@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_z2hedf794wjt2nbm8q2h78m01a
+  slug: k8s
+  name: Kubernetes
+  domains:
+    - value: kubernetes.io
+      role: primary
+      valid_from: 2026-09-07T15:19:49.747928Z
+  category: devtools-other
+profile:
+  summary: Kubernetes offers qualifying startups free or discounted access to their open-source container orchestration platform.
+  links:
+    site: https://kubernetes.io
+  description: Kubernetes offers qualifying startups free or discounted access to their open-source container orchestration platform.
+sources:
+  - source_id: src_38aty6ewbs503bxvp140s80jsg
+    url: https://kubernetes.io/startup
+programs: []
+offers:
+  - offer_id: off_7xtfmgxc6p699kaabwjq5x108a
+    offer_slug: k8s-startup-program
+    title: Kubernetes startup program
+    summary: Kubernetes offers qualifying startups free or discounted access to their open-source container orchestration platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:19:49.747928Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source container orchestration platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_z2hedf794wjt2nbm8q2h78m01a
+      access_operator_entity_id: ent_z2hedf794wjt2nbm8q2h78m01a
+    access:
+      availability: public
+      method: form
+      url: https://kubernetes.io/startup
+    source_ids:
+      - src_38aty6ewbs503bxvp140s80jsg
