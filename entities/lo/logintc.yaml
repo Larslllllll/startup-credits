@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_qcs7f40g0n213msm2hd08yd3hk
+  slug: logintc
+  name: LoginTC
+  domains:
+    - value: logintc.com
+      role: primary
+      valid_from: 2026-09-07T15:09:27.728510Z
+  category: auth-security
+profile:
+  summary: LoginTC offers qualifying startups free or discounted access to their multi-factor authentication platform.
+  links:
+    site: https://logintc.com
+  description: LoginTC offers qualifying startups free or discounted access to their multi-factor authentication platform.
+sources:
+  - source_id: src_0jmjvzm3sx8hqdmj0vgwetj15f
+    url: https://logintc.com/startup
+programs: []
+offers:
+  - offer_id: off_3xs06rpz8057e5440a3nhwc4d4
+    offer_slug: logintc-startup-program
+    title: LoginTC startup program
+    summary: LoginTC offers qualifying startups free or discounted access to their multi-factor authentication platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:09:27.728510Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to multi-factor authentication platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_qcs7f40g0n213msm2hd08yd3hk
+      access_operator_entity_id: ent_qcs7f40g0n213msm2hd08yd3hk
+    access:
+      availability: public
+      method: form
+      url: https://logintc.com/startup
+    source_ids:
+      - src_0jmjvzm3sx8hqdmj0vgwetj15f
