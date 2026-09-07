@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_17zmk3apj6sezqsxn27nevrhzh
+  slug: tldv
+  name: tl;dv
+  domains:
+    - value: tldv.io
+      role: primary
+      valid_from: 2026-09-07T16:00:05.551947Z
+  category: ai-ml
+profile:
+  summary: tl;dv offers qualifying startups free or discounted access to their AI meeting recording and transcription platform.
+  links:
+    site: https://tldv.io
+  description: tl;dv offers qualifying startups free or discounted access to their AI meeting recording and transcription platform.
+sources:
+  - source_id: src_n8ptnqgns96f1sgy68z6g7qxjq
+    url: https://tldv.io/startup
+programs: []
+offers:
+  - offer_id: off_2gg0abm6a9dxtf0z555p25awdp
+    offer_slug: tldv-startup-program
+    title: tl;dv startup program
+    summary: tl;dv offers qualifying startups free or discounted access to their AI meeting recording and transcription platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:00:05.551947Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI meeting recording and transcription platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_17zmk3apj6sezqsxn27nevrhzh
+      access_operator_entity_id: ent_17zmk3apj6sezqsxn27nevrhzh
+    access:
+      availability: public
+      method: form
+      url: https://tldv.io/startup
+    source_ids:
+      - src_n8ptnqgns96f1sgy68z6g7qxjq
