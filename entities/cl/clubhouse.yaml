@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_avyw4tkr604kg7q0jv3z3j0w04
+  slug: clubhouse
+  name: Clubhouse
+  domains:
+    - value: clubhouse.io
+      role: primary
+      valid_from: 2026-09-07T15:38:39.238090Z
+  category: productivity
+profile:
+  summary: Clubhouse offers qualifying startups free or discounted access to their project management and collaboration platform.
+  links:
+    site: https://clubhouse.io
+  description: Clubhouse offers qualifying startups free or discounted access to their project management and collaboration platform.
+sources:
+  - source_id: src_b897n3hxqbj7k30j7pmj48k0e0
+    url: https://clubhouse.io/startup
+programs: []
+offers:
+  - offer_id: off_f70mej87s619yfp4fx96sc5xrv
+    offer_slug: clubhouse-startup-program
+    title: Clubhouse startup program
+    summary: Clubhouse offers qualifying startups free or discounted access to their project management and collaboration platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:38:39.238090Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their project management and collaboration platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_avyw4tkr604kg7q0jv3z3j0w04
+      access_operator_entity_id: ent_avyw4tkr604kg7q0jv3z3j0w04
+    access:
+      availability: public
+      method: form
+      url: https://clubhouse.io/startup
+    source_ids:
+      - src_b897n3hxqbj7k30j7pmj48k0e0
