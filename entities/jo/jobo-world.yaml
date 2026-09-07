@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_jqhjkha25m4qsw3nke08mqr1fv
+  slug: jobo-world
+  name: Jobo World
+  domains:
+    - value: jobo.world
+      role: primary
+      valid_from: 2026-09-07T14:58:21.620532Z
+  category: hr-people
+profile:
+  summary: Jobo World offers qualifying startups a startup program with free or discounted access to their career and job-matching platform.
+  links:
+    site: https://jobo.world
+  description: Jobo World offers qualifying startups a startup program with free or discounted access to their career and job-matching platform.
+sources:
+  - source_id: src_dt29na3cr9fq5jxpk1x08r9yqn
+    url: https://jobo.world/startup
+programs: []
+offers:
+  - offer_id: off_046ge3av391ps2999sx3psk3ab
+    offer_slug: jobo-world-startup-program
+    title: Jobo World startup program
+    summary: Jobo World offers qualifying startups a startup program with free or discounted access to their career and job-matching platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:58:21.620532Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Startup program with free or discounted access to career and job-matching platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_jqhjkha25m4qsw3nke08mqr1fv
+      access_operator_entity_id: ent_jqhjkha25m4qsw3nke08mqr1fv
+    access:
+      availability: public
+      method: form
+      url: https://jobo.world/startup
+    source_ids:
+      - src_dt29na3cr9fq5jxpk1x08r9yqn
