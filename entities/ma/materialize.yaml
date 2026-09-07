@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_hnz6zry98h62k3k17f78hxj9rj
+  slug: materialize
+  name: Materialize
+  domains:
+    - value: materialize.com
+      role: primary
+      valid_from: 2026-09-07T15:02:41.635021Z
+  category: databases
+profile:
+  summary: Materialize offers qualifying startups free or discounted access to their streaming SQL database platform.
+  links:
+    site: https://materialize.com
+  description: Materialize offers qualifying startups free or discounted access to their streaming SQL database platform.
+sources:
+  - source_id: src_kttnrp1kj4437pweg853fqt8ma
+    url: https://materialize.com/startup
+programs: []
+offers:
+  - offer_id: off_t48fqf5wfpfxvc6vzgxzc1fae6
+    offer_slug: materialize-startup-program
+    title: Materialize startup program
+    summary: Materialize offers qualifying startups free or discounted access to their streaming SQL database platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:02:41.635021Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to streaming SQL database platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_hnz6zry98h62k3k17f78hxj9rj
+      access_operator_entity_id: ent_hnz6zry98h62k3k17f78hxj9rj
+    access:
+      availability: public
+      method: form
+      url: https://materialize.com/startup
+    source_ids:
+      - src_kttnrp1kj4437pweg853fqt8ma
