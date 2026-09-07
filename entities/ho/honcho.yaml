@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_33pkcfgx4yef72j94jj2cf10nr
+  slug: honcho
+  name: Honcho
+  domains:
+    - value: honcho.dev
+      role: primary
+      valid_from: 2026-09-07T14:38:22.373232Z
+  category: commerce
+profile:
+  summary: Honcho offers qualifying startups free access to their e-commerce platform for 6 months.
+  links:
+    site: https://honcho.dev
+  description: Honcho is an e-commerce platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_m4v7387b3117zvc7wm45axyn4e
+    url: https://honcho.dev/startup
+programs: []
+offers:
+  - offer_id: off_23qvrp4tk65cpn4324sh83xy8z
+    offer_slug: honcho-startup-program
+    title: Honcho startup program
+    summary: Qualifying startups receive free access to the Honcho e-commerce platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:38:22.373232Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to e-commerce platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_33pkcfgx4yef72j94jj2cf10nr
+      access_operator_entity_id: ent_33pkcfgx4yef72j94jj2cf10nr
+    access:
+      availability: public
+      method: form
+      url: https://honcho.dev/startup
+    source_ids:
+      - src_m4v7387b3117zvc7wm45axyn4e
