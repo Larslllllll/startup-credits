@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_vddm177nr1mfmac2wmb7ewhc55
+  slug: orientdb
+  name: OrientDB
+  domains:
+    - value: orientdb.com
+      role: primary
+      valid_from: 2026-09-07T15:27:55.097122Z
+  category: databases
+profile:
+  summary: OrientDB offers qualifying startups free or discounted access to their open-source multi-model database platform.
+  links:
+    site: https://orientdb.com
+  description: OrientDB offers qualifying startups free or discounted access to their open-source multi-model database platform.
+sources:
+  - source_id: src_jev5psxr11wh0xdpkwwd3pyn9d
+    url: https://orientdb.com/startup
+programs: []
+offers:
+  - offer_id: off_hbt84d8tb2k0t7r9trsspppn9y
+    offer_slug: orientdb-startup-program
+    title: OrientDB startup program
+    summary: OrientDB offers qualifying startups free or discounted access to their open-source multi-model database platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:27:55.097122Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source multi-model database platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_vddm177nr1mfmac2wmb7ewhc55
+      access_operator_entity_id: ent_vddm177nr1mfmac2wmb7ewhc55
+    access:
+      availability: public
+      method: form
+      url: https://orientdb.com/startup
+    source_ids:
+      - src_jev5psxr11wh0xdpkwwd3pyn9d
