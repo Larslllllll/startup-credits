@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_az83bygwerm9v1h3h8hk5de5xb
+  slug: baichuan2
+  name: Baichuan 2
+  domains:
+    - value: baichuan-ai.com
+      role: primary
+      valid_from: 2026-09-07T16:16:18.878265Z
+  category: ai-ml
+profile:
+  summary: Baichuan 2 offers qualifying startups free or discounted access to their Chinese open-source LLM platform.
+  links:
+    site: https://baichuan-ai.com
+  description: Baichuan 2 offers qualifying startups free or discounted access to their Chinese open-source LLM platform.
+sources:
+  - source_id: src_1zny977hegqfyqzcvxwc98wmz4
+    url: https://baichuan-ai.com/startup
+programs: []
+offers:
+  - offer_id: off_d1jbrwt50g9005r7pwhqqxe0nf
+    offer_slug: baichuan2-startup-program
+    title: Baichuan 2 startup program
+    summary: Baichuan 2 offers qualifying startups free or discounted access to their Chinese open-source LLM platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:16:18.878265Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to Chinese open-source LLM platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_az83bygwerm9v1h3h8hk5de5xb
+      access_operator_entity_id: ent_az83bygwerm9v1h3h8hk5de5xb
+    access:
+      availability: public
+      method: form
+      url: https://baichuan-ai.com/startup
+    source_ids:
+      - src_1zny977hegqfyqzcvxwc98wmz4
