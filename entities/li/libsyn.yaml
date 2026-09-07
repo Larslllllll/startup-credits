@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_58me55hc9sk1a04kf9sem5m45v
+  slug: libsyn
+  name: Libsyn
+  domains:
+    - value: libsyn.com
+      role: primary
+      valid_from: 2026-09-07T15:44:15.828299Z
+  category: communication
+profile:
+  summary: Libsyn offers qualifying startups free or discounted access to their podcast hosting and distribution platform.
+  links:
+    site: https://libsyn.com
+  description: Libsyn offers qualifying startups free or discounted access to their podcast hosting and distribution platform.
+sources:
+  - source_id: src_9v099mhzewd81vnj9fetf3wf87
+    url: https://libsyn.com/startup
+programs: []
+offers:
+  - offer_id: off_g270ze5jth5rsbca87h6e146ya
+    offer_slug: libsyn-startup-program
+    title: Libsyn startup program
+    summary: Libsyn offers qualifying startups free or discounted access to their podcast hosting and distribution platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:44:15.828299Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their podcast hosting and distribution platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_58me55hc9sk1a04kf9sem5m45v
+      access_operator_entity_id: ent_58me55hc9sk1a04kf9sem5m45v
+    access:
+      availability: public
+      method: form
+      url: https://libsyn.com/startup
+    source_ids:
+      - src_9v099mhzewd81vnj9fetf3wf87
