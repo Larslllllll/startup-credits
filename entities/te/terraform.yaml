@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3qemv89smgpxwdvgm23c0n7xjf
+  slug: terraform
+  name: Terraform
+  domains:
+    - value: terraform.io
+      role: primary
+      valid_from: 2026-09-07T15:20:21.262411Z
+  category: devtools-other
+profile:
+  summary: Terraform offers qualifying startups free or discounted access to their infrastructure as code platform.
+  links:
+    site: https://terraform.io
+  description: Terraform offers qualifying startups free or discounted access to their infrastructure as code platform.
+sources:
+  - source_id: src_kcast87amabb1m7qsj7qgbeyp9
+    url: https://terraform.io/startup
+programs: []
+offers:
+  - offer_id: off_62ttx2707agzq3v0d6cdgt4mk9
+    offer_slug: terraform-startup-program
+    title: Terraform startup program
+    summary: Terraform offers qualifying startups free or discounted access to their infrastructure as code platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:20:21.262411Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their infrastructure as code platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3qemv89smgpxwdvgm23c0n7xjf
+      access_operator_entity_id: ent_3qemv89smgpxwdvgm23c0n7xjf
+    access:
+      availability: public
+      method: form
+      url: https://terraform.io/startup
+    source_ids:
+      - src_kcast87amabb1m7qsj7qgbeyp9
