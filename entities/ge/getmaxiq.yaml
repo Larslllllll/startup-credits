@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ev5rzns816ss6wceh895xxssgf
+  slug: getmaxiq
+  name: GetMaxIQ
+  domains:
+    - value: getmaxiq.com
+      role: primary
+      valid_from: 2026-09-07T14:23:47.746219Z
+  category: marketing
+profile:
+  summary: GetMaxIQ offers qualifying startups free access to their marketing intelligence and competitive analytics platform for 6 months.
+  links:
+    site: https://getmaxiq.com
+  description: GetMaxIQ is a marketing intelligence and competitive analytics platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_ct9hfp66e89e6f2jskhz7jda25
+    url: https://getmaxiq.com/startup
+programs: []
+offers:
+  - offer_id: off_wkyk0bgz61j4hc773c202km4jm
+    offer_slug: getmaxiq-startup-program
+    title: GetMaxIQ startup program
+    summary: Qualifying startups receive free access to the GetMaxIQ marketing intelligence platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:23:47.746219Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to marketing intelligence and competitive analytics platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ev5rzns816ss6wceh895xxssgf
+      access_operator_entity_id: ent_ev5rzns816ss6wceh895xxssgf
+    access:
+      availability: public
+      method: form
+      url: https://getmaxiq.com/startup
+    source_ids:
+      - src_ct9hfp66e89e6f2jskhz7jda25
