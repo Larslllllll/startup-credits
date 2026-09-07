@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_wbdayk0gtzvcwrf0gjr4vqwt4n
+  slug: tunein
+  name: TuneIn
+  domains:
+    - value: tunein.com
+      role: primary
+      valid_from: 2026-09-07T15:45:41.314452Z
+  category: communication
+profile:
+  summary: TuneIn offers qualifying startups free or discounted access to their live radio and audio streaming platform.
+  links:
+    site: https://tunein.com
+  description: TuneIn offers qualifying startups free or discounted access to their live radio and audio streaming platform.
+sources:
+  - source_id: src_75r91naftks6c2qf134b31m9a6
+    url: https://tunein.com/startup
+programs: []
+offers:
+  - offer_id: off_ybyhhkkefpgy562hms3jhp2key
+    offer_slug: tunein-startup-program
+    title: TuneIn startup program
+    summary: TuneIn offers qualifying startups free or discounted access to their live radio and audio streaming platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:45:41.314452Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their live radio and audio streaming platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_wbdayk0gtzvcwrf0gjr4vqwt4n
+      access_operator_entity_id: ent_wbdayk0gtzvcwrf0gjr4vqwt4n
+    access:
+      availability: public
+      method: form
+      url: https://tunein.com/startup
+    source_ids:
+      - src_75r91naftks6c2qf134b31m9a6
