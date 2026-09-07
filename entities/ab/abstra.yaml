@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_8tv79931f6fafx9p961f9mpwwj
+  slug: abstra
+  name: Abstra
+  domains:
+    - value: abstra.io
+      role: primary
+      valid_from: 2026-09-07T12:55:54.893939Z
+  category: devtools-other
+profile:
+  summary: Abstra is a workflow automation platform offering early-stage companies 50% off the Professional plan for six months plus startup support and growth consulting.
+  links:
+    site: https://abstra.io
+  description: Abstra is a Python-based workflow automation platform. Their Startup Discount Program offers qualifying companies (less than two years old, under $1M annual revenue) 50% off the Professional plan for six months, dedicated startup support, community access, and growth consulting.
+sources:
+  - source_id: src_3x7ypttecs4879km6m04ddhy6p
+    url: https://abstra.io/pricing
+programs: []
+offers:
+  - offer_id: off_ccwkzzfykd3jjsqh7exj94j08a
+    offer_slug: abstra-startup-discount-program
+    title: Abstra Startup Discount Program
+    summary: Early-stage companies receive 50% off the Abstra Professional plan for six months, plus startup support and growth consulting.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T12:55:54.893939Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 50% off the Professional plan for six months plus dedicated startup support and growth consulting
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage company less than two years old and under $1M in annual revenue.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_8tv79931f6fafx9p961f9mpwwj
+      access_operator_entity_id: ent_8tv79931f6fafx9p961f9mpwwj
+    access:
+      availability: public
+      method: form
+      url: https://abstra.io/pricing
+    source_ids:
+      - src_3x7ypttecs4879km6m04ddhy6p
