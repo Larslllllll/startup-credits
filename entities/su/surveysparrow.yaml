@@ -1,0 +1,52 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_2gj9ghat2r21karqjygc3pjp1t
+  slug: surveysparrow
+  name: SurveySparrow
+  domains:
+    - value: surveysparrow.com
+      role: primary
+      valid_from: 2026-09-07T13:22:22.956383Z
+  category: productivity
+profile:
+  summary: SurveySparrow's SaaS Startup Program offers $2,000 in credits for a $500 payment, usable within 18 months, for eligible startups under 2 years old with up to 50 employees.
+  links:
+    site: https://surveysparrow.com
+  description: SurveySparrow is a survey and customer feedback platform. Their SaaS Startup Program offers $2,000 in non-refundable credits for a $500 payment, valid for 18 months, for eligible startups that are legally registered, under 2 years old, and have 50 or fewer employees. Enterprise and higher plans are excluded.
+sources:
+  - source_id: src_4f74b3cqrt6b6q6pnrs2maps40
+    url: https://surveysparrow.com/saas-startup-program/
+programs: []
+offers:
+  - offer_id: off_r9mv8rpsrwra2mdkyptvaqrawx
+    offer_slug: surveysparrow-saas-startup-program
+    title: SurveySparrow SaaS Startup Program
+    summary: $2,000 in SurveySparrow credits for a $500 payment, valid for 18 months. For startups under 2 years with ≤50 employees.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:22:22.956383Z
+    economics:
+      consideration:
+        kind: fixed
+        amount:
+          minor_units: 50000
+          currency: USD
+      benefits:
+        - benefit_id: ben_primary
+          description: $2,000 in SurveySparrow credits for $500 (net $1,500 value), valid for 18 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a legally registered startup under 2 years old with 50 or fewer employees. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_2gj9ghat2r21karqjygc3pjp1t
+      access_operator_entity_id: ent_2gj9ghat2r21karqjygc3pjp1t
+    access:
+      availability: public
+      method: form
+      url: https://surveysparrow.com/saas-startup-program/
+    source_ids:
+      - src_4f74b3cqrt6b6q6pnrs2maps40
