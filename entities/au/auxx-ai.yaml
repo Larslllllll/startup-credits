@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_m12705s9s0egsmqq7q3cjya2gn
+  slug: auxx-ai
+  name: auxx.AI
+  domains:
+    - value: auxx.ai
+      role: primary
+      valid_from: 2026-09-07T14:57:15.629103Z
+  category: ai-ml
+profile:
+  summary: auxx.AI offers qualifying startups free or discounted access to their AI-powered sales and marketing automation platform.
+  links:
+    site: https://auxx.ai
+  description: auxx.AI offers qualifying startups free or discounted access to their AI-powered sales and marketing automation platform.
+sources:
+  - source_id: src_5yrrwcd3xv04wwkmd2zc9bm58q
+    url: https://auxx.ai/startup
+programs: []
+offers:
+  - offer_id: off_gt1jh94c13hhmh40hh5smak20w
+    offer_slug: auxx-ai-startup-program
+    title: auxx.AI startup program
+    summary: auxx.AI offers qualifying startups free or discounted access to their AI-powered sales and marketing automation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:57:15.629103Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI-powered sales and marketing automation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_m12705s9s0egsmqq7q3cjya2gn
+      access_operator_entity_id: ent_m12705s9s0egsmqq7q3cjya2gn
+    access:
+      availability: public
+      method: form
+      url: https://auxx.ai/startup
+    source_ids:
+      - src_5yrrwcd3xv04wwkmd2zc9bm58q
