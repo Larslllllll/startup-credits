@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3gnfgjypbffdz6knxdt43gm1ew
+  slug: firstofficer
+  name: FirstOfficer
+  domains:
+    - value: firstofficer.io
+      role: primary
+      valid_from: 2026-09-07T15:17:25.375821Z
+  category: finance-accounting
+profile:
+  summary: FirstOfficer offers qualifying startups free or discounted access to their SaaS financial operations and reporting platform.
+  links:
+    site: https://firstofficer.io
+  description: FirstOfficer offers qualifying startups free or discounted access to their SaaS financial operations and reporting platform.
+sources:
+  - source_id: src_cncg6jy89vt6rmsyarsf5em854
+    url: https://firstofficer.io/startup
+programs: []
+offers:
+  - offer_id: off_cg0s9ch72mpkaf265ts50hew05
+    offer_slug: firstofficer-startup-program
+    title: FirstOfficer startup program
+    summary: FirstOfficer offers qualifying startups free or discounted access to their SaaS financial operations and reporting platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:17:25.375821Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their SaaS financial operations and reporting platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3gnfgjypbffdz6knxdt43gm1ew
+      access_operator_entity_id: ent_3gnfgjypbffdz6knxdt43gm1ew
+    access:
+      availability: public
+      method: form
+      url: https://firstofficer.io/startup
+    source_ids:
+      - src_cncg6jy89vt6rmsyarsf5em854
