@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ycztx1dhshfgt27x0k5e5w6a1p
+  slug: ganttproject
+  name: GanttProject
+  domains:
+    - value: ganttproject.org
+      role: primary
+      valid_from: 2026-09-07T15:51:05.042687Z
+  category: productivity
+profile:
+  summary: GanttProject offers qualifying startups free or discounted access to their open-source project scheduling platform.
+  links:
+    site: https://ganttproject.org
+  description: GanttProject offers qualifying startups free or discounted access to their open-source project scheduling platform.
+sources:
+  - source_id: src_bkh9e5wd7b5vhg9n65nnfb1xqt
+    url: https://ganttproject.org/startup
+programs: []
+offers:
+  - offer_id: off_t45c44zyz5vnsj92e1crgzsxvz
+    offer_slug: ganttproject-startup-program
+    title: GanttProject startup program
+    summary: GanttProject offers qualifying startups free or discounted access to their open-source project scheduling platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:51:05.042687Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source project scheduling platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ycztx1dhshfgt27x0k5e5w6a1p
+      access_operator_entity_id: ent_ycztx1dhshfgt27x0k5e5w6a1p
+    access:
+      availability: public
+      method: form
+      url: https://ganttproject.org/startup
+    source_ids:
+      - src_bkh9e5wd7b5vhg9n65nnfb1xqt
