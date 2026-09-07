@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_mcwv2mepp5se8perhm71m9tgg9
+  slug: tuple-startup
+  name: Tuple
+  domains:
+    - value: tuple.app
+      role: primary
+      valid_from: 2026-09-07T16:09:00.027316Z
+  category: devtools-other
+profile:
+  summary: Tuple offers qualifying startups free or discounted access to their pair programming and remote collaboration platform.
+  links:
+    site: https://tuple.app
+  description: Tuple offers qualifying startups free or discounted access to their pair programming and remote collaboration platform.
+sources:
+  - source_id: src_0hvax4qsmz0ttrmsgpqx9k1rq8
+    url: https://tuple.app/startup
+programs: []
+offers:
+  - offer_id: off_5z46dtbb253yspx48n010gd9vh
+    offer_slug: tuple-startup-startup-program
+    title: Tuple startup program
+    summary: Tuple offers qualifying startups free or discounted access to their pair programming and remote collaboration platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:09:00.027316Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to pair programming and remote collaboration platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_mcwv2mepp5se8perhm71m9tgg9
+      access_operator_entity_id: ent_mcwv2mepp5se8perhm71m9tgg9
+    access:
+      availability: public
+      method: form
+      url: https://tuple.app/startup
+    source_ids:
+      - src_0hvax4qsmz0ttrmsgpqx9k1rq8
