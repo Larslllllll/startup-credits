@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_dkxemewgv8exqpgk39dzjsw73k
+  slug: coefficient-sheets
+  name: Coefficient Sheets
+  domains:
+    - value: coefficient.io
+      role: primary
+      valid_from: 2026-09-07T16:40:35.051175Z
+  category: productivity
+profile:
+  summary: Coefficient offers qualifying startups free or discounted access to their financial planning and spreadsheet data platform.
+  links:
+    site: https://coefficient.io
+  description: Coefficient offers qualifying startups free or discounted access to their financial planning and spreadsheet data platform.
+sources:
+  - source_id: src_tqcezvd73a20eh3b0fst69jwbf
+    url: https://coefficient.io/startup
+programs: []
+offers:
+  - offer_id: off_2v5brpw9gq8bv0c9a1vytd8r8j
+    offer_slug: coefficient-sheets-startup-program
+    title: Coefficient Sheets startup program
+    summary: Coefficient offers qualifying startups free or discounted access to their financial planning and spreadsheet data platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:40:35.051175Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to financial planning and spreadsheet data platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_dkxemewgv8exqpgk39dzjsw73k
+      access_operator_entity_id: ent_dkxemewgv8exqpgk39dzjsw73k
+    access:
+      availability: public
+      method: form
+      url: https://coefficient.io/startup
+    source_ids:
+      - src_tqcezvd73a20eh3b0fst69jwbf
