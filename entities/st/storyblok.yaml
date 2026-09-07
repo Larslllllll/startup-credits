@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_w2a9z611bcrrh9fd1ghwnbph5a
+  slug: storyblok
+  name: Storyblok
+  domains:
+    - value: storyblok.com
+      role: primary
+      valid_from: 2026-09-07T15:11:30.733367Z
+  category: devtools-other
+profile:
+  summary: Storyblok offers qualifying startups free or discounted access to their headless CMS and visual page builder platform.
+  links:
+    site: https://storyblok.com
+  description: Storyblok offers qualifying startups free or discounted access to their headless CMS and visual page builder platform.
+sources:
+  - source_id: src_jry6m0q07hxmajscrzvae5k7ez
+    url: https://storyblok.com/startup
+programs: []
+offers:
+  - offer_id: off_725nkkrbxsbaebdvh3nbk5wvev
+    offer_slug: storyblok-startup-program
+    title: Storyblok startup program
+    summary: Storyblok offers qualifying startups free or discounted access to their headless CMS and visual page builder platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:11:30.733367Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to headless CMS and visual page builder platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_w2a9z611bcrrh9fd1ghwnbph5a
+      access_operator_entity_id: ent_w2a9z611bcrrh9fd1ghwnbph5a
+    access:
+      availability: public
+      method: form
+      url: https://storyblok.com/startup
+    source_ids:
+      - src_jry6m0q07hxmajscrzvae5k7ez
