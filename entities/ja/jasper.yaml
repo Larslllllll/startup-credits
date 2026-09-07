@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_z625kp63dyp6kxx30vt8eavd0g
+  slug: jasper
+  name: Jasper
+  domains:
+    - value: jasper.ai
+      role: primary
+      valid_from: 2026-09-07T15:23:25.262420Z
+  category: ai-ml
+profile:
+  summary: Jasper offers qualifying startups free or discounted access to their AI content creation and marketing platform.
+  links:
+    site: https://jasper.ai
+  description: Jasper offers qualifying startups free or discounted access to their AI content creation and marketing platform.
+sources:
+  - source_id: src_z8mxhy4xrzpchcwz11vpy1e1ty
+    url: https://jasper.ai/startup
+programs: []
+offers:
+  - offer_id: off_37vgxc92deqrjrt9jgb9jyehm1
+    offer_slug: jasper-startup-program
+    title: Jasper startup program
+    summary: Jasper offers qualifying startups free or discounted access to their AI content creation and marketing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:23:25.262420Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI content creation and marketing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_z625kp63dyp6kxx30vt8eavd0g
+      access_operator_entity_id: ent_z625kp63dyp6kxx30vt8eavd0g
+    access:
+      availability: public
+      method: form
+      url: https://jasper.ai/startup
+    source_ids:
+      - src_z8mxhy4xrzpchcwz11vpy1e1ty
