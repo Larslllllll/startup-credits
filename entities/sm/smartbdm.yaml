@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_d2hv7d2qzz7zmcncb5sgjz6hwk
+  slug: smartbdm
+  name: SmartBDM
+  domains:
+    - value: smartbdm.ai
+      role: primary
+      valid_from: 2026-09-07T13:04:05.907597Z
+  category: data-analytics
+profile:
+  summary: SmartBDM is a data management platform offering bootstrapped and self-funded startups 50% off the Entry plan for 12 months, billed quarterly upfront with a three-month minimum.
+  links:
+    site: https://www.smartbdm.ai
+  description: SmartBDM is a data management and analytics platform. Their startup program offers bootstrapped and self-funded startups 50% off the Entry plan for 12 months, billed quarterly upfront at INR 2,500/month instead of INR 5,000/month, with a three-month minimum commitment.
+sources:
+  - source_id: src_bgjck8pyg5bktxgh8zn1ffxsv1
+    url: https://www.smartbdm.ai/startups
+programs: []
+offers:
+  - offer_id: off_3kcb2jxrxadk6r2eq2wabg1xvp
+    offer_slug: smartbdm-startup-program
+    title: SmartBDM startup program
+    summary: Bootstrapped and self-funded startups receive 50% off the SmartBDM Entry plan for 12 months, billed quarterly at INR 2,500/month.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:04:05.907597Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 50% off the Entry plan for 12 months, billed quarterly upfront
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a bootstrapped or self-funded startup. Companies with outside funding are not eligible.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_d2hv7d2qzz7zmcncb5sgjz6hwk
+      access_operator_entity_id: ent_d2hv7d2qzz7zmcncb5sgjz6hwk
+    access:
+      availability: public
+      method: form
+      url: https://www.smartbdm.ai/startups
+    source_ids:
+      - src_bgjck8pyg5bktxgh8zn1ffxsv1
