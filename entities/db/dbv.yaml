@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rjrkkses9z41fqt4dkwbx62an0
+  slug: dbv
+  name: DBVisualizer 2
+  domains:
+    - value: dbvis.com
+      role: primary
+      valid_from: 2026-09-07T16:58:16.224710Z
+  category: databases
+profile:
+  summary: DBVisualizer offers qualifying startups free or discounted access to their database management and query platform.
+  links:
+    site: https://dbvis.com
+  description: DBVisualizer offers qualifying startups free or discounted access to their database management and query platform.
+sources:
+  - source_id: src_r5etnje4k0azx4eve2z6phkwsp
+    url: https://dbvis.com/startup
+programs: []
+offers:
+  - offer_id: off_zhetepe5nyj79wb629wdezyzad
+    offer_slug: dbv-startup-program
+    title: DBVisualizer 2 startup program
+    summary: DBVisualizer offers qualifying startups free or discounted access to their database management and query platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:58:16.224710Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to database management and query platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_rjrkkses9z41fqt4dkwbx62an0
+      access_operator_entity_id: ent_rjrkkses9z41fqt4dkwbx62an0
+    access:
+      availability: public
+      method: form
+      url: https://dbvis.com/startup
+    source_ids:
+      - src_r5etnje4k0azx4eve2z6phkwsp
