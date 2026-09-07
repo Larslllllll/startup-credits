@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_kpy95xh2y4zan20cxy24ezavqm
+  slug: erly
+  name: erly
+  domains:
+    - value: erly.app
+      role: primary
+      valid_from: 2026-09-07T14:40:04.394736Z
+  category: hr-people
+profile:
+  summary: erly offers qualifying startups free access to their team building and employee engagement platform for 6 months.
+  links:
+    site: https://erly.app
+  description: erly is a team building and employee engagement platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_tb6aeyfc1088yhxcnc368r0wej
+    url: https://erly.app/startup
+programs: []
+offers:
+  - offer_id: off_qpr4pad3e8enp7j1ghzc453cfv
+    offer_slug: erly-startup-program
+    title: erly startup program
+    summary: Qualifying startups receive free access to the erly team building and employee engagement platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:40:04.394736Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to team building and employee engagement platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_kpy95xh2y4zan20cxy24ezavqm
+      access_operator_entity_id: ent_kpy95xh2y4zan20cxy24ezavqm
+    access:
+      availability: public
+      method: form
+      url: https://erly.app/startup
+    source_ids:
+      - src_tb6aeyfc1088yhxcnc368r0wej
