@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_hrb0nx7r4g8yr9rmcc9tzcek7p
+  slug: supertokens
+  name: SuperTokens
+  domains:
+    - value: supertokens.com
+      role: primary
+      valid_from: 2026-09-07T15:33:52.864402Z
+  category: auth-security
+profile:
+  summary: SuperTokens offers qualifying startups free or discounted access to their open-source authentication platform.
+  links:
+    site: https://supertokens.com
+  description: SuperTokens offers qualifying startups free or discounted access to their open-source authentication platform.
+sources:
+  - source_id: src_74gfte445mbm3mhq3zpk0teb7q
+    url: https://supertokens.com/startup
+programs: []
+offers:
+  - offer_id: off_zq6781s83hr5veath9sf492r5m
+    offer_slug: supertokens-startup-program
+    title: SuperTokens startup program
+    summary: SuperTokens offers qualifying startups free or discounted access to their open-source authentication platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:33:52.864402Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source authentication platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_hrb0nx7r4g8yr9rmcc9tzcek7p
+      access_operator_entity_id: ent_hrb0nx7r4g8yr9rmcc9tzcek7p
+    access:
+      availability: public
+      method: form
+      url: https://supertokens.com/startup
+    source_ids:
+      - src_74gfte445mbm3mhq3zpk0teb7q
