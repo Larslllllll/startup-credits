@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_2kax7d0cp67tyxatxgq6qggc0s
+  slug: pluvo
+  name: Pluvo
+  domains:
+    - value: pluvo.io
+      role: primary
+      valid_from: 2026-09-07T14:25:37.599198Z
+  category: communication
+profile:
+  summary: Pluvo offers qualifying startups free access to their video messaging and asynchronous communication platform for 6 months.
+  links:
+    site: https://pluvo.io
+  description: Pluvo is a video messaging and asynchronous communication platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_8n96x9s1a0nsrb1k5bzdw1rvwe
+    url: https://pluvo.io/startup
+programs: []
+offers:
+  - offer_id: off_pqxr3mqkavaazjw7vrj4fes8gn
+    offer_slug: pluvo-startup-program
+    title: Pluvo startup program
+    summary: Qualifying startups receive free access to the Pluvo video messaging and asynchronous communication platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:25:37.599198Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to video messaging and asynchronous communication platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_2kax7d0cp67tyxatxgq6qggc0s
+      access_operator_entity_id: ent_2kax7d0cp67tyxatxgq6qggc0s
+    access:
+      availability: public
+      method: form
+      url: https://pluvo.io/startup
+    source_ids:
+      - src_8n96x9s1a0nsrb1k5bzdw1rvwe
