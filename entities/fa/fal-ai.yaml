@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ebjn6h3kxee65gzakzraf0zbdf
+  slug: fal-ai
+  name: fal
+  domains:
+    - value: fal.ai
+      role: primary
+      valid_from: 2026-09-07T14:52:31.850938Z
+  category: ai-ml
+profile:
+  summary: fal offers qualifying startups free compute credits toward their AI model training and inference platform.
+  links:
+    site: https://fal.ai
+  description: fal offers qualifying startups free compute credits toward their AI model training and inference platform.
+sources:
+  - source_id: src_hxn7y3sp3c21y33rdhxb82er4r
+    url: https://fal.ai/startup
+programs: []
+offers:
+  - offer_id: off_qkd6t2v20cyjsbk11zwxj211qy
+    offer_slug: fal-ai-startup-program
+    title: fal startup program
+    summary: fal offers qualifying startups free compute credits toward their AI model training and inference platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:52:31.850938Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free compute credits for AI model training and inference platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ebjn6h3kxee65gzakzraf0zbdf
+      access_operator_entity_id: ent_ebjn6h3kxee65gzakzraf0zbdf
+    access:
+      availability: public
+      method: form
+      url: https://fal.ai/startup
+    source_ids:
+      - src_hxn7y3sp3c21y33rdhxb82er4r
