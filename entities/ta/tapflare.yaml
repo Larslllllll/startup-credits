@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_amyfrzr1jszj4zk1jbgs1cshaa
+  slug: tapflare
+  name: Tapflare
+  domains:
+    - value: tapflare.com
+      role: primary
+      valid_from: 2026-09-07T14:18:44.644329Z
+  category: communication
+profile:
+  summary: Tapflare offers qualifying startups free access to their digital business card and networking platform for 6 months.
+  links:
+    site: https://tapflare.com
+  description: Tapflare is a digital business card and networking platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_9sw4svtshjj85wrd72dwyjjmdr
+    url: https://tapflare.com/startup
+programs: []
+offers:
+  - offer_id: off_h9n8nxqtg12pmjb5ysrxf2esa8
+    offer_slug: tapflare-startup-program
+    title: Tapflare startup program
+    summary: Qualifying startups receive free access to the Tapflare digital business card and networking platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:18:44.644329Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to digital business card and networking platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_amyfrzr1jszj4zk1jbgs1cshaa
+      access_operator_entity_id: ent_amyfrzr1jszj4zk1jbgs1cshaa
+    access:
+      availability: public
+      method: form
+      url: https://tapflare.com/startup
+    source_ids:
+      - src_9sw4svtshjj85wrd72dwyjjmdr
