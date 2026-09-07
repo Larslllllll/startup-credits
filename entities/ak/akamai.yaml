@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5vc2ca10522a0ns7n4n4r2tt8a
+  slug: akamai
+  name: Akamai
+  domains:
+    - value: akamai.com
+      role: primary
+      valid_from: 2026-09-07T15:01:11.013435Z
+  category: hosting-infra
+profile:
+  summary: Akamai offers qualifying startups free or discounted access to their CDN and cloud security platform.
+  links:
+    site: https://akamai.com
+  description: Akamai offers qualifying startups free or discounted access to their CDN and cloud security platform.
+sources:
+  - source_id: src_437834xnbrffakn44xjkdf8qyf
+    url: https://akamai.com/startup
+programs: []
+offers:
+  - offer_id: off_hyj7hyxxehg1px34h5zns45g6g
+    offer_slug: akamai-startup-program
+    title: Akamai startup program
+    summary: Akamai offers qualifying startups free or discounted access to their CDN and cloud security platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:01:11.013435Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to CDN and cloud security platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_5vc2ca10522a0ns7n4n4r2tt8a
+      access_operator_entity_id: ent_5vc2ca10522a0ns7n4n4r2tt8a
+    access:
+      availability: public
+      method: form
+      url: https://akamai.com/startup
+    source_ids:
+      - src_437834xnbrffakn44xjkdf8qyf
