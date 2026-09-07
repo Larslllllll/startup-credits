@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_h4zvwgpdxaevtzjj8avcvtyy9g
+  slug: tv2
+  name: Travis CI 2
+  domains:
+    - value: travis-ci.com
+      role: primary
+      valid_from: 2026-09-07T16:59:50.714571Z
+  category: ci-cd
+profile:
+  summary: Travis CI offers qualifying startups free or discounted access to their CI/CD and testing platform.
+  links:
+    site: https://travis-ci.com
+  description: Travis CI offers qualifying startups free or discounted access to their CI/CD and testing platform.
+sources:
+  - source_id: src_re4ed8p2b2kjbz29xepcwma6c4
+    url: https://travis-ci.com/startup
+programs: []
+offers:
+  - offer_id: off_veywydjbfj1fpqwtp7bdppky6x
+    offer_slug: tv2-startup-program
+    title: Travis CI 2 startup program
+    summary: Travis CI offers qualifying startups free or discounted access to their CI/CD and testing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:59:50.714571Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to CI/CD and testing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_h4zvwgpdxaevtzjj8avcvtyy9g
+      access_operator_entity_id: ent_h4zvwgpdxaevtzjj8avcvtyy9g
+    access:
+      availability: public
+      method: form
+      url: https://travis-ci.com/startup
+    source_ids:
+      - src_re4ed8p2b2kjbz29xepcwma6c4
