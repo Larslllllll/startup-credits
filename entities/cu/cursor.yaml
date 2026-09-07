@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6h2x9e35yxppjazrpnb408qj1m
+  slug: cursor
+  name: Cursor
+  domains:
+    - value: cursor.sh
+      role: primary
+      valid_from: 2026-09-07T16:17:51.720617Z
+  category: devtools-other
+profile:
+  summary: Cursor offers qualifying startups free or discounted access to their AI-powered code editor platform.
+  links:
+    site: https://cursor.sh
+  description: Cursor offers qualifying startups free or discounted access to their AI-powered code editor platform.
+sources:
+  - source_id: src_5wfh30z8g9twa2yswfspcf4q6d
+    url: https://cursor.sh/startup
+programs: []
+offers:
+  - offer_id: off_qjgyvk7j3wh455sz18zb7407dd
+    offer_slug: cursor-startup-program
+    title: Cursor startup program
+    summary: Cursor offers qualifying startups free or discounted access to their AI-powered code editor platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:17:51.720617Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI-powered code editor platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_6h2x9e35yxppjazrpnb408qj1m
+      access_operator_entity_id: ent_6h2x9e35yxppjazrpnb408qj1m
+    access:
+      availability: public
+      method: form
+      url: https://cursor.sh/startup
+    source_ids:
+      - src_5wfh30z8g9twa2yswfspcf4q6d
