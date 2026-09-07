@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rrthyz9segsbc5w937gk5ra962
+  slug: atlasflow
+  name: Atlasflow
+  domains:
+    - value: atlasflow.ai
+      role: primary
+      valid_from: 2026-09-07T13:28:16.677339Z
+  category: ai-ml
+profile:
+  summary: Atlasflow offers eligible startups up to $10,000 in Atlasflow usage credits through their Atlasflow for Startups program.
+  links:
+    site: https://atlasflow.ai
+  description: Atlasflow is an AI platform. Their startup program offers qualifying startups up to $10,000 in Atlasflow usage credits.
+sources:
+  - source_id: src_nc30ftmem822da5xwj1g0hzv48
+    url: https://atlasflow.ai/startups
+programs: []
+offers:
+  - offer_id: off_xmgcrc88vnr4b8axkzdbrj88es
+    offer_slug: atlasflow-for-startups
+    title: Atlasflow for Startups
+    summary: Eligible startups receive up to $10,000 in Atlasflow usage credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:28:16.677339Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $10,000 in Atlasflow usage credits
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an eligible startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_rrthyz9segsbc5w937gk5ra962
+      access_operator_entity_id: ent_rrthyz9segsbc5w937gk5ra962
+    access:
+      availability: public
+      method: form
+      url: https://atlasflow.ai/startups
+    source_ids:
+      - src_nc30ftmem822da5xwj1g0hzv48
