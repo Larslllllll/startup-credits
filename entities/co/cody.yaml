@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6kqacnxashqhr4vmsrpy21xb77
+  slug: cody
+  name: Cody
+  domains:
+    - value: sourcegraph.com
+      role: primary
+      valid_from: 2026-09-07T16:17:59.464971Z
+  category: devtools-other
+profile:
+  summary: Cody offers qualifying startups free or discounted access to their Sourcegraph AI code assistant platform.
+  links:
+    site: https://sourcegraph.com
+  description: Cody offers qualifying startups free or discounted access to their Sourcegraph AI code assistant platform.
+sources:
+  - source_id: src_200534qgj9vy7f8v34e6fmkpcp
+    url: https://sourcegraph.com/startup
+programs: []
+offers:
+  - offer_id: off_cpjsqvtxvdmx1n19anznsqfyed
+    offer_slug: cody-startup-program
+    title: Cody startup program
+    summary: Cody offers qualifying startups free or discounted access to their Sourcegraph AI code assistant platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:17:59.464971Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to Sourcegraph AI code assistant platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_6kqacnxashqhr4vmsrpy21xb77
+      access_operator_entity_id: ent_6kqacnxashqhr4vmsrpy21xb77
+    access:
+      availability: public
+      method: form
+      url: https://sourcegraph.com/startup
+    source_ids:
+      - src_200534qgj9vy7f8v34e6fmkpcp
