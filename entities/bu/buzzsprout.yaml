@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_bnkj4y8x9f31ja4qsq18fb3nxb
+  slug: buzzsprout
+  name: Buzzsprout
+  domains:
+    - value: buzzsprout.com
+      role: primary
+      valid_from: 2026-09-07T15:44:12.040196Z
+  category: communication
+profile:
+  summary: Buzzsprout offers qualifying startups free or discounted access to their podcast hosting and marketing platform.
+  links:
+    site: https://buzzsprout.com
+  description: Buzzsprout offers qualifying startups free or discounted access to their podcast hosting and marketing platform.
+sources:
+  - source_id: src_9a4twdyn0j043wq5kjv5r3exee
+    url: https://buzzsprout.com/startup
+programs: []
+offers:
+  - offer_id: off_78t6efz6ffkpj3vzdc7afsskyn
+    offer_slug: buzzsprout-startup-program
+    title: Buzzsprout startup program
+    summary: Buzzsprout offers qualifying startups free or discounted access to their podcast hosting and marketing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:44:12.040196Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their podcast hosting and marketing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_bnkj4y8x9f31ja4qsq18fb3nxb
+      access_operator_entity_id: ent_bnkj4y8x9f31ja4qsq18fb3nxb
+    access:
+      availability: public
+      method: form
+      url: https://buzzsprout.com/startup
+    source_ids:
+      - src_9a4twdyn0j043wq5kjv5r3exee
