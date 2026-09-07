@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_x6ajjceyky7carp3m1m9tj3ct1
+  slug: yandex-c2
+  name: Yandex C2
+  domains:
+    - value: cloud.yandex.com
+      role: primary
+      valid_from: 2026-09-07T16:44:12.607062Z
+  category: hosting-infra
+profile:
+  summary: Yandex Cloud offers qualifying startups free or discounted access to their public cloud infrastructure platform.
+  links:
+    site: https://cloud.yandex.com
+  description: Yandex Cloud offers qualifying startups free or discounted access to their public cloud infrastructure platform.
+sources:
+  - source_id: src_318v7rxrxj3e4vtv5eq1at54at
+    url: https://cloud.yandex.com/startup
+programs: []
+offers:
+  - offer_id: off_rrt7t9zph5f2ajzwct1ezpf6vm
+    offer_slug: yandex-c2-startup-program
+    title: Yandex C2 startup program
+    summary: Yandex Cloud offers qualifying startups free or discounted access to their public cloud infrastructure platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:44:12.607062Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to public cloud infrastructure platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_x6ajjceyky7carp3m1m9tj3ct1
+      access_operator_entity_id: ent_x6ajjceyky7carp3m1m9tj3ct1
+    access:
+      availability: public
+      method: form
+      url: https://cloud.yandex.com/startup
+    source_ids:
+      - src_318v7rxrxj3e4vtv5eq1at54at
