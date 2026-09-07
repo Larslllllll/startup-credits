@@ -1,0 +1,55 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_awrsxmzc60gcbmr0wd9exzxsdp
+  slug: mazassist
+  slug_aliases:
+    - maz-assist
+    - mazassist-com
+  name: MAZ Assist
+  domains:
+    - value: mazassist.com
+      role: primary
+      valid_from: 2026-09-07T12:01:49.393758Z
+  category: other
+profile:
+  summary: MAZ Assist is an AI employee platform offering qualifying startups one AI Employee Starter plan free for 3 months plus access to 1,000 international decision-maker contacts, with no equity and no long-term contract.
+  description: MAZ Assist provides AI employee solutions for sales and hiring automation. Their startup program grants eligible startups one AI Employee Starter plan free for 3 months, plus access to 1,000 targeted international decision-maker contacts. No equity stake and no long-term contract required. Company email is required for verification.
+  links:
+    site: https://www.mazassist.com
+sources:
+  - source_id: src_vyr27jjtdmbxxv2wssj9k4xybv
+    url: https://www.mazassist.com/for-startups
+programs: []
+offers:
+  - offer_id: off_0gsrmjp2ekxcy1c2zvkqh8fym1
+    offer_slug: mazassist-startup-program
+    offer_slug_aliases:
+      - mazassist-ai-employee-free-3-months
+    title: MAZ Assist startup program
+    summary: Qualifying startups receive one AI Employee Starter plan free for 3 months plus access to 1,000 targeted international decision-maker contacts, with no equity and no long-term contract.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T12:01:49.393758Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 3 months of the AI Employee Starter plan free, plus access to 1,000 targeted international decision-maker contacts
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup and use a company email address (no free email providers such as Gmail, Yahoo, or Outlook).
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_awrsxmzc60gcbmr0wd9exzxsdp
+      access_operator_entity_id: ent_awrsxmzc60gcbmr0wd9exzxsdp
+    access:
+      availability: public
+      method: form
+      url: https://www.mazassist.com/for-startups
+    source_ids:
+      - src_vyr27jjtdmbxxv2wssj9k4xybv

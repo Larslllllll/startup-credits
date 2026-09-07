@@ -1,0 +1,54 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_m3g2qz112x1d8y1ja8p6he2nj8
+  slug: simplelocalize
+  slug_aliases:
+    - simple-localize
+  name: SimpleLocalize
+  domains:
+    - value: simplelocalize.io
+      role: primary
+      valid_from: 2026-09-07T11:47:51.455845Z
+  category: productivity
+profile:
+  summary: SimpleLocalize is a software localization platform offering a free Developer Plan for the first year to approved startups that contribute to the community.
+  description: SimpleLocalize is a browser-based translation management and localization platform that syncs translation keys across development teams using JSON, YAML, XML, CSV, and other formats. Their public startup program grants approved startups a free Developer Plan for the first year, contingent on community contribution.
+  links:
+    site: https://simplelocalize.io
+sources:
+  - source_id: src_xx517ctj3576da10m5y6awwyfe
+    url: https://simplelocalize.io/for/startups/
+programs: []
+offers:
+  - offer_id: off_tcfs9bf3thcewwre82cp65ar3w
+    offer_slug: simplelocalize-startup-developer-plan
+    offer_slug_aliases:
+      - simplelocalize-developer-plan-free-year
+    title: SimpleLocalize startup Developer Plan
+    summary: Approved startups receive the Developer Plan free for the first year, contingent on community contribution. Auto-translation characters are excluded.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T11:47:51.455845Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Developer Plan free for the first year for approved startups
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an approved startup and contribute to the SimpleLocalize community. Auto-translation characters are excluded from the offer.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_m3g2qz112x1d8y1ja8p6he2nj8
+      access_operator_entity_id: ent_m3g2qz112x1d8y1ja8p6he2nj8
+    access:
+      availability: public
+      method: form
+      url: https://simplelocalize.io/for/startups/
+    source_ids:
+      - src_xx517ctj3576da10m5y6awwyfe

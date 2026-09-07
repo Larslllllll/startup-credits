@@ -1,0 +1,55 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_jm605wjdsb72gybkn2vbydb0kw
+  slug: zeller
+  slug_aliases:
+    - myzeller
+    - zeller-for-startups
+  name: Zeller
+  domains:
+    - value: myzeller.com
+      role: primary
+      valid_from: 2026-09-07T11:42:39.716037Z
+  category: payments-fintech
+profile:
+  summary: Zeller is an Australian payments platform offering a 5% cash back on qualifying business purchases up to AUD $100 for new Zeller for Startups customers.
+  description: Zeller is an Australian financial services and payments platform providing business debit cards, point-of-sale terminals, and transaction accounts. Their Zeller for Startups program grants new customers 5% cash back on qualifying business purchases, up to the first AUD $2,000 of eligible spending, with a maximum benefit of AUD $100. Australian availability applies.
+  links:
+    site: https://www.myzeller.com/au
+sources:
+  - source_id: src_63t31qgbpv1dcyx0c1vz740chj
+    url: https://www.myzeller.com/au/startups
+programs: []
+offers:
+  - offer_id: off_835x72xfnbyfmdywgyw5vwgmk5
+    offer_slug: zeller-startups-cashback
+    offer_slug_aliases:
+      - zeller-for-startups
+    title: Zeller for Startups cashback offer
+    summary: New Zeller for Startups customers receive 5% cash back on qualifying business purchases with an active Zeller Debit Card, up to AUD $2,000 of eligible spending (AUD $100 maximum benefit).
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T11:42:39.716037Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 5% cash back on qualifying business purchases, up to AUD $2,000 of eligible spending (AUD $100 maximum benefit)
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a new Zeller for Startups customer, successfully activate and onboard a Zeller for Startups account with an active Zeller Debit Card. Australian availability applies.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_jm605wjdsb72gybkn2vbydb0kw
+      access_operator_entity_id: ent_jm605wjdsb72gybkn2vbydb0kw
+    access:
+      availability: public
+      method: form
+      url: https://www.myzeller.com/au/startups
+    source_ids:
+      - src_63t31qgbpv1dcyx0c1vz740chj
