@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ts40e7w18k0039m004dde5g7eh
+  slug: appwrite-2
+  name: Appwrite Pro
+  domains:
+    - value: appwrite.com
+      role: primary
+      valid_from: 2026-09-07T15:26:56.609241Z
+  category: devtools-other
+profile:
+  summary: Appwrite Pro offers qualifying startups free or discounted access to their open-source backend-as-a-service platform.
+  links:
+    site: https://appwrite.com
+  description: Appwrite Pro offers qualifying startups free or discounted access to their open-source backend-as-a-service platform.
+sources:
+  - source_id: src_jy8pqzcacqj2xv5zzbc1acmmgn
+    url: https://appwrite.com/startup
+programs: []
+offers:
+  - offer_id: off_g3gw4vzhaj4c5rmcaf633ke98y
+    offer_slug: appwrite-2-startup-program
+    title: Appwrite Pro startup program
+    summary: Appwrite Pro offers qualifying startups free or discounted access to their open-source backend-as-a-service platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:26:56.609241Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source backend-as-a-service platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ts40e7w18k0039m004dde5g7eh
+      access_operator_entity_id: ent_ts40e7w18k0039m004dde5g7eh
+    access:
+      availability: public
+      method: form
+      url: https://appwrite.com/startup
+    source_ids:
+      - src_jy8pqzcacqj2xv5zzbc1acmmgn
