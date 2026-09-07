@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3n95bm39qvfnhhx3e28jys2q3c
+  slug: leanplum
+  name: Leanplum
+  domains:
+    - value: leanplum.com
+      role: primary
+      valid_from: 2026-09-07T15:15:49.050301Z
+  category: marketing
+profile:
+  summary: Leanplum offers qualifying startups free or discounted access to their mobile marketing and engagement platform.
+  links:
+    site: https://leanplum.com
+  description: Leanplum offers qualifying startups free or discounted access to their mobile marketing and engagement platform.
+sources:
+  - source_id: src_ydcnc3dn5sn5txdpmtpdynj6gq
+    url: https://leanplum.com/startup
+programs: []
+offers:
+  - offer_id: off_06pxnz8zdmhycdsbesm6nycxpd
+    offer_slug: leanplum-startup-program
+    title: Leanplum startup program
+    summary: Leanplum offers qualifying startups free or discounted access to their mobile marketing and engagement platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:15:49.050301Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to mobile marketing and engagement platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3n95bm39qvfnhhx3e28jys2q3c
+      access_operator_entity_id: ent_3n95bm39qvfnhhx3e28jys2q3c
+    access:
+      availability: public
+      method: form
+      url: https://leanplum.com/startup
+    source_ids:
+      - src_ydcnc3dn5sn5txdpmtpdynj6gq
