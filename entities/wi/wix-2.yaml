@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_d528g44n0f5vx8rj8c8zmbm6n7
+  slug: wix-2
+  name: Wix Pro
+  domains:
+    - value: wix.com
+      role: primary
+      valid_from: 2026-09-07T15:55:20.494983Z
+  category: commerce
+profile:
+  summary: Wix Pro offers qualifying startups free or discounted access to their website builder and e-commerce platform.
+  links:
+    site: https://wix.com
+  description: Wix Pro offers qualifying startups free or discounted access to their website builder and e-commerce platform.
+sources:
+  - source_id: src_p7s4tzm3g2xmxfy7v0txk00pwc
+    url: https://wix.com/startup
+programs: []
+offers:
+  - offer_id: off_qq9y7vmjqzzj7n6bqdqfnvhcbj
+    offer_slug: wix-2-startup-program
+    title: Wix Pro startup program
+    summary: Wix Pro offers qualifying startups free or discounted access to their website builder and e-commerce platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:55:20.494983Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their website builder and e-commerce platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_d528g44n0f5vx8rj8c8zmbm6n7
+      access_operator_entity_id: ent_d528g44n0f5vx8rj8c8zmbm6n7
+    access:
+      availability: public
+      method: form
+      url: https://wix.com/startup
+    source_ids:
+      - src_p7s4tzm3g2xmxfy7v0txk00pwc
