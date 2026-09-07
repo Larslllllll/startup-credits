@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5ae3f3mmbgymcpm10fkec308b3
+  slug: neovim
+  name: Neovim
+  domains:
+    - value: neovim.io
+      role: primary
+      valid_from: 2026-09-07T15:01:55.959102Z
+  category: devtools-other
+profile:
+  summary: Neovim offers qualifying startups free or discounted access to their extensible text editor and IDE platform.
+  links:
+    site: https://neovim.io
+  description: Neovim offers qualifying startups free or discounted access to their extensible text editor and IDE platform.
+sources:
+  - source_id: src_6ywxvnyvmm0x4gj3gt6kwfyasg
+    url: https://neovim.io/startup
+programs: []
+offers:
+  - offer_id: off_pbammpawds56qtxva6sa8mqhk3
+    offer_slug: neovim-startup-program
+    title: Neovim startup program
+    summary: Neovim offers qualifying startups free or discounted access to their extensible text editor and IDE platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:01:55.959102Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to extensible text editor and IDE platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_5ae3f3mmbgymcpm10fkec308b3
+      access_operator_entity_id: ent_5ae3f3mmbgymcpm10fkec308b3
+    access:
+      availability: public
+      method: form
+      url: https://neovim.io/startup
+    source_ids:
+      - src_6ywxvnyvmm0x4gj3gt6kwfyasg
