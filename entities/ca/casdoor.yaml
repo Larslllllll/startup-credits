@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_v37c71fs8jth2bm9rgakd7bpjr
+  slug: casdoor
+  name: Casdoor
+  domains:
+    - value: casdoor.org
+      role: primary
+      valid_from: 2026-09-07T15:34:00.504877Z
+  category: auth-security
+profile:
+  summary: Casdoor offers qualifying startups free or discounted access to their open-source identity provider and access control platform.
+  links:
+    site: https://casdoor.org
+  description: Casdoor offers qualifying startups free or discounted access to their open-source identity provider and access control platform.
+sources:
+  - source_id: src_b3degb3csjj4vbkkkaccncxwdh
+    url: https://casdoor.org/startup
+programs: []
+offers:
+  - offer_id: off_wvjydwg100zcw5g24tc8w6353c
+    offer_slug: casdoor-startup-program
+    title: Casdoor startup program
+    summary: Casdoor offers qualifying startups free or discounted access to their open-source identity provider and access control platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:34:00.504877Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source identity provider and access control platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_v37c71fs8jth2bm9rgakd7bpjr
+      access_operator_entity_id: ent_v37c71fs8jth2bm9rgakd7bpjr
+    access:
+      availability: public
+      method: form
+      url: https://casdoor.org/startup
+    source_ids:
+      - src_b3degb3csjj4vbkkkaccncxwdh
