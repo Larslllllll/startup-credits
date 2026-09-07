@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_kah3cbtg9nx6qg2qeb11sg847w
+  slug: firecrawl-scrape
+  name: Firecrawl Scrape
+  domains:
+    - value: firecrawl.ai
+      role: primary
+      valid_from: 2026-09-07T16:31:44.786190Z
+  category: devtools-other
+profile:
+  summary: Firecrawl offers qualifying startups free or discounted access to their web scraping and data extraction platform.
+  links:
+    site: https://firecrawl.ai
+  description: Firecrawl offers qualifying startups free or discounted access to their web scraping and data extraction platform.
+sources:
+  - source_id: src_trttcn12qkbfnqq79axr9f60f8
+    url: https://firecrawl.ai/startup
+programs: []
+offers:
+  - offer_id: off_dvvgfzmgzncaze1f1ynbv0c2yg
+    offer_slug: firecrawl-scrape-startup-program
+    title: Firecrawl Scrape startup program
+    summary: Firecrawl offers qualifying startups free or discounted access to their web scraping and data extraction platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:31:44.786190Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to web scraping and data extraction platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_kah3cbtg9nx6qg2qeb11sg847w
+      access_operator_entity_id: ent_kah3cbtg9nx6qg2qeb11sg847w
+    access:
+      availability: public
+      method: form
+      url: https://firecrawl.ai/startup
+    source_ids:
+      - src_trttcn12qkbfnqq79axr9f60f8
