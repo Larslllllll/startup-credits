@@ -30,7 +30,7 @@ offers:
     program_id: prg_51vbe87b7hk3vvh80fmvf1q4ry
     offer_slug: fish-audio-three-month-startup-access
     title: Three months of Fish Audio startup access
-    summary: Eligible early-stage teams receive three months of free access with 12 million characters per month, higher concurrency, and premium support.
+    summary: Early-stage teams get three months and 12 million characters per month of free access to Fish Audio's real-time speech engine.
     lifecycle:
       status: active
       effective_from: 2026-09-07T17:48:46.951Z
@@ -40,10 +40,7 @@ offers:
       benefits:
         - benefit_id: ben_monthly_characters
           kind: other
-          description: Twelve million characters per month of Fish Audio voice generation for three months.
-        - benefit_id: ben_premium_support
-          kind: other
-          description: Premium support, including increased concurrency and model assistance when needed.
+          description: Three months and 12 million characters per month of free access to Fish Audio's real-time, emotionally rich speech engine.
     eligibility:
       rule:
         criterion_id: cri_early_stage_team
