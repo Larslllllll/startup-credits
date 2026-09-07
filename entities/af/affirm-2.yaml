@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_10ecr1y17xf2nd2ay3aegtfkhy
+  slug: affirm-2
+  name: Affirm Pro
+  domains:
+    - value: affirm.com
+      role: primary
+      valid_from: 2026-09-07T16:01:12.182238Z
+  category: payments-fintech
+profile:
+  summary: Affirm Pro offers qualifying startups free or discounted access to their buy now pay later platform.
+  links:
+    site: https://affirm.com
+  description: Affirm Pro offers qualifying startups free or discounted access to their buy now pay later platform.
+sources:
+  - source_id: src_qvdyammj89qe21hp7ac4rj4amp
+    url: https://affirm.com/startup
+programs: []
+offers:
+  - offer_id: off_5zwws33bkayd7p51j5v4e92rdr
+    offer_slug: affirm-2-startup-program
+    title: Affirm Pro startup program
+    summary: Affirm Pro offers qualifying startups free or discounted access to their buy now pay later platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:01:12.182238Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their buy now pay later platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_10ecr1y17xf2nd2ay3aegtfkhy
+      access_operator_entity_id: ent_10ecr1y17xf2nd2ay3aegtfkhy
+    access:
+      availability: public
+      method: form
+      url: https://affirm.com/startup
+    source_ids:
+      - src_qvdyammj89qe21hp7ac4rj4amp
