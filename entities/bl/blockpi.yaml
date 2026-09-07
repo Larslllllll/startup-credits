@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_1rzqky2fh56ym3sthy3nfzxezy
+  slug: blockpi
+  name: BlockPI
+  domains:
+    - value: blockpi.io
+      role: primary
+      valid_from: 2026-09-07T14:55:24.897676Z
+  category: hosting-infra
+profile:
+  summary: BlockPI offers qualifying startups free or discounted access to their multi-chain RPC infrastructure platform.
+  links:
+    site: https://blockpi.io
+  description: BlockPI offers qualifying startups free or discounted access to their multi-chain RPC infrastructure platform.
+sources:
+  - source_id: src_cmxxe0v5et0rk8zkaqp46hwfma
+    url: https://blockpi.io/startup
+programs: []
+offers:
+  - offer_id: off_r34e065kvrvmsf4kh7gz7sf7dr
+    offer_slug: blockpi-startup-program
+    title: BlockPI startup program
+    summary: BlockPI offers qualifying startups free or discounted access to their multi-chain RPC infrastructure platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:55:24.897676Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to multi-chain RPC infrastructure platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_1rzqky2fh56ym3sthy3nfzxezy
+      access_operator_entity_id: ent_1rzqky2fh56ym3sthy3nfzxezy
+    access:
+      availability: public
+      method: form
+      url: https://blockpi.io/startup
+    source_ids:
+      - src_cmxxe0v5et0rk8zkaqp46hwfma
