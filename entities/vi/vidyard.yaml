@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gq19q29v7ga7rdvcmzy9g56s2m
+  slug: vidyard
+  name: Vidyard
+  domains:
+    - value: vidyard.com
+      role: primary
+      valid_from: 2026-09-07T14:49:35.098754Z
+  category: communication
+profile:
+  summary: Vidyard offers qualifying startups free access to their video hosting and analytics platform for 6 months.
+  links:
+    site: https://vidyard.com
+  description: Vidyard offers qualifying startups free access to their video hosting and analytics platform for 6 months.
+sources:
+  - source_id: src_zpvy05a6km0qv0mawt68ac1epe
+    url: https://vidyard.com/startup
+programs: []
+offers:
+  - offer_id: off_ny688msh4hdxsp7aph6vamxcgz
+    offer_slug: vidyard-startup-program
+    title: Vidyard startup program
+    summary: Vidyard offers qualifying startups free access to their video hosting and analytics platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:49:35.098754Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to video hosting and analytics platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_gq19q29v7ga7rdvcmzy9g56s2m
+      access_operator_entity_id: ent_gq19q29v7ga7rdvcmzy9g56s2m
+    access:
+      availability: public
+      method: form
+      url: https://vidyard.com/startup
+    source_ids:
+      - src_zpvy05a6km0qv0mawt68ac1epe
