@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_a1s60fh6syx1d4rndrj9cw5zxc
+  slug: pipedrive-2
+  name: Pipedrive Pro
+  domains:
+    - value: pipedrive.com
+      role: primary
+      valid_from: 2026-09-07T16:00:31.554272Z
+  category: crm-sales
+profile:
+  summary: Pipedrive Pro offers qualifying startups free or discounted access to their sales CRM and pipeline platform.
+  links:
+    site: https://pipedrive.com
+  description: Pipedrive Pro offers qualifying startups free or discounted access to their sales CRM and pipeline platform.
+sources:
+  - source_id: src_2teecqzmdrxvstyd2nkkzr4rfn
+    url: https://pipedrive.com/startup
+programs: []
+offers:
+  - offer_id: off_a6kjxjkkk6nt343323ss9sp9db
+    offer_slug: pipedrive-2-startup-program
+    title: Pipedrive Pro startup program
+    summary: Pipedrive Pro offers qualifying startups free or discounted access to their sales CRM and pipeline platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:00:31.554272Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their sales CRM and pipeline platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_a1s60fh6syx1d4rndrj9cw5zxc
+      access_operator_entity_id: ent_a1s60fh6syx1d4rndrj9cw5zxc
+    access:
+      availability: public
+      method: form
+      url: https://pipedrive.com/startup
+    source_ids:
+      - src_2teecqzmdrxvstyd2nkkzr4rfn
