@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_bjb08emtnwdj5fzthfh6xq8sy0
+  slug: qw5
+  name: Qwen 5
+  domains:
+    - value: tongyi.aliyun.com
+      role: primary
+      valid_from: 2026-09-07T16:48:24.219067Z
+  category: ai-ml
+profile:
+  summary: Qwen offers qualifying startups free or discounted access to their open-source multilingual LLM platform.
+  links:
+    site: https://tongyi.aliyun.com
+  description: Qwen offers qualifying startups free or discounted access to their open-source multilingual LLM platform.
+sources:
+  - source_id: src_6v9rgv697cqfkvtbfe5q1vwkt6
+    url: https://tongyi.aliyun.com/startup
+programs: []
+offers:
+  - offer_id: off_xr9dbx6zgxyd5vvz492mw7y4da
+    offer_slug: qw5-startup-program
+    title: Qwen 5 startup program
+    summary: Qwen offers qualifying startups free or discounted access to their open-source multilingual LLM platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:48:24.219067Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source multilingual LLM platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_bjb08emtnwdj5fzthfh6xq8sy0
+      access_operator_entity_id: ent_bjb08emtnwdj5fzthfh6xq8sy0
+    access:
+      availability: public
+      method: form
+      url: https://tongyi.aliyun.com/startup
+    source_ids:
+      - src_6v9rgv697cqfkvtbfe5q1vwkt6
