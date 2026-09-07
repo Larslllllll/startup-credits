@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_hczb88z843r19gvme8xaz20e5f
+  slug: snazzy
+  name: Snazzy
+  domains:
+    - value: snazzy.ai
+      role: primary
+      valid_from: 2026-09-07T15:09:49.834153Z
+  category: marketing
+profile:
+  summary: Snazzy offers qualifying startups free or discounted access to their AI-powered marketing content generation platform.
+  links:
+    site: https://snazzy.ai
+  description: Snazzy offers qualifying startups free or discounted access to their AI-powered marketing content generation platform.
+sources:
+  - source_id: src_63cwqmwch5f2q0vap1b571ngd5
+    url: https://snazzy.ai/startup
+programs: []
+offers:
+  - offer_id: off_tqmds4sfmh6yyvvx9ra8ppr1pr
+    offer_slug: snazzy-startup-program
+    title: Snazzy startup program
+    summary: Snazzy offers qualifying startups free or discounted access to their AI-powered marketing content generation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:09:49.834153Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI-powered marketing content generation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_hczb88z843r19gvme8xaz20e5f
+      access_operator_entity_id: ent_hczb88z843r19gvme8xaz20e5f
+    access:
+      availability: public
+      method: form
+      url: https://snazzy.ai/startup
+    source_ids:
+      - src_63cwqmwch5f2q0vap1b571ngd5
