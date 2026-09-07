@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_2s0bbyjwxasm41jxkgjeqgkyz3
+  slug: 100pay
+  name: 100Pay
+  domains:
+    - value: 100pay.co
+      role: primary
+      valid_from: 2026-09-07T13:40:48.113085Z
+  category: payments-fintech
+profile:
+  summary: 100Pay Startup Program offers eligible startups up to $100,000 in cloud infrastructure credits, startup perks, and mentorship.
+  links:
+    site: https://100pay.co
+  description: 100Pay is a payment and cloud infrastructure provider. Their Startup Program offers qualifying eligible startups up to $100,000 in cloud infrastructure credits, along with startup perks and mentorship. Applications accepted on a rolling basis.
+sources:
+  - source_id: src_5c032sarctvka418c3mvs0cy1f
+    url: https://100pay.co/startups
+programs: []
+offers:
+  - offer_id: off_wd6qqqp208etnj67pdep3b7059
+    offer_slug: 100pay-startup-program
+    title: 100Pay Startup Program
+    summary: Eligible startups receive up to $100,000 in cloud infrastructure credits plus startup perks and mentorship.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:40:48.113085Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $100,000 in cloud infrastructure credits, startup perks, and mentorship
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an eligible startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_2s0bbyjwxasm41jxkgjeqgkyz3
+      access_operator_entity_id: ent_2s0bbyjwxasm41jxkgjeqgkyz3
+    access:
+      availability: public
+      method: form
+      url: https://100pay.co/startups
+    source_ids:
+      - src_5c032sarctvka418c3mvs0cy1f
