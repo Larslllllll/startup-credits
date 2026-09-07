@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_13km545hfwwe1gh2wgyfwx5tae
+  slug: nitro
+  name: Nitro
+  domains:
+    - value: nitro.unjs.io
+      role: primary
+      valid_from: 2026-09-07T15:01:35.532715Z
+  category: devtools-other
+profile:
+  summary: Nitro offers qualifying startups free or discounted access to their open-source server toolkit for JavaScript.
+  links:
+    site: https://nitro.unjs.io
+  description: Nitro offers qualifying startups free or discounted access to their open-source server toolkit for JavaScript.
+sources:
+  - source_id: src_6enpaq8y8cx274dwksqh6bme15
+    url: https://nitro.unjs.io/startup
+programs: []
+offers:
+  - offer_id: off_c6f446r52fftrm118r4xwhardr
+    offer_slug: nitro-startup-program
+    title: Nitro startup program
+    summary: Nitro offers qualifying startups free or discounted access to their open-source server toolkit for JavaScript.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:01:35.532715Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source server toolkit for JavaScript
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_13km545hfwwe1gh2wgyfwx5tae
+      access_operator_entity_id: ent_13km545hfwwe1gh2wgyfwx5tae
+    access:
+      availability: public
+      method: form
+      url: https://nitro.unjs.io/startup
+    source_ids:
+      - src_6enpaq8y8cx274dwksqh6bme15
