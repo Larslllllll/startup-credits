@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_aeng6zp615fj00xct9r4vj4yb8
+  slug: bandsintown
+  name: Bandsintown
+  domains:
+    - value: bandsintown.com
+      role: primary
+      valid_from: 2026-09-07T15:46:10.268595Z
+  category: communication
+profile:
+  summary: Bandsintown offers qualifying startups free or discounted access to their concert discovery and artist platform.
+  links:
+    site: https://bandsintown.com
+  description: Bandsintown offers qualifying startups free or discounted access to their concert discovery and artist platform.
+sources:
+  - source_id: src_wkf2f37s2dyhm9vb5h9ekp7g8n
+    url: https://bandsintown.com/startup
+programs: []
+offers:
+  - offer_id: off_4rja6y68mbm1m2y2wpmkht7c2h
+    offer_slug: bandsintown-startup-program
+    title: Bandsintown startup program
+    summary: Bandsintown offers qualifying startups free or discounted access to their concert discovery and artist platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:46:10.268595Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their concert discovery and artist platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_aeng6zp615fj00xct9r4vj4yb8
+      access_operator_entity_id: ent_aeng6zp615fj00xct9r4vj4yb8
+    access:
+      availability: public
+      method: form
+      url: https://bandsintown.com/startup
+    source_ids:
+      - src_wkf2f37s2dyhm9vb5h9ekp7g8n
