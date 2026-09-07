@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_eftj9rz7s7z050px5ybj34egk6
+  slug: red-hat
+  name: Red Hat
+  domains:
+    - value: redhat.com
+      role: primary
+      valid_from: 2026-09-07T14:12:51.645204Z
+  category: devtools-other
+profile:
+  summary: Red Hat offers qualifying startups free Red Hat Developer Subscription and free access to Red Hat OpenShift for 12 months.
+  links:
+    site: https://redhat.com
+  description: Red Hat is an enterprise open source software company. Their startup program offers qualifying startups a free Red Hat Developer Subscription and free access to Red Hat OpenShift for 12 months.
+sources:
+  - source_id: src_8jssbc1vpwcdg63nkrhvs8hd69
+    url: https://developers.redhat.com/articles/featured-resources/startup
+programs: []
+offers:
+  - offer_id: off_05w0ewcebxv5ceq2459vetgsm6
+    offer_slug: red-hat-startup-program
+    title: Red Hat startup program
+    summary: Qualifying startups receive a free Red Hat Developer Subscription plus free Red Hat OpenShift access for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:12:51.645204Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free Red Hat Developer Subscription plus free OpenShift access for 12 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_eftj9rz7s7z050px5ybj34egk6
+      access_operator_entity_id: ent_eftj9rz7s7z050px5ybj34egk6
+    access:
+      availability: public
+      method: form
+      url: https://developers.redhat.com/articles/featured-resources/startup
+    source_ids:
+      - src_8jssbc1vpwcdg63nkrhvs8hd69
