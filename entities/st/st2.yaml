@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7va2yqsb6t5dqa8jyk4bts6kt0
+  slug: st2
+  name: Stitch 2
+  domains:
+    - value: stitchdata.com
+      role: primary
+      valid_from: 2026-09-07T16:57:51.662858Z
+  category: data-analytics
+profile:
+  summary: Stitch offers qualifying startups free or discounted access to their data pipeline and ETL platform.
+  links:
+    site: https://stitchdata.com
+  description: Stitch offers qualifying startups free or discounted access to their data pipeline and ETL platform.
+sources:
+  - source_id: src_5v4v9ss0vafy8g6vf877hh3d9n
+    url: https://stitchdata.com/startup
+programs: []
+offers:
+  - offer_id: off_sf4an9f72nymyytd9sta4nm2tq
+    offer_slug: st2-startup-program
+    title: Stitch 2 startup program
+    summary: Stitch offers qualifying startups free or discounted access to their data pipeline and ETL platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:57:51.662858Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to data pipeline and ETL platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_7va2yqsb6t5dqa8jyk4bts6kt0
+      access_operator_entity_id: ent_7va2yqsb6t5dqa8jyk4bts6kt0
+    access:
+      availability: public
+      method: form
+      url: https://stitchdata.com/startup
+    source_ids:
+      - src_5v4v9ss0vafy8g6vf877hh3d9n
