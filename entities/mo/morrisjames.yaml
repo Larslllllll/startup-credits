@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_vdybt25bbt0md95w2qadpxx865
+  slug: morrisjames
+  name: Morris James LLP
+  domains:
+    - value: morrisjames.com
+      role: primary
+      valid_from: 2026-09-07T12:34:20.316190Z
+  category: legal-compliance
+profile:
+  summary: Morris James LLP offers qualifying companies 30% off standard corporate legal rates for the first year of engagement.
+  links:
+    site: https://www.morrisjames.com
+  description: Morris James LLP is a Delaware corporate law firm. Their Start-Up Program offers qualifying companies 30% off standard corporate legal rates for the first year of engagement. Qualification is case-by-case.
+sources:
+  - source_id: src_h46vsgz91xehnycsz324zk70jp
+    url: https://www.morrisjames.com/start-up-program
+programs: []
+offers:
+  - offer_id: off_30gvnhsbsee94zmxw2670gmgrz
+    offer_slug: morris-james-startup-program
+    title: Morris James Start-Up Program
+    summary: Qualifying companies receive 30% off standard corporate legal rates for the first year of engagement.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T12:34:20.316190Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 30% off standard corporate legal rates for the first year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 3000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying early-stage, pre-revenue or low-revenue company without significant capital raise. Case-by-case qualification.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_vdybt25bbt0md95w2qadpxx865
+      access_operator_entity_id: ent_vdybt25bbt0md95w2qadpxx865
+    access:
+      availability: public
+      method: form
+      url: https://www.morrisjames.com/start-up-program
+    source_ids:
+      - src_h46vsgz91xehnycsz324zk70jp

@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_jhrkg8dmg85xqd65rxfh00r2k4
+  slug: brandfetch
+  name: Brandfetch
+  domains:
+    - value: brandfetch.com
+      role: primary
+      valid_from: 2026-09-07T12:38:35.747415Z
+  category: devtools-other
+profile:
+  summary: Brandfetch offers qualifying startups and nonprofits 40% off paid plans for the first twelve months through its startup program.
+  links:
+    site: https://brandfetch.com
+  description: Brandfetch is a brand asset API and platform that provides logos, colors, and other brand assets. Their startup program offers qualifying startups and nonprofits 40% off paid plans for the first twelve months. Applicants contact the sales team to apply.
+sources:
+  - source_id: src_dmkv7ha4bnjqftewv4fctqec6p
+    url: https://brandfetch.com/startups
+programs: []
+offers:
+  - offer_id: off_w5ns1y1pxbcr91zv4zps7kyfer
+    offer_slug: brandfetch-startup-program
+    title: Brandfetch startup program
+    summary: Qualifying startups and nonprofits receive 40% off Brandfetch paid plans for the first twelve months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T12:38:35.747415Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 40% off paid plans for the first 12 months
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 4000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup or nonprofit. Application via sales team. No funding, company-age, or headcount thresholds publicly published.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_jhrkg8dmg85xqd65rxfh00r2k4
+      access_operator_entity_id: ent_jhrkg8dmg85xqd65rxfh00r2k4
+    access:
+      availability: public
+      method: form
+      url: https://brandfetch.com/startups
+    source_ids:
+      - src_dmkv7ha4bnjqftewv4fctqec6p
