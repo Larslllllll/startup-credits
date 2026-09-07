@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9m5n20brn5921bg34eqkn3xvnt
+  slug: marvel
+  name: Marvel
+  domains:
+    - value: marvelapp.com
+      role: primary
+      valid_from: 2026-09-07T15:47:49.718028Z
+  category: design
+profile:
+  summary: Marvel offers qualifying startups free or discounted access to their design and prototyping platform.
+  links:
+    site: https://marvelapp.com
+  description: Marvel offers qualifying startups free or discounted access to their design and prototyping platform.
+sources:
+  - source_id: src_08a7ezxsr9y3amkds7xaeavjkd
+    url: https://marvelapp.com/startup
+programs: []
+offers:
+  - offer_id: off_69qzw4a13fddb747qxdhfreh9s
+    offer_slug: marvel-startup-program
+    title: Marvel startup program
+    summary: Marvel offers qualifying startups free or discounted access to their design and prototyping platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:47:49.718028Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their design and prototyping platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_9m5n20brn5921bg34eqkn3xvnt
+      access_operator_entity_id: ent_9m5n20brn5921bg34eqkn3xvnt
+    access:
+      availability: public
+      method: form
+      url: https://marvelapp.com/startup
+    source_ids:
+      - src_08a7ezxsr9y3amkds7xaeavjkd
