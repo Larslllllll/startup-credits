@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_4wqqywh9vdtnnpvpszh3vkbakk
+  slug: databox
+  name: Databox
+  domains:
+    - value: databox.com
+      role: primary
+      valid_from: 2026-09-07T15:37:08.655546Z
+  category: data-analytics
+profile:
+  summary: Databox offers qualifying startups free or discounted access to their business analytics and dashboard platform.
+  links:
+    site: https://databox.com
+  description: Databox offers qualifying startups free or discounted access to their business analytics and dashboard platform.
+sources:
+  - source_id: src_x4dems64efphwvgdhjf0eny46n
+    url: https://databox.com/startup
+programs: []
+offers:
+  - offer_id: off_f3egaqpve2rpthy5zgc6ghrt76
+    offer_slug: databox-startup-program
+    title: Databox startup program
+    summary: Databox offers qualifying startups free or discounted access to their business analytics and dashboard platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:37:08.655546Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their business analytics and dashboard platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_4wqqywh9vdtnnpvpszh3vkbakk
+      access_operator_entity_id: ent_4wqqywh9vdtnnpvpszh3vkbakk
+    access:
+      availability: public
+      method: form
+      url: https://databox.com/startup
+    source_ids:
+      - src_x4dems64efphwvgdhjf0eny46n
