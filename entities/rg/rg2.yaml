@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_1e4bq55defy83wkkkps7d8683e
+  slug: rg2
+  name: Raygun 2
+  domains:
+    - value: raygun.com
+      role: primary
+      valid_from: 2026-09-07T16:58:44.749173Z
+  category: observability
+profile:
+  summary: Raygun offers qualifying startups free or discounted access to their error tracking and crash reporting platform.
+  links:
+    site: https://raygun.com
+  description: Raygun offers qualifying startups free or discounted access to their error tracking and crash reporting platform.
+sources:
+  - source_id: src_dqa4v9fz2zhjbjv9yx30fbkwj7
+    url: https://raygun.com/startup
+programs: []
+offers:
+  - offer_id: off_1j5neffeyd8v65bhxqnksq1jxs
+    offer_slug: rg2-startup-program
+    title: Raygun 2 startup program
+    summary: Raygun offers qualifying startups free or discounted access to their error tracking and crash reporting platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:58:44.749173Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to error tracking and crash reporting platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_1e4bq55defy83wkkkps7d8683e
+      access_operator_entity_id: ent_1e4bq55defy83wkkkps7d8683e
+    access:
+      availability: public
+      method: form
+      url: https://raygun.com/startup
+    source_ids:
+      - src_dqa4v9fz2zhjbjv9yx30fbkwj7
