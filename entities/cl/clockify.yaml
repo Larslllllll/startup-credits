@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rvr11tcr4vbpspn8316q1b4k7f
+  slug: clockify
+  name: Clockify
+  domains:
+    - value: clockify.me
+      role: primary
+      valid_from: 2026-09-07T15:51:56.727707Z
+  category: hr-people
+profile:
+  summary: Clockify offers qualifying startups free or discounted access to their free time tracking platform.
+  links:
+    site: https://clockify.me
+  description: Clockify offers qualifying startups free or discounted access to their free time tracking platform.
+sources:
+  - source_id: src_ebvxjm10d9xxq60dp38zzkwbbp
+    url: https://clockify.me/startup
+programs: []
+offers:
+  - offer_id: off_j3h61ya6xnmtt601zag0vwhrxp
+    offer_slug: clockify-startup-program
+    title: Clockify startup program
+    summary: Clockify offers qualifying startups free or discounted access to their free time tracking platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:51:56.727707Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their free time tracking platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_rvr11tcr4vbpspn8316q1b4k7f
+      access_operator_entity_id: ent_rvr11tcr4vbpspn8316q1b4k7f
+    access:
+      availability: public
+      method: form
+      url: https://clockify.me/startup
+    source_ids:
+      - src_ebvxjm10d9xxq60dp38zzkwbbp
