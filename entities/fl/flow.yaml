@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gx8kha26ch02je2y19f7jzf63y
+  slug: flow
+  name: Flow
+  domains:
+    - value: flowapp.com
+      role: primary
+      valid_from: 2026-09-07T15:51:28.959130Z
+  category: productivity
+profile:
+  summary: Flow offers qualifying startups free or discounted access to their task management and project tracking platform.
+  links:
+    site: https://flowapp.com
+  description: Flow offers qualifying startups free or discounted access to their task management and project tracking platform.
+sources:
+  - source_id: src_207t06q7te5vvnnz4vwe1b7yn9
+    url: https://flowapp.com/startup
+programs: []
+offers:
+  - offer_id: off_yfdwwpmvwmk1zn8x2yqmph2fe3
+    offer_slug: flow-startup-program
+    title: Flow startup program
+    summary: Flow offers qualifying startups free or discounted access to their task management and project tracking platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:51:28.959130Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their task management and project tracking platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_gx8kha26ch02je2y19f7jzf63y
+      access_operator_entity_id: ent_gx8kha26ch02je2y19f7jzf63y
+    access:
+      availability: public
+      method: form
+      url: https://flowapp.com/startup
+    source_ids:
+      - src_207t06q7te5vvnnz4vwe1b7yn9
