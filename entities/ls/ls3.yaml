@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_x9jb1x08sa660v8srk5epqd3f9
+  slug: ls3
+  name: Lightstep 2
+  domains:
+    - value: lightstep.com
+      role: primary
+      valid_from: 2026-09-07T16:59:38.455192Z
+  category: observability
+profile:
+  summary: Lightstep offers qualifying startups free or discounted access to their observability platform.
+  links:
+    site: https://lightstep.com
+  description: Lightstep offers qualifying startups free or discounted access to their observability platform.
+sources:
+  - source_id: src_mkjdwz9a34ft8de76440yg402n
+    url: https://lightstep.com/startup
+programs: []
+offers:
+  - offer_id: off_aqt3r87fqkdme52fm1nssexgkz
+    offer_slug: ls3-startup-program
+    title: Lightstep 2 startup program
+    summary: Lightstep offers qualifying startups free or discounted access to their observability platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:59:38.455192Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to observability platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_x9jb1x08sa660v8srk5epqd3f9
+      access_operator_entity_id: ent_x9jb1x08sa660v8srk5epqd3f9
+    access:
+      availability: public
+      method: form
+      url: https://lightstep.com/startup
+    source_ids:
+      - src_mkjdwz9a34ft8de76440yg402n
