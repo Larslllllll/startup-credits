@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_kmn2yjrntgthg0w90jkc69q28c
+  slug: prometheus-2
+  name: Prometheus Pro
+  domains:
+    - value: prometheus.io
+      role: primary
+      valid_from: 2026-09-07T15:28:12.412525Z
+  category: observability
+profile:
+  summary: Prometheus Pro offers qualifying startups free or discounted access to their open-source monitoring and alerting platform.
+  links:
+    site: https://prometheus.io
+  description: Prometheus Pro offers qualifying startups free or discounted access to their open-source monitoring and alerting platform.
+sources:
+  - source_id: src_cxjr5egbw3zg63qw79tenbpste
+    url: https://prometheus.io/startup
+programs: []
+offers:
+  - offer_id: off_n61f5ngs5qxrskghnfpbx9b0dg
+    offer_slug: prometheus-2-startup-program
+    title: Prometheus Pro startup program
+    summary: Prometheus Pro offers qualifying startups free or discounted access to their open-source monitoring and alerting platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:28:12.412525Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source monitoring and alerting platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_kmn2yjrntgthg0w90jkc69q28c
+      access_operator_entity_id: ent_kmn2yjrntgthg0w90jkc69q28c
+    access:
+      availability: public
+      method: form
+      url: https://prometheus.io/startup
+    source_ids:
+      - src_cxjr5egbw3zg63qw79tenbpste
