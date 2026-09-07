@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_g7xc3mpfdv4mf9padnxt0c0gyt
+  slug: cribl
+  name: Cribl
+  domains:
+    - value: cribl.io
+      role: primary
+      valid_from: 2026-09-07T14:49:43.051605Z
+  category: devtools-other
+profile:
+  summary: Cribl offers qualifying startups free or discounted access to their data management and observability platform.
+  links:
+    site: https://cribl.io
+  description: Cribl offers qualifying startups free or discounted access to their data management and observability platform.
+sources:
+  - source_id: src_rv92gqfweypprwsp5b7dqc70gs
+    url: https://cribl.io/startup
+programs: []
+offers:
+  - offer_id: off_j6ypsgcr95tbd2d7d1th446b97
+    offer_slug: cribl-startup-program
+    title: Cribl startup program
+    summary: Cribl offers qualifying startups free or discounted access to their data management and observability platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:49:43.051605Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted data management and observability platform access
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_g7xc3mpfdv4mf9padnxt0c0gyt
+      access_operator_entity_id: ent_g7xc3mpfdv4mf9padnxt0c0gyt
+    access:
+      availability: public
+      method: form
+      url: https://cribl.io/startup
+    source_ids:
+      - src_rv92gqfweypprwsp5b7dqc70gs
