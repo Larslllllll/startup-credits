@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_bp7ezg2t4jwnq3hg1mb34wvh1d
+  slug: anydo
+  name: Any.do
+  domains:
+    - value: any.do
+      role: primary
+      valid_from: 2026-09-07T15:40:49.406224Z
+  category: productivity
+profile:
+  summary: Any.do offers qualifying startups free or discounted access to their daily planning and task management platform.
+  links:
+    site: https://any.do
+  description: Any.do offers qualifying startups free or discounted access to their daily planning and task management platform.
+sources:
+  - source_id: src_9wnb4emdh07301hpgw15bv9sjp
+    url: https://any.do/startup
+programs: []
+offers:
+  - offer_id: off_mmkfwre36q8dh2wvpmf09q58r2
+    offer_slug: anydo-startup-program
+    title: Any.do startup program
+    summary: Any.do offers qualifying startups free or discounted access to their daily planning and task management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:40:49.406224Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their daily planning and task management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_bp7ezg2t4jwnq3hg1mb34wvh1d
+      access_operator_entity_id: ent_bp7ezg2t4jwnq3hg1mb34wvh1d
+    access:
+      availability: public
+      method: form
+      url: https://any.do/startup
+    source_ids:
+      - src_9wnb4emdh07301hpgw15bv9sjp
