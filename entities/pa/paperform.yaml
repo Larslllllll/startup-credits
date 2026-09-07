@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_vr7vc1e8n4far6q55f7jaftame
+  slug: paperform
+  name: Paperform
+  domains:
+    - value: paperform.co
+      role: primary
+      valid_from: 2026-09-07T15:58:08.082304Z
+  category: no-code
+profile:
+  summary: Paperform offers qualifying startups free or discounted access to their online form and survey builder platform.
+  links:
+    site: https://paperform.co
+  description: Paperform offers qualifying startups free or discounted access to their online form and survey builder platform.
+sources:
+  - source_id: src_05mhfe1f1t9qpgp5bcwqhays4x
+    url: https://paperform.co/startup
+programs: []
+offers:
+  - offer_id: off_spk01ag3tvvng6mdk9nf9v7gkq
+    offer_slug: paperform-startup-program
+    title: Paperform startup program
+    summary: Paperform offers qualifying startups free or discounted access to their online form and survey builder platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:58:08.082304Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their online form and survey builder platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_vr7vc1e8n4far6q55f7jaftame
+      access_operator_entity_id: ent_vr7vc1e8n4far6q55f7jaftame
+    access:
+      availability: public
+      method: form
+      url: https://paperform.co/startup
+    source_ids:
+      - src_05mhfe1f1t9qpgp5bcwqhays4x
