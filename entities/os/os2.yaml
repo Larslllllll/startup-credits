@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_qkmynym3a0hscg402s8krmrtbf
+  slug: os2
+  name: OneSignal 2
+  domains:
+    - value: onesignal.com
+      role: primary
+      valid_from: 2026-09-07T16:55:47.227478Z
+  category: marketing
+profile:
+  summary: OneSignal offers qualifying startups free or discounted access to their customer messaging and push notification platform.
+  links:
+    site: https://onesignal.com
+  description: OneSignal offers qualifying startups free or discounted access to their customer messaging and push notification platform.
+sources:
+  - source_id: src_2qrfy7m0w8z8tt5k2e5npnsevp
+    url: https://onesignal.com/startup
+programs: []
+offers:
+  - offer_id: off_33kfdxtkefak307e65zz7yq4b6
+    offer_slug: os2-startup-program
+    title: OneSignal 2 startup program
+    summary: OneSignal offers qualifying startups free or discounted access to their customer messaging and push notification platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:55:47.227478Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to customer messaging and push notification platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_qkmynym3a0hscg402s8krmrtbf
+      access_operator_entity_id: ent_qkmynym3a0hscg402s8krmrtbf
+    access:
+      availability: public
+      method: form
+      url: https://onesignal.com/startup
+    source_ids:
+      - src_2qrfy7m0w8z8tt5k2e5npnsevp
