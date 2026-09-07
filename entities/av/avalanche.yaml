@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_adqxgskamc08qe2m4s4nvdp6md
+  slug: avalanche
+  name: Avalanche
+  domains:
+    - value: avax.network
+      role: primary
+      valid_from: 2026-09-07T15:53:08.511233Z
+  category: devtools-other
+profile:
+  summary: Avalanche offers qualifying startups free or discounted access to their fast, low-cost blockchain platform.
+  links:
+    site: https://avax.network
+  description: Avalanche offers qualifying startups free or discounted access to their fast, low-cost blockchain platform.
+sources:
+  - source_id: src_01rj0kzz2an1yp4bpg5cn98v6b
+    url: https://avax.network/startup
+programs: []
+offers:
+  - offer_id: off_rmyw1k4kepejkbrxhjfjq42r40
+    offer_slug: avalanche-startup-program
+    title: Avalanche startup program
+    summary: Avalanche offers qualifying startups free or discounted access to their fast, low-cost blockchain platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:53:08.511233Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their fast, low-cost blockchain platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_adqxgskamc08qe2m4s4nvdp6md
+      access_operator_entity_id: ent_adqxgskamc08qe2m4s4nvdp6md
+    access:
+      availability: public
+      method: form
+      url: https://avax.network/startup
+    source_ids:
+      - src_01rj0kzz2an1yp4bpg5cn98v6b
