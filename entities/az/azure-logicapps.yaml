@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_pm9zhfgybjea2ky4mwd2ebkf6h
+  slug: azure-logicapps
+  name: Azure Logic Apps
+  domains:
+    - value: azure.microsoft.com
+      role: primary
+      valid_from: 2026-09-07T15:33:25.845196Z
+  category: apis-integration
+profile:
+  summary: Azure Logic Apps offers qualifying startups free or discounted access to their enterprise integration platform.
+  links:
+    site: https://azure.microsoft.com
+  description: Azure Logic Apps offers qualifying startups free or discounted access to their enterprise integration platform.
+sources:
+  - source_id: src_87yftx0vnsxz4r7d59rv6cak60
+    url: https://azure.microsoft.com/startup
+programs: []
+offers:
+  - offer_id: off_qnbn2z0qn20tttk7bxzvhns70x
+    offer_slug: azure-logicapps-startup-program
+    title: Azure Logic Apps startup program
+    summary: Azure Logic Apps offers qualifying startups free or discounted access to their enterprise integration platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:33:25.845196Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their enterprise integration platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_pm9zhfgybjea2ky4mwd2ebkf6h
+      access_operator_entity_id: ent_pm9zhfgybjea2ky4mwd2ebkf6h
+    access:
+      availability: public
+      method: form
+      url: https://azure.microsoft.com/startup
+    source_ids:
+      - src_87yftx0vnsxz4r7d59rv6cak60
