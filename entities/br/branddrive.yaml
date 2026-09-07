@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7mt7c6yfys1wtfqd2hs8kxj4hd
+  slug: branddrive
+  name: BrandDrive
+  domains:
+    - value: branddrive.co
+      role: primary
+      valid_from: 2026-09-07T16:07:56.063512Z
+  category: marketing
+profile:
+  summary: BrandDrive offers qualifying startups free or discounted access to their brand development and marketing services platform.
+  links:
+    site: https://branddrive.co
+  description: BrandDrive offers qualifying startups free or discounted access to their brand development and marketing services platform.
+sources:
+  - source_id: src_zt56q3dfwq3tmzyget0nvtq3fp
+    url: https://branddrive.co/startup
+programs: []
+offers:
+  - offer_id: off_vjbk2b30276np4argb8b66tgt6
+    offer_slug: branddrive-startup-program
+    title: BrandDrive startup program
+    summary: BrandDrive offers qualifying startups free or discounted access to their brand development and marketing services platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:07:56.063512Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to brand development and marketing services platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_7mt7c6yfys1wtfqd2hs8kxj4hd
+      access_operator_entity_id: ent_7mt7c6yfys1wtfqd2hs8kxj4hd
+    access:
+      availability: public
+      method: form
+      url: https://branddrive.co/startup
+    source_ids:
+      - src_zt56q3dfwq3tmzyget0nvtq3fp
