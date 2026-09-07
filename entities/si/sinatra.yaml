@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_kq6wa6nxnez9e47wxs1rxazkab
+  slug: sinatra
+  name: Sinatra
+  domains:
+    - value: sinatra.dev
+      role: primary
+      valid_from: 2026-09-07T12:31:18.940670Z
+  category: productivity
+profile:
+  summary: Sinatra offers approved startup teams 50% off monthly seats for 12 months through its startup program.
+  links:
+    site: https://www.sinatra.dev
+  description: Sinatra is a customer feedback management platform. Their startup program grants approved startup teams 50% off monthly seats for 12 months.
+sources:
+  - source_id: src_q8rbd731rnzbnvyaxkpmmgv919
+    url: https://www.sinatra.dev/startups
+programs: []
+offers:
+  - offer_id: off_1gy24dbch4kwj9x62xgzpt0cwq
+    offer_slug: sinatra-startup-program
+    title: Sinatra startup program
+    summary: Approved startup teams receive 50% off monthly Sinatra seats for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T12:31:18.940670Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 50% off monthly seats for 12 months
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an approved startup team. Application and approval required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_kq6wa6nxnez9e47wxs1rxazkab
+      access_operator_entity_id: ent_kq6wa6nxnez9e47wxs1rxazkab
+    access:
+      availability: public
+      method: form
+      url: https://www.sinatra.dev/startups
+    source_ids:
+      - src_q8rbd731rnzbnvyaxkpmmgv919
