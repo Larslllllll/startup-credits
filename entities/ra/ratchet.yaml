@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_1w5wa2gh9d22hdgfhz3z90dwfz
+  slug: ratchet
+  name: Ratchet
+  domains:
+    - value: ratchet.io
+      role: primary
+      valid_from: 2026-09-07T15:34:20.320319Z
+  category: auth-security
+profile:
+  summary: Ratchet offers qualifying startups free or discounted access to their authentication and identity platform.
+  links:
+    site: https://ratchet.io
+  description: Ratchet offers qualifying startups free or discounted access to their authentication and identity platform.
+sources:
+  - source_id: src_37gvyedcx6ev4c0k1zw54g03df
+    url: https://ratchet.io/startup
+programs: []
+offers:
+  - offer_id: off_6c1k58ycpsv655jq0h4myfhrp6
+    offer_slug: ratchet-startup-program
+    title: Ratchet startup program
+    summary: Ratchet offers qualifying startups free or discounted access to their authentication and identity platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:34:20.320319Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their authentication and identity platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_1w5wa2gh9d22hdgfhz3z90dwfz
+      access_operator_entity_id: ent_1w5wa2gh9d22hdgfhz3z90dwfz
+    access:
+      availability: public
+      method: form
+      url: https://ratchet.io/startup
+    source_ids:
+      - src_37gvyedcx6ev4c0k1zw54g03df
