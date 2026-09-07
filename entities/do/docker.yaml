@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ycxvyy3tn00484pemhgfg69pj4
+  slug: docker
+  name: Docker
+  domains:
+    - value: docker.com
+      role: primary
+      valid_from: 2026-09-07T15:19:53.408195Z
+  category: devtools-other
+profile:
+  summary: Docker offers qualifying startups free or discounted access to their container platform and developer tooling.
+  links:
+    site: https://docker.com
+  description: Docker offers qualifying startups free or discounted access to their container platform and developer tooling.
+sources:
+  - source_id: src_k8rs38zg6jzk1264s3kmwc03e9
+    url: https://docker.com/startup
+programs: []
+offers:
+  - offer_id: off_5wj935x22s2d519sn58t15gzf9
+    offer_slug: docker-startup-program
+    title: Docker startup program
+    summary: Docker offers qualifying startups free or discounted access to their container platform and developer tooling.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:19:53.408195Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their container platform and developer tooling
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ycxvyy3tn00484pemhgfg69pj4
+      access_operator_entity_id: ent_ycxvyy3tn00484pemhgfg69pj4
+    access:
+      availability: public
+      method: form
+      url: https://docker.com/startup
+    source_ids:
+      - src_k8rs38zg6jzk1264s3kmwc03e9
