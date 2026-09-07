@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_05yaemys4hjqe47qvfx2srr2hm
+  slug: crococlick
+  name: Crococlick Young Enterprise
+  domains:
+    - value: crococlick.com
+      role: primary
+      valid_from: 2026-09-07T14:57:26.468308Z
+  category: marketing
+profile:
+  summary: Crococlick offers qualifying startups a Young Enterprise program with free or discounted access to their conversion optimization platform.
+  links:
+    site: https://crococlick.com
+  description: Crococlick offers qualifying startups a Young Enterprise program with free or discounted access to their conversion optimization platform.
+sources:
+  - source_id: src_0xnjc1g89ecdkjh22198hq2s2f
+    url: https://crococlick.com/startup
+programs: []
+offers:
+  - offer_id: off_99zchfscd73fwmyjsbgj4tfckk
+    offer_slug: crococlick-startup-program
+    title: Crococlick Young Enterprise startup program
+    summary: Crococlick offers qualifying startups a Young Enterprise program with free or discounted access to their conversion optimization platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:57:26.468308Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Young Enterprise program with free or discounted access to conversion optimization platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_05yaemys4hjqe47qvfx2srr2hm
+      access_operator_entity_id: ent_05yaemys4hjqe47qvfx2srr2hm
+    access:
+      availability: public
+      method: form
+      url: https://crococlick.com/startup
+    source_ids:
+      - src_0xnjc1g89ecdkjh22198hq2s2f
