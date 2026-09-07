@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_h5hjj2n972swnxkhxp1j15760d
+  slug: palm
+  name: Google PaLM
+  domains:
+    - value: makersuite.google.com
+      role: primary
+      valid_from: 2026-09-07T16:12:41.043069Z
+  category: ai-ml
+profile:
+  summary: Google PaLM offers qualifying startups free or discounted access to their AI language model API platform.
+  links:
+    site: https://makersuite.google.com
+  description: Google PaLM offers qualifying startups free or discounted access to their AI language model API platform.
+sources:
+  - source_id: src_d7q0hm2rfehn411w3wfsvzjg7w
+    url: https://makersuite.google.com/startup
+programs: []
+offers:
+  - offer_id: off_8hvfk4vhaj8pzmg7tptdm02r2x
+    offer_slug: palm-startup-program
+    title: Google PaLM startup program
+    summary: Google PaLM offers qualifying startups free or discounted access to their AI language model API platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:12:41.043069Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI language model API platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_h5hjj2n972swnxkhxp1j15760d
+      access_operator_entity_id: ent_h5hjj2n972swnxkhxp1j15760d
+    access:
+      availability: public
+      method: form
+      url: https://makersuite.google.com/startup
+    source_ids:
+      - src_d7q0hm2rfehn411w3wfsvzjg7w
