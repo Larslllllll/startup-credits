@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_jz1xc27mpgfr8n0tnv2djjzfm9
+  slug: dribbble
+  name: Dribbble
+  domains:
+    - value: dribbble.com
+      role: primary
+      valid_from: 2026-09-07T15:47:22.520760Z
+  category: design
+profile:
+  summary: Dribbble offers qualifying startups free or discounted access to their design community and hiring platform.
+  links:
+    site: https://dribbble.com
+  description: Dribbble offers qualifying startups free or discounted access to their design community and hiring platform.
+sources:
+  - source_id: src_dkgtypwnwhy7vhrva4959x0nv7
+    url: https://dribbble.com/startup
+programs: []
+offers:
+  - offer_id: off_jazkk0dvqrs20wccx4vzqtm7ct
+    offer_slug: dribbble-startup-program
+    title: Dribbble startup program
+    summary: Dribbble offers qualifying startups free or discounted access to their design community and hiring platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:47:22.520760Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their design community and hiring platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_jz1xc27mpgfr8n0tnv2djjzfm9
+      access_operator_entity_id: ent_jz1xc27mpgfr8n0tnv2djjzfm9
+    access:
+      availability: public
+      method: form
+      url: https://dribbble.com/startup
+    source_ids:
+      - src_dkgtypwnwhy7vhrva4959x0nv7
