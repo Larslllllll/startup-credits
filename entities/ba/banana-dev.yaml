@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_hzwbbfrdw3309pzhfk1171gx45
+  slug: banana-dev
+  name: Banana
+  domains:
+    - value: banana.dev
+      role: primary
+      valid_from: 2026-09-07T15:04:39.341691Z
+  category: ai-ml
+profile:
+  summary: Banana offers qualifying startups free or discounted access to their serverless GPU platform for ML model inference.
+  links:
+    site: https://banana.dev
+  description: Banana offers qualifying startups free or discounted access to their serverless GPU platform for ML model inference.
+sources:
+  - source_id: src_pz2n78yajnj3f27aqkk0my2yk3
+    url: https://banana.dev/startup
+programs: []
+offers:
+  - offer_id: off_1x08x9y5a357w349w9s4rm2w82
+    offer_slug: banana-dev-startup-program
+    title: Banana startup program
+    summary: Banana offers qualifying startups free or discounted access to their serverless GPU platform for ML model inference.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:04:39.341691Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to serverless GPU platform for ML model inference
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_hzwbbfrdw3309pzhfk1171gx45
+      access_operator_entity_id: ent_hzwbbfrdw3309pzhfk1171gx45
+    access:
+      availability: public
+      method: form
+      url: https://banana.dev/startup
+    source_ids:
+      - src_pz2n78yajnj3f27aqkk0my2yk3
