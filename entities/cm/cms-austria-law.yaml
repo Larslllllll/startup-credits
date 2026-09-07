@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ttnfwpnkwqhaa4zzxn7x0q1as4
+  slug: cms-austria-law
+  name: CMS Austria Law
+  domains:
+    - value: cms.law
+      role: primary
+      valid_from: 2026-09-07T16:40:14.052224Z
+  category: legal-compliance
+profile:
+  summary: CMS Austria offers qualifying startups free or discounted access to their equIP startup legal services program.
+  links:
+    site: https://cms.law
+  description: CMS Austria offers qualifying startups free or discounted access to their equIP startup legal services program.
+sources:
+  - source_id: src_60n3y71sctfxar17m2br2evzd5
+    url: https://cms.law/startup
+programs: []
+offers:
+  - offer_id: off_ax4mdjkwk13f94qz9q457ak7vz
+    offer_slug: cms-austria-law-startup-program
+    title: CMS Austria Law startup program
+    summary: CMS Austria offers qualifying startups free or discounted access to their equIP startup legal services program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:40:14.052224Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to equIP startup legal services program
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ttnfwpnkwqhaa4zzxn7x0q1as4
+      access_operator_entity_id: ent_ttnfwpnkwqhaa4zzxn7x0q1as4
+    access:
+      availability: public
+      method: form
+      url: https://cms.law/startup
+    source_ids:
+      - src_60n3y71sctfxar17m2br2evzd5
