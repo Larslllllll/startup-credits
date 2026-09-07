@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3t5a5r9c76brzwe01398tj5s1y
+  slug: figma
+  name: Figma
+  domains:
+    - value: figma.com
+      role: primary
+      valid_from: 2026-09-07T15:47:26.096290Z
+  category: design
+profile:
+  summary: Figma offers qualifying startups free or discounted access to their collaborative interface design platform.
+  links:
+    site: https://figma.com
+  description: Figma offers qualifying startups free or discounted access to their collaborative interface design platform.
+sources:
+  - source_id: src_5q22pj1q3fy6wc0df99379cb87
+    url: https://figma.com/startup
+programs: []
+offers:
+  - offer_id: off_kw64h4k6q8y16negy2m36720pc
+    offer_slug: figma-startup-program
+    title: Figma startup program
+    summary: Figma offers qualifying startups free or discounted access to their collaborative interface design platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:47:26.096290Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their collaborative interface design platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3t5a5r9c76brzwe01398tj5s1y
+      access_operator_entity_id: ent_3t5a5r9c76brzwe01398tj5s1y
+    access:
+      availability: public
+      method: form
+      url: https://figma.com/startup
+    source_ids:
+      - src_5q22pj1q3fy6wc0df99379cb87
