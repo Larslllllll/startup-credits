@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_yr3x43v0ggtk6f1h2gv0n2cq0g
+  slug: hunter
+  name: Hunter
+  domains:
+    - value: hunter.io
+      role: primary
+      valid_from: 2026-09-07T15:29:32.503116Z
+  category: communication
+profile:
+  summary: Hunter offers qualifying startups free or discounted access to their email finder and verification platform.
+  links:
+    site: https://hunter.io
+  description: Hunter offers qualifying startups free or discounted access to their email finder and verification platform.
+sources:
+  - source_id: src_6gfanb56ncnbjga9hda2h2erqh
+    url: https://hunter.io/startup
+programs: []
+offers:
+  - offer_id: off_e9k6x36b9h2hh5s6tzgs0n5909
+    offer_slug: hunter-startup-program
+    title: Hunter startup program
+    summary: Hunter offers qualifying startups free or discounted access to their email finder and verification platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:29:32.503116Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their email finder and verification platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_yr3x43v0ggtk6f1h2gv0n2cq0g
+      access_operator_entity_id: ent_yr3x43v0ggtk6f1h2gv0n2cq0g
+    access:
+      availability: public
+      method: form
+      url: https://hunter.io/startup
+    source_ids:
+      - src_6gfanb56ncnbjga9hda2h2erqh
