@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7zkvt89xz8wy72am3kw21aaqm9
+  slug: anyscale
+  name: Anyscale
+  domains:
+    - value: anyscale.com
+      role: primary
+      valid_from: 2026-09-07T15:04:58.752695Z
+  category: ai-ml
+profile:
+  summary: Anyscale offers qualifying startups free or discounted access to their Ray-based distributed compute platform for AI.
+  links:
+    site: https://anyscale.com
+  description: Anyscale offers qualifying startups free or discounted access to their Ray-based distributed compute platform for AI.
+sources:
+  - source_id: src_tzy2eesb7g6j873tqgz2qchyjb
+    url: https://anyscale.com/startup
+programs: []
+offers:
+  - offer_id: off_vkne9hz3nb93tc0a4gsrazsg1x
+    offer_slug: anyscale-startup-program
+    title: Anyscale startup program
+    summary: Anyscale offers qualifying startups free or discounted access to their Ray-based distributed compute platform for AI.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:04:58.752695Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to Ray-based distributed compute platform for AI
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_7zkvt89xz8wy72am3kw21aaqm9
+      access_operator_entity_id: ent_7zkvt89xz8wy72am3kw21aaqm9
+    access:
+      availability: public
+      method: form
+      url: https://anyscale.com/startup
+    source_ids:
+      - src_tzy2eesb7g6j873tqgz2qchyjb
