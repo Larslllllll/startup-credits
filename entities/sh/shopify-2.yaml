@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_z4grzp633e00t8p0744btt6g26
+  slug: shopify-2
+  name: Shopify Pro
+  domains:
+    - value: shopify.com
+      role: primary
+      valid_from: 2026-09-07T15:55:24.336783Z
+  category: commerce
+profile:
+  summary: Shopify Pro offers qualifying startups free or discounted access to their e-commerce and online store platform.
+  links:
+    site: https://shopify.com
+  description: Shopify Pro offers qualifying startups free or discounted access to their e-commerce and online store platform.
+sources:
+  - source_id: src_ehc3xztyqceknrxd8p6fp1ygpe
+    url: https://shopify.com/startup
+programs: []
+offers:
+  - offer_id: off_3qdahxdqy6ynkagx1j1rmt10ry
+    offer_slug: shopify-2-startup-program
+    title: Shopify Pro startup program
+    summary: Shopify Pro offers qualifying startups free or discounted access to their e-commerce and online store platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:55:24.336783Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their e-commerce and online store platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_z4grzp633e00t8p0744btt6g26
+      access_operator_entity_id: ent_z4grzp633e00t8p0744btt6g26
+    access:
+      availability: public
+      method: form
+      url: https://shopify.com/startup
+    source_ids:
+      - src_ehc3xztyqceknrxd8p6fp1ygpe
