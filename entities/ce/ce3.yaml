@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_f6nmq748y7vxh6tdsk6d68n9vk
+  slug: ce3
+  name: Cerebrium 3
+  domains:
+    - value: cerebrium.ai
+      role: primary
+      valid_from: 2026-09-07T16:53:25.334618Z
+  category: ai-ml
+profile:
+  summary: Cerebrium offers qualifying startups free or discounted access to their AI deployment platform.
+  links:
+    site: https://cerebrium.ai
+  description: Cerebrium offers qualifying startups free or discounted access to their AI deployment platform.
+sources:
+  - source_id: src_mrr2gpa3dnnrtbtqp9ytz3qtam
+    url: https://cerebrium.ai/startup
+programs: []
+offers:
+  - offer_id: off_vrtn8f2bgmr6gkx1h3pv4b2mk1
+    offer_slug: ce3-startup-program
+    title: Cerebrium 3 startup program
+    summary: Cerebrium offers qualifying startups free or discounted access to their AI deployment platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:53:25.334618Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI deployment platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_f6nmq748y7vxh6tdsk6d68n9vk
+      access_operator_entity_id: ent_f6nmq748y7vxh6tdsk6d68n9vk
+    access:
+      availability: public
+      method: form
+      url: https://cerebrium.ai/startup
+    source_ids:
+      - src_mrr2gpa3dnnrtbtqp9ytz3qtam
