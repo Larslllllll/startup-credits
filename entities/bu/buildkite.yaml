@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5myx6s4xhf0npjsk1kgvv9n3dz
+  slug: buildkite
+  name: Buildkite
+  domains:
+    - value: buildkite.com
+      role: primary
+      valid_from: 2026-09-07T14:54:02.970443Z
+  category: ci-cd
+profile:
+  summary: Buildkite offers qualifying startups free or discounted access to their continuous integration and deployment platform.
+  links:
+    site: https://buildkite.com
+  description: Buildkite offers qualifying startups free or discounted access to their continuous integration and deployment platform.
+sources:
+  - source_id: src_z7z6cztak70k76drskjt5hjm42
+    url: https://buildkite.com/startup
+programs: []
+offers:
+  - offer_id: off_08z8n402t91dr0b4p856g7pdng
+    offer_slug: buildkite-startup-program
+    title: Buildkite startup program
+    summary: Buildkite offers qualifying startups free or discounted access to their continuous integration and deployment platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:54:02.970443Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to continuous integration and deployment platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_5myx6s4xhf0npjsk1kgvv9n3dz
+      access_operator_entity_id: ent_5myx6s4xhf0npjsk1kgvv9n3dz
+    access:
+      availability: public
+      method: form
+      url: https://buildkite.com/startup
+    source_ids:
+      - src_z7z6cztak70k76drskjt5hjm42
