@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_2famtvh14nwkca6npw25xjamhk
+  slug: tb2
+  name: Tableau 2
+  domains:
+    - value: tableau.com
+      role: primary
+      valid_from: 2026-09-07T16:57:30.505391Z
+  category: data-analytics
+profile:
+  summary: Tableau offers qualifying startups free or discounted access to their data visualization and analytics platform.
+  links:
+    site: https://tableau.com
+  description: Tableau offers qualifying startups free or discounted access to their data visualization and analytics platform.
+sources:
+  - source_id: src_dvwjzffazdpkjf9a6az89pehrq
+    url: https://tableau.com/startup
+programs: []
+offers:
+  - offer_id: off_b6gnypmzwqymp8xc1wj3b0t78r
+    offer_slug: tb2-startup-program
+    title: Tableau 2 startup program
+    summary: Tableau offers qualifying startups free or discounted access to their data visualization and analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:57:30.505391Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to data visualization and analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_2famtvh14nwkca6npw25xjamhk
+      access_operator_entity_id: ent_2famtvh14nwkca6npw25xjamhk
+    access:
+      availability: public
+      method: form
+      url: https://tableau.com/startup
+    source_ids:
+      - src_dvwjzffazdpkjf9a6az89pehrq
