@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_fa9js3qxjfjthb0nwn8meg24dk
+  slug: freshsales
+  name: Freshsales
+  domains:
+    - value: freshsales.io
+      role: primary
+      valid_from: 2026-09-07T15:29:50.293037Z
+  category: crm-sales
+profile:
+  summary: Freshsales offers qualifying startups free or discounted access to their AI-powered CRM and sales platform.
+  links:
+    site: https://freshsales.io
+  description: Freshsales offers qualifying startups free or discounted access to their AI-powered CRM and sales platform.
+sources:
+  - source_id: src_52bs4x48711d7n2b2f2we4p0w3
+    url: https://freshsales.io/startup
+programs: []
+offers:
+  - offer_id: off_ezetg7hnya8rwtq3xmszpz82pf
+    offer_slug: freshsales-startup-program
+    title: Freshsales startup program
+    summary: Freshsales offers qualifying startups free or discounted access to their AI-powered CRM and sales platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:29:50.293037Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI-powered CRM and sales platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_fa9js3qxjfjthb0nwn8meg24dk
+      access_operator_entity_id: ent_fa9js3qxjfjthb0nwn8meg24dk
+    access:
+      availability: public
+      method: form
+      url: https://freshsales.io/startup
+    source_ids:
+      - src_52bs4x48711d7n2b2f2we4p0w3
