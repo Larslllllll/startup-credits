@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_fatyg3djn7axw6y26dn74ckr16
+  slug: otter
+  name: Otter
+  domains:
+    - value: otter.ai
+      role: primary
+      valid_from: 2026-09-07T15:59:41.560596Z
+  category: ai-ml
+profile:
+  summary: Otter offers qualifying startups free or discounted access to their AI-powered meeting transcription platform.
+  links:
+    site: https://otter.ai
+  description: Otter offers qualifying startups free or discounted access to their AI-powered meeting transcription platform.
+sources:
+  - source_id: src_5mhh298rpfh3p7p1ynch36sqak
+    url: https://otter.ai/startup
+programs: []
+offers:
+  - offer_id: off_fe3m6wm8s85se65j7s0bbb5a45
+    offer_slug: otter-startup-program
+    title: Otter startup program
+    summary: Otter offers qualifying startups free or discounted access to their AI-powered meeting transcription platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:59:41.560596Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI-powered meeting transcription platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_fatyg3djn7axw6y26dn74ckr16
+      access_operator_entity_id: ent_fatyg3djn7axw6y26dn74ckr16
+    access:
+      availability: public
+      method: form
+      url: https://otter.ai/startup
+    source_ids:
+      - src_5mhh298rpfh3p7p1ynch36sqak
