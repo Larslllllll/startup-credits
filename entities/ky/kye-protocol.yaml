@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0jv1g9zq6jbf2shab264pb7hdq
+  slug: kye-protocol
+  name: KYE Protocol
+  domains:
+    - value: kyeprotocol.com
+      role: primary
+      valid_from: 2026-09-07T13:33:06.304728Z
+  category: ai-ml
+profile:
+  summary: KYE Protocol's AI Governance Program offers qualifying startups $5,000 in credits for Seed/Pre-Seed teams and $25,000 for qualifying Series A teams, valid for 12 months.
+  links:
+    site: https://kyeprotocol.com
+  description: KYE Protocol provides AI governance infrastructure. Their AI Governance Program offers qualifying AI startups $5,000 in credits for Seed/Pre-Seed teams and $25,000 for qualifying Series A teams, valid for 12 months.
+sources:
+  - source_id: src_x4hxfch6q4g0d03ey240zmyh1y
+    url: https://kyeprotocol.com/startups
+programs: []
+offers:
+  - offer_id: off_pc8801ycvt5vzccxf4eb0dhxen
+    offer_slug: kye-ai-governance-program
+    title: KYE AI Governance Program
+    summary: Qualifying startups receive $5,000 credits (Seed/Pre-Seed) or $25,000 credits (Series A) for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:33:06.304728Z
+    economics:
+      consideration:
+        kind: unknown
+        description: "The source record did not establish separate consideration."
+      benefits:
+        - benefit_id: ben_primary
+          description: $5,000 credits for Seed/Pre-Seed, $25,000 for Series A, valid for 12 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying AI startup at Seed/Pre-Seed or Series A stage. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_0jv1g9zq6jbf2shab264pb7hdq
+      access_operator_entity_id: ent_0jv1g9zq6jbf2shab264pb7hdq
+    access:
+      availability: public
+      method: form
+      url: https://kyeprotocol.com/startups
+    source_ids:
+      - src_x4hxfch6q4g0d03ey240zmyh1y
