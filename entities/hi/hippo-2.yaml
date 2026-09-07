@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_1vngb3a070e4rr2em3dh2er0y9
+  slug: hippo-2
+  name: Hippo Video Pro
+  domains:
+    - value: hippovideo.io
+      role: primary
+      valid_from: 2026-09-07T15:41:21.059605Z
+  category: communication
+profile:
+  summary: Hippo Video Pro offers qualifying startups free or discounted access to their video messaging platform.
+  links:
+    site: https://hippovideo.io
+  description: Hippo Video Pro offers qualifying startups free or discounted access to their video messaging platform.
+sources:
+  - source_id: src_46qdeqzg4v5y42zecges357zna
+    url: https://hippovideo.io/startup
+programs: []
+offers:
+  - offer_id: off_hzx53q4hc7pedbv3dn0es8501q
+    offer_slug: hippo-2-startup-program
+    title: Hippo Video Pro startup program
+    summary: Hippo Video Pro offers qualifying startups free or discounted access to their video messaging platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:41:21.059605Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their video messaging platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_1vngb3a070e4rr2em3dh2er0y9
+      access_operator_entity_id: ent_1vngb3a070e4rr2em3dh2er0y9
+    access:
+      availability: public
+      method: form
+      url: https://hippovideo.io/startup
+    source_ids:
+      - src_46qdeqzg4v5y42zecges357zna
