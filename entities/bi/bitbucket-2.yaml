@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_mbfx8x295d6vywgwwk4x2ynrjp
+  slug: bitbucket-2
+  name: Bitbucket Pro
+  domains:
+    - value: bitbucket.org
+      role: primary
+      valid_from: 2026-09-07T15:49:09.852989Z
+  category: ci-cd
+profile:
+  summary: Bitbucket Pro offers qualifying startups free or discounted access to their code collaboration and Git platform.
+  links:
+    site: https://bitbucket.org
+  description: Bitbucket Pro offers qualifying startups free or discounted access to their code collaboration and Git platform.
+sources:
+  - source_id: src_27h1hhnf5zesrs5ky58dwym3v1
+    url: https://bitbucket.org/startup
+programs: []
+offers:
+  - offer_id: off_zq0xgwtanfsrwqamdchhy946ee
+    offer_slug: bitbucket-2-startup-program
+    title: Bitbucket Pro startup program
+    summary: Bitbucket Pro offers qualifying startups free or discounted access to their code collaboration and Git platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:49:09.852989Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their code collaboration and Git platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_mbfx8x295d6vywgwwk4x2ynrjp
+      access_operator_entity_id: ent_mbfx8x295d6vywgwwk4x2ynrjp
+    access:
+      availability: public
+      method: form
+      url: https://bitbucket.org/startup
+    source_ids:
+      - src_27h1hhnf5zesrs5ky58dwym3v1
