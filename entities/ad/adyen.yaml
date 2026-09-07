@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9m9awffwp2hgrx6avrt7hbp41t
+  slug: adyen
+  name: Adyen
+  domains:
+    - value: adyen.com
+      role: primary
+      valid_from: 2026-09-07T15:17:45.571175Z
+  category: payments-fintech
+profile:
+  summary: Adyen offers qualifying startups free or discounted access to their enterprise payment and financial platform.
+  links:
+    site: https://adyen.com
+  description: Adyen offers qualifying startups free or discounted access to their enterprise payment and financial platform.
+sources:
+  - source_id: src_p8xf3t5xaegjhx6dn48t83mvbj
+    url: https://adyen.com/startup
+programs: []
+offers:
+  - offer_id: off_aave87ayrrnwsmxm2ktfw3fz5f
+    offer_slug: adyen-startup-program
+    title: Adyen startup program
+    summary: Adyen offers qualifying startups free or discounted access to their enterprise payment and financial platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:17:45.571175Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their enterprise payment and financial platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_9m9awffwp2hgrx6avrt7hbp41t
+      access_operator_entity_id: ent_9m9awffwp2hgrx6avrt7hbp41t
+    access:
+      availability: public
+      method: form
+      url: https://adyen.com/startup
+    source_ids:
+      - src_p8xf3t5xaegjhx6dn48t83mvbj
