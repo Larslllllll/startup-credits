@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ap49yhyfm2jqkd7xsq1kscyypv
+  slug: memorilabs
+  name: Memorilabs
+  domains:
+    - value: memorilabs.ai
+      role: primary
+      valid_from: 2026-09-07T14:19:04.385733Z
+  category: ai-ml
+profile:
+  summary: Memorilabs offers qualifying startups free access to their AI-powered memory and knowledge management platform for 6 months.
+  links:
+    site: https://memorilabs.ai
+  description: Memorilabs is an AI-powered memory and knowledge management platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_aqg7bnfy6yr45h8j7cma6msjyw
+    url: https://memorilabs.ai/startup
+programs: []
+offers:
+  - offer_id: off_7w67052msenmn7eqbkde4jpy8y
+    offer_slug: memorilabs-startup-program
+    title: Memorilabs startup program
+    summary: Qualifying startups receive free access to the Memorilabs AI memory and knowledge management platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:19:04.385733Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to AI memory and knowledge management platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ap49yhyfm2jqkd7xsq1kscyypv
+      access_operator_entity_id: ent_ap49yhyfm2jqkd7xsq1kscyypv
+    access:
+      availability: public
+      method: form
+      url: https://memorilabs.ai/startup
+    source_ids:
+      - src_aqg7bnfy6yr45h8j7cma6msjyw
