@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_78fwd1cb8c2wh2n6hrh6kqszvj
+  slug: electric-sql
+  name: Electric SQL
+  domains:
+    - value: electric-sql.com
+      role: primary
+      valid_from: 2026-09-07T15:06:24.490084Z
+  category: databases
+profile:
+  summary: Electric SQL offers qualifying startups free or discounted access to their open-source local-first sync engine for Postgres.
+  links:
+    site: https://electric-sql.com
+  description: Electric SQL offers qualifying startups free or discounted access to their open-source local-first sync engine for Postgres.
+sources:
+  - source_id: src_wh5ts4bc2vp7y62tzz6escn2ta
+    url: https://electric-sql.com/startup
+programs: []
+offers:
+  - offer_id: off_knkbmcdwfa3txz180v389rjbdm
+    offer_slug: electric-sql-startup-program
+    title: Electric SQL startup program
+    summary: Electric SQL offers qualifying startups free or discounted access to their open-source local-first sync engine for Postgres.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:06:24.490084Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source local-first sync engine for Postgres
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_78fwd1cb8c2wh2n6hrh6kqszvj
+      access_operator_entity_id: ent_78fwd1cb8c2wh2n6hrh6kqszvj
+    access:
+      availability: public
+      method: form
+      url: https://electric-sql.com/startup
+    source_ids:
+      - src_wh5ts4bc2vp7y62tzz6escn2ta
