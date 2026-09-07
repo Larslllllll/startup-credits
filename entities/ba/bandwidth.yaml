@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_g3w5ects0kb5prds8xawg8hbcc
+  slug: bandwidth
+  name: Bandwidth
+  domains:
+    - value: bandwidth.com
+      role: primary
+      valid_from: 2026-09-07T15:14:42.379779Z
+  category: communication
+profile:
+  summary: Bandwidth offers qualifying startups free or discounted access to their enterprise communications platform and APIs.
+  links:
+    site: https://bandwidth.com
+  description: Bandwidth offers qualifying startups free or discounted access to their enterprise communications platform and APIs.
+sources:
+  - source_id: src_4rgbnejdk4rkabzfy4ct2sc31b
+    url: https://bandwidth.com/startup
+programs: []
+offers:
+  - offer_id: off_mk0qnap068zqayjh0z4mchdz8p
+    offer_slug: bandwidth-startup-program
+    title: Bandwidth startup program
+    summary: Bandwidth offers qualifying startups free or discounted access to their enterprise communications platform and APIs.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:14:42.379779Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to enterprise communications platform and APIs
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_g3w5ects0kb5prds8xawg8hbcc
+      access_operator_entity_id: ent_g3w5ects0kb5prds8xawg8hbcc
+    access:
+      availability: public
+      method: form
+      url: https://bandwidth.com/startup
+    source_ids:
+      - src_4rgbnejdk4rkabzfy4ct2sc31b
