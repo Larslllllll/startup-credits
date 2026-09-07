@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_x5cz66je03gf2wdfh31x2mqc6c
+  slug: imeetify
+  name: iMeetify
+  domains:
+    - value: imeetify.com
+      role: primary
+      valid_from: 2026-09-07T14:07:23.769097Z
+  category: communication
+profile:
+  summary: iMeetify for Startups offers free Pro plan access for 12 months to qualifying startups under 5 years old and 20 employees.
+  links:
+    site: https://imeetify.com
+  description: iMeetify is a video meeting platform. Their startup program offers free Pro plan access for 12 months to qualifying startups.
+sources:
+  - source_id: src_h3c56a056bv4s8n14x76f08dxa
+    url: https://imeetify.com/startup
+programs: []
+offers:
+  - offer_id: off_m21z02hd7e060bkdb1e92kh78n
+    offer_slug: imeetify-startup-program
+    title: iMeetify for Startups
+    summary: Startups under 5 years old and 20 employees receive free Pro plan access for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:07:23.769097Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free Pro plan access for 12 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Startup under 5 years old with fewer than 20 employees. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_x5cz66je03gf2wdfh31x2mqc6c
+      access_operator_entity_id: ent_x5cz66je03gf2wdfh31x2mqc6c
+    access:
+      availability: public
+      method: form
+      url: https://imeetify.com/startup
+    source_ids:
+      - src_h3c56a056bv4s8n14x76f08dxa
