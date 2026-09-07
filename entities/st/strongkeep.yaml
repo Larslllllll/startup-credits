@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_bjg0jr25fxc45mpn7y9tagp50t
+  slug: strongkeep
+  name: StrongKeep
+  domains:
+    - value: strongkeep.com
+      role: primary
+      valid_from: 2026-09-07T14:38:58.775385Z
+  category: finance-accounting
+profile:
+  summary: StrongKeep offers qualifying startups free access to their portfolio management and investment tracking platform for 12 months.
+  links:
+    site: https://strongkeep.com
+  description: StrongKeep is a portfolio management and investment tracking platform. Their startup program offers free access to qualifying startups for 12 months.
+sources:
+  - source_id: src_f4wsqytsvyf8etrhxpmmjpyk3v
+    url: https://strongkeep.com/startup
+programs: []
+offers:
+  - offer_id: off_6p176tj1bqq5v6rgsv86pdq3z8
+    offer_slug: strongkeep-startup-program
+    title: StrongKeep startup program
+    summary: Qualifying startups receive free access to the StrongKeep portfolio management and investment tracking platform for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:38:58.775385Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to portfolio management and investment tracking platform for 12 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_bjg0jr25fxc45mpn7y9tagp50t
+      access_operator_entity_id: ent_bjg0jr25fxc45mpn7y9tagp50t
+    access:
+      availability: public
+      method: form
+      url: https://strongkeep.com/startup
+    source_ids:
+      - src_f4wsqytsvyf8etrhxpmmjpyk3v
