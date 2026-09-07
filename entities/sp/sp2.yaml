@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_v4ac529r6ee9az14yqhbp2a8q0
+  slug: sp2
+  name: Smallpdf 2
+  domains:
+    - value: smallpdf.com
+      role: primary
+      valid_from: 2026-09-07T16:54:28.668077Z
+  category: productivity
+profile:
+  summary: Smallpdf offers qualifying startups free or discounted access to their PDF and document conversion platform.
+  links:
+    site: https://smallpdf.com
+  description: Smallpdf offers qualifying startups free or discounted access to their PDF and document conversion platform.
+sources:
+  - source_id: src_rfgp0m391vshe89m3wzndg9hgx
+    url: https://smallpdf.com/startup
+programs: []
+offers:
+  - offer_id: off_yc42yj4262wx5h8eppjjbrct6h
+    offer_slug: sp2-startup-program
+    title: Smallpdf 2 startup program
+    summary: Smallpdf offers qualifying startups free or discounted access to their PDF and document conversion platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:54:28.668077Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to PDF and document conversion platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_v4ac529r6ee9az14yqhbp2a8q0
+      access_operator_entity_id: ent_v4ac529r6ee9az14yqhbp2a8q0
+    access:
+      availability: public
+      method: form
+      url: https://smallpdf.com/startup
+    source_ids:
+      - src_rfgp0m391vshe89m3wzndg9hgx
