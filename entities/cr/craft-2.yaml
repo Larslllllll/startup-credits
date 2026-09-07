@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0pdsehbgae1m5sywyd6ws2xgsx
+  slug: craft-2
+  name: Craft 2
+  domains:
+    - value: craft.do
+      role: primary
+      valid_from: 2026-09-07T15:39:23.525480Z
+  category: productivity
+profile:
+  summary: Craft 2 offers qualifying startups free or discounted access to their next-generation document and notes platform.
+  links:
+    site: https://craft.do
+  description: Craft 2 offers qualifying startups free or discounted access to their next-generation document and notes platform.
+sources:
+  - source_id: src_f31pz4ey4epn1bmn9tgzy93ee3
+    url: https://craft.do/startup
+programs: []
+offers:
+  - offer_id: off_v1sn3723b6w3wypnewf2xma4kg
+    offer_slug: craft-2-startup-program
+    title: Craft 2 startup program
+    summary: Craft 2 offers qualifying startups free or discounted access to their next-generation document and notes platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:39:23.525480Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their next-generation document and notes platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_0pdsehbgae1m5sywyd6ws2xgsx
+      access_operator_entity_id: ent_0pdsehbgae1m5sywyd6ws2xgsx
+    access:
+      availability: public
+      method: form
+      url: https://craft.do/startup
+    source_ids:
+      - src_f31pz4ey4epn1bmn9tgzy93ee3
