@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_a6rnmskwf82b171g0vjcm0j7rd
+  slug: yi
+  name: Yi
+  domains:
+    - value: yi.ai
+      role: primary
+      valid_from: 2026-09-07T16:12:07.366943Z
+  category: ai-ml
+profile:
+  summary: Yi offers qualifying startups free or discounted access to their AI language model API platform.
+  links:
+    site: https://yi.ai
+  description: Yi offers qualifying startups free or discounted access to their AI language model API platform.
+sources:
+  - source_id: src_nxz6t73cd383m4txahs1h2h9cb
+    url: https://yi.ai/startup
+programs: []
+offers:
+  - offer_id: off_4cbc3yj0pswvc35p8qmsa33waf
+    offer_slug: yi-startup-program
+    title: Yi startup program
+    summary: Yi offers qualifying startups free or discounted access to their AI language model API platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:12:07.366943Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI language model API platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_a6rnmskwf82b171g0vjcm0j7rd
+      access_operator_entity_id: ent_a6rnmskwf82b171g0vjcm0j7rd
+    access:
+      availability: public
+      method: form
+      url: https://yi.ai/startup
+    source_ids:
+      - src_nxz6t73cd383m4txahs1h2h9cb
