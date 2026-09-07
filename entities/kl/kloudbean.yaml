@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_fscta35c3qgr0k9dj1x1a3mhqk
+  slug: kloudbean
+  name: KloudBean
+  domains:
+    - value: kloudbean.com
+      role: primary
+      valid_from: 2026-09-07T13:38:33.309221Z
+  category: hosting-infra
+profile:
+  summary: KloudBean offers approved MVP-stage startups $2,500 in hosting credits over 12 months plus 3 months of free platform access with no setup fees.
+  links:
+    site: https://kloudbean.com
+  description: KloudBean is a cloud hosting platform. Their Startup Program Launch Tier offers approved MVP-stage startups $2,500 in hosting credits over 12 months, plus 3 months of free platform access with no setup fees. Eligible startups are under 2 years old, with under $1M funding, under 10 employees, and pre-revenue or early-revenue.
+sources:
+  - source_id: src_8jm6qq4td5mg1eh2yc371dw979
+    url: https://kloudbean.com/startup
+programs: []
+offers:
+  - offer_id: off_zyre75rb078wgyh6p7dssecr86
+    offer_slug: kloudbean-startup-program
+    title: KloudBean Startup Program Launch Tier
+    summary: Approved MVP-stage startups receive $2,500 in hosting credits over 12 months plus 3 months of free platform access.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:38:33.309221Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $2,500 in hosting credits over 12 months plus 3 months of free platform access with no setup fees
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a startup under 2 years old, with under $1M funding, under 10 employees, and pre-revenue or early-revenue. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_fscta35c3qgr0k9dj1x1a3mhqk
+      access_operator_entity_id: ent_fscta35c3qgr0k9dj1x1a3mhqk
+    access:
+      availability: public
+      method: form
+      url: https://kloudbean.com/startup
+    source_ids:
+      - src_8jm6qq4td5mg1eh2yc371dw979
