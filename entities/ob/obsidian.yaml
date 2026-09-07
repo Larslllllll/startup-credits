@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6kdpp4fmmtxm2v5vm93c22phmr
+  slug: obsidian
+  name: Obsidian
+  domains:
+    - value: obsidian.md
+      role: primary
+      valid_from: 2026-09-07T15:39:31.173117Z
+  category: productivity
+profile:
+  summary: Obsidian offers qualifying startups free or discounted access to their knowledge base and markdown notes platform.
+  links:
+    site: https://obsidian.md
+  description: Obsidian offers qualifying startups free or discounted access to their knowledge base and markdown notes platform.
+sources:
+  - source_id: src_86zd947g8s8bmf680e1agsbexc
+    url: https://obsidian.md/startup
+programs: []
+offers:
+  - offer_id: off_a9jkfqqhm8kmvg6nbft7a1dbvp
+    offer_slug: obsidian-startup-program
+    title: Obsidian startup program
+    summary: Obsidian offers qualifying startups free or discounted access to their knowledge base and markdown notes platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:39:31.173117Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their knowledge base and markdown notes platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_6kdpp4fmmtxm2v5vm93c22phmr
+      access_operator_entity_id: ent_6kdpp4fmmtxm2v5vm93c22phmr
+    access:
+      availability: public
+      method: form
+      url: https://obsidian.md/startup
+    source_ids:
+      - src_86zd947g8s8bmf680e1agsbexc
