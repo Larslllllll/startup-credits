@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_kyqf4cbw3wyfmg1y28fmwf8xm6
+  slug: whatagraph
+  name: Whatagraph
+  domains:
+    - value: whatagraph.com
+      role: primary
+      valid_from: 2026-09-07T15:37:00.905049Z
+  category: marketing
+profile:
+  summary: Whatagraph offers qualifying startups free or discounted access to their marketing reporting and analytics platform.
+  links:
+    site: https://whatagraph.com
+  description: Whatagraph offers qualifying startups free or discounted access to their marketing reporting and analytics platform.
+sources:
+  - source_id: src_nbbpcpcnrrmyn3e49hnssntjf2
+    url: https://whatagraph.com/startup
+programs: []
+offers:
+  - offer_id: off_n5fr2e98jmqek5p0bs9k50zw5t
+    offer_slug: whatagraph-startup-program
+    title: Whatagraph startup program
+    summary: Whatagraph offers qualifying startups free or discounted access to their marketing reporting and analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:37:00.905049Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their marketing reporting and analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_kyqf4cbw3wyfmg1y28fmwf8xm6
+      access_operator_entity_id: ent_kyqf4cbw3wyfmg1y28fmwf8xm6
+    access:
+      availability: public
+      method: form
+      url: https://whatagraph.com/startup
+    source_ids:
+      - src_nbbpcpcnrrmyn3e49hnssntjf2
