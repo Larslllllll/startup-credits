@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0wt0p9c3rs58b1p69b9zjf38h8
+  slug: chef
+  name: Chef
+  domains:
+    - value: chef.io
+      role: primary
+      valid_from: 2026-09-07T15:20:33.332996Z
+  category: devtools-other
+profile:
+  summary: Chef offers qualifying startups free or discounted access to their infrastructure as code and configuration management platform.
+  links:
+    site: https://chef.io
+  description: Chef offers qualifying startups free or discounted access to their infrastructure as code and configuration management platform.
+sources:
+  - source_id: src_r82sys98e0acczdar39se417h1
+    url: https://chef.io/startup
+programs: []
+offers:
+  - offer_id: off_4g55qzant41ty4gv4kpbzjxdfb
+    offer_slug: chef-startup-program
+    title: Chef startup program
+    summary: Chef offers qualifying startups free or discounted access to their infrastructure as code and configuration management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:20:33.332996Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their infrastructure as code and configuration management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_0wt0p9c3rs58b1p69b9zjf38h8
+      access_operator_entity_id: ent_0wt0p9c3rs58b1p69b9zjf38h8
+    access:
+      availability: public
+      method: form
+      url: https://chef.io/startup
+    source_ids:
+      - src_r82sys98e0acczdar39se417h1
