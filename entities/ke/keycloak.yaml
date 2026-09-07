@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_s5ke8mdt2y0f5g3b3a2rc51zq1
+  slug: keycloak
+  name: Keycloak
+  domains:
+    - value: keycloak.org
+      role: primary
+      valid_from: 2026-09-07T15:33:57.013911Z
+  category: auth-security
+profile:
+  summary: Keycloak offers qualifying startups free or discounted access to their open-source identity and access management platform.
+  links:
+    site: https://keycloak.org
+  description: Keycloak offers qualifying startups free or discounted access to their open-source identity and access management platform.
+sources:
+  - source_id: src_ht8a12c8vgjfp9j8b5apaqdtnv
+    url: https://keycloak.org/startup
+programs: []
+offers:
+  - offer_id: off_r2n81ek1xcn5fpj7q5dtc110zg
+    offer_slug: keycloak-startup-program
+    title: Keycloak startup program
+    summary: Keycloak offers qualifying startups free or discounted access to their open-source identity and access management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:33:57.013911Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source identity and access management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_s5ke8mdt2y0f5g3b3a2rc51zq1
+      access_operator_entity_id: ent_s5ke8mdt2y0f5g3b3a2rc51zq1
+    access:
+      availability: public
+      method: form
+      url: https://keycloak.org/startup
+    source_ids:
+      - src_ht8a12c8vgjfp9j8b5apaqdtnv
