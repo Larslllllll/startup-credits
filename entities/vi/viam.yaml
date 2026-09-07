@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_tfnbbd0scmxqk4nfg1p74gb709
+  slug: viam
+  name: Viam
+  domains:
+    - value: viam.com
+      role: primary
+      valid_from: 2026-09-07T14:09:37.928748Z
+  category: devtools-other
+profile:
+  summary: Viam offers qualifying startups free development tools and hardware access for building and testing robots and smart machines.
+  links:
+    site: https://viam.com
+  description: Viam is a robotics and IoT development platform. Their startup program offers free development tools and hardware access for qualifying startups.
+sources:
+  - source_id: src_3j73nvvg59z9wm3kfws24ensdv
+    url: https://viam.com/startup
+programs: []
+offers:
+  - offer_id: off_1y8f9yq3tbhkz3kpjs1a8tvfve
+    offer_slug: viam-startup-program
+    title: Viam startup program
+    summary: Qualifying startups receive free development tools and hardware access for building robots and smart machines.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:09:37.928748Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free development tools and hardware access
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_tfnbbd0scmxqk4nfg1p74gb709
+      access_operator_entity_id: ent_tfnbbd0scmxqk4nfg1p74gb709
+    access:
+      availability: public
+      method: form
+      url: https://viam.com/startup
+    source_ids:
+      - src_3j73nvvg59z9wm3kfws24ensdv
