@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0rcxx9pmzmt7camzn56jzd0cpk
+  slug: podcastle
+  name: Podcastle
+  domains:
+    - value: podcastle.ai
+      role: primary
+      valid_from: 2026-09-07T15:43:38.359701Z
+  category: communication
+profile:
+  summary: Podcastle offers qualifying startups free or discounted access to their AI-powered podcast creation and editing platform.
+  links:
+    site: https://podcastle.ai
+  description: Podcastle offers qualifying startups free or discounted access to their AI-powered podcast creation and editing platform.
+sources:
+  - source_id: src_sndghx2b53pfpr8cn84cqs6rkr
+    url: https://podcastle.ai/startup
+programs: []
+offers:
+  - offer_id: off_9tj9t38jwctd4t1f6ex85n84j0
+    offer_slug: podcastle-startup-program
+    title: Podcastle startup program
+    summary: Podcastle offers qualifying startups free or discounted access to their AI-powered podcast creation and editing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:43:38.359701Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI-powered podcast creation and editing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_0rcxx9pmzmt7camzn56jzd0cpk
+      access_operator_entity_id: ent_0rcxx9pmzmt7camzn56jzd0cpk
+    access:
+      availability: public
+      method: form
+      url: https://podcastle.ai/startup
+    source_ids:
+      - src_sndghx2b53pfpr8cn84cqs6rkr
