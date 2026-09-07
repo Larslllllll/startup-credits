@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_m5f8mrqwpfzdzxpbrz66qkfy15
+  slug: llmtime
+  name: LLMtime
+  domains:
+    - value: llmtime.ai
+      role: primary
+      valid_from: 2026-09-07T16:17:02.239390Z
+  category: ai-ml
+profile:
+  summary: LLMtime offers qualifying startups free or discounted access to their LLM application development platform.
+  links:
+    site: https://llmtime.ai
+  description: LLMtime offers qualifying startups free or discounted access to their LLM application development platform.
+sources:
+  - source_id: src_2h3mt4a1m55fw4b4765ck3rqkb
+    url: https://llmtime.ai/startup
+programs: []
+offers:
+  - offer_id: off_jgtmcy1p84jbpn88tc6cz8wyfv
+    offer_slug: llmtime-startup-program
+    title: LLMtime startup program
+    summary: LLMtime offers qualifying startups free or discounted access to their LLM application development platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:17:02.239390Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to LLM application development platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_m5f8mrqwpfzdzxpbrz66qkfy15
+      access_operator_entity_id: ent_m5f8mrqwpfzdzxpbrz66qkfy15
+    access:
+      availability: public
+      method: form
+      url: https://llmtime.ai/startup
+    source_ids:
+      - src_2h3mt4a1m55fw4b4765ck3rqkb
