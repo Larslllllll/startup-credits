@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_veapvf6pa158pmc7xwfgcttt6m
+  slug: songkick
+  name: Songkick
+  domains:
+    - value: songkick.com
+      role: primary
+      valid_from: 2026-09-07T15:46:06.526616Z
+  category: communication
+profile:
+  summary: Songkick offers qualifying startups free or discounted access to their concert discovery and ticketing platform.
+  links:
+    site: https://songkick.com
+  description: Songkick offers qualifying startups free or discounted access to their concert discovery and ticketing platform.
+sources:
+  - source_id: src_wtw09mrg5eq6ys0r498825mfq4
+    url: https://songkick.com/startup
+programs: []
+offers:
+  - offer_id: off_dnrf2shx3en4kgma9pzwm8bm80
+    offer_slug: songkick-startup-program
+    title: Songkick startup program
+    summary: Songkick offers qualifying startups free or discounted access to their concert discovery and ticketing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:46:06.526616Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their concert discovery and ticketing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_veapvf6pa158pmc7xwfgcttt6m
+      access_operator_entity_id: ent_veapvf6pa158pmc7xwfgcttt6m
+    access:
+      availability: public
+      method: form
+      url: https://songkick.com/startup
+    source_ids:
+      - src_wtw09mrg5eq6ys0r498825mfq4
