@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_d9bjrbsmsdnfvgv3anx0g0mwmn
+  slug: turbopuffer
+  name: Turbopuffer
+  domains:
+    - value: turbopuffer.com
+      role: primary
+      valid_from: 2026-09-07T12:12:28.204912Z
+  category: databases
+profile:
+  summary: Turbopuffer is a vector database offering up to $8,192 in platform credits for qualifying early-stage startups and $2,048 plus dedicated Slack access for larger scaleups.
+  links:
+    site: https://turbopuffer.com
+  description: Turbopuffer is a high-performance vector database. The startup program offers $8,192 in platform credits for startups (<50 employees, <$50M raised) and $2,048 plus a dedicated Slack channel for scaleups.
+sources:
+  - source_id: src_6fvh470z1hx3hvd1avrswn5ptj
+    url: https://turbopuffer.com/startups
+programs: []
+offers:
+  - offer_id: off_k9spye177saaqs1d66mz42vp5p
+    offer_slug: turbopuffer-startup-program
+    title: Turbopuffer startup program
+    summary: Qualifying startups with fewer than 50 employees and less than $50M raised receive $8,192 in platform credits. Larger scaleups receive $2,048 in credits plus a dedicated Slack channel.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T12:12:28.204912Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $8,192 in platform credits for qualifying startups, or $2,048 for scaleups
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a startup or scaleup. Early-stage tier requires fewer than 50 employees and less than $50M raised. Partner code required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_d9bjrbsmsdnfvgv3anx0g0mwmn
+      access_operator_entity_id: ent_d9bjrbsmsdnfvgv3anx0g0mwmn
+    access:
+      availability: public
+      method: form
+      url: https://turbopuffer.com/startups
+    source_ids:
+      - src_6fvh470z1hx3hvd1avrswn5ptj
