@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_tnkkzb19grepw4t921a11k730g
+  slug: smol-developer
+  name: Smol Developer
+  domains:
+    - value: smol.ai
+      role: primary
+      valid_from: 2026-09-07T16:17:40.159114Z
+  category: ai-ml
+profile:
+  summary: Smol Developer offers qualifying startups free or discounted access to their AI-powered development assistant platform.
+  links:
+    site: https://smol.ai
+  description: Smol Developer offers qualifying startups free or discounted access to their AI-powered development assistant platform.
+sources:
+  - source_id: src_9mey33tjgh165h1npyvxjpygg7
+    url: https://smol.ai/startup
+programs: []
+offers:
+  - offer_id: off_s69dp01zgqjv461xnyp2dtd5vw
+    offer_slug: smol-developer-startup-program
+    title: Smol Developer startup program
+    summary: Smol Developer offers qualifying startups free or discounted access to their AI-powered development assistant platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:17:40.159114Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI-powered development assistant platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_tnkkzb19grepw4t921a11k730g
+      access_operator_entity_id: ent_tnkkzb19grepw4t921a11k730g
+    access:
+      availability: public
+      method: form
+      url: https://smol.ai/startup
+    source_ids:
+      - src_9mey33tjgh165h1npyvxjpygg7
