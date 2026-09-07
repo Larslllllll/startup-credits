@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_699g0n3mq6vtyg1e5sfb80w9ax
+  slug: moengage
+  name: MoEngage
+  domains:
+    - value: moengage.com
+      role: primary
+      valid_from: 2026-09-07T15:15:56.790865Z
+  category: marketing
+profile:
+  summary: MoEngage offers qualifying startups free or discounted access to their customer engagement and analytics platform.
+  links:
+    site: https://moengage.com
+  description: MoEngage offers qualifying startups free or discounted access to their customer engagement and analytics platform.
+sources:
+  - source_id: src_6vyfc1m6xwtkhwxzphz37t1vyb
+    url: https://moengage.com/startup
+programs: []
+offers:
+  - offer_id: off_s11rx1g71vgc34h1m4wc1gqg3n
+    offer_slug: moengage-startup-program
+    title: MoEngage startup program
+    summary: MoEngage offers qualifying startups free or discounted access to their customer engagement and analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:15:56.790865Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to customer engagement and analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_699g0n3mq6vtyg1e5sfb80w9ax
+      access_operator_entity_id: ent_699g0n3mq6vtyg1e5sfb80w9ax
+    access:
+      availability: public
+      method: form
+      url: https://moengage.com/startup
+    source_ids:
+      - src_6vyfc1m6xwtkhwxzphz37t1vyb
