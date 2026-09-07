@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_g4wbkcr5rgxtank93wc7dmmmr6
+  slug: axiom
+  name: Axiom
+  domains:
+    - value: axiom.ai
+      role: primary
+      valid_from: 2026-09-07T15:05:43.100240Z
+  category: data-analytics
+profile:
+  summary: Axiom offers qualifying startups free or discounted access to their next-generation observability and log analytics platform.
+  links:
+    site: https://axiom.ai
+  description: Axiom offers qualifying startups free or discounted access to their next-generation observability and log analytics platform.
+sources:
+  - source_id: src_xh2fwj6c0mbzh8a3kfrmjak04x
+    url: https://axiom.ai/startup
+programs: []
+offers:
+  - offer_id: off_xq5r093e8m569qk3m4nfe5a4y7
+    offer_slug: axiom-startup-program
+    title: Axiom startup program
+    summary: Axiom offers qualifying startups free or discounted access to their next-generation observability and log analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:05:43.100240Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to next-generation observability and log analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_g4wbkcr5rgxtank93wc7dmmmr6
+      access_operator_entity_id: ent_g4wbkcr5rgxtank93wc7dmmmr6
+    access:
+      availability: public
+      method: form
+      url: https://axiom.ai/startup
+    source_ids:
+      - src_xh2fwj6c0mbzh8a3kfrmjak04x
