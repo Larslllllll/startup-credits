@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_s4fmr6ev2vfykv5y11cwfst94f
+  slug: denvr
+  name: Denvr AI
+  domains:
+    - value: denvr.com
+      role: primary
+      valid_from: 2026-09-07T14:55:44.667869Z
+  category: ai-ml
+profile:
+  summary: Denvr AI offers qualifying startups free compute credits toward their AI Ascend program and GPU infrastructure.
+  links:
+    site: https://denvr.com
+  description: Denvr AI offers qualifying startups free compute credits toward their AI Ascend program and GPU infrastructure.
+sources:
+  - source_id: src_emhkhhesphdsv989r54fza86b1
+    url: https://denvr.com/startup
+programs: []
+offers:
+  - offer_id: off_7tmv1r26nfsr1qn5ccn8m59jws
+    offer_slug: denvr-startup-program
+    title: Denvr AI startup program
+    summary: Denvr AI offers qualifying startups free compute credits toward their AI Ascend program and GPU infrastructure.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:55:44.667869Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free compute credits for AI Ascend program and GPU infrastructure
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_s4fmr6ev2vfykv5y11cwfst94f
+      access_operator_entity_id: ent_s4fmr6ev2vfykv5y11cwfst94f
+    access:
+      availability: public
+      method: form
+      url: https://denvr.com/startup
+    source_ids:
+      - src_emhkhhesphdsv989r54fza86b1
