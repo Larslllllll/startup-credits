@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rxzzmjjkzx4mgqcj43s5p8sawq
+  slug: figjam
+  name: FigJam
+  domains:
+    - value: figma.com
+      role: primary
+      valid_from: 2026-09-07T15:48:25.911927Z
+  category: design
+profile:
+  summary: FigJam offers qualifying startups free or discounted access to their collaborative whiteboard and design platform.
+  links:
+    site: https://figma.com
+  description: FigJam offers qualifying startups free or discounted access to their collaborative whiteboard and design platform.
+sources:
+  - source_id: src_17t00jfwwwfyb2abrfh26apj4p
+    url: https://figma.com/startup
+programs: []
+offers:
+  - offer_id: off_q89ccn1xf4037jmp6bmsy74bs7
+    offer_slug: figjam-startup-program
+    title: FigJam startup program
+    summary: FigJam offers qualifying startups free or discounted access to their collaborative whiteboard and design platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:48:25.911927Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their collaborative whiteboard and design platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_rxzzmjjkzx4mgqcj43s5p8sawq
+      access_operator_entity_id: ent_rxzzmjjkzx4mgqcj43s5p8sawq
+    access:
+      availability: public
+      method: form
+      url: https://figma.com/startup
+    source_ids:
+      - src_17t00jfwwwfyb2abrfh26apj4p
