@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_p8vm10yqdbs0f43n0qpt6927ev
+  slug: palm3-ext2
+  name: Google Palm 3 API
+  domains:
+    - value: developers.google.com
+      role: primary
+      valid_from: 2026-09-07T16:14:58.919149Z
+  category: ai-ml
+profile:
+  summary: Google Palm 3 API offers qualifying startups free or discounted access to their AI language model.
+  links:
+    site: https://developers.google.com
+  description: Google Palm 3 API offers qualifying startups free or discounted access to their AI language model.
+sources:
+  - source_id: src_svxygapb5ttv048c54sqz8crdk
+    url: https://developers.google.com/startup
+programs: []
+offers:
+  - offer_id: off_fybdq72rzmh1s2n0ty6t03dq28
+    offer_slug: palm3-ext2-startup-program
+    title: Google Palm 3 API startup program
+    summary: Google Palm 3 API offers qualifying startups free or discounted access to their AI language model.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:14:58.919149Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI language model
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_p8vm10yqdbs0f43n0qpt6927ev
+      access_operator_entity_id: ent_p8vm10yqdbs0f43n0qpt6927ev
+    access:
+      availability: public
+      method: form
+      url: https://developers.google.com/startup
+    source_ids:
+      - src_svxygapb5ttv048c54sqz8crdk
