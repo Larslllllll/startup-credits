@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3axbns3azwqwpyrzy3qdvpjnz0
+  slug: forwardemail
+  name: Forward Email
+  domains:
+    - value: forwardemail.net
+      role: primary
+      valid_from: 2026-09-07T15:12:46.824298Z
+  category: communication
+profile:
+  summary: Forward Email offers qualifying startups free or discounted access to their email forwarding and alias platform.
+  links:
+    site: https://forwardemail.net
+  description: Forward Email offers qualifying startups free or discounted access to their email forwarding and alias platform.
+sources:
+  - source_id: src_msn8pbhw6ac9q53yb0qjhd6gnv
+    url: https://forwardemail.net/startup
+programs: []
+offers:
+  - offer_id: off_jmrxtfp9d9f0bn3mttkrg9afv3
+    offer_slug: forwardemail-startup-program
+    title: Forward Email startup program
+    summary: Forward Email offers qualifying startups free or discounted access to their email forwarding and alias platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:12:46.824298Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to email forwarding and alias platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3axbns3azwqwpyrzy3qdvpjnz0
+      access_operator_entity_id: ent_3axbns3azwqwpyrzy3qdvpjnz0
+    access:
+      availability: public
+      method: form
+      url: https://forwardemail.net/startup
+    source_ids:
+      - src_msn8pbhw6ac9q53yb0qjhd6gnv
