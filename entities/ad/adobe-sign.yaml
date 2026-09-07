@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_qn6dxqphtvca6ha8j68rbntrm7
+  slug: adobe-sign
+  name: Adobe Sign
+  domains:
+    - value: acrobat.adobe.com
+      role: primary
+      valid_from: 2026-09-07T15:31:29.451098Z
+  category: productivity
+profile:
+  summary: Adobe Sign offers qualifying startups free or discounted access to their electronic signature and PDF platform.
+  links:
+    site: https://acrobat.adobe.com
+  description: Adobe Sign offers qualifying startups free or discounted access to their electronic signature and PDF platform.
+sources:
+  - source_id: src_1q2a71wtas9gjav2581w62s0b6
+    url: https://acrobat.adobe.com/startup
+programs: []
+offers:
+  - offer_id: off_hx6kngkgdk1mamz3skc9sf32zq
+    offer_slug: adobe-sign-startup-program
+    title: Adobe Sign startup program
+    summary: Adobe Sign offers qualifying startups free or discounted access to their electronic signature and PDF platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:31:29.451098Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their electronic signature and PDF platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_qn6dxqphtvca6ha8j68rbntrm7
+      access_operator_entity_id: ent_qn6dxqphtvca6ha8j68rbntrm7
+    access:
+      availability: public
+      method: form
+      url: https://acrobat.adobe.com/startup
+    source_ids:
+      - src_1q2a71wtas9gjav2581w62s0b6
