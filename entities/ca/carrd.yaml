@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_r90y0fpwy7c5by24a626p3fhd1
+  slug: carrd
+  name: Carrd
+  domains:
+    - value: carrd.co
+      role: primary
+      valid_from: 2026-09-07T15:56:15.956843Z
+  category: no-code
+profile:
+  summary: Carrd offers qualifying startups free or discounted access to their simple responsive one-page site platform.
+  links:
+    site: https://carrd.co
+  description: Carrd offers qualifying startups free or discounted access to their simple responsive one-page site platform.
+sources:
+  - source_id: src_0xce1z5nnxt663wz70k5hn316k
+    url: https://carrd.co/startup
+programs: []
+offers:
+  - offer_id: off_1ayn323hv89y8sanca00cz2df3
+    offer_slug: carrd-startup-program
+    title: Carrd startup program
+    summary: Carrd offers qualifying startups free or discounted access to their simple responsive one-page site platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:56:15.956843Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their simple responsive one-page site platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_r90y0fpwy7c5by24a626p3fhd1
+      access_operator_entity_id: ent_r90y0fpwy7c5by24a626p3fhd1
+    access:
+      availability: public
+      method: form
+      url: https://carrd.co/startup
+    source_ids:
+      - src_0xce1z5nnxt663wz70k5hn316k
