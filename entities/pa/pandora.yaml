@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_24xqqnjw6ht24p8ykmcp4tfgfx
+  slug: pandora
+  name: Pandora
+  domains:
+    - value: pandora.com
+      role: primary
+      valid_from: 2026-09-07T15:45:33.892961Z
+  category: communication
+profile:
+  summary: Pandora offers qualifying startups free or discounted access to their music streaming and recommendation platform.
+  links:
+    site: https://pandora.com
+  description: Pandora offers qualifying startups free or discounted access to their music streaming and recommendation platform.
+sources:
+  - source_id: src_88n9jxampsgw5sh9phvekftpjf
+    url: https://pandora.com/startup
+programs: []
+offers:
+  - offer_id: off_atmjkq4q28h70gar4whq94hrvz
+    offer_slug: pandora-startup-program
+    title: Pandora startup program
+    summary: Pandora offers qualifying startups free or discounted access to their music streaming and recommendation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:45:33.892961Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their music streaming and recommendation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_24xqqnjw6ht24p8ykmcp4tfgfx
+      access_operator_entity_id: ent_24xqqnjw6ht24p8ykmcp4tfgfx
+    access:
+      availability: public
+      method: form
+      url: https://pandora.com/startup
+    source_ids:
+      - src_88n9jxampsgw5sh9phvekftpjf
