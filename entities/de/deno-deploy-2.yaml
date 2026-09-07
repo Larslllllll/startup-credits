@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_2st20b98xng02cdfx341hpaqzr
+  slug: deno-deploy-2
+  name: Deno Deploy Pro
+  domains:
+    - value: deno.com
+      role: primary
+      valid_from: 2026-09-07T15:26:39.143066Z
+  category: devtools-other
+profile:
+  summary: Deno Deploy Pro offers qualifying startups free or discounted access to their edge serverless platform for JavaScript and TypeScript.
+  links:
+    site: https://deno.com
+  description: Deno Deploy Pro offers qualifying startups free or discounted access to their edge serverless platform for JavaScript and TypeScript.
+sources:
+  - source_id: src_sqhvh0nw21aq7dj9cwt889zahm
+    url: https://deno.com/startup
+programs: []
+offers:
+  - offer_id: off_asrt0pcg3jzn415wwqgf0jze61
+    offer_slug: deno-deploy-2-startup-program
+    title: Deno Deploy Pro startup program
+    summary: Deno Deploy Pro offers qualifying startups free or discounted access to their edge serverless platform for JavaScript and TypeScript.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:26:39.143066Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their edge serverless platform for JavaScript and TypeScript
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_2st20b98xng02cdfx341hpaqzr
+      access_operator_entity_id: ent_2st20b98xng02cdfx341hpaqzr
+    access:
+      availability: public
+      method: form
+      url: https://deno.com/startup
+    source_ids:
+      - src_sqhvh0nw21aq7dj9cwt889zahm
