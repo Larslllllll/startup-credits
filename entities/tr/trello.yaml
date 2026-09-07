@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_b2hp9e2ar22ndq40kbmt4bj2mj
+  slug: trello
+  name: Trello
+  domains:
+    - value: trello.com
+      role: primary
+      valid_from: 2026-09-07T15:13:52.634948Z
+  category: productivity
+profile:
+  summary: Trello offers qualifying startups free or discounted access to their visual project management and Kanban platform.
+  links:
+    site: https://trello.com
+  description: Trello offers qualifying startups free or discounted access to their visual project management and Kanban platform.
+sources:
+  - source_id: src_n2d2sc597dr2tqp066wssx2r39
+    url: https://trello.com/startup
+programs: []
+offers:
+  - offer_id: off_3aqs5t7zgd8ttkw5pw5z1ma893
+    offer_slug: trello-startup-program
+    title: Trello startup program
+    summary: Trello offers qualifying startups free or discounted access to their visual project management and Kanban platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:13:52.634948Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to visual project management and Kanban platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_b2hp9e2ar22ndq40kbmt4bj2mj
+      access_operator_entity_id: ent_b2hp9e2ar22ndq40kbmt4bj2mj
+    access:
+      availability: public
+      method: form
+      url: https://trello.com/startup
+    source_ids:
+      - src_n2d2sc597dr2tqp066wssx2r39
