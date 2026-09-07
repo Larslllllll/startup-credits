@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_8rcged6g1svrj6mgx64fezp95d
+  slug: axosoft
+  name: Axosoft
+  domains:
+    - value: axosoft.com
+      role: primary
+      valid_from: 2026-09-07T15:38:28.535725Z
+  category: productivity
+profile:
+  summary: Axosoft offers qualifying startups free or discounted access to their agile project management and bug tracking platform.
+  links:
+    site: https://axosoft.com
+  description: Axosoft offers qualifying startups free or discounted access to their agile project management and bug tracking platform.
+sources:
+  - source_id: src_35yqqgq575gk4zce2s0h3xe5m1
+    url: https://axosoft.com/startup
+programs: []
+offers:
+  - offer_id: off_fp7m9gtns7xet0ttjcx4hyg4xp
+    offer_slug: axosoft-startup-program
+    title: Axosoft startup program
+    summary: Axosoft offers qualifying startups free or discounted access to their agile project management and bug tracking platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:38:28.535725Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their agile project management and bug tracking platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_8rcged6g1svrj6mgx64fezp95d
+      access_operator_entity_id: ent_8rcged6g1svrj6mgx64fezp95d
+    access:
+      availability: public
+      method: form
+      url: https://axosoft.com/startup
+    source_ids:
+      - src_35yqqgq575gk4zce2s0h3xe5m1
