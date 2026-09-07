@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_hssc1v09mae5c4f2j01ryp9rbt
+  slug: checkout-2
+  name: Checkout Enterprise
+  domains:
+    - value: checkout.com
+      role: primary
+      valid_from: 2026-09-07T16:02:24.756514Z
+  category: payments-fintech
+profile:
+  summary: Checkout Enterprise offers qualifying startups free or discounted access to their payment processing platform.
+  links:
+    site: https://checkout.com
+  description: Checkout Enterprise offers qualifying startups free or discounted access to their payment processing platform.
+sources:
+  - source_id: src_8s24k1mkte0mtdjyxjbvhsch3j
+    url: https://checkout.com/startup
+programs: []
+offers:
+  - offer_id: off_bfabfj6774khrjmtgjwz954xy4
+    offer_slug: checkout-2-startup-program
+    title: Checkout Enterprise startup program
+    summary: Checkout Enterprise offers qualifying startups free or discounted access to their payment processing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:02:24.756514Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their payment processing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_hssc1v09mae5c4f2j01ryp9rbt
+      access_operator_entity_id: ent_hssc1v09mae5c4f2j01ryp9rbt
+    access:
+      availability: public
+      method: form
+      url: https://checkout.com/startup
+    source_ids:
+      - src_8s24k1mkte0mtdjyxjbvhsch3j
