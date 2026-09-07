@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_81gsca1ygn80bmnkm842gsn3wr
+  slug: enterprise-singapore
+  name: Enterprise Singapore
+  domains:
+    - value: enterprisesg.gov.sg
+      role: primary
+      valid_from: 2026-09-07T14:43:00.968699Z
+  category: finance-accounting
+profile:
+  summary: Enterprise Singapore Startup SG Founder programme offers qualifying startups mentorship, workspace, and support services.
+  links:
+    site: https://enterprisesg.gov.sg
+  description: Enterprise Singapore runs the Startup SG Founder programme offering mentorship, workspace access, and support services to qualifying startups.
+sources:
+  - source_id: src_qy042xkk1hnvv3gj5pb8rq85zj
+    url: https://www.enterprisesg.gov.sg/startup
+programs: []
+offers:
+  - offer_id: off_jxyggagwwv5cb02r2d7frwtdk6
+    offer_slug: startup-sg-founder
+    title: Startup SG Founder programme
+    summary: Qualifying Singapore-based startups receive mentorship, workspace access, and support services.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:43:00.968699Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Mentorship, workspace access, and support services
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying Singapore-based startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_81gsca1ygn80bmnkm842gsn3wr
+      access_operator_entity_id: ent_81gsca1ygn80bmnkm842gsn3wr
+    access:
+      availability: public
+      method: form
+      url: https://www.enterprisesg.gov.sg/startup
+    source_ids:
+      - src_qy042xkk1hnvv3gj5pb8rq85zj
