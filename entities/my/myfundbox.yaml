@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_2fgsnzh3dx6p447v5h293n4rbq
+  slug: myfundbox
+  name: MYFUNDBOX
+  domains:
+    - value: myfundbox.com
+      role: primary
+      valid_from: 2026-09-07T13:37:51.262486Z
+  category: commerce
+profile:
+  summary: MYFUNDBOX offers SaaS startups their subscription-billing platform free for the first year with up to $100,000 in transactions, then 50% off in year two with up to $250,000 processed.
+  links:
+    site: https://myfundbox.com
+  description: MYFUNDBOX is a subscription billing platform. Their startup program offers SaaS companies their platform free for the first year with up to $100,000 in transactions processed, then 50% discount in the second year with the program limit increased to $250,000. No payment information required to join year one.
+sources:
+  - source_id: src_b9zkhsqbm2bhdc1d1q2hgvy9yg
+    url: https://myfundbox.com/startup-program
+programs: []
+offers:
+  - offer_id: off_6hc0r8vgc4208tbahnp56ypjjx
+    offer_slug: myfundbox-startup-program
+    title: MYFUNDBOX Startup Program
+    summary: SaaS startups receive MYFUNDBOX free for year one with up to $100k transactions, then 50% off in year two with up to $250k.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:37:51.262486Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Subscription billing platform free for year one (up to $100k transactions), 50% off year two (up to $250k)
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a SaaS company. No payment information required to join year one.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_2fgsnzh3dx6p447v5h293n4rbq
+      access_operator_entity_id: ent_2fgsnzh3dx6p447v5h293n4rbq
+    access:
+      availability: public
+      method: form
+      url: https://myfundbox.com/startup-program
+    source_ids:
+      - src_b9zkhsqbm2bhdc1d1q2hgvy9yg
