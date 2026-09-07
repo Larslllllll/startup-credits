@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_d4z58y48937eq15a15bd4qxbc4
+  slug: zero-pipeline-dt
+  name: ZeroPipeline
+  domains:
+    - value: zeropipeline.com
+      role: primary
+      valid_from: 2026-09-07T16:31:00.194569Z
+  category: data-analytics
+profile:
+  summary: ZeroPipeline offers qualifying startups free or discounted access to their data pipeline and analytics platform.
+  links:
+    site: https://zeropipeline.com
+  description: ZeroPipeline offers qualifying startups free or discounted access to their data pipeline and analytics platform.
+sources:
+  - source_id: src_dctph4v8n994fyfy0bw2a65my4
+    url: https://zeropipeline.com/startup
+programs: []
+offers:
+  - offer_id: off_zcytbz3ca2gs5m6yt6tyahjq2e
+    offer_slug: zero-pipeline-dt-startup-program
+    title: ZeroPipeline startup program
+    summary: ZeroPipeline offers qualifying startups free or discounted access to their data pipeline and analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:31:00.194569Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to data pipeline and analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_d4z58y48937eq15a15bd4qxbc4
+      access_operator_entity_id: ent_d4z58y48937eq15a15bd4qxbc4
+    access:
+      availability: public
+      method: form
+      url: https://zeropipeline.com/startup
+    source_ids:
+      - src_dctph4v8n994fyfy0bw2a65my4
