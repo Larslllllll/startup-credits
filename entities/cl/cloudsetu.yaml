@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_09yhq10efskrbtvrmj183tbzjp
+  slug: cloudsetu
+  name: CloudSetu
+  domains:
+    - value: cloudsetu.com
+      role: primary
+      valid_from: 2026-09-07T12:32:06.578333Z
+  category: hosting-infra
+profile:
+  summary: CloudSetu offers INR 21,000 in cloud credits for qualifying Indian startups through its startup program.
+  links:
+    site: https://cloudsetu.com
+  description: CloudSetu is an Indian cloud infrastructure provider. Their startup program grants qualifying Indian startups INR 21,000 in cloud credits.
+sources:
+  - source_id: src_ddhgzwhf0pqyn9ej1c0js3h1t6
+    url: https://cloudsetu.com/for-startups
+programs: []
+offers:
+  - offer_id: off_t7c5akah2q3faf1jafrsy7j2m9
+    offer_slug: cloudsetu-startup-program
+    title: CloudSetu startup program
+    summary: Qualifying Indian startups receive INR 21,000 in CloudSetu cloud credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T12:32:06.578333Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: INR 21,000 in cloud credits for qualifying Indian startups
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying Indian startup. Recognition requirements and application route published on the vendor page.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_09yhq10efskrbtvrmj183tbzjp
+      access_operator_entity_id: ent_09yhq10efskrbtvrmj183tbzjp
+    access:
+      availability: public
+      method: form
+      url: https://cloudsetu.com/for-startups
+    source_ids:
+      - src_ddhgzwhf0pqyn9ej1c0js3h1t6
