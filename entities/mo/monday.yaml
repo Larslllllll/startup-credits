@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_1msrmn27ydkkw753w23dabggje
+  slug: monday
+  name: Monday.com
+  domains:
+    - value: monday.com
+      role: primary
+      valid_from: 2026-09-07T15:13:48.391666Z
+  category: productivity
+profile:
+  summary: Monday.com offers qualifying startups free or discounted access to their work OS and team management platform.
+  links:
+    site: https://monday.com
+  description: Monday.com offers qualifying startups free or discounted access to their work OS and team management platform.
+sources:
+  - source_id: src_0fs43qqtda7ppnpqcv6r4ey3as
+    url: https://monday.com/startup
+programs: []
+offers:
+  - offer_id: off_9p6vwvwg7vfe978j3rv9agetb3
+    offer_slug: monday-startup-program
+    title: Monday.com startup program
+    summary: Monday.com offers qualifying startups free or discounted access to their work OS and team management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:13:48.391666Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to work OS and team management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_1msrmn27ydkkw753w23dabggje
+      access_operator_entity_id: ent_1msrmn27ydkkw753w23dabggje
+    access:
+      availability: public
+      method: form
+      url: https://monday.com/startup
+    source_ids:
+      - src_0fs43qqtda7ppnpqcv6r4ey3as
