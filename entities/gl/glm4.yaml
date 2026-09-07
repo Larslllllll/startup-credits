@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xargec3cj33ra5qd6w055h7tx6
+  slug: glm4
+  name: GLM-4
+  domains:
+    - value: chatglm.cn
+      role: primary
+      valid_from: 2026-09-07T16:16:31.235513Z
+  category: ai-ml
+profile:
+  summary: GLM-4 offers qualifying startups free or discounted access to their latest open Chinese LLM platform.
+  links:
+    site: https://chatglm.cn
+  description: GLM-4 offers qualifying startups free or discounted access to their latest open Chinese LLM platform.
+sources:
+  - source_id: src_6g0z861xd3zpbrq07xk6x2wegw
+    url: https://chatglm.cn/startup
+programs: []
+offers:
+  - offer_id: off_2k2171fpedamtdwvzjrbytyne6
+    offer_slug: glm4-startup-program
+    title: GLM-4 startup program
+    summary: GLM-4 offers qualifying startups free or discounted access to their latest open Chinese LLM platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:16:31.235513Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to latest open Chinese LLM platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xargec3cj33ra5qd6w055h7tx6
+      access_operator_entity_id: ent_xargec3cj33ra5qd6w055h7tx6
+    access:
+      availability: public
+      method: form
+      url: https://chatglm.cn/startup
+    source_ids:
+      - src_6g0z861xd3zpbrq07xk6x2wegw
