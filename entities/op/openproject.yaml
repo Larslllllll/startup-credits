@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_pyy5f2hcjbq2nb878dqn71tgf8
+  slug: openproject
+  name: OpenProject
+  domains:
+    - value: openproject.org
+      role: primary
+      valid_from: 2026-09-07T15:50:57.175987Z
+  category: productivity
+profile:
+  summary: OpenProject offers qualifying startups free or discounted access to their open-source project management platform.
+  links:
+    site: https://openproject.org
+  description: OpenProject offers qualifying startups free or discounted access to their open-source project management platform.
+sources:
+  - source_id: src_rs90qs7gw824hjp1gnygr6ehbh
+    url: https://openproject.org/startup
+programs: []
+offers:
+  - offer_id: off_tce87nj8qbwna72vcqyha1f014
+    offer_slug: openproject-startup-program
+    title: OpenProject startup program
+    summary: OpenProject offers qualifying startups free or discounted access to their open-source project management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:50:57.175987Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source project management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_pyy5f2hcjbq2nb878dqn71tgf8
+      access_operator_entity_id: ent_pyy5f2hcjbq2nb878dqn71tgf8
+    access:
+      availability: public
+      method: form
+      url: https://openproject.org/startup
+    source_ids:
+      - src_rs90qs7gw824hjp1gnygr6ehbh
