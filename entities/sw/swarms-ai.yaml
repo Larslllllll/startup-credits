@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_c04ab72kkgvh19xe62z8mszrw9
+  slug: swarms-ai
+  name: Swarms AI
+  domains:
+    - value: swarms.ai
+      role: primary
+      valid_from: 2026-09-07T14:17:45.458959Z
+  category: ai-ml
+profile:
+  summary: Swarms AI offers qualifying startups free access to their multi-agent AI platform for building and deploying autonomous agent swarms.
+  links:
+    site: https://swarms.ai
+  description: Swarms AI is a multi-agent AI platform. Their startup program offers free access to qualifying startups for building and deploying autonomous agent swarms.
+sources:
+  - source_id: src_zjcvp8rfg2fe2hkgpb6m050fms
+    url: https://swarms.ai/startup
+programs: []
+offers:
+  - offer_id: off_hkerqwm0jsz8dt881bjh33t4er
+    offer_slug: swarms-ai-startup-program
+    title: Swarms AI startup program
+    summary: Qualifying startups receive free access to the Swarms AI multi-agent platform for building autonomous agent swarms.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:17:45.458959Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to multi-agent AI platform for autonomous agent swarms
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_c04ab72kkgvh19xe62z8mszrw9
+      access_operator_entity_id: ent_c04ab72kkgvh19xe62z8mszrw9
+    access:
+      availability: public
+      method: form
+      url: https://swarms.ai/startup
+    source_ids:
+      - src_zjcvp8rfg2fe2hkgpb6m050fms
