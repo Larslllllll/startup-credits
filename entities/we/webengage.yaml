@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_j7dmz1jnk6xe14srk0dcbp1jqr
+  slug: webengage
+  name: WebEngage
+  domains:
+    - value: webengage.com
+      role: primary
+      valid_from: 2026-09-07T15:15:53.038787Z
+  category: marketing
+profile:
+  summary: WebEngage offers qualifying startups free or discounted access to their customer engagement and retention platform.
+  links:
+    site: https://webengage.com
+  description: WebEngage offers qualifying startups free or discounted access to their customer engagement and retention platform.
+sources:
+  - source_id: src_zcfxmv602pkfyz3ymytrffn2bq
+    url: https://webengage.com/startup
+programs: []
+offers:
+  - offer_id: off_b4dcpc79q836xyvwe6rcv0f42z
+    offer_slug: webengage-startup-program
+    title: WebEngage startup program
+    summary: WebEngage offers qualifying startups free or discounted access to their customer engagement and retention platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:15:53.038787Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to customer engagement and retention platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_j7dmz1jnk6xe14srk0dcbp1jqr
+      access_operator_entity_id: ent_j7dmz1jnk6xe14srk0dcbp1jqr
+    access:
+      availability: public
+      method: form
+      url: https://webengage.com/startup
+    source_ids:
+      - src_zcfxmv602pkfyz3ymytrffn2bq
