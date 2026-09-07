@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x651km70wehj4txy7w7nh0
+  slug: maxiq
+  slug_aliases: []
+  name: MaxIQ
+  domains:
+    - value: getmaxiq.com
+      role: primary
+      valid_from: 2026-09-07T05:46:58.000Z
+  category: ai-ml
+profile:
+  summary: Revenue AI platform providing sales intelligence, forecasting, and pipeline analytics for revenue teams.
+  description: MaxIQ is a Revenue AI platform providing sales intelligence, forecasting, and pipeline analytics for revenue teams.
+  links:
+    site: https://www.getmaxiq.com
+sources:
+  - source_id: src_bb2ee466eb29059de48264448372fae96a00e9c4f8bf4ac78a61850e1ed31d32
+    url: https://www.getmaxiq.com/maxiq-for-startups
+programs:
+  - program_id: prg_01m1x651kshyd3bv4q7avb1emb
+    program_slug: maxiq-startup-program
+    program_slug_aliases: []
+    title: MaxIQ for Startups
+    summary: MaxIQ for Startups gives eligible startups 12 months of full Revenue AI platform access free, valued by MaxIQ at more than $15,000.
+    source_ids:
+      - src_bb2ee466eb29059de48264448372fae96a00e9c4f8bf4ac78a61850e1ed31d32
+offers:
+  - offer_id: off_01m1x651ks22tncbfj7mk2vxxw
+    program_id: prg_01m1x651kshyd3bv4q7avb1emb
+    offer_slug: revenue-ai-platform-free-12-months
+    offer_slug_aliases: []
+    title: Revenue AI Platform Free for 12 Months
+    summary: Eligible startups receive 12 months of full MaxIQ Revenue AI platform access free, valued at more than $15,000, including sales intelligence and forecasting tools.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:46:58.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: MaxIQ Revenue AI platform free for 12 months (valued at more than $15,000)
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: "MaxIQ Revenue AI platform free for 12 months (valued at more than $15,000)"
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: "Eligible startups"
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1x651km70wehj4txy7w7nh0
+      access_operator_entity_id: ent_01m1x651km70wehj4txy7w7nh0
+    access:
+      availability: public
+      method: form
+      url: https://www.getmaxiq.com/maxiq-for-startups
+    source_ids:
+      - src_bb2ee466eb29059de48264448372fae96a00e9c4f8bf4ac78a61850e1ed31d32

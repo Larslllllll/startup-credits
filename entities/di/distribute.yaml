@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x651n5mhhrj255wnrfc0ct
+  slug: distribute
+  slug_aliases: []
+  name: Distribute
+  domains:
+    - value: distribute.app
+      role: primary
+      valid_from: 2026-09-07T05:46:58.000Z
+  category: commerce
+profile:
+  summary: B2B marketplace connecting buyers and suppliers, providing sourcing, procurement, and supply chain management tools.
+  description: Distribute is a B2B marketplace platform connecting buyers and suppliers with tools for sourcing, procurement, and supply chain management.
+  links:
+    site: https://distribute.app
+sources:
+  - source_id: src_24604d26ba44503e9824a2cacfbf63d53738584943791e1d541fb14c360d39eb
+    url: https://distribute.app/startup-program
+programs:
+  - program_id: prg_01m1x651n9fsb3ebmwy5ssqbtp
+    program_slug: distribute-startup-program
+    program_slug_aliases: []
+    title: Distribute Startup Program
+    summary: The Distribute Startup Program offers approved startups $100 to $5,000 or more in platform credits, along with stage-based guidance and EU-focused eligibility.
+    source_ids:
+      - src_24604d26ba44503e9824a2cacfbf63d53738584943791e1d541fb14c360d39eb
+offers:
+  - offer_id: off_01m1x651n92s68tzrr80mg1mzs
+    program_id: prg_01m1x651n9fsb3ebmwy5ssqbtp
+    offer_slug: 100-to-5000-platform-credits
+    offer_slug_aliases: []
+    title: $100 to $5,000+ in Platform Credits
+    summary: Approved startups receive $100 to $5,000 or more in Distribute platform credits, along with stage-based guidance and EU-focused eligibility.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:46:58.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $100 to $5,000 or more in Distribute platform credits
+          kind: free-service
+          service: "$100 to $5,000 or more in Distribute platform credits"
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: "Startups (EU-focused eligibility)"
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1x651n5mhhrj255wnrfc0ct
+      access_operator_entity_id: ent_01m1x651n5mhhrj255wnrfc0ct
+    access:
+      availability: public
+      method: form
+      url: https://distribute.app/startup-program
+    source_ids:
+      - src_24604d26ba44503e9824a2cacfbf63d53738584943791e1d541fb14c360d39eb

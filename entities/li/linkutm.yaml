@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x651gegmgq3wrt7wpp8rmf
+  slug: linkutm
+  slug_aliases: []
+  name: linkutm
+  domains:
+    - value: linkutm.com
+      role: primary
+      valid_from: 2026-09-07T05:46:58.000Z
+  category: marketing
+profile:
+  summary: Branded link and QR code platform for marketing teams, providing link management, analytics, custom domains, and REST API access.
+  description: linkutm is a branded link and QR code platform offering link management, analytics, custom domains, and REST API access for marketing teams.
+  links:
+    site: https://linkutm.com
+sources:
+  - source_id: src_e8d170a7bd6f14715379a01eaa6b04e861d2383d869b0e649aedcdceb8e6fbc3
+    url: https://linkutm.com/startups
+programs:
+  - program_id: prg_01m1x651gkkysa4p4gcm35sq4v
+    program_slug: linkutm-startup-program
+    program_slug_aliases: []
+    title: linkutm for Startups
+    summary: Eligible early-stage startups receive the complete linkutm Growth plan free for 12 months, a $348 value including branded links, QR codes, analytics, custom domains, and REST API access.
+    source_ids:
+      - src_e8d170a7bd6f14715379a01eaa6b04e861d2383d869b0e649aedcdceb8e6fbc3
+offers:
+  - offer_id: off_01m1x651gkrdnkw7t0npn8d2d4
+    program_id: prg_01m1x651gkkysa4p4gcm35sq4v
+    offer_slug: growth-plan-free-12-months
+    offer_slug_aliases: []
+    title: Complete Growth Plan Free for 12 Months
+    summary: Eligible early-stage startups receive the complete linkutm Growth plan free for 12 months ($348 value) including branded links, QR codes, analytics, custom domains, and REST API access.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:46:58.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Complete linkutm Growth plan free for 12 months (valued at $348)
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: "Complete linkutm Growth plan free for 12 months (valued at $348)"
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: "Early-stage startups"
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1x651gegmgq3wrt7wpp8rmf
+      access_operator_entity_id: ent_01m1x651gegmgq3wrt7wpp8rmf
+    access:
+      availability: public
+      method: form
+      url: https://linkutm.com/startups
+    source_ids:
+      - src_e8d170a7bd6f14715379a01eaa6b04e861d2383d869b0e649aedcdceb8e6fbc3

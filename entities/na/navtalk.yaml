@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x651j14xjhq1b0vch5m7vc
+  slug: navtalk
+  slug_aliases: []
+  name: NavTalk
+  domains:
+    - value: navtalk.ai
+      role: primary
+      valid_from: 2026-09-07T05:46:58.000Z
+  category: communication
+profile:
+  summary: AI-powered communication platform for customer engagement, providing calls, messages, and team collaboration features.
+  description: NavTalk is an AI-powered communication platform offering calls, messages, and team collaboration tools for customer engagement.
+  links:
+    site: https://navtalk.ai
+sources:
+  - source_id: src_200b777cb68c0a0a673c170f3398168c5f59db277eb9184a095c954d375f91e1
+    url: https://navtalk.ai/en/startup/
+programs:
+  - program_id: prg_01m1x651j6bcg7a0x5p5j9zaxp
+    program_slug: navtalk-startup-program
+    program_slug_aliases: []
+    title: NavTalk for Startups
+    summary: Qualified startups receive the NavTalk Growth Plan free for 12 months, worth $1,188, including full platform features, API access, and startup support.
+    source_ids:
+      - src_200b777cb68c0a0a673c170f3398168c5f59db277eb9184a095c954d375f91e1
+offers:
+  - offer_id: off_01m1x651j6q45nmmzy5hng086t
+    program_id: prg_01m1x651j6bcg7a0x5p5j9zaxp
+    offer_slug: navtalk-growth-plan-free-12-months
+    offer_slug_aliases: []
+    title: Growth Plan Free for 12 Months
+    summary: Qualified startups receive the NavTalk Growth Plan free for 12 months, worth $1,188, including full platform features, API access, and startup support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:46:58.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: NavTalk Growth Plan free for 12 months (valued at $1,188)
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: "NavTalk Growth Plan free for 12 months (valued at $1,188)"
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: "Qualified startups"
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1x651j14xjhq1b0vch5m7vc
+      access_operator_entity_id: ent_01m1x651j14xjhq1b0vch5m7vc
+    access:
+      availability: public
+      method: form
+      url: https://navtalk.ai/en/startup/
+    source_ids:
+      - src_200b777cb68c0a0a673c170f3398168c5f59db277eb9184a095c954d375f91e1
