@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rpfzqwdqhr93cgdrf93gjs37wc
+  slug: workroomly-pro
+  name: Workroomly Pro
+  domains:
+    - value: workroomly.com
+      role: primary
+      valid_from: 2026-09-07T16:39:08.668316Z
+  category: productivity
+profile:
+  summary: Workroomly offers qualifying startups free or discounted access to their coworking booking and workspace management platform.
+  links:
+    site: https://workroomly.com
+  description: Workroomly offers qualifying startups free or discounted access to their coworking booking and workspace management platform.
+sources:
+  - source_id: src_8k9bftenhyamdx6pwh6052hw9k
+    url: https://workroomly.com/startup
+programs: []
+offers:
+  - offer_id: off_5trs1k4ya95jwq9gjtk2y9cnep
+    offer_slug: workroomly-pro-startup-program
+    title: Workroomly Pro startup program
+    summary: Workroomly offers qualifying startups free or discounted access to their coworking booking and workspace management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:39:08.668316Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to coworking booking and workspace management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_rpfzqwdqhr93cgdrf93gjs37wc
+      access_operator_entity_id: ent_rpfzqwdqhr93cgdrf93gjs37wc
+    access:
+      availability: public
+      method: form
+      url: https://workroomly.com/startup
+    source_ids:
+      - src_8k9bftenhyamdx6pwh6052hw9k
