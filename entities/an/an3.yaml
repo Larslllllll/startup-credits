@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_m7m6x8abxxyf9mdhpdcabvtv3j
+  slug: an3
+  name: Anthropic 3
+  domains:
+    - value: anthropic.com
+      role: primary
+      valid_from: 2026-09-07T16:49:13.890193Z
+  category: ai-ml
+profile:
+  summary: Anthropic offers qualifying startups free API credits toward their Claude AI model platform.
+  links:
+    site: https://anthropic.com
+  description: Anthropic offers qualifying startups free API credits toward their Claude AI model platform.
+sources:
+  - source_id: src_x68pnt6vbh6k7fsbsw6b3vpqqt
+    url: https://anthropic.com/startup
+programs: []
+offers:
+  - offer_id: off_g5tyq9nhb618gj2bbd8cpr60n2
+    offer_slug: an3-startup-program
+    title: Anthropic 3 startup program
+    summary: Anthropic offers qualifying startups free API credits toward their Claude AI model platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:49:13.890193Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free API credits toward Claude AI model platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_m7m6x8abxxyf9mdhpdcabvtv3j
+      access_operator_entity_id: ent_m7m6x8abxxyf9mdhpdcabvtv3j
+    access:
+      availability: public
+      method: form
+      url: https://anthropic.com/startup
+    source_ids:
+      - src_x68pnt6vbh6k7fsbsw6b3vpqqt
