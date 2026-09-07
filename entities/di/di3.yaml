@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_8ssxqsbe06apxr5a1qbs4zbyk6
+  slug: di3
+  name: Discord 2
+  domains:
+    - value: discord.com
+      role: primary
+      valid_from: 2026-09-07T16:53:54.824685Z
+  category: communication
+profile:
+  summary: Discord offers qualifying startups free or discounted access to their community and communication platform.
+  links:
+    site: https://discord.com
+  description: Discord offers qualifying startups free or discounted access to their community and communication platform.
+sources:
+  - source_id: src_rtpdg02ca7ktph17tpa3rf25xn
+    url: https://discord.com/startup
+programs: []
+offers:
+  - offer_id: off_8m2np7n9pwerhtnag86m8jeg6w
+    offer_slug: di3-startup-program
+    title: Discord 2 startup program
+    summary: Discord offers qualifying startups free or discounted access to their community and communication platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:53:54.824685Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to community and communication platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_8ssxqsbe06apxr5a1qbs4zbyk6
+      access_operator_entity_id: ent_8ssxqsbe06apxr5a1qbs4zbyk6
+    access:
+      availability: public
+      method: form
+      url: https://discord.com/startup
+    source_ids:
+      - src_rtpdg02ca7ktph17tpa3rf25xn
