@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_pgzsyrp8fq89pmt2ft72dhgrs5
+  slug: ray-2
+  name: Ray Pro
+  domains:
+    - value: ray.io
+      role: primary
+      valid_from: 2026-09-07T15:21:26.750450Z
+  category: ai-ml
+profile:
+  summary: Ray Pro offers qualifying startups free or discounted access to their open-source framework for distributed AI workloads.
+  links:
+    site: https://ray.io
+  description: Ray Pro offers qualifying startups free or discounted access to their open-source framework for distributed AI workloads.
+sources:
+  - source_id: src_chh01arw7x1zc2h1rbxjrj87rd
+    url: https://ray.io/startup
+programs: []
+offers:
+  - offer_id: off_tfqz7k5b7vp6b0mgd3gdvbketa
+    offer_slug: ray-2-startup-program
+    title: Ray Pro startup program
+    summary: Ray Pro offers qualifying startups free or discounted access to their open-source framework for distributed AI workloads.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:21:26.750450Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source framework for distributed AI workloads
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_pgzsyrp8fq89pmt2ft72dhgrs5
+      access_operator_entity_id: ent_pgzsyrp8fq89pmt2ft72dhgrs5
+    access:
+      availability: public
+      method: form
+      url: https://ray.io/startup
+    source_ids:
+      - src_chh01arw7x1zc2h1rbxjrj87rd
