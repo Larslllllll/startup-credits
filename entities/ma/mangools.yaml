@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9x12ybd4x5m2vh64dfrjgm23xc
+  slug: mangools
+  name: Mangools
+  domains:
+    - value: mangools.com
+      role: primary
+      valid_from: 2026-09-07T15:35:51.990849Z
+  category: marketing
+profile:
+  summary: Mangools offers qualifying startups free or discounted access to their SEO and keyword research tool platform.
+  links:
+    site: https://mangools.com
+  description: Mangools offers qualifying startups free or discounted access to their SEO and keyword research tool platform.
+sources:
+  - source_id: src_kzf3c64gy3hcxvs20bkpr4re39
+    url: https://mangools.com/startup
+programs: []
+offers:
+  - offer_id: off_4et0kavt5jvvchp1e956tkms2g
+    offer_slug: mangools-startup-program
+    title: Mangools startup program
+    summary: Mangools offers qualifying startups free or discounted access to their SEO and keyword research tool platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:35:51.990849Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their SEO and keyword research tool platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_9x12ybd4x5m2vh64dfrjgm23xc
+      access_operator_entity_id: ent_9x12ybd4x5m2vh64dfrjgm23xc
+    access:
+      availability: public
+      method: form
+      url: https://mangools.com/startup
+    source_ids:
+      - src_kzf3c64gy3hcxvs20bkpr4re39
