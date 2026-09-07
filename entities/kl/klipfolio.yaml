@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_mgpjrzxxgcgkew5z7gb8xjn64m
+  slug: klipfolio
+  name: Klipfolio
+  domains:
+    - value: klipfolio.com
+      role: primary
+      valid_from: 2026-09-07T15:37:04.784713Z
+  category: data-analytics
+profile:
+  summary: Klipfolio offers qualifying startups free or discounted access to their business dashboard and analytics platform.
+  links:
+    site: https://klipfolio.com
+  description: Klipfolio offers qualifying startups free or discounted access to their business dashboard and analytics platform.
+sources:
+  - source_id: src_ya2fkfm9evn6t88p7h1te7ezgx
+    url: https://klipfolio.com/startup
+programs: []
+offers:
+  - offer_id: off_j7jcz5tpvdzjvn5ztfndga8c1h
+    offer_slug: klipfolio-startup-program
+    title: Klipfolio startup program
+    summary: Klipfolio offers qualifying startups free or discounted access to their business dashboard and analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:37:04.784713Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their business dashboard and analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_mgpjrzxxgcgkew5z7gb8xjn64m
+      access_operator_entity_id: ent_mgpjrzxxgcgkew5z7gb8xjn64m
+    access:
+      availability: public
+      method: form
+      url: https://klipfolio.com/startup
+    source_ids:
+      - src_ya2fkfm9evn6t88p7h1te7ezgx
