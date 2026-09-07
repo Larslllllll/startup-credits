@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_zhksghhbz7w09qjgpe60129r9r
+  slug: seolib
+  name: SEOLib
+  domains:
+    - value: seolib.com
+      role: primary
+      valid_from: 2026-09-07T15:36:53.211906Z
+  category: marketing
+profile:
+  summary: SEOLib offers qualifying startups free or discounted access to their SEO services and tools platform.
+  links:
+    site: https://seolib.com
+  description: SEOLib offers qualifying startups free or discounted access to their SEO services and tools platform.
+sources:
+  - source_id: src_sbaj2tf7vr4qm257qfpkxh65xa
+    url: https://seolib.com/startup
+programs: []
+offers:
+  - offer_id: off_97cvjwnenj99g6b9eags3rjy1n
+    offer_slug: seolib-startup-program
+    title: SEOLib startup program
+    summary: SEOLib offers qualifying startups free or discounted access to their SEO services and tools platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:36:53.211906Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their SEO services and tools platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_zhksghhbz7w09qjgpe60129r9r
+      access_operator_entity_id: ent_zhksghhbz7w09qjgpe60129r9r
+    access:
+      availability: public
+      method: form
+      url: https://seolib.com/startup
+    source_ids:
+      - src_sbaj2tf7vr4qm257qfpkxh65xa
