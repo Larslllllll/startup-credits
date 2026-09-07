@@ -7,7 +7,7 @@ entity:
     - value: userback.io
       role: primary
       valid_from: 2026-09-07T14:12:30.500423Z
-  category: product-management
+  category: productivity
 profile:
   summary: Userback offers qualifying startups free Pro plan access for 12 months including unlimited projects, sessions, and heatmaps.
   links:
