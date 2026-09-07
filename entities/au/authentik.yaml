@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gz408w67wrw0tfbwjy277zsd6x
+  slug: authentik
+  name: Authentik
+  domains:
+    - value: authentik.io
+      role: primary
+      valid_from: 2026-09-07T14:59:38.834771Z
+  category: auth-security
+profile:
+  summary: Authentik offers qualifying startups free or discounted access to their open-source identity and SSO platform.
+  links:
+    site: https://authentik.io
+  description: Authentik offers qualifying startups free or discounted access to their open-source identity and SSO platform.
+sources:
+  - source_id: src_nvtwdand0n8ncdkprwg0y14f4n
+    url: https://authentik.io/startup
+programs: []
+offers:
+  - offer_id: off_be4amym6r0fk5t14sxjfdbb0kf
+    offer_slug: authentik-startup-program
+    title: Authentik startup program
+    summary: Authentik offers qualifying startups free or discounted access to their open-source identity and SSO platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:59:38.834771Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source identity and SSO platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_gz408w67wrw0tfbwjy277zsd6x
+      access_operator_entity_id: ent_gz408w67wrw0tfbwjy277zsd6x
+    access:
+      availability: public
+      method: form
+      url: https://authentik.io/startup
+    source_ids:
+      - src_nvtwdand0n8ncdkprwg0y14f4n
