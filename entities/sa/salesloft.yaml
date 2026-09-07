@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_8jmx1t09f04sfytk7vjj27w6hx
+  slug: salesloft
+  name: SalesLoft
+  domains:
+    - value: salesloft.com
+      role: primary
+      valid_from: 2026-09-07T15:30:18.428381Z
+  category: crm-sales
+profile:
+  summary: SalesLoft offers qualifying startups free or discounted access to their sales engagement and platform.
+  links:
+    site: https://salesloft.com
+  description: SalesLoft offers qualifying startups free or discounted access to their sales engagement and platform.
+sources:
+  - source_id: src_7b19swcm07rd6dxrpw2cnedfs7
+    url: https://salesloft.com/startup
+programs: []
+offers:
+  - offer_id: off_8ds91890hejq5mr72py73mt6ex
+    offer_slug: salesloft-startup-program
+    title: SalesLoft startup program
+    summary: SalesLoft offers qualifying startups free or discounted access to their sales engagement and platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:30:18.428381Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their sales engagement and platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_8jmx1t09f04sfytk7vjj27w6hx
+      access_operator_entity_id: ent_8jmx1t09f04sfytk7vjj27w6hx
+    access:
+      availability: public
+      method: form
+      url: https://salesloft.com/startup
+    source_ids:
+      - src_7b19swcm07rd6dxrpw2cnedfs7
