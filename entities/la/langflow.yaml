@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_tm98sc8ner0vj1nbha2a8jg76c
+  slug: langflow
+  name: Langflow
+  domains:
+    - value: langflow.org
+      role: primary
+      valid_from: 2026-09-07T15:03:19.991278Z
+  category: ai-ml
+profile:
+  summary: Langflow offers qualifying startups free or discounted access to their open-source visual framework for LangChain applications.
+  links:
+    site: https://langflow.org
+  description: Langflow offers qualifying startups free or discounted access to their open-source visual framework for LangChain applications.
+sources:
+  - source_id: src_19715mg6k3ndfqeejc7y492rr4
+    url: https://langflow.org/startup
+programs: []
+offers:
+  - offer_id: off_rwhbb2pnt154bh7kwjxfkw5bcf
+    offer_slug: langflow-startup-program
+    title: Langflow startup program
+    summary: Langflow offers qualifying startups free or discounted access to their open-source visual framework for LangChain applications.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:03:19.991278Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source visual framework for LangChain applications
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_tm98sc8ner0vj1nbha2a8jg76c
+      access_operator_entity_id: ent_tm98sc8ner0vj1nbha2a8jg76c
+    access:
+      availability: public
+      method: form
+      url: https://langflow.org/startup
+    source_ids:
+      - src_19715mg6k3ndfqeejc7y492rr4
