@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_pee18d5t3a3twehhgetfhzdfjx
+  slug: sap-startup
+  name: SAP for Startups
+  domains:
+    - value: sap.com
+      role: primary
+      valid_from: 2026-09-07T16:11:12.871715Z
+  category: hosting-infra
+profile:
+  summary: SAP offers qualifying startups free or discounted access to their enterprise application and cloud platform.
+  links:
+    site: https://sap.com
+  description: SAP offers qualifying startups free or discounted access to their enterprise application and cloud platform.
+sources:
+  - source_id: src_vmnqb3bf721ey4kzedhdp1zgr6
+    url: https://sap.com/startup
+programs: []
+offers:
+  - offer_id: off_n4ytxewqj0vrv20ag9xasch469
+    offer_slug: sap-startup-startup-program
+    title: SAP for Startups startup program
+    summary: SAP offers qualifying startups free or discounted access to their enterprise application and cloud platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:11:12.871715Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to enterprise application and cloud platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_pee18d5t3a3twehhgetfhzdfjx
+      access_operator_entity_id: ent_pee18d5t3a3twehhgetfhzdfjx
+    access:
+      availability: public
+      method: form
+      url: https://sap.com/startup
+    source_ids:
+      - src_vmnqb3bf721ey4kzedhdp1zgr6
