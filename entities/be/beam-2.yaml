@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_8dvdgmbzbxd4vdftvfg2j5p1rb
+  slug: beam-2
+  name: Beam Pro
+  domains:
+    - value: beam.cloud
+      role: primary
+      valid_from: 2026-09-07T15:08:41.051509Z
+  category: ai-ml
+profile:
+  summary: Beam Pro offers qualifying startups free or discounted access to their serverless GPU platform for AI workloads.
+  links:
+    site: https://beam.cloud
+  description: Beam Pro offers qualifying startups free or discounted access to their serverless GPU platform for AI workloads.
+sources:
+  - source_id: src_69kcsxq7kym6hxjvwwc24prvxb
+    url: https://beam.cloud/startup
+programs: []
+offers:
+  - offer_id: off_214n73mczx2wfjdf6gnqryn9jp
+    offer_slug: beam-2-startup-program
+    title: Beam Pro startup program
+    summary: Beam Pro offers qualifying startups free or discounted access to their serverless GPU platform for AI workloads.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:08:41.051509Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to serverless GPU platform for AI workloads
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_8dvdgmbzbxd4vdftvfg2j5p1rb
+      access_operator_entity_id: ent_8dvdgmbzbxd4vdftvfg2j5p1rb
+    access:
+      availability: public
+      method: form
+      url: https://beam.cloud/startup
+    source_ids:
+      - src_69kcsxq7kym6hxjvwwc24prvxb
