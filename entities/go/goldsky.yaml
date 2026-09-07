@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_hmm3jwhvhjsdgzsxgyf8d066dy
+  slug: goldsky
+  name: Goldsky
+  domains:
+    - value: goldsky.com
+      role: primary
+      valid_from: 2026-09-07T14:43:43.918367Z
+  category: hosting-infra
+profile:
+  summary: Goldsky offers early-stage companies a discount on their subgraph hosting and real-time data infrastructure platform.
+  links:
+    site: https://goldsky.com
+  description: Goldsky is a subgraph hosting and real-time data infrastructure platform. Their startup program offers early-stage companies a discount.
+sources:
+  - source_id: src_ea5wdwpwechk1c02w2v0ksq6m3
+    url: https://goldsky.com/startup
+programs: []
+offers:
+  - offer_id: off_zcg60nnx6vzn2jcxz7p6wp4jna
+    offer_slug: goldsky-startup-program
+    title: Goldsky early-stage company discount
+    summary: Early-stage companies receive a discount on the Goldsky subgraph hosting and real-time data infrastructure platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:43:43.918367Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Discount on subgraph hosting and real-time data infrastructure platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage company. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_hmm3jwhvhjsdgzsxgyf8d066dy
+      access_operator_entity_id: ent_hmm3jwhvhjsdgzsxgyf8d066dy
+    access:
+      availability: public
+      method: form
+      url: https://goldsky.com/startup
+    source_ids:
+      - src_ea5wdwpwechk1c02w2v0ksq6m3
