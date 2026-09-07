@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_tvdq7pvkj13apg5ejvr3r7cxem
+  slug: loom
+  name: Loom
+  domains:
+    - value: loom.com
+      role: primary
+      valid_from: 2026-09-07T15:41:11.499973Z
+  category: communication
+profile:
+  summary: Loom offers qualifying startups free or discounted access to their video messaging and async communication platform.
+  links:
+    site: https://loom.com
+  description: Loom offers qualifying startups free or discounted access to their video messaging and async communication platform.
+sources:
+  - source_id: src_2wgfs3epdqr95pse48gehjnej3
+    url: https://loom.com/startup
+programs: []
+offers:
+  - offer_id: off_bhcm8egdyty7dytwnamnjvvnt1
+    offer_slug: loom-startup-program
+    title: Loom startup program
+    summary: Loom offers qualifying startups free or discounted access to their video messaging and async communication platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:41:11.499973Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their video messaging and async communication platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_tvdq7pvkj13apg5ejvr3r7cxem
+      access_operator_entity_id: ent_tvdq7pvkj13apg5ejvr3r7cxem
+    access:
+      availability: public
+      method: form
+      url: https://loom.com/startup
+    source_ids:
+      - src_2wgfs3epdqr95pse48gehjnej3
