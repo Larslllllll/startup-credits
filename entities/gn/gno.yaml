@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_q24qrb8ssbrnp6pawzzgg0w5bm
+  slug: gno
+  name: Gno
+  domains:
+    - value: gno.ai
+      role: primary
+      valid_from: 2026-09-07T15:52:51.123079Z
+  category: devtools-other
+profile:
+  summary: Gno offers qualifying startups free or discounted access to their open-source smart contract programming platform.
+  links:
+    site: https://gno.ai
+  description: Gno offers qualifying startups free or discounted access to their open-source smart contract programming platform.
+sources:
+  - source_id: src_eq9rvzx3t0dyfp7vck02c9wtb2
+    url: https://gno.ai/startup
+programs: []
+offers:
+  - offer_id: off_xtyb40gfean31kjgr00qaax3r6
+    offer_slug: gno-startup-program
+    title: Gno startup program
+    summary: Gno offers qualifying startups free or discounted access to their open-source smart contract programming platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:52:51.123079Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source smart contract programming platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_q24qrb8ssbrnp6pawzzgg0w5bm
+      access_operator_entity_id: ent_q24qrb8ssbrnp6pawzzgg0w5bm
+    access:
+      availability: public
+      method: form
+      url: https://gno.ai/startup
+    source_ids:
+      - src_eq9rvzx3t0dyfp7vck02c9wtb2
