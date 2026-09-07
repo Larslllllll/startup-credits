@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_fa0gxdyy02e930p390ba5ps1ah
+  slug: huggingface-hub
+  name: Hugging Face Hub
+  domains:
+    - value: huggingface.co
+      role: primary
+      valid_from: 2026-09-07T15:05:25.668351Z
+  category: ai-ml
+profile:
+  summary: Hugging Face Hub offers qualifying startups free or discounted access to their model hosting and collaboration platform.
+  links:
+    site: https://huggingface.co
+  description: Hugging Face Hub offers qualifying startups free or discounted access to their model hosting and collaboration platform.
+sources:
+  - source_id: src_x1a2rx1yt861mwm2c1mec3js5n
+    url: https://huggingface.co/startup
+programs: []
+offers:
+  - offer_id: off_w4zm90q5mk2nvy9hvvnccte73k
+    offer_slug: huggingface-hub-startup-program
+    title: Hugging Face Hub startup program
+    summary: Hugging Face Hub offers qualifying startups free or discounted access to their model hosting and collaboration platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:05:25.668351Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to model hosting and collaboration platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_fa0gxdyy02e930p390ba5ps1ah
+      access_operator_entity_id: ent_fa0gxdyy02e930p390ba5ps1ah
+    access:
+      availability: public
+      method: form
+      url: https://huggingface.co/startup
+    source_ids:
+      - src_x1a2rx1yt861mwm2c1mec3js5n
