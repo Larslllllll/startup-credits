@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_afntz55n0sspw54amggfddzq6a
+  slug: shieldgemma
+  name: ShieldGemma
+  domains:
+    - value: ai.google.dev
+      role: primary
+      valid_from: 2026-09-07T16:15:32.371272Z
+  category: ai-ml
+profile:
+  summary: ShieldGemma offers qualifying startups free or discounted access to their open-source safety LLM platform.
+  links:
+    site: https://ai.google.dev
+  description: ShieldGemma offers qualifying startups free or discounted access to their open-source safety LLM platform.
+sources:
+  - source_id: src_9sfye737d7ckm0gk78kh84n13a
+    url: https://ai.google.dev/startup
+programs: []
+offers:
+  - offer_id: off_hchgjd783k3s22w7g2qbppzwrs
+    offer_slug: shieldgemma-startup-program
+    title: ShieldGemma startup program
+    summary: ShieldGemma offers qualifying startups free or discounted access to their open-source safety LLM platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:15:32.371272Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source safety LLM platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_afntz55n0sspw54amggfddzq6a
+      access_operator_entity_id: ent_afntz55n0sspw54amggfddzq6a
+    access:
+      availability: public
+      method: form
+      url: https://ai.google.dev/startup
+    source_ids:
+      - src_9sfye737d7ckm0gk78kh84n13a
