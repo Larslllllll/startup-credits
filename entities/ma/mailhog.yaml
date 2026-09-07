@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_stxx1hz760re7b170rc9wvvwbp
+  slug: mailhog
+  name: MailHog
+  domains:
+    - value: mailhog.io
+      role: primary
+      valid_from: 2026-09-07T15:29:00.069291Z
+  category: communication
+profile:
+  summary: MailHog offers qualifying startups free or discounted access to their open-source email testing and development platform.
+  links:
+    site: https://mailhog.io
+  description: MailHog offers qualifying startups free or discounted access to their open-source email testing and development platform.
+sources:
+  - source_id: src_876pp6gd3cn1wh614vnb269f6w
+    url: https://mailhog.io/startup
+programs: []
+offers:
+  - offer_id: off_7afke6z57wv4dqsprtat09knhr
+    offer_slug: mailhog-startup-program
+    title: MailHog startup program
+    summary: MailHog offers qualifying startups free or discounted access to their open-source email testing and development platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:29:00.069291Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source email testing and development platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_stxx1hz760re7b170rc9wvvwbp
+      access_operator_entity_id: ent_stxx1hz760re7b170rc9wvvwbp
+    access:
+      availability: public
+      method: form
+      url: https://mailhog.io/startup
+    source_ids:
+      - src_876pp6gd3cn1wh614vnb269f6w
