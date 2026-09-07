@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_jprdvw76h62cpevqax5m1d13jy
+  slug: dedalus-labs
+  name: Dedalus Labs
+  domains:
+    - value: dedaluslabs.one
+      role: primary
+      valid_from: 2026-09-07T16:08:11.983539Z
+  category: ai-ml
+profile:
+  summary: Dedalus Labs offers qualifying startups free or discounted access to their AI and data science platform.
+  links:
+    site: https://dedaluslabs.one
+  description: Dedalus Labs offers qualifying startups free or discounted access to their AI and data science platform.
+sources:
+  - source_id: src_br8nzdhw3eamzsr15d1mfca75z
+    url: https://dedaluslabs.one/startup
+programs: []
+offers:
+  - offer_id: off_5ht4f41pzf1dynzt18y5gxavaz
+    offer_slug: dedalus-labs-startup-program
+    title: Dedalus Labs startup program
+    summary: Dedalus Labs offers qualifying startups free or discounted access to their AI and data science platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:08:11.983539Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI and data science platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_jprdvw76h62cpevqax5m1d13jy
+      access_operator_entity_id: ent_jprdvw76h62cpevqax5m1d13jy
+    access:
+      availability: public
+      method: form
+      url: https://dedaluslabs.one/startup
+    source_ids:
+      - src_br8nzdhw3eamzsr15d1mfca75z
