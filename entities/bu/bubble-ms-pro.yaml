@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_8515nn44h9m3khhh0t09qrsswb
+  slug: bubble-ms-pro
+  name: Bubble Microsoft Pro
+  domains:
+    - value: bubble.io
+      role: primary
+      valid_from: 2026-09-07T16:38:25.957331Z
+  category: no-code
+profile:
+  summary: Bubble offers qualifying startups free or discounted access to their visual web app builder through Microsoft for Startups.
+  links:
+    site: https://bubble.io
+  description: Bubble offers qualifying startups free or discounted access to their visual web app builder through Microsoft for Startups.
+sources:
+  - source_id: src_d75hhfh9gysp38z19b9jedcz6c
+    url: https://bubble.io/startup
+programs: []
+offers:
+  - offer_id: off_hc69wka4qwbmrrwxg6g1y2m8jr
+    offer_slug: bubble-ms-pro-startup-program
+    title: Bubble Microsoft Pro startup program
+    summary: Bubble offers qualifying startups free or discounted access to their visual web app builder through Microsoft for Startups.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:38:25.957331Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to visual web app builder through Microsoft for Startups
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_8515nn44h9m3khhh0t09qrsswb
+      access_operator_entity_id: ent_8515nn44h9m3khhh0t09qrsswb
+    access:
+      availability: public
+      method: form
+      url: https://bubble.io/startup
+    source_ids:
+      - src_d75hhfh9gysp38z19b9jedcz6c
