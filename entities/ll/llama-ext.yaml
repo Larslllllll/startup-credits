@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ss48g5fevbmdpx986rpxpm5jxg
+  slug: llama-ext
+  name: Meta Llama
+  domains:
+    - value: llama.meta.com
+      role: primary
+      valid_from: 2026-09-07T16:13:15.164898Z
+  category: ai-ml
+profile:
+  summary: Meta Llama offers qualifying startups free or discounted access to their open-source large language model platform.
+  links:
+    site: https://llama.meta.com
+  description: Meta Llama offers qualifying startups free or discounted access to their open-source large language model platform.
+sources:
+  - source_id: src_mfk6p4t5506djwq4wvhygbxee9
+    url: https://llama.meta.com/startup
+programs: []
+offers:
+  - offer_id: off_s4cxvnhejmatrs7rv41hmcgpa0
+    offer_slug: llama-ext-startup-program
+    title: Meta Llama startup program
+    summary: Meta Llama offers qualifying startups free or discounted access to their open-source large language model platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:13:15.164898Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source large language model platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ss48g5fevbmdpx986rpxpm5jxg
+      access_operator_entity_id: ent_ss48g5fevbmdpx986rpxpm5jxg
+    access:
+      availability: public
+      method: form
+      url: https://llama.meta.com/startup
+    source_ids:
+      - src_mfk6p4t5506djwq4wvhygbxee9
