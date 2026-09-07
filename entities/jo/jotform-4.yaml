@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_m5vjzp133rbj5g9paeq0rxdpjv
+  slug: jotform-4
+  name: JotForm Enterprise
+  domains:
+    - value: jotform.com
+      role: primary
+      valid_from: 2026-09-07T15:59:09.040645Z
+  category: no-code
+profile:
+  summary: JotForm Enterprise offers qualifying startups free or discounted access to their enterprise form builder platform.
+  links:
+    site: https://jotform.com
+  description: JotForm Enterprise offers qualifying startups free or discounted access to their enterprise form builder platform.
+sources:
+  - source_id: src_evb871khptq5amshf4whnc8a4b
+    url: https://jotform.com/startup
+programs: []
+offers:
+  - offer_id: off_wg1fv6hx4w3n4arbp0kbgbkdvk
+    offer_slug: jotform-4-startup-program
+    title: JotForm Enterprise startup program
+    summary: JotForm Enterprise offers qualifying startups free or discounted access to their enterprise form builder platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:59:09.040645Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their enterprise form builder platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_m5vjzp133rbj5g9paeq0rxdpjv
+      access_operator_entity_id: ent_m5vjzp133rbj5g9paeq0rxdpjv
+    access:
+      availability: public
+      method: form
+      url: https://jotform.com/startup
+    source_ids:
+      - src_evb871khptq5amshf4whnc8a4b
