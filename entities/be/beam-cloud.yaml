@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7mc397zr1savcwvybpgwc12ccd
+  slug: beam-cloud
+  name: Beam Cloud
+  domains:
+    - value: beam.cloud
+      role: primary
+      valid_from: 2026-09-07T15:04:46.652361Z
+  category: ai-ml
+profile:
+  summary: Beam offers qualifying startups free or discounted access to their serverless GPU platform for AI workloads.
+  links:
+    site: https://beam.cloud
+  description: Beam offers qualifying startups free or discounted access to their serverless GPU platform for AI workloads.
+sources:
+  - source_id: src_vq8njkzstzdfprvcqd3kvpqy4f
+    url: https://beam.cloud/startup
+programs: []
+offers:
+  - offer_id: off_8q35z0s2ajxjnwnr4bm860w6x0
+    offer_slug: beam-cloud-startup-program
+    title: Beam Cloud startup program
+    summary: Beam offers qualifying startups free or discounted access to their serverless GPU platform for AI workloads.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:04:46.652361Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to serverless GPU platform for AI workloads
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_7mc397zr1savcwvybpgwc12ccd
+      access_operator_entity_id: ent_7mc397zr1savcwvybpgwc12ccd
+    access:
+      availability: public
+      method: form
+      url: https://beam.cloud/startup
+    source_ids:
+      - src_vq8njkzstzdfprvcqd3kvpqy4f
