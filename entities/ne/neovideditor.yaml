@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xe9apweskks5p8mnj5gt40z7gy
+  slug: neovideditor
+  name: Neovim Editor
+  domains:
+    - value: neovim.io
+      role: primary
+      valid_from: 2026-09-07T15:02:12.578043Z
+  category: devtools-other
+profile:
+  summary: Neovim Editor offers qualifying startups free or discounted access to their Vim-based extensible editor platform.
+  links:
+    site: https://neovim.io
+  description: Neovim Editor offers qualifying startups free or discounted access to their Vim-based extensible editor platform.
+sources:
+  - source_id: src_kn6dw3cb1f2me4gr4kgfbergj8
+    url: https://neovim.io/startup
+programs: []
+offers:
+  - offer_id: off_q0ea62n8s7h5re3cxd41fd86ja
+    offer_slug: neovideditor-startup-program
+    title: Neovim Editor startup program
+    summary: Neovim Editor offers qualifying startups free or discounted access to their Vim-based extensible editor platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:02:12.578043Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to Vim-based extensible editor platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xe9apweskks5p8mnj5gt40z7gy
+      access_operator_entity_id: ent_xe9apweskks5p8mnj5gt40z7gy
+    access:
+      availability: public
+      method: form
+      url: https://neovim.io/startup
+    source_ids:
+      - src_kn6dw3cb1f2me4gr4kgfbergj8
