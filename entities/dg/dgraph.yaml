@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_hecv74jb44mpv9mfq1zh6xg7af
+  slug: dgraph
+  name: Dgraph
+  domains:
+    - value: dgraph.io
+      role: primary
+      valid_from: 2026-09-07T15:27:46.548442Z
+  category: databases
+profile:
+  summary: Dgraph offers qualifying startups free or discounted access to their open-source distributed graph database platform.
+  links:
+    site: https://dgraph.io
+  description: Dgraph offers qualifying startups free or discounted access to their open-source distributed graph database platform.
+sources:
+  - source_id: src_8jg54beyh1wx4ydd3ttza616sd
+    url: https://dgraph.io/startup
+programs: []
+offers:
+  - offer_id: off_5pvfrrtk6gkfcjnh6cg93027wv
+    offer_slug: dgraph-startup-program
+    title: Dgraph startup program
+    summary: Dgraph offers qualifying startups free or discounted access to their open-source distributed graph database platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:27:46.548442Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source distributed graph database platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_hecv74jb44mpv9mfq1zh6xg7af
+      access_operator_entity_id: ent_hecv74jb44mpv9mfq1zh6xg7af
+    access:
+      availability: public
+      method: form
+      url: https://dgraph.io/startup
+    source_ids:
+      - src_8jg54beyh1wx4ydd3ttza616sd
