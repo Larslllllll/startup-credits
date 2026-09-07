@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_mhht6hqgxz4qxvzgx1vt3mcn4g
+  slug: nepalhrm
+  name: NepalHRM
+  domains:
+    - value: nepalhrm.com
+      role: primary
+      valid_from: 2026-09-07T14:36:06.235974Z
+  category: hr-people
+profile:
+  summary: NepalHRM offers qualifying startups free access to their HR management and payroll platform for 6 months.
+  links:
+    site: https://nepalhrm.com
+  description: NepalHRM is an HR management and payroll platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_kbcb9p04v8b3qyq1d6534509cb
+    url: https://nepalhrm.com/startup
+programs: []
+offers:
+  - offer_id: off_cbkr7akjq4znenvcad2gcdn5a1
+    offer_slug: nepalhrm-startup-program
+    title: NepalHRM startup program
+    summary: Qualifying startups receive free access to the NepalHRM HR management and payroll platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:36:06.235974Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to HR management and payroll platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_mhht6hqgxz4qxvzgx1vt3mcn4g
+      access_operator_entity_id: ent_mhht6hqgxz4qxvzgx1vt3mcn4g
+    access:
+      availability: public
+      method: form
+      url: https://nepalhrm.com/startup
+    source_ids:
+      - src_kbcb9p04v8b3qyq1d6534509cb
