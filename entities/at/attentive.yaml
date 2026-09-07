@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_thn2s049j8vt6vswa55kkgd7wr
+  slug: attentive
+  name: Attentive
+  domains:
+    - value: attentive.ai
+      role: primary
+      valid_from: 2026-09-07T15:15:21.761112Z
+  category: marketing
+profile:
+  summary: Attentive offers qualifying startups free or discounted access to their AI-powered SMS and email marketing platform.
+  links:
+    site: https://attentive.ai
+  description: Attentive offers qualifying startups free or discounted access to their AI-powered SMS and email marketing platform.
+sources:
+  - source_id: src_bpbm41ak6vcw8mzyybh5hdsa2g
+    url: https://attentive.ai/startup
+programs: []
+offers:
+  - offer_id: off_w35vvx4pexcy65wem3ed7yfa7e
+    offer_slug: attentive-startup-program
+    title: Attentive startup program
+    summary: Attentive offers qualifying startups free or discounted access to their AI-powered SMS and email marketing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:15:21.761112Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI-powered SMS and email marketing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_thn2s049j8vt6vswa55kkgd7wr
+      access_operator_entity_id: ent_thn2s049j8vt6vswa55kkgd7wr
+    access:
+      availability: public
+      method: form
+      url: https://attentive.ai/startup
+    source_ids:
+      - src_bpbm41ak6vcw8mzyybh5hdsa2g
