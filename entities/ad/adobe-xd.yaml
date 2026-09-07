@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_b1s2hx0v2a7xmp55m4xmj0k4er
+  slug: adobe-xd
+  name: Adobe XD
+  domains:
+    - value: adobe.com
+      role: primary
+      valid_from: 2026-09-07T15:47:33.826525Z
+  category: design
+profile:
+  summary: Adobe XD offers qualifying startups free or discounted access to their user experience design platform.
+  links:
+    site: https://adobe.com
+  description: Adobe XD offers qualifying startups free or discounted access to their user experience design platform.
+sources:
+  - source_id: src_8azgw2gzx9h7e1tp4errx1hf21
+    url: https://adobe.com/startup
+programs: []
+offers:
+  - offer_id: off_vvbkhfhns60wy52fcwcxk3rn5a
+    offer_slug: adobe-xd-startup-program
+    title: Adobe XD startup program
+    summary: Adobe XD offers qualifying startups free or discounted access to their user experience design platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:47:33.826525Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their user experience design platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_b1s2hx0v2a7xmp55m4xmj0k4er
+      access_operator_entity_id: ent_b1s2hx0v2a7xmp55m4xmj0k4er
+    access:
+      availability: public
+      method: form
+      url: https://adobe.com/startup
+    source_ids:
+      - src_8azgw2gzx9h7e1tp4errx1hf21
