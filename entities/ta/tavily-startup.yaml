@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rk7yfchy8w822rx8vfsef1ev2e
+  slug: tavily-startup
+  name: Tavily Startup
+  domains:
+    - value: tavily.com
+      role: primary
+      valid_from: 2026-09-07T16:09:23.785241Z
+  category: ai-ml
+profile:
+  summary: Tavily offers qualifying startups free or discounted access to their AI-powered search API and research platform.
+  links:
+    site: https://tavily.com
+  description: Tavily offers qualifying startups free or discounted access to their AI-powered search API and research platform.
+sources:
+  - source_id: src_bzwr4jm41jgs6akd1v1cqpww4z
+    url: https://tavily.com/startup
+programs: []
+offers:
+  - offer_id: off_00eft8x7q52k5shqqrcee8zz73
+    offer_slug: tavily-startup-startup-program
+    title: Tavily Startup startup program
+    summary: Tavily offers qualifying startups free or discounted access to their AI-powered search API and research platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:09:23.785241Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI-powered search API and research platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_rk7yfchy8w822rx8vfsef1ev2e
+      access_operator_entity_id: ent_rk7yfchy8w822rx8vfsef1ev2e
+    access:
+      availability: public
+      method: form
+      url: https://tavily.com/startup
+    source_ids:
+      - src_bzwr4jm41jgs6akd1v1cqpww4z
