@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_05xmjqe6yeaz87hcqfznr0e08f
+  slug: sourcetrail
+  name: Sourcetrail
+  domains:
+    - value: sourcetrail.com
+      role: primary
+      valid_from: 2026-09-07T15:25:10.577874Z
+  category: devtools-other
+profile:
+  summary: Sourcetrail offers qualifying startups free or discounted access to their open-source code exploration platform.
+  links:
+    site: https://sourcetrail.com
+  description: Sourcetrail offers qualifying startups free or discounted access to their open-source code exploration platform.
+sources:
+  - source_id: src_4aa52pdw79yvfzxdx8gp3nr8jw
+    url: https://sourcetrail.com/startup
+programs: []
+offers:
+  - offer_id: off_d6tqx7azfr66yv742013ykjm02
+    offer_slug: sourcetrail-startup-program
+    title: Sourcetrail startup program
+    summary: Sourcetrail offers qualifying startups free or discounted access to their open-source code exploration platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:25:10.577874Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source code exploration platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_05xmjqe6yeaz87hcqfznr0e08f
+      access_operator_entity_id: ent_05xmjqe6yeaz87hcqfznr0e08f
+    access:
+      availability: public
+      method: form
+      url: https://sourcetrail.com/startup
+    source_ids:
+      - src_4aa52pdw79yvfzxdx8gp3nr8jw
