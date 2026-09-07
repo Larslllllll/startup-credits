@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_g0fsxaxc785pgtemar3j5xvw3z
+  slug: hj2
+  name: Hotjar 2
+  domains:
+    - value: hotjar.com
+      role: primary
+      valid_from: 2026-09-07T16:56:42.032774Z
+  category: data-analytics
+profile:
+  summary: Hotjar offers qualifying startups free or discounted access to their behavior analytics and user feedback platform.
+  links:
+    site: https://hotjar.com
+  description: Hotjar offers qualifying startups free or discounted access to their behavior analytics and user feedback platform.
+sources:
+  - source_id: src_9j07pt2v1jnmqqh8v1g04abqph
+    url: https://hotjar.com/startup
+programs: []
+offers:
+  - offer_id: off_bx3zpx6k0kmhk2x5330w66psex
+    offer_slug: hj2-startup-program
+    title: Hotjar 2 startup program
+    summary: Hotjar offers qualifying startups free or discounted access to their behavior analytics and user feedback platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:56:42.032774Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to behavior analytics and user feedback platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_g0fsxaxc785pgtemar3j5xvw3z
+      access_operator_entity_id: ent_g0fsxaxc785pgtemar3j5xvw3z
+    access:
+      availability: public
+      method: form
+      url: https://hotjar.com/startup
+    source_ids:
+      - src_9j07pt2v1jnmqqh8v1g04abqph
