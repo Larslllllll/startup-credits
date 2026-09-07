@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_sy6bq0jag8xkm3sb0gm3jgn897
+  slug: planetscale
+  name: PlanetScale
+  domains:
+    - value: planetscale.com
+      role: primary
+      valid_from: 2026-09-07T14:54:11.727421Z
+  category: databases
+profile:
+  summary: PlanetScale offers qualifying startups free or discounted access to their MySQL-compatible serverless database platform.
+  links:
+    site: https://planetscale.com
+  description: PlanetScale offers qualifying startups free or discounted access to their MySQL-compatible serverless database platform.
+sources:
+  - source_id: src_jk1gvq433jhs1bp8v06r34at60
+    url: https://planetscale.com/startup
+programs: []
+offers:
+  - offer_id: off_h72wjz1dxfy3awk8wz9ntz3rag
+    offer_slug: planetscale-startup-program
+    title: PlanetScale startup program
+    summary: PlanetScale offers qualifying startups free or discounted access to their MySQL-compatible serverless database platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:54:11.727421Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to MySQL-compatible serverless database platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_sy6bq0jag8xkm3sb0gm3jgn897
+      access_operator_entity_id: ent_sy6bq0jag8xkm3sb0gm3jgn897
+    access:
+      availability: public
+      method: form
+      url: https://planetscale.com/startup
+    source_ids:
+      - src_jk1gvq433jhs1bp8v06r34at60
