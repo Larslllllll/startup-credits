@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9sdrydmqpe6ka6p32ys90fhf9n
+  slug: streamlit
+  name: Streamlit
+  domains:
+    - value: streamlit.io
+      role: primary
+      valid_from: 2026-09-07T15:03:08.932516Z
+  category: ai-ml
+profile:
+  summary: Streamlit offers qualifying startups free or discounted access to their open-source Python data app framework.
+  links:
+    site: https://streamlit.io
+  description: Streamlit offers qualifying startups free or discounted access to their open-source Python data app framework.
+sources:
+  - source_id: src_y065pjcefkr5xm49ag5wyhsjcw
+    url: https://streamlit.io/startup
+programs: []
+offers:
+  - offer_id: off_tsz0qsg456hxyt9gfa0y7hpc4q
+    offer_slug: streamlit-startup-program
+    title: Streamlit startup program
+    summary: Streamlit offers qualifying startups free or discounted access to their open-source Python data app framework.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:03:08.932516Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source Python data app framework
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_9sdrydmqpe6ka6p32ys90fhf9n
+      access_operator_entity_id: ent_9sdrydmqpe6ka6p32ys90fhf9n
+    access:
+      availability: public
+      method: form
+      url: https://streamlit.io/startup
+    source_ids:
+      - src_y065pjcefkr5xm49ag5wyhsjcw
