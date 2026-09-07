@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_4mhtskw43rhy59y8gwe006fpgg
+  slug: musixmatch
+  name: Musixmatch
+  domains:
+    - value: musixmatch.com
+      role: primary
+      valid_from: 2026-09-07T15:45:58.590815Z
+  category: communication
+profile:
+  summary: Musixmatch offers qualifying startups free or discounted access to their music lyrics and metadata platform.
+  links:
+    site: https://musixmatch.com
+  description: Musixmatch offers qualifying startups free or discounted access to their music lyrics and metadata platform.
+sources:
+  - source_id: src_wagw9acecw84wxzqy1p8rvcagp
+    url: https://musixmatch.com/startup
+programs: []
+offers:
+  - offer_id: off_z4m09rv3z2rezjp11sxew43yks
+    offer_slug: musixmatch-startup-program
+    title: Musixmatch startup program
+    summary: Musixmatch offers qualifying startups free or discounted access to their music lyrics and metadata platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:45:58.590815Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their music lyrics and metadata platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_4mhtskw43rhy59y8gwe006fpgg
+      access_operator_entity_id: ent_4mhtskw43rhy59y8gwe006fpgg
+    access:
+      availability: public
+      method: form
+      url: https://musixmatch.com/startup
+    source_ids:
+      - src_wagw9acecw84wxzqy1p8rvcagp
