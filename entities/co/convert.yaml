@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_4vddvesry7dm300sg3m90r8wtn
+  slug: convert
+  name: Convert
+  domains:
+    - value: convert.com
+      role: primary
+      valid_from: 2026-09-07T15:35:19.924963Z
+  category: marketing
+profile:
+  summary: Convert offers qualifying startups free or discounted access to their A/B testing and personalization platform.
+  links:
+    site: https://convert.com
+  description: Convert offers qualifying startups free or discounted access to their A/B testing and personalization platform.
+sources:
+  - source_id: src_t4z62mnh6x70em6mw5bg0zdn04
+    url: https://convert.com/startup
+programs: []
+offers:
+  - offer_id: off_2jn1ve9jvaw9nwk47g6kvfqm50
+    offer_slug: convert-startup-program
+    title: Convert startup program
+    summary: Convert offers qualifying startups free or discounted access to their A/B testing and personalization platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:35:19.924963Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their A/B testing and personalization platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_4vddvesry7dm300sg3m90r8wtn
+      access_operator_entity_id: ent_4vddvesry7dm300sg3m90r8wtn
+    access:
+      availability: public
+      method: form
+      url: https://convert.com/startup
+    source_ids:
+      - src_t4z62mnh6x70em6mw5bg0zdn04
