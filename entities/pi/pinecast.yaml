@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5ct2cr5gyr6ymhvvcny7zcazzn
+  slug: pinecast
+  name: Pinecast
+  domains:
+    - value: pinecast.com
+      role: primary
+      valid_from: 2026-09-07T15:44:41.304390Z
+  category: communication
+profile:
+  summary: Pinecast offers qualifying startups free or discounted access to their podcast hosting and analytics platform.
+  links:
+    site: https://pinecast.com
+  description: Pinecast offers qualifying startups free or discounted access to their podcast hosting and analytics platform.
+sources:
+  - source_id: src_dg2wrcmzs9kmay9hz9b0g0dzqk
+    url: https://pinecast.com/startup
+programs: []
+offers:
+  - offer_id: off_r3end6hh4pcf0syzx7a28pzyh0
+    offer_slug: pinecast-startup-program
+    title: Pinecast startup program
+    summary: Pinecast offers qualifying startups free or discounted access to their podcast hosting and analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:44:41.304390Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their podcast hosting and analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_5ct2cr5gyr6ymhvvcny7zcazzn
+      access_operator_entity_id: ent_5ct2cr5gyr6ymhvvcny7zcazzn
+    access:
+      availability: public
+      method: form
+      url: https://pinecast.com/startup
+    source_ids:
+      - src_dg2wrcmzs9kmay9hz9b0g0dzqk
