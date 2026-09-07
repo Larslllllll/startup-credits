@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_x2r1wcq81e0w2xxqenft7hv0av
+  slug: whereby
+  name: Whereby
+  domains:
+    - value: whereby.com
+      role: primary
+      valid_from: 2026-09-07T15:14:21.228724Z
+  category: communication
+profile:
+  summary: Whereby offers qualifying startups free or discounted access to their video meeting and conferencing platform.
+  links:
+    site: https://whereby.com
+  description: Whereby offers qualifying startups free or discounted access to their video meeting and conferencing platform.
+sources:
+  - source_id: src_n2v51ea6n58vc37k3zbf348c42
+    url: https://whereby.com/startup
+programs: []
+offers:
+  - offer_id: off_0d4ttngfarq4rt7g45s7v6tw3v
+    offer_slug: whereby-startup-program
+    title: Whereby startup program
+    summary: Whereby offers qualifying startups free or discounted access to their video meeting and conferencing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:14:21.228724Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to video meeting and conferencing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_x2r1wcq81e0w2xxqenft7hv0av
+      access_operator_entity_id: ent_x2r1wcq81e0w2xxqenft7hv0av
+    access:
+      availability: public
+      method: form
+      url: https://whereby.com/startup
+    source_ids:
+      - src_n2v51ea6n58vc37k3zbf348c42
