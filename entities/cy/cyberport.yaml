@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6xs4e54850t6wffsgvtdrvm7n2
+  slug: cyberport
+  name: Cyberport
+  domains:
+    - value: cyberport.hk
+      role: primary
+      valid_from: 2026-09-07T13:42:51.353621Z
+  category: other
+profile:
+  summary: Cyberport offers a startup-specific cash grant for digital technology projects at idea or early development stage, up to HKD 100,000 over six months subject to selection and reporting milestones.
+  links:
+    site: https://www.cyberport.edu.hk
+  description: Cyberport is a Hong Kong digital technology hub. Their startup grant program offers qualifying digital technology projects at idea or early development stage a cash grant of up to HKD 100,000 over six months, subject to selection and reporting milestones.
+sources:
+  - source_id: src_kwnxqmh21baxg9hwnx3ak7vbhc
+    url: https://www.cyberport.edu.hk/en/cyberport/about-us/cyberport-startup-programme
+programs: []
+offers:
+  - offer_id: off_xkz1b1nwska1nb6pnp0w0tg6d6
+    offer_slug: cyberport-startup-grant
+    title: Cyberport Startup Grant
+    summary: Up to HKD 100,000 cash grant for digital technology projects at idea or early development stage, over six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:42:51.353621Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to HKD 100,000 cash grant for digital technology projects over six months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a digital technology project at idea or early development stage. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_6xs4e54850t6wffsgvtdrvm7n2
+      access_operator_entity_id: ent_6xs4e54850t6wffsgvtdrvm7n2
+    access:
+      availability: public
+      method: form
+      url: https://www.cyberport.edu.hk/en/cyberport/about-us/cyberport-startup-programme
+    source_ids:
+      - src_kwnxqmh21baxg9hwnx3ak7vbhc
