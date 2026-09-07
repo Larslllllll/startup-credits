@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_c3khj4eh1zjph5am445d6y1y4g
+  slug: partykit
+  name: Partykit
+  domains:
+    - value: partykit.io
+      role: primary
+      valid_from: 2026-09-07T15:07:45.589610Z
+  category: hosting-infra
+profile:
+  summary: Partykit offers qualifying startups free or discounted access to their open-source platform for real-time multiplayer apps.
+  links:
+    site: https://partykit.io
+  description: Partykit offers qualifying startups free or discounted access to their open-source platform for real-time multiplayer apps.
+sources:
+  - source_id: src_q5jsnqsqhzckkbm89hwn9gkbpc
+    url: https://partykit.io/startup
+programs: []
+offers:
+  - offer_id: off_1ys1xkwnydgew1ck5m8wrhr9ww
+    offer_slug: partykit-startup-program
+    title: Partykit startup program
+    summary: Partykit offers qualifying startups free or discounted access to their open-source platform for real-time multiplayer apps.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:07:45.589610Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source platform for real-time multiplayer apps
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_c3khj4eh1zjph5am445d6y1y4g
+      access_operator_entity_id: ent_c3khj4eh1zjph5am445d6y1y4g
+    access:
+      availability: public
+      method: form
+      url: https://partykit.io/startup
+    source_ids:
+      - src_q5jsnqsqhzckkbm89hwn9gkbpc
