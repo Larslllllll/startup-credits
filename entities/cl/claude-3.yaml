@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_8c0yg0743ysj10788fnj5wwwpj
+  slug: claude-3
+  name: Claude 3
+  domains:
+    - value: anthropic.com
+      role: primary
+      valid_from: 2026-09-07T16:14:06.930717Z
+  category: ai-ml
+profile:
+  summary: Claude 3 offers qualifying startups free or discounted access to their advanced AI model platform.
+  links:
+    site: https://anthropic.com
+  description: Claude 3 offers qualifying startups free or discounted access to their advanced AI model platform.
+sources:
+  - source_id: src_d5746wqt534362zhc5gfsdw9tb
+    url: https://anthropic.com/startup
+programs: []
+offers:
+  - offer_id: off_151dsxcp6gewqhc4369ejn0qdj
+    offer_slug: claude-3-startup-program
+    title: Claude 3 startup program
+    summary: Claude 3 offers qualifying startups free or discounted access to their advanced AI model platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:14:06.930717Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to advanced AI model platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_8c0yg0743ysj10788fnj5wwwpj
+      access_operator_entity_id: ent_8c0yg0743ysj10788fnj5wwwpj
+    access:
+      availability: public
+      method: form
+      url: https://anthropic.com/startup
+    source_ids:
+      - src_d5746wqt534362zhc5gfsdw9tb
