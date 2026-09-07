@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0fqtxh587gpfq9v99nmmv229pg
+  slug: adalo
+  name: Adalo
+  domains:
+    - value: adalo.com
+      role: primary
+      valid_from: 2026-09-07T15:56:56.767383Z
+  category: no-code
+profile:
+  summary: Adalo offers qualifying startups free or discounted access to their no-code app building platform.
+  links:
+    site: https://adalo.com
+  description: Adalo offers qualifying startups free or discounted access to their no-code app building platform.
+sources:
+  - source_id: src_sw4m5tdwxxjzhypv9rz5qwqs4m
+    url: https://adalo.com/startup
+programs: []
+offers:
+  - offer_id: off_hcn5kb1breqz724w5j7sms7szn
+    offer_slug: adalo-startup-program
+    title: Adalo startup program
+    summary: Adalo offers qualifying startups free or discounted access to their no-code app building platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:56:56.767383Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their no-code app building platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_0fqtxh587gpfq9v99nmmv229pg
+      access_operator_entity_id: ent_0fqtxh587gpfq9v99nmmv229pg
+    access:
+      availability: public
+      method: form
+      url: https://adalo.com/startup
+    source_ids:
+      - src_sw4m5tdwxxjzhypv9rz5qwqs4m
