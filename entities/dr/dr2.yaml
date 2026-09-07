@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_4tpqta4yp1tt5exj02y8gpn3rp
+  slug: dr2
+  name: Drone 2
+  domains:
+    - value: drone.io
+      role: primary
+      valid_from: 2026-09-07T16:59:54.843701Z
+  category: ci-cd
+profile:
+  summary: Drone offers qualifying startups free or discounted access to their CI/CD and container-based automation platform.
+  links:
+    site: https://drone.io
+  description: Drone offers qualifying startups free or discounted access to their CI/CD and container-based automation platform.
+sources:
+  - source_id: src_451mn69xqzb6cmapg97tsf21bj
+    url: https://drone.io/startup
+programs: []
+offers:
+  - offer_id: off_ay1tzs2k90dgeya4k89j0zqkew
+    offer_slug: dr2-startup-program
+    title: Drone 2 startup program
+    summary: Drone offers qualifying startups free or discounted access to their CI/CD and container-based automation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:59:54.843701Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to CI/CD and container-based automation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_4tpqta4yp1tt5exj02y8gpn3rp
+      access_operator_entity_id: ent_4tpqta4yp1tt5exj02y8gpn3rp
+    access:
+      availability: public
+      method: form
+      url: https://drone.io/startup
+    source_ids:
+      - src_451mn69xqzb6cmapg97tsf21bj
