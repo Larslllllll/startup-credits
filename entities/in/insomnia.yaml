@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_vkf90g5znaqrvy8he7j1cnrxtf
+  slug: insomnia
+  name: Insomnia
+  domains:
+    - value: insomnia.rest
+      role: primary
+      valid_from: 2026-09-07T15:25:45.946112Z
+  category: devtools-other
+profile:
+  summary: Insomnia offers qualifying startups free or discounted access to their open-source API client and design platform.
+  links:
+    site: https://insomnia.rest
+  description: Insomnia offers qualifying startups free or discounted access to their open-source API client and design platform.
+sources:
+  - source_id: src_ksdmrxbd8w8wy78y91qbrqqa1z
+    url: https://insomnia.rest/startup
+programs: []
+offers:
+  - offer_id: off_pdbrgt8bx8fgb7v0h9997gmajz
+    offer_slug: insomnia-startup-program
+    title: Insomnia startup program
+    summary: Insomnia offers qualifying startups free or discounted access to their open-source API client and design platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:25:45.946112Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source API client and design platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_vkf90g5znaqrvy8he7j1cnrxtf
+      access_operator_entity_id: ent_vkf90g5znaqrvy8he7j1cnrxtf
+    access:
+      availability: public
+      method: form
+      url: https://insomnia.rest/startup
+    source_ids:
+      - src_ksdmrxbd8w8wy78y91qbrqqa1z
