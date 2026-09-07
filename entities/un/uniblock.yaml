@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_d4jjjwrcb4z49y52mxtrjd99yn
+  slug: uniblock
+  name: Uniblock
+  domains:
+    - value: uniblock.website
+      role: primary
+      valid_from: 2026-09-07T14:17:11.349031Z
+  category: apis-integration
+profile:
+  summary: Uniblock offers qualifying startups $1,000 in API credits plus discounted API routing and unified API access for 6 months.
+  links:
+    site: https://uniblock.website
+  description: Uniblock is an API orchestration platform. Their startup program offers $1,000 in API credits plus discounted API routing for 6 months.
+sources:
+  - source_id: src_k2szjy2h39dm3vn4m7s0k7nfws
+    url: https://uniblock.website/startup
+programs: []
+offers:
+  - offer_id: off_w4p70m0wg86fg34fwmppx6bqej
+    offer_slug: uniblock-startup-program
+    title: Uniblock startup program
+    summary: Qualifying startups receive $1,000 in API credits plus discounted API routing and unified API access for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:17:11.349031Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $1,000 in API credits plus discounted API routing and unified API access for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_d4jjjwrcb4z49y52mxtrjd99yn
+      access_operator_entity_id: ent_d4jjjwrcb4z49y52mxtrjd99yn
+    access:
+      availability: public
+      method: form
+      url: https://uniblock.website/startup
+    source_ids:
+      - src_k2szjy2h39dm3vn4m7s0k7nfws
