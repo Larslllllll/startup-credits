@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xfdg7c5z9tqms1qzjae9mqvh3k
+  slug: kinde
+  name: Kinde
+  domains:
+    - value: kinde.com
+      role: primary
+      valid_from: 2026-09-07T15:09:13.704468Z
+  category: auth-security
+profile:
+  summary: Kinde offers qualifying startups free or discounted access to their simple authentication and identity platform.
+  links:
+    site: https://kinde.com
+  description: Kinde offers qualifying startups free or discounted access to their simple authentication and identity platform.
+sources:
+  - source_id: src_cty1qfawe9fmwsnr7e0z3bxxb3
+    url: https://kinde.com/startup
+programs: []
+offers:
+  - offer_id: off_tkm6h8qq12ray98f96n4r7njgc
+    offer_slug: kinde-startup-program
+    title: Kinde startup program
+    summary: Kinde offers qualifying startups free or discounted access to their simple authentication and identity platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:09:13.704468Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to simple authentication and identity platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xfdg7c5z9tqms1qzjae9mqvh3k
+      access_operator_entity_id: ent_xfdg7c5z9tqms1qzjae9mqvh3k
+    access:
+      availability: public
+      method: form
+      url: https://kinde.com/startup
+    source_ids:
+      - src_cty1qfawe9fmwsnr7e0z3bxxb3
