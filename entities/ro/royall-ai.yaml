@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_at59mvhbwenf1cxeht4ge5by4b
+  slug: royall-ai
+  name: Royall AI
+  domains:
+    - value: royall.ai
+      role: primary
+      valid_from: 2026-09-07T14:19:20.024907Z
+  category: marketing
+profile:
+  summary: Royall AI offers qualifying startups free access to their AI-powered customer engagement and rewards platform for 6 months.
+  links:
+    site: https://royall.ai
+  description: Royall AI is an AI-powered customer engagement and rewards platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_sz82sa0mepzfg1zdseb4x1m3sn
+    url: https://royall.ai/startup
+programs: []
+offers:
+  - offer_id: off_v06zb8b2v6xbmc56jp12gq6ppa
+    offer_slug: royall-startup-program
+    title: Royall AI startup program
+    summary: Qualifying startups receive free access to the Royall AI customer engagement and rewards platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:19:20.024907Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to AI customer engagement and rewards platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_at59mvhbwenf1cxeht4ge5by4b
+      access_operator_entity_id: ent_at59mvhbwenf1cxeht4ge5by4b
+    access:
+      availability: public
+      method: form
+      url: https://royall.ai/startup
+    source_ids:
+      - src_sz82sa0mepzfg1zdseb4x1m3sn
