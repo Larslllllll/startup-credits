@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_kcbz7et22h4at961vnhxa7cvvw
+  slug: crococlick
+  name: CrocoClick
+  domains:
+    - value: crococlick.com
+      role: primary
+      valid_from: 2026-09-07T13:43:39.372272Z
+  category: marketing
+profile:
+  summary: CrocoClick Young Enterprise program offers qualifying companies heavily discounted full platform access for three years.
+  links:
+    site: https://crococlick.com
+  description: CrocoClick is a digital marketing platform. Their Young Enterprise program offers qualifying companies under 12 months old and under EUR 2 million funded discounted full access for 3 years, with substantial year-by-year discounts.
+sources:
+  - source_id: src_x3adjm26rahsgg7b5wvhynwrjc
+    url: https://crococlick.com/young-enterprise
+programs: []
+offers:
+  - offer_id: off_gcqqyatckfstr18vhb5325f0vv
+    offer_slug: crococlick-young-enterprise
+    title: CrocoClick Young Enterprise
+    summary: Qualifying companies receive full platform access at deep discounts across three years.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:43:39.372272Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Discounted full access for 3 years, with substantial year-by-year discounts
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be under 12 months old, with less than EUR 2 million in funding. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_kcbz7et22h4at961vnhxa7cvvw
+      access_operator_entity_id: ent_kcbz7et22h4at961vnhxa7cvvw
+    access:
+      availability: public
+      method: form
+      url: https://crococlick.com/young-enterprise
+    source_ids:
+      - src_x3adjm26rahsgg7b5wvhynwrjc
