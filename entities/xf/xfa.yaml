@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_x281tt4z594z43pmmtavrc848y
+  slug: xfa
+  name: XFA
+  domains:
+    - value: xfa.tech
+      role: primary
+      valid_from: 2026-09-07T14:18:32.859538Z
+  category: devtools-other
+profile:
+  summary: XFA offers qualifying startups free access to their developer platform for building and deploying AI agents and workflows.
+  links:
+    site: https://xfa.tech
+  description: XFA is a developer platform for building and deploying AI agents. Their startup program offers free access to qualifying startups.
+sources:
+  - source_id: src_0dp3m86wq5ncxqk1tewqh6txw5
+    url: https://xfa.tech/startup
+programs: []
+offers:
+  - offer_id: off_pmqkwjm66c0exhe4d3kckzeess
+    offer_slug: xfa-startup-program
+    title: XFA startup program
+    summary: Qualifying startups receive free access to the XFA developer platform for building and deploying AI agents and workflows.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:18:32.859538Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to developer platform for AI agents and workflows
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_x281tt4z594z43pmmtavrc848y
+      access_operator_entity_id: ent_x281tt4z594z43pmmtavrc848y
+    access:
+      availability: public
+      method: form
+      url: https://xfa.tech/startup
+    source_ids:
+      - src_0dp3m86wq5ncxqk1tewqh6txw5
