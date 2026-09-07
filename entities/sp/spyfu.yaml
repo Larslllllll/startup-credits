@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_cqs60wfpge8kxmsph9skkkqr9d
+  slug: spyfu
+  name: SpyFu
+  domains:
+    - value: spyfu.com
+      role: primary
+      valid_from: 2026-09-07T15:36:05.194632Z
+  category: marketing
+profile:
+  summary: SpyFu offers qualifying startups free or discounted access to their competitive keyword and ad research platform.
+  links:
+    site: https://spyfu.com
+  description: SpyFu offers qualifying startups free or discounted access to their competitive keyword and ad research platform.
+sources:
+  - source_id: src_p8jdaestghjvhqr4kzpbj1zd15
+    url: https://spyfu.com/startup
+programs: []
+offers:
+  - offer_id: off_1fzfnxyd6zpm1mw23p508h3gj7
+    offer_slug: spyfu-startup-program
+    title: SpyFu startup program
+    summary: SpyFu offers qualifying startups free or discounted access to their competitive keyword and ad research platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:36:05.194632Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their competitive keyword and ad research platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_cqs60wfpge8kxmsph9skkkqr9d
+      access_operator_entity_id: ent_cqs60wfpge8kxmsph9skkkqr9d
+    access:
+      availability: public
+      method: form
+      url: https://spyfu.com/startup
+    source_ids:
+      - src_p8jdaestghjvhqr4kzpbj1zd15
