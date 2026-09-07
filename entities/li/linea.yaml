@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_93wvcc9c5bwnw8tsq6x1wt6ttd
+  slug: linea
+  name: Linea
+  domains:
+    - value: linea.build
+      role: primary
+      valid_from: 2026-09-07T15:54:14.732408Z
+  category: devtools-other
+profile:
+  summary: Linea offers qualifying startups free or discounted access to their Ethereum Layer 2 scaling and zkEVM platform.
+  links:
+    site: https://linea.build
+  description: Linea offers qualifying startups free or discounted access to their Ethereum Layer 2 scaling and zkEVM platform.
+sources:
+  - source_id: src_yfqjxrjanxjpvpg65xxtxnrnht
+    url: https://linea.build/startup
+programs: []
+offers:
+  - offer_id: off_4nq5a6qn6j31bpx961x8z5bwf6
+    offer_slug: linea-startup-program
+    title: Linea startup program
+    summary: Linea offers qualifying startups free or discounted access to their Ethereum Layer 2 scaling and zkEVM platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:54:14.732408Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their Ethereum Layer 2 scaling and zkEVM platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_93wvcc9c5bwnw8tsq6x1wt6ttd
+      access_operator_entity_id: ent_93wvcc9c5bwnw8tsq6x1wt6ttd
+    access:
+      availability: public
+      method: form
+      url: https://linea.build/startup
+    source_ids:
+      - src_yfqjxrjanxjpvpg65xxtxnrnht
