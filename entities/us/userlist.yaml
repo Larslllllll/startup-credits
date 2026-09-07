@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_yjf14r5c91b4aj0v6ndhm1yfc8
+  slug: userlist
+  name: Userlist
+  domains:
+    - value: userlist.com
+      role: primary
+      valid_from: 2026-09-07T14:56:02.657345Z
+  category: crm-sales
+profile:
+  summary: Userlist offers qualifying startups free or discounted access to their email automation and customer messaging platform for SaaS.
+  links:
+    site: https://userlist.com
+  description: Userlist offers qualifying startups free or discounted access to their email automation and customer messaging platform for SaaS.
+sources:
+  - source_id: src_mvkbakx54dchmbyzw2jmr9kwhh
+    url: https://userlist.com/startup
+programs: []
+offers:
+  - offer_id: off_9awz5qz1np6k1nqvz2xcazeaqe
+    offer_slug: userlist-startup-program
+    title: Userlist startup program
+    summary: Userlist offers qualifying startups free or discounted access to their email automation and customer messaging platform for SaaS.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:56:02.657345Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to email automation and customer messaging platform for SaaS
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_yjf14r5c91b4aj0v6ndhm1yfc8
+      access_operator_entity_id: ent_yjf14r5c91b4aj0v6ndhm1yfc8
+    access:
+      availability: public
+      method: form
+      url: https://userlist.com/startup
+    source_ids:
+      - src_mvkbakx54dchmbyzw2jmr9kwhh
