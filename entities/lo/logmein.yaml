@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_47hjvv1h5kt0s571kw1nh6m4sx
+  slug: logmein
+  name: LogMeIn
+  domains:
+    - value: logmein.com
+      role: primary
+      valid_from: 2026-09-07T15:41:44.886703Z
+  category: communication
+profile:
+  summary: LogMeIn offers qualifying startups free or discounted access to their remote access and collaboration platform.
+  links:
+    site: https://logmein.com
+  description: LogMeIn offers qualifying startups free or discounted access to their remote access and collaboration platform.
+sources:
+  - source_id: src_14k6jnj80f5gyw2jqth01a0ja1
+    url: https://logmein.com/startup
+programs: []
+offers:
+  - offer_id: off_d4tnm4h30q67j3as1eqyj9z0ma
+    offer_slug: logmein-startup-program
+    title: LogMeIn startup program
+    summary: LogMeIn offers qualifying startups free or discounted access to their remote access and collaboration platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:41:44.886703Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their remote access and collaboration platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_47hjvv1h5kt0s571kw1nh6m4sx
+      access_operator_entity_id: ent_47hjvv1h5kt0s571kw1nh6m4sx
+    access:
+      availability: public
+      method: form
+      url: https://logmein.com/startup
+    source_ids:
+      - src_14k6jnj80f5gyw2jqth01a0ja1
