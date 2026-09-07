@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_h1cchp2war199m4fhwd14y7rdv
+  slug: zipkin
+  name: Zipkin
+  domains:
+    - value: zipkin.io
+      role: primary
+      valid_from: 2026-09-07T15:21:13.334975Z
+  category: observability
+profile:
+  summary: Zipkin offers qualifying startups free or discounted access to their open-source distributed tracing system.
+  links:
+    site: https://zipkin.io
+  description: Zipkin offers qualifying startups free or discounted access to their open-source distributed tracing system.
+sources:
+  - source_id: src_nj6qq06xn3maf9m5t6zwqdz7nt
+    url: https://zipkin.io/startup
+programs: []
+offers:
+  - offer_id: off_rgp01hrya9yafv9nav22d7pgqg
+    offer_slug: zipkin-startup-program
+    title: Zipkin startup program
+    summary: Zipkin offers qualifying startups free or discounted access to their open-source distributed tracing system.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:21:13.334975Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source distributed tracing system
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_h1cchp2war199m4fhwd14y7rdv
+      access_operator_entity_id: ent_h1cchp2war199m4fhwd14y7rdv
+    access:
+      availability: public
+      method: form
+      url: https://zipkin.io/startup
+    source_ids:
+      - src_nj6qq06xn3maf9m5t6zwqdz7nt
