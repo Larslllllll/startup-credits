@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_w72cj17g0ns6dcbm38dmjbhjwb
+  slug: cl4
+  name: Close 2
+  domains:
+    - value: close.com
+      role: primary
+      valid_from: 2026-09-07T16:55:11.573415Z
+  category: crm-sales
+profile:
+  summary: Close offers qualifying startups free or discounted access to their sales CRM and communication platform.
+  links:
+    site: https://close.com
+  description: Close offers qualifying startups free or discounted access to their sales CRM and communication platform.
+sources:
+  - source_id: src_k18t20sg99j1ae21pxgj8vvt5x
+    url: https://close.com/startup
+programs: []
+offers:
+  - offer_id: off_vv9ggj3g99e3xkqxsvsgc843gz
+    offer_slug: cl4-startup-program
+    title: Close 2 startup program
+    summary: Close offers qualifying startups free or discounted access to their sales CRM and communication platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:55:11.573415Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to sales CRM and communication platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_w72cj17g0ns6dcbm38dmjbhjwb
+      access_operator_entity_id: ent_w72cj17g0ns6dcbm38dmjbhjwb
+    access:
+      availability: public
+      method: form
+      url: https://close.com/startup
+    source_ids:
+      - src_k18t20sg99j1ae21pxgj8vvt5x
