@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_kjf3904fnrd7z1zrw5xfw3n5vb
+  slug: arubacloud
+  name: Aruba Cloud
+  domains:
+    - value: arubacloud.pl
+      role: primary
+      valid_from: 2026-09-07T12:11:28.181446Z
+  category: hosting-infra
+profile:
+  summary: Aruba Cloud is a Polish cloud infrastructure provider offering up to PLN 36,000 in cloud credits over three years plus up to PLN 200,000 in Pitch Day awards for qualifying startups.
+  links:
+    site: https://www.arubacloud.pl
+  description: Aruba Cloud is a Polish cloud hosting provider operating across Europe. Their We START you UP program grants qualifying startups PLN 12,000 in cloud credits per year for three years (PLN 36,000 total) at the START stage, with additional UP stage awards of up to PLN 200,000 in cloud credits for Pitch Day winners selected through the application process.
+sources:
+  - source_id: src_d9e0x9bfgd1t3bqp096t4abp5t
+    url: https://www.arubacloud.pl/program-aruba-cloud-startup/programy.aspx
+programs: []
+offers:
+  - offer_id: off_m1psprkzd0qs23zvmteh1jw48a
+    offer_slug: aruba-cloud-startup-program
+    title: We START you UP program
+    summary: Qualifying startups receive PLN 12,000 in cloud credits per year for three years, plus the opportunity to win up to PLN 200,000 in additional cloud credits through the UP stage Pitch Day program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T12:11:28.181446Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: PLN 12,000 in cloud credits per year for three years, plus up to PLN 200,000 in Pitch Day awards
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application is required through the Aruba Cloud program form. UP stage Pitch Day participation is by selection.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_kjf3904fnrd7z1zrw5xfw3n5vb
+      access_operator_entity_id: ent_kjf3904fnrd7z1zrw5xfw3n5vb
+    access:
+      availability: public
+      method: form
+      url: https://www.arubacloud.pl/program-aruba-cloud-startup/formularz-rejestracji-startupu.aspx
+    source_ids:
+      - src_d9e0x9bfgd1t3bqp096t4abp5t
