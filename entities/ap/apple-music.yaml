@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3p0yfhfnj3zdepjjeam9tmv7ab
+  slug: apple-music
+  name: Apple Music
+  domains:
+    - value: music.apple.com
+      role: primary
+      valid_from: 2026-09-07T15:45:08.242100Z
+  category: communication
+profile:
+  summary: Apple Music offers qualifying startups free or discounted access to their music streaming and distribution platform.
+  links:
+    site: https://music.apple.com
+  description: Apple Music offers qualifying startups free or discounted access to their music streaming and distribution platform.
+sources:
+  - source_id: src_m62xdy4vnvn1ggp4dt3jd6239d
+    url: https://music.apple.com/startup
+programs: []
+offers:
+  - offer_id: off_qeag1pzcjptbh4kn6qn6zwwz88
+    offer_slug: apple-music-startup-program
+    title: Apple Music startup program
+    summary: Apple Music offers qualifying startups free or discounted access to their music streaming and distribution platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:45:08.242100Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their music streaming and distribution platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3p0yfhfnj3zdepjjeam9tmv7ab
+      access_operator_entity_id: ent_3p0yfhfnj3zdepjjeam9tmv7ab
+    access:
+      availability: public
+      method: form
+      url: https://music.apple.com/startup
+    source_ids:
+      - src_m62xdy4vnvn1ggp4dt3jd6239d
