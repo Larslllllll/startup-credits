@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_2azgnwnj1g989ntrm25zfxv1s5
+  slug: hevo
+  name: Hevo
+  domains:
+    - value: hevodata.com
+      role: primary
+      valid_from: 2026-09-07T15:32:20.507584Z
+  category: data-analytics
+profile:
+  summary: Hevo offers qualifying startups free or discounted access to their no-code data pipeline platform.
+  links:
+    site: https://hevodata.com
+  description: Hevo offers qualifying startups free or discounted access to their no-code data pipeline platform.
+sources:
+  - source_id: src_ep2epyxrddbsc2yck60nf91pvk
+    url: https://hevodata.com/startup
+programs: []
+offers:
+  - offer_id: off_3vwscny43fcz7pg508jp96zxtk
+    offer_slug: hevo-startup-program
+    title: Hevo startup program
+    summary: Hevo offers qualifying startups free or discounted access to their no-code data pipeline platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:32:20.507584Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their no-code data pipeline platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_2azgnwnj1g989ntrm25zfxv1s5
+      access_operator_entity_id: ent_2azgnwnj1g989ntrm25zfxv1s5
+    access:
+      availability: public
+      method: form
+      url: https://hevodata.com/startup
+    source_ids:
+      - src_ep2epyxrddbsc2yck60nf91pvk
