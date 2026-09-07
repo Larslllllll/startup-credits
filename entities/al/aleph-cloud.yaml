@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_n2bydkyx1rzt0kwg49kke8z8p8
+  slug: aleph-cloud
+  name: Aleph Cloud
+  domains:
+    - value: aleph.cloud
+      role: primary
+      valid_from: 2026-09-07T13:58:09.013097Z
+  category: hosting-infra
+profile:
+  summary: Aleph Cloud offers free compute credits, dedicated onboarding, and technical support to projects accepted into the Chainlink BUILD program.
+  links:
+    site: https://aleph.cloud
+  description: Aleph Cloud is a decentralized compute platform. Their program offers free compute credits, dedicated onboarding, and technical support to projects accepted into the Chainlink BUILD program.
+sources:
+  - source_id: src_5bjrx8tqzsmcpmxqgs8k52m4xm
+    url: https://aleph.cloud/chainlink-build
+programs: []
+offers:
+  - offer_id: off_vxrbvxen36by5wqqxs00dw4263
+    offer_slug: aleph-chainlink-build
+    title: Aleph Cloud Chainlink BUILD Program
+    summary: Projects accepted into the Chainlink BUILD program receive free compute credits, dedicated onboarding, and technical support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:58:09.013097Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free compute credits, dedicated onboarding, and technical support
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a project accepted into the Chainlink BUILD program. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_n2bydkyx1rzt0kwg49kke8z8p8
+      access_operator_entity_id: ent_n2bydkyx1rzt0kwg49kke8z8p8
+    access:
+      availability: public
+      method: form
+      url: https://aleph.cloud/chainlink-build
+    source_ids:
+      - src_5bjrx8tqzsmcpmxqgs8k52m4xm
