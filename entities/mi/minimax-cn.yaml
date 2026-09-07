@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_daqa33ebhe7d41w4h2g70jdnth
+  slug: minimax-cn
+  name: MiniMax CN
+  domains:
+    - value: minimax.chat
+      role: primary
+      valid_from: 2026-09-07T16:15:40.073082Z
+  category: ai-ml
+profile:
+  summary: MiniMax CN offers qualifying startups free or discounted access to their Chinese AI model platform.
+  links:
+    site: https://minimax.chat
+  description: MiniMax CN offers qualifying startups free or discounted access to their Chinese AI model platform.
+sources:
+  - source_id: src_x9bhqqydp6rphy8wvpcax80jt7
+    url: https://minimax.chat/startup
+programs: []
+offers:
+  - offer_id: off_2zdgsc70a4ct57e18yfes1ewkv
+    offer_slug: minimax-cn-startup-program
+    title: MiniMax CN startup program
+    summary: MiniMax CN offers qualifying startups free or discounted access to their Chinese AI model platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:15:40.073082Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to Chinese AI model platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_daqa33ebhe7d41w4h2g70jdnth
+      access_operator_entity_id: ent_daqa33ebhe7d41w4h2g70jdnth
+    access:
+      availability: public
+      method: form
+      url: https://minimax.chat/startup
+    source_ids:
+      - src_x9bhqqydp6rphy8wvpcax80jt7
