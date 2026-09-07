@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_4keys3e6bczv490drwtt44nwkj
+  slug: softr
+  name: Softr
+  domains:
+    - value: softr.io
+      role: primary
+      valid_from: 2026-09-07T15:57:04.623175Z
+  category: no-code
+profile:
+  summary: Softr offers qualifying startups free or discounted access to their no-code web app builder platform.
+  links:
+    site: https://softr.io
+  description: Softr offers qualifying startups free or discounted access to their no-code web app builder platform.
+sources:
+  - source_id: src_pmyt7kdfnvwmxf16zr61eeyfjt
+    url: https://softr.io/startup
+programs: []
+offers:
+  - offer_id: off_6bs69jk1vanmpewegc4h82ggza
+    offer_slug: softr-startup-program
+    title: Softr startup program
+    summary: Softr offers qualifying startups free or discounted access to their no-code web app builder platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:57:04.623175Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their no-code web app builder platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_4keys3e6bczv490drwtt44nwkj
+      access_operator_entity_id: ent_4keys3e6bczv490drwtt44nwkj
+    access:
+      availability: public
+      method: form
+      url: https://softr.io/startup
+    source_ids:
+      - src_pmyt7kdfnvwmxf16zr61eeyfjt
