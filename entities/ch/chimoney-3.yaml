@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_x6xpcf89mjnytgzkgt8yvvb3sh
+  slug: chimoney-3
+  name: Chimoney 3
+  domains:
+    - value: chimoney.io
+      role: primary
+      valid_from: 2026-09-07T16:44:08.475251Z
+  category: payments-fintech
+profile:
+  summary: Chimoney offers qualifying startups free or discounted access to their cross-border payments and payouts platform.
+  links:
+    site: https://chimoney.io
+  description: Chimoney offers qualifying startups free or discounted access to their cross-border payments and payouts platform.
+sources:
+  - source_id: src_jjb54hpmz898a6h3jnv9wmeds1
+    url: https://chimoney.io/startup
+programs: []
+offers:
+  - offer_id: off_g9mfb4jm7r480axtp8dc8qbc5n
+    offer_slug: chimoney-3-startup-program
+    title: Chimoney 3 startup program
+    summary: Chimoney offers qualifying startups free or discounted access to their cross-border payments and payouts platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:44:08.475251Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to cross-border payments and payouts platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_x6xpcf89mjnytgzkgt8yvvb3sh
+      access_operator_entity_id: ent_x6xpcf89mjnytgzkgt8yvvb3sh
+    access:
+      availability: public
+      method: form
+      url: https://chimoney.io/startup
+    source_ids:
+      - src_jjb54hpmz898a6h3jnv9wmeds1
