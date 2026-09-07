@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xkfgem6vhvywschx5bma4895nc
+  slug: bs2
+  name: Bugsnag 2
+  domains:
+    - value: bugsnag.com
+      role: primary
+      valid_from: 2026-09-07T16:58:37.053698Z
+  category: observability
+profile:
+  summary: Bugsnag offers qualifying startups free or discounted access to their error monitoring and stability platform.
+  links:
+    site: https://bugsnag.com
+  description: Bugsnag offers qualifying startups free or discounted access to their error monitoring and stability platform.
+sources:
+  - source_id: src_r650zrgtjzsrw1p5ztek694jpp
+    url: https://bugsnag.com/startup
+programs: []
+offers:
+  - offer_id: off_ahz6r4f1ggbnx509v53ga569db
+    offer_slug: bs2-startup-program
+    title: Bugsnag 2 startup program
+    summary: Bugsnag offers qualifying startups free or discounted access to their error monitoring and stability platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:58:37.053698Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to error monitoring and stability platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xkfgem6vhvywschx5bma4895nc
+      access_operator_entity_id: ent_xkfgem6vhvywschx5bma4895nc
+    access:
+      availability: public
+      method: form
+      url: https://bugsnag.com/startup
+    source_ids:
+      - src_r650zrgtjzsrw1p5ztek694jpp
