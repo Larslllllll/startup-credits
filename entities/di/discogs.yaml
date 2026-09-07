@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_8asd05z061ny09n685e1x88j9d
+  slug: discogs
+  name: Discogs
+  domains:
+    - value: discogs.com
+      role: primary
+      valid_from: 2026-09-07T15:46:02.293598Z
+  category: commerce
+profile:
+  summary: Discogs offers qualifying startups free or discounted access to their music database and marketplace platform.
+  links:
+    site: https://discogs.com
+  description: Discogs offers qualifying startups free or discounted access to their music database and marketplace platform.
+sources:
+  - source_id: src_rstndpaa1jnjy1ftyxee2x89mg
+    url: https://discogs.com/startup
+programs: []
+offers:
+  - offer_id: off_jabkzg237qmb97bgc8wjhdrc1a
+    offer_slug: discogs-startup-program
+    title: Discogs startup program
+    summary: Discogs offers qualifying startups free or discounted access to their music database and marketplace platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:46:02.293598Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their music database and marketplace platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_8asd05z061ny09n685e1x88j9d
+      access_operator_entity_id: ent_8asd05z061ny09n685e1x88j9d
+    access:
+      availability: public
+      method: form
+      url: https://discogs.com/startup
+    source_ids:
+      - src_rstndpaa1jnjy1ftyxee2x89mg
