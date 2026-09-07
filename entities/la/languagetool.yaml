@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_z9gxafdjtas2f70ak75m44ap7y
+  slug: languagetool
+  name: LanguageTool
+  domains:
+    - value: languagetool.org
+      role: primary
+      valid_from: 2026-09-07T15:24:31.759691Z
+  category: ai-ml
+profile:
+  summary: LanguageTool offers qualifying startups free or discounted access to their AI-powered grammar and spell checker platform.
+  links:
+    site: https://languagetool.org
+  description: LanguageTool offers qualifying startups free or discounted access to their AI-powered grammar and spell checker platform.
+sources:
+  - source_id: src_5jk3hb3d15zzat2mbwqvv7frfx
+    url: https://languagetool.org/startup
+programs: []
+offers:
+  - offer_id: off_rqc5672j4rskmksps1pe0vjq0p
+    offer_slug: languagetool-startup-program
+    title: LanguageTool startup program
+    summary: LanguageTool offers qualifying startups free or discounted access to their AI-powered grammar and spell checker platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:24:31.759691Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI-powered grammar and spell checker platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_z9gxafdjtas2f70ak75m44ap7y
+      access_operator_entity_id: ent_z9gxafdjtas2f70ak75m44ap7y
+    access:
+      availability: public
+      method: form
+      url: https://languagetool.org/startup
+    source_ids:
+      - src_5jk3hb3d15zzat2mbwqvv7frfx
