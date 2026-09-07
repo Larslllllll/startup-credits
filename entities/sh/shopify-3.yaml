@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_28czwk78btdrbxnnxt05ewxse6
+  slug: shopify-3
+  name: Shopify Plus
+  domains:
+    - value: shopify.com
+      role: primary
+      valid_from: 2026-09-07T15:55:36.595475Z
+  category: commerce
+profile:
+  summary: Shopify Plus offers qualifying startups free or discounted access to their enterprise e-commerce platform.
+  links:
+    site: https://shopify.com
+  description: Shopify Plus offers qualifying startups free or discounted access to their enterprise e-commerce platform.
+sources:
+  - source_id: src_sabtk37vg7ggq8edg7799xkb8v
+    url: https://shopify.com/startup
+programs: []
+offers:
+  - offer_id: off_rb5vgb8h8ms4ya7885hfk3zw7r
+    offer_slug: shopify-3-startup-program
+    title: Shopify Plus startup program
+    summary: Shopify Plus offers qualifying startups free or discounted access to their enterprise e-commerce platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:55:36.595475Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their enterprise e-commerce platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_28czwk78btdrbxnnxt05ewxse6
+      access_operator_entity_id: ent_28czwk78btdrbxnnxt05ewxse6
+    access:
+      availability: public
+      method: form
+      url: https://shopify.com/startup
+    source_ids:
+      - src_sabtk37vg7ggq8edg7799xkb8v
