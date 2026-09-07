@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_46wpfkjkdy1j21n1ts32h8vbrd
+  slug: inspectlet
+  name: Inspectlet
+  domains:
+    - value: inspectlet.com
+      role: primary
+      valid_from: 2026-09-07T15:35:00.338576Z
+  category: data-analytics
+profile:
+  summary: Inspectlet offers qualifying startups free or discounted access to their website analytics and session recording platform.
+  links:
+    site: https://inspectlet.com
+  description: Inspectlet offers qualifying startups free or discounted access to their website analytics and session recording platform.
+sources:
+  - source_id: src_4mgtba3cmbfekv2j6p060qgpma
+    url: https://inspectlet.com/startup
+programs: []
+offers:
+  - offer_id: off_sg7ds8b4ndh2myp7sca1z1vhyk
+    offer_slug: inspectlet-startup-program
+    title: Inspectlet startup program
+    summary: Inspectlet offers qualifying startups free or discounted access to their website analytics and session recording platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:35:00.338576Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their website analytics and session recording platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_46wpfkjkdy1j21n1ts32h8vbrd
+      access_operator_entity_id: ent_46wpfkjkdy1j21n1ts32h8vbrd
+    access:
+      availability: public
+      method: form
+      url: https://inspectlet.com/startup
+    source_ids:
+      - src_4mgtba3cmbfekv2j6p060qgpma
