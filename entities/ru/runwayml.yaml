@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_a07y7y9mcx682x2gfd5zjjryzb
+  slug: runwayml
+  name: Runway
+  domains:
+    - value: runwayml.com
+      role: primary
+      valid_from: 2026-09-07T15:22:10.505459Z
+  category: ai-ml
+profile:
+  summary: Runway offers qualifying startups free or discounted access to their AI video generation and creative tools platform.
+  links:
+    site: https://runwayml.com
+  description: Runway offers qualifying startups free or discounted access to their AI video generation and creative tools platform.
+sources:
+  - source_id: src_z5bc55ep9xx0mb3728q559vnxt
+    url: https://runwayml.com/startup
+programs: []
+offers:
+  - offer_id: off_c00nxazstkxkrw355z6kw28zkt
+    offer_slug: runwayml-startup-program
+    title: Runway startup program
+    summary: Runway offers qualifying startups free or discounted access to their AI video generation and creative tools platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:22:10.505459Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI video generation and creative tools platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_a07y7y9mcx682x2gfd5zjjryzb
+      access_operator_entity_id: ent_a07y7y9mcx682x2gfd5zjjryzb
+    access:
+      availability: public
+      method: form
+      url: https://runwayml.com/startup
+    source_ids:
+      - src_z5bc55ep9xx0mb3728q559vnxt
