@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_vc2j089xwrpy226gq73w5ddsn8
+  slug: croco-click
+  name: CrocoClick
+  domains:
+    - value: crococlick.com
+      role: primary
+      valid_from: 2026-09-07T14:51:40.225859Z
+  category: marketing
+profile:
+  summary: CrocoClick offers qualifying startups free access to their customer engagement and conversion optimization platform.
+  links:
+    site: https://crococlick.com
+  description: CrocoClick offers qualifying startups free access to their customer engagement and conversion optimization platform.
+sources:
+  - source_id: src_my9sqpz2g97m5f4e6jfh8fcjdh
+    url: https://crococlick.com/startup
+programs: []
+offers:
+  - offer_id: off_zstx33vrbhearv1r5zc6g10a17
+    offer_slug: croco-click-startup-program
+    title: CrocoClick startup program
+    summary: CrocoClick offers qualifying startups free access to their customer engagement and conversion optimization platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:51:40.225859Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to customer engagement and conversion optimization platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_vc2j089xwrpy226gq73w5ddsn8
+      access_operator_entity_id: ent_vc2j089xwrpy226gq73w5ddsn8
+    access:
+      availability: public
+      method: form
+      url: https://crococlick.com/startup
+    source_ids:
+      - src_my9sqpz2g97m5f4e6jfh8fcjdh
