@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_p7pxv9gy7m9a7hafd8v50jpgq8
+  slug: arcee
+  name: Arcee AI
+  domains:
+    - value: arcee.ai
+      role: primary
+      valid_from: 2026-09-07T13:29:34.009054Z
+  category: ai-ml
+profile:
+  summary: Arcee AI provides selected developers, researchers, open-source builders, and application teams free Trinity-model API credits valid for 90 days through the Trinity Builders Program.
+  links:
+    site: https://www.arcee.ai
+  description: Arcee AI provides Trinity, a large language model platform. Their Trinity Builders Program offers selected developers, researchers, open-source builders, and application teams free Trinity-model API credits, with awards determined during review and valid for 90 days.
+sources:
+  - source_id: src_30r4pvbrzhkseg3newnarbg444
+    url: https://www.arcee.ai/trinity-builders-program
+programs: []
+offers:
+  - offer_id: off_92d1t9rgb39g4smyaye3wptc4c
+    offer_slug: arcee-trinity-builders-program
+    title: Arcee AI Trinity Builders Program
+    summary: Selected developers, researchers, open-source builders, and application teams receive free Trinity-model API credits valid for 90 days.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:29:34.009054Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free Trinity-model API credits valid for 90 days
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a selected developer, researcher, open-source builder, or application team. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_p7pxv9gy7m9a7hafd8v50jpgq8
+      access_operator_entity_id: ent_p7pxv9gy7m9a7hafd8v50jpgq8
+    access:
+      availability: public
+      method: form
+      url: https://www.arcee.ai/trinity-builders-program
+    source_ids:
+      - src_30r4pvbrzhkseg3newnarbg444
