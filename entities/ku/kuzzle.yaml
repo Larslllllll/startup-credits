@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5ahvy7y68cm7tjdg0a7svqhz85
+  slug: kuzzle
+  name: Kuzzle
+  domains:
+    - value: kuzzle.io
+      role: primary
+      valid_from: 2026-09-07T15:27:17.351874Z
+  category: devtools-other
+profile:
+  summary: Kuzzle offers qualifying startups free or discounted access to their open-source backend and IoT platform.
+  links:
+    site: https://kuzzle.io
+  description: Kuzzle offers qualifying startups free or discounted access to their open-source backend and IoT platform.
+sources:
+  - source_id: src_rsv1b9717mdfgp05gn56bzch7j
+    url: https://kuzzle.io/startup
+programs: []
+offers:
+  - offer_id: off_aydgtk87cwfbjhhrs4aammabpw
+    offer_slug: kuzzle-startup-program
+    title: Kuzzle startup program
+    summary: Kuzzle offers qualifying startups free or discounted access to their open-source backend and IoT platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:27:17.351874Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source backend and IoT platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_5ahvy7y68cm7tjdg0a7svqhz85
+      access_operator_entity_id: ent_5ahvy7y68cm7tjdg0a7svqhz85
+    access:
+      availability: public
+      method: form
+      url: https://kuzzle.io/startup
+    source_ids:
+      - src_rsv1b9717mdfgp05gn56bzch7j
