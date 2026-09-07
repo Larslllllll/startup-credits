@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_yc690mwbd34nexzph715t3zmw5
+  slug: il2
+  name: iLovePDF 2
+  domains:
+    - value: ilovepdf.com
+      role: primary
+      valid_from: 2026-09-07T16:54:32.622512Z
+  category: productivity
+profile:
+  summary: iLovePDF offers qualifying startups free or discounted access to their PDF editing and conversion platform.
+  links:
+    site: https://ilovepdf.com
+  description: iLovePDF offers qualifying startups free or discounted access to their PDF editing and conversion platform.
+sources:
+  - source_id: src_4t7vx1nq82d0refsncs435kzsj
+    url: https://ilovepdf.com/startup
+programs: []
+offers:
+  - offer_id: off_1wn1199q4qwmfcwbw6kwbnrn2j
+    offer_slug: il2-startup-program
+    title: iLovePDF 2 startup program
+    summary: iLovePDF offers qualifying startups free or discounted access to their PDF editing and conversion platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:54:32.622512Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to PDF editing and conversion platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_yc690mwbd34nexzph715t3zmw5
+      access_operator_entity_id: ent_yc690mwbd34nexzph715t3zmw5
+    access:
+      availability: public
+      method: form
+      url: https://ilovepdf.com/startup
+    source_ids:
+      - src_4t7vx1nq82d0refsncs435kzsj
