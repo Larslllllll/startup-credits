@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3j77480y3prkhcwnt06bdsr45z
+  slug: imeetify-vc
+  name: iMeetify
+  domains:
+    - value: imeetify.com
+      role: primary
+      valid_from: 2026-09-07T16:41:15.707726Z
+  category: communication
+profile:
+  summary: iMeetify offers qualifying startups free or discounted access to their video conferencing and meeting platform.
+  links:
+    site: https://imeetify.com
+  description: iMeetify offers qualifying startups free or discounted access to their video conferencing and meeting platform.
+sources:
+  - source_id: src_bf1bhjgmphesa9842nrr2zy9f1
+    url: https://imeetify.com/startup
+programs: []
+offers:
+  - offer_id: off_sknmsyjcmtgzk957ytstsjr35d
+    offer_slug: imeetify-vc-startup-program
+    title: iMeetify startup program
+    summary: iMeetify offers qualifying startups free or discounted access to their video conferencing and meeting platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:41:15.707726Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to video conferencing and meeting platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3j77480y3prkhcwnt06bdsr45z
+      access_operator_entity_id: ent_3j77480y3prkhcwnt06bdsr45z
+    access:
+      availability: public
+      method: form
+      url: https://imeetify.com/startup
+    source_ids:
+      - src_bf1bhjgmphesa9842nrr2zy9f1
