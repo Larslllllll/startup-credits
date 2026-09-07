@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gy9gegmhexy0rcxqwq0kb47n16
+  slug: hopohopo-4
+  name: Hopohopo Plus
+  domains:
+    - value: hopohopo.io
+      role: primary
+      valid_from: 2026-09-07T15:08:09.024976Z
+  category: finance-accounting
+profile:
+  summary: Hopohopo Plus offers qualifying startups an enhanced investment portfolio and asset management program.
+  links:
+    site: https://hopohopo.io
+  description: Hopohopo Plus offers qualifying startups an enhanced investment portfolio and asset management program.
+sources:
+  - source_id: src_ssbb4tfxax4219kzgnhn51jv71
+    url: https://hopohopo.io/startup
+programs: []
+offers:
+  - offer_id: off_et39ntp017zec56s1ff0pzk2qp
+    offer_slug: hopohopo-4-startup-program
+    title: Hopohopo Plus startup program
+    summary: Hopohopo Plus offers qualifying startups an enhanced investment portfolio and asset management program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:08:09.024976Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Enhanced investment portfolio and asset management program
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_gy9gegmhexy0rcxqwq0kb47n16
+      access_operator_entity_id: ent_gy9gegmhexy0rcxqwq0kb47n16
+    access:
+      availability: public
+      method: form
+      url: https://hopohopo.io/startup
+    source_ids:
+      - src_ssbb4tfxax4219kzgnhn51jv71
