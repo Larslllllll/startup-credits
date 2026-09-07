@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_2tk857cgvvy8qe2n1a6b9h38vt
+  slug: huggingface
+  name: Hugging Face
+  domains:
+    - value: huggingface.co
+      role: primary
+      valid_from: 2026-09-07T15:05:17.982471Z
+  category: ai-ml
+profile:
+  summary: Hugging Face offers qualifying startups free or discounted access to their open-source NLP model hub and platform.
+  links:
+    site: https://huggingface.co
+  description: Hugging Face offers qualifying startups free or discounted access to their open-source NLP model hub and platform.
+sources:
+  - source_id: src_h5qmptg9gkzasvn4cv2shk2rhm
+    url: https://huggingface.co/startup
+programs: []
+offers:
+  - offer_id: off_4shhb3p7xxq41kpxd328dvsp7x
+    offer_slug: huggingface-startup-program
+    title: Hugging Face startup program
+    summary: Hugging Face offers qualifying startups free or discounted access to their open-source NLP model hub and platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:05:17.982471Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source NLP model hub and platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_2tk857cgvvy8qe2n1a6b9h38vt
+      access_operator_entity_id: ent_2tk857cgvvy8qe2n1a6b9h38vt
+    access:
+      availability: public
+      method: form
+      url: https://huggingface.co/startup
+    source_ids:
+      - src_h5qmptg9gkzasvn4cv2shk2rhm
