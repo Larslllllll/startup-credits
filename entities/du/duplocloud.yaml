@@ -1,0 +1,54 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_64eqcpbqd899sj5kwc7bvrjg6b
+  slug: duplocloud
+  slug_aliases:
+    - duplo-cloud
+  name: DuploCloud
+  domains:
+    - value: duplocloud.com
+      role: primary
+      valid_from: 2026-09-07T11:49:34.596416Z
+  category: devtools-other
+profile:
+  summary: DuploCloud is a DevOps automation platform for cloud infrastructure. Google for Startups Scale tier members receive two months of DuploCloud free through the Google for Startups perks program.
+  description: DuploCloud is a DevOps automation platform that helps engineering teams deploy and operate cloud infrastructure with built-in compliance, observability, and cost controls. Through the Google for Startups perks program, Scale tier startups receive two months of the DuploCloud platform free of charge.
+  links:
+    site: https://duplocloud.com
+sources:
+  - source_id: src_mgfygwdbmp66ecpkg4xkkxnvwq
+    url: https://cloud.google.com/startup/perks
+programs: []
+offers:
+  - offer_id: off_tp7xmf0gsv503abydzfq31yh63
+    offer_slug: duplocloud-google-startups-scale
+    offer_slug_aliases:
+      - duplocloud-two-months-free
+    title: DuploCloud through Google for Startups Scale
+    summary: Google for Startups Scale tier participants receive two months of the DuploCloud DevOps AI Platform free through the Google for Startups perks program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T11:49:34.596416Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Two months of DuploCloud DevOps AI Platform free
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an approved Google for Startups Scale tier participant and redeem through the official Google for Startups perks program.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_64eqcpbqd899sj5kwc7bvrjg6b
+      access_operator_entity_id: ent_64eqcpbqd899sj5kwc7bvrjg6b
+    access:
+      availability: public
+      method: form
+      url: https://cloud.google.com/startup/perks
+    source_ids:
+      - src_mgfygwdbmp66ecpkg4xkkxnvwq

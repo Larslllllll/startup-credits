@@ -1,0 +1,54 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_zq67k4nw5gww813tdexc949955
+  slug: callmissed
+  slug_aliases:
+    - call-missed
+  name: CallMissed
+  domains:
+    - value: callmissed.com
+      role: primary
+      valid_from: 2026-09-07T11:56:25.915306Z
+  category: communication
+profile:
+  summary: CallMissed is an AI-powered customer support platform offering $1,000 in additional API credits (100,000 credits at $0.01 each) to qualifying early-stage B2C or developer-product startups in India.
+  description: CallMissed is an AI customer support platform providing automation and analytics for inbound communications. Their startup program grants qualifying early-stage startups building B2C or developer products in India $1,000 in additional CallMissed API credits, equivalent to 100,000 credits at $0.01 per unit.
+  links:
+    site: https://www.callmissed.com
+sources:
+  - source_id: src_vn60kvqg50cddhg05hq38erky2
+    url: https://www.callmissed.com/solutions/startups
+programs: []
+offers:
+  - offer_id: off_1sfwyvy4r81gt4np0jmaqrj4z1
+    offer_slug: callmissed-startup-program
+    offer_slug_aliases:
+      - callmissed-api-credits
+    title: CallMissed startup program
+    summary: Qualifying early-stage startups building B2C or developer products in India receive $1,000 in CallMissed API credits (100,000 credits at $0.01 each).
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T11:56:25.915306Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $1,000 in API credits (100,000 credits at $0.01 each)
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage startup building B2C or developer products in India.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_zq67k4nw5gww813tdexc949955
+      access_operator_entity_id: ent_zq67k4nw5gww813tdexc949955
+    access:
+      availability: public
+      method: form
+      url: https://www.callmissed.com/solutions/startups
+    source_ids:
+      - src_vn60kvqg50cddhg05hq38erky2

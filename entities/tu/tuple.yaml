@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_sk4fgg86w7zpymnwz8dhkzh5cr
+  slug: tuple
+  slug_aliases:
+    - tuple-app
+  name: Tuple
+  domains:
+    - value: tuple.app
+      role: primary
+      valid_from: 2026-09-07T11:36:56.876079Z
+  category: productivity
+profile:
+  summary: Tuple is a screen recording tool built for developers and designers, offering a 90% discount for one year to startups under two years old with fewer than 50 employees.
+  description: Tuple is a Mac and Windows screen recording application designed specifically for developers and designers, enabling high-quality, low-latency remote pair programming sessions. Their startup program grants a 90% discount for one year to qualifying companies under two years old with fewer than 50 employees.
+  links:
+    site: https://tuple.app
+    pricing: https://tuple.app/pricing
+sources:
+  - source_id: src_73ed0tcx9qhkh6mzmhqk5cygjy
+    url: https://tuple.app/pricing
+programs: []
+offers:
+  - offer_id: off_6k0kg3skythq47zd2e2hk8r1rp
+    offer_slug: tuple-startup-plan
+    offer_slug_aliases:
+      - tuple-startup-discount
+    title: Tuple startup plan
+    summary: Startups under two years old with fewer than 50 employees receive 90% off a one-year Tuple subscription.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T11:36:56.876079Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 90% off for one year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 9000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a company legally registered less than two years ago with fewer than 50 employees.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_sk4fgg86w7zpymnwz8dhkzh5cr
+      access_operator_entity_id: ent_sk4fgg86w7zpymnwz8dhkzh5cr
+    access:
+      availability: public
+      method: form
+      url: https://tuple.app/startups
+    source_ids:
+      - src_73ed0tcx9qhkh6mzmhqk5cygjy
