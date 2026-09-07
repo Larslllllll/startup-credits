@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6cxk1j9cx22jrrxgc3tpbbqhrn
+  slug: mistral-2
+  name: Mistral 7B
+  domains:
+    - value: mistral.ai
+      role: primary
+      valid_from: 2026-09-07T16:13:30.879627Z
+  category: ai-ml
+profile:
+  summary: Mistral 7B offers qualifying startups free or discounted access to their open-source LLM platform.
+  links:
+    site: https://mistral.ai
+  description: Mistral 7B offers qualifying startups free or discounted access to their open-source LLM platform.
+sources:
+  - source_id: src_4514k19mnbwmtbme7k48pbh6mp
+    url: https://mistral.ai/startup
+programs: []
+offers:
+  - offer_id: off_6exfbxx2jbqbayx2w787v43svs
+    offer_slug: mistral-2-startup-program
+    title: Mistral 7B startup program
+    summary: Mistral 7B offers qualifying startups free or discounted access to their open-source LLM platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:13:30.879627Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source LLM platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_6cxk1j9cx22jrrxgc3tpbbqhrn
+      access_operator_entity_id: ent_6cxk1j9cx22jrrxgc3tpbbqhrn
+    access:
+      availability: public
+      method: form
+      url: https://mistral.ai/startup
+    source_ids:
+      - src_4514k19mnbwmtbme7k48pbh6mp
