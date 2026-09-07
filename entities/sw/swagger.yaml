@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_qd6swvn4hr9365rng11t1axz8j
+  slug: swagger
+  name: Swagger
+  domains:
+    - value: swagger.io
+      role: primary
+      valid_from: 2026-09-07T15:25:38.191899Z
+  category: devtools-other
+profile:
+  summary: Swagger offers qualifying startups free or discounted access to their API design and documentation platform.
+  links:
+    site: https://swagger.io
+  description: Swagger offers qualifying startups free or discounted access to their API design and documentation platform.
+sources:
+  - source_id: src_jge9nq3wa2cf4975ms3rshaz0v
+    url: https://swagger.io/startup
+programs: []
+offers:
+  - offer_id: off_d9e2075qqb598ce2ws2hfrawaq
+    offer_slug: swagger-startup-program
+    title: Swagger startup program
+    summary: Swagger offers qualifying startups free or discounted access to their API design and documentation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:25:38.191899Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their API design and documentation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_qd6swvn4hr9365rng11t1axz8j
+      access_operator_entity_id: ent_qd6swvn4hr9365rng11t1axz8j
+    access:
+      availability: public
+      method: form
+      url: https://swagger.io/startup
+    source_ids:
+      - src_jge9nq3wa2cf4975ms3rshaz0v
