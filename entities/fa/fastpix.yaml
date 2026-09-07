@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5y7thmefqrxx26x1rxd44ve2nt
+  slug: fastpix
+  name: FastPix
+  domains:
+    - value: fastpix.ai
+      role: primary
+      valid_from: 2026-09-07T14:29:42.053489Z
+  category: devtools-other
+profile:
+  summary: FastPix offers qualifying startups free access to their AI-powered media optimization and delivery platform for 6 months.
+  links:
+    site: https://fastpix.ai
+  description: FastPix is an AI-powered media optimization and delivery platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_sj89j9v3cskhz2mjmbnpnf34ye
+    url: https://fastpix.ai/startup
+programs: []
+offers:
+  - offer_id: off_qxqva9hhyk9ed76dxk6k5d73fv
+    offer_slug: fastpix-startup-program
+    title: FastPix startup program
+    summary: Qualifying startups receive free access to the FastPix AI media optimization and delivery platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:29:42.053489Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to AI media optimization and delivery platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_5y7thmefqrxx26x1rxd44ve2nt
+      access_operator_entity_id: ent_5y7thmefqrxx26x1rxd44ve2nt
+    access:
+      availability: public
+      method: form
+      url: https://fastpix.ai/startup
+    source_ids:
+      - src_sj89j9v3cskhz2mjmbnpnf34ye
