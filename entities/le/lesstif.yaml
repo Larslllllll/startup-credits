@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_yfdm8vr8n0bcdy4v9web8856ax
+  slug: lesstif
+  name: ProjectLibre
+  domains:
+    - value: projectlibre.org
+      role: primary
+      valid_from: 2026-09-07T15:51:00.931859Z
+  category: productivity
+profile:
+  summary: ProjectLibre offers qualifying startups free or discounted access to their open-source project management platform.
+  links:
+    site: https://projectlibre.org
+  description: ProjectLibre offers qualifying startups free or discounted access to their open-source project management platform.
+sources:
+  - source_id: src_5qtw3n3fr2m1mb337jttqey4kf
+    url: https://projectlibre.org/startup
+programs: []
+offers:
+  - offer_id: off_35182rsg7jd7y6kc60mr2xd40c
+    offer_slug: lesstif-startup-program
+    title: ProjectLibre startup program
+    summary: ProjectLibre offers qualifying startups free or discounted access to their open-source project management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:51:00.931859Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source project management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_yfdm8vr8n0bcdy4v9web8856ax
+      access_operator_entity_id: ent_yfdm8vr8n0bcdy4v9web8856ax
+    access:
+      availability: public
+      method: form
+      url: https://projectlibre.org/startup
+    source_ids:
+      - src_5qtw3n3fr2m1mb337jttqey4kf
