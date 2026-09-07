@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_nppnne1megam717w5n0anfrzzy
+  slug: workato
+  name: Workato
+  domains:
+    - value: workato.com
+      role: primary
+      valid_from: 2026-09-07T15:32:33.104184Z
+  category: apis-integration
+profile:
+  summary: Workato offers qualifying startups free or discounted access to their enterprise automation and integration platform.
+  links:
+    site: https://workato.com
+  description: Workato offers qualifying startups free or discounted access to their enterprise automation and integration platform.
+sources:
+  - source_id: src_009rada93ccym2q37rm5f84vva
+    url: https://workato.com/startup
+programs: []
+offers:
+  - offer_id: off_8he2geyh0de64r5vvfby448x7h
+    offer_slug: workato-startup-program
+    title: Workato startup program
+    summary: Workato offers qualifying startups free or discounted access to their enterprise automation and integration platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:32:33.104184Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their enterprise automation and integration platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_nppnne1megam717w5n0anfrzzy
+      access_operator_entity_id: ent_nppnne1megam717w5n0anfrzzy
+    access:
+      availability: public
+      method: form
+      url: https://workato.com/startup
+    source_ids:
+      - src_009rada93ccym2q37rm5f84vva
