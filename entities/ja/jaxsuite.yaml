@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3etjkfkmd1vwkswe4fjfcy5t9x
+  slug: jaxsuite
+  name: JaxSuite
+  domains:
+    - value: jaxsuite.com
+      role: primary
+      valid_from: 2026-09-07T14:25:22.337843Z
+  category: devtools-other
+profile:
+  summary: JaxSuite offers qualifying startups free access to their developer productivity and code collaboration platform for 6 months.
+  links:
+    site: https://jaxsuite.com
+  description: JaxSuite is a developer productivity and code collaboration platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_1at6rqs4c1rmyz7h12nehk1ddc
+    url: https://jaxsuite.com/startup
+programs: []
+offers:
+  - offer_id: off_88fb2hm2jmnszcm4xqctenfet9
+    offer_slug: jaxsuite-startup-program
+    title: JaxSuite startup program
+    summary: Qualifying startups receive free access to the JaxSuite developer productivity and code collaboration platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:25:22.337843Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to developer productivity and code collaboration platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3etjkfkmd1vwkswe4fjfcy5t9x
+      access_operator_entity_id: ent_3etjkfkmd1vwkswe4fjfcy5t9x
+    access:
+      availability: public
+      method: form
+      url: https://jaxsuite.com/startup
+    source_ids:
+      - src_1at6rqs4c1rmyz7h12nehk1ddc
