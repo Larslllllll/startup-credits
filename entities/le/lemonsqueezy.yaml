@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_wmgm9eatb5n8pn04g14vkn6rpx
+  slug: lemonsqueezy
+  name: Lemon Squeezy
+  domains:
+    - value: lemonsqueezy.com
+      role: primary
+      valid_from: 2026-09-07T15:18:31.492351Z
+  category: payments-fintech
+profile:
+  summary: Lemon Squeezy offers qualifying startups free or discounted access to their merchant of record and software platform.
+  links:
+    site: https://lemonsqueezy.com
+  description: Lemon Squeezy offers qualifying startups free or discounted access to their merchant of record and software platform.
+sources:
+  - source_id: src_20wy964yrbcp3byke9j0zneha4
+    url: https://lemonsqueezy.com/startup
+programs: []
+offers:
+  - offer_id: off_shm043x1q98ec0h2ar8pevn7a0
+    offer_slug: lemonsqueezy-startup-program
+    title: Lemon Squeezy startup program
+    summary: Lemon Squeezy offers qualifying startups free or discounted access to their merchant of record and software platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:18:31.492351Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their merchant of record and software platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_wmgm9eatb5n8pn04g14vkn6rpx
+      access_operator_entity_id: ent_wmgm9eatb5n8pn04g14vkn6rpx
+    access:
+      availability: public
+      method: form
+      url: https://lemonsqueezy.com/startup
+    source_ids:
+      - src_20wy964yrbcp3byke9j0zneha4
