@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_2g785qmj9nrvv82eb73s39yvvj
+  slug: splashtop
+  name: Splashtop
+  domains:
+    - value: splashtop.com
+      role: primary
+      valid_from: 2026-09-07T15:42:04.032350Z
+  category: communication
+profile:
+  summary: Splashtop offers qualifying startups free or discounted access to their remote access and support platform.
+  links:
+    site: https://splashtop.com
+  description: Splashtop offers qualifying startups free or discounted access to their remote access and support platform.
+sources:
+  - source_id: src_3p7aktq4yte195tgyv6ps27wfd
+    url: https://splashtop.com/startup
+programs: []
+offers:
+  - offer_id: off_37yg9t94hv9h3rcp9vpkxtmnq4
+    offer_slug: splashtop-startup-program
+    title: Splashtop startup program
+    summary: Splashtop offers qualifying startups free or discounted access to their remote access and support platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:42:04.032350Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their remote access and support platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_2g785qmj9nrvv82eb73s39yvvj
+      access_operator_entity_id: ent_2g785qmj9nrvv82eb73s39yvvj
+    access:
+      availability: public
+      method: form
+      url: https://splashtop.com/startup
+    source_ids:
+      - src_3p7aktq4yte195tgyv6ps27wfd
