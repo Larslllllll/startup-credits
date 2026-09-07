@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_32ybf68zj4ppj0xmg2t3f0awse
+  slug: raydash
+  name: Ray Dashboard
+  domains:
+    - value: ray.io
+      role: primary
+      valid_from: 2026-09-07T15:21:30.515059Z
+  category: ai-ml
+profile:
+  summary: Ray Dashboard offers qualifying startups free or discounted access to their open-source observability for distributed AI workloads.
+  links:
+    site: https://ray.io
+  description: Ray Dashboard offers qualifying startups free or discounted access to their open-source observability for distributed AI workloads.
+sources:
+  - source_id: src_9q6eaaz5n8dak2pq8j8e6f510w
+    url: https://ray.io/startup
+programs: []
+offers:
+  - offer_id: off_ttbe095b24c4sdddkdesja5e2j
+    offer_slug: raydash-startup-program
+    title: Ray Dashboard startup program
+    summary: Ray Dashboard offers qualifying startups free or discounted access to their open-source observability for distributed AI workloads.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:21:30.515059Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source observability for distributed AI workloads
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_32ybf68zj4ppj0xmg2t3f0awse
+      access_operator_entity_id: ent_32ybf68zj4ppj0xmg2t3f0awse
+    access:
+      availability: public
+      method: form
+      url: https://ray.io/startup
+    source_ids:
+      - src_9q6eaaz5n8dak2pq8j8e6f510w
