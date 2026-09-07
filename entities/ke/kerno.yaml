@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_1jek16mww1h864wnprxeg8nd7y
+  slug: kerno
+  name: Kerno
+  domains:
+    - value: kerno.io
+      role: primary
+      valid_from: 2026-09-07T12:30:17.420999Z
+  category: design
+profile:
+  summary: Kerno is a design collaboration platform offering 50% off for pre-Series A startups with revenue under $2 million over the preceding 12 months.
+  links:
+    site: https://www.kerno.io
+  description: Kerno (FYCK Limited) is a design and collaboration tool. Their startup program offers a 50% discount for qualifying pre-Series A startups with revenue under $2 million over the preceding 12 months.
+sources:
+  - source_id: src_brjc09nqmtmbaw511srn5sy89e
+    url: https://www.kerno.io/pricing/
+programs: []
+offers:
+  - offer_id: off_7erf14fw9g3b1941xw84gd36ev
+    offer_slug: kerno-startup-discount
+    title: Kerno startup program
+    summary: Pre-Series A startups with revenue under $2 million over the preceding 12 months receive 50% off the Kerno platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T12:30:17.420999Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 50% discount for qualifying pre-Series A startups
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a pre-Series A startup with revenue under $2 million over the preceding 12 months.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_1jek16mww1h864wnprxeg8nd7y
+      access_operator_entity_id: ent_1jek16mww1h864wnprxeg8nd7y
+    access:
+      availability: public
+      method: form
+      url: https://www.kerno.io/pricing/
+    source_ids:
+      - src_brjc09nqmtmbaw511srn5sy89e

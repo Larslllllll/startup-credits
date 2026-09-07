@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_mgfgdmjdyb6efvts7k5pj1j31j
+  slug: coefficient
+  name: Coefficient
+  domains:
+    - value: coefficient.io
+      role: primary
+      valid_from: 2026-09-07T12:30:36.574842Z
+  category: productivity
+profile:
+  summary: Coefficient is a live data platform for revenue teams offering up to 50% off for the first year to startups with $20M or less raised and 25 or fewer employees.
+  links:
+    site: https://coefficient.io
+  description: Coefficient is a live data platform connecting Salesforce and other data sources for revenue teams. Their startup program offers up to 50% off the first year for qualifying startups with $20 million or less raised and 25 or fewer full-time employees.
+sources:
+  - source_id: src_d0f27awm65y3jaktmrmyspvyn7
+    url: https://coefficient.io/startups
+programs: []
+offers:
+  - offer_id: off_qj0b3gbvr4j8wa03an9d95sxcq
+    offer_slug: coefficient-startup-program
+    title: Coefficient startup program
+    summary: Qualifying startups with $20M or less raised and 25 or fewer employees receive up to 50% off the Coefficient platform for the first year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T12:30:36.574842Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to 50% off for the first year
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a startup with $20M or less raised and 25 or fewer full-time employees. Must be bootstrapped, angel-funded, debt-funded, pre-seed, seed, or Series A stage.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_mgfgdmjdyb6efvts7k5pj1j31j
+      access_operator_entity_id: ent_mgfgdmjdyb6efvts7k5pj1j31j
+    access:
+      availability: public
+      method: form
+      url: https://coefficient.io/startups
+    source_ids:
+      - src_d0f27awm65y3jaktmrmyspvyn7
