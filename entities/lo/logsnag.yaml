@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_dr03ye0w69n4vacmab3tcqtap5
+  slug: logsnag
+  name: LogSnag
+  domains:
+    - value: logsnag.com
+      role: primary
+      valid_from: 2026-09-07T15:05:47.217312Z
+  category: observability
+profile:
+  summary: LogSnag offers qualifying startups free or discounted access to their real-time event tracking and monitoring platform.
+  links:
+    site: https://logsnag.com
+  description: LogSnag offers qualifying startups free or discounted access to their real-time event tracking and monitoring platform.
+sources:
+  - source_id: src_aqzvrvj0p5y29f06f43tphb131
+    url: https://logsnag.com/startup
+programs: []
+offers:
+  - offer_id: off_jzz1q8p35vrpakrjd0vm8nqg6w
+    offer_slug: logsnag-startup-program
+    title: LogSnag startup program
+    summary: LogSnag offers qualifying startups free or discounted access to their real-time event tracking and monitoring platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:05:47.217312Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to real-time event tracking and monitoring platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_dr03ye0w69n4vacmab3tcqtap5
+      access_operator_entity_id: ent_dr03ye0w69n4vacmab3tcqtap5
+    access:
+      availability: public
+      method: form
+      url: https://logsnag.com/startup
+    source_ids:
+      - src_aqzvrvj0p5y29f06f43tphb131
