@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xvmxs53a441ve89mfe2bvs4z9c
+  slug: manus
+  name: Manus
+  domains:
+    - value: manus.im
+      role: primary
+      valid_from: 2026-09-07T14:15:51.051128Z
+  category: ai-ml
+profile:
+  summary: Manus offers qualifying startups free access to their general AI agent platform for building autonomous workflows.
+  links:
+    site: https://manus.im
+  description: Manus is a general AI agent platform. Their startup program offers free access to qualifying startups for building autonomous workflows.
+sources:
+  - source_id: src_z065w8gq8kh1wn984zc8cb8xgq
+    url: https://manus.im/startup
+programs: []
+offers:
+  - offer_id: off_3tmeegrcbr5wrww2f3f498etxk
+    offer_slug: manus-startup-program
+    title: Manus startup program
+    summary: Qualifying startups receive free access to the Manus general AI agent platform for building autonomous workflows.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:15:51.051128Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to the Manus general AI agent platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xvmxs53a441ve89mfe2bvs4z9c
+      access_operator_entity_id: ent_xvmxs53a441ve89mfe2bvs4z9c
+    access:
+      availability: public
+      method: form
+      url: https://manus.im/startup
+    source_ids:
+      - src_z065w8gq8kh1wn984zc8cb8xgq
