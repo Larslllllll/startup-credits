@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_dasmcy06zzcnkpqydddtfjfdyp
+  slug: serverspace
+  name: Serverspace
+  domains:
+    - value: serverspace.us
+      role: primary
+      valid_from: 2026-09-07T13:24:13.830195Z
+  category: hosting-infra
+profile:
+  summary: Serverspace offers qualifying startups $10,000 in cloud credits for one year, 24/7 technical support, partner perks, and expert sessions through their startup cloud program.
+  links:
+    site: https://serverspace.us
+  description: Serverspace is a cloud infrastructure provider. Their Startup Cloud Program offers qualifying startups $10,000 in cloud credits for one year, 24/7 technical support, partner perks, and expert sessions. Applications are accepted to a waitlist.
+sources:
+  - source_id: src_xx6yvb2pdzfqhx7fgsne6n9v15
+    url: https://serverspace.us/solutions/startup-cloud-program/
+programs: []
+offers:
+  - offer_id: off_kqanp4rvb6czq7pdramwknhb93
+    offer_slug: serverspace-startup-cloud-program
+    title: Serverspace Startup Cloud Program
+    summary: $10,000 in Serverspace cloud credits for 1 year plus 24/7 technical support, partner perks, and expert sessions.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:24:13.830195Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $10,000 in Serverspace cloud credits for 1 year, 24/7 technical support, partner perks, expert sessions
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required; review is currently paused.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_dasmcy06zzcnkpqydddtfjfdyp
+      access_operator_entity_id: ent_dasmcy06zzcnkpqydddtfjfdyp
+    access:
+      availability: public
+      method: form
+      url: https://serverspace.us/solutions/startup-cloud-program/
+    source_ids:
+      - src_xx6yvb2pdzfqhx7fgsne6n9v15
