@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_d0d048av5mcyp9nqewz72q5vg6
+  slug: mrrd
+  name: MRR Dashboard
+  domains:
+    - value: mrrd.io
+      role: primary
+      valid_from: 2026-09-07T15:17:21.079669Z
+  category: finance-accounting
+profile:
+  summary: MRR Dashboard offers qualifying startups free or discounted access to their SaaS metrics tracking platform.
+  links:
+    site: https://mrrd.io
+  description: MRR Dashboard offers qualifying startups free or discounted access to their SaaS metrics tracking platform.
+sources:
+  - source_id: src_egfvgd5bqtd8qcmxd5r17gpasf
+    url: https://mrrd.io/startup
+programs: []
+offers:
+  - offer_id: off_2tnqjtpkeeb1ha07gb5j3a6c48
+    offer_slug: mrrd-startup-program
+    title: MRR Dashboard startup program
+    summary: MRR Dashboard offers qualifying startups free or discounted access to their SaaS metrics tracking platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:17:21.079669Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their SaaS metrics tracking platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_d0d048av5mcyp9nqewz72q5vg6
+      access_operator_entity_id: ent_d0d048av5mcyp9nqewz72q5vg6
+    access:
+      availability: public
+      method: form
+      url: https://mrrd.io/startup
+    source_ids:
+      - src_egfvgd5bqtd8qcmxd5r17gpasf
