@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_tm4vhmebv9r9w8c3yynadxkrfw
+  slug: in3
+  name: Instructor 2
+  domains:
+    - value: jxnl.github.io
+      role: primary
+      valid_from: 2026-09-07T16:45:50.391504Z
+  category: ai-ml
+profile:
+  summary: Instructor offers qualifying startups free or discounted access to their open-source LLM structured output framework.
+  links:
+    site: https://jxnl.github.io
+  description: Instructor offers qualifying startups free or discounted access to their open-source LLM structured output framework.
+sources:
+  - source_id: src_6s8612hg5f732wrh1bkg2z8vw6
+    url: https://jxnl.github.io/startup
+programs: []
+offers:
+  - offer_id: off_my00dtj6ntwa97bx7g46kv0n7a
+    offer_slug: in3-startup-program
+    title: Instructor 2 startup program
+    summary: Instructor offers qualifying startups free or discounted access to their open-source LLM structured output framework.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:45:50.391504Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source LLM structured output framework
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_tm4vhmebv9r9w8c3yynadxkrfw
+      access_operator_entity_id: ent_tm4vhmebv9r9w8c3yynadxkrfw
+    access:
+      availability: public
+      method: form
+      url: https://jxnl.github.io/startup
+    source_ids:
+      - src_6s8612hg5f732wrh1bkg2z8vw6
