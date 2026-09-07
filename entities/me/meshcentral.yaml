@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0wbg13jng11xq0swjchm317erg
+  slug: meshcentral
+  name: MeshCentral
+  domains:
+    - value: meshcentral.com
+      role: primary
+      valid_from: 2026-09-07T15:42:11.687774Z
+  category: communication
+profile:
+  summary: MeshCentral offers qualifying startups free or discounted access to their open-source remote management platform.
+  links:
+    site: https://meshcentral.com
+  description: MeshCentral offers qualifying startups free or discounted access to their open-source remote management platform.
+sources:
+  - source_id: src_z51qfkmmb9vx5br6vz8d8fevn9
+    url: https://meshcentral.com/startup
+programs: []
+offers:
+  - offer_id: off_svyzy9s5a814w6223m32rvzj4f
+    offer_slug: meshcentral-startup-program
+    title: MeshCentral startup program
+    summary: MeshCentral offers qualifying startups free or discounted access to their open-source remote management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:42:11.687774Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source remote management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_0wbg13jng11xq0swjchm317erg
+      access_operator_entity_id: ent_0wbg13jng11xq0swjchm317erg
+    access:
+      availability: public
+      method: form
+      url: https://meshcentral.com/startup
+    source_ids:
+      - src_z51qfkmmb9vx5br6vz8d8fevn9
