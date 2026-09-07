@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_dvqwp0wkfk75ea93n6ej46wy23
+  slug: thoropass
+  name: Thoropass
+  domains:
+    - value: thoropass.com
+      role: primary
+      valid_from: 2026-09-07T13:38:03.940963Z
+  category: legal-compliance
+profile:
+  summary: Thoropass gives eligible JPM Startup Offers participants 15% off its compliance platform and services.
+  links:
+    site: https://thoropass.com
+  description: Thoropass is a compliance platform. Their startup offer gives eligible JPM Startup Offers participants 15% off the Thoropass compliance platform and services.
+sources:
+  - source_id: src_neetm74bb0afsaq1q7zsrt8fc7
+    url: https://info.thoropass.com/jpm-startup-offers
+programs: []
+offers:
+  - offer_id: off_0w3tj0graj5wva6ncxrq2hnc5w
+    offer_slug: thoropass-jpm-startup-offer
+    title: Thoropass JPM Startup Offer
+    summary: Eligible JPM Startup Offers participants receive 15% off Thoropass compliance platform and services.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:38:03.940963Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 15% off Thoropass compliance platform and services
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 1500
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an eligible JPM Startup Offers participant. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_dvqwp0wkfk75ea93n6ej46wy23
+      access_operator_entity_id: ent_dvqwp0wkfk75ea93n6ej46wy23
+    access:
+      availability: public
+      method: form
+      url: https://info.thoropass.com/jpm-startup-offers
+    source_ids:
+      - src_neetm74bb0afsaq1q7zsrt8fc7
