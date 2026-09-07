@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9dhhvjdecfj6z7ea1pdvanttya
+  slug: opstart
+  name: Opstart
+  domains:
+    - value: opstart.co
+      role: primary
+      valid_from: 2026-09-07T14:24:24.032991Z
+  category: finance-accounting
+profile:
+  summary: Opstart offers qualifying startups free access to their business formation and compliance platform for 12 months.
+  links:
+    site: https://opstart.co
+  description: Opstart is a business formation and compliance platform. Their startup program offers free access to qualifying startups for 12 months.
+sources:
+  - source_id: src_3ev6gvj0a57q2fydr24fy9nvaj
+    url: https://opstart.co/startup
+programs: []
+offers:
+  - offer_id: off_sb53q1eddcsqez2cqmcsjwkpyp
+    offer_slug: opstart-startup-program
+    title: Opstart startup program
+    summary: Qualifying startups receive free access to the Opstart business formation and compliance platform for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:24:24.032991Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to business formation and compliance platform for 12 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_9dhhvjdecfj6z7ea1pdvanttya
+      access_operator_entity_id: ent_9dhhvjdecfj6z7ea1pdvanttya
+    access:
+      availability: public
+      method: form
+      url: https://opstart.co/startup
+    source_ids:
+      - src_3ev6gvj0a57q2fydr24fy9nvaj
