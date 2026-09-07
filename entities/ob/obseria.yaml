@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_g78agdv8m3gvrqjp1csykea3gy
+  slug: obseria
+  name: Obseria
+  domains:
+    - value: obseria.io
+      role: primary
+      valid_from: 2026-09-07T14:30:16.600655Z
+  category: marketing
+profile:
+  summary: Obseria offers qualifying startups free access to their brand monitoring and social listening platform for 6 months.
+  links:
+    site: https://obseria.io
+  description: Obseria is a brand monitoring and social listening platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_b8gdhhgt9tqhxxyw5z4hds5src
+    url: https://obseria.io/startup
+programs: []
+offers:
+  - offer_id: off_m4hcqvhjwj8vdhpf01kfqnjttx
+    offer_slug: obseria-startup-program
+    title: Obseria startup program
+    summary: Qualifying startups receive free access to the Obseria brand monitoring and social listening platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:30:16.600655Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to brand monitoring and social listening platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_g78agdv8m3gvrqjp1csykea3gy
+      access_operator_entity_id: ent_g78agdv8m3gvrqjp1csykea3gy
+    access:
+      availability: public
+      method: form
+      url: https://obseria.io/startup
+    source_ids:
+      - src_b8gdhhgt9tqhxxyw5z4hds5src
