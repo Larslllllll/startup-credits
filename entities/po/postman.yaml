@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_wz9r5z8c3wfdyts75m7wm4z2ee
+  slug: postman
+  name: Postman
+  domains:
+    - value: postman.com
+      role: primary
+      valid_from: 2026-09-07T15:25:41.965090Z
+  category: devtools-other
+profile:
+  summary: Postman offers qualifying startups free or discounted access to their API development and testing platform.
+  links:
+    site: https://postman.com
+  description: Postman offers qualifying startups free or discounted access to their API development and testing platform.
+sources:
+  - source_id: src_xmxqefk5610t05y0dj980gkm6v
+    url: https://postman.com/startup
+programs: []
+offers:
+  - offer_id: off_h8scvajf3k04qz39ay3hcnqjd3
+    offer_slug: postman-startup-program
+    title: Postman startup program
+    summary: Postman offers qualifying startups free or discounted access to their API development and testing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:25:41.965090Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their API development and testing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_wz9r5z8c3wfdyts75m7wm4z2ee
+      access_operator_entity_id: ent_wz9r5z8c3wfdyts75m7wm4z2ee
+    access:
+      availability: public
+      method: form
+      url: https://postman.com/startup
+    source_ids:
+      - src_xmxqefk5610t05y0dj980gkm6v
