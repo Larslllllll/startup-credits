@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_4n22e55bkmjg9tkrnhm23p4c7f
+  slug: gong
+  name: Gong
+  domains:
+    - value: gong.io
+      role: primary
+      valid_from: 2026-09-07T15:30:29.204924Z
+  category: crm-sales
+profile:
+  summary: Gong offers qualifying startups free or discounted access to their revenue intelligence and conversation analytics platform.
+  links:
+    site: https://gong.io
+  description: Gong offers qualifying startups free or discounted access to their revenue intelligence and conversation analytics platform.
+sources:
+  - source_id: src_xvrc3a6dgxnd77dqveddy086z7
+    url: https://gong.io/startup
+programs: []
+offers:
+  - offer_id: off_09vv841nhnwscr3ps9mjpgm0jn
+    offer_slug: gong-startup-program
+    title: Gong startup program
+    summary: Gong offers qualifying startups free or discounted access to their revenue intelligence and conversation analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:30:29.204924Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their revenue intelligence and conversation analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_4n22e55bkmjg9tkrnhm23p4c7f
+      access_operator_entity_id: ent_4n22e55bkmjg9tkrnhm23p4c7f
+    access:
+      availability: public
+      method: form
+      url: https://gong.io/startup
+    source_ids:
+      - src_xvrc3a6dgxnd77dqveddy086z7
