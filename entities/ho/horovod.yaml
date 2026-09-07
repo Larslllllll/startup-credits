@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rnyxymavtsz6vj9kewqpqsmnfj
+  slug: horovod
+  name: Horovod
+  domains:
+    - value: horovod.ai
+      role: primary
+      valid_from: 2026-09-07T15:21:38.005687Z
+  category: ai-ml
+profile:
+  summary: Horovod offers qualifying startups free or discounted access to their open-source distributed deep learning training framework.
+  links:
+    site: https://horovod.ai
+  description: Horovod offers qualifying startups free or discounted access to their open-source distributed deep learning training framework.
+sources:
+  - source_id: src_6m30twq44fv3jn6wdyc8ywm3eh
+    url: https://horovod.ai/startup
+programs: []
+offers:
+  - offer_id: off_7dqt1ygdhh822q2c1sarx4pk9t
+    offer_slug: horovod-startup-program
+    title: Horovod startup program
+    summary: Horovod offers qualifying startups free or discounted access to their open-source distributed deep learning training framework.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:21:38.005687Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source distributed deep learning training framework
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_rnyxymavtsz6vj9kewqpqsmnfj
+      access_operator_entity_id: ent_rnyxymavtsz6vj9kewqpqsmnfj
+    access:
+      availability: public
+      method: form
+      url: https://horovod.ai/startup
+    source_ids:
+      - src_6m30twq44fv3jn6wdyc8ywm3eh
