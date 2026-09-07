@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xqyh2100vy6eyw235qvyet837v
+  slug: savvycal
+  name: SavvyCal
+  domains:
+    - value: savvycal.com
+      role: primary
+      valid_from: 2026-09-07T15:13:09.897688Z
+  category: productivity
+profile:
+  summary: SavvyCal offers qualifying startups free or discounted access to their shared calendar and scheduling link platform.
+  links:
+    site: https://savvycal.com
+  description: SavvyCal offers qualifying startups free or discounted access to their shared calendar and scheduling link platform.
+sources:
+  - source_id: src_shj6zka0m9ap0km2518c329ne1
+    url: https://savvycal.com/startup
+programs: []
+offers:
+  - offer_id: off_yk8e3rzx1b6v4b4aw6gnarca19
+    offer_slug: savvycal-startup-program
+    title: SavvyCal startup program
+    summary: SavvyCal offers qualifying startups free or discounted access to their shared calendar and scheduling link platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:13:09.897688Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to shared calendar and scheduling link platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xqyh2100vy6eyw235qvyet837v
+      access_operator_entity_id: ent_xqyh2100vy6eyw235qvyet837v
+    access:
+      availability: public
+      method: form
+      url: https://savvycal.com/startup
+    source_ids:
+      - src_shj6zka0m9ap0km2518c329ne1
