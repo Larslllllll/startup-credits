@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ceyedyymfrwfkhes83a9fx3275
+  slug: acoustid
+  name: AcoustID
+  domains:
+    - value: acoustid.org
+      role: primary
+      valid_from: 2026-09-07T15:47:04.331748Z
+  category: ai-ml
+profile:
+  summary: AcoustID offers qualifying startups free or discounted access to their open-source audio fingerprinting platform.
+  links:
+    site: https://acoustid.org
+  description: AcoustID offers qualifying startups free or discounted access to their open-source audio fingerprinting platform.
+sources:
+  - source_id: src_w4jgd86k39afyrcaq4spa391bb
+    url: https://acoustid.org/startup
+programs: []
+offers:
+  - offer_id: off_5ant01wd7fg0h13d2re42rhrgy
+    offer_slug: acoustid-startup-program
+    title: AcoustID startup program
+    summary: AcoustID offers qualifying startups free or discounted access to their open-source audio fingerprinting platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:47:04.331748Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source audio fingerprinting platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ceyedyymfrwfkhes83a9fx3275
+      access_operator_entity_id: ent_ceyedyymfrwfkhes83a9fx3275
+    access:
+      availability: public
+      method: form
+      url: https://acoustid.org/startup
+    source_ids:
+      - src_w4jgd86k39afyrcaq4spa391bb
