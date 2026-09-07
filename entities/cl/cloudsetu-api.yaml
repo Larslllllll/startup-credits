@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_n31wfgxqxhkbzcj1gzm600a5xv
+  slug: cloudsetu-api
+  name: CloudSetu API
+  domains:
+    - value: cloudsetu.com
+      role: primary
+      valid_from: 2026-09-07T16:40:31.028975Z
+  category: apis-integration
+profile:
+  summary: CloudSetu offers qualifying startups free or discounted access to their cloud communication and payment integration platform.
+  links:
+    site: https://cloudsetu.com
+  description: CloudSetu offers qualifying startups free or discounted access to their cloud communication and payment integration platform.
+sources:
+  - source_id: src_3wzhkcn9n15ec6x4znrtkv2z41
+    url: https://cloudsetu.com/startup
+programs: []
+offers:
+  - offer_id: off_40g6jqzhxxtxwd59ja71h17sg2
+    offer_slug: cloudsetu-api-startup-program
+    title: CloudSetu API startup program
+    summary: CloudSetu offers qualifying startups free or discounted access to their cloud communication and payment integration platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:40:31.028975Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to cloud communication and payment integration platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_n31wfgxqxhkbzcj1gzm600a5xv
+      access_operator_entity_id: ent_n31wfgxqxhkbzcj1gzm600a5xv
+    access:
+      availability: public
+      method: form
+      url: https://cloudsetu.com/startup
+    source_ids:
+      - src_3wzhkcn9n15ec6x4znrtkv2z41
