@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_dxmn7y3npkmwdg24crfaf7yazn
+  slug: scroll
+  name: Scroll
+  domains:
+    - value: scroll.io
+      role: primary
+      valid_from: 2026-09-07T15:54:29.280537Z
+  category: devtools-other
+profile:
+  summary: Scroll offers qualifying startups free or discounted access to their zkEVM Ethereum Layer 2 scaling platform.
+  links:
+    site: https://scroll.io
+  description: Scroll offers qualifying startups free or discounted access to their zkEVM Ethereum Layer 2 scaling platform.
+sources:
+  - source_id: src_0nqg6z98rc4q81zrm4my06vkxw
+    url: https://scroll.io/startup
+programs: []
+offers:
+  - offer_id: off_m07rd0s4csv0arxbqx2ff3p6ka
+    offer_slug: scroll-startup-program
+    title: Scroll startup program
+    summary: Scroll offers qualifying startups free or discounted access to their zkEVM Ethereum Layer 2 scaling platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:54:29.280537Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their zkEVM Ethereum Layer 2 scaling platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_dxmn7y3npkmwdg24crfaf7yazn
+      access_operator_entity_id: ent_dxmn7y3npkmwdg24crfaf7yazn
+    access:
+      availability: public
+      method: form
+      url: https://scroll.io/startup
+    source_ids:
+      - src_0nqg6z98rc4q81zrm4my06vkxw
