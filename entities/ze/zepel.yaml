@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_r5psscak9heetdypnxyn6h4f2d
+  slug: zepel
+  name: Zepel
+  domains:
+    - value: zepel.io
+      role: primary
+      valid_from: 2026-09-07T15:38:24.568706Z
+  category: productivity
+profile:
+  summary: Zepel offers qualifying startups free or discounted access to their feature tracking and project management platform.
+  links:
+    site: https://zepel.io
+  description: Zepel offers qualifying startups free or discounted access to their feature tracking and project management platform.
+sources:
+  - source_id: src_z4ezx1aanhd44328ksbx2nzchz
+    url: https://zepel.io/startup
+programs: []
+offers:
+  - offer_id: off_j9d0q0q31fjatexxw7wpx32z42
+    offer_slug: zepel-startup-program
+    title: Zepel startup program
+    summary: Zepel offers qualifying startups free or discounted access to their feature tracking and project management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:38:24.568706Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their feature tracking and project management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_r5psscak9heetdypnxyn6h4f2d
+      access_operator_entity_id: ent_r5psscak9heetdypnxyn6h4f2d
+    access:
+      availability: public
+      method: form
+      url: https://zepel.io/startup
+    source_ids:
+      - src_z4ezx1aanhd44328ksbx2nzchz
