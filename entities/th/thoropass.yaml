@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_58mf9b5deez32fnfw3rt107yrw
+  slug: thoropass
+  name: Thoropass
+  domains:
+    - value: thoropass.com
+      role: primary
+      valid_from: 2026-09-07T14:58:17.983465Z
+  category: legal-compliance
+profile:
+  summary: Thoropass offers qualifying startups free or discounted access to their compliance and audit management platform.
+  links:
+    site: https://thoropass.com
+  description: Thoropass offers qualifying startups free or discounted access to their compliance and audit management platform.
+sources:
+  - source_id: src_3zyevppcxvmh3e3n0kqbvzdvkr
+    url: https://thoropass.com/startup
+programs: []
+offers:
+  - offer_id: off_004fms8ct6cm7rpxxkr02kxxrf
+    offer_slug: thoropass-startup-program
+    title: Thoropass startup program
+    summary: Thoropass offers qualifying startups free or discounted access to their compliance and audit management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:58:17.983465Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to compliance and audit management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_58mf9b5deez32fnfw3rt107yrw
+      access_operator_entity_id: ent_58mf9b5deez32fnfw3rt107yrw
+    access:
+      availability: public
+      method: form
+      url: https://thoropass.com/startup
+    source_ids:
+      - src_3zyevppcxvmh3e3n0kqbvzdvkr
