@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9wgv0sazd6j0cdv8rtbcw98wj5
+  slug: around
+  name: Around
+  domains:
+    - value: around.co
+      role: primary
+      valid_from: 2026-09-07T15:43:09.561744Z
+  category: communication
+profile:
+  summary: Around offers qualifying startups free or discounted access to their video collaboration and meeting platform.
+  links:
+    site: https://around.co
+  description: Around offers qualifying startups free or discounted access to their video collaboration and meeting platform.
+sources:
+  - source_id: src_4yxv2frqdrtjkcavcyjzpgbq13
+    url: https://around.co/startup
+programs: []
+offers:
+  - offer_id: off_dr29dr5xg05rjcm9q5n6464nk6
+    offer_slug: around-startup-program
+    title: Around startup program
+    summary: Around offers qualifying startups free or discounted access to their video collaboration and meeting platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:43:09.561744Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their video collaboration and meeting platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_9wgv0sazd6j0cdv8rtbcw98wj5
+      access_operator_entity_id: ent_9wgv0sazd6j0cdv8rtbcw98wj5
+    access:
+      availability: public
+      method: form
+      url: https://around.co/startup
+    source_ids:
+      - src_4yxv2frqdrtjkcavcyjzpgbq13
