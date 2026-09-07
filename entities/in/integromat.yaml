@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9tm6xr0bm1nh0e6shsvxqgjp9q
+  slug: integromat
+  name: Integromat
+  domains:
+    - value: integromat.com
+      role: primary
+      valid_from: 2026-09-07T15:32:52.283670Z
+  category: apis-integration
+profile:
+  summary: Integromat offers qualifying startups free or discounted access to their no-code integration and automation platform.
+  links:
+    site: https://integromat.com
+  description: Integromat offers qualifying startups free or discounted access to their no-code integration and automation platform.
+sources:
+  - source_id: src_6jsgsd1jyfm6jcc9z5n2s47q9c
+    url: https://integromat.com/startup
+programs: []
+offers:
+  - offer_id: off_2yfp2tjvrkbx60nmdh5tm7pxc1
+    offer_slug: integromat-startup-program
+    title: Integromat startup program
+    summary: Integromat offers qualifying startups free or discounted access to their no-code integration and automation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:32:52.283670Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their no-code integration and automation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_9tm6xr0bm1nh0e6shsvxqgjp9q
+      access_operator_entity_id: ent_9tm6xr0bm1nh0e6shsvxqgjp9q
+    access:
+      availability: public
+      method: form
+      url: https://integromat.com/startup
+    source_ids:
+      - src_6jsgsd1jyfm6jcc9z5n2s47q9c
