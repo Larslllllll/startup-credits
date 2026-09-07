@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0rbjqe6wdbrgwhf87rvb7vfwmb
+  slug: gotomeeting
+  name: GoToMeeting
+  domains:
+    - value: gotomeeting.com
+      role: primary
+      valid_from: 2026-09-07T15:14:12.061186Z
+  category: communication
+profile:
+  summary: GoToMeeting offers qualifying startups free or discounted access to their online meeting and webinar platform.
+  links:
+    site: https://gotomeeting.com
+  description: GoToMeeting offers qualifying startups free or discounted access to their online meeting and webinar platform.
+sources:
+  - source_id: src_98q709z5dvhsqbvj3dqbkty23t
+    url: https://gotomeeting.com/startup
+programs: []
+offers:
+  - offer_id: off_7m1rag4m2252892rcfg64cfsaz
+    offer_slug: gotomeeting-startup-program
+    title: GoToMeeting startup program
+    summary: GoToMeeting offers qualifying startups free or discounted access to their online meeting and webinar platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:14:12.061186Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to online meeting and webinar platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_0rbjqe6wdbrgwhf87rvb7vfwmb
+      access_operator_entity_id: ent_0rbjqe6wdbrgwhf87rvb7vfwmb
+    access:
+      availability: public
+      method: form
+      url: https://gotomeeting.com/startup
+    source_ids:
+      - src_98q709z5dvhsqbvj3dqbkty23t
