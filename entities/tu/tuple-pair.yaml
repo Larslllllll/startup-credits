@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ke5ps15kmd5egrmtr2gc4t8w0k
+  slug: tuple-pair
+  name: Tuple Pair
+  domains:
+    - value: tuple.app
+      role: primary
+      valid_from: 2026-09-07T16:09:45.474975Z
+  category: devtools-other
+profile:
+  summary: Tuple Pair offers qualifying startups free or discounted access to their screen sharing and pair programming platform.
+  links:
+    site: https://tuple.app
+  description: Tuple Pair offers qualifying startups free or discounted access to their screen sharing and pair programming platform.
+sources:
+  - source_id: src_ntw2e88f4yxcz3qxncpa2a46g8
+    url: https://tuple.app/startup
+programs: []
+offers:
+  - offer_id: off_2pf4kcp8tmbspq0jcmz48dxsg6
+    offer_slug: tuple-pair-startup-program
+    title: Tuple Pair startup program
+    summary: Tuple Pair offers qualifying startups free or discounted access to their screen sharing and pair programming platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:09:45.474975Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to screen sharing and pair programming platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ke5ps15kmd5egrmtr2gc4t8w0k
+      access_operator_entity_id: ent_ke5ps15kmd5egrmtr2gc4t8w0k
+    access:
+      availability: public
+      method: form
+      url: https://tuple.app/startup
+    source_ids:
+      - src_ntw2e88f4yxcz3qxncpa2a46g8
