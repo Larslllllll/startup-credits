@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7bq278jc3ymgyxce5c63sm1g6b
+  slug: before-after
+  name: Before & After
+  domains:
+    - value: before-after.ai
+      role: primary
+      valid_from: 2026-09-07T15:22:46.361836Z
+  category: ai-ml
+profile:
+  summary: Before & After offers qualifying startups free or discounted access to their AI-powered image comparison and enhancement platform.
+  links:
+    site: https://before-after.ai
+  description: Before & After offers qualifying startups free or discounted access to their AI-powered image comparison and enhancement platform.
+sources:
+  - source_id: src_9bzaez7pz4n3tw4t88y9md2rhd
+    url: https://before-after.ai/startup
+programs: []
+offers:
+  - offer_id: off_waz2hqcgg44m31c1ksg6kmjspd
+    offer_slug: before-after-startup-program
+    title: Before & After startup program
+    summary: Before & After offers qualifying startups free or discounted access to their AI-powered image comparison and enhancement platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:22:46.361836Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI-powered image comparison and enhancement platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_7bq278jc3ymgyxce5c63sm1g6b
+      access_operator_entity_id: ent_7bq278jc3ymgyxce5c63sm1g6b
+    access:
+      availability: public
+      method: form
+      url: https://before-after.ai/startup
+    source_ids:
+      - src_9bzaez7pz4n3tw4t88y9md2rhd
