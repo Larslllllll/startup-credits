@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_mjvy8yq7ha6jwtkk0xrcwrw2x2
+  slug: pulseadt
+  name: PulseADT
+  domains:
+    - value: getpulseadt.com
+      role: primary
+      valid_from: 2026-09-07T13:40:27.783773Z
+  category: apis-integration
+profile:
+  summary: PulseADT offers early-stage tech startups a $250 API platform credit after spending $100 within 90 days, followed by a 30% ongoing discount.
+  links:
+    site: https://getpulseadt.com
+  description: PulseADT is an API development platform. Their startup program offers the API Builder track with a $250 platform credit after spending $100 on API credits within 90 days, followed by an ongoing 30% discount.
+sources:
+  - source_id: src_yk9ttcd5wzzfwmbyrn6yr1e0fn
+    url: https://getpulseadt.com/for-startups
+programs: []
+offers:
+  - offer_id: off_kxkn5wjxw5j7y8xpdfb1n85fa9
+    offer_slug: pulseadt-api-builder-track
+    title: PulseADT API Builder track
+    summary: Early-stage tech startups receive $250 API platform credit after $100 spend within 90 days, plus 30% ongoing discount.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:40:27.783773Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $250 API platform credit after spending $100 within 90 days, then 30% ongoing discount
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage technology startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_mjvy8yq7ha6jwtkk0xrcwrw2x2
+      access_operator_entity_id: ent_mjvy8yq7ha6jwtkk0xrcwrw2x2
+    access:
+      availability: public
+      method: form
+      url: https://getpulseadt.com/for-startups
+    source_ids:
+      - src_yk9ttcd5wzzfwmbyrn6yr1e0fn
