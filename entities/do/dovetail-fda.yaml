@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_jbjkaw6sy89kh6d9z642c4jxef
+  slug: dovetail-fda
+  name: Dovetail FDA
+  domains:
+    - value: withdovetail.com
+      role: primary
+      valid_from: 2026-09-07T16:40:00.437586Z
+  category: productivity
+profile:
+  summary: Dovetail offers qualifying startups free or discounted access to their FDA pathway and research analysis platform.
+  links:
+    site: https://withdovetail.com
+  description: Dovetail offers qualifying startups free or discounted access to their FDA pathway and research analysis platform.
+sources:
+  - source_id: src_3tk0y4hsftk8kckf1sbwtf3gzh
+    url: https://withdovetail.com/startup
+programs: []
+offers:
+  - offer_id: off_sqayxhzrzaqtdjbp5ez716w0g4
+    offer_slug: dovetail-fda-startup-program
+    title: Dovetail FDA startup program
+    summary: Dovetail offers qualifying startups free or discounted access to their FDA pathway and research analysis platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:40:00.437586Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to FDA pathway and research analysis platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_jbjkaw6sy89kh6d9z642c4jxef
+      access_operator_entity_id: ent_jbjkaw6sy89kh6d9z642c4jxef
+    access:
+      availability: public
+      method: form
+      url: https://withdovetail.com/startup
+    source_ids:
+      - src_3tk0y4hsftk8kckf1sbwtf3gzh
