@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_jzgtcjv565ha0anzfwma7676w4
+  slug: gemma-2
+  name: Gemma 2
+  domains:
+    - value: ai.google.dev
+      role: primary
+      valid_from: 2026-09-07T16:15:17.397769Z
+  category: ai-ml
+profile:
+  summary: Gemma 2 offers qualifying startups free or discounted access to their open-source LLM platform.
+  links:
+    site: https://ai.google.dev
+  description: Gemma 2 offers qualifying startups free or discounted access to their open-source LLM platform.
+sources:
+  - source_id: src_3trs5ydj5mgyws1w00097tenej
+    url: https://ai.google.dev/startup
+programs: []
+offers:
+  - offer_id: off_xw4ah3wd1w1j63qjp9dypm4mmg
+    offer_slug: gemma-2-startup-program
+    title: Gemma 2 startup program
+    summary: Gemma 2 offers qualifying startups free or discounted access to their open-source LLM platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:15:17.397769Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source LLM platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_jzgtcjv565ha0anzfwma7676w4
+      access_operator_entity_id: ent_jzgtcjv565ha0anzfwma7676w4
+    access:
+      availability: public
+      method: form
+      url: https://ai.google.dev/startup
+    source_ids:
+      - src_3trs5ydj5mgyws1w00097tenej
