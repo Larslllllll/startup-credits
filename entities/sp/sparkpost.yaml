@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_968wws9dvezbbmgpbn112r72he
+  slug: sparkpost
+  name: SparkPost
+  domains:
+    - value: sparkpost.com
+      role: primary
+      valid_from: 2026-09-07T15:12:27.243770Z
+  category: communication
+profile:
+  summary: SparkPost offers qualifying startups free or discounted access to their email delivery and analytics platform.
+  links:
+    site: https://sparkpost.com
+  description: SparkPost offers qualifying startups free or discounted access to their email delivery and analytics platform.
+sources:
+  - source_id: src_mgrjyprx7ay3vcrgt7g5egf06w
+    url: https://sparkpost.com/startup
+programs: []
+offers:
+  - offer_id: off_f7mbpfx2t5ws401rj9zdayy7mq
+    offer_slug: sparkpost-startup-program
+    title: SparkPost startup program
+    summary: SparkPost offers qualifying startups free or discounted access to their email delivery and analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:12:27.243770Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to email delivery and analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_968wws9dvezbbmgpbn112r72he
+      access_operator_entity_id: ent_968wws9dvezbbmgpbn112r72he
+    access:
+      availability: public
+      method: form
+      url: https://sparkpost.com/startup
+    source_ids:
+      - src_mgrjyprx7ay3vcrgt7g5egf06w
