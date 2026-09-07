@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ar3dk5c6d214s5ht9fbqxkca56
+  slug: typesense
+  name: Typesense
+  domains:
+    - value: typesense.org
+      role: primary
+      valid_from: 2026-09-07T14:59:54.391501Z
+  category: data-analytics
+profile:
+  summary: Typesense offers qualifying startups free or discounted access to their open-source search engine platform.
+  links:
+    site: https://typesense.org
+  description: Typesense offers qualifying startups free or discounted access to their open-source search engine platform.
+sources:
+  - source_id: src_wmfhf8f2vm3ngk0g4aj7bbnqmm
+    url: https://typesense.org/startup
+programs: []
+offers:
+  - offer_id: off_sfccrmx3dawyfgcmz5fhhthdw5
+    offer_slug: typesense-startup-program
+    title: Typesense startup program
+    summary: Typesense offers qualifying startups free or discounted access to their open-source search engine platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:59:54.391501Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source search engine platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ar3dk5c6d214s5ht9fbqxkca56
+      access_operator_entity_id: ent_ar3dk5c6d214s5ht9fbqxkca56
+    access:
+      availability: public
+      method: form
+      url: https://typesense.org/startup
+    source_ids:
+      - src_wmfhf8f2vm3ngk0g4aj7bbnqmm
