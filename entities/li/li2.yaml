@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_d5g80ceykvb6h1f53k15bvrhp9
+  slug: li2
+  name: LiteLLM 2
+  domains:
+    - value: litellm.ai
+      role: primary
+      valid_from: 2026-09-07T16:45:54.289706Z
+  category: ai-ml
+profile:
+  summary: LiteLLM offers qualifying startups free or discounted access to their open-source LLM API proxy framework.
+  links:
+    site: https://litellm.ai
+  description: LiteLLM offers qualifying startups free or discounted access to their open-source LLM API proxy framework.
+sources:
+  - source_id: src_s4nn142n1253f9wcnzktxqgyyj
+    url: https://litellm.ai/startup
+programs: []
+offers:
+  - offer_id: off_5jst6dam8yxwrhzpf2e2c00a9b
+    offer_slug: li2-startup-program
+    title: LiteLLM 2 startup program
+    summary: LiteLLM offers qualifying startups free or discounted access to their open-source LLM API proxy framework.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:45:54.289706Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source LLM API proxy framework
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_d5g80ceykvb6h1f53k15bvrhp9
+      access_operator_entity_id: ent_d5g80ceykvb6h1f53k15bvrhp9
+    access:
+      availability: public
+      method: form
+      url: https://litellm.ai/startup
+    source_ids:
+      - src_s4nn142n1253f9wcnzktxqgyyj
