@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_bezjnbd284ne75xvzmhgekpn5s
+  slug: pouchdb
+  name: PouchDB
+  domains:
+    - value: pouchdb.com
+      role: primary
+      valid_from: 2026-09-07T15:06:35.491649Z
+  category: databases
+profile:
+  summary: PouchDB offers qualifying startups free or discounted access to their open-source JavaScript database for offline-first apps.
+  links:
+    site: https://pouchdb.com
+  description: PouchDB offers qualifying startups free or discounted access to their open-source JavaScript database for offline-first apps.
+sources:
+  - source_id: src_cbn3rkgx42kz4gk69j5dqqp0dh
+    url: https://pouchdb.com/startup
+programs: []
+offers:
+  - offer_id: off_p6p69jttg54p7gtvegc41c78fs
+    offer_slug: pouchdb-startup-program
+    title: PouchDB startup program
+    summary: PouchDB offers qualifying startups free or discounted access to their open-source JavaScript database for offline-first apps.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:06:35.491649Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source JavaScript database for offline-first apps
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_bezjnbd284ne75xvzmhgekpn5s
+      access_operator_entity_id: ent_bezjnbd284ne75xvzmhgekpn5s
+    access:
+      availability: public
+      method: form
+      url: https://pouchdb.com/startup
+    source_ids:
+      - src_cbn3rkgx42kz4gk69j5dqqp0dh
