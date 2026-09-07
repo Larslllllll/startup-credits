@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_235yrsghztn7m904z4ap0nkngb
+  slug: fireflies
+  name: Fireflies.ai
+  domains:
+    - value: fireflies.ai
+      role: primary
+      valid_from: 2026-09-07T15:59:52.086571Z
+  category: ai-ml
+profile:
+  summary: Fireflies.ai offers qualifying startups free or discounted access to their AI meeting transcription and notes platform.
+  links:
+    site: https://fireflies.ai
+  description: Fireflies.ai offers qualifying startups free or discounted access to their AI meeting transcription and notes platform.
+sources:
+  - source_id: src_61kcgfd0vm3ss8v0zr9nzbmc4z
+    url: https://fireflies.ai/startup
+programs: []
+offers:
+  - offer_id: off_jweb0n22k4hzzjfxk769p0kme0
+    offer_slug: fireflies-startup-program
+    title: Fireflies.ai startup program
+    summary: Fireflies.ai offers qualifying startups free or discounted access to their AI meeting transcription and notes platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:59:52.086571Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI meeting transcription and notes platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_235yrsghztn7m904z4ap0nkngb
+      access_operator_entity_id: ent_235yrsghztn7m904z4ap0nkngb
+    access:
+      availability: public
+      method: form
+      url: https://fireflies.ai/startup
+    source_ids:
+      - src_61kcgfd0vm3ss8v0zr9nzbmc4z
