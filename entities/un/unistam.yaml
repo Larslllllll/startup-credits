@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_wv7mtzq9jzsfjprz74g6khbw9z
+  slug: unistam
+  name: Unistam
+  domains:
+    - value: unistamts.com
+      role: primary
+      valid_from: 2026-09-07T14:58:43.650672Z
+  category: productivity
+profile:
+  summary: Unistam offers qualifying startups free or discounted access to their university management and student information system platform.
+  links:
+    site: https://unistamts.com
+  description: Unistam offers qualifying startups free or discounted access to their university management and student information system platform.
+sources:
+  - source_id: src_yfkq54e5khaw59g1p9habb3164
+    url: https://unistamts.com/startup
+programs: []
+offers:
+  - offer_id: off_5htbt2wtdy45ptgvqvdqqe886j
+    offer_slug: unistam-startup-program
+    title: Unistam startup program
+    summary: Unistam offers qualifying startups free or discounted access to their university management and student information system platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:58:43.650672Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to university management and student information system platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_wv7mtzq9jzsfjprz74g6khbw9z
+      access_operator_entity_id: ent_wv7mtzq9jzsfjprz74g6khbw9z
+    access:
+      availability: public
+      method: form
+      url: https://unistamts.com/startup
+    source_ids:
+      - src_yfkq54e5khaw59g1p9habb3164
