@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_td7gzxh49r7dzp7qtrexb57mqe
+  slug: hubstaff
+  name: Hubstaff
+  domains:
+    - value: hubstaff.com
+      role: primary
+      valid_from: 2026-09-07T15:52:24.211473Z
+  category: hr-people
+profile:
+  summary: Hubstaff offers qualifying startups free or discounted access to their time tracking and workforce management platform.
+  links:
+    site: https://hubstaff.com
+  description: Hubstaff offers qualifying startups free or discounted access to their time tracking and workforce management platform.
+sources:
+  - source_id: src_cfascygdcw0983p3kj5yzngjx7
+    url: https://hubstaff.com/startup
+programs: []
+offers:
+  - offer_id: off_0y256k7dt1xjjqykh8gz46nxeg
+    offer_slug: hubstaff-startup-program
+    title: Hubstaff startup program
+    summary: Hubstaff offers qualifying startups free or discounted access to their time tracking and workforce management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:52:24.211473Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their time tracking and workforce management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_td7gzxh49r7dzp7qtrexb57mqe
+      access_operator_entity_id: ent_td7gzxh49r7dzp7qtrexb57mqe
+    access:
+      availability: public
+      method: form
+      url: https://hubstaff.com/startup
+    source_ids:
+      - src_cfascygdcw0983p3kj5yzngjx7
