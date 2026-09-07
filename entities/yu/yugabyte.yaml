@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_b0vzres6j1pkn72gvn1yekjkzh
+  slug: yugabyte
+  name: YugabyteDB
+  domains:
+    - value: yugabyte.com
+      role: primary
+      valid_from: 2026-09-07T15:02:45.424643Z
+  category: databases
+profile:
+  summary: YugabyteDB offers qualifying startups free or discounted access to their distributed SQL database platform.
+  links:
+    site: https://yugabyte.com
+  description: YugabyteDB offers qualifying startups free or discounted access to their distributed SQL database platform.
+sources:
+  - source_id: src_953sj2xgrc8wqmt1j0gvdn4c9q
+    url: https://yugabyte.com/startup
+programs: []
+offers:
+  - offer_id: off_aqnvfbrqc0y3919sy23ddhx9s6
+    offer_slug: yugabyte-startup-program
+    title: YugabyteDB startup program
+    summary: YugabyteDB offers qualifying startups free or discounted access to their distributed SQL database platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:02:45.424643Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to distributed SQL database platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_b0vzres6j1pkn72gvn1yekjkzh
+      access_operator_entity_id: ent_b0vzres6j1pkn72gvn1yekjkzh
+    access:
+      availability: public
+      method: form
+      url: https://yugabyte.com/startup
+    source_ids:
+      - src_953sj2xgrc8wqmt1j0gvdn4c9q
