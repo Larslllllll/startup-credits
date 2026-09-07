@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_f9v9gqs35mxpyqvaaeg16889hm
+  slug: t3stack
+  name: T3 Stack
+  domains:
+    - value: create.t3.gg
+      role: primary
+      valid_from: 2026-09-07T15:01:39.171598Z
+  category: devtools-other
+profile:
+  summary: T3 Stack offers qualifying startups free or discounted access to their opinionated React framework and tooling platform.
+  links:
+    site: https://create.t3.gg
+  description: T3 Stack offers qualifying startups free or discounted access to their opinionated React framework and tooling platform.
+sources:
+  - source_id: src_1h7fey2vyrct8wbgdnfkpxgkp8
+    url: https://create.t3.gg/startup
+programs: []
+offers:
+  - offer_id: off_86xymf5nzjrkxtgfwjbptsgzz8
+    offer_slug: t3stack-startup-program
+    title: T3 Stack startup program
+    summary: T3 Stack offers qualifying startups free or discounted access to their opinionated React framework and tooling platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:01:39.171598Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to opinionated React framework and tooling platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_f9v9gqs35mxpyqvaaeg16889hm
+      access_operator_entity_id: ent_f9v9gqs35mxpyqvaaeg16889hm
+    access:
+      availability: public
+      method: form
+      url: https://create.t3.gg/startup
+    source_ids:
+      - src_1h7fey2vyrct8wbgdnfkpxgkp8
