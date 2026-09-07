@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_s48x7612zj5y3pf6f39xsy62v1
+  slug: zencastr
+  name: Zencastr
+  domains:
+    - value: zencastr.com
+      role: primary
+      valid_from: 2026-09-07T15:43:31.066552Z
+  category: communication
+profile:
+  summary: Zencastr offers qualifying startups free or discounted access to their remote podcast and video recording platform.
+  links:
+    site: https://zencastr.com
+  description: Zencastr offers qualifying startups free or discounted access to their remote podcast and video recording platform.
+sources:
+  - source_id: src_vv6gnqptdgzcmfd8zzyw4329v8
+    url: https://zencastr.com/startup
+programs: []
+offers:
+  - offer_id: off_zxy4qj0rt9p21d6ga308qzfakp
+    offer_slug: zencastr-startup-program
+    title: Zencastr startup program
+    summary: Zencastr offers qualifying startups free or discounted access to their remote podcast and video recording platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:43:31.066552Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their remote podcast and video recording platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_s48x7612zj5y3pf6f39xsy62v1
+      access_operator_entity_id: ent_s48x7612zj5y3pf6f39xsy62v1
+    access:
+      availability: public
+      method: form
+      url: https://zencastr.com/startup
+    source_ids:
+      - src_vv6gnqptdgzcmfd8zzyw4329v8
