@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_w55kfw7x0wx5ra80sb2zezvrjg
+  slug: d1db
+  name: D1
+  domains:
+    - value: d1db.com
+      role: primary
+      valid_from: 2026-09-07T15:07:14.843163Z
+  category: databases
+profile:
+  summary: D1 offers qualifying startups free or discounted access to their distributed SQLite database platform.
+  links:
+    site: https://d1db.com
+  description: D1 offers qualifying startups free or discounted access to their distributed SQLite database platform.
+sources:
+  - source_id: src_9my98mqfcy3183pvjbzvcn92h6
+    url: https://d1db.com/startup
+programs: []
+offers:
+  - offer_id: off_7hjyqn2dmy1brchce1ppatebdb
+    offer_slug: d1db-startup-program
+    title: D1 startup program
+    summary: D1 offers qualifying startups free or discounted access to their distributed SQLite database platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:07:14.843163Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to distributed SQLite database platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_w55kfw7x0wx5ra80sb2zezvrjg
+      access_operator_entity_id: ent_w55kfw7x0wx5ra80sb2zezvrjg
+    access:
+      availability: public
+      method: form
+      url: https://d1db.com/startup
+    source_ids:
+      - src_9my98mqfcy3183pvjbzvcn92h6
