@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_673h8yswvkcym04f5e82jyaeyw
+  slug: base
+  name: Base
+  domains:
+    - value: base.org
+      role: primary
+      valid_from: 2026-09-07T15:53:46.606783Z
+  category: devtools-other
+profile:
+  summary: Base offers qualifying startups free or discounted access to their Ethereum Layer 2 blockchain platform.
+  links:
+    site: https://base.org
+  description: Base offers qualifying startups free or discounted access to their Ethereum Layer 2 blockchain platform.
+sources:
+  - source_id: src_ds24dgz7yq5dr12qhhkmn00e8g
+    url: https://base.org/startup
+programs: []
+offers:
+  - offer_id: off_csqkke86zezkpwamgpdxdk2rvc
+    offer_slug: base-startup-program
+    title: Base startup program
+    summary: Base offers qualifying startups free or discounted access to their Ethereum Layer 2 blockchain platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:53:46.606783Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their Ethereum Layer 2 blockchain platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_673h8yswvkcym04f5e82jyaeyw
+      access_operator_entity_id: ent_673h8yswvkcym04f5e82jyaeyw
+    access:
+      availability: public
+      method: form
+      url: https://base.org/startup
+    source_ids:
+      - src_ds24dgz7yq5dr12qhhkmn00e8g
