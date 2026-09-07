@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xhmqdexvnhv2z5g1n2emr0hmwy
+  slug: hemingway
+  name: Hemingway Editor
+  domains:
+    - value: hemingwayapp.com
+      role: primary
+      valid_from: 2026-09-07T15:24:35.506456Z
+  category: ai-ml
+profile:
+  summary: Hemingway Editor offers qualifying startups free or discounted access to their AI-powered writing clarity tool.
+  links:
+    site: https://hemingwayapp.com
+  description: Hemingway Editor offers qualifying startups free or discounted access to their AI-powered writing clarity tool.
+sources:
+  - source_id: src_rqjph31t0ywe3awftr0th2bnrg
+    url: https://hemingwayapp.com/startup
+programs: []
+offers:
+  - offer_id: off_e4g4k1ecckwwdmw1k94z4k7xqx
+    offer_slug: hemingway-startup-program
+    title: Hemingway Editor startup program
+    summary: Hemingway Editor offers qualifying startups free or discounted access to their AI-powered writing clarity tool.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:24:35.506456Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI-powered writing clarity tool
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xhmqdexvnhv2z5g1n2emr0hmwy
+      access_operator_entity_id: ent_xhmqdexvnhv2z5g1n2emr0hmwy
+    access:
+      availability: public
+      method: form
+      url: https://hemingwayapp.com/startup
+    source_ids:
+      - src_rqjph31t0ywe3awftr0th2bnrg
