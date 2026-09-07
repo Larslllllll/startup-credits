@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3sxz4xjphf3mfxg4akw18rwcr0
+  slug: qu4
+  name: Qwen 4
+  domains:
+    - value: tongyi.aliyun.com
+      role: primary
+      valid_from: 2026-09-07T16:45:10.035822Z
+  category: ai-ml
+profile:
+  summary: Qwen offers qualifying startups free or discounted access to their Alibaba AI language model platform.
+  links:
+    site: https://tongyi.aliyun.com
+  description: Qwen offers qualifying startups free or discounted access to their Alibaba AI language model platform.
+sources:
+  - source_id: src_w95a44dtmqznvqn1gaxx1sdmzy
+    url: https://tongyi.aliyun.com/startup
+programs: []
+offers:
+  - offer_id: off_z2p5g1bshmv93v548vwwyn5srt
+    offer_slug: qu4-startup-program
+    title: Qwen 4 startup program
+    summary: Qwen offers qualifying startups free or discounted access to their Alibaba AI language model platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:45:10.035822Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to Alibaba AI language model platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3sxz4xjphf3mfxg4akw18rwcr0
+      access_operator_entity_id: ent_3sxz4xjphf3mfxg4akw18rwcr0
+    access:
+      availability: public
+      method: form
+      url: https://tongyi.aliyun.com/startup
+    source_ids:
+      - src_w95a44dtmqznvqn1gaxx1sdmzy
