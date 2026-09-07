@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_34g9n3j45v9sjdxqpwh5xk9mj4
+  slug: chimoney
+  name: Chimoney
+  domains:
+    - value: chimoney.io
+      role: primary
+      valid_from: 2026-09-07T13:57:46.332354Z
+  category: payments-fintech
+profile:
+  summary: Chimoney for Startups gives qualifying startups free access to Chimoney's Global Bulk Payouts service and Developer APIs for six months.
+  links:
+    site: https://chimoney.io
+  description: Chimoney is a global payout platform. Their startup program offers qualifying startups free access to Chimoney's Global Bulk Payouts service and Developer APIs for six months.
+sources:
+  - source_id: src_ft2rerggjcmh6n3xxcddm0ana2
+    url: https://chimoney.io/startups
+programs: []
+offers:
+  - offer_id: off_vhc6y9yaj1b60na9tnb9v2jfe1
+    offer_slug: chimoney-startup-program
+    title: Chimoney for Startups
+    summary: Qualifying startups receive free access to Chimoney's Global Bulk Payouts and Developer APIs for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:57:46.332354Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to Global Bulk Payouts and Developer APIs for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_34g9n3j45v9sjdxqpwh5xk9mj4
+      access_operator_entity_id: ent_34g9n3j45v9sjdxqpwh5xk9mj4
+    access:
+      availability: public
+      method: form
+      url: https://chimoney.io/startups
+    source_ids:
+      - src_ft2rerggjcmh6n3xxcddm0ana2
