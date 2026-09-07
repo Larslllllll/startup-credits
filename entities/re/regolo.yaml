@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_g5g598s724kqgsa4pfg7nhz2en
+  slug: regolo
+  name: Regolo
+  domains:
+    - value: regolo.ai
+      role: primary
+      valid_from: 2026-09-07T13:28:35.507697Z
+  category: ai-ml
+profile:
+  summary: Regolo's Builder Program gives accepted early-stage startups 60 days of unlimited tokens across its open-source model infrastructure with no credit card required.
+  links:
+    site: https://regolo.ai
+  description: Regolo is an open-source model infrastructure platform. Their Builder Program offers accepted early-stage startups 60 days of unlimited tokens across their open-source model infrastructure with no credit card required.
+sources:
+  - source_id: src_gh97n822r075mc5fbkzbbhphx1
+    url: https://regolo.ai/builder-program
+programs: []
+offers:
+  - offer_id: off_a0zp8mja9ke7b5wk5kwpgs1p8x
+    offer_slug: regolo-builder-program
+    title: Regolo Builder Program
+    summary: Accepted early-stage startups receive 60 days of unlimited tokens across Regolo's open-source model infrastructure.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:28:35.507697Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 60 days of unlimited tokens across open-source model infrastructure
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an accepted early-stage startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_g5g598s724kqgsa4pfg7nhz2en
+      access_operator_entity_id: ent_g5g598s724kqgsa4pfg7nhz2en
+    access:
+      availability: public
+      method: form
+      url: https://regolo.ai/builder-program
+    source_ids:
+      - src_gh97n822r075mc5fbkzbbhphx1
