@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_60fy53y2zdmzw3h4tvd9gh46xx
+  slug: helix
+  name: Helix
+  domains:
+    - value: helix-editor.com
+      role: primary
+      valid_from: 2026-09-07T15:02:03.947139Z
+  category: devtools-other
+profile:
+  summary: Helix offers qualifying startups free or discounted access to their post-modern modal text editor platform.
+  links:
+    site: https://helix-editor.com
+  description: Helix offers qualifying startups free or discounted access to their post-modern modal text editor platform.
+sources:
+  - source_id: src_3rrncg5c6xfk6dmayvdapt58ef
+    url: https://helix-editor.com/startup
+programs: []
+offers:
+  - offer_id: off_je7chfmt02n1g4jqa1mb60kfrt
+    offer_slug: helix-startup-program
+    title: Helix startup program
+    summary: Helix offers qualifying startups free or discounted access to their post-modern modal text editor platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:02:03.947139Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to post-modern modal text editor platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_60fy53y2zdmzw3h4tvd9gh46xx
+      access_operator_entity_id: ent_60fy53y2zdmzw3h4tvd9gh46xx
+    access:
+      availability: public
+      method: form
+      url: https://helix-editor.com/startup
+    source_ids:
+      - src_3rrncg5c6xfk6dmayvdapt58ef
