@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gx34dwr54w89p4fz65s32x9qk9
+  slug: tequity-equity
+  name: Tequity
+  domains:
+    - value: tequity.io
+      role: primary
+      valid_from: 2026-09-07T16:31:18.275743Z
+  category: finance-accounting
+profile:
+  summary: Tequity offers qualifying startups free or discounted access to their startup equity and cap table management platform.
+  links:
+    site: https://tequity.io
+  description: Tequity offers qualifying startups free or discounted access to their startup equity and cap table management platform.
+sources:
+  - source_id: src_gwgnsvb5ckbe5sbfdfezkmk1qg
+    url: https://tequity.io/startup
+programs: []
+offers:
+  - offer_id: off_930r6g2shfgs22tpbwwcwc5317
+    offer_slug: tequity-equity-startup-program
+    title: Tequity startup program
+    summary: Tequity offers qualifying startups free or discounted access to their startup equity and cap table management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:31:18.275743Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to startup equity and cap table management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_gx34dwr54w89p4fz65s32x9qk9
+      access_operator_entity_id: ent_gx34dwr54w89p4fz65s32x9qk9
+    access:
+      availability: public
+      method: form
+      url: https://tequity.io/startup
+    source_ids:
+      - src_gwgnsvb5ckbe5sbfdfezkmk1qg
