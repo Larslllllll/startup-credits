@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_mwe5rat492me548aeay4nta5gy
+  slug: myuome
+  name: MyUome
+  domains:
+    - value: myuome.com
+      role: primary
+      valid_from: 2026-09-07T14:16:58.825025Z
+  category: commerce
+profile:
+  summary: MyUome offers qualifying startups free access to their commerce and retail analytics platform for 6 months.
+  links:
+    site: https://myuome.com
+  description: MyUome is a commerce and retail analytics platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_axxq0w7psp0bpjbbmz90ffzs86
+    url: https://myuome.com/startup
+programs: []
+offers:
+  - offer_id: off_0gx7rp8hr151zx38d4tn6vgsnv
+    offer_slug: myuome-startup-program
+    title: MyUome startup program
+    summary: Qualifying startups receive free access to the MyUome commerce and retail analytics platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:16:58.825025Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to commerce and retail analytics platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_mwe5rat492me548aeay4nta5gy
+      access_operator_entity_id: ent_mwe5rat492me548aeay4nta5gy
+    access:
+      availability: public
+      method: form
+      url: https://myuome.com/startup
+    source_ids:
+      - src_axxq0w7psp0bpjbbmz90ffzs86
