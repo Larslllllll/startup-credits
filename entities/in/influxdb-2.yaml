@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_60nz5syzc13f75scz1pbccg39h
+  slug: influxdb-2
+  name: InfluxDB 2
+  domains:
+    - value: influxdata.com
+      role: primary
+      valid_from: 2026-09-07T15:28:08.344439Z
+  category: databases
+profile:
+  summary: InfluxDB 2 offers qualifying startups free or discounted access to their time-series database platform.
+  links:
+    site: https://influxdata.com
+  description: InfluxDB 2 offers qualifying startups free or discounted access to their time-series database platform.
+sources:
+  - source_id: src_f9gd993s4z638bzcw7kc9zhhqa
+    url: https://influxdata.com/startup
+programs: []
+offers:
+  - offer_id: off_qtw2chkqrtdxw6ec7x49krzgfn
+    offer_slug: influxdb-2-startup-program
+    title: InfluxDB 2 startup program
+    summary: InfluxDB 2 offers qualifying startups free or discounted access to their time-series database platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:28:08.344439Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their time-series database platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_60nz5syzc13f75scz1pbccg39h
+      access_operator_entity_id: ent_60nz5syzc13f75scz1pbccg39h
+    access:
+      availability: public
+      method: form
+      url: https://influxdata.com/startup
+    source_ids:
+      - src_f9gd993s4z638bzcw7kc9zhhqa
