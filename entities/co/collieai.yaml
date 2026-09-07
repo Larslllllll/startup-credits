@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xs8nsqb40fc4j32zz3nc6vbbnb
+  slug: collieai
+  name: Collie AI
+  domains:
+    - value: collieai.io
+      role: primary
+      valid_from: 2026-09-07T16:08:15.857523Z
+  category: ai-ml
+profile:
+  summary: Collie AI offers qualifying startups free or discounted access to their AI model deployment and management platform.
+  links:
+    site: https://collieai.io
+  description: Collie AI offers qualifying startups free or discounted access to their AI model deployment and management platform.
+sources:
+  - source_id: src_tcgfzjtwhknsjebantdmbfz0qa
+    url: https://collieai.io/startup
+programs: []
+offers:
+  - offer_id: off_51xnak3pfydfhz9m1frb1wt8dx
+    offer_slug: collieai-startup-program
+    title: Collie AI startup program
+    summary: Collie AI offers qualifying startups free or discounted access to their AI model deployment and management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:08:15.857523Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI model deployment and management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xs8nsqb40fc4j32zz3nc6vbbnb
+      access_operator_entity_id: ent_xs8nsqb40fc4j32zz3nc6vbbnb
+    access:
+      availability: public
+      method: form
+      url: https://collieai.io/startup
+    source_ids:
+      - src_tcgfzjtwhknsjebantdmbfz0qa
