@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_epz4p3ynt5jt74qmjfp8d97j6r
+  slug: flyio
+  name: Fly.io
+  domains:
+    - value: fly.io
+      role: primary
+      valid_from: 2026-09-07T15:00:57.899636Z
+  category: hosting-infra
+profile:
+  summary: Fly.io offers qualifying startups free or discounted access to their global edge application deployment platform.
+  links:
+    site: https://fly.io
+  description: Fly.io offers qualifying startups free or discounted access to their global edge application deployment platform.
+sources:
+  - source_id: src_tnntptd7937r2dtc369cbt7vmt
+    url: https://fly.io/startup
+programs: []
+offers:
+  - offer_id: off_brnhbsjwhc5nm1ky4dhpn8kg94
+    offer_slug: flyio-startup-program
+    title: Fly.io startup program
+    summary: Fly.io offers qualifying startups free or discounted access to their global edge application deployment platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:00:57.899636Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to global edge application deployment platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_epz4p3ynt5jt74qmjfp8d97j6r
+      access_operator_entity_id: ent_epz4p3ynt5jt74qmjfp8d97j6r
+    access:
+      availability: public
+      method: form
+      url: https://fly.io/startup
+    source_ids:
+      - src_tnntptd7937r2dtc369cbt7vmt
