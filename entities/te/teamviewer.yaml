@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01bvb8fxb3gdfj36hda0eq3jjq
+  slug: teamviewer
+  name: TeamViewer
+  domains:
+    - value: teamviewer.com
+      role: primary
+      valid_from: 2026-09-07T15:41:49.152070Z
+  category: communication
+profile:
+  summary: TeamViewer offers qualifying startups free or discounted access to their remote connectivity and support platform.
+  links:
+    site: https://teamviewer.com
+  description: TeamViewer offers qualifying startups free or discounted access to their remote connectivity and support platform.
+sources:
+  - source_id: src_3qrsjejdbhfy3mrvsw2qkd6vmb
+    url: https://teamviewer.com/startup
+programs: []
+offers:
+  - offer_id: off_1r4wqvwrh93rv2ysps8b25dhmc
+    offer_slug: teamviewer-startup-program
+    title: TeamViewer startup program
+    summary: TeamViewer offers qualifying startups free or discounted access to their remote connectivity and support platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:41:49.152070Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their remote connectivity and support platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01bvb8fxb3gdfj36hda0eq3jjq
+      access_operator_entity_id: ent_01bvb8fxb3gdfj36hda0eq3jjq
+    access:
+      availability: public
+      method: form
+      url: https://teamviewer.com/startup
+    source_ids:
+      - src_3qrsjejdbhfy3mrvsw2qkd6vmb
