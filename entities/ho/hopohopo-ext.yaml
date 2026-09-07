@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_j01z44qn8n1tt573sscmp5mdj8
+  slug: hopohopo-ext
+  name: Hopohopo External
+  domains:
+    - value: hopohopo.io
+      role: primary
+      valid_from: 2026-09-07T16:09:41.336784Z
+  category: finance-accounting
+profile:
+  summary: Hopohopo offers qualifying startups free or discounted access to their investment portfolio management platform.
+  links:
+    site: https://hopohopo.io
+  description: Hopohopo offers qualifying startups free or discounted access to their investment portfolio management platform.
+sources:
+  - source_id: src_3zvkcg29y4vkh1vmcrx0nfb0ce
+    url: https://hopohopo.io/startup
+programs: []
+offers:
+  - offer_id: off_sn50jjr2n38bzkqve5gd6crkm1
+    offer_slug: hopohopo-ext-startup-program
+    title: Hopohopo External startup program
+    summary: Hopohopo offers qualifying startups free or discounted access to their investment portfolio management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:09:41.336784Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to investment portfolio management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_j01z44qn8n1tt573sscmp5mdj8
+      access_operator_entity_id: ent_j01z44qn8n1tt573sscmp5mdj8
+    access:
+      availability: public
+      method: form
+      url: https://hopohopo.io/startup
+    source_ids:
+      - src_3zvkcg29y4vkh1vmcrx0nfb0ce
