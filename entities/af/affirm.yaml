@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_679bxh3sq1ry56x2b9js6kwqrd
+  slug: affirm
+  name: Affirm
+  domains:
+    - value: affirm.com
+      role: primary
+      valid_from: 2026-09-07T15:18:11.517781Z
+  category: payments-fintech
+profile:
+  summary: Affirm offers qualifying startups free or discounted access to their buy now pay later and consumer financing platform.
+  links:
+    site: https://affirm.com
+  description: Affirm offers qualifying startups free or discounted access to their buy now pay later and consumer financing platform.
+sources:
+  - source_id: src_jxm7n7etd09n2dj5bjc7achf8h
+    url: https://affirm.com/startup
+programs: []
+offers:
+  - offer_id: off_220vn5j7hgfj7g59mxnztj617v
+    offer_slug: affirm-startup-program
+    title: Affirm startup program
+    summary: Affirm offers qualifying startups free or discounted access to their buy now pay later and consumer financing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:18:11.517781Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their buy now pay later and consumer financing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_679bxh3sq1ry56x2b9js6kwqrd
+      access_operator_entity_id: ent_679bxh3sq1ry56x2b9js6kwqrd
+    access:
+      availability: public
+      method: form
+      url: https://affirm.com/startup
+    source_ids:
+      - src_jxm7n7etd09n2dj5bjc7achf8h
