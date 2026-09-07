@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_zs4zh7fgdsbt1ewbemmzfx0eph
+  slug: yottalabs
+  name: Yottalabs
+  domains:
+    - value: yottalabs.ai
+      role: primary
+      valid_from: 2026-09-07T14:33:39.485407Z
+  category: ai-ml
+profile:
+  summary: Yottalabs offers qualifying startups free access to their AI model evaluation and benchmarking platform for 6 months.
+  links:
+    site: https://yottalabs.ai
+  description: Yottalabs is an AI model evaluation and benchmarking platform. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_a10ejecshgamsattp6resp30bm
+    url: https://yottalabs.ai/startup
+programs: []
+offers:
+  - offer_id: off_w7tebpyfndc316r17g87n1t1y0
+    offer_slug: yottalabs-startup-program
+    title: Yottalabs startup program
+    summary: Qualifying startups receive free access to the Yottalabs AI model evaluation and benchmarking platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:33:39.485407Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to AI model evaluation and benchmarking platform for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_zs4zh7fgdsbt1ewbemmzfx0eph
+      access_operator_entity_id: ent_zs4zh7fgdsbt1ewbemmzfx0eph
+    access:
+      availability: public
+      method: form
+      url: https://yottalabs.ai/startup
+    source_ids:
+      - src_a10ejecshgamsattp6resp30bm
