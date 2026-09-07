@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_m5wcakazcgv7ge1sfgr28dr5gv
+  slug: cdbaby
+  name: CD Baby
+  domains:
+    - value: cdbaby.com
+      role: primary
+      valid_from: 2026-09-07T15:46:27.293687Z
+  category: commerce
+profile:
+  summary: CD Baby offers qualifying startups free or discounted access to their music distribution and royalty platform.
+  links:
+    site: https://cdbaby.com
+  description: CD Baby offers qualifying startups free or discounted access to their music distribution and royalty platform.
+sources:
+  - source_id: src_6605k1jpyp9tfrhr02ks4jwnxt
+    url: https://cdbaby.com/startup
+programs: []
+offers:
+  - offer_id: off_xem5k469b1zpnkznsj4pcszwjg
+    offer_slug: cdbaby-startup-program
+    title: CD Baby startup program
+    summary: CD Baby offers qualifying startups free or discounted access to their music distribution and royalty platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:46:27.293687Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their music distribution and royalty platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_m5wcakazcgv7ge1sfgr28dr5gv
+      access_operator_entity_id: ent_m5wcakazcgv7ge1sfgr28dr5gv
+    access:
+      availability: public
+      method: form
+      url: https://cdbaby.com/startup
+    source_ids:
+      - src_6605k1jpyp9tfrhr02ks4jwnxt
