@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_2pscdrndqtkr95748mttw8abpj
+  slug: duckdb-2
+  name: DuckDB Cloud
+  domains:
+    - value: duckdb.org
+      role: primary
+      valid_from: 2026-09-07T15:28:38.128774Z
+  category: databases
+profile:
+  summary: DuckDB Cloud offers qualifying startups free or discounted access to their open-source in-process analytics database cloud platform.
+  links:
+    site: https://duckdb.org
+  description: DuckDB Cloud offers qualifying startups free or discounted access to their open-source in-process analytics database cloud platform.
+sources:
+  - source_id: src_ks54va3c87xyftx47agt5qk3c7
+    url: https://duckdb.org/startup
+programs: []
+offers:
+  - offer_id: off_484vvjsqtz57drzw2stmfk7f5d
+    offer_slug: duckdb-2-startup-program
+    title: DuckDB Cloud startup program
+    summary: DuckDB Cloud offers qualifying startups free or discounted access to their open-source in-process analytics database cloud platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:28:38.128774Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source in-process analytics database cloud platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_2pscdrndqtkr95748mttw8abpj
+      access_operator_entity_id: ent_2pscdrndqtkr95748mttw8abpj
+    access:
+      availability: public
+      method: form
+      url: https://duckdb.org/startup
+    source_ids:
+      - src_ks54va3c87xyftx47agt5qk3c7
