@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xn1q071ngczk96rtgpqbey5ed1
+  slug: deno
+  name: Deno
+  domains:
+    - value: deno.com
+      role: primary
+      valid_from: 2026-09-07T15:01:27.614205Z
+  category: devtools-other
+profile:
+  summary: Deno offers qualifying startups free or discounted access to their secure JavaScript and TypeScript runtime platform.
+  links:
+    site: https://deno.com
+  description: Deno offers qualifying startups free or discounted access to their secure JavaScript and TypeScript runtime platform.
+sources:
+  - source_id: src_epbnvecdj7p8rjwptpm2k17wp6
+    url: https://deno.com/startup
+programs: []
+offers:
+  - offer_id: off_g5actwqhj87w9h03zgbxc43wa0
+    offer_slug: deno-startup-program
+    title: Deno startup program
+    summary: Deno offers qualifying startups free or discounted access to their secure JavaScript and TypeScript runtime platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:01:27.614205Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to secure JavaScript and TypeScript runtime platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xn1q071ngczk96rtgpqbey5ed1
+      access_operator_entity_id: ent_xn1q071ngczk96rtgpqbey5ed1
+    access:
+      availability: public
+      method: form
+      url: https://deno.com/startup
+    source_ids:
+      - src_epbnvecdj7p8rjwptpm2k17wp6
