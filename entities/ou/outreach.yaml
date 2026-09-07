@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gg916yrpd3hgcvpae7kv5e3fwe
+  slug: outreach
+  name: Outreach
+  domains:
+    - value: outreach.io
+      role: primary
+      valid_from: 2026-09-07T15:30:14.475696Z
+  category: crm-sales
+profile:
+  summary: Outreach offers qualifying startups free or discounted access to their sales engagement and automation platform.
+  links:
+    site: https://outreach.io
+  description: Outreach offers qualifying startups free or discounted access to their sales engagement and automation platform.
+sources:
+  - source_id: src_5g12mkg6rtmxp1x3j6mj5abrs6
+    url: https://outreach.io/startup
+programs: []
+offers:
+  - offer_id: off_mmbzrsfk4b2qft9cxvn3mzcg7v
+    offer_slug: outreach-startup-program
+    title: Outreach startup program
+    summary: Outreach offers qualifying startups free or discounted access to their sales engagement and automation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:30:14.475696Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their sales engagement and automation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_gg916yrpd3hgcvpae7kv5e3fwe
+      access_operator_entity_id: ent_gg916yrpd3hgcvpae7kv5e3fwe
+    access:
+      availability: public
+      method: form
+      url: https://outreach.io/startup
+    source_ids:
+      - src_5g12mkg6rtmxp1x3j6mj5abrs6
