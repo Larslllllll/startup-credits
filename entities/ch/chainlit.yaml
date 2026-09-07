@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_hncf3859766cy1t4ecchhc76gc
+  slug: chainlit
+  name: Chainlit
+  domains:
+    - value: chainlit.io
+      role: primary
+      valid_from: 2026-09-07T15:03:16.181920Z
+  category: ai-ml
+profile:
+  summary: Chainlit offers qualifying startups free or discounted access to their open-source Python framework for LLM applications.
+  links:
+    site: https://chainlit.io
+  description: Chainlit offers qualifying startups free or discounted access to their open-source Python framework for LLM applications.
+sources:
+  - source_id: src_zfn43x11x0h345w6f8edzmaxtv
+    url: https://chainlit.io/startup
+programs: []
+offers:
+  - offer_id: off_h3t9h7eejcnw2chp0htyztxpfa
+    offer_slug: chainlit-startup-program
+    title: Chainlit startup program
+    summary: Chainlit offers qualifying startups free or discounted access to their open-source Python framework for LLM applications.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:03:16.181920Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source Python framework for LLM applications
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_hncf3859766cy1t4ecchhc76gc
+      access_operator_entity_id: ent_hncf3859766cy1t4ecchhc76gc
+    access:
+      availability: public
+      method: form
+      url: https://chainlit.io/startup
+    source_ids:
+      - src_zfn43x11x0h345w6f8edzmaxtv
