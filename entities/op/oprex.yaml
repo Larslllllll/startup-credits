@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gpeej2fpmab1yb30ngjy4c43nq
+  slug: oprex
+  name: Oprex
+  domains:
+    - value: oprex.id
+      role: primary
+      valid_from: 2026-09-07T14:07:42.830710Z
+  category: payments-fintech
+profile:
+  summary: Oprex offers a free payment gateway and business account with no setup or maintenance fees for qualifying startups.
+  links:
+    site: https://oprex.id
+  description: Oprex is a payment gateway and business account platform. Their startup program offers a free payment gateway and business account with no setup or maintenance fees.
+sources:
+  - source_id: src_rbqtw55xh00gmmmpte754rhsdh
+    url: https://oprex.id/startup
+programs: []
+offers:
+  - offer_id: off_0fp6fknpwq28e64xmgmqsthvjt
+    offer_slug: oprex-startup-program
+    title: Oprex startup program
+    summary: Qualifying startups receive a free payment gateway and business account with no setup or maintenance fees.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:07:42.830710Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free payment gateway and business account, no setup or maintenance fees
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_gpeej2fpmab1yb30ngjy4c43nq
+      access_operator_entity_id: ent_gpeej2fpmab1yb30ngjy4c43nq
+    access:
+      availability: public
+      method: form
+      url: https://oprex.id/startup
+    source_ids:
+      - src_rbqtw55xh00gmmmpte754rhsdh
