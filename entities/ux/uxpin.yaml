@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_s4zpbxrh6869fqxrxc5x4bdw4d
+  slug: uxpin
+  name: UXPin
+  domains:
+    - value: uxpin.com
+      role: primary
+      valid_from: 2026-09-07T15:48:14.364975Z
+  category: design
+profile:
+  summary: UXPin offers qualifying startups free or discounted access to their design and prototyping platform.
+  links:
+    site: https://uxpin.com
+  description: UXPin offers qualifying startups free or discounted access to their design and prototyping platform.
+sources:
+  - source_id: src_jenqws976tsmskrga6ydbhb30c
+    url: https://uxpin.com/startup
+programs: []
+offers:
+  - offer_id: off_99yr7t2ja8w5dwtfq3tpnn3bw5
+    offer_slug: uxpin-startup-program
+    title: UXPin startup program
+    summary: UXPin offers qualifying startups free or discounted access to their design and prototyping platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:48:14.364975Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their design and prototyping platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_s4zpbxrh6869fqxrxc5x4bdw4d
+      access_operator_entity_id: ent_s4zpbxrh6869fqxrxc5x4bdw4d
+    access:
+      availability: public
+      method: form
+      url: https://uxpin.com/startup
+    source_ids:
+      - src_jenqws976tsmskrga6ydbhb30c
