@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_q7erp39d5v8pwc36tvpsms4pg7
+  slug: hippo-video
+  name: Hippo Video
+  domains:
+    - value: hippovideo.io
+      role: primary
+      valid_from: 2026-09-07T14:49:39.155970Z
+  category: communication
+profile:
+  summary: Hippo Video offers qualifying startups a discount on their video messaging and engagement platform.
+  links:
+    site: https://hippovideo.io
+  description: Hippo Video offers qualifying startups a discount on their video messaging and engagement platform.
+sources:
+  - source_id: src_fngey01d7s494mn7zz4dczpr6f
+    url: https://hippovideo.io/startup
+programs: []
+offers:
+  - offer_id: off_5qw1a6z03tezcscy658mhcyczn
+    offer_slug: hippo-video-startup-program
+    title: Hippo Video startup program
+    summary: Hippo Video offers qualifying startups a discount on their video messaging and engagement platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:49:39.155970Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Discount on video messaging and engagement platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_q7erp39d5v8pwc36tvpsms4pg7
+      access_operator_entity_id: ent_q7erp39d5v8pwc36tvpsms4pg7
+    access:
+      availability: public
+      method: form
+      url: https://hippovideo.io/startup
+    source_ids:
+      - src_fngey01d7s494mn7zz4dczpr6f
