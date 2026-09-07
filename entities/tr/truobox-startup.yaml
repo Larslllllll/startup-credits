@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_4at7jdtd7jc3873bqmhy9tqhe4
+  slug: truobox-startup
+  name: Truobox
+  domains:
+    - value: truobox.com
+      role: primary
+      valid_from: 2026-09-07T16:32:44.164447Z
+  category: hosting-infra
+profile:
+  summary: Truobox offers qualifying startups free or discounted access to their cloud server and VPS platform.
+  links:
+    site: https://truobox.com
+  description: Truobox offers qualifying startups free or discounted access to their cloud server and VPS platform.
+sources:
+  - source_id: src_kkdbqj5z5xdp9g9xykx0j9kwr1
+    url: https://truobox.com/startup
+programs: []
+offers:
+  - offer_id: off_n92xd522kqe8s35hpb8f3cfzj2
+    offer_slug: truobox-startup-startup-program
+    title: Truobox startup program
+    summary: Truobox offers qualifying startups free or discounted access to their cloud server and VPS platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:32:44.164447Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to cloud server and VPS platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_4at7jdtd7jc3873bqmhy9tqhe4
+      access_operator_entity_id: ent_4at7jdtd7jc3873bqmhy9tqhe4
+    access:
+      availability: public
+      method: form
+      url: https://truobox.com/startup
+    source_ids:
+      - src_kkdbqj5z5xdp9g9xykx0j9kwr1
