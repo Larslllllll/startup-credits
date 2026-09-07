@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5sfm5rqh1kveagt6dqk01xnbvk
+  slug: ba4
+  name: Baichuan 4
+  domains:
+    - value: baichuan-ai.com
+      role: primary
+      valid_from: 2026-09-07T16:45:04.252240Z
+  category: ai-ml
+profile:
+  summary: Baichuan offers qualifying startups free or discounted access to their Chinese AI language model API.
+  links:
+    site: https://baichuan-ai.com
+  description: Baichuan offers qualifying startups free or discounted access to their Chinese AI language model API.
+sources:
+  - source_id: src_scsvffm5rky25e9gzcrx278ywz
+    url: https://baichuan-ai.com/startup
+programs: []
+offers:
+  - offer_id: off_6hep51gvvwbszchfgv21fxsyrd
+    offer_slug: ba4-startup-program
+    title: Baichuan 4 startup program
+    summary: Baichuan offers qualifying startups free or discounted access to their Chinese AI language model API.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:45:04.252240Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to Chinese AI language model API
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_5sfm5rqh1kveagt6dqk01xnbvk
+      access_operator_entity_id: ent_5sfm5rqh1kveagt6dqk01xnbvk
+    access:
+      availability: public
+      method: form
+      url: https://baichuan-ai.com/startup
+    source_ids:
+      - src_scsvffm5rky25e9gzcrx278ywz
