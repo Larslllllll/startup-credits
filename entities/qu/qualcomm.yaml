@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rwbhxv5bqgf8kv9a1xjnetbf1x
+  slug: qualcomm
+  name: Qualcomm
+  domains:
+    - value: qualcomm.com
+      role: primary
+      valid_from: 2026-09-07T14:34:04.012444Z
+  category: ai-ml
+profile:
+  summary: Qualcomm offers qualifying startups free access to their AI on-device development tools and Snapdragon platform for 12 months.
+  links:
+    site: https://qualcomm.com
+  description: Qualcomm is a semiconductor and technology company. Their startup program offers free access to AI on-device development tools and Snapdragon platform for qualifying startups for 12 months.
+sources:
+  - source_id: src_0p04x8sc5hmmdk37mq9xjkhath
+    url: https://qualcomm.com/startup
+programs: []
+offers:
+  - offer_id: off_crf3v1zgkdke0dnmtkp3fah1d9
+    offer_slug: qualcomm-startup-program
+    title: Qualcomm startup program
+    summary: Qualifying startups receive free access to Qualcomm AI on-device development tools and Snapdragon platform for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:34:04.012444Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to AI on-device development tools and Snapdragon platform for 12 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_rwbhxv5bqgf8kv9a1xjnetbf1x
+      access_operator_entity_id: ent_rwbhxv5bqgf8kv9a1xjnetbf1x
+    access:
+      availability: public
+      method: form
+      url: https://qualcomm.com/startup
+    source_ids:
+      - src_0p04x8sc5hmmdk37mq9xjkhath
