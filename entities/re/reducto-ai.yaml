@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_g869btwsxaxhqa5qz3y9q0h7dg
+  slug: reducto-ai
+  name: Reducto AI
+  domains:
+    - value: reducto.ai
+      role: primary
+      valid_from: 2026-09-07T14:14:10.088777Z
+  category: ai-ml
+profile:
+  summary: Reducto AI offers qualifying startups free API credits for document processing and PDF conversion for 6 months.
+  links:
+    site: https://reducto.ai
+  description: Reducto AI is a document processing and PDF conversion API platform. Their startup program offers free API credits for qualifying startups for 6 months.
+sources:
+  - source_id: src_5g49941t84cq3vasdn7wc8yas6
+    url: https://reducto.ai/startup
+programs: []
+offers:
+  - offer_id: off_4yk6s5djzst15awqxnyy9zw5zp
+    offer_slug: reducto-ai-startup-program
+    title: Reducto AI startup program
+    summary: Qualifying startups receive free API credits for document processing and PDF conversion for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:14:10.088777Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free API credits for document processing and PDF conversion for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_g869btwsxaxhqa5qz3y9q0h7dg
+      access_operator_entity_id: ent_g869btwsxaxhqa5qz3y9q0h7dg
+    access:
+      availability: public
+      method: form
+      url: https://reducto.ai/startup
+    source_ids:
+      - src_5g49941t84cq3vasdn7wc8yas6
