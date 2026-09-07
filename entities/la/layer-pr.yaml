@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_b1vqw47jebzfb4sdb6bmp6f836
+  slug: layer-pr
+  name: Layer PR
+  domains:
+    - value: layerpr.com
+      role: primary
+      valid_from: 2026-09-07T14:41:58.805077Z
+  category: marketing
+profile:
+  summary: Layer PR offers qualifying startups free or discounted access to their public relations and communications services.
+  links:
+    site: https://layerpr.com
+  description: Layer PR is a public relations and communications agency. Their startup program offers free or discounted PR services to qualifying startups.
+sources:
+  - source_id: src_7ejvkwad8haa428mcgf0d9yg9t
+    url: https://layerpr.com/startup
+programs: []
+offers:
+  - offer_id: off_9zh59k0ypqbwhs8qkk2e0jc4ez
+    offer_slug: layer-pr-startup-program
+    title: Layer PR startup program
+    summary: Qualifying startups receive free or discounted access to Layer PR public relations and communications services.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:41:58.805077Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted PR and communications services
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_b1vqw47jebzfb4sdb6bmp6f836
+      access_operator_entity_id: ent_b1vqw47jebzfb4sdb6bmp6f836
+    access:
+      availability: public
+      method: form
+      url: https://layerpr.com/startup
+    source_ids:
+      - src_7ejvkwad8haa428mcgf0d9yg9t
