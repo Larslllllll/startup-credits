@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_zjscpgjqn3jhze6r502zr07mtp
+  slug: twentythree
+  name: TwentyThree
+  domains:
+    - value: twentythree.com
+      role: primary
+      valid_from: 2026-09-07T14:52:57.313063Z
+  category: communication
+profile:
+  summary: TwentyThree offers qualifying startups free or discounted access to their video streaming and analytics platform.
+  links:
+    site: https://twentythree.com
+  description: TwentyThree offers qualifying startups free or discounted access to their video streaming and analytics platform.
+sources:
+  - source_id: src_v2hgs0xr0mr77jka3zbk20gxzk
+    url: https://twentythree.com/startup
+programs: []
+offers:
+  - offer_id: off_80wj105yz8cr67rqegkpztb5jj
+    offer_slug: twentythree-startup-program
+    title: TwentyThree startup program
+    summary: TwentyThree offers qualifying startups free or discounted access to their video streaming and analytics platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:52:57.313063Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to video streaming and analytics platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_zjscpgjqn3jhze6r502zr07mtp
+      access_operator_entity_id: ent_zjscpgjqn3jhze6r502zr07mtp
+    access:
+      availability: public
+      method: form
+      url: https://twentythree.com/startup
+    source_ids:
+      - src_v2hgs0xr0mr77jka3zbk20gxzk
