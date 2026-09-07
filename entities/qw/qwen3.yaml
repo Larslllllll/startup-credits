@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_wgsa6kk15wnd3m5xs0yt3dq3wy
+  slug: qwen3
+  name: Qwen 3
+  domains:
+    - value: tongyi.aliyun.com
+      role: primary
+      valid_from: 2026-09-07T16:16:11.401552Z
+  category: ai-ml
+profile:
+  summary: Qwen 3 offers qualifying startups free or discounted access to their latest open LLM platform.
+  links:
+    site: https://tongyi.aliyun.com
+  description: Qwen 3 offers qualifying startups free or discounted access to their latest open LLM platform.
+sources:
+  - source_id: src_f6q4vftj7xahhwcnh4ftcmn893
+    url: https://tongyi.aliyun.com/startup
+programs: []
+offers:
+  - offer_id: off_txsmsp30xmcfgnaq7j1kpmw0yh
+    offer_slug: qwen3-startup-program
+    title: Qwen 3 startup program
+    summary: Qwen 3 offers qualifying startups free or discounted access to their latest open LLM platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:16:11.401552Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to latest open LLM platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_wgsa6kk15wnd3m5xs0yt3dq3wy
+      access_operator_entity_id: ent_wgsa6kk15wnd3m5xs0yt3dq3wy
+    access:
+      availability: public
+      method: form
+      url: https://tongyi.aliyun.com/startup
+    source_ids:
+      - src_f6q4vftj7xahhwcnh4ftcmn893
