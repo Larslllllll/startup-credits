@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_b2vb57ggrbtxd04a53mem33ma4
+  slug: stormboard
+  name: Stormboard
+  domains:
+    - value: stormboard.com
+      role: primary
+      valid_from: 2026-09-07T15:48:50.559708Z
+  category: productivity
+profile:
+  summary: Stormboard offers qualifying startups free or discounted access to their online sticky notes and brainstorming platform.
+  links:
+    site: https://stormboard.com
+  description: Stormboard offers qualifying startups free or discounted access to their online sticky notes and brainstorming platform.
+sources:
+  - source_id: src_vdanth3cbsm9yrkad4pc6z639z
+    url: https://stormboard.com/startup
+programs: []
+offers:
+  - offer_id: off_h4ctpj5mnaa1wseq5emdgtskvy
+    offer_slug: stormboard-startup-program
+    title: Stormboard startup program
+    summary: Stormboard offers qualifying startups free or discounted access to their online sticky notes and brainstorming platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:48:50.559708Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their online sticky notes and brainstorming platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_b2vb57ggrbtxd04a53mem33ma4
+      access_operator_entity_id: ent_b2vb57ggrbtxd04a53mem33ma4
+    access:
+      availability: public
+      method: form
+      url: https://stormboard.com/startup
+    source_ids:
+      - src_vdanth3cbsm9yrkad4pc6z639z
