@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_sc27f7pj4nba0tv7kjxaqkdnm1
+  slug: comply-advantage
+  name: ComplyAdvantage
+  domains:
+    - value: complyadvantage.com
+      role: primary
+      valid_from: 2026-09-07T14:55:41.354126Z
+  category: legal-compliance
+profile:
+  summary: ComplyAdvantage offers qualifying startups free access to their ComplyLaunch anti-money laundering and KYC compliance platform.
+  links:
+    site: https://complyadvantage.com
+  description: ComplyAdvantage offers qualifying startups free access to their ComplyLaunch anti-money laundering and KYC compliance platform.
+sources:
+  - source_id: src_vt7katcn4dss7s39pa53f02wnx
+    url: https://complyadvantage.com/startup
+programs: []
+offers:
+  - offer_id: off_x3wyckymd1z7rgj0hrx09r0nnk
+    offer_slug: comply-advantage-startup-program
+    title: ComplyAdvantage startup program
+    summary: ComplyAdvantage offers qualifying startups free access to their ComplyLaunch anti-money laundering and KYC compliance platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:55:41.354126Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to anti-money laundering and KYC compliance platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_sc27f7pj4nba0tv7kjxaqkdnm1
+      access_operator_entity_id: ent_sc27f7pj4nba0tv7kjxaqkdnm1
+    access:
+      availability: public
+      method: form
+      url: https://complyadvantage.com/startup
+    source_ids:
+      - src_vt7katcn4dss7s39pa53f02wnx
