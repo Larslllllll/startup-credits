@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_y1hgz387n6p89arhtb9y8bxc00
+  slug: confidence
+  name: Confidence
+  domains:
+    - value: confidence.spotify.com
+      role: primary
+      valid_from: 2026-09-07T13:49:55.011661Z
+  category: auth-security
+profile:
+  summary: Confidence offers early-stage startups up to $75,000 in credits including Growth-plan capabilities, role-based access control, and 12-month audit log retention.
+  links:
+    site: https://confidence.spotify.com
+  description: Confidence is a software trust platform. Their startup program offers early-stage startups up to $75,000 in Confidence credits including Growth-plan capabilities, role-based access control, and 12-month audit log retention.
+sources:
+  - source_id: src_70wdfkvf66wy2azw9c1pfh3yfx
+    url: https://confidence.spotify.com/startups
+programs: []
+offers:
+  - offer_id: off_dxqpbag8v4dbj5fpn2vbwjgbqs
+    offer_slug: confidence-startup-program
+    title: Confidence startup program
+    summary: Early-stage startups receive up to $75,000 in Confidence credits with Growth-plan capabilities.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:49:55.011661Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $75,000 in Confidence credits with Growth-plan capabilities, RBAC, 12-month audit log retention
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_y1hgz387n6p89arhtb9y8bxc00
+      access_operator_entity_id: ent_y1hgz387n6p89arhtb9y8bxc00
+    access:
+      availability: public
+      method: form
+      url: https://confidence.spotify.com/startups
+    source_ids:
+      - src_70wdfkvf66wy2azw9c1pfh3yfx
