@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_qyxgxqbwjbw2cst5ga9kd1n9cf
+  slug: messagebird
+  name: MessageBird
+  domains:
+    - value: messagebird.com
+      role: primary
+      valid_from: 2026-09-07T15:14:27.562395Z
+  category: communication
+profile:
+  summary: MessageBird offers qualifying startups free or discounted access to their omnichannel customer communication platform.
+  links:
+    site: https://messagebird.com
+  description: MessageBird offers qualifying startups free or discounted access to their omnichannel customer communication platform.
+sources:
+  - source_id: src_7b42w7cvbt2h4b9qrstzs2d62b
+    url: https://messagebird.com/startup
+programs: []
+offers:
+  - offer_id: off_zk8y20qhr2vrtdq5cpm4rvfdva
+    offer_slug: messagebird-startup-program
+    title: MessageBird startup program
+    summary: MessageBird offers qualifying startups free or discounted access to their omnichannel customer communication platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:14:27.562395Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to omnichannel customer communication platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_qyxgxqbwjbw2cst5ga9kd1n9cf
+      access_operator_entity_id: ent_qyxgxqbwjbw2cst5ga9kd1n9cf
+    access:
+      availability: public
+      method: form
+      url: https://messagebird.com/startup
+    source_ids:
+      - src_7b42w7cvbt2h4b9qrstzs2d62b
