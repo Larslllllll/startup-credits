@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_qd8skwtk0mn6adwjv7ayyjjwgg
+  slug: tsheets
+  name: TSheets
+  domains:
+    - value: tsheets.com
+      role: primary
+      valid_from: 2026-09-07T15:52:28.394413Z
+  category: hr-people
+profile:
+  summary: TSheets offers qualifying startups free or discounted access to their employee time tracking and scheduling platform.
+  links:
+    site: https://tsheets.com
+  description: TSheets offers qualifying startups free or discounted access to their employee time tracking and scheduling platform.
+sources:
+  - source_id: src_vtgrs38mgsfmb27pxknd0nbxb4
+    url: https://tsheets.com/startup
+programs: []
+offers:
+  - offer_id: off_v7eptdn06wyvrm2nbv3amvabdm
+    offer_slug: tsheets-startup-program
+    title: TSheets startup program
+    summary: TSheets offers qualifying startups free or discounted access to their employee time tracking and scheduling platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:52:28.394413Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their employee time tracking and scheduling platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_qd8skwtk0mn6adwjv7ayyjjwgg
+      access_operator_entity_id: ent_qd8skwtk0mn6adwjv7ayyjjwgg
+    access:
+      availability: public
+      method: form
+      url: https://tsheets.com/startup
+    source_ids:
+      - src_vtgrs38mgsfmb27pxknd0nbxb4
