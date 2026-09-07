@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ka1sz79vna4n2z5qpks98v50e4
+  slug: claude-startup
+  name: Claude for Startups
+  domains:
+    - value: claude.ai
+      role: primary
+      valid_from: 2026-09-07T16:10:43.197761Z
+  category: ai-ml
+profile:
+  summary: Claude offers qualifying startups free or discounted access to their AI assistant and language model platform.
+  links:
+    site: https://claude.ai
+  description: Claude offers qualifying startups free or discounted access to their AI assistant and language model platform.
+sources:
+  - source_id: src_8qjvcm1y86y1msefz4e7fyc6b1
+    url: https://claude.ai/startup
+programs: []
+offers:
+  - offer_id: off_r171j7hbs12n402ff0hpd5w81w
+    offer_slug: claude-startup-startup-program
+    title: Claude for Startups startup program
+    summary: Claude offers qualifying startups free or discounted access to their AI assistant and language model platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:10:43.197761Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI assistant and language model platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ka1sz79vna4n2z5qpks98v50e4
+      access_operator_entity_id: ent_ka1sz79vna4n2z5qpks98v50e4
+    access:
+      availability: public
+      method: form
+      url: https://claude.ai/startup
+    source_ids:
+      - src_8qjvcm1y86y1msefz4e7fyc6b1
