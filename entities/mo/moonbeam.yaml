@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_2ds5c9tqq5m7cbbeej837c8m2d
+  slug: moonbeam
+  name: Moonbeam
+  domains:
+    - value: moonbeam.network
+      role: primary
+      valid_from: 2026-09-07T15:53:04.749208Z
+  category: devtools-other
+profile:
+  summary: Moonbeam offers qualifying startups free or discounted access to their Ethereum-compatible smart contract platform.
+  links:
+    site: https://moonbeam.network
+  description: Moonbeam offers qualifying startups free or discounted access to their Ethereum-compatible smart contract platform.
+sources:
+  - source_id: src_y3281xq9xb1vdxpgq87tac01mg
+    url: https://moonbeam.network/startup
+programs: []
+offers:
+  - offer_id: off_pvg8cthydcy1t8xmpr61mssbjy
+    offer_slug: moonbeam-startup-program
+    title: Moonbeam startup program
+    summary: Moonbeam offers qualifying startups free or discounted access to their Ethereum-compatible smart contract platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:53:04.749208Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their Ethereum-compatible smart contract platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_2ds5c9tqq5m7cbbeej837c8m2d
+      access_operator_entity_id: ent_2ds5c9tqq5m7cbbeej837c8m2d
+    access:
+      availability: public
+      method: form
+      url: https://moonbeam.network/startup
+    source_ids:
+      - src_y3281xq9xb1vdxpgq87tac01mg
