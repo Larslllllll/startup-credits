@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_27qhdeh4e853vxha5c8v07pxfp
+  slug: chatglm
+  name: ChatGLM
+  domains:
+    - value: chatglm.cn
+      role: primary
+      valid_from: 2026-09-07T16:16:27.330683Z
+  category: ai-ml
+profile:
+  summary: ChatGLM offers qualifying startups free or discounted access to their open-source Chinese multilingual LLM platform.
+  links:
+    site: https://chatglm.cn
+  description: ChatGLM offers qualifying startups free or discounted access to their open-source Chinese multilingual LLM platform.
+sources:
+  - source_id: src_d2vm6z8jc671y7wn1471jv8enz
+    url: https://chatglm.cn/startup
+programs: []
+offers:
+  - offer_id: off_9fwyg7bre75q52pnce6t7mqy70
+    offer_slug: chatglm-startup-program
+    title: ChatGLM startup program
+    summary: ChatGLM offers qualifying startups free or discounted access to their open-source Chinese multilingual LLM platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:16:27.330683Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source Chinese multilingual LLM platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_27qhdeh4e853vxha5c8v07pxfp
+      access_operator_entity_id: ent_27qhdeh4e853vxha5c8v07pxfp
+    access:
+      availability: public
+      method: form
+      url: https://chatglm.cn/startup
+    source_ids:
+      - src_d2vm6z8jc671y7wn1471jv8enz
