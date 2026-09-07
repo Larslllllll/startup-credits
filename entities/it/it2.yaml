@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_v7yffp1k92rpxvgs0s9m1dr1hf
+  slug: it2
+  name: Iterable 2
+  domains:
+    - value: iterable.com
+      role: primary
+      valid_from: 2026-09-07T16:55:42.464643Z
+  category: marketing
+profile:
+  summary: Iterable offers qualifying startups free or discounted access to their cross-channel marketing automation platform.
+  links:
+    site: https://iterable.com
+  description: Iterable offers qualifying startups free or discounted access to their cross-channel marketing automation platform.
+sources:
+  - source_id: src_98kf2rysgxedv47yhv22a5p2w4
+    url: https://iterable.com/startup
+programs: []
+offers:
+  - offer_id: off_4t5v1ges03wtm70dv57p60wq6d
+    offer_slug: it2-startup-program
+    title: Iterable 2 startup program
+    summary: Iterable offers qualifying startups free or discounted access to their cross-channel marketing automation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:55:42.464643Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to cross-channel marketing automation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_v7yffp1k92rpxvgs0s9m1dr1hf
+      access_operator_entity_id: ent_v7yffp1k92rpxvgs0s9m1dr1hf
+    access:
+      availability: public
+      method: form
+      url: https://iterable.com/startup
+    source_ids:
+      - src_98kf2rysgxedv47yhv22a5p2w4
