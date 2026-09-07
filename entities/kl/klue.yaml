@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_mj278bz9hy8v5dzmvqcjn2yynj
+  slug: klue
+  name: Klue
+  domains:
+    - value: klue.com
+      role: primary
+      valid_from: 2026-09-07T15:30:40.906979Z
+  category: crm-sales
+profile:
+  summary: Klue offers qualifying startups free or discounted access to their competitive intelligence and enablement platform.
+  links:
+    site: https://klue.com
+  description: Klue offers qualifying startups free or discounted access to their competitive intelligence and enablement platform.
+sources:
+  - source_id: src_kvj6j28c9vb80m60see5hgxeyd
+    url: https://klue.com/startup
+programs: []
+offers:
+  - offer_id: off_473da8n67dwwhvzd7wcq7ee74r
+    offer_slug: klue-startup-program
+    title: Klue startup program
+    summary: Klue offers qualifying startups free or discounted access to their competitive intelligence and enablement platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:30:40.906979Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their competitive intelligence and enablement platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_mj278bz9hy8v5dzmvqcjn2yynj
+      access_operator_entity_id: ent_mj278bz9hy8v5dzmvqcjn2yynj
+    access:
+      availability: public
+      method: form
+      url: https://klue.com/startup
+    source_ids:
+      - src_kvj6j28c9vb80m60see5hgxeyd
