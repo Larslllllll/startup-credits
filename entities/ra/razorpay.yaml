@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_1b8ccgah425h2v47w5rf6vsqdc
+  slug: razorpay
+  name: Razorpay
+  domains:
+    - value: razorpay.com
+      role: primary
+      valid_from: 2026-09-07T14:30:29.207302Z
+  category: payments-fintech
+profile:
+  summary: Razorpay offers qualifying startups zero transaction fees for the first year and reduced processing fees thereafter.
+  links:
+    site: https://razorpay.com
+  description: Razorpay is an Indian payment gateway and financial services platform. Their startup program offers qualifying startups zero transaction fees for the first year.
+sources:
+  - source_id: src_jakht1jw1rqd6r93dwdd01ecp0
+    url: https://razorpay.com/startup
+programs: []
+offers:
+  - offer_id: off_cke6p0fwbv6n5qgcg059t91dsy
+    offer_slug: razorpay-startup-program
+    title: Razorpay startup program
+    summary: Qualifying startups receive zero transaction fees for the first year and reduced processing fees thereafter.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:30:29.207302Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Zero transaction fees for the first year and reduced processing fees thereafter
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_1b8ccgah425h2v47w5rf6vsqdc
+      access_operator_entity_id: ent_1b8ccgah425h2v47w5rf6vsqdc
+    access:
+      availability: public
+      method: form
+      url: https://razorpay.com/startup
+    source_ids:
+      - src_jakht1jw1rqd6r93dwdd01ecp0
