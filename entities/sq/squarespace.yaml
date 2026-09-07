@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ryqaryfnwchfrwfwf946gk76zh
+  slug: squarespace
+  name: Squarespace
+  domains:
+    - value: squarespace.com
+      role: primary
+      valid_from: 2026-09-07T15:10:25.450089Z
+  category: commerce
+profile:
+  summary: Squarespace offers qualifying startups free or discounted access to their all-in-one website and e-commerce platform.
+  links:
+    site: https://squarespace.com
+  description: Squarespace offers qualifying startups free or discounted access to their all-in-one website and e-commerce platform.
+sources:
+  - source_id: src_3j25w1mtdja7cvkwzpv3rhv7pv
+    url: https://squarespace.com/startup
+programs: []
+offers:
+  - offer_id: off_jj64pypkvkwf3bghmjy8nw4n27
+    offer_slug: squarespace-startup-program
+    title: Squarespace startup program
+    summary: Squarespace offers qualifying startups free or discounted access to their all-in-one website and e-commerce platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:10:25.450089Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to all-in-one website and e-commerce platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ryqaryfnwchfrwfwf946gk76zh
+      access_operator_entity_id: ent_ryqaryfnwchfrwfwf946gk76zh
+    access:
+      availability: public
+      method: form
+      url: https://squarespace.com/startup
+    source_ids:
+      - src_3j25w1mtdja7cvkwzpv3rhv7pv
