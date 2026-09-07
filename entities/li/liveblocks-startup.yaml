@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_y774mym2rfjmhfrmzsq0p62yyc
+  slug: liveblocks-startup
+  name: Liveblocks
+  domains:
+    - value: liveblocks.io
+      role: primary
+      valid_from: 2026-09-07T16:10:00.582928Z
+  category: productivity
+profile:
+  summary: Liveblocks offers qualifying startups free or discounted access to their real-time collaboration infrastructure for apps.
+  links:
+    site: https://liveblocks.io
+  description: Liveblocks offers qualifying startups free or discounted access to their real-time collaboration infrastructure for apps.
+sources:
+  - source_id: src_bbqmea09mm3kgp9yqbpyb4jdsr
+    url: https://liveblocks.io/startup
+programs: []
+offers:
+  - offer_id: off_etfpz1941q3jgbkraxd4gap4x3
+    offer_slug: liveblocks-startup-startup-program
+    title: Liveblocks startup program
+    summary: Liveblocks offers qualifying startups free or discounted access to their real-time collaboration infrastructure for apps.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:10:00.582928Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to real-time collaboration infrastructure
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_y774mym2rfjmhfrmzsq0p62yyc
+      access_operator_entity_id: ent_y774mym2rfjmhfrmzsq0p62yyc
+    access:
+      availability: public
+      method: form
+      url: https://liveblocks.io/startup
+    source_ids:
+      - src_bbqmea09mm3kgp9yqbpyb4jdsr
