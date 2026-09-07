@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ewvebr3k373awpxqcwp05zxpgt
+  slug: zimt-annual
+  name: Zimt Annual
+  domains:
+    - value: zimt.ai
+      role: primary
+      valid_from: 2026-09-07T16:41:05.981995Z
+  category: productivity
+profile:
+  summary: Zimt offers qualifying startups free or discounted access to their annual plan and business management platform.
+  links:
+    site: https://zimt.ai
+  description: Zimt offers qualifying startups free or discounted access to their annual plan and business management platform.
+sources:
+  - source_id: src_z06x78dq44q9jvtadb8kadf5fm
+    url: https://zimt.ai/startup
+programs: []
+offers:
+  - offer_id: off_dczbh64p5vwz3jbme82hr1467y
+    offer_slug: zimt-annual-startup-program
+    title: Zimt Annual startup program
+    summary: Zimt offers qualifying startups free or discounted access to their annual plan and business management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:41:05.981995Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to annual plan and business management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ewvebr3k373awpxqcwp05zxpgt
+      access_operator_entity_id: ent_ewvebr3k373awpxqcwp05zxpgt
+    access:
+      availability: public
+      method: form
+      url: https://zimt.ai/startup
+    source_ids:
+      - src_z06x78dq44q9jvtadb8kadf5fm
