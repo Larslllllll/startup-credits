@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_b4vf6ftrwkd079b8kykrb9h97x
+  slug: gemini-ultra
+  name: Google Gemini Ultra
+  domains:
+    - value: ai.google.dev
+      role: primary
+      valid_from: 2026-09-07T16:14:33.227110Z
+  category: ai-ml
+profile:
+  summary: Google Gemini Ultra offers qualifying startups free or discounted access to their most advanced multi-modal AI model.
+  links:
+    site: https://ai.google.dev
+  description: Google Gemini Ultra offers qualifying startups free or discounted access to their most advanced multi-modal AI model.
+sources:
+  - source_id: src_g7bbnn79zg2cpa6pntjrp0kw5c
+    url: https://ai.google.dev/startup
+programs: []
+offers:
+  - offer_id: off_90392p1sq8m4kkhe9tmwb58f0v
+    offer_slug: gemini-ultra-startup-program
+    title: Google Gemini Ultra startup program
+    summary: Google Gemini Ultra offers qualifying startups free or discounted access to their most advanced multi-modal AI model.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:14:33.227110Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to most advanced multi-modal AI model
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_b4vf6ftrwkd079b8kykrb9h97x
+      access_operator_entity_id: ent_b4vf6ftrwkd079b8kykrb9h97x
+    access:
+      availability: public
+      method: form
+      url: https://ai.google.dev/startup
+    source_ids:
+      - src_g7bbnn79zg2cpa6pntjrp0kw5c
