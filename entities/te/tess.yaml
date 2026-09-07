@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_02fr3j3c6apwk8z7m8yz6th4ed
+  slug: tess
+  name: Tess
+  domains:
+    - value: tess.im
+      role: primary
+      valid_from: 2026-09-07T14:09:53.299845Z
+  category: ai-ml
+profile:
+  summary: Tess for Startups offers qualifying AI startups free credits toward Tess conversation AI platform for 6 months.
+  links:
+    site: https://tess.im
+  description: Tess is a conversational AI platform. Their startup program offers qualifying AI startups free credits for 6 months.
+sources:
+  - source_id: src_vhqmfk8748s2kejeensak0bepq
+    url: https://tess.im/startup
+programs: []
+offers:
+  - offer_id: off_zapydk3bkqnv8ydy1r76vgvjcs
+    offer_slug: tess-startup-program
+    title: Tess for Startups
+    summary: Qualifying AI startups receive free credits toward the Tess conversation AI platform for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:09:53.299845Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free credits toward Tess conversation AI for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying AI startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_02fr3j3c6apwk8z7m8yz6th4ed
+      access_operator_entity_id: ent_02fr3j3c6apwk8z7m8yz6th4ed
+    access:
+      availability: public
+      method: form
+      url: https://tess.im/startup
+    source_ids:
+      - src_vhqmfk8748s2kejeensak0bepq
