@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_h655c0yr2cczak6mxt30tm2b9y
+  slug: smartling
+  name: Smartling
+  domains:
+    - value: smartling.com
+      role: primary
+      valid_from: 2026-09-07T15:09:57.905750Z
+  category: marketing
+profile:
+  summary: Smartling offers qualifying startups free or discounted access to their translation management and localization platform.
+  links:
+    site: https://smartling.com
+  description: Smartling offers qualifying startups free or discounted access to their translation management and localization platform.
+sources:
+  - source_id: src_y3azs0wpvahk95hhg7s6wrjwmm
+    url: https://smartling.com/startup
+programs: []
+offers:
+  - offer_id: off_aq9nhehq9kxbd5rvcwm0n3dgmx
+    offer_slug: smartling-startup-program
+    title: Smartling startup program
+    summary: Smartling offers qualifying startups free or discounted access to their translation management and localization platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:09:57.905750Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to translation management and localization platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_h655c0yr2cczak6mxt30tm2b9y
+      access_operator_entity_id: ent_h655c0yr2cczak6mxt30tm2b9y
+    access:
+      availability: public
+      method: form
+      url: https://smartling.com/startup
+    source_ids:
+      - src_y3azs0wpvahk95hhg7s6wrjwmm
