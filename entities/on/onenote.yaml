@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_fm4f9hbrgs4rykzd7hdb66md0m
+  slug: onenote
+  name: OneNote
+  domains:
+    - value: onenote.com
+      role: primary
+      valid_from: 2026-09-07T15:40:07.081607Z
+  category: productivity
+profile:
+  summary: OneNote offers qualifying startups free or discounted access to their digital notebook and productivity platform.
+  links:
+    site: https://onenote.com
+  description: OneNote offers qualifying startups free or discounted access to their digital notebook and productivity platform.
+sources:
+  - source_id: src_yggzjwacm332pcee0epvwpzzqx
+    url: https://onenote.com/startup
+programs: []
+offers:
+  - offer_id: off_2xjmq8b92ndn6zy4zv99swpv5k
+    offer_slug: onenote-startup-program
+    title: OneNote startup program
+    summary: OneNote offers qualifying startups free or discounted access to their digital notebook and productivity platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:40:07.081607Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their digital notebook and productivity platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_fm4f9hbrgs4rykzd7hdb66md0m
+      access_operator_entity_id: ent_fm4f9hbrgs4rykzd7hdb66md0m
+    access:
+      availability: public
+      method: form
+      url: https://onenote.com/startup
+    source_ids:
+      - src_yggzjwacm332pcee0epvwpzzqx
