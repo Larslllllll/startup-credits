@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_zxqfgbkmqhjm6tetzcxrfq2p48
+  slug: signrequest
+  name: SignRequest
+  domains:
+    - value: signrequest.com
+      role: primary
+      valid_from: 2026-09-07T15:30:58.831415Z
+  category: productivity
+profile:
+  summary: SignRequest offers qualifying startups free or discounted access to their electronic signature and document management platform.
+  links:
+    site: https://signrequest.com
+  description: SignRequest offers qualifying startups free or discounted access to their electronic signature and document management platform.
+sources:
+  - source_id: src_28b86p2hv2qhmnqshd3yk198sj
+    url: https://signrequest.com/startup
+programs: []
+offers:
+  - offer_id: off_n647ycc799enqprrgxaypk7wgf
+    offer_slug: signrequest-startup-program
+    title: SignRequest startup program
+    summary: SignRequest offers qualifying startups free or discounted access to their electronic signature and document management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:30:58.831415Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their electronic signature and document management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_zxqfgbkmqhjm6tetzcxrfq2p48
+      access_operator_entity_id: ent_zxqfgbkmqhjm6tetzcxrfq2p48
+    access:
+      availability: public
+      method: form
+      url: https://signrequest.com/startup
+    source_ids:
+      - src_28b86p2hv2qhmnqshd3yk198sj
