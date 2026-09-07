@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_bqagtg13dswt7y5atfzw0p9c3y
+  slug: alloy-auto-pro
+  name: Alloy Automation Pro
+  domains:
+    - value: alloyautomation.com
+      role: primary
+      valid_from: 2026-09-07T16:41:45.055094Z
+  category: apis-integration
+profile:
+  summary: Alloy Automation Pro offers qualifying startups free or discounted access to their workflow automation enterprise platform.
+  links:
+    site: https://alloyautomation.com
+  description: Alloy Automation Pro offers qualifying startups free or discounted access to their workflow automation enterprise platform.
+sources:
+  - source_id: src_tyb7s9s72n615ncn0ytrj8vc5t
+    url: https://alloyautomation.com/startup
+programs: []
+offers:
+  - offer_id: off_cq535vb1rasqdn9h4y94sc11a8
+    offer_slug: alloy-auto-pro-startup-program
+    title: Alloy Automation Pro startup program
+    summary: Alloy Automation Pro offers qualifying startups free or discounted access to their workflow automation enterprise platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:41:45.055094Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to workflow automation enterprise platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_bqagtg13dswt7y5atfzw0p9c3y
+      access_operator_entity_id: ent_bqagtg13dswt7y5atfzw0p9c3y
+    access:
+      availability: public
+      method: form
+      url: https://alloyautomation.com/startup
+    source_ids:
+      - src_tyb7s9s72n615ncn0ytrj8vc5t
