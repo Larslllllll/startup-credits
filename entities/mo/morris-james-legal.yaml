@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_jdm0bnsw5bw7qkqaxv9sgjx7ke
+  slug: morris-james-legal
+  name: Morris James Legal
+  domains:
+    - value: morrisjames.com
+      role: primary
+      valid_from: 2026-09-07T16:40:47.239388Z
+  category: legal-compliance
+profile:
+  summary: Morris James LLP offers qualifying startups free or discounted access to their startup legal and business formation services.
+  links:
+    site: https://morrisjames.com
+  description: Morris James LLP offers qualifying startups free or discounted access to their startup legal and business formation services.
+sources:
+  - source_id: src_1amdjwethqr0vjfa26n1wgm9s1
+    url: https://morrisjames.com/startup
+programs: []
+offers:
+  - offer_id: off_9kbnrgsxp6azgpd003bytq50wz
+    offer_slug: morris-james-legal-startup-program
+    title: Morris James Legal startup program
+    summary: Morris James LLP offers qualifying startups free or discounted access to their startup legal and business formation services.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:40:47.239388Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to startup legal and business formation services
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_jdm0bnsw5bw7qkqaxv9sgjx7ke
+      access_operator_entity_id: ent_jdm0bnsw5bw7qkqaxv9sgjx7ke
+    access:
+      availability: public
+      method: form
+      url: https://morrisjames.com/startup
+    source_ids:
+      - src_1amdjwethqr0vjfa26n1wgm9s1
