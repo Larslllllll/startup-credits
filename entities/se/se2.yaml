@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_tk19rckt1mgncx76ze06g8t9a3
+  slug: se2
+  name: Semaphore 2
+  domains:
+    - value: semaphoreci.com
+      role: primary
+      valid_from: 2026-09-07T16:59:59.080776Z
+  category: ci-cd
+profile:
+  summary: Semaphore offers qualifying startups free or discounted access to their CI/CD and deployment platform.
+  links:
+    site: https://semaphoreci.com
+  description: Semaphore offers qualifying startups free or discounted access to their CI/CD and deployment platform.
+sources:
+  - source_id: src_ym0f5y82xghrcg8xaw715ww891
+    url: https://semaphoreci.com/startup
+programs: []
+offers:
+  - offer_id: off_v2hcn9arwgeg9837m8efv4pdgh
+    offer_slug: se2-startup-program
+    title: Semaphore 2 startup program
+    summary: Semaphore offers qualifying startups free or discounted access to their CI/CD and deployment platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:59:59.080776Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to CI/CD and deployment platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_tk19rckt1mgncx76ze06g8t9a3
+      access_operator_entity_id: ent_tk19rckt1mgncx76ze06g8t9a3
+    access:
+      availability: public
+      method: form
+      url: https://semaphoreci.com/startup
+    source_ids:
+      - src_ym0f5y82xghrcg8xaw715ww891
