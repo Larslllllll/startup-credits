@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3jdbgxn7ybv2yek0h2fpa2hq4r
+  slug: fynite
+  name: Fynite
+  domains:
+    - value: fynite.ai
+      role: primary
+      valid_from: 2026-09-07T13:49:42.027944Z
+  category: ai-ml
+profile:
+  summary: Fynite Builders Program offers $5,000 in platform credits to qualifying AI startups (50 startups accepted per cohort).
+  links:
+    site: https://fynite.ai
+  description: Fynite is an AI platform. Their Builders Program offers $5,000 in Fynite platform credits to qualifying AI startups, with 50 startups accepted per cohort.
+sources:
+  - source_id: src_w5vjpryed7nrwwr3qm2rb0m9gy
+    url: https://fynite.ai/builders
+programs: []
+offers:
+  - offer_id: off_9qv9hm9pgy0ey2tq5x0fam00t7
+    offer_slug: fynite-builders-program
+    title: Fynite Builders Program
+    summary: Qualifying AI startups receive $5,000 in Fynite platform credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:49:42.027944Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $5,000 in Fynite platform credits
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying AI startup. Application required; 50 startups accepted per cohort.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3jdbgxn7ybv2yek0h2fpa2hq4r
+      access_operator_entity_id: ent_3jdbgxn7ybv2yek0h2fpa2hq4r
+    access:
+      availability: public
+      method: form
+      url: https://fynite.ai/builders
+    source_ids:
+      - src_w5vjpryed7nrwwr3qm2rb0m9gy
