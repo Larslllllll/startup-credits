@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_mnmed3ndz8tabh7npvfyr9psch
+  slug: ph3
+  name: Phi 3
+  domains:
+    - value: phi.azurewebsites.net
+      role: primary
+      valid_from: 2026-09-07T16:47:21.364190Z
+  category: ai-ml
+profile:
+  summary: Microsoft Phi offers qualifying startups free or discounted access to their open-source small language model platform.
+  links:
+    site: https://phi.azurewebsites.net
+  description: Microsoft Phi offers qualifying startups free or discounted access to their open-source small language model platform.
+sources:
+  - source_id: src_bvnrwzwyhf9696gwemyr78njfz
+    url: https://phi.azurewebsites.net/startup
+programs: []
+offers:
+  - offer_id: off_x56b9zvzkeh73pt4v8w31tdavg
+    offer_slug: ph3-startup-program
+    title: Phi 3 startup program
+    summary: Microsoft Phi offers qualifying startups free or discounted access to their open-source small language model platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:47:21.364190Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source small language model platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_mnmed3ndz8tabh7npvfyr9psch
+      access_operator_entity_id: ent_mnmed3ndz8tabh7npvfyr9psch
+    access:
+      availability: public
+      method: form
+      url: https://phi.azurewebsites.net/startup
+    source_ids:
+      - src_bvnrwzwyhf9696gwemyr78njfz
