@@ -1,0 +1,55 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6f5q36k64e1edwbw15gxp9nfts
+  slug: innovationmatch
+  slug_aliases:
+    - innovation-match
+  name: Innovation Match
+  domains:
+    - value: innovationmatch.io
+      role: primary
+      valid_from: 2026-09-07T12:16:49.935626Z
+  category: crm-sales
+profile:
+  summary: Innovation Match gives eligible startups 50% off its PRIME subscription (EUR 299/month instead of EUR 599/month), with community membership, visibility, priority matchmaking, and access to 2026 events.
+  links:
+    site: https://www.innovationmatch.io
+  description: Innovation Match is a business matching and community platform. Their startup program offers eligible startups 50% off the PRIME subscription plan, billed monthly at EUR 299 instead of EUR 599, available once for new activations. The benefit includes community membership, visibility, priority matchmaking, and access to 2026 events.
+sources:
+  - source_id: src_2xzrsfst753qtc2az4jhvd7v5v
+    url: https://www.innovationmatch.io/business-match/
+programs: []
+offers:
+  - offer_id: off_tjtnnazcab521t5182xtkwngpt
+    offer_slug: innovationmatch-startup-program
+    title: Innovation Match startup program
+    summary: Eligible startups receive 50% off the Innovation Match PRIME subscription, billed monthly at EUR 299 instead of EUR 599.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T12:16:49.935626Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 50% off the PRIME subscription, EUR 299/month instead of EUR 599/month
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a startup founded less than three years ago. Offer available once for new activations, monthly and cancellable.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_6f5q36k64e1edwbw15gxp9nfts
+      access_operator_entity_id: ent_6f5q36k64e1edwbw15gxp9nfts
+    access:
+      availability: public
+      method: form
+      url: https://www.innovationmatch.io/business-match/
+    source_ids:
+      - src_2xzrsfst753qtc2az4jhvd7v5v
