@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_a055937vwpk19qa649jy86367c
+  slug: thealita
+  name: theAlita
+  domains:
+    - value: thealita.com
+      role: primary
+      valid_from: 2026-09-07T13:50:28.917622Z
+  category: marketing
+profile:
+  summary: theAlita offers startups up to $20,000 in free credits for exporting leads and data, plus AI-powered audience-segmentation tools and growth support.
+  links:
+    site: https://thealita.com
+  description: theAlita is a marketing and data platform. Their startup program offers startups up to $20,000 in free credits for exporting leads and data, plus access to AI-powered audience-segmentation tools and growth support.
+sources:
+  - source_id: src_54w3jxww0jee9a1e6erfbwk6yq
+    url: https://thealita.com/startups
+programs: []
+offers:
+  - offer_id: off_50ged3msqd4374j174sd34zefd
+    offer_slug: thealita-startup-program
+    title: theAlita startup program
+    summary: Startups receive up to $20,000 in free credits for exporting leads and data, plus AI tools and growth support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:50:28.917622Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $20,000 in free credits for leads and data, plus AI segmentation tools and growth support
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_a055937vwpk19qa649jy86367c
+      access_operator_entity_id: ent_a055937vwpk19qa649jy86367c
+    access:
+      availability: public
+      method: form
+      url: https://thealita.com/startups
+    source_ids:
+      - src_54w3jxww0jee9a1e6erfbwk6yq
