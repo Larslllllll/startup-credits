@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_zfnxnvq37hp406zkam1s79gnvc
+  slug: rapyd
+  name: Rapyd
+  domains:
+    - value: rapyd.net
+      role: primary
+      valid_from: 2026-09-07T15:18:23.355348Z
+  category: payments-fintech
+profile:
+  summary: Rapyd offers qualifying startups free or discounted access to their fintech-as-a-service and payment platform.
+  links:
+    site: https://rapyd.net
+  description: Rapyd offers qualifying startups free or discounted access to their fintech-as-a-service and payment platform.
+sources:
+  - source_id: src_dj1yppjz36zfbcq22jppjwpck5
+    url: https://rapyd.net/startup
+programs: []
+offers:
+  - offer_id: off_waadhrem8zwyw4c6zkxjhxwsz5
+    offer_slug: rapyd-startup-program
+    title: Rapyd startup program
+    summary: Rapyd offers qualifying startups free or discounted access to their fintech-as-a-service and payment platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:18:23.355348Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their fintech-as-a-service and payment platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_zfnxnvq37hp406zkam1s79gnvc
+      access_operator_entity_id: ent_zfnxnvq37hp406zkam1s79gnvc
+    access:
+      availability: public
+      method: form
+      url: https://rapyd.net/startup
+    source_ids:
+      - src_dj1yppjz36zfbcq22jppjwpck5
