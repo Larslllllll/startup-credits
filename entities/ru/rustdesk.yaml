@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_scn7g9x1st7g35bszzgqeez0rv
+  slug: rustdesk
+  name: RustDesk
+  domains:
+    - value: rustdesk.com
+      role: primary
+      valid_from: 2026-09-07T15:42:07.974100Z
+  category: communication
+profile:
+  summary: RustDesk offers qualifying startups free or discounted access to their open-source remote desktop platform.
+  links:
+    site: https://rustdesk.com
+  description: RustDesk offers qualifying startups free or discounted access to their open-source remote desktop platform.
+sources:
+  - source_id: src_a2c2hjk24vrsrbk79c6dtzdm78
+    url: https://rustdesk.com/startup
+programs: []
+offers:
+  - offer_id: off_r6khch0e22f6tnd8hbqhz66825
+    offer_slug: rustdesk-startup-program
+    title: RustDesk startup program
+    summary: RustDesk offers qualifying startups free or discounted access to their open-source remote desktop platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:42:07.974100Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source remote desktop platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_scn7g9x1st7g35bszzgqeez0rv
+      access_operator_entity_id: ent_scn7g9x1st7g35bszzgqeez0rv
+    access:
+      availability: public
+      method: form
+      url: https://rustdesk.com/startup
+    source_ids:
+      - src_a2c2hjk24vrsrbk79c6dtzdm78
