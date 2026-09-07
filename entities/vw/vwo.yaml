@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_sm58vmqz5408txp0gf6x6jm3e3
+  slug: vwo
+  name: VWO
+  domains:
+    - value: vwo.com
+      role: primary
+      valid_from: 2026-09-07T15:35:16.014349Z
+  category: marketing
+profile:
+  summary: VWO offers qualifying startups free or discounted access to their conversion optimization and A/B testing platform.
+  links:
+    site: https://vwo.com
+  description: VWO offers qualifying startups free or discounted access to their conversion optimization and A/B testing platform.
+sources:
+  - source_id: src_wff59yt9qz1g3qbz2z9gy6ez0a
+    url: https://vwo.com/startup
+programs: []
+offers:
+  - offer_id: off_y0ef29zfr5nknbdxt3psjyknh9
+    offer_slug: vwo-startup-program
+    title: VWO startup program
+    summary: VWO offers qualifying startups free or discounted access to their conversion optimization and A/B testing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:35:16.014349Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their conversion optimization and A/B testing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_sm58vmqz5408txp0gf6x6jm3e3
+      access_operator_entity_id: ent_sm58vmqz5408txp0gf6x6jm3e3
+    access:
+      availability: public
+      method: form
+      url: https://vwo.com/startup
+    source_ids:
+      - src_wff59yt9qz1g3qbz2z9gy6ez0a
