@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_387gsp2qfz5ret9hcf79a81gj6
+  slug: revai
+  name: Rev
+  domains:
+    - value: rev.ai
+      role: primary
+      valid_from: 2026-09-07T15:21:50.534298Z
+  category: ai-ml
+profile:
+  summary: Rev offers qualifying startups free or discounted access to their AI speech recognition and transcription platform.
+  links:
+    site: https://rev.ai
+  description: Rev offers qualifying startups free or discounted access to their AI speech recognition and transcription platform.
+sources:
+  - source_id: src_8maz7q9s60ktp7c4kbwgn3fcc2
+    url: https://rev.ai/startup
+programs: []
+offers:
+  - offer_id: off_pgqf0vdb0fpvveczh5vkw45j8k
+    offer_slug: revai-startup-program
+    title: Rev startup program
+    summary: Rev offers qualifying startups free or discounted access to their AI speech recognition and transcription platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:21:50.534298Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI speech recognition and transcription platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_387gsp2qfz5ret9hcf79a81gj6
+      access_operator_entity_id: ent_387gsp2qfz5ret9hcf79a81gj6
+    access:
+      availability: public
+      method: form
+      url: https://rev.ai/startup
+    source_ids:
+      - src_8maz7q9s60ktp7c4kbwgn3fcc2
