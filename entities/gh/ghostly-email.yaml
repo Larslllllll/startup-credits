@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_fb5et04reh0s3fvz390pxq3pn6
+  slug: ghostly-email
+  name: Ghostly
+  domains:
+    - value: ghostly.com
+      role: primary
+      valid_from: 2026-09-07T16:30:38.193674Z
+  category: communication
+profile:
+  summary: Ghostly offers qualifying startups free or discounted access to their open-source newsletter and email automation platform.
+  links:
+    site: https://ghostly.com
+  description: Ghostly offers qualifying startups free or discounted access to their open-source newsletter and email automation platform.
+sources:
+  - source_id: src_75yqy40jc80c9mer2rag81fp8t
+    url: https://ghostly.com/startup
+programs: []
+offers:
+  - offer_id: off_gtsppfd6e05e8n4bpy0bncaefb
+    offer_slug: ghostly-email-startup-program
+    title: Ghostly startup program
+    summary: Ghostly offers qualifying startups free or discounted access to their open-source newsletter and email automation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:30:38.193674Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source newsletter and email automation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_fb5et04reh0s3fvz390pxq3pn6
+      access_operator_entity_id: ent_fb5et04reh0s3fvz390pxq3pn6
+    access:
+      availability: public
+      method: form
+      url: https://ghostly.com/startup
+    source_ids:
+      - src_75yqy40jc80c9mer2rag81fp8t
