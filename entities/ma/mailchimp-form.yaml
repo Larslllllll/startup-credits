@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_c56e6ayzd6w76swn21kdcgcdcp
+  slug: mailchimp-form
+  name: Mailchimp Form
+  domains:
+    - value: mailchimp.com
+      role: primary
+      valid_from: 2026-09-07T15:58:46.186714Z
+  category: no-code
+profile:
+  summary: Mailchimp Form offers qualifying startups free or discounted access to their email marketing and form platform.
+  links:
+    site: https://mailchimp.com
+  description: Mailchimp Form offers qualifying startups free or discounted access to their email marketing and form platform.
+sources:
+  - source_id: src_9afbqkhqzv9h4pj12m3fmgkmz2
+    url: https://mailchimp.com/startup
+programs: []
+offers:
+  - offer_id: off_8mkyj7k0yczrtwa4r5c20w1wr5
+    offer_slug: mailchimp-form-startup-program
+    title: Mailchimp Form startup program
+    summary: Mailchimp Form offers qualifying startups free or discounted access to their email marketing and form platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:58:46.186714Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their email marketing and form platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_c56e6ayzd6w76swn21kdcgcdcp
+      access_operator_entity_id: ent_c56e6ayzd6w76swn21kdcgcdcp
+    access:
+      availability: public
+      method: form
+      url: https://mailchimp.com/startup
+    source_ids:
+      - src_9afbqkhqzv9h4pj12m3fmgkmz2
