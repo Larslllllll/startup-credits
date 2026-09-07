@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_bdwma7k9f630ch3ef67mhkgzch
+  slug: profitwell
+  name: ProfitWell
+  domains:
+    - value: profitwell.com
+      role: primary
+      valid_from: 2026-09-07T15:17:17.564284Z
+  category: finance-accounting
+profile:
+  summary: ProfitWell offers qualifying startups free or discounted access to their subscription metrics and retention platform.
+  links:
+    site: https://profitwell.com
+  description: ProfitWell offers qualifying startups free or discounted access to their subscription metrics and retention platform.
+sources:
+  - source_id: src_fjwaz44pywqe267ysvgsbxmnh5
+    url: https://profitwell.com/startup
+programs: []
+offers:
+  - offer_id: off_yyrp7e0ys99n1gbg3na40077r8
+    offer_slug: profitwell-startup-program
+    title: ProfitWell startup program
+    summary: ProfitWell offers qualifying startups free or discounted access to their subscription metrics and retention platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:17:17.564284Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their subscription metrics and retention platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_bdwma7k9f630ch3ef67mhkgzch
+      access_operator_entity_id: ent_bdwma7k9f630ch3ef67mhkgzch
+    access:
+      availability: public
+      method: form
+      url: https://profitwell.com/startup
+    source_ids:
+      - src_fjwaz44pywqe267ysvgsbxmnh5
