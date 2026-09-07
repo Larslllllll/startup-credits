@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_sbw60ysjdtta0b2q045mj9sy28
+  slug: argo
+  name: Argo
+  domains:
+    - value: argoproj.github.io
+      role: primary
+      valid_from: 2026-09-07T15:19:34.364749Z
+  category: ci-cd
+profile:
+  summary: Argo offers qualifying startups free or discounted access to their open-source Kubernetes-native continuous delivery platform.
+  links:
+    site: https://argoproj.github.io
+  description: Argo offers qualifying startups free or discounted access to their open-source Kubernetes-native continuous delivery platform.
+sources:
+  - source_id: src_gv1e44gwab5zz8k09fr1vvwhh7
+    url: https://argoproj.github.io/startup
+programs: []
+offers:
+  - offer_id: off_g41t44kzrgn5efazawvty9t15v
+    offer_slug: argo-startup-program
+    title: Argo startup program
+    summary: Argo offers qualifying startups free or discounted access to their open-source Kubernetes-native continuous delivery platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:19:34.364749Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source Kubernetes-native continuous delivery platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_sbw60ysjdtta0b2q045mj9sy28
+      access_operator_entity_id: ent_sbw60ysjdtta0b2q045mj9sy28
+    access:
+      availability: public
+      method: form
+      url: https://argoproj.github.io/startup
+    source_ids:
+      - src_gv1e44gwab5zz8k09fr1vvwhh7
