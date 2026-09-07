@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gjrhxvh39hzg37gf2jkyn22fj9
+  slug: cgm
+  name: CodeGemma 2
+  domains:
+    - value: ai.google.dev
+      role: primary
+      valid_from: 2026-09-07T16:47:55.199539Z
+  category: ai-ml
+profile:
+  summary: CodeGemma offers qualifying startups free or discounted access to their open-source code LLM platform.
+  links:
+    site: https://ai.google.dev
+  description: CodeGemma offers qualifying startups free or discounted access to their open-source code LLM platform.
+sources:
+  - source_id: src_9hhtnjt85zyyjrj99jyekcpqqn
+    url: https://ai.google.dev/startup
+programs: []
+offers:
+  - offer_id: off_xsp9gv0s84n5txfkzwa1ahv9xy
+    offer_slug: cgm-startup-program
+    title: CodeGemma 2 startup program
+    summary: CodeGemma offers qualifying startups free or discounted access to their open-source code LLM platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:47:55.199539Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source code LLM platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_gjrhxvh39hzg37gf2jkyn22fj9
+      access_operator_entity_id: ent_gjrhxvh39hzg37gf2jkyn22fj9
+    access:
+      availability: public
+      method: form
+      url: https://ai.google.dev/startup
+    source_ids:
+      - src_9hhtnjt85zyyjrj99jyekcpqqn
