@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_1ejaqpwx6ca4e7gc9jpfvtt7qc
+  slug: runalloy-startup
+  name: RunAlloy Startup
+  domains:
+    - value: runalloy.com
+      role: primary
+      valid_from: 2026-09-07T16:09:16.176414Z
+  category: ai-ml
+profile:
+  summary: RunAlloy offers qualifying startups free or discounted access to their AI model deployment and orchestration platform.
+  links:
+    site: https://runalloy.com
+  description: RunAlloy offers qualifying startups free or discounted access to their AI model deployment and orchestration platform.
+sources:
+  - source_id: src_k1va5erxks26a9dcnm5xecjx28
+    url: https://runalloy.com/startup
+programs: []
+offers:
+  - offer_id: off_saq0wwzwn60f9r76zz7g0wvmef
+    offer_slug: runalloy-startup-startup-program
+    title: RunAlloy Startup startup program
+    summary: RunAlloy offers qualifying startups free or discounted access to their AI model deployment and orchestration platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:09:16.176414Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI model deployment and orchestration platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_1ejaqpwx6ca4e7gc9jpfvtt7qc
+      access_operator_entity_id: ent_1ejaqpwx6ca4e7gc9jpfvtt7qc
+    access:
+      availability: public
+      method: form
+      url: https://runalloy.com/startup
+    source_ids:
+      - src_k1va5erxks26a9dcnm5xecjx28
