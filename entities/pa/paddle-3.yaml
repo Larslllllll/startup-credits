@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_pz1p5hngmjy6q5wct0eet1t7y5
+  slug: paddle-3
+  name: Paddle Enterprise
+  domains:
+    - value: paddle.com
+      role: primary
+      valid_from: 2026-09-07T16:02:02.159258Z
+  category: payments-fintech
+profile:
+  summary: Paddle Enterprise offers qualifying startups free or discounted access to their merchant of record platform.
+  links:
+    site: https://paddle.com
+  description: Paddle Enterprise offers qualifying startups free or discounted access to their merchant of record platform.
+sources:
+  - source_id: src_6fy7sncvcqja4hmdqyp716ef5t
+    url: https://paddle.com/startup
+programs: []
+offers:
+  - offer_id: off_ke4hnydxkzxktdmyfpntsx6p98
+    offer_slug: paddle-3-startup-program
+    title: Paddle Enterprise startup program
+    summary: Paddle Enterprise offers qualifying startups free or discounted access to their merchant of record platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:02:02.159258Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their merchant of record platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_pz1p5hngmjy6q5wct0eet1t7y5
+      access_operator_entity_id: ent_pz1p5hngmjy6q5wct0eet1t7y5
+    access:
+      availability: public
+      method: form
+      url: https://paddle.com/startup
+    source_ids:
+      - src_6fy7sncvcqja4hmdqyp716ef5t
