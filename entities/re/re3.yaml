@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ed15d7mh8aayw6e52dw681f1es
+  slug: re3
+  name: Replicate 3
+  domains:
+    - value: replicate.com
+      role: primary
+      valid_from: 2026-09-07T16:53:16.446854Z
+  category: ai-ml
+profile:
+  summary: Replicate offers qualifying startups free or discounted access to their AI model deployment platform.
+  links:
+    site: https://replicate.com
+  description: Replicate offers qualifying startups free or discounted access to their AI model deployment platform.
+sources:
+  - source_id: src_x5fq3krm52yrj0bcwkqxh0718s
+    url: https://replicate.com/startup
+programs: []
+offers:
+  - offer_id: off_1ap1ft8dj0r5ycxt9xw3kkh3es
+    offer_slug: re3-startup-program
+    title: Replicate 3 startup program
+    summary: Replicate offers qualifying startups free or discounted access to their AI model deployment platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:53:16.446854Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI model deployment platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ed15d7mh8aayw6e52dw681f1es
+      access_operator_entity_id: ent_ed15d7mh8aayw6e52dw681f1es
+    access:
+      availability: public
+      method: form
+      url: https://replicate.com/startup
+    source_ids:
+      - src_x5fq3krm52yrj0bcwkqxh0718s
