@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_qvn2jqs635j3e7kvv74grazb5k
+  slug: wundergraph
+  name: WunderGraph
+  domains:
+    - value: wundergraph.com
+      role: primary
+      valid_from: 2026-09-07T15:08:59.372572Z
+  category: devtools-other
+profile:
+  summary: WunderGraph offers qualifying startups free or discounted access to their open-source API developer platform.
+  links:
+    site: https://wundergraph.com
+  description: WunderGraph offers qualifying startups free or discounted access to their open-source API developer platform.
+sources:
+  - source_id: src_q0cfbsrwn352t2gn4hggrghyk3
+    url: https://wundergraph.com/startup
+programs: []
+offers:
+  - offer_id: off_8bn1kdt8hd677k4h66mn55jj83
+    offer_slug: wundergraph-startup-program
+    title: WunderGraph startup program
+    summary: WunderGraph offers qualifying startups free or discounted access to their open-source API developer platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:08:59.372572Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source API developer platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_qvn2jqs635j3e7kvv74grazb5k
+      access_operator_entity_id: ent_qvn2jqs635j3e7kvv74grazb5k
+    access:
+      availability: public
+      method: form
+      url: https://wundergraph.com/startup
+    source_ids:
+      - src_q0cfbsrwn352t2gn4hggrghyk3
