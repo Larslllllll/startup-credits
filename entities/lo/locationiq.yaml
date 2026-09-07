@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_88adc1m4h5askct6dth7r643cw
+  slug: locationiq
+  name: LocationIQ
+  domains:
+    - value: locationiq.com
+      role: primary
+      valid_from: 2026-09-07T13:30:34.381251Z
+  category: apis-integration
+profile:
+  summary: LocationIQ offers eligible early-stage companies founded less than 24 months ago up to 50% off LocationIQ services for their first 12 months.
+  links:
+    site: https://locationiq.com
+  description: LocationIQ provides mapping and geocoding APIs. Their startup program offers qualifying early-stage companies founded less than 24 months ago up to 50% off LocationIQ services for their first 12 months.
+sources:
+  - source_id: src_589s6drrvkb9kt7ezh387jpc3d
+    url: https://locationiq.com/pricing
+programs: []
+offers:
+  - offer_id: off_ybqaa4g5xvx5fhmfgszep8gvya
+    offer_slug: locationiq-startup-program
+    title: LocationIQ startup program
+    summary: Early-stage companies founded less than 24 months ago receive up to 50% off LocationIQ services for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:30:34.381251Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to 50% off LocationIQ services for 12 months
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage company founded less than 24 months ago. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_88adc1m4h5askct6dth7r643cw
+      access_operator_entity_id: ent_88adc1m4h5askct6dth7r643cw
+    access:
+      availability: public
+      method: form
+      url: https://locationiq.com/pricing
+    source_ids:
+      - src_589s6drrvkb9kt7ezh387jpc3d
