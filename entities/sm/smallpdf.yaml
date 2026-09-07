@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gdycfzx4j05hfcawegajf326wm
+  slug: smallpdf
+  name: Smallpdf
+  domains:
+    - value: smallpdf.com
+      role: primary
+      valid_from: 2026-09-07T15:31:46.416124Z
+  category: productivity
+profile:
+  summary: Smallpdf offers qualifying startups free or discounted access to their online PDF and document management platform.
+  links:
+    site: https://smallpdf.com
+  description: Smallpdf offers qualifying startups free or discounted access to their online PDF and document management platform.
+sources:
+  - source_id: src_4n0x9y4vnp1h843m2hfzf73t7c
+    url: https://smallpdf.com/startup
+programs: []
+offers:
+  - offer_id: off_ghjajd01qy87s7x99wj7f63nm4
+    offer_slug: smallpdf-startup-program
+    title: Smallpdf startup program
+    summary: Smallpdf offers qualifying startups free or discounted access to their online PDF and document management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:31:46.416124Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their online PDF and document management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_gdycfzx4j05hfcawegajf326wm
+      access_operator_entity_id: ent_gdycfzx4j05hfcawegajf326wm
+    access:
+      availability: public
+      method: form
+      url: https://smallpdf.com/startup
+    source_ids:
+      - src_4n0x9y4vnp1h843m2hfzf73t7c
