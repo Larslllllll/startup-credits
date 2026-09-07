@@ -1,0 +1,57 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_2sk33qfnm0h78rhe87hj157qb9
+  slug: cardboard
+  slug_aliases:
+    - cardboard-inc
+  name: Cardboard
+  domains:
+    - value: cardboard.inc
+      role: primary
+      valid_from: 2026-09-07T12:03:24.209784Z
+  category: finance-accounting
+profile:
+  summary: Cardboard is an expense management platform offering an automatic 80% discount on its paid plans for companies incorporated less than two years ago, valid for one year from signup.
+  description: Cardboard is an online expense management platform for businesses. Their startup program automatically grants qualifying companies incorporated within the last two years an 80% discount on paid plans for one year from signup.
+  links:
+    site: https://cardboard.inc
+sources:
+  - source_id: src_8k8z1z5tay4a28xk0ht4bpqmzz
+    url: https://cardboard.inc/pricing/
+programs: []
+offers:
+  - offer_id: off_k36mp6vwnmgaaffaept1ge6wwk
+    offer_slug: cardboard-startup-discount
+    offer_slug_aliases:
+      - cardboard-inc-startup-discount
+    title: Cardboard startup discount
+    summary: Companies incorporated less than two years ago receive an automatic 80% discount on Cardboard paid plans for one year from signup.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T12:03:24.209784Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 80% discount on paid plans for one year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 8000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a company incorporated less than two years ago. Discount applies automatically upon signup.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_2sk33qfnm0h78rhe87hj157qb9
+      access_operator_entity_id: ent_2sk33qfnm0h78rhe87hj157qb9
+    access:
+      availability: public
+      method: form
+      url: https://cardboard.inc/campaigns/software-subscriptions/
+    source_ids:
+      - src_8k8z1z5tay4a28xk0ht4bpqmzz
