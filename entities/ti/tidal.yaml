@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7ckvmszpxtd4rzkxf58emgqxnk
+  slug: tidal
+  name: Tidal
+  domains:
+    - value: tidal.com
+      role: primary
+      valid_from: 2026-09-07T15:45:20.184560Z
+  category: communication
+profile:
+  summary: Tidal offers qualifying startups free or discounted access to their high-fidelity music streaming platform.
+  links:
+    site: https://tidal.com
+  description: Tidal offers qualifying startups free or discounted access to their high-fidelity music streaming platform.
+sources:
+  - source_id: src_b364khvh70vdw5v5veej6nvg87
+    url: https://tidal.com/startup
+programs: []
+offers:
+  - offer_id: off_42bttqtzgqgtk7vqag2v5gf5c6
+    offer_slug: tidal-startup-program
+    title: Tidal startup program
+    summary: Tidal offers qualifying startups free or discounted access to their high-fidelity music streaming platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:45:20.184560Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their high-fidelity music streaming platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_7ckvmszpxtd4rzkxf58emgqxnk
+      access_operator_entity_id: ent_7ckvmszpxtd4rzkxf58emgqxnk
+    access:
+      availability: public
+      method: form
+      url: https://tidal.com/startup
+    source_ids:
+      - src_b364khvh70vdw5v5veej6nvg87
