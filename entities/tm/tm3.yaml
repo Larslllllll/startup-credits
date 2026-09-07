@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_f6vdd9t94nqybrq4zh3g7k5tdy
+  slug: tm3
+  name: Teams 2
+  domains:
+    - value: teams.microsoft.com
+      role: primary
+      valid_from: 2026-09-07T16:53:50.424159Z
+  category: communication
+profile:
+  summary: Microsoft Teams offers qualifying startups free or discounted access to their collaboration and communication platform.
+  links:
+    site: https://teams.microsoft.com
+  description: Microsoft Teams offers qualifying startups free or discounted access to their collaboration and communication platform.
+sources:
+  - source_id: src_pj4a33ypewagbjvewvwy9p8fjp
+    url: https://teams.microsoft.com/startup
+programs: []
+offers:
+  - offer_id: off_nvch58dcrcva0sh9pvy65ja9je
+    offer_slug: tm3-startup-program
+    title: Teams 2 startup program
+    summary: Microsoft Teams offers qualifying startups free or discounted access to their collaboration and communication platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:53:50.424159Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to collaboration and communication platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_f6vdd9t94nqybrq4zh3g7k5tdy
+      access_operator_entity_id: ent_f6vdd9t94nqybrq4zh3g7k5tdy
+    access:
+      availability: public
+      method: form
+      url: https://teams.microsoft.com/startup
+    source_ids:
+      - src_pj4a33ypewagbjvewvwy9p8fjp
