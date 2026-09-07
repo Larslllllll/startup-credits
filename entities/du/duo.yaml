@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xmkqf9hzcjej4gt1vzsj3jvky3
+  slug: duo
+  name: Duo
+  domains:
+    - value: duo.com
+      role: primary
+      valid_from: 2026-09-07T15:09:31.507450Z
+  category: auth-security
+profile:
+  summary: Duo offers qualifying startups free or discounted access to their multi-factor authentication and SSO platform.
+  links:
+    site: https://duo.com
+  description: Duo offers qualifying startups free or discounted access to their multi-factor authentication and SSO platform.
+sources:
+  - source_id: src_ct1nwejc349aasbdh8f6vfgh01
+    url: https://duo.com/startup
+programs: []
+offers:
+  - offer_id: off_7m2nxd5fzf9zatwq2q24v3fa2q
+    offer_slug: duo-startup-program
+    title: Duo startup program
+    summary: Duo offers qualifying startups free or discounted access to their multi-factor authentication and SSO platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:09:31.507450Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to multi-factor authentication and SSO platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xmkqf9hzcjej4gt1vzsj3jvky3
+      access_operator_entity_id: ent_xmkqf9hzcjej4gt1vzsj3jvky3
+    access:
+      availability: public
+      method: form
+      url: https://duo.com/startup
+    source_ids:
+      - src_ct1nwejc349aasbdh8f6vfgh01
