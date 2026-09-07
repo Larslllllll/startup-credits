@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_tmmfvspbkk0pd9gsz16jyeehq9
+  slug: zilliz
+  name: Zilliz
+  domains:
+    - value: zilliz.com
+      role: primary
+      valid_from: 2026-09-07T13:20:14.716665Z
+  category: databases
+profile:
+  summary: Zilliz offers accepted early-stage AI startups program discounts on Milvus/Towhe development, testing, and early production workloads, plus technical guidance and GTM exposure.
+  links:
+    site: https://zilliz.com
+  description: Zilliz is the company behind Milvus, an open-source vector database. Their Zilliz AI Startup Program offers accepted early-stage AI startups program discounts for development, testing, and early production workloads, plus technical guidance, go-to-market exposure, and partner enablement.
+sources:
+  - source_id: src_k7jkvnyv5jg3aehts1k0ec22ne
+    url: https://zilliz.com/zilliz-for-startups
+programs: []
+offers:
+  - offer_id: off_26awqbnjmh5bdf16exg7y1gnp7
+    offer_slug: zilliz-ai-startup-program
+    title: Zilliz AI Startup Program
+    summary: Accepted early-stage AI startups receive program discounts for development, testing, and early production workloads, plus technical guidance and GTM exposure.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:20:14.716665Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Program discounts for development, testing, and early production workloads, plus technical guidance, GTM exposure, and partner enablement
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an accepted early-stage AI startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_tmmfvspbkk0pd9gsz16jyeehq9
+      access_operator_entity_id: ent_tmmfvspbkk0pd9gsz16jyeehq9
+    access:
+      availability: public
+      method: form
+      url: https://zilliz.com/zilliz-for-startups
+    source_ids:
+      - src_k7jkvnyv5jg3aehts1k0ec22ne
