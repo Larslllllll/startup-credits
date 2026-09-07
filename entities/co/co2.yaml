@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_zqv9wqf1yncsak9vknpbgc664c
+  slug: co2
+  name: Continue 2
+  domains:
+    - value: continue.dev
+      role: primary
+      valid_from: 2026-09-07T16:46:06.400018Z
+  category: devtools-other
+profile:
+  summary: Continue offers qualifying startups free or discounted access to their open-source AI code assistant platform.
+  links:
+    site: https://continue.dev
+  description: Continue offers qualifying startups free or discounted access to their open-source AI code assistant platform.
+sources:
+  - source_id: src_cx32x11krn9n4mpmavzegc5na3
+    url: https://continue.dev/startup
+programs: []
+offers:
+  - offer_id: off_0wfr083c5g81ts5fcwh48dxtcp
+    offer_slug: co2-startup-program
+    title: Continue 2 startup program
+    summary: Continue offers qualifying startups free or discounted access to their open-source AI code assistant platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:46:06.400018Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source AI code assistant platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_zqv9wqf1yncsak9vknpbgc664c
+      access_operator_entity_id: ent_zqv9wqf1yncsak9vknpbgc664c
+    access:
+      availability: public
+      method: form
+      url: https://continue.dev/startup
+    source_ids:
+      - src_cx32x11krn9n4mpmavzegc5na3
