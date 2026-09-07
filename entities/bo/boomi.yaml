@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_t4yb8a4chgre6jhbx1ahk1hkdd
+  slug: boomi
+  name: Boomi
+  domains:
+    - value: boomi.com
+      role: primary
+      valid_from: 2026-09-07T15:32:55.983017Z
+  category: apis-integration
+profile:
+  summary: Boomi offers qualifying startups free or discounted access to their enterprise integration platform as a service.
+  links:
+    site: https://boomi.com
+  description: Boomi offers qualifying startups free or discounted access to their enterprise integration platform as a service.
+sources:
+  - source_id: src_hpwqz5m4r7md3kg00kk8qhs86t
+    url: https://boomi.com/startup
+programs: []
+offers:
+  - offer_id: off_cd1641sstkd0c7rhaxvm6z1q9h
+    offer_slug: boomi-startup-program
+    title: Boomi startup program
+    summary: Boomi offers qualifying startups free or discounted access to their enterprise integration platform as a service.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:32:55.983017Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their enterprise integration platform as a service
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_t4yb8a4chgre6jhbx1ahk1hkdd
+      access_operator_entity_id: ent_t4yb8a4chgre6jhbx1ahk1hkdd
+    access:
+      availability: public
+      method: form
+      url: https://boomi.com/startup
+    source_ids:
+      - src_hpwqz5m4r7md3kg00kk8qhs86t
