@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_wtpn55f6zztsbh5zps7nekb5ep
+  slug: deepidv
+  name: DeepIDV
+  domains:
+    - value: deepidv.com
+      role: primary
+      valid_from: 2026-09-07T13:56:48.528681Z
+  category: auth-security
+profile:
+  summary: DeepIDV offers qualified startups full identity verification, fraud prevention, and monitoring API access free for 6 to 12 months.
+  links:
+    site: https://deepidv.com
+  description: DeepIDV is an identity verification and fraud prevention platform. Their startup program offers qualifying startups full identity verification, fraud prevention, and monitoring API access free for 6 to 12 months.
+sources:
+  - source_id: src_a2zd0dbg2pknewp4x01dgqbv16
+    url: https://deepidv.com/startup
+programs: []
+offers:
+  - offer_id: off_qektr7c92ky2mf4c2xxs0evep1
+    offer_slug: deepidv-startup-program
+    title: DeepIDV startup program
+    summary: Qualified startups receive free identity verification, fraud prevention, and monitoring API access for 6 to 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:56:48.528681Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free identity verification, fraud prevention, and monitoring API access for 6 to 12 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualified startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_wtpn55f6zztsbh5zps7nekb5ep
+      access_operator_entity_id: ent_wtpn55f6zztsbh5zps7nekb5ep
+    access:
+      availability: public
+      method: form
+      url: https://deepidv.com/startup
+    source_ids:
+      - src_a2zd0dbg2pknewp4x01dgqbv16
