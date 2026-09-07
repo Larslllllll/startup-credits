@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_waj6emdmqkjx6cnc06q7remcvp
+  slug: balsamiq
+  name: Balsamiq
+  domains:
+    - value: balsamiq.com
+      role: primary
+      valid_from: 2026-09-07T15:47:53.503882Z
+  category: design
+profile:
+  summary: Balsamiq offers qualifying startups free or discounted access to their rapid wireframing platform.
+  links:
+    site: https://balsamiq.com
+  description: Balsamiq offers qualifying startups free or discounted access to their rapid wireframing platform.
+sources:
+  - source_id: src_1rcqxxxeafp0amaytf97c9fde4
+    url: https://balsamiq.com/startup
+programs: []
+offers:
+  - offer_id: off_wxvbn1290vs876sgtaaf47ddme
+    offer_slug: balsamiq-startup-program
+    title: Balsamiq startup program
+    summary: Balsamiq offers qualifying startups free or discounted access to their rapid wireframing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:47:53.503882Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their rapid wireframing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_waj6emdmqkjx6cnc06q7remcvp
+      access_operator_entity_id: ent_waj6emdmqkjx6cnc06q7remcvp
+    access:
+      availability: public
+      method: form
+      url: https://balsamiq.com/startup
+    source_ids:
+      - src_1rcqxxxeafp0amaytf97c9fde4
