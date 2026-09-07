@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_jawv5zwe52e584zp1s9khrdz8x
+  slug: serving
+  name: Ray Serve
+  domains:
+    - value: ray.io
+      role: primary
+      valid_from: 2026-09-07T15:21:34.291551Z
+  category: ai-ml
+profile:
+  summary: Ray Serve offers qualifying startups free or discounted access to their open-source model serving framework.
+  links:
+    site: https://ray.io
+  description: Ray Serve offers qualifying startups free or discounted access to their open-source model serving framework.
+sources:
+  - source_id: src_6c9wy9p67daat40ncdphzb0h40
+    url: https://ray.io/startup
+programs: []
+offers:
+  - offer_id: off_96122we45y2e9t61d9hwr0wkre
+    offer_slug: serving-startup-program
+    title: Ray Serve startup program
+    summary: Ray Serve offers qualifying startups free or discounted access to their open-source model serving framework.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:21:34.291551Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source model serving framework
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_jawv5zwe52e584zp1s9khrdz8x
+      access_operator_entity_id: ent_jawv5zwe52e584zp1s9khrdz8x
+    access:
+      availability: public
+      method: form
+      url: https://ray.io/startup
+    source_ids:
+      - src_6c9wy9p67daat40ncdphzb0h40
