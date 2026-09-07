@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7a7dav03dcrt741waj1bndey4p
+  slug: drone
+  name: Drone
+  domains:
+    - value: drone.io
+      role: primary
+      valid_from: 2026-09-07T15:19:26.648708Z
+  category: ci-cd
+profile:
+  summary: Drone offers qualifying startups free or discounted access to their open-source continuous delivery platform.
+  links:
+    site: https://drone.io
+  description: Drone offers qualifying startups free or discounted access to their open-source continuous delivery platform.
+sources:
+  - source_id: src_q7zekf2m65yn0wyqs53vz6s811
+    url: https://drone.io/startup
+programs: []
+offers:
+  - offer_id: off_5z10q7z2xqkhe9xsg95x12ycq2
+    offer_slug: drone-startup-program
+    title: Drone startup program
+    summary: Drone offers qualifying startups free or discounted access to their open-source continuous delivery platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:19:26.648708Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source continuous delivery platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_7a7dav03dcrt741waj1bndey4p
+      access_operator_entity_id: ent_7a7dav03dcrt741waj1bndey4p
+    access:
+      availability: public
+      method: form
+      url: https://drone.io/startup
+    source_ids:
+      - src_q7zekf2m65yn0wyqs53vz6s811
