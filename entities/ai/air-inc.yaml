@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3g53awabgq9pd1r9ffb5xwv929
+  slug: air-inc
+  name: Air Inc
+  domains:
+    - value: air.inc
+      role: primary
+      valid_from: 2026-09-07T14:13:39.620714Z
+  category: communication
+profile:
+  summary: Air Inc offers qualifying startups free access to their visual content collaboration platform for creative operations.
+  links:
+    site: https://air.inc
+  description: Air Inc is a visual content collaboration platform. Their startup program offers free access to qualifying startups.
+sources:
+  - source_id: src_savd1ydd3pw2m6prrf5vb4139r
+    url: https://air.inc/startup
+programs: []
+offers:
+  - offer_id: off_eb71wsxne38ntt66g0crfmx8jj
+    offer_slug: air-inc-startup-program
+    title: Air Inc startup program
+    summary: Qualifying startups receive free access to the Air Inc visual content collaboration platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:13:39.620714Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to the Air Inc visual content collaboration platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3g53awabgq9pd1r9ffb5xwv929
+      access_operator_entity_id: ent_3g53awabgq9pd1r9ffb5xwv929
+    access:
+      availability: public
+      method: form
+      url: https://air.inc/startup
+    source_ids:
+      - src_savd1ydd3pw2m6prrf5vb4139r
