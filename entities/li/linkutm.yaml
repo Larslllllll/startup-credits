@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_35w03a0emgmfjpkpgdk3hznt7r
+  slug: linkutm
+  name: LinkUTM
+  domains:
+    - value: linkutm.com
+      role: primary
+      valid_from: 2026-09-07T13:10:51.556955Z
+  category: marketing
+profile:
+  summary: LinkUTM offers eligible early-stage startups the complete Growth plan free for 12 months, valued at $348, including branded links, QR codes, analytics, custom domains, and REST API access.
+  links:
+    site: https://linkutm.com
+  description: LinkUTM is a UTM link management platform. Their startup program offers qualifying early-stage startups the complete Growth plan free for 12 months, including branded links, QR codes, analytics, custom domains, and REST API access.
+sources:
+  - source_id: src_hbkv6cf608rtj31mhmed6p1tvp
+    url: https://linkutm.com/startups
+programs: []
+offers:
+  - offer_id: off_09c58x937jxjfbxzm7nf8r6p8t
+    offer_slug: linkutm-startup-program
+    title: LinkUTM startup program
+    summary: Eligible early-stage startups receive the complete LinkUTM Growth plan free for 12 months, a $348 value.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:10:51.556955Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Complete Growth plan free for 12 months ($348 value)
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an eligible early-stage startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_35w03a0emgmfjpkpgdk3hznt7r
+      access_operator_entity_id: ent_35w03a0emgmfjpkpgdk3hznt7r
+    access:
+      availability: public
+      method: form
+      url: https://linkutm.com/startups
+    source_ids:
+      - src_hbkv6cf608rtj31mhmed6p1tvp
