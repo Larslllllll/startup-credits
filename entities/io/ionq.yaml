@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gx2pm0k5cd77ekcx01jqgd4e9s
+  slug: ionq
+  name: IonQ
+  domains:
+    - value: ionq.com
+      role: primary
+      valid_from: 2026-09-07T14:54:54.840383Z
+  category: ai-ml
+profile:
+  summary: IonQ offers qualifying startups free research credits toward their quantum computing cloud platform.
+  links:
+    site: https://ionq.com
+  description: IonQ offers qualifying startups free research credits toward their quantum computing cloud platform.
+sources:
+  - source_id: src_t9h1f6jbjpk1h8ky62cbk7nvz0
+    url: https://ionq.com/startup
+programs: []
+offers:
+  - offer_id: off_90fsb5508nj41pv760k699bma4
+    offer_slug: ionq-startup-program
+    title: IonQ startup program
+    summary: IonQ offers qualifying startups free research credits toward their quantum computing cloud platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:54:54.840383Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free research credits for quantum computing cloud platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_gx2pm0k5cd77ekcx01jqgd4e9s
+      access_operator_entity_id: ent_gx2pm0k5cd77ekcx01jqgd4e9s
+    access:
+      availability: public
+      method: form
+      url: https://ionq.com/startup
+    source_ids:
+      - src_t9h1f6jbjpk1h8ky62cbk7nvz0
