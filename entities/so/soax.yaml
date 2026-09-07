@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3mmtn2y78j30nzsg058b3dnwdc
+  slug: soax
+  name: SOAX
+  domains:
+    - value: soax.com
+      role: primary
+      valid_from: 2026-09-07T14:42:19.736660Z
+  category: devtools-other
+profile:
+  summary: SOAX offers qualifying startups free access to their proxy and data collection infrastructure for 6 months.
+  links:
+    site: https://soax.com
+  description: SOAX is a proxy and data collection infrastructure provider. Their startup program offers free access to qualifying startups for 6 months.
+sources:
+  - source_id: src_20ky7g2rv3wxmy2hv1vv9mf5y5
+    url: https://soax.com/startup
+programs: []
+offers:
+  - offer_id: off_zv40wqkc0rsh7f2fdtbcqkx85q
+    offer_slug: soax-startup-program
+    title: SOAX startup program
+    summary: Qualifying startups receive free access to SOAX proxy and data collection infrastructure for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:42:19.736660Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to proxy and data collection infrastructure for 6 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3mmtn2y78j30nzsg058b3dnwdc
+      access_operator_entity_id: ent_3mmtn2y78j30nzsg058b3dnwdc
+    access:
+      availability: public
+      method: form
+      url: https://soax.com/startup
+    source_ids:
+      - src_20ky7g2rv3wxmy2hv1vv9mf5y5
