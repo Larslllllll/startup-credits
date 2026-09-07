@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_zphcpxsm87tjcx1a6ha468qvjq
+  slug: timely
+  name: Timely
+  domains:
+    - value: timelyapp.com
+      role: primary
+      valid_from: 2026-09-07T15:52:12.290033Z
+  category: hr-people
+profile:
+  summary: Timely offers qualifying startups free or discounted access to their automatic time tracking and project management platform.
+  links:
+    site: https://timelyapp.com
+  description: Timely offers qualifying startups free or discounted access to their automatic time tracking and project management platform.
+sources:
+  - source_id: src_1xkrv2d5pbjgfw3d1zgf5n5w4d
+    url: https://timelyapp.com/startup
+programs: []
+offers:
+  - offer_id: off_td7nqz7b0gmnhaebd6q6vcj1vp
+    offer_slug: timely-startup-program
+    title: Timely startup program
+    summary: Timely offers qualifying startups free or discounted access to their automatic time tracking and project management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:52:12.290033Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their automatic time tracking and project management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_zphcpxsm87tjcx1a6ha468qvjq
+      access_operator_entity_id: ent_zphcpxsm87tjcx1a6ha468qvjq
+    access:
+      availability: public
+      method: form
+      url: https://timelyapp.com/startup
+    source_ids:
+      - src_1xkrv2d5pbjgfw3d1zgf5n5w4d
