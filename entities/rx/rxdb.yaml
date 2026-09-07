@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ffxm7h76b845knq2an11dfrvc9
+  slug: rxdb
+  name: RxDB
+  domains:
+    - value: rxdb.info
+      role: primary
+      valid_from: 2026-09-07T15:06:31.839166Z
+  category: databases
+profile:
+  summary: RxDB offers qualifying startups free or discounted access to their offline-first NoSQL database for JavaScript apps.
+  links:
+    site: https://rxdb.info
+  description: RxDB offers qualifying startups free or discounted access to their offline-first NoSQL database for JavaScript apps.
+sources:
+  - source_id: src_fpqgcwsa48ms703z4j483zcn39
+    url: https://rxdb.info/startup
+programs: []
+offers:
+  - offer_id: off_efkwz51bwt6774gv45q6ra87xc
+    offer_slug: rxdb-startup-program
+    title: RxDB startup program
+    summary: RxDB offers qualifying startups free or discounted access to their offline-first NoSQL database for JavaScript apps.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:06:31.839166Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to offline-first NoSQL database for JavaScript apps
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ffxm7h76b845knq2an11dfrvc9
+      access_operator_entity_id: ent_ffxm7h76b845knq2an11dfrvc9
+    access:
+      availability: public
+      method: form
+      url: https://rxdb.info/startup
+    source_ids:
+      - src_fpqgcwsa48ms703z4j483zcn39
