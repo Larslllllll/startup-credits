@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_s12tswxrmn5t8bn6eyxnyp5kye
+  slug: lagon
+  name: Lagon
+  domains:
+    - value: lagon.dev
+      role: primary
+      valid_from: 2026-09-07T15:08:55.468337Z
+  category: hosting-infra
+profile:
+  summary: Lagon offers qualifying startups free or discounted access to their open-source edge runtime for TypeScript.
+  links:
+    site: https://lagon.dev
+  description: Lagon offers qualifying startups free or discounted access to their open-source edge runtime for TypeScript.
+sources:
+  - source_id: src_a9n5agc6xk1hc1anr1qmn71he4
+    url: https://lagon.dev/startup
+programs: []
+offers:
+  - offer_id: off_dhm5xh50v2v15afb2za7y39es0
+    offer_slug: lagon-startup-program
+    title: Lagon startup program
+    summary: Lagon offers qualifying startups free or discounted access to their open-source edge runtime for TypeScript.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:08:55.468337Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source edge runtime for TypeScript
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_s12tswxrmn5t8bn6eyxnyp5kye
+      access_operator_entity_id: ent_s12tswxrmn5t8bn6eyxnyp5kye
+    access:
+      availability: public
+      method: form
+      url: https://lagon.dev/startup
+    source_ids:
+      - src_a9n5agc6xk1hc1anr1qmn71he4
