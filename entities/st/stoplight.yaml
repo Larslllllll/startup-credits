@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_x9y4mdpnakdha583xxsq017qh7
+  slug: stoplight
+  name: Stoplight
+  domains:
+    - value: stoplight.io
+      role: primary
+      valid_from: 2026-09-07T15:26:06.924536Z
+  category: devtools-other
+profile:
+  summary: Stoplight offers qualifying startups free or discounted access to their API design and documentation platform.
+  links:
+    site: https://stoplight.io
+  description: Stoplight offers qualifying startups free or discounted access to their API design and documentation platform.
+sources:
+  - source_id: src_vbqvd71hbm195djwxf8yb1ypqh
+    url: https://stoplight.io/startup
+programs: []
+offers:
+  - offer_id: off_frwh1g8g9286y8eej38d7ymbxd
+    offer_slug: stoplight-startup-program
+    title: Stoplight startup program
+    summary: Stoplight offers qualifying startups free or discounted access to their API design and documentation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:26:06.924536Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their API design and documentation platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_x9y4mdpnakdha583xxsq017qh7
+      access_operator_entity_id: ent_x9y4mdpnakdha583xxsq017qh7
+    access:
+      availability: public
+      method: form
+      url: https://stoplight.io/startup
+    source_ids:
+      - src_vbqvd71hbm195djwxf8yb1ypqh
