@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_800gf7nbdv7wqm3db4q2jy2t1p
+  slug: fa5
+  name: fal 5
+  domains:
+    - value: fal.ai
+      role: primary
+      valid_from: 2026-09-07T16:53:11.305070Z
+  category: ai-ml
+profile:
+  summary: fal 5 offers qualifying startups free or discounted access to their AI model training and inference platform.
+  links:
+    site: https://fal.ai
+  description: fal 5 offers qualifying startups free or discounted access to their AI model training and inference platform.
+sources:
+  - source_id: src_2km854n4g0mxffy5crabjkxsst
+    url: https://fal.ai/startup
+programs: []
+offers:
+  - offer_id: off_r4hac6tcjsa8sthedj653xbs93
+    offer_slug: fa5-startup-program
+    title: fal 5 startup program
+    summary: fal 5 offers qualifying startups free or discounted access to their AI model training and inference platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:53:11.305070Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI model training and inference platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_800gf7nbdv7wqm3db4q2jy2t1p
+      access_operator_entity_id: ent_800gf7nbdv7wqm3db4q2jy2t1p
+    access:
+      availability: public
+      method: form
+      url: https://fal.ai/startup
+    source_ids:
+      - src_2km854n4g0mxffy5crabjkxsst
