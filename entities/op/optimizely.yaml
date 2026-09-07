@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_fjvbp52x9t40xe22zf20ak3b0n
+  slug: optimizely
+  name: Optimizely
+  domains:
+    - value: optimizely.com
+      role: primary
+      valid_from: 2026-09-07T15:35:12.011963Z
+  category: marketing
+profile:
+  summary: Optimizely offers qualifying startups free or discounted access to their digital experimentation and content platform.
+  links:
+    site: https://optimizely.com
+  description: Optimizely offers qualifying startups free or discounted access to their digital experimentation and content platform.
+sources:
+  - source_id: src_2ab2g5jkt289b6cj8e0s7nca0c
+    url: https://optimizely.com/startup
+programs: []
+offers:
+  - offer_id: off_wb13s2py2rrkghbn26wkefqye4
+    offer_slug: optimizely-startup-program
+    title: Optimizely startup program
+    summary: Optimizely offers qualifying startups free or discounted access to their digital experimentation and content platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:35:12.011963Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their digital experimentation and content platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_fjvbp52x9t40xe22zf20ak3b0n
+      access_operator_entity_id: ent_fjvbp52x9t40xe22zf20ak3b0n
+    access:
+      availability: public
+      method: form
+      url: https://optimizely.com/startup
+    source_ids:
+      - src_2ab2g5jkt289b6cj8e0s7nca0c
