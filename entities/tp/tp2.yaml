@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3rhq8h10d2dkr44yfxp50szac7
+  slug: tp2
+  name: TablePlus 2
+  domains:
+    - value: tableplus.com
+      role: primary
+      valid_from: 2026-09-07T16:58:24.073060Z
+  category: databases
+profile:
+  summary: TablePlus offers qualifying startups free or discounted access to their native database management platform.
+  links:
+    site: https://tableplus.com
+  description: TablePlus offers qualifying startups free or discounted access to their native database management platform.
+sources:
+  - source_id: src_p2npj73r8jpa2c74m1tdpfkb6q
+    url: https://tableplus.com/startup
+programs: []
+offers:
+  - offer_id: off_sry9m3ce9g6rvmvdn6pcvrbv7e
+    offer_slug: tp2-startup-program
+    title: TablePlus 2 startup program
+    summary: TablePlus offers qualifying startups free or discounted access to their native database management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:58:24.073060Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to native database management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3rhq8h10d2dkr44yfxp50szac7
+      access_operator_entity_id: ent_3rhq8h10d2dkr44yfxp50szac7
+    access:
+      availability: public
+      method: form
+      url: https://tableplus.com/startup
+    source_ids:
+      - src_p2npj73r8jpa2c74m1tdpfkb6q
