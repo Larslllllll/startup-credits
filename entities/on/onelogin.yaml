@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_zxr1a0b0nxfz67p0q0fks8endr
+  slug: onelogin
+  name: OneLogin
+  domains:
+    - value: onelogin.com
+      role: primary
+      valid_from: 2026-09-07T15:09:36.448932Z
+  category: auth-security
+profile:
+  summary: OneLogin offers qualifying startups free or discounted access to their identity and access management platform.
+  links:
+    site: https://onelogin.com
+  description: OneLogin offers qualifying startups free or discounted access to their identity and access management platform.
+sources:
+  - source_id: src_ng7d38ns5pqc3de76qt42xwpr2
+    url: https://onelogin.com/startup
+programs: []
+offers:
+  - offer_id: off_h3xep61qv2nc058md0fez7vcph
+    offer_slug: onelogin-startup-program
+    title: OneLogin startup program
+    summary: OneLogin offers qualifying startups free or discounted access to their identity and access management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:09:36.448932Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to identity and access management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_zxr1a0b0nxfz67p0q0fks8endr
+      access_operator_entity_id: ent_zxr1a0b0nxfz67p0q0fks8endr
+    access:
+      availability: public
+      method: form
+      url: https://onelogin.com/startup
+    source_ids:
+      - src_ng7d38ns5pqc3de76qt42xwpr2
