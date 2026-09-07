@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_4pqmt5e0p9hv1hq0d3epajhghk
+  slug: jumpseller
+  name: Jumpseller
+  domains:
+    - value: jumpseller.com
+      role: primary
+      valid_from: 2026-09-07T15:09:46.014410Z
+  category: commerce
+profile:
+  summary: Jumpseller offers qualifying startups free or discounted access to their e-commerce platform for online stores.
+  links:
+    site: https://jumpseller.com
+  description: Jumpseller offers qualifying startups free or discounted access to their e-commerce platform for online stores.
+sources:
+  - source_id: src_svkmwjnny6xzqk7fa345thpe1a
+    url: https://jumpseller.com/startup
+programs: []
+offers:
+  - offer_id: off_z9b3tvbpehf42dcf9vxx9xzjvf
+    offer_slug: jumpseller-startup-program
+    title: Jumpseller startup program
+    summary: Jumpseller offers qualifying startups free or discounted access to their e-commerce platform for online stores.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:09:46.014410Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to e-commerce platform for online stores
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_4pqmt5e0p9hv1hq0d3epajhghk
+      access_operator_entity_id: ent_4pqmt5e0p9hv1hq0d3epajhghk
+    access:
+      availability: public
+      method: form
+      url: https://jumpseller.com/startup
+    source_ids:
+      - src_svkmwjnny6xzqk7fa345thpe1a
