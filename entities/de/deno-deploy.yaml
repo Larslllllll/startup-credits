@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5fj38ba6wnbyrknahwc753zwz7
+  slug: deno-deploy
+  name: Deno Deploy
+  domains:
+    - value: deno.com
+      role: primary
+      valid_from: 2026-09-07T15:01:01.997378Z
+  category: hosting-infra
+profile:
+  summary: Deno Deploy offers qualifying startups free or discounted access to their edge serverless platform for JavaScript and TypeScript.
+  links:
+    site: https://deno.com
+  description: Deno Deploy offers qualifying startups free or discounted access to their edge serverless platform for JavaScript and TypeScript.
+sources:
+  - source_id: src_xam7mv28mwky66haedw13rzcx2
+    url: https://deno.com/startup
+programs: []
+offers:
+  - offer_id: off_gjxgc3k51hvn8rmnq8k9hcqgc4
+    offer_slug: deno-deploy-startup-program
+    title: Deno Deploy startup program
+    summary: Deno Deploy offers qualifying startups free or discounted access to their edge serverless platform for JavaScript and TypeScript.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:01:01.997378Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to edge serverless platform for JavaScript and TypeScript
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_5fj38ba6wnbyrknahwc753zwz7
+      access_operator_entity_id: ent_5fj38ba6wnbyrknahwc753zwz7
+    access:
+      availability: public
+      method: form
+      url: https://deno.com/startup
+    source_ids:
+      - src_xam7mv28mwky66haedw13rzcx2
