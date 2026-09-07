@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_dmkh4yb7emz2yn4mwzq6swts23
+  slug: riak
+  name: Riak
+  domains:
+    - value: riak.com
+      role: primary
+      valid_from: 2026-09-07T15:28:24.430772Z
+  category: databases
+profile:
+  summary: Riak offers qualifying startups free or discounted access to their distributed NoSQL database platform.
+  links:
+    site: https://riak.com
+  description: Riak offers qualifying startups free or discounted access to their distributed NoSQL database platform.
+sources:
+  - source_id: src_tssjmet3cr3fgz8j28frfzttfr
+    url: https://riak.com/startup
+programs: []
+offers:
+  - offer_id: off_v8xq8bndgbgzvw2n4b0med6pet
+    offer_slug: riak-startup-program
+    title: Riak startup program
+    summary: Riak offers qualifying startups free or discounted access to their distributed NoSQL database platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:28:24.430772Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their distributed NoSQL database platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_dmkh4yb7emz2yn4mwzq6swts23
+      access_operator_entity_id: ent_dmkh4yb7emz2yn4mwzq6swts23
+    access:
+      availability: public
+      method: form
+      url: https://riak.com/startup
+    source_ids:
+      - src_tssjmet3cr3fgz8j28frfzttfr
