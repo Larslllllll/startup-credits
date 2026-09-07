@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7qja0d2k49j2tv60y5eavc8j67
+  slug: yjs
+  name: Yjs
+  domains:
+    - value: yjs.dev
+      role: primary
+      valid_from: 2026-09-07T15:07:49.469277Z
+  category: productivity
+profile:
+  summary: Yjs offers qualifying startups free or discounted access to their open-source framework for building collaborative apps.
+  links:
+    site: https://yjs.dev
+  description: Yjs offers qualifying startups free or discounted access to their open-source framework for building collaborative apps.
+sources:
+  - source_id: src_b2r01a9s6pm30qhwfm0x8pj46n
+    url: https://yjs.dev/startup
+programs: []
+offers:
+  - offer_id: off_427wgbw12ef789j0egxy1tmtq2
+    offer_slug: yjs-startup-program
+    title: Yjs startup program
+    summary: Yjs offers qualifying startups free or discounted access to their open-source framework for building collaborative apps.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:07:49.469277Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open-source framework for building collaborative apps
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_7qja0d2k49j2tv60y5eavc8j67
+      access_operator_entity_id: ent_7qja0d2k49j2tv60y5eavc8j67
+    access:
+      availability: public
+      method: form
+      url: https://yjs.dev/startup
+    source_ids:
+      - src_b2r01a9s6pm30qhwfm0x8pj46n
