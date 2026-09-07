@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_91wzmnjka6bzryfkf69tw9axrp
+  slug: standardnotes
+  name: Standard Notes
+  domains:
+    - value: standardnotes.org
+      role: primary
+      valid_from: 2026-09-07T15:40:30.302318Z
+  category: productivity
+profile:
+  summary: Standard Notes offers qualifying startups free or discounted access to their encrypted note-taking platform.
+  links:
+    site: https://standardnotes.org
+  description: Standard Notes offers qualifying startups free or discounted access to their encrypted note-taking platform.
+sources:
+  - source_id: src_jyc5bbbe017fnsesdn1vh3dey8
+    url: https://standardnotes.org/startup
+programs: []
+offers:
+  - offer_id: off_x20s81eyxwbx9rz6tdsjq148jv
+    offer_slug: standardnotes-startup-program
+    title: Standard Notes startup program
+    summary: Standard Notes offers qualifying startups free or discounted access to their encrypted note-taking platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:40:30.302318Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their encrypted note-taking platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_91wzmnjka6bzryfkf69tw9axrp
+      access_operator_entity_id: ent_91wzmnjka6bzryfkf69tw9axrp
+    access:
+      availability: public
+      method: form
+      url: https://standardnotes.org/startup
+    source_ids:
+      - src_jyc5bbbe017fnsesdn1vh3dey8
