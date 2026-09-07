@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0ywawk8c0962tsmw3k1wez2gjf
+  slug: photoroom
+  name: PhotoRoom
+  domains:
+    - value: photoroom.com
+      role: primary
+      valid_from: 2026-09-07T15:22:34.733262Z
+  category: ai-ml
+profile:
+  summary: PhotoRoom offers qualifying startups free or discounted access to their AI-powered image editing and background removal platform.
+  links:
+    site: https://photoroom.com
+  description: PhotoRoom offers qualifying startups free or discounted access to their AI-powered image editing and background removal platform.
+sources:
+  - source_id: src_k12ad2rz6rhav7g6esxntmfvzb
+    url: https://photoroom.com/startup
+programs: []
+offers:
+  - offer_id: off_epkmenvdvta1ysc5s8qyc5x8zt
+    offer_slug: photoroom-startup-program
+    title: PhotoRoom startup program
+    summary: PhotoRoom offers qualifying startups free or discounted access to their AI-powered image editing and background removal platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:22:34.733262Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI-powered image editing and background removal platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_0ywawk8c0962tsmw3k1wez2gjf
+      access_operator_entity_id: ent_0ywawk8c0962tsmw3k1wez2gjf
+    access:
+      availability: public
+      method: form
+      url: https://photoroom.com/startup
+    source_ids:
+      - src_k12ad2rz6rhav7g6esxntmfvzb
