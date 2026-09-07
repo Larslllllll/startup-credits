@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_1r7734a0sh9b9spj2p2rcx2hm2
+  slug: sp2
+  name: Spinnaker 2
+  domains:
+    - value: spinnaker.io
+      role: primary
+      valid_from: 2026-09-07T17:00:37.018037Z
+  category: ci-cd
+profile:
+  summary: Spinnaker offers qualifying startups free or discounted access to their multi-cloud continuous delivery platform.
+  links:
+    site: https://spinnaker.io
+  description: Spinnaker offers qualifying startups free or discounted access to their multi-cloud continuous delivery platform.
+sources:
+  - source_id: src_91jvw336s5nzkmvg2av1j075xr
+    url: https://spinnaker.io/startup
+programs: []
+offers:
+  - offer_id: off_a720rjb8gf769m6d779k0xm5g1
+    offer_slug: sp2-startup-program
+    title: Spinnaker 2 startup program
+    summary: Spinnaker offers qualifying startups free or discounted access to their multi-cloud continuous delivery platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T17:00:37.018037Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to multi-cloud continuous delivery platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_1r7734a0sh9b9spj2p2rcx2hm2
+      access_operator_entity_id: ent_1r7734a0sh9b9spj2p2rcx2hm2
+    access:
+      availability: public
+      method: form
+      url: https://spinnaker.io/startup
+    source_ids:
+      - src_91jvw336s5nzkmvg2av1j075xr
