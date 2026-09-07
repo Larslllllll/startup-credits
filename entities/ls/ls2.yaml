@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_hn7ztm1ffwtc6xmkskj9kj3wx8
+  slug: ls2
+  name: Looker Studio 2
+  domains:
+    - value: lookerstudio.google.com
+      role: primary
+      valid_from: 2026-09-07T16:57:59.415044Z
+  category: data-analytics
+profile:
+  summary: Looker Studio offers qualifying startups free or discounted access to their data visualization and BI platform.
+  links:
+    site: https://lookerstudio.google.com
+  description: Looker Studio offers qualifying startups free or discounted access to their data visualization and BI platform.
+sources:
+  - source_id: src_8ahee912z3re3mpnay484zy0k5
+    url: https://lookerstudio.google.com/startup
+programs: []
+offers:
+  - offer_id: off_1e0k88ytseannxdy816fp0qy57
+    offer_slug: ls2-startup-program
+    title: Looker Studio 2 startup program
+    summary: Looker Studio offers qualifying startups free or discounted access to their data visualization and BI platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:57:59.415044Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to data visualization and BI platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_hn7ztm1ffwtc6xmkskj9kj3wx8
+      access_operator_entity_id: ent_hn7ztm1ffwtc6xmkskj9kj3wx8
+    access:
+      availability: public
+      method: form
+      url: https://lookerstudio.google.com/startup
+    source_ids:
+      - src_8ahee912z3re3mpnay484zy0k5
