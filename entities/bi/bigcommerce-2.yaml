@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_vv1qa4z8vac8xy4dv5k8xnv8qz
+  slug: bigcommerce-2
+  name: BigCommerce Pro
+  domains:
+    - value: bigcommerce.com
+      role: primary
+      valid_from: 2026-09-07T15:55:28.937759Z
+  category: commerce
+profile:
+  summary: BigCommerce Pro offers qualifying startups free or discounted access to their open SaaS e-commerce platform.
+  links:
+    site: https://bigcommerce.com
+  description: BigCommerce Pro offers qualifying startups free or discounted access to their open SaaS e-commerce platform.
+sources:
+  - source_id: src_031c28yxkdra9ez5y4n3mq6afa
+    url: https://bigcommerce.com/startup
+programs: []
+offers:
+  - offer_id: off_wd4y0jbnjfkx69eeqcmhg0v48w
+    offer_slug: bigcommerce-2-startup-program
+    title: BigCommerce Pro startup program
+    summary: BigCommerce Pro offers qualifying startups free or discounted access to their open SaaS e-commerce platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:55:28.937759Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open SaaS e-commerce platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_vv1qa4z8vac8xy4dv5k8xnv8qz
+      access_operator_entity_id: ent_vv1qa4z8vac8xy4dv5k8xnv8qz
+    access:
+      availability: public
+      method: form
+      url: https://bigcommerce.com/startup
+    source_ids:
+      - src_031c28yxkdra9ez5y4n3mq6afa
