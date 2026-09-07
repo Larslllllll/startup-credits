@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_035f3wx03qb6x07h7qn00g82eq
+  slug: monoscope
+  name: Monoscope
+  domains:
+    - value: monoscope.tech
+      role: primary
+      valid_from: 2026-09-07T12:52:29.828983Z
+  category: data-analytics
+profile:
+  summary: Monoscope is an API observability platform covering up to 100% of eligible costs in year one, capped at USD 10,000, for startups less than two years old, with fewer than five team members and under USD 100,000 raised.
+  links:
+    site: https://monoscope.tech
+  description: Monoscope is an API observability and analytics platform. Their startup program covers up to 100% of eligible Monoscope costs during the first year, capped at USD 10,000, for qualifying early-stage startups building SaaS or software products.
+sources:
+  - source_id: src_0x66vbs1yqnxz1n4xhdvqakxcr
+    url: https://monoscope.tech/pricing/
+programs: []
+offers:
+  - offer_id: off_ggq9ewj34j3gzmtvb3vyqrjb3h
+    offer_slug: monoscope-startup-program
+    title: Monoscope startup program
+    summary: Qualifying early-stage startups receive up to 100% of Monoscope costs in year one, capped at USD 10,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T12:52:29.828983Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to 100% of costs in year one, capped at USD 10,000
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be less than two years old, have fewer than five team members, have raised less than USD 100,000, and be building a SaaS or software product.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_035f3wx03qb6x07h7qn00g82eq
+      access_operator_entity_id: ent_035f3wx03qb6x07h7qn00g82eq
+    access:
+      availability: public
+      method: form
+      url: https://monoscope.tech/pricing/
+    source_ids:
+      - src_0x66vbs1yqnxz1n4xhdvqakxcr
