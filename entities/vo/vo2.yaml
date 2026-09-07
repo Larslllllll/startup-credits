@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_kg4jtkzkhrkrs5sw6kgx5tkd06
+  slug: vo2
+  name: Void Editor 2
+  domains:
+    - value: voideditor.com
+      role: primary
+      valid_from: 2026-09-07T16:46:27.785086Z
+  category: devtools-other
+profile:
+  summary: Void Editor offers qualifying startups free or discounted access to their AI-powered code editor.
+  links:
+    site: https://voideditor.com
+  description: Void Editor offers qualifying startups free or discounted access to their AI-powered code editor.
+sources:
+  - source_id: src_ysbp90cmhed0dj8wb53exm3vph
+    url: https://voideditor.com/startup
+programs: []
+offers:
+  - offer_id: off_nzeskxcwkd7nsxff3cg0r7gv49
+    offer_slug: vo2-startup-program
+    title: Void Editor 2 startup program
+    summary: Void Editor offers qualifying startups free or discounted access to their AI-powered code editor.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:46:27.785086Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to AI-powered code editor
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_kg4jtkzkhrkrs5sw6kgx5tkd06
+      access_operator_entity_id: ent_kg4jtkzkhrkrs5sw6kgx5tkd06
+    access:
+      availability: public
+      method: form
+      url: https://voideditor.com/startup
+    source_ids:
+      - src_ysbp90cmhed0dj8wb53exm3vph
