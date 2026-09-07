@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_pnwmcvf69y8cwkwy91jnxfbzj5
+  slug: nvoip
+  name: Nvoip
+  domains:
+    - value: nvoip.com.br
+      role: primary
+      valid_from: 2026-09-07T14:51:01.200292Z
+  category: communication
+profile:
+  summary: Nvoip offers qualifying startups a discount on their communication and VoIP platform for business communications.
+  links:
+    site: https://nvoip.com.br
+  description: Nvoip offers qualifying startups a discount on their communication and VoIP platform for business communications.
+sources:
+  - source_id: src_d08ddnbg7rarkgkn45g9qnmhf1
+    url: https://nvoip.com.br/startup
+programs: []
+offers:
+  - offer_id: off_4hcrtc8xvbvdya30qkfzn0jzaz
+    offer_slug: nvoip-startup-program
+    title: Nvoip startup program
+    summary: Nvoip offers qualifying startups a discount on their communication and VoIP platform for business communications.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:51:01.200292Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Discount on communication and VoIP platform for business communications
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_pnwmcvf69y8cwkwy91jnxfbzj5
+      access_operator_entity_id: ent_pnwmcvf69y8cwkwy91jnxfbzj5
+    access:
+      availability: public
+      method: form
+      url: https://nvoip.com.br/startup
+    source_ids:
+      - src_d08ddnbg7rarkgkn45g9qnmhf1
