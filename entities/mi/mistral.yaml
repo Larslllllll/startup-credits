@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_79q3mps6f1wy93nemcsj6mkhfy
+  slug: mistral
+  name: Mistral AI
+  domains:
+    - value: mistral.ai
+      role: primary
+      valid_from: 2026-09-07T15:04:16.126944Z
+  category: ai-ml
+profile:
+  summary: Mistral AI offers qualifying startups free or discounted access to their open and efficient AI model platform.
+  links:
+    site: https://mistral.ai
+  description: Mistral AI offers qualifying startups free or discounted access to their open and efficient AI model platform.
+sources:
+  - source_id: src_rcxr6gjhv0w8hxhfbqxaw9p6km
+    url: https://mistral.ai/startup
+programs: []
+offers:
+  - offer_id: off_45q87ytzsc74ecnwgn99e7m5v2
+    offer_slug: mistral-startup-program
+    title: Mistral AI startup program
+    summary: Mistral AI offers qualifying startups free or discounted access to their open and efficient AI model platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:04:16.126944Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to open and efficient AI model platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_79q3mps6f1wy93nemcsj6mkhfy
+      access_operator_entity_id: ent_79q3mps6f1wy93nemcsj6mkhfy
+    access:
+      availability: public
+      method: form
+      url: https://mistral.ai/startup
+    source_ids:
+      - src_rcxr6gjhv0w8hxhfbqxaw9p6km
