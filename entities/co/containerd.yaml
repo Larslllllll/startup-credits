@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_24m9cqfxjfh3mr81t0fxcbm41p
+  slug: containerd
+  name: containerd
+  domains:
+    - value: containerd.io
+      role: primary
+      valid_from: 2026-09-07T15:20:00.933306Z
+  category: devtools-other
+profile:
+  summary: containerd offers qualifying startups free or discounted access to their open-source container runtime platform.
+  links:
+    site: https://containerd.io
+  description: containerd offers qualifying startups free or discounted access to their open-source container runtime platform.
+sources:
+  - source_id: src_7yqwcet7ndejb9aa6wdgnra2cr
+    url: https://containerd.io/startup
+programs: []
+offers:
+  - offer_id: off_t24437bd97y8z57ndywt1rarge
+    offer_slug: containerd-startup-program
+    title: containerd startup program
+    summary: containerd offers qualifying startups free or discounted access to their open-source container runtime platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:20:00.933306Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source container runtime platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_24m9cqfxjfh3mr81t0fxcbm41p
+      access_operator_entity_id: ent_24m9cqfxjfh3mr81t0fxcbm41p
+    access:
+      availability: public
+      method: form
+      url: https://containerd.io/startup
+    source_ids:
+      - src_7yqwcet7ndejb9aa6wdgnra2cr
