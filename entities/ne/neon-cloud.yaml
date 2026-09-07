@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_168zgb2js17pg6jx92h5ekv02f
+  slug: neon-cloud
+  name: Neon Cloud
+  domains:
+    - value: neon.tech
+      role: primary
+      valid_from: 2026-09-07T15:00:42.994530Z
+  category: databases
+profile:
+  summary: Neon offers qualifying startups free credits toward their serverless PostgreSQL platform.
+  links:
+    site: https://neon.tech
+  description: Neon offers qualifying startups free credits toward their serverless PostgreSQL platform.
+sources:
+  - source_id: src_d0tsw6htn32byn8zbh7qzk4r8x
+    url: https://neon.tech/startup
+programs: []
+offers:
+  - offer_id: off_xac34vc3wc7cydttyedzpw3f2v
+    offer_slug: neon-cloud-startup-program
+    title: Neon Cloud startup program
+    summary: Neon offers qualifying startups free credits toward their serverless PostgreSQL platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:00:42.994530Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free credits for serverless PostgreSQL platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_168zgb2js17pg6jx92h5ekv02f
+      access_operator_entity_id: ent_168zgb2js17pg6jx92h5ekv02f
+    access:
+      availability: public
+      method: form
+      url: https://neon.tech/startup
+    source_ids:
+      - src_d0tsw6htn32byn8zbh7qzk4r8x
