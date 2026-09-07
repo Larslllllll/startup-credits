@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_yn69h469vdenc10nnpt8t4rkj0
+  slug: memcached
+  name: Memcached
+  domains:
+    - value: memcached.org
+      role: primary
+      valid_from: 2026-09-07T15:28:43.340861Z
+  category: databases
+profile:
+  summary: Memcached offers qualifying startups free or discounted access to their open-source distributed memory object caching system.
+  links:
+    site: https://memcached.org
+  description: Memcached offers qualifying startups free or discounted access to their open-source distributed memory object caching system.
+sources:
+  - source_id: src_t1y0s6em47a93n34tcez3wrw83
+    url: https://memcached.org/startup
+programs: []
+offers:
+  - offer_id: off_m4d2xkw5qkf6exag5g9n0qc6hs
+    offer_slug: memcached-startup-program
+    title: Memcached startup program
+    summary: Memcached offers qualifying startups free or discounted access to their open-source distributed memory object caching system.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:28:43.340861Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their open-source distributed memory object caching system
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_yn69h469vdenc10nnpt8t4rkj0
+      access_operator_entity_id: ent_yn69h469vdenc10nnpt8t4rkj0
+    access:
+      availability: public
+      method: form
+      url: https://memcached.org/startup
+    source_ids:
+      - src_t1y0s6em47a93n34tcez3wrw83
