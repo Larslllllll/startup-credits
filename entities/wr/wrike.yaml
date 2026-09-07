@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_d0tmp0x4wbwa66cvmdd31mngfx
+  slug: wrike
+  name: Wrike
+  domains:
+    - value: wrike.com
+      role: primary
+      valid_from: 2026-09-07T15:38:47.441718Z
+  category: productivity
+profile:
+  summary: Wrike offers qualifying startups free or discounted access to their project management and work collaboration platform.
+  links:
+    site: https://wrike.com
+  description: Wrike offers qualifying startups free or discounted access to their project management and work collaboration platform.
+sources:
+  - source_id: src_vrjdh82z6q6pp45vvv9jj83ba1
+    url: https://wrike.com/startup
+programs: []
+offers:
+  - offer_id: off_ab8rw2rda6ehjtz1gvkr7pk3ch
+    offer_slug: wrike-startup-program
+    title: Wrike startup program
+    summary: Wrike offers qualifying startups free or discounted access to their project management and work collaboration platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:38:47.441718Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their project management and work collaboration platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_d0tmp0x4wbwa66cvmdd31mngfx
+      access_operator_entity_id: ent_d0tmp0x4wbwa66cvmdd31mngfx
+    access:
+      availability: public
+      method: form
+      url: https://wrike.com/startup
+    source_ids:
+      - src_vrjdh82z6q6pp45vvv9jj83ba1
