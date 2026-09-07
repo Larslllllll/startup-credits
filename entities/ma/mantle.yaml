@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xmtygqnz7jap7estpmv9hewhsq
+  slug: mantle
+  name: Mantle
+  domains:
+    - value: mantle.xyz
+      role: primary
+      valid_from: 2026-09-07T15:54:10.361319Z
+  category: devtools-other
+profile:
+  summary: Mantle offers qualifying startups free or discounted access to their Ethereum Layer 2 scaling platform.
+  links:
+    site: https://mantle.xyz
+  description: Mantle offers qualifying startups free or discounted access to their Ethereum Layer 2 scaling platform.
+sources:
+  - source_id: src_6an61y283pyy4yr86xbnqehj71
+    url: https://mantle.xyz/startup
+programs: []
+offers:
+  - offer_id: off_hvp8jms145302054edbc0dv3cv
+    offer_slug: mantle-startup-program
+    title: Mantle startup program
+    summary: Mantle offers qualifying startups free or discounted access to their Ethereum Layer 2 scaling platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:54:10.361319Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their Ethereum Layer 2 scaling platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xmtygqnz7jap7estpmv9hewhsq
+      access_operator_entity_id: ent_xmtygqnz7jap7estpmv9hewhsq
+    access:
+      availability: public
+      method: form
+      url: https://mantle.xyz/startup
+    source_ids:
+      - src_6an61y283pyy4yr86xbnqehj71
