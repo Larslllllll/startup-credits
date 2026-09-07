@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3tgxq4dnhw4jqxr3vv1mnv3dj3
+  slug: descript
+  name: Descript
+  domains:
+    - value: descript.com
+      role: primary
+      valid_from: 2026-09-07T15:22:04.928409Z
+  category: ai-ml
+profile:
+  summary: Descript offers qualifying startups free or discounted access to their AI-powered video and podcast editing platform.
+  links:
+    site: https://descript.com
+  description: Descript offers qualifying startups free or discounted access to their AI-powered video and podcast editing platform.
+sources:
+  - source_id: src_cg5sd4pypws9m44p2ede0qnqa0
+    url: https://descript.com/startup
+programs: []
+offers:
+  - offer_id: off_csm5e38mw41q5aha2fae24p01b
+    offer_slug: descript-startup-program
+    title: Descript startup program
+    summary: Descript offers qualifying startups free or discounted access to their AI-powered video and podcast editing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:22:04.928409Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI-powered video and podcast editing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_3tgxq4dnhw4jqxr3vv1mnv3dj3
+      access_operator_entity_id: ent_3tgxq4dnhw4jqxr3vv1mnv3dj3
+    access:
+      availability: public
+      method: form
+      url: https://descript.com/startup
+    source_ids:
+      - src_cg5sd4pypws9m44p2ede0qnqa0
