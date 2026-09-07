@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_1tadm2x8rqkf139f9pe1qrd70h
+  slug: signaturely
+  name: Signaturely
+  domains:
+    - value: signaturely.com
+      role: primary
+      valid_from: 2026-09-07T15:31:06.623368Z
+  category: productivity
+profile:
+  summary: Signaturely offers qualifying startups free or discounted access to their electronic signature and document signing platform.
+  links:
+    site: https://signaturely.com
+  description: Signaturely offers qualifying startups free or discounted access to their electronic signature and document signing platform.
+sources:
+  - source_id: src_8c08zdjp5g3wjdcz7d4tvr9rgr
+    url: https://signaturely.com/startup
+programs: []
+offers:
+  - offer_id: off_5fyyg7gretk34xmpjs095k9462
+    offer_slug: signaturely-startup-program
+    title: Signaturely startup program
+    summary: Signaturely offers qualifying startups free or discounted access to their electronic signature and document signing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:31:06.623368Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their electronic signature and document signing platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_1tadm2x8rqkf139f9pe1qrd70h
+      access_operator_entity_id: ent_1tadm2x8rqkf139f9pe1qrd70h
+    access:
+      availability: public
+      method: form
+      url: https://signaturely.com/startup
+    source_ids:
+      - src_8c08zdjp5g3wjdcz7d4tvr9rgr
