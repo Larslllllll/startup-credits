@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ys7tjyqzz751erscdvkbrjpayq
+  slug: kakarot
+  name: Kakarot
+  domains:
+    - value: kakarot.io
+      role: primary
+      valid_from: 2026-09-07T15:54:41.204161Z
+  category: devtools-other
+profile:
+  summary: Kakarot offers qualifying startups free or discounted access to their zkEVM built on Cairo on Starknet.
+  links:
+    site: https://kakarot.io
+  description: Kakarot offers qualifying startups free or discounted access to their zkEVM built on Cairo on Starknet.
+sources:
+  - source_id: src_jdp9gf9e7mzxje3r771x44kdf2
+    url: https://kakarot.io/startup
+programs: []
+offers:
+  - offer_id: off_rm752cetwg4f7xnfarbydjdk1z
+    offer_slug: kakarot-startup-program
+    title: Kakarot startup program
+    summary: Kakarot offers qualifying startups free or discounted access to their zkEVM built on Cairo on Starknet.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:54:41.204161Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their zkEVM built on Cairo on Starknet
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_ys7tjyqzz751erscdvkbrjpayq
+      access_operator_entity_id: ent_ys7tjyqzz751erscdvkbrjpayq
+    access:
+      availability: public
+      method: form
+      url: https://kakarot.io/startup
+    source_ids:
+      - src_jdp9gf9e7mzxje3r771x44kdf2
