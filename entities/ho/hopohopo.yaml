@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_8pm7wb45e41sds2t81xr23rb6n
+  slug: hopohopo
+  name: Hopohopo
+  domains:
+    - value: hopohopo.io
+      role: primary
+      valid_from: 2026-09-07T12:50:21.889668Z
+  category: crm-sales
+profile:
+  summary: Hopohopo is a CRM platform offering startups in participating investor or accelerator portfolios 50% off the CRM Pro Plan for one year.
+  links:
+    site: https://www.hopohopo.io
+  description: Hopohopo is a CRM platform for B2B sales teams. Their Partner Program grants startups in participating investor or accelerator portfolios 50% off the CRM Pro Plan for one year. Redemption requires a portfolio invitation and partner code.
+sources:
+  - source_id: src_v4es93njfha0mcrfmvvtz4b1qt
+    url: https://www.hopohopo.io/partner-program/
+programs: []
+offers:
+  - offer_id: off_7nwt2acjq1n6dt66ggqhw8ej12
+    offer_slug: hopohopo-partner-program
+    title: Hopohopo Partner Program
+    summary: Startups in participating investor or accelerator portfolios receive 50% off the Hopohopo CRM Pro Plan for one year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T12:50:21.889668Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 50% off the CRM Pro Plan for one year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a startup in a participating investor or accelerator portfolio. Redemption requires portfolio invitation and partner code.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_8pm7wb45e41sds2t81xr23rb6n
+      access_operator_entity_id: ent_8pm7wb45e41sds2t81xr23rb6n
+    access:
+      availability: referral
+      method: form
+      url: https://www.hopohopo.io/partner-program/
+    source_ids:
+      - src_v4es93njfha0mcrfmvvtz4b1qt
