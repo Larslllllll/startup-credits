@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_56mry52yekfs9fjhas3cs71mq3
+  slug: zitadel
+  name: ZITADEL
+  domains:
+    - value: zitadel.com
+      role: primary
+      valid_from: 2026-09-07T14:52:42.857005Z
+  category: auth-security
+profile:
+  summary: ZITADEL offers qualifying startups free or discounted access to their identity and access management platform.
+  links:
+    site: https://zitadel.com
+  description: ZITADEL offers qualifying startups free or discounted access to their identity and access management platform.
+sources:
+  - source_id: src_nbt2xrbb1g87dp3dfmgqrzfbme
+    url: https://zitadel.com/startup
+programs: []
+offers:
+  - offer_id: off_8gtb2hhcw6x7tefm38w15v60rp
+    offer_slug: zitadel-startup-program
+    title: ZITADEL startup program
+    summary: ZITADEL offers qualifying startups free or discounted access to their identity and access management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:52:42.857005Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to identity and access management platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_56mry52yekfs9fjhas3cs71mq3
+      access_operator_entity_id: ent_56mry52yekfs9fjhas3cs71mq3
+    access:
+      availability: public
+      method: form
+      url: https://zitadel.com/startup
+    source_ids:
+      - src_nbt2xrbb1g87dp3dfmgqrzfbme
