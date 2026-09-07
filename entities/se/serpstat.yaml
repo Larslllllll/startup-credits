@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_n737qdc0d3j6mck9th2szdy81z
+  slug: serpstat
+  name: Serpstat
+  domains:
+    - value: serpstat.com
+      role: primary
+      valid_from: 2026-09-07T15:35:48.407157Z
+  category: marketing
+profile:
+  summary: Serpstat offers qualifying startups free or discounted access to their SEO and PPC analysis platform.
+  links:
+    site: https://serpstat.com
+  description: Serpstat offers qualifying startups free or discounted access to their SEO and PPC analysis platform.
+sources:
+  - source_id: src_8as76bpbgnjyn867p8kv0m86je
+    url: https://serpstat.com/startup
+programs: []
+offers:
+  - offer_id: off_5nrjh5qceyqz0j20gkye254re3
+    offer_slug: serpstat-startup-program
+    title: Serpstat startup program
+    summary: Serpstat offers qualifying startups free or discounted access to their SEO and PPC analysis platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:35:48.407157Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their SEO and PPC analysis platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_n737qdc0d3j6mck9th2szdy81z
+      access_operator_entity_id: ent_n737qdc0d3j6mck9th2szdy81z
+    access:
+      availability: public
+      method: form
+      url: https://serpstat.com/startup
+    source_ids:
+      - src_8as76bpbgnjyn867p8kv0m86je
