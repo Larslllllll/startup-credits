@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6d2c0k49227w70rxdv9sf0wqep
+  slug: ph4
+  name: Phi 4
+  domains:
+    - value: phi.azurewebsites.net
+      role: primary
+      valid_from: 2026-09-07T16:48:50.552301Z
+  category: ai-ml
+profile:
+  summary: Microsoft Phi 4 offers qualifying startups free or discounted access to their latest open-source small language model.
+  links:
+    site: https://phi.azurewebsites.net
+  description: Microsoft Phi 4 offers qualifying startups free or discounted access to their latest open-source small language model.
+sources:
+  - source_id: src_wnvyf1d3p7zmhwjhtg4rfz58ag
+    url: https://phi.azurewebsites.net/startup
+programs: []
+offers:
+  - offer_id: off_ncs9j3fcrxx7g6d242dq25s9r3
+    offer_slug: ph4-startup-program
+    title: Phi 4 startup program
+    summary: Microsoft Phi 4 offers qualifying startups free or discounted access to their latest open-source small language model.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:48:50.552301Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to latest open-source small language model
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_6d2c0k49227w70rxdv9sf0wqep
+      access_operator_entity_id: ent_6d2c0k49227w70rxdv9sf0wqep
+    access:
+      availability: public
+      method: form
+      url: https://phi.azurewebsites.net/startup
+    source_ids:
+      - src_wnvyf1d3p7zmhwjhtg4rfz58ag
