@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gbw831xs04hwydjer4bcgec2tr
+  slug: helius
+  name: Helius
+  domains:
+    - value: helius.dev
+      role: primary
+      valid_from: 2026-09-07T14:55:17.068639Z
+  category: hosting-infra
+profile:
+  summary: Helius offers qualifying startups free or discounted access to their Solana blockchain RPC and infrastructure platform.
+  links:
+    site: https://helius.dev
+  description: Helius offers qualifying startups free or discounted access to their Solana blockchain RPC and infrastructure platform.
+sources:
+  - source_id: src_gktmx0han8a746ayn4px2gt49t
+    url: https://helius.dev/startup
+programs: []
+offers:
+  - offer_id: off_jy6jfy6smx8jtwfaywkp7snag4
+    offer_slug: helius-startup-program
+    title: Helius startup program
+    summary: Helius offers qualifying startups free or discounted access to their Solana blockchain RPC and infrastructure platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:55:17.068639Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to Solana blockchain RPC and infrastructure platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_gbw831xs04hwydjer4bcgec2tr
+      access_operator_entity_id: ent_gbw831xs04hwydjer4bcgec2tr
+    access:
+      availability: public
+      method: form
+      url: https://helius.dev/startup
+    source_ids:
+      - src_gktmx0han8a746ayn4px2gt49t
