@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_cw4nhand268v3akv5ccwwf5htr
+  slug: synthesia
+  name: Synthesia
+  domains:
+    - value: synthesia.io
+      role: primary
+      valid_from: 2026-09-07T15:22:14.490192Z
+  category: ai-ml
+profile:
+  summary: Synthesia offers qualifying startups free or discounted access to their AI video generation and avatar platform.
+  links:
+    site: https://synthesia.io
+  description: Synthesia offers qualifying startups free or discounted access to their AI video generation and avatar platform.
+sources:
+  - source_id: src_skk23bxp3yhm1pj6ygmdp6f5tx
+    url: https://synthesia.io/startup
+programs: []
+offers:
+  - offer_id: off_w94s89nase2jjvfzmamka5zr4v
+    offer_slug: synthesia-startup-program
+    title: Synthesia startup program
+    summary: Synthesia offers qualifying startups free or discounted access to their AI video generation and avatar platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:22:14.490192Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their AI video generation and avatar platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_cw4nhand268v3akv5ccwwf5htr
+      access_operator_entity_id: ent_cw4nhand268v3akv5ccwwf5htr
+    access:
+      availability: public
+      method: form
+      url: https://synthesia.io/startup
+    source_ids:
+      - src_skk23bxp3yhm1pj6ygmdp6f5tx
