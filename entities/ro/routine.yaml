@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6vdamzay8e1c4wdhbt4pje92kz
+  slug: routine
+  name: Routine
+  domains:
+    - value: routine.co
+      role: primary
+      valid_from: 2026-09-07T14:53:05.033571Z
+  category: productivity
+profile:
+  summary: Routine offers qualifying startups free or discounted access to their task management and calendar planning platform.
+  links:
+    site: https://routine.co
+  description: Routine offers qualifying startups free or discounted access to their task management and calendar planning platform.
+sources:
+  - source_id: src_t5qgjbdtpwgvbdf1k0gnmxwxyp
+    url: https://routine.co/startup
+programs: []
+offers:
+  - offer_id: off_c50k15mh4n8pd08qpmx4ebbvhx
+    offer_slug: routine-startup-program
+    title: Routine startup program
+    summary: Routine offers qualifying startups free or discounted access to their task management and calendar planning platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:53:05.033571Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to task management and calendar planning platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_6vdamzay8e1c4wdhbt4pje92kz
+      access_operator_entity_id: ent_6vdamzay8e1c4wdhbt4pje92kz
+    access:
+      availability: public
+      method: form
+      url: https://routine.co/startup
+    source_ids:
+      - src_t5qgjbdtpwgvbdf1k0gnmxwxyp
