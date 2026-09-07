@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_t1vnj96xhaejvrqph2trh4rmcx
+  slug: duda
+  name: Duda
+  domains:
+    - value: duda.co
+      role: primary
+      valid_from: 2026-09-07T15:56:35.478103Z
+  category: no-code
+profile:
+  summary: Duda offers qualifying startups free or discounted access to their professional website builder platform.
+  links:
+    site: https://duda.co
+  description: Duda offers qualifying startups free or discounted access to their professional website builder platform.
+sources:
+  - source_id: src_j4yd8p9mkb6mcywgpd8za4bh0k
+    url: https://duda.co/startup
+programs: []
+offers:
+  - offer_id: off_t7pr3zavsdqpsn82gyat4578gh
+    offer_slug: duda-startup-program
+    title: Duda startup program
+    summary: Duda offers qualifying startups free or discounted access to their professional website builder platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:56:35.478103Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their professional website builder platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_t1vnj96xhaejvrqph2trh4rmcx
+      access_operator_entity_id: ent_t1vnj96xhaejvrqph2trh4rmcx
+    access:
+      availability: public
+      method: form
+      url: https://duda.co/startup
+    source_ids:
+      - src_j4yd8p9mkb6mcywgpd8za4bh0k
