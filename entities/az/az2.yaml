@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6a34w7kfjsghntt0gbjfqrrm7z
+  slug: az2
+  name: Azure 2
+  domains:
+    - value: azure.microsoft.com
+      role: primary
+      valid_from: 2026-09-07T17:00:53.346362Z
+  category: hosting-infra
+profile:
+  summary: Azure offers qualifying startups free or discounted access to their cloud platform.
+  links:
+    site: https://azure.microsoft.com
+  description: Azure offers qualifying startups free or discounted access to their cloud platform.
+sources:
+  - source_id: src_0g8c94gmkb9g8bnkwqvbdj2tkt
+    url: https://azure.microsoft.com/startup
+programs: []
+offers:
+  - offer_id: off_r1fv0cwgg77srxg847wvddhh71
+    offer_slug: az2-startup-program
+    title: Azure 2 startup program
+    summary: Azure offers qualifying startups free or discounted access to their cloud platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T17:00:53.346362Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to cloud platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_6a34w7kfjsghntt0gbjfqrrm7z
+      access_operator_entity_id: ent_6a34w7kfjsghntt0gbjfqrrm7z
+    access:
+      availability: public
+      method: form
+      url: https://azure.microsoft.com/startup
+    source_ids:
+      - src_0g8c94gmkb9g8bnkwqvbdj2tkt
