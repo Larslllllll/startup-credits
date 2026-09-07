@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_nwj97vgywszk5mmnxh2prn22fv
+  slug: couchbase-capella
+  name: Couchbase Capella
+  domains:
+    - value: couchbase.com
+      role: primary
+      valid_from: 2026-09-07T16:05:52.711962Z
+  category: databases
+profile:
+  summary: Couchbase Capella offers qualifying startups free or discounted access to their cloud NoSQL database platform.
+  links:
+    site: https://couchbase.com
+  description: Couchbase Capella offers qualifying startups free or discounted access to their cloud NoSQL database platform.
+sources:
+  - source_id: src_q04xp2kzgv2j7z8eztfh0xprk2
+    url: https://couchbase.com/startup
+programs: []
+offers:
+  - offer_id: off_kzn1avpy5zea15svc5rc1evddn
+    offer_slug: couchbase-capella-startup-program
+    title: Couchbase Capella startup program
+    summary: Couchbase Capella offers qualifying startups free or discounted access to their cloud NoSQL database platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:05:52.711962Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to cloud NoSQL database platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_nwj97vgywszk5mmnxh2prn22fv
+      access_operator_entity_id: ent_nwj97vgywszk5mmnxh2prn22fv
+    access:
+      availability: public
+      method: form
+      url: https://couchbase.com/startup
+    source_ids:
+      - src_q04xp2kzgv2j7z8eztfh0xprk2
