@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xrvm91vrntm1ntd470wtcqyaxy
+  slug: gameanalytics
+  name: GameAnalytics
+  domains:
+    - value: gameanalytics.com
+      role: primary
+      valid_from: 2026-09-07T14:34:41.089154Z
+  category: data-analytics
+profile:
+  summary: GameAnalytics offers qualifying startups free access to their game analytics and player behavior platform for 12 months.
+  links:
+    site: https://gameanalytics.com
+  description: GameAnalytics is a game analytics and player behavior platform. Their startup program offers free access to qualifying startups for 12 months.
+sources:
+  - source_id: src_0hrzrnd4854ngr16160fxhmc08
+    url: https://gameanalytics.com/startup
+programs: []
+offers:
+  - offer_id: off_jjze65d7y55hkevk64496z2afw
+    offer_slug: gameanalytics-startup-program
+    title: GameAnalytics startup program
+    summary: Qualifying startups receive free access to the GameAnalytics game analytics and player behavior platform for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:34:41.089154Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to game analytics and player behavior platform for 12 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_xrvm91vrntm1ntd470wtcqyaxy
+      access_operator_entity_id: ent_xrvm91vrntm1ntd470wtcqyaxy
+    access:
+      availability: public
+      method: form
+      url: https://gameanalytics.com/startup
+    source_ids:
+      - src_0hrzrnd4854ngr16160fxhmc08
