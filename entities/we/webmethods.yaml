@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_93vfcap5b7x51kbfgjneq0k5wg
+  slug: webmethods
+  name: WebMethods
+  domains:
+    - value: webmethods.io
+      role: primary
+      valid_from: 2026-09-07T15:33:20.358312Z
+  category: apis-integration
+profile:
+  summary: WebMethods offers qualifying startups free or discounted access to their enterprise integration platform.
+  links:
+    site: https://webmethods.io
+  description: WebMethods offers qualifying startups free or discounted access to their enterprise integration platform.
+sources:
+  - source_id: src_avqha1kdxax05za2r77n9ce3g0
+    url: https://webmethods.io/startup
+programs: []
+offers:
+  - offer_id: off_qerahnxwdjg49rmkk2trr7pjzy
+    offer_slug: webmethods-startup-program
+    title: WebMethods startup program
+    summary: WebMethods offers qualifying startups free or discounted access to their enterprise integration platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:33:20.358312Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their enterprise integration platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_93vfcap5b7x51kbfgjneq0k5wg
+      access_operator_entity_id: ent_93vfcap5b7x51kbfgjneq0k5wg
+    access:
+      availability: public
+      method: form
+      url: https://webmethods.io/startup
+    source_ids:
+      - src_avqha1kdxax05za2r77n9ce3g0
