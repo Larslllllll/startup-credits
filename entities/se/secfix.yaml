@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9n03z3kmsq39zyg10g3qwr002x
+  slug: secfix
+  name: Secfix
+  domains:
+    - value: secfix.com
+      role: primary
+      valid_from: 2026-09-07T14:53:24.011882Z
+  category: devtools-other
+profile:
+  summary: Secfix offers qualifying startups free or discounted access to their vulnerability management and security compliance platform.
+  links:
+    site: https://secfix.com
+  description: Secfix offers qualifying startups free or discounted access to their vulnerability management and security compliance platform.
+sources:
+  - source_id: src_qf5t8z7zn6f68ajjyasftqapjt
+    url: https://secfix.com/startup
+programs: []
+offers:
+  - offer_id: off_vzts27j1v472f4mzy9fsnqz8f1
+    offer_slug: secfix-startup-program
+    title: Secfix startup program
+    summary: Secfix offers qualifying startups free or discounted access to their vulnerability management and security compliance platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:53:24.011882Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to vulnerability management and security compliance platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_9n03z3kmsq39zyg10g3qwr002x
+      access_operator_entity_id: ent_9n03z3kmsq39zyg10g3qwr002x
+    access:
+      availability: public
+      method: form
+      url: https://secfix.com/startup
+    source_ids:
+      - src_qf5t8z7zn6f68ajjyasftqapjt
