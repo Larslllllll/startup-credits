@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6mrqsz1fyb0zxrh4j4nxm6ft7m
+  slug: intervue-hr
+  name: Intervue HR
+  domains:
+    - value: intervue.io
+      role: primary
+      valid_from: 2026-09-07T16:39:12.989608Z
+  category: hr-people
+profile:
+  summary: Intervue offers qualifying startups free or discounted access to their technical hiring and interview platform.
+  links:
+    site: https://intervue.io
+  description: Intervue offers qualifying startups free or discounted access to their technical hiring and interview platform.
+sources:
+  - source_id: src_hae7t2yhzjdqxz8smj4cdxdzb6
+    url: https://intervue.io/startup
+programs: []
+offers:
+  - offer_id: off_44aa1g07g16ffstxh3rxtgt5ah
+    offer_slug: intervue-hr-startup-program
+    title: Intervue HR startup program
+    summary: Intervue offers qualifying startups free or discounted access to their technical hiring and interview platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T16:39:12.989608Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to technical hiring and interview platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_6mrqsz1fyb0zxrh4j4nxm6ft7m
+      access_operator_entity_id: ent_6mrqsz1fyb0zxrh4j4nxm6ft7m
+    access:
+      availability: public
+      method: form
+      url: https://intervue.io/startup
+    source_ids:
+      - src_hae7t2yhzjdqxz8smj4cdxdzb6
