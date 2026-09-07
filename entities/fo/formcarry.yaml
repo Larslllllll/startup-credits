@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0bgmtfm7brpt38hy53txyhx1gc
+  slug: formcarry
+  name: Formcarry
+  domains:
+    - value: formcarry.com
+      role: primary
+      valid_from: 2026-09-07T15:58:37.306807Z
+  category: no-code
+profile:
+  summary: Formcarry offers qualifying startups free or discounted access to their online form backend platform.
+  links:
+    site: https://formcarry.com
+  description: Formcarry offers qualifying startups free or discounted access to their online form backend platform.
+sources:
+  - source_id: src_34dtzj30wdndc5bhzssx9mgkxv
+    url: https://formcarry.com/startup
+programs: []
+offers:
+  - offer_id: off_ynj47ra5ggxmzzfxjkn5ry2tvd
+    offer_slug: formcarry-startup-program
+    title: Formcarry startup program
+    summary: Formcarry offers qualifying startups free or discounted access to their online form backend platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:58:37.306807Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to their online form backend platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_0bgmtfm7brpt38hy53txyhx1gc
+      access_operator_entity_id: ent_0bgmtfm7brpt38hy53txyhx1gc
+    access:
+      availability: public
+      method: form
+      url: https://formcarry.com/startup
+    source_ids:
+      - src_34dtzj30wdndc5bhzssx9mgkxv
