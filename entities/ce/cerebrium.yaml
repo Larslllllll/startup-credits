@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_m574vp5at0x60cypw66pm33m3h
+  slug: cerebrium
+  name: Cerebrium
+  domains:
+    - value: cerebrium.ai
+      role: primary
+      valid_from: 2026-09-07T15:04:42.947383Z
+  category: ai-ml
+profile:
+  summary: Cerebrium offers qualifying startups free or discounted access to their serverless AI framework and GPU platform.
+  links:
+    site: https://cerebrium.ai
+  description: Cerebrium offers qualifying startups free or discounted access to their serverless AI framework and GPU platform.
+sources:
+  - source_id: src_7g722sjf3x3g7qxsw3nn2a9gz1
+    url: https://cerebrium.ai/startup
+programs: []
+offers:
+  - offer_id: off_qwfk87nmxj81n6pjz2xvyp911g
+    offer_slug: cerebrium-startup-program
+    title: Cerebrium startup program
+    summary: Cerebrium offers qualifying startups free or discounted access to their serverless AI framework and GPU platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T15:04:42.947383Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free or discounted access to serverless AI framework and GPU platform
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_m574vp5at0x60cypw66pm33m3h
+      access_operator_entity_id: ent_m574vp5at0x60cypw66pm33m3h
+    access:
+      availability: public
+      method: form
+      url: https://cerebrium.ai/startup
+    source_ids:
+      - src_7g722sjf3x3g7qxsw3nn2a9gz1
