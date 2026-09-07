@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_55kg8m6rqn4tcw8zafzgqjswav
+  slug: zenml
+  name: ZenML
+  domains:
+    - value: zenml.io
+      role: primary
+      valid_from: 2026-09-07T13:09:53.105559Z
+  category: ai-ml
+profile:
+  summary: ZenML is an MLOps platform offering early-stage companies building ML-powered products special startup pricing on ZenML Pro plus expert guidance and a network.
+  links:
+    site: https://www.zenml.io
+  description: ZenML is an MLOps platform for ML pipelines. Their startup program offers early-stage companies building ML-powered products special startup pricing on ZenML Pro, expert guidance, and access to a network of startups and researchers.
+sources:
+  - source_id: src_h9h6vbhx00zxd3sm24je03y5ha
+    url: https://www.zenml.io/startups-and-academics
+programs: []
+offers:
+  - offer_id: off_sx1abvs4m44wg64c341yxmsk08
+    offer_slug: zenml-startup-program
+    title: ZenML startup program
+    summary: Early-stage companies building ML-powered products receive special pricing on ZenML Pro plus expert guidance and a network.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T13:09:53.105559Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Special startup pricing on ZenML Pro plus expert guidance and access to a network of startups and researchers
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage company building ML-powered products. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_55kg8m6rqn4tcw8zafzgqjswav
+      access_operator_entity_id: ent_55kg8m6rqn4tcw8zafzgqjswav
+    access:
+      availability: public
+      method: form
+      url: https://www.zenml.io/startups-and-academics
+    source_ids:
+      - src_h9h6vbhx00zxd3sm24je03y5ha
