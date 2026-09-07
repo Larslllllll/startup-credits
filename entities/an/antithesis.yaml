@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0mjvafarqppwcgd7de3dnbwb0v
+  slug: antithesis
+  name: Antithesis
+  domains:
+    - value: antithesis.com
+      role: primary
+      valid_from: 2026-09-07T14:24:05.807358Z
+  category: devtools-other
+profile:
+  summary: Antithesis offers qualifying startups free access to their autonomous testing platform for software reliability.
+  links:
+    site: https://antithesis.com
+  description: Antithesis is an autonomous testing platform for software reliability. Their startup program offers free access to qualifying startups.
+sources:
+  - source_id: src_5ezdgs5b4vdxtb41n69bv3cr0f
+    url: https://antithesis.com/startup
+programs: []
+offers:
+  - offer_id: off_5jj9q84as83kqxqe1dy27srtk8
+    offer_slug: antithesis-startup-program
+    title: Antithesis startup program
+    summary: Qualifying startups receive free access to the Antithesis autonomous testing platform for software reliability.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:24:05.807358Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free access to autonomous testing platform for software reliability
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup. Application required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_0mjvafarqppwcgd7de3dnbwb0v
+      access_operator_entity_id: ent_0mjvafarqppwcgd7de3dnbwb0v
+    access:
+      availability: public
+      method: form
+      url: https://antithesis.com/startup
+    source_ids:
+      - src_5ezdgs5b4vdxtb41n69bv3cr0f
