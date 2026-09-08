@@ -21,7 +21,7 @@ offers:
   - offer_id: off_01m1yft3pv8k2q09jbacxes0h7
     offer_slug: free-security-essentials-for-startups
     title: Free security essentials for startups
-    summary: Qualifying early-stage startups get a security policy pack, continuous attack-surface management, a risk registry, and a compliance starter at no charge and without a credit card.
+    summary: Enterprise-grade security, free for startups.
     lifecycle:
       status: active
       effective_from: 2026-09-07T17:47:59.000Z
@@ -29,8 +29,7 @@ offers:
       benefits:
         - benefit_id: ben_startup_essentials
           kind: free-service
-          service: NMT Security startup essentials
-          description: A security policy pack, continuous attack-surface management, a risk registry, and a compliance starter are provided free.
+          description: Ready-to-use security policies mapped to ISO 27001 and SOC 2 are provided free.
       consideration:
         kind: none
     eligibility:
