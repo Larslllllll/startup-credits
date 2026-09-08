@@ -29,6 +29,7 @@ offers:
       benefits:
         - benefit_id: ben_startup_essentials
           kind: free-service
+          service: Security Policy Pack
           description: Ready-to-use security policies mapped to ISO 27001 and SOC 2 are provided free.
       consideration:
         kind: none
