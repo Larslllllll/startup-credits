@@ -20,6 +20,8 @@ profile:
 sources:
 - source_id: src_c16586511c09192fb4bd55e95fbb5f57e2eb27dc39b797f9cd309fe6d546697f
   url: https://www.cloudthinker.io/startups
+- source_id: src_94e9a3d10a9dc1799b9557db88a53442e4cf62ee3367b700085fa64623e692de
+  url: https://cloudthinker.io/startups
 programs:
 - program_id: prg_01m23qwvhv97xz7w3t0w5pvgng
   program_slug: cloudthinker-startup-program
@@ -29,6 +31,7 @@ programs:
     credits, priority onboarding, and cloud architecture consulting.
   source_ids:
   - src_c16586511c09192fb4bd55e95fbb5f57e2eb27dc39b797f9cd309fe6d546697f
+  - src_94e9a3d10a9dc1799b9557db88a53442e4cf62ee3367b700085fa64623e692de
 offers:
 - offer_id: off_01m23qwvhvbgc0cfcqq1rxke0h
   program_id: prg_01m23qwvhv97xz7w3t0w5pvgng
@@ -98,3 +101,4 @@ offers:
   terms_url: https://www.cloudthinker.io/startups
   source_ids:
   - src_c16586511c09192fb4bd55e95fbb5f57e2eb27dc39b797f9cd309fe6d546697f
+  - src_94e9a3d10a9dc1799b9557db88a53442e4cf62ee3367b700085fa64623e692de
