@@ -46,6 +46,8 @@ offers:
       description: One year of free access to the NavTalk Growth Plan
       kind: free-service
       service: NavTalk Growth Plan
+    consideration:
+      kind: none
   eligibility:
     rule:
       kind: manual
