@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m23jj2hfjtqjbdhmfh4a9kyp
+  slug: navtalk
+  slug_aliases: []
+  name: NavTalk
+  domains:
+  - value: navtalk.ai
+    role: primary
+    valid_from: '2026-09-09T17:12:00.000Z'
+  category: ai-ml
+profile:
+  description: NavTalk provides real-time AI avatars for support, tutoring, presentations,
+    and customer-facing experiences.
+  links:
+    site: https://navtalk.ai
+sources:
+- source_id: src_aac1607cbc63407139bef232b7c6e7f6020199187cf988b06f74dfce01edb6fb
+  url: https://navtalk.ai/en/startup/
+- source_id: src_8d6eff3e7fa63128dbe092d8768d217776761461ff60043274d4bfc8bc21247c
+  url: https://navtalk.ai/en/startup/application/
+programs:
+- program_id: prg_01m23jj2hkmc3mbhbhq636d7wf
+  program_slug: navtalk-startup-program
+  program_slug_aliases: []
+  title: NavTalk Startup Program
+  summary: NavTalk gives qualified startups one year of free access to its Growth
+    Plan, including AI avatar features, API access, and startup support.
+  source_ids:
+  - src_aac1607cbc63407139bef232b7c6e7f6020199187cf988b06f74dfce01edb6fb
+  - src_8d6eff3e7fa63128dbe092d8768d217776761461ff60043274d4bfc8bc21247c
+offers:
+- offer_id: off_01m23jj2hke243rccps1jr5ngq
+  program_id: prg_01m23jj2hkmc3mbhbhq636d7wf
+  offer_slug: growth-plan-free-first-year
+  offer_slug_aliases: []
+  title: NavTalk Growth Plan free for one year
+  summary: Qualified startups receive 12 months of complimentary NavTalk Growth Plan
+    access, including full platform features, API access, and startup support.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-09T17:12:00.000Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: One year of free access to the NavTalk Growth Plan
+      kind: free-service
+      service: NavTalk Growth Plan
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      reason: vendor-discretion
+      statement: Startups that are less than five years old and actively building
+        a product may apply; both early-stage and funded startups are welcome.
+  roles:
+    terms_authority_entity_id: ent_01m23jj2hfjtqjbdhmfh4a9kyp
+    access_operator_entity_id: ent_01m23jj2hfjtqjbdhmfh4a9kyp
+  access:
+    availability: public
+    method: form
+    url: https://navtalk.ai/en/startup/application/
+    instructions: Open the NavTalk Startup Program application and submit the requested
+      applicant, company, product, and contact details.
+  source_ids:
+  - src_aac1607cbc63407139bef232b7c6e7f6020199187cf988b06f74dfce01edb6fb
+  - src_8d6eff3e7fa63128dbe092d8768d217776761461ff60043274d4bfc8bc21247c
