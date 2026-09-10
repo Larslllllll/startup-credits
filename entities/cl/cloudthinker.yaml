@@ -18,6 +18,8 @@ profile:
   links:
     site: https://www.cloudthinker.io/
 sources:
+- source_id: src_17bec058a57e7643fa10f9da64ed6da3bc3a17c39abb989e05fb07c81d776d13
+  url: https://cloudthinker.io/
 - source_id: src_c16586511c09192fb4bd55e95fbb5f57e2eb27dc39b797f9cd309fe6d546697f
   url: https://www.cloudthinker.io/startups
 - source_id: src_94e9a3d10a9dc1799b9557db88a53442e4cf62ee3367b700085fa64623e692de
