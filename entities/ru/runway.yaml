@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_p36bh8kryvketgqykxg9sv8c3h
+  slug: runway
+  slug_aliases: []
+  name: Runway
+  domains:
+  - value: runway.com
+    role: primary
+    valid_from: '2026-09-15T23:50:00Z'
+  category: ai-ml
+profile:
+  summary: Runway builds generative video and creative AI tools for teams and developers.
+  description: Generative video and creative AI tools.
+  links:
+    site: https://runway.com
+sources:
+- source_id: src_1pdx5zxvtwnfnbpvpg7s94p5vf
+  url: https://runway.com/product/builders
+programs: []
+offers:
+- offer_id: off_rp5jggfb9h38bdnw0ncj89dfyg
+  offer_slug: builders
+  offer_slug_aliases: []
+  title: Runway Builders Program
+  summary: Eligible seed-to-Series-C startups can receive Runway API credits, higher
+    rate limits, and early access to Runway Characters.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-15T23:50:00Z'
+  economics:
+    consideration:
+      kind: unknown
+      description: The public source does not establish separate monetary consideration.
+    benefits:
+    - benefit_id: ben_credits
+      description: Runway API credits
+      kind: other
+    - benefit_id: ben_limits
+      description: Higher API rate limits
+      kind: other
+    - benefit_id: ben_access
+      description: Early access to Runway Characters
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Must be a seed-to-Series-C startup accepted into the Runway Builders
+        Program.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_p36bh8kryvketgqykxg9sv8c3h
+    access_operator_entity_id: ent_p36bh8kryvketgqykxg9sv8c3h
+  access:
+    availability: public
+    method: form
+    url: https://runway.com/product/builders
+  source_ids:
+  - src_1pdx5zxvtwnfnbpvpg7s94p5vf
